@@ -60,18 +60,18 @@ portuguese,		% Select document language, options: portuguese or english
 \include{front/4_frontmatterlists}	% Edit the file to select the lists to be shown (figures, tables, source code segments, glossary, acronyms, symbols)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAINMATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mainmatter 
-\pagestyle{thesis} 				
+\mainmatter
+\pagestyle{thesis}
 
 % Include the chapters of the dissertation as separate files from the 'chapters' folder
 
 \include{chapters/chapter1}
-\include{chapters/chapter2}		
+\include{chapters/chapter2}
 \include{chapters/chapter3}
 \include{chapters/chapter4}% Uncomment the lines as you write the chapters,
-								% where 'chapter3' refers to a file chapter3.tex
+% where 'chapter3' refers to a file chapter3.tex
 %...							% in the 'chapters' folder
-								
+
 \include{chapters/chapter5}
 \include{chapters/chapter6}
 \include{chapters/chapter7}
@@ -81,13 +81,13 @@ portuguese,		% Select document language, options: portuguese or english
 % Print the bibliographic references using the ieeetr format from the 'sampleRefs.bib' file (root folder)
 
 \printrefereces{sampleRefs}		% Change the 'sampleRefs' name to match your .bib file name,
-								% a good option to make bib files is https://www.jabref.org/
+% a good option to make bib files is https://www.jabref.org/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appendices}
-% Include the appendices of the dissertation as separate files from the 'chapters' folder
+	% Include the appendices of the dissertation as separate files from the 'chapters' folder
 
-\include{chapters/appendixA}	% Uncomment the lines as you write the appendices,
-%\include{chapters/appendixB}	% or comment the lines if not used
+	\include{chapters/appendixA}	% Uncomment the lines as you write the appendices,
+	%\include{chapters/appendixB}	% or comment the lines if not used
 
 \end{appendices}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
