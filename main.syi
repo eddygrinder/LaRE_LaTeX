@@ -2,26 +2,26 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossentry{i}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{xxi}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{xxiii}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{xix}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{xxi}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{p}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{xxi}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{xxiii}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{xix}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{xxi}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossentry{r}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{xxi}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{xxiii}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{xix}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{xxi}}}\glsgroupskip
 \glsgroupheading{V}\relax \glsresetentrylist %
 \glossentry{v}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{xxi}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{xxiii}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{xix}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{xxi}}}\glsgroupskip
 \glsgroupheading{X}\relax \glsresetentrylist %
 \glossentry{x}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{xxi}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{xxiii}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{xix}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{xxi}}}\glsgroupskip
 \glsgroupheading{Z}\relax \glsresetentrylist %
 \glossentry{omega}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{xxi}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{xxiii}}}%
+		\setentrycounter[]{page}\glsnumberformat{xix}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{xxi}}}%
 \end{theglossary}\glossarypostamble
