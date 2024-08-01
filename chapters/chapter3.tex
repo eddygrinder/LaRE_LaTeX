@@ -174,53 +174,23 @@ Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e 
 
 
 \subsection{Matriz LaRE}
-Encontradas as soluções de \textit{hardware} e \textit{software}, assim como as experiências a serem implementadas, partiu-se para o projecto dos circuitos.
+Encontradas as soluções de \textit{hardware} e \textit{software}, assim como as experiências a serem implementadas, partiu-se para o projecto da matriz.
 
-Mais uma vez, tomando como base o \acrshort{visir}, decidiu-se projectar uma matriz com a dimensão das placas a obedecerem às definidas pela consórcio \gls{pc/104} \cite{PC104}. Este consórcio definiu um padrão que se destaca pelo seu formato compacto e modular. As dimensões mecânicas das placas estão definidas no \textbf{referência ao datasheet}.
+Mais uma vez, tomando como base o \acrshort{visir}, como pode ser visto mais pormenor na Figura \ref{fig:visir104}, decidiu-se projectar uma matriz com a dimensão das placas a obedecerem às definidas pela consórcio \gls{pc/104} \cite{PC104}. Este consórcio definiu um padrão que se destaca pelo seu formato compacto e modular. As dimensões mecânicas das placas estão definidas no \textbf{referência ao datasheet - VER COPMO FAZER REFERÊNCIA}.
 
-Esta matriz, que inclui os circuitos definidos na Secção \ref{sec:solucaoproposta}, assim como a alimentação e as ligações ao \gls{RaspberryPI}, compõe as 5 experiências.
-
-Esta matriz é composta por 3 placas:
-\begin{itemize}
-    \item Alimentação:
-          \begin{itemize}
-              \item Transformador;
-              \item Fonte de tensão de \SI{5}{\volt};
-          \end{itemize}
-    \item Circuito da Lei de Ohm;
-    \item Circuitos de Rectificação e filtros:
-          \begin{itemize}
-              \item Rectificação de meia onda;
-              \item Rectificação de onda completa;
-              \item Filtro passa-baixo;
-              \item filtro passa-alto.
-          \end{itemize}
-\end{itemize}
-
-
-
-Toda a informação relevante referente à Matriz encontra-se no \textit{datasheet} em anexo. [\textbf{Confirmar as referências e local da aprsentação do datasheet}]
-
-\subsection{Objectivos}
-\subsection{Análise de alternativas/razões das opções}
-\textbf{Eventualmente já foram abordadas as escolhas do software e hardware no contexto}
-
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/promenorvisirISEP.png}
+    \caption{Placas PC/104 do \acrshort{visir} - \acrshort{isep} - \textbf{Foto com melhor qualidade}}
+    \label{fig:visir104}
+\end{figure}
 
 \subsection{RaspberryPI}
 Como já foi referido na Secção \ref{sec:contextualização}, a ideia inicial passava por utilizar o \gls{RaspberryPI} como servidor e como controlador dos relés, no fundo desempenhando as funções de \acrshort{rlms}.
 
-Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \textit{RaspberryPI}\footnote{Doravante, sempre que for referido \textit{RaspberryPI}, subentende-se a versão 5.}.
+Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \textit{RaspberryPI}\footnote{Doravante, sempre que for referido \textit{RaspberryPI}5, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão 5.
 
-As principais diferenças de \textit{hardware} entre a versão 5 e a 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. Estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
-
-\textbf{Referência aos pinos no datasheet?}
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/pi5_dissipador.png}
-    \caption{\textit{Raspberry PI5} com dissipador activo utilizado no \acrshort{lare}}
-    \label{fig:pi5dissipador}
-\end{figure}
+Esta versão traz várias melhorias e novos recursos, sendo que as principais diferenças de \textit{hardware} para a versão 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. No entanto, estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento activo \cite{Raspberrytech}. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
 
 \begin{table}[htb]
     \centering
@@ -240,6 +210,29 @@ As principais diferenças de \textit{hardware} entre a versão 5 e a 4B estão r
         \bottomrule
     \end{tabular}
 \end{table}
+
+Comum às versões anteriores, o \gls{RaspberryPI} possui um conector de 40 pinos denominados \acrfull{gpio}s, como se pode ver na Figura \ref{fig:gpio}.
+
+
+REFERIR O QUE SÃO GPIOS
+
+que podem ser usados para controlar relés, sensores, motores, etc. Estes pinos são alimentados a \SI{3.3}{\volt} e podem fornecer uma corrente máxima de \SI{16}{\milli\ampere} por pino. A corrente total fornecida por todos os pinos não deve exceder os \SI{272}{\milli\ampere} \cite{Raspberrytech}.
+
+\textbf{Referência aos pinos no datasheet?}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/GPIO-Pinout-Diagram-2.png}
+    \caption{\acrshort{gpio}s \textit{RaspberryPI} \cite{Raspberrytech}}
+    \label{fig:bpio}
+\end{figure}
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/pi5_dissipador.png}
+    \caption{\textit{Raspberry PI5} com dissipador activo utilizado no \acrshort{lare}}
+    \label{fig:pi5dissipador}
+\end{figure}
 
 \subsection{Relés}
 Os relés utilizados estavam disponíveis em contexto laboratorial e são em tudo idênticos aos que se encontram montados no \acrshort{visir}  do \acrshort{isep}.
