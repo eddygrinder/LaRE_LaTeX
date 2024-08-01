@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  1 AUG 2024 20:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  1 AUG 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -116,13 +116,7 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 )
 Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
-) (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrhack.sty
-Package: scrhack 2023/07/07 v3.41 KOMA-Script package (hacking other packages)
- (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
-) (c:/texlive/2024/texmf-dist/tex/latex/xpatch/xpatch.sty
-Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
-)) (c:/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty
+) (c:/texlive/2024/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \LTleft=\skip51
 \LTright=\skip52
@@ -315,9 +309,6 @@ package with kernel methods
 \c@Item=\count292
 \c@Hfootnote=\count293
 )
-Package scrhack Info: hyperref hack deactivated because of
-(scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 200.
 Package hyperref Info: Driver (autodetected): hpdftex.
  (c:/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
@@ -336,8 +327,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip55
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 204.
-Package hyperref Info: Option `breaklinks' set `true' on input line 204.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 202.
+Package hyperref Info: Option `breaklinks' set `true' on input line 202.
  (c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count296
@@ -373,15 +364,6 @@ File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 210.
- (c:/texlive/2024/texmf-dist/tex/latex/koma-script/listings.hak
-File: listings.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package listings)
-
-
-Package scrhack Warning: unknown \lstlistoflistings definition found!
-(scrhack)                Maybe you are using a unsupported listings version.
-
-)
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
  (c:/texlive/2024/texmf-dist/tex/latex/datetime2/datetime2.sty
 Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
@@ -660,7 +642,25 @@ Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count369
 \c@@ppsavesec=\count370
 \c@@ppsaveapp=\count371
+) (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrhack.sty
+Package: scrhack 2023/07/07 v3.41 KOMA-Script package (hacking other packages)
+ (c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+) (c:/texlive/2024/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 )
+Package scrhack Info: hyperref hack deactivated because of
+(scrhack)             detection of hyperref version, that doesn't
+(scrhack)             need that hack, on input line 162.
+Package scrhack Info: loading listings hack on input line 185.
+ (c:/texlive/2024/texmf-dist/tex/latex/koma-script/listings.hak
+File: listings.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package listings)
+
+
+Package scrhack Warning: unknown \lstlistoflistings definition found!
+(scrhack)                Maybe you are using a unsupported listings version.
+
+))
 \c@theorem=\count372
 \c@corollary=\count373
 \c@lemma=\count374
@@ -811,29 +811,6 @@ File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks52
 \c@AM@survey=\count394
 \AM@templatesizebox=\box81
-) (c:/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2023/05/20 line numbers on paragraphs v5.3
-\linenopenalty=\count395
-\output=\toks53
-\linenoprevgraf=\count396
-\linenumbersep=\dimen278
-\linenumberwidth=\dimen279
-\c@linenumber=\count397
-\c@pagewiselinenumber=\count398
-\c@LN@truepage=\count399
-\c@internallinenumber=\count400
-\c@internallinenumbers=\count401
-\quotelinenumbersep=\dimen280
-\bframerule=\dimen281
-\bframesep=\dimen282
-\bframebox=\box82
-\linenoamsmath@ams@eqpen=\count402
-
-
-LaTeX Warning: Command \@parboxrestore  has changed.
-               Check if current package is valid.
-
-LaTeX Info: Redefining \\ on input line 3180.
 ) (c:/texlive/2024/texmf-dist/tex/latex/breakurl/breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
  (c:/texlive/2024/texmf-dist/tex/generic/iftex/ifpdf.sty
@@ -848,9 +825,9 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count403
-\l__lipsum_a_int=\count404
-\l__lipsum_b_int=\count405
+\g__lipsum_par_int=\count395
+\l__lipsum_a_int=\count396
+\l__lipsum_b_int=\count397
  (c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)))
 runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed safely (allowed).
 
@@ -903,17 +880,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count406
-\scratchdimen=\dimen283
-\scratchbox=\box83
-\nofMPsegments=\count407
-\nofMParguments=\count408
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count409
-\MPscratchDim=\dimen284
-\MPnumerator=\count410
-\makeMPintoPDFobject=\count411
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count398
+\scratchdimen=\dimen278
+\scratchbox=\box82
+\nofMPsegments=\count399
+\nofMParguments=\count400
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count401
+\MPscratchDim=\dimen279
+\MPnumerator=\count402
+\makeMPintoPDFobject=\count403
+\everyMPtoPDFconversion=\toks54
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -931,7 +908,7 @@ Package hyperref Info: Link coloring OFF on input line 50.
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
-\c@lstlisting=\count412
+\c@lstlisting=\count404
 Package tocbasic Info: setting babel extension for `lol' on input line 50.
 Package translations Info: no dictionary file `translations-basic-dictionary-portuges.trsl' found. on input line 50.
 Package scrbase Info: activating portuguese \reftocname on input line 50.
@@ -999,7 +976,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
  (./front/title.tex
 1: section
-<front/ISEP_logo.jpg, id=281, 730.6497pt x 278.2395pt>
+<front/ISEP_logo.jpg, id=285, 730.6497pt x 278.2395pt>
 File: front/ISEP_logo.jpg Graphic file (type jpg)
 <use front/ISEP_logo.jpg>
 Package pdftex.def Info: front/ISEP_logo.jpg  used on input line 6.
@@ -1150,7 +1127,7 @@ l.5 \tableofcontents
 pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...{3.4.1}VirtualBench}{53}{subsection.3.4.1}
+l.32 ...numberline {3.5}Hardware}{54}{section.3.5}
                                                   % [5])
 \tf@toc=\write8
 \openout8 = `main.toc'.
@@ -1160,101 +1137,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has 
 <to be read again> 
                    \relax 
 l.11 \listoffigures
-                    			% Prints the list of figures [6] (./main.lof
-
-LaTeX Warning: Citation `zutinlab2go' on page vii undefined on input line 6.
-
-
-LaTeX Warning: Citation `HERADIO20161' on page vii undefined on input line 7.
-
-
-LaTeX Warning: Citation `falstad' on page vii undefined on input line 13.
-
-
-LaTeX Warning: Citation `diesel' on page vii undefined on input line 16.
-
-
-LaTeX Warning: Citation `arquitecturaisa' on page vii undefined on input line 17.
-
-
-LaTeX Warning: Citation `tawfikexperiences' on page vii undefined on input line 21.
-
-
-LaTeX Warning: Citation `PXI-1033' on page vii undefined on input line 23.
-
-
-LaTeX Warning: Citation `PXI-5114' on page vii undefined on input line 24.
-
-
-LaTeX Warning: Citation `PXI-5402' on page vii undefined on input line 25.
-
-
-LaTeX Warning: Citation `PXI-4072' on page vii undefined on input line 26.
-
-
-LaTeX Warning: Citation `PXI-4110' on page vii undefined on input line 27.
-
-
-LaTeX Warning: Citation `matriz' on page vii undefined on input line 28.
-
-
-LaTeX Warning: Citation `ArduinoMega' on page vii undefined on input line 30.
-
-
-LaTeX Warning: Citation `ESPDevKit' on page vii undefined on input line 31.
-
-
-LaTeX Warning: Citation `introRaspberrypi5' on page vii undefined on input line 32.
-
-
-LaTeX Warning: Citation `datasheetVirtualBench' on page vii undefined on input line 35.
-
-
-LaTeX Warning: Citation `datasheetVirtualBench' on page vii undefined on input line 36.
-
-1: section
-
+                    			% Prints the list of figures [6]
 pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ... \acrshort {lare}}}{56}{figure.caption.57}
-                                                  % [7
-
-]
-
-LaTeX Warning: Citation `DryRelay' on page viii undefined on input line 40.
-
-
-LaTeX Warning: Citation `ULN2003' on page viii undefined on input line 41.
-
-
-LaTeX Warning: Citation `SN74HC595' on page viii undefined on input line 42.
-
-)
-\tf@lof=\write9
-\openout9 = `main.lof'.
-
-
+l.11 \listoffigures
+                    			% Prints the list of figures [7]
 pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 \listoftables
-                   			% Prints the list of tables [8] (./main.lot
+l.11 \listoffigures
+                    			% Prints the list of figures [8
 
-LaTeX Warning: Citation `Raspberrypi5' on page ix undefined on input line 7.
+] (./main.lof
+1: section
+[9])
+\tf@lof=\write9
+\openout9 = `main.lof'.
 
-
-LaTeX Warning: Citation `SN74HC595' on page ix undefined on input line 8.
-
-)
+ [10] (./main.lot)
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
 
 1: section
-[9
+[11
 
-] [10
+] [12
 
 ] (./main.lol)
 \tf@lol=\write11
@@ -1262,51 +1171,25 @@ LaTeX Warning: Citation `SN74HC595' on page ix undefined on input line 8.
 
  (./main.gls
 1: section
-[11] [12
-
-]
-
-LaTeX Warning: Citation `arduino' on page xiii undefined on input line 9.
-
-
-LaTeX Warning: Citation `matias' on page xiii undefined on input line 14.
-
-
-LaTeX Warning: Citation `industry4.0' on page xiii undefined on input line 23.
-
-1: section
-[13
-
-]
-
-LaTeX Warning: Citation `ThePython' on page xiv undefined on input line 29.
-
-
-LaTeX Warning: Citation `pifoundation' on page xiv undefined on input line 36.
-
-
-LaTeX Warning: Citation `Raspberrypi' on page xiv undefined on input line 36.
-
-
-LaTeX Warning: Citation `matias' on page xiv undefined on input line 39.
-
-[14]
-
-LaTeX Warning: Citation `matias' on page xv undefined on input line 42.
-
-) (./main.acr [15] [16
+[13] [14
 
 ]
 1: section
-[17
+[15
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [18]) (./main.syi [19] [20
+] [16]) (./main.acr [17] [18
+
+]
+1: section
+[19
+
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [20]) (./main.syi [21] [22
 
 ]))
 1: section
-[21
+[23
 
-{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [22
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [24
 
 
 
@@ -1316,18 +1199,6 @@ LaTeX Warning: Citation `matias' on page xv undefined on input line 42.
 
 (./chapters/chapter1.tex
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Citation `Hofstein' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Citation `BRINSON2015218' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Citation `feisel' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Citation `CORTER20112054' on page 1 undefined on input line 19.
-
 1: section
 [1
 
@@ -1337,11 +1208,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 23.
-
-
-LaTeX Warning: Citation `visirisep' on page 2 undefined on input line 24.
-
-[2]) [3]
+ [2]) [3]
 \openout2 = `chapters/chapter2.aux'.
 
  (./chapters/chapter2.tex [4
@@ -1351,795 +1218,167 @@ LaTeX Warning: Citation `visirisep' on page 2 undefined on input line 24.
 
 ]
 Cap\'{\i }tulo 2.
-
-LaTeX Warning: Citation `jaycross' on page 5 undefined on input line 24.
-
 1: section
-[5]
-
-LaTeX Warning: Citation `oecd_using_2021' on page 6 undefined on input line 28.
-
-
-LaTeX Warning: Citation `transicaodigital' on page 6 undefined on input line 28.
-
-
-LaTeX Warning: Citation `capacitacaodigital' on page 6 undefined on input line 28.
-
-
-LaTeX Warning: Citation `TheDigitransf' on page 6 undefined on input line 30.
-
-
-LaTeX Warning: Citation `TheDigitransf' on page 6 undefined on input line 31.
-
-
-LaTeX Warning: Citation `DESI2020' on page 6 undefined on input line 32.
-
-
-LaTeX Warning: Citation `DESI2020' on page 6 undefined on input line 36.
-
-[6]
-
-LaTeX Warning: Citation `DESI2020' on page 7 undefined on input line 38.
-
-
-LaTeX Warning: Citation `impactocovideducacao' on page 7 undefined on input line 39.
-
-
-LaTeX Warning: Citation `impactocovideducacao' on page 7 undefined on input line 39.
-
-
-LaTeX Warning: Citation `unesco' on page 7 undefined on input line 45.
-
-[7]
-
-LaTeX Warning: Citation `entregacomputadores' on page 8 undefined on input line 47.
-
-
-LaTeX Warning: Citation `oecd_state_2021' on page 8 undefined on input line 61.
-
-
-LaTeX Warning: Citation `oecd_state_2021' on page 8 undefined on input line 65.
-
-[8]
-
-LaTeX Warning: Citation `impactonegativocovid' on page 9 undefined on input line 69.
-
-
-LaTeX Warning: Citation `IoT' on page 9 undefined on input line 76.
-
-
-LaTeX Warning: Citation `thestateofeducation' on page 9 undefined on input line 80.
-
-
-LaTeX Warning: Citation `Digitale13:online' on page 9 undefined on input line 88.
-
-
-LaTeX Warning: Citation `DESI2020' on page 9 undefined on input line 89.
-
-[9]
-
-LaTeX Warning: Citation `Transicaodigitalprr' on page 10 undefined on input line 93.
-
-
-LaTeX Warning: Citation `incode2030' on page 10 undefined on input line 95.
-
-
-LaTeX Warning: Citation `escoladigital' on page 10 undefined on input line 96.
-
-
+[5] [6] [7] [8] [9]
 Overfull \hbox (15.4207pt too wide) in paragraph at lines 100--103
 [][]\T1/lmr/bx/n/10.95 VERITICAR O EN-QUA-DRA-MENTTO DO PA-R�-GRAFO SE-GUINTE[]
  []
 
-[10]
-
-LaTeX Warning: Citation `EvaluationRemoteVirtualE-Learning' on page 11 undefined on input line 104.
-
-
-LaTeX Warning: Citation `jaycross' on page 11 undefined on input line 122.
-
-
-LaTeX Warning: Citation `eLearningenssup' on page 11 undefined on input line 124.
-
-
-LaTeX Warning: Citation `gomes_e-learning_2005' on page 11 undefined on input line 124.
-
-[11]
-
-LaTeX Warning: Citation `gomes_e-learning_2005' on page 12 undefined on input line 132.
-
-
-LaTeX Warning: Citation `comissao197_07' on page 12 undefined on input line 132.
-
-[12]
-
-LaTeX Warning: Citation `GlossaryUNESCO' on page 13 undefined on input line 148.
-
-
-LaTeX Warning: Citation `TheHidde2:online' on page 13 undefined on input line 150.
-
-
-LaTeX Warning: Citation `TTTSTEMA77:online' on page 13 undefined on input line 152.
-
-[13]
-
-LaTeX Warning: Citation `pisa2018' on page 14 undefined on input line 164.
-
-
-LaTeX Warning: Citation `Oquefalt37:online' on page 14 undefined on input line 164.
-
-
-LaTeX Warning: Citation `Faltadei99:online' on page 14 undefined on input line 164.
-
-
-LaTeX Warning: Citation `Odesinve56:online' on page 14 undefined on input line 164.
-
-
-LaTeX Warning: Citation `EDUSTATP20:online' on page 14 undefined on input line 164.
-
-
-LaTeX Warning: Citation `Portugal69:online' on page 14 undefined on input line 164.
-
-
-LaTeX Warning: Citation `Qualific91:online' on page 14 undefined on input line 170.
-
-
-LaTeX Warning: Citation `desigualdadespandemia' on page 14 undefined on input line 176.
-
-
-LaTeX Warning: Citation `efeitospandemiadigital' on page 14 undefined on input line 176.
-
-[14]
-
-LaTeX Warning: Citation `virtuallabng' on page 15 undefined on input line 180.
-
-
-LaTeX Warning: Citation `virtuallabng' on page 15 undefined on input line 188.
-
-
-LaTeX Warning: Citation `dificuldadesfinanciamento' on page 15 undefined on input line 195.
-
-
-LaTeX Warning: Citation `Financiamentoprofissional' on page 15 undefined on input line 195.
-
-
-LaTeX Warning: Citation `Educacaofinanciamento' on page 15 undefined on input line 195.
-
-[15]
-
-LaTeX Warning: Citation `Cerdeira2020' on page 16 undefined on input line 234.
-
-
-LaTeX Warning: Citation `Hofstein' on page 16 undefined on input line 267.
-
-
-LaTeX Warning: Citation `Hofstein' on page 16 undefined on input line 267.
-
-
-LaTeX Warning: Citation `Hofstein' on page 16 undefined on input line 269.
-
-[16]
-
-LaTeX Warning: Citation `Hofstein' on page 17 undefined on input line 286.
-
-
-LaTeX Warning: Citation `BRINSON2015218' on page 17 undefined on input line 288.
-
-
-LaTeX Warning: Citation `BRINSON2015218' on page 17 undefined on input line 288.
-
-
-LaTeX Warning: Citation `anqep' on page 17 undefined on input line 290.
-
-[17]
+[10] [11] [12] [13] [14] [15] [16] [17]
 Overfull \hbox (9.60844pt too wide) in paragraph at lines 292--293
 [][][][][][][] 
  []
 
-
-LaTeX Warning: Citation `ImpactRemoteLabTeachingPractices' on page 18 undefined on input line 301.
-
-
-LaTeX Warning: Citation `developremotelabs' on page 18 undefined on input line 301.
-
-
-LaTeX Warning: Citation `HERADIO20161' on page 18 undefined on input line 301.
-
-
-LaTeX Warning: Citation `POTKONJAK2016309' on page 18 undefined on input line 301.
-
-
-LaTeX Warning: Citation `Hofsteinfoundations' on page 18 undefined on input line 309.
-
-
-LaTeX Warning: Citation `BRINSON2015218' on page 18 undefined on input line 311.
-
-
-LaTeX Warning: Citation `ImpactRemoteLabTeachingPractices' on page 18 undefined on input line 311.
-
-
-LaTeX Warning: Citation `Hofsteinfoundations' on page 18 undefined on input line 311.
-
 [18]
-
-LaTeX Warning: Citation `zutinlab2go' on page 19 undefined on input line 315.
-
-
-LaTeX Warning: Citation `Zapata-Rivera' on page 19 undefined on input line 315.
-
-<figures/carac_lab.png, id=937, 571.13374pt x 442.65375pt>
+<figures/carac_lab.png, id=1125, 571.13374pt x 442.65375pt>
 File: figures/carac_lab.png Graphic file (type png)
 <use figures/carac_lab.png>
 Package pdftex.def Info: figures/carac_lab.png  used on input line 319.
 (pdftex.def)             Requested size: 258.91766pt x 200.67154pt.
-
-LaTeX Warning: Citation `zutinlab2go' on page 19 undefined on input line 320.
-
-
-LaTeX Warning: Citation `zutinlab2go' on page 19 undefined on input line 320.
-
-
-LaTeX Warning: Citation `HERADIO20161' on page 19 undefined on input line 324.
-
-<figures/caracteristica_laboratories.jpg, id=939, 250.06699pt x 156.05203pt>
+<figures/caracteristica_laboratories.jpg, id=1130, 250.06699pt x 156.05203pt>
 File: figures/caracteristica_laboratories.jpg Graphic file (type jpg)
 <use figures/caracteristica_laboratories.jpg>
 Package pdftex.def Info: figures/caracteristica_laboratories.jpg  used on input line 328.
 (pdftex.def)             Requested size: 258.91766pt x 161.57591pt.
-
-LaTeX Warning: Citation `HERADIO20161' on page 19 undefined on input line 329.
-
-
-LaTeX Warning: Citation `HERADIO20161' on page 19 undefined on input line 329.
-
-
-LaTeX Warning: Citation `zutinlab2go' on page 19 undefined on input line 333.
-
-
-LaTeX Warning: Citation `Zapata-Rivera' on page 19 undefined on input line 336.
-
-[19 <./figures/carac_lab.png>]
-
-LaTeX Warning: Citation `HERADIO20161' on page 20 undefined on input line 343.
-
-
-LaTeX Warning: Citation `BRINSON2015218' on page 20 undefined on input line 359.
-
-
-LaTeX Warning: Citation `virtuallabng' on page 20 undefined on input line 359.
-
-
-LaTeX Warning: Citation `EMaster2024May' on page 20 undefined on input line 359.
-
-[20 <./figures/caracteristica_laboratories.jpg>]
-<figures/tinkercad_exemplo.png, id=966, 1570.86874pt x 870.25125pt>
+ [19 <./figures/carac_lab.png>] [20 <./figures/caracteristica_laboratories.jpg>]
+<figures/tinkercad_exemplo.png, id=1165, 1570.86874pt x 870.25125pt>
 File: figures/tinkercad_exemplo.png Graphic file (type png)
 <use figures/tinkercad_exemplo.png>
 Package pdftex.def Info: figures/tinkercad_exemplo.png  used on input line 369.
 (pdftex.def)             Requested size: 172.07956pt x 95.32956pt.
-<figures/Astável-schematic.png, id=969, 619.31375pt x 599.23875pt>
+<figures/Astável-schematic.png, id=1168, 619.31375pt x 599.23875pt>
 File: figures/Astável-schematic.png Graphic file (type png)
 <use figures/Astável-schematic.png>
 Package pdftex.def Info: figures/Astável-schematic.png  used on input line 374.
 (pdftex.def)             Requested size: 172.07956pt x 166.5056pt.
-
-
-LaTeX Warning: Citation `faina' on page 21 undefined on input line 383.
-
-
-LaTeX Warning: Citation `faina' on page 21 undefined on input line 383.
-
-
-LaTeX Warning: Citation `Knorig2009Feb' on page 21 undefined on input line 383.
-
-<figures/AnalogInputToServo_bb.png, id=974, 479.12334pt x 341.54266pt>
+<figures/AnalogInputToServo_bb.png, id=1176, 479.12334pt x 341.54266pt>
 File: figures/AnalogInputToServo_bb.png Graphic file (type png)
 <use figures/AnalogInputToServo_bb.png>
 Package pdftex.def Info: figures/AnalogInputToServo_bb.png  used on input line 387.
 (pdftex.def)             Requested size: 358.5023pt x 255.57268pt.
-
-LaTeX Warning: Citation `EvaluatingLearningExperiencesVirtualLaboratoryHongKong' on page 21 undefined on input line 392.
-
-[21 <./figures/tinkercad_exemplo.png (PNG copy)> <./figures/Astável-schematic.png>]
-
-LaTeX Warning: Citation `multisimVLHeying' on page 22 undefined on input line 394.
-
-
-LaTeX Warning: Citation `multisimVLUmenne' on page 22 undefined on input line 394.
-
-
-LaTeX Warning: Citation `multisim' on page 22 undefined on input line 394.
-
-
+ [21 <./figures/tinkercad_exemplo.png (PNG copy)> <./figures/Astável-schematic.png>]
 Overfull \hbox (5.5119pt too wide) in paragraph at lines 397--399
 \T1/lmr/bx/n/10.95 link para n�o es-que-cer \T1/lmr/m/n/10.95 https://digital.dge.mec.pt/laboratorios-de-educacao-digital 
  []
 
-[22 <./figures/AnalogInputToServo_bb.png>]
-
-LaTeX Warning: Citation `PaperTit40:online' on page 23 undefined on input line 404.
-
-
-LaTeX Warning: Citation `PaperTit40:online' on page 23 undefined on input line 406.
-
-
-LaTeX Warning: Citation `Reduçãod55:online' on page 23 undefined on input line 409.
-
-
-LaTeX Warning: Citation `Faltadei99:online' on page 23 undefined on input line 410.
-
-
-LaTeX Warning: Citation `Odesinve56:online' on page 23 undefined on input line 410.
-
-
-LaTeX Warning: Citation `EDUSTATP20:online' on page 23 undefined on input line 410.
-
-
-LaTeX Warning: Citation `Faltaded39:online' on page 23 undefined on input line 412.
-
-
-LaTeX Warning: Citation `roboparty' on page 23 undefined on input line 418.
-
-
-LaTeX Warning: Citation `fnr' on page 23 undefined on input line 418.
-
-
-LaTeX Warning: Citation `cansat' on page 23 undefined on input line 418.
-
-[23]
-
-LaTeX Warning: Citation `yoder' on page 24 undefined on input line 425.
-
-
-LaTeX Warning: Citation `graven' on page 24 undefined on input line 427.
-
-
-LaTeX Warning: Citation `plaza' on page 24 undefined on input line 427.
-
-
-LaTeX Warning: Citation `Marzoli' on page 24 undefined on input line 429.
-
-
-LaTeX Warning: Citation `Marzoli' on page 24 undefined on input line 430.
-
-<figures/nx-4i.jpg, id=1007, 903.375pt x 903.375pt>
+[22 <./figures/AnalogInputToServo_bb.png>] [23]
+<figures/nx-4i.jpg, id=1239, 903.375pt x 903.375pt>
 File: figures/nx-4i.jpg Graphic file (type jpg)
 <use figures/nx-4i.jpg>
 Package pdftex.def Info: figures/nx-4i.jpg  used on input line 439.
 (pdftex.def)             Requested size: 172.07956pt x 172.07034pt.
-<figures/image-1.png, id=1010, 610.28pt x 407.5225pt>
+<figures/image-1.png, id=1242, 610.28pt x 407.5225pt>
 File: figures/image-1.png Graphic file (type png)
 <use figures/image-1.png>
 Package pdftex.def Info: figures/image-1.png  used on input line 444.
 (pdftex.def)             Requested size: 172.07956pt x 114.90767pt.
-[24]
-
-LaTeX Warning: Citation `HERADIO20161' on page 25 undefined on input line 464.
-
-
-LaTeX Warning: Citation `POTKONJAK2016309' on page 25 undefined on input line 464.
-
-
-LaTeX Warning: Citation `multisim' on page 25 undefined on input line 467.
-
-
-LaTeX Warning: Citation `tinkercad' on page 25 undefined on input line 469.
-
-
-LaTeX Warning: Citation `fritzingdown' on page 25 undefined on input line 469.
-
-<figures/Multisim_Desktop.png, id=1020, 1369.115pt x 696.6025pt>
+ [24]
+<figures/Multisim_Desktop.png, id=1264, 1369.115pt x 696.6025pt>
 File: figures/Multisim_Desktop.png Graphic file (type png)
 <use figures/Multisim_Desktop.png>
 Package pdftex.def Info: figures/Multisim_Desktop.png  used on input line 473.
 (pdftex.def)             Requested size: 358.5023pt x 182.39851pt.
-<figures/Multisim_ACsweep.png, id=1021, 1923.185pt x 941.5175pt>
+<figures/Multisim_ACsweep.png, id=1265, 1923.185pt x 941.5175pt>
 File: figures/Multisim_ACsweep.png Graphic file (type png)
 <use figures/Multisim_ACsweep.png>
 Package pdftex.def Info: figures/Multisim_ACsweep.png  used on input line 480.
 (pdftex.def)             Requested size: 358.5023pt x 175.49971pt.
-
-LaTeX Warning: Citation `WebBrowserSimulators' on page 25 undefined on input line 485.
-
-[25 <./figures/nx-4i.jpg> <./figures/image-1.png>] [26 <./figures/Multisim_Desktop.png (PNG copy)> <./figures/Multisim_ACsweep.png (PNG copy)>]
-
-LaTeX Warning: Reference `remotelaboratório' on page 27 undefined on input line 490.
-
-
-LaTeX Warning: Citation `scheckler' on page 27 undefined on input line 502.
-
-
-LaTeX Warning: Citation `lynch' on page 27 undefined on input line 502.
-
-
-LaTeX Warning: Citation `BlogeMas95' on page 27 undefined on input line 502.
-
-
-LaTeX Warning: Citation `vabtegensVL' on page 27 undefined on input line 502.
-
-
-LaTeX Warning: Citation `POTKONJAK2016309' on page 27 undefined on input line 505.
-
-
-LaTeX Warning: Citation `POTKONJAK2016309' on page 27 undefined on input line 505.
-
-
-LaTeX Warning: Citation `vabtegensVL' on page 27 undefined on input line 505.
-
-
-LaTeX Warning: Citation `Gherasim' on page 27 undefined on input line 505.
-
-
-LaTeX Warning: Citation `Ghergulescu2019Feb' on page 27 undefined on input line 505.
-
-[27]
-
-LaTeX Warning: Citation `multisim' on page 28 undefined on input line 507.
-
-
-LaTeX Warning: Citation `multisim' on page 28 undefined on input line 507.
-
-
-LaTeX Warning: Citation `multisim' on page 28 undefined on input line 508.
-
-
-LaTeX Warning: Citation `ImportantSimSoftware' on page 28 undefined on input line 510.
-
-
-LaTeX Warning: Citation `heying' on page 28 undefined on input line 519.
-
-
-LaTeX Warning: Citation `falstad' on page 28 undefined on input line 521.
-
-
-LaTeX Warning: Citation `falstadlicenca' on page 28 undefined on input line 521.
-
-
-LaTeX Warning: Citation `falstadcompleto' on page 28 undefined on input line 521.
-
-[28]
-
-LaTeX Warning: Citation `RemoteTeachingElectricalCircuits' on page 29 undefined on input line 523.
-
-
-LaTeX Warning: Citation `falstad' on page 29 undefined on input line 523.
-
-<figures/falstad.png, id=1060, 655.44875pt x 518.93875pt>
+ [25 <./figures/nx-4i.jpg> <./figures/image-1.png>] [26 <./figures/Multisim_Desktop.png (PNG copy)> <./figures/Multisim_ACsweep.png (PNG copy)>] [27] [28]
+<figures/falstad.png, id=1336, 655.44875pt x 518.93875pt>
 File: figures/falstad.png Graphic file (type png)
 <use figures/falstad.png>
 Package pdftex.def Info: figures/falstad.png  used on input line 537.
 (pdftex.def)             Requested size: 298.75395pt x 236.52925pt.
-
-LaTeX Warning: Citation `falstad' on page 29 undefined on input line 538.
-
-
-LaTeX Warning: Citation `falstad' on page 29 undefined on input line 538.
-
-
-LaTeX Warning: Citation `wokwi' on page 29 undefined on input line 546.
-
-
-LaTeX Warning: Citation `wokwi' on page 29 undefined on input line 546.
-
-[29]
-
-LaTeX Warning: Citation `RemoteLabsImpactVISIR' on page 30 undefined on input line 555.
-
-
-LaTeX Warning: Citation `ExperiencesRemoteLab' on page 30 undefined on input line 557.
-
-
-LaTeX Warning: Citation `RemoteLabsImpactVISIR' on page 30 undefined on input line 560.
-
-[30 <./figures/falstad.png>]
-
-LaTeX Warning: Citation `ImpactRemoteLabTeachingPractices' on page 31 undefined on input line 562.
-
-
-LaTeX Warning: Citation `BRINSON2015218' on page 31 undefined on input line 562.
-
-
-LaTeX Warning: Citation `CORTER20112054' on page 31 undefined on input line 562.
-
-
-LaTeX Warning: Citation `BRINSON2015218' on page 31 undefined on input line 562.
-
-
-LaTeX Warning: Citation `deMel' on page 31 undefined on input line 564.
-
-
-LaTeX Warning: Citation `StudyRemoteHandsonSimulatedLabs' on page 31 undefined on input line 566.
-
-
-LaTeX Warning: Citation `RealorVirtualDilema' on page 31 undefined on input line 566.
-
-
-LaTeX Warning: Citation `controversy' on page 31 undefined on input line 566.
-
-
-LaTeX Warning: Citation `VISIREngineeringPractices' on page 31 undefined on input line 568.
-
-
-LaTeX Warning: Citation `ExperiencesRemoteLaboratories' on page 31 undefined on input line 570.
-
-
-LaTeX Warning: Citation `ThemMnyfacesRemotLab' on page 31 undefined on input line 570.
-
-[31]
-
-LaTeX Warning: Citation `ExperiencesRemoteLab' on page 32 undefined on input line 575.
-
-
-LaTeX Warning: Citation `EvaluationRemoteVirtualE-Learning' on page 32 undefined on input line 581.
-
-
-LaTeX Warning: Citation `RemoteLabsImpactVISIR' on page 32 undefined on input line 581.
-
-
-LaTeX Warning: Citation `DevelopingVirtualAndRemoteUndergraduate' on page 32 undefined on input line 581.
-
-
-LaTeX Warning: Citation `RemoteLabsDevelopingCountries' on page 32 undefined on input line 581.
-
-
-LaTeX Warning: Citation `HERADIO20161' on page 32 undefined on input line 592.
-
-[32]
-<figures/kaluz.png, id=1109, 823.075pt x 517.935pt>
+ [29] [30 <./figures/falstad.png>] [31] [32]
+<figures/kaluz.png, id=1424, 823.075pt x 517.935pt>
 File: figures/kaluz.png Graphic file (type png)
 <use figures/kaluz.png>
 Package pdftex.def Info: figures/kaluz.png  used on input line 613.
 (pdftex.def)             Requested size: 298.75395pt x 187.99754pt.
- [33]
-
-LaTeX Warning: Citation `Kaluz' on page 34 undefined on input line 618.
-
-[34 <./figures/kaluz.png>]
-
-LaTeX Warning: Citation `FABREGAS20111686' on page 35 undefined on input line 629.
-
-<figures/sej.jpg, id=1142, 245.59009pt x 78.66557pt>
+ [33] [34 <./figures/kaluz.png>]
+<figures/sej.jpg, id=1460, 245.59009pt x 78.66557pt>
 File: figures/sej.jpg Graphic file (type jpg)
 <use figures/sej.jpg>
 Package pdftex.def Info: figures/sej.jpg  used on input line 632.
 (pdftex.def)             Requested size: 298.75395pt x 95.70415pt.
-
-LaTeX Warning: Citation `lazar' on page 35 undefined on input line 636.
-
-
-LaTeX Warning: Citation `FABREGAS20111686' on page 35 undefined on input line 636.
-
-
-LaTeX Warning: Citation `dormido' on page 35 undefined on input line 637.
-
-
-LaTeX Warning: Citation `FABREGAS20111686' on page 35 undefined on input line 637.
-
-
-LaTeX Warning: Citation `diesel' on page 35 undefined on input line 639.
-
-<figures/diesel.png, id=1154, 797.98125pt x 479.7925pt>
+<figures/diesel.png, id=1477, 797.98125pt x 479.7925pt>
 File: figures/diesel.png Graphic file (type png)
 <use figures/diesel.png>
 Package pdftex.def Info: figures/diesel.png  used on input line 642.
 (pdftex.def)             Requested size: 298.75395pt x 179.62889pt.
-
-LaTeX Warning: Citation `diesel' on page 35 undefined on input line 643.
-
-
-LaTeX Warning: Citation `diesel' on page 35 undefined on input line 643.
-
-[35 <./figures/sej.jpg>]
-
-LaTeX Warning: Citation `jacko' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation `Vocabulariog4l' on page 36 undefined on input line 651.
-
-
-LaTeX Warning: Citation `zutin' on page 36 undefined on input line 653.
-
-
-LaTeX Warning: Citation `harward' on page 36 undefined on input line 653.
-
-
-LaTeX Warning: Citation `arquitecturaisa' on page 36 undefined on input line 653.
-
-
-LaTeX Warning: Citation `zutinvisir' on page 36 undefined on input line 653.
-
-[36 <./figures/diesel.png (PNG copy)>]
-<figures/isa_architecture.png, id=1187, 501.875pt x 334.24875pt>
+ [35 <./figures/sej.jpg>] [36 <./figures/diesel.png (PNG copy)>]
+<figures/isa_architecture.png, id=1525, 501.875pt x 334.24875pt>
 File: figures/isa_architecture.png Graphic file (type png)
 <use figures/isa_architecture.png>
 Package pdftex.def Info: figures/isa_architecture.png  used on input line 657.
 (pdftex.def)             Requested size: 318.67209pt x 212.24559pt.
-
-
-LaTeX Warning: Citation `arquitecturaisa' on page 37 undefined on input line 658.
-
-
-LaTeX Warning: Citation `arquitecturaisa' on page 37 undefined on input line 658.
-
-<figures/local_architecture.png, id=1194, 2007.5pt x 1455.4375pt>
+<figures/local_architecture.png, id=1534, 2007.5pt x 1455.4375pt>
 File: figures/local_architecture.png Graphic file (type png)
 <use figures/local_architecture.png>
 Package pdftex.def Info: figures/local_architecture.png  used on input line 666.
 (pdftex.def)             Requested size: 298.75395pt x 216.59618pt.
-
-LaTeX Warning: Citation `wlddoc' on page 37 undefined on input line 673.
-
-[37 <./figures/isa_architecture.png> <./figures/local_architecture.png>]
-
-LaTeX Warning: Citation `Orduñag4l' on page 38 undefined on input line 676.
-
-
-LaTeX Warning: Citation `Orduñag4l' on page 38 undefined on input line 677.
-
-
-LaTeX Warning: Citation `g4ldocumentation' on page 38 undefined on input line 677.
-
-<figures/g4l_general_architecture.png, id=1212, 1690.315pt x 1345.025pt>
+<figures/g4l_general_architecture.png, id=1548, 1690.315pt x 1345.025pt>
 File: figures/g4l_general_architecture.png Graphic file (type png)
 <use figures/g4l_general_architecture.png>
 Package pdftex.def Info: figures/g4l_general_architecture.png  used on input line 680.
 (pdftex.def)             Requested size: 318.67209pt x 253.56664pt.
-[38 <./figures/g4l_general_architecture.png>]
-
-LaTeX Warning: Citation `Alves' on page 39 undefined on input line 687.
-
-
+ [37 <./figures/isa_architecture.png>]
 Overfull \hbox (0.2522pt too wide) in paragraph at lines 689--690
 []\T1/lmr/bx/n/10.95 - De-sen-vol-ver um pouco mais o con-ceito de ``FE-DE-RA-��O'' - PROF?? 
  []
 
-<figures/visirISEP.jpeg, id=1243, 1927.2pt x 1084.05pt>
+<figures/visirISEP.jpeg, id=1586, 1927.2pt x 1084.05pt>
 File: figures/visirISEP.jpeg Graphic file (type jpg)
 <use figures/visirISEP.jpeg>
 Package pdftex.def Info: figures/visirISEP.jpeg  used on input line 697.
 (pdftex.def)             Requested size: 298.75395pt x 168.04256pt.
-
-LaTeX Warning: Citation `RemoteLabsImpactVISIR' on page 39 undefined on input line 702.
-
-
-LaTeX Warning: Citation `VISIRExperiencesChallenges' on page 39 undefined on input line 702.
-
-
-LaTeX Warning: Citation `OpenLabs77:online' on page 39 undefined on input line 704.
-
-[39 <./figures/visirISEP.jpeg>]
-
-LaTeX Warning: Citation `PILARFederationVISIR' on page 40 undefined on input line 706.
-
-
-LaTeX Warning: Citation `TheVISIRproject' on page 40 undefined on input line 708.
-
-
-LaTeX Warning: Citation `tawfikexperiences' on page 40 undefined on input line 710.
-
-<figures/arquitectura_VISIR.png, id=1279, 853.1875pt x 461.725pt>
+[38 <./figures/local_architecture.png>] [39 <./figures/g4l_general_architecture.png> <./figures/visirISEP.jpeg>]
+<figures/arquitectura_VISIR.png, id=1635, 853.1875pt x 461.725pt>
 File: figures/arquitectura_VISIR.png Graphic file (type png)
 <use figures/arquitectura_VISIR.png>
 Package pdftex.def Info: figures/arquitectura_VISIR.png  used on input line 720.
 (pdftex.def)             Requested size: 298.75395pt x 161.68367pt.
-
-LaTeX Warning: Citation `tawfikexperiences' on page 40 undefined on input line 721.
-
-
-LaTeX Warning: Citation `tawfikexperiences' on page 40 undefined on input line 721.
-
-<figures/protboard_visir.png, id=1282, 813.0375pt x 518.93875pt>
+<figures/protboard_visir.png, id=1640, 813.0375pt x 518.93875pt>
 File: figures/protboard_visir.png Graphic file (type png)
 <use figures/protboard_visir.png>
 Package pdftex.def Info: figures/protboard_visir.png  used on input line 727.
 (pdftex.def)             Requested size: 298.75395pt x 190.68196pt.
-
-LaTeX Warning: Citation `PXI-1033' on page 40 undefined on input line 732.
-
-<figures/PXI-1033.png, id=1288, 524.96124pt x 354.32375pt>
+ [40] [41 <./figures/arquitectura_VISIR.png (PNG copy)> <./figures/protboard_visir.png>]
+<figures/PXI-1033.png, id=1661, 524.96124pt x 354.32375pt>
 File: figures/PXI-1033.png Graphic file (type png)
 <use figures/PXI-1033.png>
 Package pdftex.def Info: figures/PXI-1033.png  used on input line 736.
 (pdftex.def)             Requested size: 298.75395pt x 201.65305pt.
-
-LaTeX Warning: Citation `PXI-1033' on page 40 undefined on input line 737.
-
-
-LaTeX Warning: Citation `PXI-1033' on page 40 undefined on input line 737.
-
-<figures/PXI-5114.png, id=1291, 524.96124pt x 487.8225pt>
+<figures/PXI-5114.png, id=1666, 524.96124pt x 487.8225pt>
 File: figures/PXI-5114.png Graphic file (type png)
 <use figures/PXI-5114.png>
 Package pdftex.def Info: figures/PXI-5114.png  used on input line 746.
 (pdftex.def)             Requested size: 298.75395pt x 277.62999pt.
-
-LaTeX Warning: Citation `PXI-5114' on page 40 undefined on input line 747.
-
-
-LaTeX Warning: Citation `PXI-5114' on page 40 undefined on input line 747.
-
-<figures/PXI-5402.png, id=1293, 524.96124pt x 382.42876pt>
+<figures/PXI-5402.png, id=1670, 524.96124pt x 382.42876pt>
 File: figures/PXI-5402.png Graphic file (type png)
 <use figures/PXI-5402.png>
 Package pdftex.def Info: figures/PXI-5402.png  used on input line 753.
 (pdftex.def)             Requested size: 298.75395pt x 217.6482pt.
-
-LaTeX Warning: Citation `PXI-5402' on page 40 undefined on input line 754.
-
-
-LaTeX Warning: Citation `PXI-5402' on page 40 undefined on input line 754.
-
-<figures/PXI-4072.png, id=1295, 803.0pt x 935.495pt>
+<figures/PXI-4072.png, id=1674, 803.0pt x 935.495pt>
 File: figures/PXI-4072.png Graphic file (type png)
 <use figures/PXI-4072.png>
 Package pdftex.def Info: figures/PXI-4072.png  used on input line 760.
 (pdftex.def)             Requested size: 239.00558pt x 278.43811pt.
-
-LaTeX Warning: Citation `PXI-4072' on page 40 undefined on input line 761.
-
-
-LaTeX Warning: Citation `PXI-4072' on page 40 undefined on input line 761.
-
-[40] [41 <./figures/arquitectura_VISIR.png (PNG copy)> <./figures/protboard_visir.png> <./figures/PXI-1033.png>] [42 <./figures/PXI-5114.png> <./figures/PXI-5402.png>]
-<figures/PXI-4110.png, id=1313, 542.025pt x 556.0775pt>
+<figures/PXI-4110.png, id=1678, 542.025pt x 556.0775pt>
 File: figures/PXI-4110.png Graphic file (type png)
 <use figures/PXI-4110.png>
 Package pdftex.def Info: figures/PXI-4110.png  used on input line 767.
 (pdftex.def)             Requested size: 278.8358pt x 286.07341pt.
-
-
-LaTeX Warning: Citation `PXI-4110' on page 43 undefined on input line 768.
-
-
-LaTeX Warning: Citation `PXI-4110' on page 43 undefined on input line 768.
-
-
-LaTeX Warning: Citation `matriz' on page 43 undefined on input line 773.
-
-<figures/matriz.png, id=1330, 1061.9675pt x 768.8725pt>
+<figures/matriz.png, id=1698, 1061.9675pt x 768.8725pt>
 File: figures/matriz.png Graphic file (type png)
 <use figures/matriz.png>
 Package pdftex.def Info: figures/matriz.png  used on input line 777.
 (pdftex.def)             Requested size: 278.8358pt x 201.87311pt.
-
-LaTeX Warning: Citation `matriz' on page 43 undefined on input line 778.
-
-
-LaTeX Warning: Citation `matriz' on page 43 undefined on input line 778.
-
-
-LaTeX Warning: Citation `tawfikexperiences' on page 43 undefined on input line 782.
-
-
-LaTeX Warning: Citation `tawfikvisir' on page 43 undefined on input line 782.
-
-
-LaTeX Warning: Citation `pereira' on page 43 undefined on input line 782.
-
-[43 <./figures/PXI-4072.png>] [44 <./figures/PXI-4110.png> <./figures/matriz.png (PNG copy)>]
-
-LaTeX Warning: Citation `garcia-loro' on page 45 undefined on input line 789.
-
-
-LaTeX Warning: Citation `visirsig' on page 45 undefined on input line 791.
-
-
-LaTeX Warning: Citation `visirfederation' on page 45 undefined on input line 793.
-
-
-LaTeX Warning: Citation `visirfederation' on page 45 undefined on input line 795.
-
-
-LaTeX Warning: Citation `kreiter' on page 45 undefined on input line 806.
-
-[45]) [46]
+ [42 <./figures/PXI-1033.png>] [43 <./figures/PXI-5114.png> <./figures/PXI-5402.png>] [44 <./figures/PXI-4072.png> <./figures/PXI-4110.png>] [45 <./figures/matriz.png (PNG copy)>]) [46]
 \openout2 = `chapters/chapter3.aux'.
 
  (./chapters/chapter3.tex
 Cap\'{\i }tulo 3.
-
-LaTeX Warning: Citation `labviewpricing' on page 47 undefined on input line 15.
-
 1: section
 [47
 
@@ -2147,298 +1386,140 @@ LaTeX Warning: Citation `labviewpricing' on page 47 undefined on input line 15.
 
 
 ]
-<figures/arduinomega.png, id=1399, 1003.75pt x 752.8125pt>
+<figures/arduinomega.png, id=1792, 1003.75pt x 752.8125pt>
 File: figures/arduinomega.png Graphic file (type png)
 <use figures/arduinomega.png>
 Package pdftex.def Info: figures/arduinomega.png  used on input line 23.
 (pdftex.def)             Requested size: 239.00558pt x 179.2543pt.
-
-
-LaTeX Warning: Citation `ArduinoMega' on page 48 undefined on input line 24.
-
-
-LaTeX Warning: Citation `ArduinoMega' on page 48 undefined on input line 24.
-
-
-LaTeX Warning: Citation `Flask' on page 48 undefined on input line 32.
-
-
-LaTeX Warning: Citation `Arduinopython' on page 48 undefined on input line 35.
-
-
-LaTeX Warning: Citation `MicroPythondefinition' on page 48 undefined on input line 35.
-
-
-LaTeX Warning: Citation `megadatasheet' on page 48 undefined on input line 35.
-
-[48 <./figures/arduinomega.png (PNG copy)>]
-
-LaTeX Warning: Citation `esp32datasheet' on page 49 undefined on input line 38.
-
-
-LaTeX Warning: Citation `diferencaspython' on page 49 undefined on input line 38.
-
-<figures/ESP32-DevKitC_L_0.png, id=1434, 1003.75pt x 1505.625pt>
+ [48 <./figures/arduinomega.png (PNG copy)>]
+<figures/ESP32-DevKitC_L_0.png, id=1838, 1003.75pt x 1505.625pt>
 File: figures/ESP32-DevKitC_L_0.png Graphic file (type png)
 <use figures/ESP32-DevKitC_L_0.png>
 Package pdftex.def Info: figures/ESP32-DevKitC_L_0.png  used on input line 44.
 (pdftex.def)             Requested size: 159.33301pt x 238.99808pt.
-
-LaTeX Warning: Citation `ESPDevKit' on page 49 undefined on input line 45.
-
-
-LaTeX Warning: Citation `ESPDevKit' on page 49 undefined on input line 45.
-
-<figures/raspberrypi5.jpg, id=1439, 1027.84pt x 685.56125pt>
+<figures/raspberrypi5.jpg, id=1845, 1027.84pt x 685.56125pt>
 File: figures/raspberrypi5.jpg Graphic file (type jpg)
 <use figures/raspberrypi5.jpg>
 Package pdftex.def Info: figures/raspberrypi5.jpg  used on input line 53.
 (pdftex.def)             Requested size: 239.00558pt x 159.41226pt.
-
-LaTeX Warning: Citation `introRaspberrypi5' on page 49 undefined on input line 54.
-
-
-LaTeX Warning: Citation `introRaspberrypi5' on page 49 undefined on input line 54.
-
-[49 <./figures/ESP32-DevKitC_L_0.png>]
-
-LaTeX Warning: Citation `AutomatingVB' on page 50 undefined on input line 75.
-
-
-LaTeX Warning: Citation `pyvirtualbench' on page 50 undefined on input line 77.
-
-[50 <./figures/raspberrypi5.jpg>]
-<figures/VB8012-OHM_Exemplo.png, id=1483, 1302.36563pt x 700.11563pt>
+ [49 <./figures/ESP32-DevKitC_L_0.png>] [50 <./figures/raspberrypi5.jpg>]
+<figures/VB8012-OHM_Exemplo.png, id=1897, 1302.36563pt x 700.11563pt>
 File: figures/VB8012-OHM_Exemplo.png Graphic file (type png)
 <use figures/VB8012-OHM_Exemplo.png>
 Package pdftex.def Info: figures/VB8012-OHM_Exemplo.png  used on input line 86.
 (pdftex.def)             Requested size: 358.5023pt x 192.71935pt.
-<figures/arquitectura_ver2.drawio.png, id=1500, 688.5725pt x 422.57875pt>
+<figures/arquitectura_ver2.drawio.png, id=1914, 688.5725pt x 422.57875pt>
 File: figures/arquitectura_ver2.drawio.png Graphic file (type png)
 <use figures/arquitectura_ver2.drawio.png>
 Package pdftex.def Info: figures/arquitectura_ver2.drawio.png  used on input line 107.
 (pdftex.def)             Requested size: 398.33861pt x 244.46393pt.
- [51 <./figures/VB8012-OHM_Exemplo.png>]
-
-LaTeX Warning: Citation `Sockets' on page 52 undefined on input line 116.
-
-
-LaTeX Warning: Citation `datasheetVirtualBench' on page 52 undefined on input line 124.
-
-[52 <./figures/arquitectura_ver2.drawio.png>]
-<figures/virtualbench_back-panel.jpg, id=1533, 1234.6125pt x 487.8225pt>
-File: figures/virtualbench_back-panel.jpg Graphic file (type jpg)
-<use figures/virtualbench_back-panel.jpg>
-Package pdftex.def Info: figures/virtualbench_back-panel.jpg  used on input line 131.
-(pdftex.def)             Requested size: 358.5023pt x 141.65099pt.
-
-
-LaTeX Warning: Citation `datasheetVirtualBench' on page 53 undefined on input line 132.
-
-
-LaTeX Warning: Citation `datasheetVirtualBench' on page 53 undefined on input line 132.
-
-<figures/virtualbench_front-panel.jpg, id=1534, 2055.68pt x 1328.965pt>
-File: figures/virtualbench_front-panel.jpg Graphic file (type jpg)
-<use figures/virtualbench_front-panel.jpg>
-Package pdftex.def Info: figures/virtualbench_front-panel.jpg  used on input line 138.
-(pdftex.def)             Requested size: 358.5023pt x 231.76122pt.
-
-LaTeX Warning: Citation `datasheetVirtualBench' on page 53 undefined on input line 139.
-
-
-LaTeX Warning: Citation `datasheetVirtualBench' on page 53 undefined on input line 139.
-
-[53 <./figures/virtualbench_back-panel.jpg> <./figures/virtualbench_front-panel.jpg>]
-<figures/Diagrama_SOFTWARE.drawio.png, id=1546, 804.00375pt x 510.90875pt>
+ [51 <./figures/VB8012-OHM_Exemplo.png>] [52 <./figures/arquitectura_ver2.drawio.png>]
+<figures/Diagrama_SOFTWARE.drawio.png, id=1947, 804.00375pt x 510.90875pt>
 File: figures/Diagrama_SOFTWARE.drawio.png Graphic file (type png)
 <use figures/Diagrama_SOFTWARE.drawio.png>
-Package pdftex.def Info: figures/Diagrama_SOFTWARE.drawio.png  used on input line 150.
+Package pdftex.def Info: figures/Diagrama_SOFTWARE.drawio.png  used on input line 127.
 (pdftex.def)             Requested size: 398.33861pt x 253.12279pt.
-<figures/visir_ISEP.png, id=1554, 971.63pt x 321.2pt>
+<figures/visir_ISEP.png, id=1955, 971.63pt x 321.2pt>
 File: figures/visir_ISEP.png Graphic file (type png)
 <use figures/visir_ISEP.png>
-Package pdftex.def Info: figures/visir_ISEP.png  used on input line 159.
+Package pdftex.def Info: figures/visir_ISEP.png  used on input line 139.
 (pdftex.def)             Requested size: 398.33861pt x 131.67815pt.
- [54 <./figures/Diagrama_SOFTWARE.drawio.png> <./figures/visir_ISEP.png>] [55]
-<figures/pi5_dissipador.png, id=1586, 792.9625pt x 466.74374pt>
+ [53 <./figures/Diagrama_SOFTWARE.drawio.png>]
+<figures/virtualbench_back-panel.jpg, id=1975, 1234.6125pt x 487.8225pt>
+File: figures/virtualbench_back-panel.jpg Graphic file (type jpg)
+<use figures/virtualbench_back-panel.jpg>
+Package pdftex.def Info: figures/virtualbench_back-panel.jpg  used on input line 161.
+(pdftex.def)             Requested size: 358.5023pt x 141.65099pt.
+<figures/virtualbench_front-panel.jpg, id=1978, 2055.68pt x 1328.965pt>
+File: figures/virtualbench_front-panel.jpg Graphic file (type jpg)
+<use figures/virtualbench_front-panel.jpg>
+Package pdftex.def Info: figures/virtualbench_front-panel.jpg  used on input line 168.
+(pdftex.def)             Requested size: 358.5023pt x 231.76122pt.
+ [54 <./figures/visir_ISEP.png> <./figures/virtualbench_back-panel.jpg>] [55 <./figures/virtualbench_front-panel.jpg>]
+<figures/pi5_dissipador.png, id=2005, 792.9625pt x 466.74374pt>
 File: figures/pi5_dissipador.png Graphic file (type png)
 <use figures/pi5_dissipador.png>
-Package pdftex.def Info: figures/pi5_dissipador.png  used on input line 215.
+Package pdftex.def Info: figures/pi5_dissipador.png  used on input line 220.
 (pdftex.def)             Requested size: 398.33861pt x 234.46806pt.
-
-
-LaTeX Warning: Citation `Raspberrypi5' on page 56 undefined on input line 222.
-
-
-LaTeX Warning: Citation `Raspberrypi5' on page 56 undefined on input line 222.
-
-[56 <./figures/pi5_dissipador.png (PNG copy)>]
-
-LaTeX Warning: Citation `DryRelay' on page 57 undefined on input line 244.
-
-<figures/reles.png, id=1604, 828.09375pt x 251.94125pt>
+ [56 <./figures/pi5_dissipador.png (PNG copy)>]
+<figures/reles.png, id=2026, 828.09375pt x 251.94125pt>
 File: figures/reles.png Graphic file (type png)
 <use figures/reles.png>
-Package pdftex.def Info: figures/reles.png  used on input line 248.
+Package pdftex.def Info: figures/reles.png  used on input line 253.
 (pdftex.def)             Requested size: 398.33861pt x 121.19568pt.
-
-LaTeX Warning: Citation `DryRelay' on page 57 undefined on input line 249.
-
-
-LaTeX Warning: Citation `DryRelay' on page 57 undefined on input line 249.
-
-
-LaTeX Warning: Citation `Raspberrytech' on page 57 undefined on input line 253.
-
-
-LaTeX Warning: Citation `ULN2003' on page 57 undefined on input line 260.
-
-[57 <./figures/reles.png (PNG copy)>]
-<figures/2003A_Darling.png, id=1619, 870.25125pt x 487.8225pt>
+ [57 <./figures/reles.png (PNG copy)>]
+<figures/2003A_Darling.png, id=2046, 870.25125pt x 487.8225pt>
 File: figures/2003A_Darling.png Graphic file (type png)
 <use figures/2003A_Darling.png>
-Package pdftex.def Info: figures/2003A_Darling.png  used on input line 264.
+Package pdftex.def Info: figures/2003A_Darling.png  used on input line 269.
 (pdftex.def)             Requested size: 398.33861pt x 223.29198pt.
-
-
-LaTeX Warning: Citation `ULN2003' on page 58 undefined on input line 265.
-
-
-LaTeX Warning: Citation `ULN2003' on page 58 undefined on input line 265.
-
-
-LaTeX Warning: Citation `ULN2003' on page 58 undefined on input line 269.
-
-
-LaTeX Warning: Citation `SN74HC595' on page 58 undefined on input line 278.
-
-[58 <./figures/2003A_Darling.png>]
-<figures/SR_blocos.png, id=1638, 786.94pt x 921.4425pt>
+ [58 <./figures/2003A_Darling.png>]
+<figures/SR_blocos.png, id=2070, 786.94pt x 921.4425pt>
 File: figures/SR_blocos.png Graphic file (type png)
 <use figures/SR_blocos.png>
-Package pdftex.def Info: figures/SR_blocos.png  used on input line 284.
+Package pdftex.def Info: figures/SR_blocos.png  used on input line 289.
 (pdftex.def)             Requested size: 398.33861pt x 466.41444pt.
-
-
-LaTeX Warning: Citation `SN74HC595' on page 59 undefined on input line 285.
-
-
-LaTeX Warning: Citation `SN74HC595' on page 59 undefined on input line 285.
-
-[59 <./figures/SR_blocos.png>]
-
-LaTeX Warning: Citation `SN74HC595' on page 60 undefined on input line 293.
-
-
-LaTeX Warning: Citation `SN74HC595' on page 60 undefined on input line 293.
-
-
-LaTeX Warning: Citation `FrontbackEnd' on page 60 undefined on input line 344.
-
-
-LaTeX Warning: Citation `FrontbackEnd' on page 60 undefined on input line 346.
-
-[60]
-
-LaTeX Warning: Citation `ThePython' on page 61 undefined on input line 354.
-
-
-LaTeX Warning: Citation `pythonvantagens' on page 61 undefined on input line 354.
-
-
-LaTeX Warning: Citation `pythonvantagens' on page 61 undefined on input line 364.
-
-
-LaTeX Warning: Citation `5MainDispython' on page 61 undefined on input line 364.
-
-
-LaTeX Warning: Citation `Flask' on page 61 undefined on input line 369.
-
-
-LaTeX Warning: Citation `wsgi' on page 61 undefined on input line 369.
-
-
-LaTeX Warning: Citation `Jinja' on page 61 undefined on input line 369.
-
-
-LaTeX Warning: Citation `Djangovsflask' on page 61 undefined on input line 371.
-
-
-LaTeX Warning: Citation `FlaskvsDjango' on page 61 undefined on input line 371.
-
-[61]
-
-LaTeX Warning: Citation `HTMLbasics' on page 62 undefined on input line 383.
-
-
-LaTeX Warning: Citation `HTMLbasics' on page 62 undefined on input line 387.
-
-) [62]
+ [59] [60 <./figures/SR_blocos.png>] [61] [62]) [63]
 \openout2 = `chapters/chapter4.aux'.
 
- (./chapters/chapter4.tex
-Cap\'{\i }tulo 4.
-1: section
-[63
+ (./chapters/chapter4.tex [64
 
 
 
 
 ]
-<figures/fluxograma_flask.drawio.png, id=1707, 282.05376pt x 303.1325pt>
+Cap\'{\i }tulo 4.
+1: section
+[65]
+<figures/fluxograma_flask.drawio.png, id=2174, 282.05376pt x 303.1325pt>
 File: figures/fluxograma_flask.drawio.png Graphic file (type png)
 <use figures/fluxograma_flask.drawio.png>
 Package pdftex.def Info: figures/fluxograma_flask.drawio.png  used on input line 27.
 (pdftex.def)             Requested size: 278.8358pt x 299.69507pt.
-
-
-LaTeX Warning: Citation `Flask' on page 64 undefined on input line 32.
-
-<figures/tree_flask.png, id=1710, 373.395pt x 767.86874pt>
+<figures/tree_flask.png, id=2178, 373.395pt x 767.86874pt>
 File: figures/tree_flask.png Graphic file (type png)
 <use figures/tree_flask.png>
 Package pdftex.def Info: figures/tree_flask.png  used on input line 36.
 (pdftex.def)             Requested size: 119.50279pt x 245.74644pt.
-[64 <./figures/fluxograma_flask.drawio.png>] [65 <./figures/tree_flask.png (PNG copy)>] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+ [66 <./figures/fluxograma_flask.drawio.png>] [67 <./figures/tree_flask.png (PNG copy)>] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 68.
- [66] [67] [68] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+ [68] [69] [70] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 ) (c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-) [69] [70] [71] [72] [73]
-<figures/ohm_escolha.png, id=1917, 1144.275pt x 610.28pt>
+) [71] [72] [73] [74] [75]
+<figures/ohm_escolha.png, id=2384, 1144.275pt x 610.28pt>
 File: figures/ohm_escolha.png Graphic file (type png)
 <use figures/ohm_escolha.png>
 Package pdftex.def Info: figures/ohm_escolha.png  used on input line 326.
 (pdftex.def)             Requested size: 398.33861pt x 212.44649pt.
-<figures/ohm_escolha_abc.png, id=1918, 1144.275pt x 610.28pt>
+<figures/ohm_escolha_abc.png, id=2385, 1144.275pt x 610.28pt>
 File: figures/ohm_escolha_abc.png Graphic file (type png)
 <use figures/ohm_escolha_abc.png>
 Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 333.
 (pdftex.def)             Requested size: 398.33861pt x 212.44649pt.
-<figures/login.png, id=1921, 1541.76pt x 353.32pt>
+<figures/login.png, id=2388, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
 Package pdftex.def Info: figures/login.png  used on input line 349.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
- [74 <./figures/ohm_escolha.png>] [75 <./figures/ohm_escolha_abc.png> <./figures/login.png (PNG copy)>]
-<figures/menupage.png, id=1939, 1168.365pt x 674.52pt>
+ [76 <./figures/ohm_escolha.png>] [77 <./figures/ohm_escolha_abc.png> <./figures/login.png (PNG copy)>]
+<figures/menupage.png, id=2407, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
 Package pdftex.def Info: figures/menupage.png  used on input line 366.
 (pdftex.def)             Requested size: 398.33861pt x 229.9719pt.
-) [76 <./figures/menupage.png (PNG copy)>]
+) [78 <./figures/menupage.png (PNG copy)>]
 \openout2 = `chapters/chapter5.aux'.
 
  (./chapters/chapter5.tex
 Cap\'{\i }tulo 5.
 )
 1: section
-[77
+[79
 
 
 
@@ -2446,7 +1527,7 @@ Cap\'{\i }tulo 5.
 ]
 \openout2 = `chapters/chapter6.aux'.
 
- (./chapters/chapter6.tex [78
+ (./chapters/chapter6.tex [80
 
 
 
@@ -2455,11 +1536,11 @@ Cap\'{\i }tulo 5.
 Cap\'{\i }tulo 6.
 )
 1: section
-[79]
+[81]
 \openout2 = `chapters/chapter7.aux'.
 
  (./chapters/chapter7.tex
-<chapters/Datasheet/LaRE_datasheet.pdf, id=1958, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2425, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf  used on input line 1.
@@ -2468,7 +1549,7 @@ File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf  used on input line 1.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<chapters/Datasheet/LaRE_datasheet.pdf, id=1961, page=1, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2428, page=1, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
@@ -2489,239 +1570,251 @@ File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [80
-
-
-
-
- <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2004, page=2, 597.50829pt x 845.0471pt>
-File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
- [81
-
- <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2027, page=3, 597.50829pt x 845.0471pt>
-File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
-(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [82
 
+
+
+
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2032, page=4, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2470, page=2, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [83
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2038, page=5, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2494, page=3, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [84
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2046, page=6, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2499, page=4, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [85
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2053, page=7, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2506, page=5, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [86
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2072, page=8, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2514, page=6, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [87
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2079, page=9, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2520, page=7, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [88
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2086, page=10, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2539, page=8, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [89
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2093, page=11, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2547, page=9, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [90
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2101, page=12, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2554, page=10, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [91
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=2110, page=13, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2561, page=11, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
-<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
-Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [92
 
- <./chapters/Datasheet/LaRE_Datasheet.pdf>])
-No file main.bbl.
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2569, page=12, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [93
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=2577, page=13, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [94
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]) (./main.bbl (./main.brf)
+\tf@brf=\write12
+\openout12 = `main.brf'.
+
+
+1: section
+[95
+\newlabel{datasheet}{{6}{95}{Conclusões}{chapter.6}{}}
+
+
+
+] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108]) [109]
 \openout2 = `chapters/appendixA.aux'.
 
-(./chapters/appendixA.tex
+ (./chapters/appendixA.tex [110
+
+
+]
 Anexo A.
 
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 (lipsum)                'portuguese' will be used instead.
 
 1: section
-[93
-
-
-
-
-]) [94] (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/appendixA.aux))
+[111]) [112] (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/appendixA.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 156FF6C3B3723BF53DBFFCB96142718C;9494.
+(rerunfilecheck)             Checksum: 702F6C00CEF69CC9EE6F698121AD1034;9754.
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: E2BFE380FA2B141391A9D3FD62CB5BDB;14147.
  ) 
 Here is how much of TeX's memory you used:
- 39470 strings out of 476015
- 805110 string characters out of 5791583
+ 40364 strings out of 476015
+ 820621 string characters out of 5791583
  2084190 words of memory out of 5000000
- 60399 multiletter control sequences out of 15000+600000
- 682567 words of font info for 113 fonts, out of 8000000 for 9000
+ 61104 multiletter control sequences out of 15000+600000
+ 683209 words of font info for 115 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 110i,21n,107p,2456b,1522s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,20n,131p,2456b,1520s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{https://tek.sapo.pt/noticias/computadores/artigos/entrega-de-computadores-a-alunos-e-professores-tem-se-revelado-muito-dificil-de-cumprir} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{https://www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.38} has been referenced but does not exist, replaced by a fixed one
 
@@ -2837,10 +1930,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (124 pages, 17516437 bytes).
+Output written on main.pdf (144 pages, 17597129 bytes).
 PDF statistics:
- 2359 PDF objects out of 2487 (max. 8388607)
- 2020 compressed objects within 21 object streams
- 480 named destinations out of 1000 (max. 500000)
- 858 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3305 PDF objects out of 3580 (max. 8388607)
+ 2915 compressed objects within 30 object streams
+ 665 named destinations out of 1000 (max. 500000)
+ 866 words of extra memory for PDF output out of 10000 (max. 10000000)
 

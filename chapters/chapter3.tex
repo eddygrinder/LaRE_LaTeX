@@ -74,7 +74,7 @@ No contexto desta dissertação, o instrumento de medida sugerido para implement
 
 O \textit{VirtualBench} pode ser controlado de duas formas: através do \textit{software} fornecido pela \acrshort{ni} ou através do \textit{pyVirtualBench} \cite{AutomatingVB}.
 
-O \textit{pyVirtualBench} é um \gls{wrapper}\footnote{Este \gls{wrapper} é um \textit{software} de terceiros, suportada e mantida por comunidade de engenheiros e não é diretamente suportado pela \acrshort{ni}.} que permite controlar o \acrshort{virtualbench} através de uma aplicação \gls{python} \cite{pyvirtualbench}. No entanto, este \gls{wrapper} não é compatível com \textit{Linux}.
+O \textit{pyVirtualBench} é um \gls{wrapper}\footnote{Este \gls{wrapper} é um \textit{software} de terceiros, suportado e mantido pela comunidade e não é diretamente suportado pela \acrshort{ni}.} que permite controlar o \acrshort{virtualbench} através de uma aplicação \gls{python} \cite{pyvirtualbench}. No entanto, este \gls{wrapper} não é compatível com \textit{Linux}.
 Perante este facto, decidiu-se integrar um \acrshort{pc} no \acrshort{lare} - pormenores da instalação do \textit{driver} no \textit{site} da \acrshort{ni} (\href{https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000kHUFSA2&l=pt-PT}{\textit{link}}) - sendo que todo o peso computacional passaria para o \acrshort{pc} e o \gls{RaspberryPI} controlaria os relés. Esta decisão de o manter como controlador dos relés prendeu-se com o facto de, futuramente, poder haver espaço para uma evolução ao nível da compatibilidade com o \textit{pyVirtualBench}.
 
 A outra forma de controlar o \acrshort{virtualbench} é usando a aplicação disponibilizada pela \acrshort{ni}  e compatível com \textit{Windows}. Esta aplicação faz uma apresentação integrada dos cinco instrumentos apresentados no \acrshort{virtualbench}, como pode ser visto na Figura \ref{fig:leituraohm}. A aplicação também inclui funcionalidades de fluxo de trabalho, como a importação e exportação de configurações de instrumentos e a captura de dados\footnote{\href{https://www.ni.com/en/support/downloads/drivers/download.virtualbench-software.html}{Transferir VirtualBench}}.
@@ -118,12 +118,42 @@ A comunicação entre os diversos dispositivos é feito da seguinte forma:
     \item \textbf{Controlo de relés e medidas}: O controlo e medição comum às experiência é feito através de ligações directas aos dispositivos.
 \end{itemize}
 
+Ao nível do \textit{software}, o servidor será implementado com base no \textit{Flask}, como já foi referido na Secção \ref{sec:contextualização} e será descrito com mais pormenor na Secção \ref{sec:software}. A comunicação entre o servidor e o \acrshort{virtualbench}, entre o servidor e o \gls{RaspberryPI} e o controlo dos relés é feita em \textit{Python}. A \textit{interface} com o utilizador é feita em \acrshort{html}.
+
+A Figura {\ref{fig:arquitecturalore}} apresenta com mais pormenor a solução implementada no \acrshort{lare}. De uma forma geral, podemos ver como é realizada a comunicação e a troca de informação entre os diferentes dispositivos de \textit{hardware}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Diagrama_SOFTWARE.drawio.png}
+    \caption{Arquitectura \acrshort{lare}}
+    \label{fig:arquitecturalore}
+\end{figure}
+
+\section{Circuitos electrónicos - experiências?}
+\label{sec:circuitos}
+\textbf{Não sei até que ponto esta secaçõp não se enquadra melhor no hardware}
+A escolha dos circuitos teve como base os que estão disponíveis no \acrshort{visir} do \acrshort{isep}, como se pode ver na Figura \ref{fig:circuitosvisir}. Reduzindo os objectivos do \acrshort{lare} à sua forma mais básica, pode afirmar-se que se pretende ``provar um conceito''. Escolhendo experiências com circuitos integrados ou transístores, poderia tornar a implementação desnecessáriamente mais complexa e, por conseguinte, com menos experiências. Portanto, o objectivo passará por criar um \acrshort{laboratório remoto} com experiências típicas para a introdução à electrónica e que permitam uma aprendizagem gradual em contexto de sala de aula. E, assim, ``provar o conceito''.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/visir_ISEP.png}
+    \caption{Circuitos \acrshort{visir} - \acrshort{isep} - \textbf{Se calhar retirava a imagem}}
+    \label{fig:circuitosvisir}
+\end{figure}
+
+Sendo assim, os circuitos que compõem o \acrshort{lare} e satisfazem os critérios definidos em cima são:
+\begin{itemize}
+    \item Lei de Ohm;
+    \item Rectificador de meia onda;
+    \item Rectificador de onda completa;
+    \item Filtro RC passa-baixo;
+    \item Filtro RC passa-alto.
+\end{itemize}
+
 \section{Hardware}
 \label{sec:hardware}
 \subsection{VirtualBench}
-Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e ferramentas de teste, tais como um osciloscópio digital com análise de protocolo, um gerador de formas de onda, um multímetro digital, uma fonte de alimentação \acrfull{cc} programável e E/S digitais num único dispositivo que se liga a um \acrshort{pc}, via \acrshort{usb} ou rede sem fios, como se pode ver na Figura \ref{fig:paineltraseiro}. As principais características deste modelo estão descritas na Figura \ref{fig:paineldianteiro} \cite{datasheetVirtualBench}.
-
-A \acrshort{ni} disponibiliza algumas \acrshort{api}s, tais como \acrshort{labview}, ANSI C e \gls{python}, esta última não suportada oficialmente.
+Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e ferramentas de teste, tais como um osciloscópio digital com análise de protocolo, um gerador de formas de onda, um multímetro digital, uma fonte de alimentação \acrfull{cc} programável e E/S digitais num único dispositivo que se liga a um \acrshort{pc}, via \acrshort{usb} ou rede sem fios, como se pode ver na Figura \ref{fig:paineltraseiro}. As principais características deste modelo estão descritas na Figura \ref{fig:paineldianteiro} \cite{datasheetVirtualBench}. A forma como pode ser controlado e configurado já foi abordada na Secção \ref{sec:arquitectura}.
 
 \begin{figure}[hbtp]
     \centering
@@ -140,38 +170,13 @@ A \acrshort{ni} disponibiliza algumas \acrshort{api}s, tais como \acrshort{labvi
     \label{fig:paineldianteiro}
 \end{figure}
 
-Ao nível do \textit{software}, o servidor será implementado com base no \textit{Flask}, como será descrito com mais pormenor na Secção \ref{sec:software}. A comunicação entre o servidor e o \acrshort{virtualbench}, entre o servidor e o \gls{RaspberryPI} e o controlo dos relés é feita em \textit{Python}. A \textit{interface} com o utilizador é feita em \acrshort{html}.
+%No \acrshort{visir} do \acrshort{isep}, estão disponíveis 11 circuitos, como se pode ver na Figura \ref{fig:circuitosvisir}. Os circuitos que compõem o \acrshort{laboratório remoto} tiveram como base (ou ponto de partida) os que estão implementados no \acrshort{isep}. \textbf{Faz sentido? PROF}
 
-A Figura {\ref{fig:arquitecturalore}} apresenta a solução implementada no \acrshort{lare}. De uma forma geral, podemos ver como é realizada a comunicação entre os diferentes dispositivos de \textit{hardware}.
-
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/Diagrama_SOFTWARE.drawio.png}
-    \caption{Arquitectura \acrshort{lare}}
-    \label{fig:arquitecturalore}
-\end{figure}
-
-No \acrshort{visir} do \acrshort{isep}, estão disponíveis 11 circuitos, como se pode ver na Figura \ref{fig:circuitosvisir}. Os circuitos que compõem o \acrshort{laboratório remoto} tiveram como base (ou ponto de partida) os que estão implementados no \acrshort{isep}. \textbf{Faz sentido? PROF}
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/visir_ISEP.png}
-    \caption{Circuitos \acrshort{visir} - \acrshort{isep}}
-    \label{fig:circuitosvisir}
-\end{figure}
-
-Sendo assim, os circuitos que compõem o \acrshort{lare} são (\textbf{na implemetação desenvolver um pouco mais sobre as escolhas}):
-\begin{itemize}
-    \item Lei de Ohm;
-    \item Rectificador de meia onda;
-    \item Rectificador de onda completa;
-    \item Filtro RC passa-baixo;
-    \item Filtro RC passa-alto.
-\end{itemize}
 
 \subsection{Matriz LaRE}
-Encontradas as soluções de \textit{hardware} e \textit{software}, falta, ainda, uma peça-chave na implementação do \acrshort{laboratório remoto}: a Matriz \acrshort{lare} de relés.
+Encontradas as soluções de \textit{hardware} e \textit{software}, assim como as experiências a serem implementadas, partiu-se para o projecto dos circuitos.
+
+Mais uma vez, tomando como base o \acrshort{visir}, decidiu-se projectar uma matriz com a dimensão das placas a obedecerem às definidas pela consórcio \gls{pc/104} \cite{PC104}. Este consórcio definiu um padrão que se destaca pelo seu formato compacto e modular. As dimensões mecânicas das placas estão definidas no \textbf{referência ao datasheet}.
 
 Esta matriz, que inclui os circuitos definidos na Secção \ref{sec:solucaoproposta}, assim como a alimentação e as ligações ao \gls{RaspberryPI}, compõe as 5 experiências.
 
@@ -192,7 +197,7 @@ Esta matriz é composta por 3 placas:
           \end{itemize}
 \end{itemize}
 
-A dimensão das placas \gls{pc/104} tem por base os valores descritos no \textit{datasheet} que pode ser encontrado em \url{https://pc104.org/}.
+
 
 Toda a informação relevante referente à Matriz encontra-se no \textit{datasheet} em anexo. [\textbf{Confirmar as referências e local da aprsentação do datasheet}]
 

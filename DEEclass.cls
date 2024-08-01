@@ -78,22 +78,22 @@
 	\abovechapterskip
 	{\parindent \z@ \chapteralign \normalfont
 		\ifnum \c@secnumdepth >\m@ne
-		\if@mainmatter{
+			\if@mainmatter{
 				\vspace*{100pt}
 				\chapterprefixfont \@chapapp\space \thechapter
 				\par\nobreak
-				\chapterinbetweenskip } 			
+				\chapterinbetweenskip }
 		\else {
 				\chapterprefixfont \@chapapp\space \thechapter
 				\par\nobreak
-				\chapterinbetweenskip  	}		
+				\chapterinbetweenskip  	}
 		\fi
 		\fi
 		\interlinepenalty\@M%
 		\chapterfont #1\par\nobreak
 		\chapterbelowskip
-		\if@mainmatter{		
-			\vspace*{40pt}}		
+		\if@mainmatter{
+			\vspace*{40pt}}
 		\fi
 	}
 	\thispagestyle{\chapter@p@gestyle}
@@ -164,20 +164,18 @@
 %----------------------------------------------------------------------------------------
 %	REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
- 				
+
 \RequirePackage[utf8]{inputenc} 	% Required for inputting international characters
 \RequirePackage[T1]{fontenc} 		% Output font encoding for international characters
 \RequirePackage{lmodern} 			% THE font
 
 \ifbool{portuguese}{% Required for automatically changing names of document elements to languages besides english
-  \RequirePackage[portuguese]{babel}
-	}{
-  \RequirePackage[english]{babel}
+	\RequirePackage[portuguese]{babel}
+}{
+	\RequirePackage[english]{babel}
 }
 
 \RequirePackage{scrbase} % Required for handling language-dependent names of sections/document elements
-
-\RequirePackage{scrhack} % Loads fixes for various packages
 
 \RequirePackage{longtable} % Required for tables that span multiple pages 
 
@@ -198,9 +196,9 @@
 
 \RequirePackage[hidelinks]{hyperref}		%To produce hypertext links in the document
 \hypersetup{hidelinks,
-bookmarksopen=true,
-bookmarksopenlevel=0,
-breaklinks=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=0,
+	breaklinks=true,
 }
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref} % To break long urls
 
@@ -208,42 +206,42 @@ breaklinks=true,
 
 \RequirePackage{listings} % Required for code listings
 \lstset{ %
- %language=C,                        % choose the language of the code
- basicstyle=\footnotesize\ttfamily,
- keywordstyle=\bfseries,
- numbers=left,                      % where to put the line-numbers   
- numberstyle=\tiny\color{gray},		% the size of the fonts that are used for the line-numbers
- stepnumber=1,                      % the step between two line-numbers. If it's 1 each line will be numbered
- numbersep=8pt,                     % how far the line-numbers are from the code
- xleftmargin=2em,					% keep line numbers inside the margins		
- frame=tb,							% frame: top and bottom lines
- framexleftmargin=1.5em,			% frame: adjusts left margin because the xleftmargin numbers setting
- float=!htb,						% if float defined, let Latex manage it
- aboveskip=8mm,
- belowskip=4mm,
- backgroundcolor=\color{white},
- commentstyle=\color{darkgray},    	% comment style
- %keywordstyle=\color{blue},       	% keyword style
- showspaces=false,                  % show spaces adding particular underscores
- showstringspaces=false,            % underline spaces within strings
- showtabs=false,                    % show tabs within strings adding particular underscores
- tabsize=2,	                    	% sets default tabsize to 2 spaces
- captionpos=b,                      % sets the caption-position to bottom
- breaklines=true,                   % sets automatic line breaking
- breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
- escapeinside={\%*}{*)},            % if you want to add a comment within your code
- morekeywords={*,var,template,new}  % if you want to add more keywords to the set
+	%language=C,                        % choose the language of the code
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries,
+	numbers=left,                      % where to put the line-numbers   
+	numberstyle=\tiny\color{gray},		% the size of the fonts that are used for the line-numbers
+	stepnumber=1,                      % the step between two line-numbers. If it's 1 each line will be numbered
+	numbersep=8pt,                     % how far the line-numbers are from the code
+	xleftmargin=2em,					% keep line numbers inside the margins		
+	frame=tb,							% frame: top and bottom lines
+	framexleftmargin=1.5em,			% frame: adjusts left margin because the xleftmargin numbers setting
+	float=!htb,						% if float defined, let Latex manage it
+	aboveskip=8mm,
+	belowskip=4mm,
+	backgroundcolor=\color{white},
+	commentstyle=\color{darkgray},    	% comment style
+	%keywordstyle=\color{blue},       	% keyword style
+	showspaces=false,                  % show spaces adding particular underscores
+	showstringspaces=false,            % underline spaces within strings
+	showtabs=false,                    % show tabs within strings adding particular underscores
+	tabsize=2,	                    	% sets default tabsize to 2 spaces
+	captionpos=b,                      % sets the caption-position to bottom
+	breaklines=true,                   % sets automatic line breaking
+	breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
+	escapeinside={\%*}{*)},            % if you want to add a comment within your code
+	morekeywords={*,var,template,new}  % if you want to add more keywords to the set
 }
 
 \RequirePackage[calc,portuguese]{datetime2}	% For date format
 \DTMnewdatestyle{mydateformat}{%
-  \renewcommand{\DTMdisplaydate}[4]{%
-%    \DTMshortweekdayname{##4},\space% 
-    \DTMmonthname{##2},\nobreakspace%  
-%    \number##3,\space%                
-    \number##1%                       
-  }%
-  \renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
+	\renewcommand{\DTMdisplaydate}[4]{%
+		%    \DTMshortweekdayname{##4},\space% 
+		\DTMmonthname{##2},\nobreakspace%  
+		%    \number##3,\space%                
+		\number##1%                       
+	}%
+	\renewcommand{\DTMDisplaydate}{\DTMdisplaydate}%
 }
 
 \RequirePackage{siunitx} 		% required for \SI commands
@@ -254,14 +252,16 @@ breaklinks=true,
 
 \RequirePackage[titletoc,title]{appendix} %for easy appendix management
 
+\RequirePackage{scrhack} % Loads fixes for various packages
+
 %----------------------------------------------------------------------------------------
 %	DEFINE CUSTOM THESIS INFORMATION COMMANDS
 %----------------------------------------------------------------------------------------
 
 \NewDocumentCommand{\thesistitle} { o m }{%
- \IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}%
- \def\@title{#2}%
- \def\ttitle{#2}%
+	\IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}%
+	\def\@title{#2}%
+	\def\ttitle{#2}%
 }
 \DeclareDocumentCommand{\author}{m}{\newcommand{\authorname}{#1}\renewcommand{\@author}{#1}}
 \NewDocumentCommand{\studentnumber}{m}{\newcommand{\stdnumber}{#1}}
@@ -274,7 +274,7 @@ breaklinks=true,
 \NewDocumentCommand{\researchgroup}{m}{\newcommand{\groupname}{#1}}
 
 % New command to move content to the next page which prints to the next odd page if twosided mode is active
-\newcommand{\checktoopen}{  
+\newcommand{\checktoopen}{
 	\if@openright\cleardoublepage\else\clearpage\fi
 	\ifdef{\phantomsection}{\phantomsection}{}% The \phantomsection command is necessary for hyperref to jump to the correct page
 }
@@ -310,11 +310,11 @@ breaklinks=true,
 
 \newcommand{\secondLang}{portuguese}
 \iflanguage{portuguese}{
-	\renewcommand{\lstlistingname}{Listagem}	
+	\renewcommand{\lstlistingname}{Listagem}
 	\renewcommand{\secondLang}{english}
 	\newtheorem{theorem}{Teorema}
 	\newtheorem{corollary}{Corolário}
-	\newtheorem{lemma}{Lema}	
+	\newtheorem{lemma}{Lema}
 }{
 	\newtheorem{theorem}{Theorem}
 	\newtheorem{corollary}{Corollary}
@@ -324,25 +324,25 @@ breaklinks=true,
 \RequirePackage[hyperpageref]{backref}
 \renewcommand*{\backref}[1]{}
 \iflanguage{portuguese}{
-    \renewcommand*{\backrefalt}[4]{%
-      \ifcase #1 %
-      \or
-      {\footnotesize [Citado na p\'{a}gina #2]}%
-      \else
-      {\footnotesize [Citado nas p\'{a}ginas #2]}%
-      \fi
-    }
-    \renewcommand*{\backreftwosep}{ e~}
-    \renewcommand*{\backreflastsep}{ e~}
+	\renewcommand*{\backrefalt}[4]{%
+		\ifcase #1 %
+		\or
+			{\footnotesize [Citado na p\'{a}gina #2]}%
+		\else
+			{\footnotesize [Citado nas p\'{a}ginas #2]}%
+		\fi
+	}
+	\renewcommand*{\backreftwosep}{ e~}
+	\renewcommand*{\backreflastsep}{ e~}
 }{
-    \renewcommand*{\backrefalt}[4]{%
-      \ifcase #1 %
-      \or
-      {\footnotesize [Cited on page #2]}%
-      \else
-      {\footnotesize [Cited on pages #2]}%
-      \fi
-    }
+	\renewcommand*{\backrefalt}[4]{%
+		\ifcase #1 %
+		\or
+			{\footnotesize [Cited on page #2]}%
+		\else
+			{\footnotesize [Cited on pages #2]}%
+		\fi
+	}
 }
 
 %----------------------------------------------------------------------------------------
@@ -355,9 +355,9 @@ breaklinks=true,
 \RequirePackage{geometry}
 \geometry{
 	headheight=4ex,
-%	includehead,
-%	includefoot,
-	paper=a4paper, 
+	%	includehead,
+	%	includefoot,
+	paper=a4paper,
 	inner=3cm, % Inner margin
 	outer=3.5cm, % Outer margin
 	bindingoffset=.5cm, % Binding offset
@@ -424,24 +424,24 @@ breaklinks=true,
 \pagestyle{thesis}
 \ifbool{headsepline}{\KOMAoption{headsepline}{true}}{}
 \PreventPackageFromLoading[\ClassError{\classname}{Package `fancyhdr' is
-incompatible\MessageBreak with this class}{The pagesyles are defined 
-	using package `scrlayer-scrpage', please consult the\MessageBreak 
-KOMA-script documentation for details.}]{fancyhdr}
+		incompatible\MessageBreak with this class}{The pagesyles are defined
+		using package `scrlayer-scrpage', please consult the\MessageBreak
+		KOMA-script documentation for details.}]{fancyhdr}
 
 \newcommand{\blank@p@gestyle}{empty}
 \newcommand{\chapter@p@gestyle}{plain}
 \NewDocumentCommand{\blankpagestyle}{ m }{%
 	\ClassWarning{\classname}{\string\blankpagestyle\space is
-	obsolete,\MessageBreak use \string\setblankpagestyle \space  instead}\renewcommand{\blank@p@gestyle}{}{#1}
+		obsolete,\MessageBreak use \string\setblankpagestyle \space  instead}\renewcommand{\blank@p@gestyle}{}{#1}
 }
 \NewDocumentCommand{\setblankpagestyle}{ m }{\renewcommand{\blank@p@gestyle}{#1}}
 \NewDocumentCommand{\setchapterpagestyle}{ m }{\renewcommand{\chapter@p@gestyle}{#1}}
 
 \DeclareDocumentCommand\cleardoublepage{}{\clearpage\if@twoside \ifodd\c@page\else
-	\hbox{}
-	\thispagestyle{\blank@p@gestyle}
-	\newpage
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi%
+			\hbox{}
+			\thispagestyle{\blank@p@gestyle}
+			\newpage
+			\if@twocolumn\hbox{}\newpage\fi\fi\fi%
 }
 
 %----------------------------------------------------------------------------------------
@@ -457,29 +457,29 @@ KOMA-script documentation for details.}]{fancyhdr}
 \renewcommand{\degree}{Mestrado em Engenharia Electrot\'{e}cnica e de Computadores}
 \providecaptionname{english}{\degree}{Master in Electrical and Computer Engineering}
 \providecaptionname{portuguese}{\degree}{Mestrado em Engenharia Electrot\'{e}cnica e de Computadores}
-	
+
 \ifbool{MEECAS}{
-	\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Automa\c{c}\~{a}o e Sistemas}
-	\providecaptionname{english}{\darea}{Specialization Area of Automation and Systems}
-	\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Automa\c{c}\~{a}o e Sistemas}	
+\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Automa\c{c}\~{a}o e Sistemas}
+\providecaptionname{english}{\darea}{Specialization Area of Automation and Systems}
+\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Automa\c{c}\~{a}o e Sistemas}
 }{}
 
 \ifbool{MEECSA}{
-	\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas Aut\'{o}nomos}
-	\providecaptionname{english}{\darea}{Specialization Area of Autonomous Systems}
-	\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas Aut\'{o}nomos}		
+\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas Aut\'{o}nomos}
+\providecaptionname{english}{\darea}{Specialization Area of Autonomous Systems}
+\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas Aut\'{o}nomos}
 }{}
 
 \ifbool{MEECPI}{
-	\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas e Planeamento Industrial}
-	\providecaptionname{english}{\darea}{Specialization Area of Systems And Industrial Planning}
-	\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas e Planeamento Industrial}		
+\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas e Planeamento Industrial}
+\providecaptionname{english}{\darea}{Specialization Area of Systems And Industrial Planning}
+\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Sistemas e Planeamento Industrial}
 }{}
 
 \ifbool{MEECTE}{
-	\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Telecomunica\c{c}\~{o}es}
-	\providecaptionname{english}{\darea}{Specialization Area of Telecommunications}
-	\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Telecomunica\c{c}\~{o}es}		
+\renewcommand{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Telecomunica\c{c}\~{o}es}
+\providecaptionname{english}{\darea}{Specialization Area of Telecommunications}
+\providecaptionname{portuguese}{\darea}{\'{A}rea de Especializa\c{c}\~{a}o em Telecomunica\c{c}\~{o}es}
 }{}
 
 \newcommand{\frontcourselabel}{{\large \degree}\\{\large \darea}\\}
@@ -518,27 +518,27 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \newcommand{\printcoverpage}{
 	\begin{titlepage}
-	\pdfbookmark[0]{Front}{cover}
-	\begin{center}
-	{\scshape\normalsize \university}\\[3mm]
-	{\scshape\LARGE \school}\\
-	\vfill	
-	\HRule \\ % Horizontal line
-	\vspace{15pt}	
-	{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-%	\ifdefined\tsubtitle {\huge \bfseries \tsubtitle} \\ \fi % Thesis sub title, if exists
-	\vspace{10pt}
-	\HRule \\[1.5cm] % Horizontal line
-	{\Large\bf \authorname}\par	
-	\vfill	
-	\frontcourselabel
-	\vfill	
-	\includegraphics[width=6.5cm]{ISEP_logo.jpg} \\		
-	{\scshape\large \department}\\
-	{\large \school}\\[1cm]
-	\DTMsetdatestyle{mydateformat}
-	\ifdefined\datename {\normalsize \datename}\\[5mm] \else {\normalsize \today}\\[5mm] \fi
-	\end{center}
+		\pdfbookmark[0]{Front}{cover}
+		\begin{center}
+			{\scshape\normalsize \university}\\[3mm]
+			{\scshape\LARGE \school}\\
+			\vfill
+			\HRule \\ % Horizontal line
+			\vspace{15pt}
+			{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+			%	\ifdefined\tsubtitle {\huge \bfseries \tsubtitle} \\ \fi % Thesis sub title, if exists
+			\vspace{10pt}
+			\HRule \\[1.5cm] % Horizontal line
+			{\Large\bf \authorname}\par
+			\vfill
+			\frontcourselabel
+			\vfill
+			\includegraphics[width=6.5cm]{ISEP_logo.jpg} \\
+			{\scshape\large \department}\\
+			{\large \school}\\[1cm]
+			\DTMsetdatestyle{mydateformat}
+			\ifdefined\datename {\normalsize \datename}\\[5mm] \else {\normalsize \today}\\[5mm] \fi
+		\end{center}
 	\end{titlepage}
 }
 
@@ -546,20 +546,20 @@ KOMA-script documentation for details.}]{fancyhdr}
 	\checktoopen
 	\thispagestyle{empty}
 	\begin{center}
-	\vspace*{.2\textheight}	
-	\aftercourselabel	
-	\vfill
-	{{\small\bf\studentlabel:} \large \authorname, \nblabel \stdnumber, \url{\stdemail}}\\[4pt]
-	{{\small\bf\advisorlabel:} \large \advname }\\[4pt]
-	\ifdefined\coadvname {{\small\bf\coadvisorlabel:} \coadvname}\\[4pt] \fi
-	\ifdefined\companyname {{\small\bf\companylabel:} \companyname\\{\small\bf\supervisorlabel:} \supname}\\ \fi
-	\vfill
-	\includegraphics[width=6.5cm]{ISEP_logo.jpg} \\		
-	{\scshape\large \department}\\
-	{\large \school}\\
-	{\normalsize Rua Dr. Ant\'{o}nio Bernardino de Almeida, 431, 4200--072 Porto}\\[1cm]
-	\DTMsetdatestyle{mydateformat}	
-	\ifdefined\datename {\normalsize \datename}\\[5mm] \else {\normalsize \today}\\[5mm] \fi
+		\vspace*{.2\textheight}
+		\aftercourselabel
+		\vfill
+		{{\small\bf\studentlabel:} \large \authorname, \nblabel \stdnumber, \url{\stdemail}}\\[4pt]
+		{{\small\bf\advisorlabel:} \large \advname }\\[4pt]
+		\ifdefined\coadvname {{\small\bf\coadvisorlabel:} \coadvname}\\[4pt] \fi
+		\ifdefined\companyname {{\small\bf\companylabel:} \companyname\\{\small\bf\supervisorlabel:} \supname}\\ \fi
+		\vfill
+		\includegraphics[width=6.5cm]{ISEP_logo.jpg} \\
+		{\scshape\large \department}\\
+		{\large \school}\\
+		{\normalsize Rua Dr. Ant\'{o}nio Bernardino de Almeida, 431, 4200--072 Porto}\\[1cm]
+		\DTMsetdatestyle{mydateformat}
+		\ifdefined\datename {\normalsize \datename}\\[5mm] \else {\normalsize \today}\\[5mm] \fi
 	\end{center}
 }
 
@@ -582,7 +582,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \newcommand{\acknowledgementname}{Acknowledgements}
 \providecaptionname{english}{\acknowledgementname}{Acknowledgements} % Acknowledgement text for English countries
-\providecaptionname{portuguese}{\acknowledgementname}{Agradecimentos} 
+\providecaptionname{portuguese}{\acknowledgementname}{Agradecimentos}
 
 \DeclareDocumentEnvironment{acknowledgements}{}{%
 	\checktoopen
@@ -590,12 +590,12 @@ KOMA-script documentation for details.}]{fancyhdr}
 	\chapter*{\acknowledgementname}
 	\thispagestyle{empty}
 	\pdfbookmark[0]{\acknowledgementname}{acknowl}
-	}
-	{
+}
+{
 	\vfil\vfil\null
 	\cleardoublepage
-	}
-	
+}
+
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE DESIGN
 %----------------------------------------------------------------------------------------
@@ -610,28 +610,28 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \newenvironment{abstract}{
 	\setcounter{page}{1}
-	\checktoopen	
+	\checktoopen
 	\tttypeout{\abstraclabel}
 	\thispagestyle{plain}
 	\chapter*{\abstraclabel}
-	\pdfbookmark[0]{\abstraclabel}{abstract1}	
-	}
-	{
-  	\vfill\null
-	}
+	\pdfbookmark[0]{\abstraclabel}{abstract1}
+}
+{
+	\vfill\null
+}
 
 \newenvironment{secondlangabstract}{
 	\checktoopen
 	\begin{otherlanguage}{\secondLang}
-	\tttypeout{\abstraclabel}
-	\thispagestyle{plain}
-	\chapter*{\abstraclabel}
-	\pdfbookmark[0]{\abstraclabel}{abstract2}
-	}
-	{
+		\tttypeout{\abstraclabel}
+		\thispagestyle{plain}
+		\chapter*{\abstraclabel}
+		\pdfbookmark[0]{\abstraclabel}{abstract2}
+		}
+		{
 	\end{otherlanguage}
-  	\vfill\null
-	}
+	\vfill\null
+}
 %----------------------------------------------------------------------------------------
 %	LISTINGS PAGE DESIGN
 %----------------------------------------------------------------------------------------
@@ -658,11 +658,11 @@ KOMA-script documentation for details.}]{fancyhdr}
 \providecaptionname{portuguese}{\acronymsname}{Lista de Acr\'{o}nimos}
 
 \newglossarystyle{leftlong}{%
-  \setglossarystyle{long}%
-  \renewcommand{\glossentry}[2]{%
-    \glsentryitem{##1}\glstarget{##1}{\bfseries \glossentryname{##1}} &
-    \glossentrydesc{##1}\glspostdescription\space ##2\tabularnewline
-  }%
+	\setglossarystyle{long}%
+	\renewcommand{\glossentry}[2]{%
+		\glsentryitem{##1}\glstarget{##1}{\bfseries \glossentryname{##1}} &
+		\glossentrydesc{##1}\glspostdescription\space ##2\tabularnewline
+	}%
 }
 
 \newcommand{\printlistofacronyms}[1]{
@@ -697,50 +697,50 @@ KOMA-script documentation for details.}]{fancyhdr}
 \glssetnoexpandfield{unit}
 
 \newglossarystyle{symbunitlong}{%
-\setglossarystyle{long3col}% base this style on the list style
-\renewenvironment{theglossary}{% Change the table type --> 3 columns
-  \begin{longtable}{cp{0.6\glsdescwidth}>{\centering\arraybackslash}p{2cm}}}%
-  {\end{longtable}}%
-%
-\renewcommand*{\glossaryheader}{%  Change the table header
-  \tabhead{\symbolsSymbol} & \tabhead{\symbolsDescription} & \tabhead{\symbolsUnits}\\
-  %\bfseries \symbolsSymbol & \bfseries \symbolsDescription & \bfseries \symbolsUnits\\
-  \midrule%\hline
-  \endhead}
-\renewcommand*{\glossentry}[2]{%  Change the displayed items
-\glstarget{##1}{\glossentryname{##1}} %
-& \glossentrydesc{##1}% Description
-& \glsunit{##1}  \tabularnewline
-}
+	\setglossarystyle{long3col}% base this style on the list style
+	\renewenvironment{theglossary}{% Change the table type --> 3 columns
+		\begin{longtable}{cp{0.6\glsdescwidth}>{\centering\arraybackslash}p{2cm}}}%
+			{\end{longtable}}%
+	%
+	\renewcommand*{\glossaryheader}{%  Change the table header
+		\tabhead{\symbolsSymbol} & \tabhead{\symbolsDescription} & \tabhead{\symbolsUnits}\\
+		%\bfseries \symbolsSymbol & \bfseries \symbolsDescription & \bfseries \symbolsUnits\\
+		\midrule%\hline
+		\endhead}
+	\renewcommand*{\glossentry}[2]{%  Change the displayed items
+		\glstarget{##1}{\glossentryname{##1}} %
+		& \glossentrydesc{##1}% Description
+		& \glsunit{##1}  \tabularnewline
+	}
 }
 
 \newcommand{\printlistofsymbols}{
 	\glsaddall[types={symbolslist}]
 	\printglossary[title=\symbolsname,type=symbolslist,style=symbunitlong,nonumberlist]
-	}
+}
 
 %----------------------------------------------------------------------------------------
 %	CUSTOM DISSERTATION COMMANDS
 %----------------------------------------------------------------------------------------
 % new command for inline graphics (set to line height)
-\newlength\myheight				
+\newlength\myheight
 \newlength\mydepth
 \settototalheight\myheight{Xygp}
 \settodepth\mydepth{Xygp}
 \setlength\fboxsep{0pt}
 \newcommand*\inlinegraphics[1]{%
-  \settototalheight\myheight{Xygp}%
-  \settodepth\mydepth{Xygp}%
-  \raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
+	\settototalheight\myheight{Xygp}%
+	\settodepth\mydepth{Xygp}%
+	\raisebox{-\mydepth}{\includegraphics[height=\myheight]{#1}}%
 }
 
 % Print the bibliographic references using the IEEEtrans format
 \newcommand{\printrefereces}[1]{
-\phantomsection
-\addcontentsline{toc}{chapter}{\reftocname}
-%\nocite{*}
-\bibliographystyle{ieeetr}
-\bibliography{#1}
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\reftocname}
+	%\nocite{*}
+	\bibliographystyle{ieeetr}
+	\bibliography{#1}
 }
 
 % Define some commands to keep the formatting separated from the content 

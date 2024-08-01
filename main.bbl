@@ -1,0 +1,582 @@
+\begin{thebibliography}{100}
+
+\bibitem{arduino}
+``What is arduino? | arduino.'' \url{https://www.arduino.cc/en/Guide/Introduction}.
+\newblock (Accessed on 06/30/2024).
+
+\bibitem{matias}
+J.~Matias, {\em Cursos Profissionais - Eletricidade e Eletrónica, Vol. 3}.
+\newblock Didáctica Editora, 2011.
+
+\bibitem{industry4.0}
+X.~Xu, Y.~Lu, B.~Vogel-Heuser, and L.~Wang, ``Industry 4.0 and industry 5.0—inception, conception and perception,'' {\em Journal of Manufacturing Systems}, vol.~61, pp.~530--535, 2021.
+
+\bibitem{ThePython}
+``The python tutorial — python 3.12.4 documentation.'' \url{https://docs.python.org/3/tutorial/index.html}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{pifoundation}
+``Teach, learn, and make with the raspberry pi foundation.'' \url{https://www.raspberrypi.org/}.
+\newblock (Accessed on 06/30/2024).
+
+\bibitem{Raspberrypi}
+``Raspberry pi.'' \url{https://www.raspberrypi.com/}.
+\newblock (Accessed on 06/30/2024).
+
+\bibitem{Hofstein}
+A.~Hofstein, {\em The Role of Laboratory in Science Teaching and Learning}, pp.~357--368.
+\newblock 01 2017.
+
+\bibitem{BRINSON2015218}
+J.~R. Brinson, ``Learning outcome achievement in non-traditional (virtual and remote) versus traditional (hands-on) laboratories: A review of the empirical research,'' {\em Computers \& Education}, vol.~87, pp.~218--237, 2015.
+
+\bibitem{feisel}
+L.~Feisel and A.~Rosa, ``The role of the laboratory in undergraduate engineering education,'' {\em Journal of Engineering Education}, vol.~94, 01 2005.
+
+\bibitem{CORTER20112054}
+J.~E. Corter, S.~K. Esche, C.~Chassapis, J.~Ma, and J.~V. Nickerson, ``Process and learning outcomes from remotely-operated, simulated, and hands-on student laboratories,'' {\em Computers \& Education}, vol.~57, no.~3, pp.~2054--2067, 2011.
+
+\bibitem{visirisep}
+``Virtual instruments systems in reality - visir+ - home.'' \url{https://www2.isep.ipp.pt/visir/}.
+\newblock (Accessed on 06/29/2024).
+
+\bibitem{jaycross}
+J.~Cross, ``An informal history of elearning,'' {\em on The Horizon}, vol.~12, pp.~103--110, 09 2004.
+
+\bibitem{oecd_using_2021}
+{OECD}, {\em Using {Digital} {Technologies} for {Early} {Education} during {COVID}-19}.
+\newblock OECD, 2021.
+
+\bibitem{transicaodigital}
+``Resolução do {Conselho} de {Ministros} nº 30/2020.''
+
+\bibitem{capacitacaodigital}
+``Capacitação digital das escolas.'' \url{https://digital.dge.mec.pt/}.
+\newblock (Accessed on 02/26/2023).
+
+\bibitem{TheDigitransf}
+A.~Sepúlveda, ``The digital transformation of education: Connecting schools, empowering learners - broadband commission.'' \url{https://broadbandcommission.org/publication/the-digital-transformation-of-education/}.
+\newblock (Accessed on 02/26/2023).
+
+\bibitem{DESI2020}
+``Digital {Economy} and {Society} {Index} ({DESI}) 2020 {\textbar} {Shaping} {Europe}’s digital future,'' June 2020.
+
+\bibitem{impactocovideducacao}
+ILO, ``Youth \& {COVID}-19: {Impacts} on jobs, education, rights and mental well-being,'' report, European Commission, Aug. 2020.
+
+\bibitem{unesco}
+``290 million students out of school due to {COVID}-19: {UNESCO} releases first global numbers and mobilizes response {\textbar} {UNESCO}.'' \hyperlink{https://www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}{www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}.
+
+\bibitem{entregacomputadores}
+{SAPO}, ``Entrega de computadores a alunos e professores tem-se “revelado muito difícil de cumprir”.'' \hyperlink{https://tek.sapo.pt/noticias/computadores/artigos/entrega-de-computadores-a-alunos-e-professores-tem-se-revelado-muito-dificil-de-cumprir}.
+
+\bibitem{oecd_state_2021}
+{OECD}, {\em The {State} of {School} {Education}}.
+\newblock OECD, 2021.
+
+\bibitem{impactonegativocovid}
+``Covid-19 teve impacto negativo na educação de 70\% dos jovens.'' \url{www.dn.pt/mundo/covid-19-teve-impacto-negativo-na-educacao-de-70-dos-jovens-12513822.html}, aug 2020.
+\newblock (Accessed on 03/08/2023).
+
+\bibitem{IoT}
+R.~Steve, ``What is iot ? everything you need to know about the internet of things right now.,'' 2018.
+
+\bibitem{thestateofeducation}
+``The state of education – one year into covid - oecd education and skills today.'' \url{https://oecdedutoday.com/state-of-education-one-year-into-covid/}.
+\newblock (Accessed on 02/26/2023).
+
+\bibitem{Digitale13:online}
+``Digital education initiatives | european education area.'' \url{https://education.ec.europa.eu/focus-topics/digital-education/about-digital-education}.
+\newblock (Accessed on 03/04/2023).
+
+\bibitem{Transicaodigitalprr}
+``Transição digital - prr - recuperar portugal.'' \url{https://recuperarportugal.gov.pt/transicao-digital/}.
+\newblock (Accessed on 06/19/2024).
+
+\bibitem{incode2030}
+``Home - incode 2030.'' \url{https://www.incode2030.gov.pt/}.
+\newblock (Accessed on 06/19/2024).
+
+\bibitem{escoladigital}
+``Programa – escola digital.'' \url{https://escoladigital.aerp.pt/programa/}.
+\newblock (Accessed on 06/19/2024).
+
+\bibitem{EvaluationRemoteVirtualE-Learning}
+Y.~Fan, A.~Evangelista, and V.~Indumathi, ``Evaluation of remote or virtual laboratories in e-learning engineering courses,'' in {\em 2021 IEEE Global Engineering Education Conference (EDUCON)}, pp.~136--143, 2021.
+
+\bibitem{eLearningenssup}
+J.~Magano, A.~V.~Castro, and C.~Vaz~de Carvalho, ``O e-learning no ensino superior: um caso de estudo,'' {\em Educação, Formação \& Tecnologias}, vol.~1, p.~79–92, Mai. 2008.
+
+\bibitem{gomes_e-learning_2005}
+M.~J. Gomes, ``E-learning: reflexões em torno do conceito,'' in {\em E-learning: reflexões em torno do conceito}, Universidade do Minho. Centro de Competência do Projecto Nónio Século XXI, May 2005.
+\newblock Accepted: 2005-09-13T16:07:10Z.
+
+\bibitem{comissao197_07}
+``Convite à apresentação de propostas dg eac/46/02 — acções preparatórias e inovadoras 2002/b — e-learning,'' Jul 2002.
+
+\bibitem{GlossaryUNESCO}
+UNESCO, ``Glossary article: Stem.'' \url{https://unevoc.unesco.org/home/Glossary+article:+STEM}.
+\newblock (Accessed on 03/14/2023).
+
+\bibitem{TheHidde2:online}
+J.~Rothwell, ``Thehiddenstemeconomy610.pdf.'' \url{https://www.brookings.edu/wp-content/uploads/2016/06/TheHiddenSTEMEconomy610.pdf}.
+\newblock (Accessed on 03/14/2023).
+
+\bibitem{TTTSTEMA77:online}
+M.~Sanders, ``Ttt+stem+article\_1.pdf.'' \url{http://esdstem.pbworks.com/f/TTT+STEM+Article_1.pdf}.
+\newblock (Accessed on 03/14/2023).
+
+\bibitem{pisa2018}
+OECD, {\em PISA 2018 Results (Volume V)}.
+\newblock 2020.
+
+\bibitem{Oquefalt37:online}
+``O que falta a portugal para ter um sistema de educação de sucesso?.'' \url{https://www.dn.pt/pais/o-que-falta-a-portugal-para-ter-um-sistema-de-educacao-de-sucesso-12777334.html}.
+\newblock (Accessed on 04/02/2023).
+
+\bibitem{Faltadei99:online}
+``Falta de investimento na educação põe escola pública em risco: problemas rebentam um pouco por todo o lado e são cada vez mais graves! - fenprof.'' \url{https://www.fenprof.pt/falta-de-investimento-na-educacao-poe-escola-publica-em-risco-problemas-rebentam-um-pouco-por-todo-o-lado-e-sao-cada-vez-mais-graves}.
+\newblock (Accessed on 04/02/2023).
+
+\bibitem{Odesinve56:online}
+``O (des)investimento na educação em portugal.'' \url{https://www.msedu.pt/2020/12/o-desinvestimento-na-educacao-em.html}.
+\newblock (Accessed on 04/02/2023).
+
+\bibitem{EDUSTATP20:online}
+``Edustat - portugal gasta menos em educação do que há 20 anos.'' \url{https://www.edustat.pt/detalhes-infostat?ID=14}.
+\newblock (Accessed on 04/02/2023).
+
+\bibitem{Portugal69:online}
+``Portugal, o país menos educado da união europeia – observador.'' \url{https://observador.pt/opiniao/portugal-o-pais-menos-educado-da-uniao-europeia/}.
+\newblock (Accessed on 04/02/2023).
+
+\bibitem{Qualific91:online}
+P.~Ferreira, ``Qualificação, steam, género.'' \url{https://www.jn.pt/opiniao/convidados/qualificacao-steam-genero--14523190.html}.
+\newblock (Accessed on 04/04/2023).
+
+\bibitem{desigualdadespandemia}
+``{Pandemia acentuou desigualdades na sa{\ifmmode\acute{u}\else\'{u}\fi}de, educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o e no trabalho, confirma estudo},'' July 2024.
+\newblock [Online; accessed 3. Jul. 2024].
+
+\bibitem{efeitospandemiadigital}
+R.~B. Correia, ``Ofap-efeitos-da-pandemia-digital-14.pdf.'' \url{http://ofap.ics.ulisboa.pt/wp-content/uploads/2020/12/OFAP-Efeitos-da-pandemia-Digital-14.pdf}, 2020.
+\newblock (Accessed on 06/30/2024).
+
+\bibitem{virtuallabng}
+A.~Oladejo and A.~Ebisin, ``Virtual laboratory: An alternative laboratory for science teaching and learning,'' {\em Journal of Pure \& Applied Sciences}, vol.~3, pp.~82 -- 91, 10 2021.
+
+\bibitem{dificuldadesfinanciamento}
+``Uma dificuldade nas nossas universidades é a falta de financiamento.'' \url{https://www.dn.pt/vida-e-futuro/uma-dificuldade-nas-nossas-universidades-e-a-falta-de-financiamento-9574558.html}.
+\newblock (Accessed on 03/28/2023).
+
+\bibitem{Financiamentoprofissional}
+``Financiamento do ensino profissional - fenprof.'' \url{https://www.fenprof.pt/financiamento-do-ensino-profissional}.
+\newblock (Accessed on 03/28/2023).
+
+\bibitem{Educacaofinanciamento}
+``Educação: financiar para uma melhor aprendizagem – observador.'' \url{https://observador.pt/opiniao/educacao-financiar-para-uma-melhor-aprendizagem/}.
+\newblock (Accessed on 03/28/2023).
+
+\bibitem{Cerdeira2020}
+L.~Cerdeira, B.~Cabrito, M.~d. L.~M. Taylor, and R.~Gomes, ``{A fuga de c{\ifmmode\acute{e}\else\'{e}\fi}rebros em Portugal: hip{\ifmmode\acute{o}\else\'{o}\fi}teses explicativas},'' {\em Revista Brasileira de Pol{\ifmmode\acute{\imath}\else\'{\i}\fi}tica e Administra{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o da Educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o}, vol.~31, no.~2, pp.~409--418, 2020.
+
+\bibitem{anqep}
+ANQEP, ``{ANQEP - Cursos Profissionais},'' July 2024.
+\newblock [Online; accessed 4. Jul. 2024].
+
+\bibitem{ImpactRemoteLabTeachingPractices}
+C.~Viegas, A.~Pavani, N.~Lima, A.~Marques, I.~Pozzo, E.~Dobboletta, V.~Atencia, D.~Barreto, F.~Calliari, A.~Fidalgo, D.~Lima, G.~Temporão, and G.~Alves, ``Impact of a remote lab on teaching practices and student learning,'' {\em Computers \& Education}, vol.~126, pp.~201--216, 2018.
+
+\bibitem{developremotelabs}
+L.~F. Zapata-Rivera and M.~Larrondo~Petrie, ``Models of collaborative remote laboratories and integration with learning environments,'' {\em International Journal of Online Engineering (iJOE)}, vol.~12, pp.~14--21, 09 2016.
+
+\bibitem{HERADIO20161}
+R.~Heradio, L.~{de la Torre}, and S.~Dormido, ``Virtual and remote labs in control education: A survey,'' {\em Annual Reviews in Control}, vol.~42, pp.~1--10, 2016.
+
+\bibitem{POTKONJAK2016309}
+V.~Potkonjak, M.~Gardner, V.~Callaghan, P.~Mattila, C.~Guetl, V.~M. Petrović, and K.~Jovanović, ``Virtual laboratories for education in science, technology, and engineering: A review,'' {\em Computers \& Education}, vol.~95, pp.~309--327, 2016.
+
+\bibitem{Hofsteinfoundations}
+A.~Hofstein and V.~Lunetta, ``The laboratory in science education: Foundations for the twenty-first century,'' {\em Science Education}, vol.~88, pp.~28 -- 54, 01 2004.
+
+\bibitem{zutinlab2go}
+D.~Zutin, M.~Auer, C.~Maier, and M.~Niederstatter, ``Lab2go — a repository to locate educational online laboratories,'' pp.~1741 -- 1746, 05 2010.
+\newblock Citado Zapata-Rivera, Luis Felipe and Larrondo Petrie, María.
+
+\bibitem{Zapata-Rivera}
+L.~F. Zapata-Rivera and M.~Larrondo~Petrie, ``Models of collaborative remote laboratories and integration with learning environments,'' {\em International Journal of Online Engineering (iJOE)}, vol.~12, pp.~14--21, 09 2016.
+
+\bibitem{EMaster2024May}
+E.~EMaster, ``{Por que os laborat{\ifmmode\acute{o}\else\'{o}\fi}rios virtuais s{\ifmmode\tilde{a}\else\~{a}\fi}o essenciais na educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o moderna?},'' {\em EMaster Cloud e Security}, May 2024.
+
+\bibitem{faina}
+A.~Faiña, ``Learning hands-on electronics from home: A simulator for fritzing,'' 06 2022.
+
+\bibitem{Knorig2009Feb}
+A.~Kn{\ifmmode\ddot{o}\else\"{o}\fi}rig, R.~Wettach, and J.~Cohen, ``{Fritzing: a tool for advancing electronic prototyping for designers},'' {\em ResearchGate}, pp.~351--358, Feb. 2009.
+
+\bibitem{EvaluatingLearningExperiencesVirtualLaboratoryHongKong}
+C.~Chan and W.~Fok, ``Evaluating learning experiences in virtual laboratory training through student perceptions: a case study in electrical and electronic engineering at the university of hong kong.'' \url{https://hub.hku.hk/bitstream/10722/124702/1/content.pdf}.
+\newblock (Accessed on 04/11/2023).
+
+\bibitem{multisimVLHeying}
+B.~Heying, D.~Kejie, and J.~Li, ``Application multisim to virtual laboratory for experiment teaching,'' in {\em 2010 International Conference on Computational Intelligence and Software Engineering}, pp.~1--4, Dec 2010.
+
+\bibitem{multisimVLUmenne}
+P.~Umenne and T.~Hlalele, ``Evaluation of the effectiveness of virtual laboratory's for electronics in the open distance learning context,'' pp.~1--5, 08 2020.
+
+\bibitem{multisim}
+``{Multisim Live Online Circuit Simulator},'' July 2024.
+\newblock [Online; accessed 6. Jul. 2024].
+
+\bibitem{PaperTit40:online}
+I.~Gustavsson, G.~Alves, R.~Costa, K.~Nilsson, J.~Zackrisson, U.~Hernandez, and J.~Garcia-Zubia, ``The visir open lab platform 5.0 - an architecture for a federation of remote laboratories,'' 07 2011.
+
+\bibitem{Reduçãod55:online}
+``Redução do número de alunos por turma nas escolas públicas - xxi governo - república portuguesa.'' \url{https://www.portugal.gov.pt/pt/gc21/comunicacao/comunicado?i=reducao-do-numero-de-alunos-por-turma-nas-escolas-publicas}.
+\newblock (Accessed on 04/07/2023).
+
+\bibitem{Faltaded39:online}
+``Falta de docentes: há três disciplinas em que a situação é mais preocupante - sic notícias.'' \url{https://sicnoticias.pt/pais/2022-04-18-falta-de-docentes-ha-tres-disciplinas-em-que-a-situacao-e-mais-preocupante}.
+\newblock (Accessed on 04/07/2023).
+
+\bibitem{roboparty}
+``{RoboParty},'' July 2024.
+\newblock [Online; accessed 5. Jul. 2024].
+
+\bibitem{fnr}
+``{Festival Nacional de Rob{\ifmmode\acute{o}\else\'{o}\fi}tica},'' July 2024.
+\newblock [Online; accessed 5. Jul. 2024].
+
+\bibitem{cansat}
+``{11.{\textordfeminine} edi{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o do CanSat Portugal},'' July 2024.
+\newblock [Online; accessed 5. Jul. 2024].
+
+\bibitem{yoder}
+R.~Yoder, ``An arduino-based alternative to the traditional electronics laboratory,'' pp.~107--110, 11 2015.
+
+\bibitem{graven}
+O.~H. Graven and J.~Bjørk, ``The use of an arduino pocket lab to increase motivation in electrical engineering students for programming,'' in {\em 2016 IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)}, pp.~239--243, 2016.
+
+\bibitem{plaza}
+P.~Plaza, E.~Sancristobal, G.~Carro, M.~Blazquez, F.~García-Loro, S.~Martin, C.~Perez, and M.~Castro, ``Arduino as an educational tool to introduce robotics,'' in {\em 2018 IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)}, pp.~1--8, 2018.
+
+\bibitem{Marzoli}
+I.~Marzoli, N.~Rizza, A.~Saltarelli, and E.~Sampaolesi, {\em {Arduino: From Physics to Robotics}}.
+\newblock Jan. 2021.
+
+\bibitem{tinkercad}
+``{Tinkercad - From mind to design in minutes},'' July 2024.
+\newblock [Online; accessed 8. Jul. 2024].
+
+\bibitem{fritzingdown}
+Fritzing, ``{Download Fritzing},'' July 2024.
+\newblock [Online; accessed 7. Jul. 2024].
+
+\bibitem{WebBrowserSimulators}
+I.~Agafonov, ``Web browser electric circuit simulators for education,'' 05 2018.
+
+\bibitem{scheckler}
+R.~Scheckler, ``Virtual labs: A substitute for traditional labs?,'' {\em The International journal of developmental biology}, vol.~47, pp.~231--6, 02 2003.
+
+\bibitem{lynch}
+T.~Lynch and I.~Ghergulescu, ``Review of virtual labs as the emerging technologies for teaching stem subjects,'' pp.~6082--6091, 03 2017.
+
+\bibitem{BlogeMas95}
+``Blog emaster | por que os laboratórios virtuais são essenciais na educação.'' \url{https://emaster.cloud/educacao/laboratorios-virtuais-na-educacao/}.
+\newblock (Accessed on 07/06/2024).
+
+\bibitem{vabtegensVL}
+``{Advantages and Disadvantages of Virtual Laboratory},'' June 2023.
+\newblock [Online; accessed 6. Jul. 2024].
+
+\bibitem{Gherasim}
+B.~Gherasim, ``Virtual lab – advantages and disadvantages – edict,'' 12 2023.
+
+\bibitem{Ghergulescu2019Feb}
+{\relax Dr}.~I. Ghergulescu, ``{Review Of Virtual Labs As The Emerging Technologies For Teaching Stem Subjects - Adaptemy},'' {\em Adaptemy}, Feb. 2019.
+
+\bibitem{ImportantSimSoftware}
+S.~Mandal, ``Some important simulation software tools for a student of electronics engineering,'' {\em Global Journal on Advancement in Engineering and Science}, vol.~3, pp.~1--8, 01 2017.
+
+\bibitem{heying}
+B.~Heying, D.~Kejie, and J.~Li, ``Application multisim to virtual laboratory for experiment teaching,'' in {\em 2010 International Conference on Computational Intelligence and Software Engineering}, pp.~1--4, Dec 2010.
+
+\bibitem{falstad}
+P.~Falstad, ``{Circuit Simulator Applet},'' Feb. 2024.
+\newblock [Online; accessed 7. Jul. 2024].
+
+\bibitem{falstadlicenca}
+``{Licensing},'' Mar. 2011.
+\newblock [Online; accessed 7. Jul. 2024].
+
+\bibitem{falstadcompleto}
+``{Math, Physics, and Engineering Applets},'' Feb. 2023.
+\newblock [Online; accessed 8. Jul. 2024].
+
+\bibitem{RemoteTeachingElectricalCircuits}
+J.~B. da~Silva, L.~R. Machado, S.~M. Sommer~Bilessimo, and I.~N. da~Silva, ``Remote teaching of electrical circuits: proposal for the use of online laboratories in secondary education,'' in {\em 2021 World Engineering Education Forum/Global Engineering Deans Council (WEEF/GEDC)}, pp.~594--600, Nov 2021.
+
+\bibitem{wokwi}
+``{Wokwi - Online ESP32, STM32, Arduino Simulator},'' July 2024.
+\newblock [Online; accessed 8. Jul. 2024].
+
+\bibitem{RemoteLabsImpactVISIR}
+M.~A. Marques, M.~C. Viegas, M.~C. Costa-Lobo, A.~V. Fidalgo, G.~R. Alves, J.~S. Rocha, and I.~Gustavsson, ``How remote labs impact on course outcomes: Various practices using visir,'' {\em IEEE Transactions on Education}, vol.~57, no.~3, pp.~151--159, 2014.
+
+\bibitem{ExperiencesRemoteLab}
+A.~N. S.~Karmakar, N. K.~Roy and P.~Kumbhakar, ``A remotely operated high voltage laboratory for impulse voltage testing.'' \url{http://wiete.com.au/journals/WTE&TE/Pages/Vol.7,\%20No.1\%20(2009)/3-Nafalski-17.pdf}.
+\newblock (Accessed on 04/10/2023).
+
+\bibitem{deMel}
+W.~de~Mel and S.~T.G.A.A., ``Extending the boundaries of remote laboratory by providing hands on experience,'' 09 2017.
+
+\bibitem{StudyRemoteHandsonSimulatedLabs}
+J.~E. Corter, J.~V. Nickerson, S.~K. Esche, C.~Chassapis, S.~Im, and J.~Ma, ``Constructing reality: A study of remote, hands-on, and simulated laboratories,'' {\em ACM Trans. Comput.-Hum. Interact.}, vol.~14, p.~7–es, aug 2007.
+
+\bibitem{RealorVirtualDilema}
+S.~Kocijancic and C.~O'Sullivan, ``Real or virtual laboratories in science teaching - is this actually a dilemma?,'' {\em Informatics in Education}, vol.~3, pp.~239--250, 10 2004.
+
+\bibitem{controversy}
+C.~Tsihouridis, D.~Vavougios, M.~Batsila, and G.~Ioannidis, {\em The Timeless Controversy Between Virtual and Real Laboratories in Science Education—“And the Winner Is…”}, pp.~620--631.
+\newblock 01 2019.
+
+\bibitem{VISIREngineeringPractices}
+M.~Tawfik, E.~Sancristobal, S.~Martín, C.~Gil, A.~Pesquera, P.~Losada, G.~Díaz, J.~Peire, M.~Castro, J.~García-Zubia, U.~Hernández, P.~Orduña, I.~Angulo, M.~C. Costa~Lobo, M.~A. Marques, M.~C. Viegas, and G.~R. Alves, ``Visir deployment in undergraduate engineering practices,'' in {\em 2011 First Global Online Laboratory Consortium Remote Laboratories Workshop}, pp.~1--7, 2011.
+
+\bibitem{ExperiencesRemoteLaboratories}
+A.~Nafalski, O.~G\"ol, Z.~Nedic, J.~Machotka, J.~M.~M. Ferreira, and I.~Gustavsson, ``Experiences with remote laboratories,'' 2010.
+
+\bibitem{ThemMnyfacesRemotLab}
+M.~E. Auer and C.~Gravier, ``Guest editorial: The many facets of remote laboratories in online engineering education,'' {\em IEEE Transactions on Learning Technologies}, vol.~2, no.~4, pp.~260--262, 2009.
+
+\bibitem{DevelopingVirtualAndRemoteUndergraduate}
+X.~Chen, Y.~Zhang, L.~Kehinde, and D.~Olowokere, ``Developing virtual and remote undergraduate laboratory for engineering technology,'' 06 2010.
+
+\bibitem{RemoteLabsDevelopingCountries}
+J.~Simão, J.~de~Lima, W.~Rochadel, and J.~B. da~Silva, ``Remote labs in developing countries an experience in brazilian public education,'' in {\em IEEE Global Humanitarian Technology Conference (GHTC 2014)}, pp.~99--105, 2014.
+
+\bibitem{Kaluz}
+M.~Kalúz, J.~García-Zubía, M.~Fikar, and L.~\v{C}irka, ``A flexible and configurable architecture for automatic control remote laboratories,'' {\em IEEE Transactions on Learning Technologies}, vol.~8, pp.~299--310, July 2015.
+
+\bibitem{FABREGAS20111686}
+E.~Fabregas, G.~Farias, S.~Dormido-Canto, S.~Dormido, and F.~Esquembre, ``Developing a remote laboratory for engineering education,'' {\em Computers \& Education}, vol.~57, no.~2, pp.~1686--1697, 2011.
+
+\bibitem{lazar}
+C.~Lazar and S.~Carari, ``A remote-control engineering laboratory,'' {\em IEEE Transactions on Industrial Electronics}, vol.~55, pp.~2368--2375, June 2008.
+
+\bibitem{dormido}
+R.~Dormido, H.~Vargas, N.~Duro, J.~SÁnchez, S.~Dormido-Canto, G.~Farias, F.~Esquembre, and S.~Dormido, ``Development of a web-based control laboratory for automation technicians: The three-tank system,'' {\em IEEE Transactions on Education}, vol.~51, pp.~35--44, Feb 2008.
+
+\bibitem{diesel}
+``{View of Paradigms in Remote Experimentation},'' July 2024.
+\newblock [Online; accessed 10. Jul. 2024].
+
+\bibitem{jacko}
+P.~Jacko, B.~Matej, I.~Ková\v{c}ová, J.~Molnár, T.~Vince, J.~Dziak, B.~Fecko, v.~Gans, and D.~Ková\v{c}, ``Remote iot education laboratory for microcontrollers based on the stm32 chips,'' {\em Sensors}, vol.~22, no.~4, 2022.
+
+\bibitem{Vocabulariog4l}
+``Vocabulary — gateway4labs 0.1 documentation.'' \url{https://gateway4labs.readthedocs.io/en/latest/vocabulary.html}.
+\newblock (Accessed on 07/12/2024).
+
+\bibitem{zutin}
+D.~G. Zutin and M.~E. Auer, ``Work in progress — integrating educational online lab platforms around the ilab shared architecture,'' in {\em 2011 Frontiers in Education Conference (FIE)}, pp.~F1G--1--F1G--3, Oct 2011.
+
+\bibitem{harward}
+V.~J. Harward, J.~A. del Alamo, S.~R. Lerman, P.~H. Bailey, J.~Carpenter, K.~DeLong, C.~Felknor, J.~Hardison, B.~Harrison, I.~Jabbour, P.~D. Long, T.~Mao, L.~Naamani, J.~Northridge, M.~Schulz, D.~Talavera, C.~Varadharajan, S.~Wang, K.~Yehia, R.~Zbib, and D.~Zych, ``The ilab shared architecture: A web services infrastructure to build communities of internet accessible laboratories,'' {\em Proceedings of the IEEE}, vol.~96, pp.~931--950, June 2008.
+
+\bibitem{arquitecturaisa}
+``Developers - ilabs dev - mit wiki service.'' \url{https://wikis.mit.edu/confluence/display/ILAB2/Developers}.
+\newblock (Accessed on 07/12/2024).
+
+\bibitem{zutinvisir}
+D.~G. Zutin, M.~E. Auer, and I.~Gustavsson, ``A visir lab server for the ilab shared architecture,'' in {\em 2011 IEEE Global Engineering Education Conference (EDUCON)}, pp.~30--33, April 2011.
+
+\bibitem{wlddoc}
+``Welcome to weblab-deusto’s documentation! — weblab-deusto 5.0 documentation.'' \url{https://weblabdeusto.readthedocs.io/en/latest/index.html}.
+\newblock (Accessed on 07/12/2024).
+
+\bibitem{Orduñag4l}
+P.~Orduña, D.~G. Zutin, S.~Govaerts, I.~L. Zorrozua, P.~H. Bailey, E.~Sancristobal, C.~Salzmann, L.~Rodriguez-Gil, K.~DeLong, D.~Gillet, M.~Castro, D.~López-de Ipiña, and J.~García-Zubia, ``An extensible architecture for the integration of remote and virtual laboratories in public learning tools,'' {\em IEEE Revista Iberoamericana de Tecnologias del Aprendizaje}, vol.~10, pp.~223--233, Nov 2015.
+
+\bibitem{g4ldocumentation}
+``Welcome to gateway4labs’s documentation! — gateway4labs 0.1 documentation.'' \url{https://gateway4labs.readthedocs.io/en/latest/index.html}.
+\newblock (Accessed on 07/12/2024).
+
+\bibitem{Alves}
+G.~R. Alves, J.~B. Silva, A.~Pavani, A.~d. Costa, D.~Cardoso, D.~A. Lima, E.~Takahashi, G.~R. Roque, G.~Tempor{\ifmmode\tilde{a}\else\~{a}\fi}o, H.~N{\ifmmode\acute{e}\else\'{e}\fi}ri, J.~Pereira, L.~Mendes, R.~Moura, R.~Gedraite, S.~Bilessimo, and T.~Uhlmann, {\em {Laborat{\ifmmode\acute{o}\else\'{o}\fi}rios Remotos no Ensino de Engenharia}}.
+\newblock Brazil: ABENGE {\textendash} Associa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o Brasileira de Educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o em Engenharia, Sept. 2017.
+
+\bibitem{VISIRExperiencesChallenges}
+M.~Tawfik, E.~Sancristobal, S.~Martin, C.~Gil, A.~Pesquera, P.~Losada, G.~Diaz, J.~Peire, M.~Castro, J.~García-Zubia, U.~Hernández, P.~Orduña, I.~Angulo, M.~C. Costa~Lobo, M.~Marques, M.~C. Viegas, and G.~R. Alves, ``Visir: Experiences and challenges,'' {\em International Journal of Online and Biomedical Engineering (iJOE)}, vol.~8, p.~pp. 25–32, Feb. 2012.
+
+\bibitem{OpenLabs77:online}
+``Openlabs - electrolab.'' \url{http://openlabs.bth.se/index.php?page=ElectroLab}.
+\newblock (Accessed on 04/13/2023).
+
+\bibitem{PILARFederationVISIR}
+F.~Garcia-Loro, E.~S. Cristobal, G.~Diaz, A.~Macho, P.~Baizan, M.~Blazquez, M.~Castro, P.~Plaza, P.~Orduña, M.~Auer, W.~Kulesza, I.~Gustavsson, K.~Nilsson, A.~Fidalgo, G.~Alves, A.~Marques, U.~Hernandez-Jayo, J.~Garcia-Zubia, C.~Kreiter, A.~Pester, C.~Garcia-Hernandez, R.~Tavio, K.~Valtonen, and E.~Lehtikangas, ``Pilar: a federation of visir remote laboratory systems for educational open activities,'' in {\em 2018 IEEE International Conference on Teaching, Assessment, and Learning for Engineering (TALE)}, pp.~134--141, 2018.
+
+\bibitem{TheVISIRproject}
+I.~Gustavsson, J.~Zackrisson, L.~Håkansson, I.~Claesson, and T.~Lagö, ``The visir project – an open source software initiative for distributed online laboratories,'' vol.~2, 01 2010.
+
+\bibitem{tawfikexperiences}
+M.~Tawfik, E.~Sancristobal, S.~Martín, C.~Gil, A.~Pesquera, P.~Losada, G.~Diaz, J.~Peire, M.~Castro, J.~Garcia-Zubia, U.~Hernandez, P.~Orduña, I.~Angulo, C.~Costa~Lobo, M.~Marques, C.~Viegas, and G.~Alves, ``Visir: experiences and challenges,'' {\em International Journal of Online Engineering (iJOE)}, vol.~8, pp.~25--32, 02 2012.
+
+\bibitem{PXI-1033}
+``{PXI-1033}.'' https://www.ni.com/pt-pt/support/model.pxi-1033.html, Nov. 2016.
+\newblock [Online; accessed 13. Jul. 2024].
+
+\bibitem{PXI-5114}
+``{PXI-5114}.'' https://www.ni.com/pt-pt/support/model.pxi-5114.html, Nov. 2016.
+\newblock [Online; accessed 13. Jul. 2024].
+
+\bibitem{PXI-5402}
+``{PXI-5402}.'' https://www.ni.com/pt-pt/support/model.pxi-5402.html, Nov. 2016.
+\newblock [Online; accessed 13. Jul. 2024].
+
+\bibitem{PXI-4072}
+``National instrument pxi-4072 | leasametric.'' \url{https://www.leasametric.com/produit/national-instrument-pxi-4072/}.
+\newblock (Accessed on 07/13/2024).
+
+\bibitem{PXI-4110}
+``Pxi-4110 - ni.'' \url{https://www.ni.com/pt-pt/shop/model/pxi-4110.html}.
+\newblock (Accessed on 07/13/2024).
+
+\bibitem{matriz}
+I.~Gustavsson, K.~Nilsson, W.~Kulesza, F.~Garcia, and M.~Castro, ``Evaluation of the pilar pilot phase v 2.1.'' \url{https://ec.europa.eu/programmes/erasmus-plus/project-result-content/e8531ace-ded5-4103-bd7f-be12c7608f38/}.
+\newblock (Accessed on 07/14/2024).
+
+\bibitem{tawfikvisir}
+M.~Tawfik, E.~Sancristobal, S.~Martin, R.~Gil, G.~Diaz, A.~Colmenar, J.~Peire, M.~Castro, K.~Nilsson, J.~Zackrisson, L.~Håkansson, and I.~Gustavsson, ``Virtual instrument systems in reality (visir) for remote wiring and measurement of electronic circuits on breadboard,'' {\em IEEE Transactions on Learning Technologies}, vol.~6, pp.~60--72, Jan 2013.
+
+\bibitem{pereira}
+J.~Pereira, I.~Nardi~da Silva, J.~Schardosim~Simão, L.~Mellos~Carlos, J.~Silva, S.~Bilessimo, and J.~Alves, ``Modelo de repositório de práticas didáticas de circuitos elétricos e eletrônicos utilizando o laboratório remoto visir,'' 09 2017.
+
+\bibitem{garcia-loro}
+F.~Garcia-Loro, A.~Macho, E.~S. Cristobal, G.~Diaz, M.~Castro, W.~Kulesza, I.~Gustavsson, K.~Nilsson, A.~Fidalgo, G.~Alves, A.~Marques, U.~Hernandez-Jayo, J.~Garcia-Zubia, C.~Kreiter, R.~Oros, A.~Pester, D.~Garbi-Zutin, M.~Auer, C.~Garcia-Hernandez, R.~Tavio, K.~Valtonen, and E.~Lehtikangas, ``Experimenting in pilar federation: A common path for the future,'' in {\em 2018 IEEE Global Engineering Education Conference (EDUCON)}, pp.~1518--1523, 2018.
+
+\bibitem{visirsig}
+``International association of online engineering (iaoe) \& global online consortium (golc).'' \url{https://online-engineering.org/SIG_visir.php}.
+\newblock (Accessed on 07/14/2024).
+
+\bibitem{visirfederation}
+``International association of online engineering (iaoe) \& global online consortium (golc).'' \url{https://online-engineering.org/VISIR-Federation_about.php}.
+\newblock (Accessed on 07/14/2024).
+
+\bibitem{kreiter}
+C.~Kreiter, R.~Oros, A.~Pester, I.~Gustavsson, M.~Castro, A.~Fidalgo, and G.~R. Alves, ``Visir federation: Initial building steps: Pilar experience — work in progress,'' in {\em 2017 4th Experiment@International Conference (exp.at'17)}, pp.~24--27, June 2017.
+
+\bibitem{labviewpricing}
+``labview test \& measurement | farnell portugal.'' \url{https://pt.farnell.com/c/test-measurement?st=labview}.
+\newblock (Accessed on 06/30/2024).
+
+\bibitem{ArduinoMega}
+``Arduino mega 2560 rev3 — arduino official store.'' \url{https://store.arduino.cc/products/arduino-mega-2560-rev3}.
+\newblock (Accessed on 07/01/2024).
+
+\bibitem{Flask}
+``Flask | the pallets projects.'' \url{https://palletsprojects.com/p/flask/}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{Arduinopython}
+R.~Candido, ``Arduino with python: How to get started – real python.'' \url{https://realpython.com/arduino-python/}.
+\newblock (Accessed on 08/01/2024).
+
+\bibitem{MicroPythondefinition}
+``Micropython - python for microcontrollers.'' \url{https://micropython.org/}.
+\newblock (Accessed on 08/01/2024).
+
+\bibitem{megadatasheet}
+``A000067-datasheet.pdf.'' \url{https://docs.arduino.cc/resources/datasheets/A000067-datasheet.pdf}.
+\newblock (Accessed on 08/01/2024).
+
+\bibitem{esp32datasheet}
+``esp32-wroom-32e\_esp32-wroom-32ue\_datasheet\_en.pdf.'' \url{https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf}.
+\newblock (Accessed on 06/30/2024).
+
+\bibitem{diferencaspython}
+``Getting started with micropython on esp32 and esp8266 | random nerd tutorials.'' \url{https://randomnerdtutorials.com/getting-started-micropython-esp32-esp8266/}.
+\newblock (Accessed on 07/01/2024).
+
+\bibitem{ESPDevKit}
+``Esp devkits | espressif systems.'' \url{https://www.espressif.com/en/products/devkits}.
+\newblock (Accessed on 07/01/2024).
+
+\bibitem{introRaspberrypi5}
+``Introducing: Raspberry pi 5! - raspberry pi.'' \url{https://www.raspberrypi.com/news/introducing-raspberry-pi-5/}.
+\newblock (Accessed on 07/01/2024).
+
+\bibitem{AutomatingVB}
+``Automating ni virtualbench using python - ni.'' \url{https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000kHUFSA2&l=pt-PT}.
+\newblock (Accessed on 08/01/2024).
+
+\bibitem{pyvirtualbench}
+armstrap, ``Github - armstrap/armstrap-pyvirtualbench: Python wrappers to control ni virtualbench.'' \url{https://github.com/armstrap/armstrap-pyvirtualbench/}.
+\newblock (Accessed on 07/17/2024).
+
+\bibitem{Sockets}
+N.~Jennings, ``Socket programming in python (guide) – real python.'' \url{https://realpython.com/python-sockets/}.
+\newblock (Accessed on 08/01/2024).
+
+\bibitem{datasheetVirtualBench}
+N.~Instruments, ``Virtualbench all-in-one instrument product flyer - national instruments.'' \url{https://www.ni.com/pdf/product-flyers/virtualbench-all-in-one-instrument.pdf}.
+\newblock (Accessed on 07/21/2024).
+
+\bibitem{PC104}
+``Pc104 consortium home - pc/104 consortiumpc/104 consortium.'' \url{https://pc104.org/}.
+\newblock (Accessed on 08/01/2024).
+
+\bibitem{Raspberrypi5}
+``Raspberry pi documentation.'' \url{https://www.raspberrypi.com/documentation/}.
+\newblock (Accessed on 07/24/2024).
+
+\bibitem{DryRelay}
+``Dry relays | relays | comus group.'' \url{https://comus-intl.com/product-category/relays/dry-relays/}.
+\newblock (Accessed on 07/24/2024).
+
+\bibitem{Raspberrytech}
+``Raspberry pi hardware - raspberry pi documentation.'' \url{https://www.raspberrypi.com/documentation/computers/raspberry-pi.html}.
+\newblock (Accessed on 07/24/2024).
+
+\bibitem{ULN2003}
+``Uln2003a data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/ULN2003}.
+\newblock (Accessed on 07/25/2024).
+
+\bibitem{SN74HC595}
+``Sn54hc595 data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/SN54HC595}.
+\newblock (Accessed on 07/25/2024).
+
+\bibitem{FrontbackEnd}
+C.~A. Team, ``Front end vs. back end: Where should you start?.'' \url{https://www.codecademy.com/resources/blog/front-end-vs-back-end/}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{pythonvantagens}
+``Top 10 linguagens de back-end para 2024 | qual é a melhor?.'' \url{https://blog.back4app.com/pt/linguagens-de-programacao-para-back-end/}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{5MainDispython}
+A.~Joy, ``5 main disadvantages of python programming language – pythonista planet.'' \url{https://pythonistaplanet.com/disadvantages-of-python/}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{wsgi}
+``What is wsgi? — wsgi.org.'' \url{https://wsgi.readthedocs.io/en/latest/what.html}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{Jinja}
+``Jinja — jinja documentation (3.1.x).'' \url{https://jinja.palletsprojects.com/en/3.1.x/}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{Djangovsflask}
+D.~Mashutin, ``Django vs flask: Which is the best python web framework? | the pycharm blog.'' \url{https://blog.jetbrains.com/pycharm/2023/11/django-vs-flask-which-is-the-best-python-web-framework/}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{FlaskvsDjango}
+R.~Johns, ``Flask vs django: Which python web framework to use in 2024?.'' \url{https://hackr.io/blog/flask-vs-django}.
+\newblock (Accessed on 07/26/2024).
+
+\bibitem{HTMLbasics}
+``Html basics - learn web development | mdn.'' \url{https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics}.
+\newblock (Accessed on 07/26/2024).
+
+\end{thebibliography}

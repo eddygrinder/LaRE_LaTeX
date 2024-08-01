@@ -22,7 +22,9 @@
 \usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
 \usepackage{siunitx}
 \usepackage{pdfpages}
-\usepackage{lineno}
+%\usepackage{lineno}
+\usepackage{etoolbox}
+\apptocmd{\sloppy}{\hbadness 10000\relax}{}{}
 
 %\newcommand{\ordinal}[1]{\ordinalnum{#1}\textsuperscript{o}}
 
@@ -43,8 +45,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% settings
 \AtBeginDocument{					% Rendered PDF metadata:
-\hypersetup{pdftitle=\ttitle} 		% Sets the PDF title to your dissertation title
-\hypersetup{pdfauthor=\authorname} 	% Sets the PDF author to your name
+    \hypersetup{pdftitle=\ttitle} 		% Sets the PDF title to your dissertation title
+    \hypersetup{pdfauthor=\authorname} 	% Sets the PDF author to your name
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% user macros
