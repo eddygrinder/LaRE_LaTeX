@@ -32,23 +32,27 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces \textit {RaspberryPI5} \cite {introRaspberrypi5}}}{50}{figure.caption.50}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo do \acrshort {virtualbench} usado como multímetro digital}}{51}{figure.caption.51}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Representação geral do \acrshort {lare}}}{52}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Arquitectura \acrshort {lare}}}{53}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Circuitos \acrshort {visir} - \acrshort {isep} - \textbf {Se calhar retirava a imagem}}}{54}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Painel traseiro \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{54}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{55}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Placas PC/104 do \acrshort {visir} - \acrshort {isep} - \textbf {Foto com melhor qualidade}}}{55}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{57}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{57}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{58}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{59}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama de blocos SN74HC595 \cite {SN74HC595}}}{60}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxograma de uma chamada ao \textit {socket} \cite {Sockets}}}{53}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura \acrshort {lare}}}{54}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Circuitos \acrshort {visir} - \acrshort {isep} - \textbf {Se calhar retirava a imagem}}}{54}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Painel traseiro \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{55}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{55}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Placas PC/104 do \acrshort {visir} - \acrshort {isep} - \textbf {Foto com melhor qualidade}}}{56}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{57}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{58}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Representação alternativa dos \acrshort {gpio}s \cite {Raspberrytech}}}{58}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \textit {Esquema simplificado de um relé \cite {DryRelay}}}}{59}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{60}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{61}{figure.caption.65}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de blocos SN74HC595 \cite {SN74HC595}}}{62}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{65}{figure.caption.71}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Funcionamento geral \textit {Flask}}}{66}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{67}{figure.caption.70}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Experiência Lei de Ohm}}{76}{figure.caption.71}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{77}{figure.caption.72}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Página de \textit {login}}}{77}{figure.caption.73}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Página de menus}}{78}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Funcionamento geral \textit {Flask}}}{70}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{71}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Experiência Lei de Ohm}}{80}{figure.caption.74}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{81}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Página de \textit {login}}}{81}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Página de menus}}{82}{figure.caption.77}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

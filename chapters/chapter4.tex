@@ -3,8 +3,8 @@
 \chapter{Implementação}
 \begin{center}
     \textit{``Do or do not. There is no try.''}
-     
-     Master Yoda
+
+    Master Yoda
 \end{center}
 Neste capítulo aborda-se com mais pormenor os aspectos mais técnicos do \acrshort{lare}, tendo como base a arquitectura apresentada na Figura \ref{fig:arquitecturalore}.
 
@@ -12,10 +12,12 @@ O desenvolvimento começou pela implementação e desenvolvimento do servidor \t
 
 O \acrshort{ide} utilizado no desenvolvimento do \textit{software} foi o \textit{Visual Studio Code}\footnote{\url{https://code.visualstudio.com/}} e o projecto está alojado no \textit{GitHub}. O sistema operativo instalado no RaspberryPI 5 foi uma versão ligeiramente modificada do \textit{Arch Linux ARM}.
 
+Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em placas brancas, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}.
+
 \section{Servidor Flask}
 \textbf{Não sei se ainad vai ficar desta forma}
 
-Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio é tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube. 
+Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio é tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
 
 A base para a implementação do \textit{Flask} e \underline{\textbf{toda a informação descrita neste}} \underline{\textbf{capítulo}} teve como base a documentação técnica disponível no \textit{site} do \href{https://flask.palletsprojects.com/en/3.0.x/}{\textit{Flask}} e complementada com alguns tutoriais do \textit{Youtube}, como por exemplo: \href{https://www.youtube.com/watch?v=dam0GPOAvVI}{\textit{link}} ou \href{https://www.youtube.com/watch?v=bB6Yyh7nUl4}{\textit{link}} .
 
@@ -62,7 +64,7 @@ As aplicações \textit{Web} modernas utilizam \acrshort{url}s amigáveis para a
 No \textit{Flask} utiliza-se o decorador \textit{\textbf{route()}} para associar uma função a um \acrshort{url}, tal como pode ser visto na Listagem \ref{lst:decoradorroute}.
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Python, caption=Decorador \textit{route()} - \textit{views.py}, label=lst:decoradorroute]
+    \begin{lstlisting}[language=Python, caption=Decorador \textit{route()} - \textit{views.py}, label=lst:decoradorroute]
 @views.route("/ohm", methods=['GET', 'POST'])
 @login_required
 def pagina_seguinte():
@@ -81,7 +83,7 @@ A última linha renderiza o \textit{template} \textit{\textbf{home.html}} e pass
 Para construir um \acrshort{url} para uma função específica, usa-se a função \textit{\textbf{url\_for()}}. Esta função aceita o nome da função como seu primeiro argumento e qualquer número de argumentos de palavras-chave, cada um correspondendo a uma parte variável da regra de \acrshort{url}, tal como pode ser visto na Listagem \ref{lst:urlfor}
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Python, caption=Contrução de \textit{url}s - \textit{auth.py}, label=lst:urlfor]
+    \begin{lstlisting}[language=Python, caption=Contrução de \textit{url}s - \textit{auth.py}, label=lst:urlfor]
 (...)
 if user:
     if check_password_hash(user.password, password):
@@ -99,30 +101,30 @@ O \textit{Flask} usa um conceito de \textit{blueprints} para criar componentes d
 
 Nas Listagens \ref{lst:blueprintviews} e \ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
 \begin{center}
-\begin{minipage}{0.7\linewidth}
-\begin{lstlisting}[language=Python, caption=\textit{Blueprint views} - \textit{views.py}, label=lst:blueprintviews]
+    \begin{minipage}{0.7\linewidth}
+        \begin{lstlisting}[language=Python, caption=\textit{Blueprint views} - \textit{views.py}, label=lst:blueprintviews]
 views = Blueprint('views', __name__)
 \end{lstlisting}
-\end{minipage}
+    \end{minipage}
 \end{center}
 
 \begin{center}
-\begin{minipage}{0.7\linewidth}
-\begin{lstlisting}[language=Python, caption=\textit{Blueprint auth} - \textit{auth.py}, label=lst:blueprintauth]
+    \begin{minipage}{0.7\linewidth}
+        \begin{lstlisting}[language=Python, caption=\textit{Blueprint auth} - \textit{auth.py}, label=lst:blueprintauth]
 auth = Blueprint('auth', __name__)
 \end{lstlisting}
-\end{minipage}
+    \end{minipage}
 \end{center}
 
 Ambas as \textit{blueprints} são registadas no ficheiro \textit{\_\_init\_\_.py}, como se pode verificar na Listagem \ref{lst:initreg}
 
 \begin{center}
-\begin{minipage}{0.7\linewidth}
-\begin{lstlisting}[language=Python, caption=Registo das \textit{blueprints} - \textit{\_\_init\_\_.py}, label=lst:initreg]
+    \begin{minipage}{0.7\linewidth}
+        \begin{lstlisting}[language=Python, caption=Registo das \textit{blueprints} - \textit{\_\_init\_\_.py}, label=lst:initreg]
 app.register_blueprint(views, url_prefix='/')
 app.register_blueprint(auth, url_prefix='/')
 \end{lstlisting}
-\end{minipage}
+    \end{minipage}
 \end{center}
 
 Isto quer dizer que ao registar a \textit{blueprint} com o prefixo ``/'', os \acrshort{url}s serão acessíveis através da raiz da aplicação.
@@ -133,7 +135,7 @@ A capacidade de uma aplicação \textit{web} em responder a solicitações de da
 O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como pode ser visto na Listagem \ref{lst:atributorequest}.
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{request} - \textit{auth.py}}, label=lst:atributorequest]
+    \begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{request} - \textit{auth.py}}, label=lst:atributorequest]
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -158,7 +160,7 @@ def login():
 Quando se adiciona um ponto de interrogação (?) seguido de pares chave-valor (key=value) no final de um \acrshort{url}, está a enviar-se dados adicionais ao servidor, esses dados são chamados de \textbf{parâmetros do \acrshort{url}}, como se pode ver na Listagem \ref{lst:paramurl}.
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{args} - \textit{views.py}}, label=lst:argrequest]
+    \begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{args} - \textit{views.py}}, label=lst:argrequest]
 @views.route('/config_VirtualBench', methods=['GET', 'POST'])
 @login_required
 def config_VirtualBench():
@@ -175,7 +177,7 @@ def config_VirtualBench():
 \end{minipage}
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Html, caption=Exemplo argumentos passados ao servidor - ohm.html, label=lst:paramurl]
+    \begin{lstlisting}[language=Html, caption=Exemplo argumentos passados ao servidor - ohm.html, label=lst:paramurl]
 const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistance}`;
 \end{lstlisting}
 \end{minipage}
@@ -185,7 +187,7 @@ No entanto, a criação e renderização das páginas \acrshort{html} é feita a
 Na Listagem \ref{lst:htmljinja2} pode ver-se um exemplo da combinação entre código \acrshort{html} e sintaxe \textit{Jinja2}.
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Html, caption=Exemplo sintaxe \textit{Jinja2} - base.html, label=lst:htmljinja2]
+    \begin{lstlisting}[language=Html, caption=Exemplo sintaxe \textit{Jinja2} - base.html, label=lst:htmljinja2]
 <title>{% block title %}Home{% endblock %}</title>
   </head>
   <body>
@@ -225,7 +227,7 @@ No contexto da documentação do \textit{Flask} e implementação de uma base de
 \textbf{Nota para minha referência: Falar de instalar o pacote SQLAlchemy?}
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Python, caption=Exemplo uso \textit{ SQLAlchemy} - \textit{\_\_init.py\_\_}, label=lst:basedados]
+    \begin{lstlisting}[language=Python, caption=Exemplo uso \textit{ SQLAlchemy} - \textit{\_\_init.py\_\_}, label=lst:basedados]
 
 from flask_sqlalchemy import SQLAlchemy
 
@@ -245,7 +247,7 @@ def create_app():
 A segurança da aplicação é feita com recurso à página de \textit{login} e \textit{logout}, para isso foi instalada a extensão \textit{flask-login}, tal como é apresentado na Listagem \ref{lst:exemplologin}
 
 \begin{minipage}{0.9\linewidth}
-\begin{lstlisting}[language=Python, caption=Exemplo autenticação \textit{login}, label=lst:exemplologin]
+    \begin{lstlisting}[language=Python, caption=Exemplo autenticação \textit{login}, label=lst:exemplologin]
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -283,13 +285,13 @@ Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns
 Como já se viu na Secção \ref{sec:hardware} o \acrshort{virtualbench} é constituído por 5 instrumentos, 4 dos quais utilizados no \acrshort{lare}: Fonte de tensão, gerador de sinal, osciloscópio e multímetro digital.
 Vários instrumentos podem ser chamados ao mesmo tempo e a cada instrumento, assim como ao \acrshort{virtualbench} é atribuído um \textbf{OBJECTO?endereço?referência? - verificar}
 \begin{center}
-\begin{minipage}{0.75\linewidth}
-\begin{lstlisting}[language=Python, caption=Chamada do \acrshort{virtualbench} e instrumentos, label=lst:chamadainstrumentos]
+    \begin{minipage}{0.75\linewidth}
+        \begin{lstlisting}[language=Python, caption=Chamada do \acrshort{virtualbench} e instrumentos, label=lst:chamadainstrumentos]
 virtualbench = PyVirtualBench('VB8012-30A210F')
 ps = virtualbench.acquire_power_supply()
 dmm = virtualbench.acquire_digital_multimeter()
 \end{lstlisting}
-\end{minipage}
+    \end{minipage}
 \end{center}
 
 O resultado da Listagem \ref{lst:chamadainstrumentos} é:
@@ -301,16 +303,16 @@ O resultado da Listagem \ref{lst:chamadainstrumentos} é:
 
 No entanto, no fim da execução do ficheiro, o \acrshort{virtualbench} e os restantes instrumentos têm de ser libertados:
 \begin{center}
-\begin{minipage}{0.75\linewidth}
-\begin{lstlisting}[language=Python, caption=Libertar instrumentos e \acrshort{virtualbench}, label=lst:libertarinstrumentos]
+    \begin{minipage}{0.75\linewidth}
+        \begin{lstlisting}[language=Python, caption=Libertar instrumentos e \acrshort{virtualbench}, label=lst:libertarinstrumentos]
 ps.release()
 dmm.release()
 virtualbench.release()
 \end{lstlisting}
-\end{minipage}
+    \end{minipage}
 \end{center}
 
-Sempre que o ficheiro é chamado é criado um objecto diferente para cada instrumento. Inclusive, havendo várias funções no mesmo ficheiro, os objectos criados têm de ser passados entre funções ou então, terminar e chamar o(s) instrumento(s) entre chamadas de funções. Outra hipótese seria o uso de variáveis globais. Estes factos/procedimentos/whetever levantariam problemas de objectividade e organização do código. 
+Sempre que o ficheiro é chamado é criado um objecto diferente para cada instrumento. Inclusive, havendo várias funções no mesmo ficheiro, os objectos criados têm de ser passados entre funções ou então, terminar e chamar o(s) instrumento(s) entre chamadas de funções. Outra hipótese seria o uso de variáveis globais. Estes factos/procedimentos/whetever levantariam problemas de objectividade e organização do código.
 
 Na secção seguinte explica-se a solução encontrada.
 
@@ -340,7 +342,7 @@ Na implementação desta experiência foram criados os ficheiros \textit{ohm.htm
 \subsection{Configuração do VirtualBench}
 Da forma como está implementado o controlo da experiência, por parte do utilizador, levanta alguns pro
 
-\section{qualquer merda que ainda não sei o quê}
+\section{qualquer coisa que ainda não sei o quê}
 
 Após análise e estudo da informação presente no \textit{site} do \textit{Flask} e nos tutoriais mencionados em cima, definiu-se e implementou-se a página de autenticação no ficheiro \textit{auth.py}, tal como pode ser visto na Figura \ref{fig:paglogin}:
 
@@ -355,7 +357,7 @@ Um exemplo de como foi implementada a função \textit{login}() está representa
 
 Os dados de \textit{login} e registo são guardados na directoria \textit{instance}, ficheiro \textit{database.db}.
 
-Além da rota definida para o \textit{login}, as outras rotas definidas no ficheiro \textit{auth.py} foram as \textit{sign-up} e \textit{logout}. A estrutura base da função \textit{login}, representada na Listagem \ref{lst:exemplologin}, é idêntica para as restantes, sendo que ``/\textit{login''} representa a rota especificada, dentro da função há o código especifico inerentes a cada função e o \textit{return render\_template} indica qual a página a ser renderizada. 
+Além da rota definida para o \textit{login}, as outras rotas definidas no ficheiro \textit{auth.py} foram as \textit{sign-up} e \textit{logout}. A estrutura base da função \textit{login}, representada na Listagem \ref{lst:exemplologin}, é idêntica para as restantes, sendo que ``/\textit{login''} representa a rota especificada, dentro da função há o código especifico inerentes a cada função e o \textit{return render\_template} indica qual a página a ser renderizada.
 
 A juntar às páginas que compõem a estrutura base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as páginas que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Neste caso, serão cinco páginas, correspondentes aos 5 circuitos definidos na Secção \ref{sec:solucaoproposta}.
 

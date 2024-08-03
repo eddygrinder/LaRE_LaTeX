@@ -527,16 +527,16 @@ N.~Instruments, ``Virtualbench all-in-one instrument product flyer - national in
 ``Pc104 consortium home - pc/104 consortiumpc/104 consortium.'' \url{https://pc104.org/}.
 \newblock (Accessed on 08/01/2024).
 
+\bibitem{Raspberrytech}
+``Raspberry pi hardware - raspberry pi documentation.'' \url{https://www.raspberrypi.com/documentation/computers/raspberry-pi.html}.
+\newblock (Accessed on 07/24/2024).
+
 \bibitem{Raspberrypi5}
 ``Raspberry pi documentation.'' \url{https://www.raspberrypi.com/documentation/}.
 \newblock (Accessed on 07/24/2024).
 
 \bibitem{DryRelay}
 ``Dry relays | relays | comus group.'' \url{https://comus-intl.com/product-category/relays/dry-relays/}.
-\newblock (Accessed on 07/24/2024).
-
-\bibitem{Raspberrytech}
-``Raspberry pi hardware - raspberry pi documentation.'' \url{https://www.raspberrypi.com/documentation/computers/raspberry-pi.html}.
 \newblock (Accessed on 07/24/2024).
 
 \bibitem{ULN2003}
@@ -559,6 +559,10 @@ C.~A. Team, ``Front end vs. back end: Where should you start?.'' \url{https://ww
 A.~Joy, ``5 main disadvantages of python programming language – pythonista planet.'' \url{https://pythonistaplanet.com/disadvantages-of-python/}.
 \newblock (Accessed on 07/26/2024).
 
+\bibitem{ieeespectrum}
+``The top programming languages 2023 - ieee spectrum.'' \url{https://spectrum.ieee.org/the-top-programming-languages-2023}.
+\newblock (Accessed on 07/27/2024).
+
 \bibitem{wsgi}
 ``What is wsgi? — wsgi.org.'' \url{https://wsgi.readthedocs.io/en/latest/what.html}.
 \newblock (Accessed on 07/26/2024).
@@ -575,8 +579,32 @@ D.~Mashutin, ``Django vs flask: Which is the best python web framework? | the py
 R.~Johns, ``Flask vs django: Which python web framework to use in 2024?.'' \url{https://hackr.io/blog/flask-vs-django}.
 \newblock (Accessed on 07/26/2024).
 
+\bibitem{W3C}
+``W3c.'' \url{https://www.w3.org/}.
+\newblock (Accessed on 08/03/2024).
+
 \bibitem{HTMLbasics}
 ``Html basics - learn web development | mdn.'' \url{https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics}.
 \newblock (Accessed on 07/26/2024).
+
+\bibitem{HTMLwikipedia}
+``Html element - wikipedia.'' \url{https://en.wikipedia.org/wiki/HTML_element}.
+\newblock (Accessed on 08/03/2024).
+
+\bibitem{w3ccss}
+``Introduction to html 4.'' \url{https://www.w3.org/TR/html40/intro/intro.html}.
+\newblock (Accessed on 08/03/2024).
+
+\bibitem{Startingcss}
+``Starting with html + css.'' \url{https://www.w3.org/Style/Examples/011/firstcss}.
+\newblock (Accessed on 08/03/2024).
+
+\bibitem{JavaScriptRef}
+``Javascript reference - javascript | mdn.'' \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference}.
+\newblock (Accessed on 08/03/2024).
+
+\bibitem{JavaScript}
+``Javascript tutorial.'' \url{https://www.w3schools.com/js/default.asp}.
+\newblock (Accessed on 08/03/2024).
 
 \end{thebibliography}
