@@ -316,7 +316,28 @@ Sempre que o ficheiro é chamado é criado um objecto diferente para cada instru
 
 Na secção seguinte explica-se a solução encontrada.
 
-\section{Lei de Ohm}
+\section{Circuitos/Experiências}
+\label{sec:experiencias}
+Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por 5 circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/exemplo_reles_spst.png}
+    \caption{Exemplo de utilização de relés \acrshort{spst} e \acrshort{dpst}}
+    \label{fig:relespstdpst}
+\end{figure}
+
+Como já se viu na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para isso, é necessário usar o \textit{ULN2003A} que é um \textit{driver} de relés. Na Figura \ref{fig:diagramablocos2003} está representado o diagrama simplificado para uma entrada/saída do \textit{ULN2003A}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/uln2003_diagramablocos.png}
+    \caption{Diagrama de blocos simplificado do ULN2003A}
+    \label{fig:diagramablocos2003}
+\end{figure}
+
+\subsection{Lei de Ohm}
+
 Nesta experiência procura-se provar a Lei de Ohm. Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
 \begin{itemize}
     \item O utilizador ou aluno parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes. No final confronta o valor conhecido com o declive da recta - que pode ser, ou não, apresentado com o gráfico, como pode ser visto na Figura \ref{fig:pagohm}.

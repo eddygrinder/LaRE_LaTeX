@@ -21,6 +21,8 @@
 \glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{viii}
 \glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{viii}
 \glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{viii}
+\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{viii}
+\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{viii}
 \glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xi}
 \glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xi}
 \glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xi}
@@ -473,5 +475,12 @@
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{79}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{79}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{79}
-\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{82}
-\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{82}
+\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{83}
+\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{83}

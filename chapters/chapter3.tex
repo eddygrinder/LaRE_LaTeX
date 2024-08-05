@@ -252,6 +252,7 @@ Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurado
 \end{figure}
 
 \subsection{Relés}
+\label{sec:reles}
 Como já foi referido na Capítulo \ref{Capitulo2}, os circuitos que compõem o \acrshort{visir} são controlados através de relés. Estes dispositivos funcionam como interruptores electromecânicos simples que utilizam um sinal elétrico para controlar um eletroíman.
 Os relés electromecânicos são constituídos por uma bobine e um contacto, que pode ser normalmente aberto ou fechado. A corrente eléctrica ao passar pela bobine gera um campo magnético que atrai o contacto, fechando-o ou abrindo-o, conforme o caso. A Figura \ref{fig:esquematicoreles} mostra um esquema simplificado de um relé electromecânico.
 
@@ -281,6 +282,7 @@ Como já foi referido na Secção \ref{sec:RaspberryPI}, a tensão de funcioname
 Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os relés, já que funcionam a \SI{12}{\volt}. Para activar os relés, é necessário o uso de \textit{drivers} que consigam fornecer a tensão e corrente necessárias para o efeito.
 
 \subsection{\textit{Driver} de Relés}
+\label{sec:driver}
 O circuito integrado ULN2003A é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
 Tipicamente, este \textit{driver} é usado em conjunto com microcontroladores ou \gls{RaspberryPI} no comando de cargas indutivas, como motores, bobines e relés.
 
@@ -311,7 +313,7 @@ Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e dep
 	\includegraphics[width=1\textwidth]{figures/SR_blocos.png}
 	\caption{Diagrama de blocos SN74HC595 \cite{SN74HC595}}
 	\label{fig:SN74HC595blocos}
-\end{figure}h
+\end{figure}
 
 Na transmissão das tramas optou-se por dividir as duas: envio de 8 \textit{bits}, na experiência da Lei de Ohm, e envio de 13 \textit{bits}, nas experiências de rectificadores e filtros. Como se pode ver na Tabela \ref{Table:funcSN74HC595}, são precisos 5 \acrshort{gpio}s configurados como saídas para controlar o envio de uma trama, portanto, para realizar o comando dos relés do \acrshort{lare}, são/serão necessários 10 \acrshort{gpio}s.
 Nos capítulos seguintes - \textbf{COLOCAR A REFERÊNCIA} - é explicado com mais pormenor o processo de envio. As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.

@@ -52,14 +52,15 @@
 \contentsline {subsection}{\numberline {4.1.6}Autenticação}{77}{subsection.4.1.6}%
 \contentsline {section}{\numberline {4.2}pyVirtualBench}{78}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}VirtualBench VB-8012}{79}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Lei de Ohm}{80}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Configuração do VirtualBench}{80}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{81}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{83}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{83}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{83}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{85}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{99}{section*.78}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{115}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{115}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{115}{section.1.A.2}%
+\contentsline {section}{\numberline {4.3}Circuitos/Experiências}{80}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Lei de Ohm}{81}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Configuração do VirtualBench}{81}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{82}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Resultados}{85}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{85}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{85}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{87}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{101}{section*.80}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{117}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{117}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{117}{section.1.A.2}%
