@@ -302,6 +302,7 @@ Pela análise dos esquemas \textbf{DATASHEET - REFERÊNCIA} verifica-se que os \
 Sendo assim, houve a necessidade de criar uma solução que permitisse comandar os relés, já que o \gls{RaspberryPI} não possui \acrshort{gpio}s suficientes.
 
 \subsection{Registo de deslocamento}
+\label{sec:registodeslocamento}
 O uso de registos de deslocamento foi a solução encontrada de forma a ultrapassar o problema da falta de \acrshort{gpio}s.
 
 O SN74HC595 é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 bits com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.

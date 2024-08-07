@@ -2,9 +2,9 @@
 \label{Capítulo4}
 \chapter{Implementação}
 \begin{center}
-    \textit{``Do or do not. There is no try.''}
+	\textit{``Do or do not. There is no try.''}
 
-    Master Yoda
+	Master Yoda
 \end{center}
 Neste capítulo aborda-se com mais pormenor os aspectos mais técnicos do \acrshort{lare}, tendo como base a arquitectura apresentada na Figura \ref{fig:arquitecturalore}.
 
@@ -25,37 +25,37 @@ A base para a implementação do \textit{Flask} e \underline{\textbf{toda a info
 O fluxograma apresentado na Figura \ref{fig:funcflask} apresenta o funcionamento geral do servidor \textit{Flask}.
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=0.7\textwidth]{figures/fluxograma_flask.drawio.png}
-    \caption{Funcionamento geral \textit{Flask}}
-    \label{fig:funcflask}
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/fluxograma_flask.drawio.png}
+	\caption{Funcionamento geral \textit{Flask}}
+	\label{fig:funcflask}
 \end{figure}
 
 A estrutura de directórios do \textit{Flask} tem uma base pré-definida que não é necessariamente rígida e pode ser adaptada consoante os requisitos do projecto \cite{Flask}. No caso do \acrshort{lare} a estrutura ficou organizada da forma como se mostra na Figura \ref{fig:estruturapastas}
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=0.3\textwidth]{figures/tree_flask.png}
-    \caption{Estrutura de directórios - \textit{Flask} \textbf{ main.html está a mais}}
-    \label{fig:estruturapastas}
+	\centering
+	\includegraphics[width=0.3\textwidth]{figures/tree_flask.png}
+	\caption{Estrutura de directórios - \textit{Flask} \textbf{ main.html está a mais}}
+	\label{fig:estruturapastas}
 \end{figure}
 
 A raiz do projecto é o directório ``\textit{webserver}'' e nele estão contidos o ficheiro principal, assim como outros directórios e ficheiros de configuração essenciais:
 \begin{itemize}
-    \item \textit{main.py}: O ficheiro principal do aplicativo que inicializa e configura o \textit{Flask};
-    \item \textit{requirements.txt}: Uma lista de dependências do projeto que podem ser instaladas usando \gls{pip};
-    \item \textit{static/}: Este diretório contém os ficheiros estáticos como \acrshort{css}, \textit{JavaScript} e as imagens usadas em toda a aplicação;
-    \item \textit{templates/}: Contém os modelos \acrshort{html} usado para renderizar as visualizações;
-    \item \textit{instance/}: Diretório para armazenar ficheiros de configuração ou ficheiros que mudam em tempo de execução, específicos da cada instância, por exemplo, ficheiros da base de dados.
+	\item \textit{main.py}: O ficheiro principal do aplicativo que inicializa e configura o \textit{Flask};
+	\item \textit{requirements.txt}: Uma lista de dependências do projeto que podem ser instaladas usando \gls{pip};
+	\item \textit{static/}: Este diretório contém os ficheiros estáticos como \acrshort{css}, \textit{JavaScript} e as imagens usadas em toda a aplicação;
+	\item \textit{templates/}: Contém os modelos \acrshort{html} usado para renderizar as visualizações;
+	\item \textit{instance/}: Diretório para armazenar ficheiros de configuração ou ficheiros que mudam em tempo de execução, específicos da cada instância, por exemplo, ficheiros da base de dados.
 \end{itemize}
 
 Dentro da raiz, criou-se o directório \textit{website} onde se incluiu os ficheiros respeitantes ao funcionamento do \textit{site}. Nele constam os já descritos \textit{templates}, \textit{static} e ainda os seguintes ficheiros:
 
 \begin{itemize}
-    \item \textit{\_\_init\_\_.py}: Inicializa o \textit{Flask} e define as configurações. Este ficheiro dentro da directoria \textit{website} faz com que esta seja tratada como um pacote \textit{Python}. Isto quer dizer que a directoria pode ser importada e tudo o que estiver dentro é executado automaticamente;
-    \item \textit{views.py}: Contém as funções de visualização para o tratamento de pedidos \acrfull{http};
-    \item \textit{models.py}: Define os modelos de dados para a aplicação;
-    \item \textit{auth.py}: Este ficheiro é responsável por lidar com a autenticação e autorização de utilizadores, pode incluir funções e rotas que permitem aos utilizadores registarem-se, fazer \textit{login} e fazer \textit{logout}.
+	\item \textit{\_\_init\_\_.py}: Inicializa o \textit{Flask} e define as configurações. Este ficheiro dentro da directoria \textit{website} faz com que esta seja tratada como um pacote \textit{Python}. Isto quer dizer que a directoria pode ser importada e tudo o que estiver dentro é executado automaticamente;
+	\item \textit{views.py}: Contém as funções de visualização para o tratamento de pedidos \acrfull{http};
+	\item \textit{models.py}: Define os modelos de dados para a aplicação;
+	\item \textit{auth.py}: Este ficheiro é responsável por lidar com a autenticação e autorização de utilizadores, pode incluir funções e rotas que permitem aos utilizadores registarem-se, fazer \textit{login} e fazer \textit{logout}.
 \end{itemize}
 
 \subsection{Rotas}
@@ -64,7 +64,7 @@ As aplicações \textit{Web} modernas utilizam \acrshort{url}s amigáveis para a
 No \textit{Flask} utiliza-se o decorador \textit{\textbf{route()}} para associar uma função a um \acrshort{url}, tal como pode ser visto na Listagem \ref{lst:decoradorroute}.
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Python, caption=Decorador \textit{route()} - \textit{views.py}, label=lst:decoradorroute]
+	\begin{lstlisting}[language=Python, caption=Decorador \textit{route()} - \textit{views.py}, label=lst:decoradorroute]
 @views.route("/ohm", methods=['GET', 'POST'])
 @login_required
 def pagina_seguinte():
@@ -83,7 +83,7 @@ A última linha renderiza o \textit{template} \textit{\textbf{home.html}} e pass
 Para construir um \acrshort{url} para uma função específica, usa-se a função \textit{\textbf{url\_for()}}. Esta função aceita o nome da função como seu primeiro argumento e qualquer número de argumentos de palavras-chave, cada um correspondendo a uma parte variável da regra de \acrshort{url}, tal como pode ser visto na Listagem \ref{lst:urlfor}
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Python, caption=Contrução de \textit{url}s - \textit{auth.py}, label=lst:urlfor]
+	\begin{lstlisting}[language=Python, caption=Contrução de \textit{url}s - \textit{auth.py}, label=lst:urlfor]
 (...)
 if user:
     if check_password_hash(user.password, password):
@@ -101,30 +101,30 @@ O \textit{Flask} usa um conceito de \textit{blueprints} para criar componentes d
 
 Nas Listagens \ref{lst:blueprintviews} e \ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
 \begin{center}
-    \begin{minipage}{0.7\linewidth}
-        \begin{lstlisting}[language=Python, caption=\textit{Blueprint views} - \textit{views.py}, label=lst:blueprintviews]
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=Python, caption=\textit{Blueprint views} - \textit{views.py}, label=lst:blueprintviews]
 views = Blueprint('views', __name__)
 \end{lstlisting}
-    \end{minipage}
+	\end{minipage}
 \end{center}
 
 \begin{center}
-    \begin{minipage}{0.7\linewidth}
-        \begin{lstlisting}[language=Python, caption=\textit{Blueprint auth} - \textit{auth.py}, label=lst:blueprintauth]
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=Python, caption=\textit{Blueprint auth} - \textit{auth.py}, label=lst:blueprintauth]
 auth = Blueprint('auth', __name__)
 \end{lstlisting}
-    \end{minipage}
+	\end{minipage}
 \end{center}
 
 Ambas as \textit{blueprints} são registadas no ficheiro \textit{\_\_init\_\_.py}, como se pode verificar na Listagem \ref{lst:initreg}
 
 \begin{center}
-    \begin{minipage}{0.7\linewidth}
-        \begin{lstlisting}[language=Python, caption=Registo das \textit{blueprints} - \textit{\_\_init\_\_.py}, label=lst:initreg]
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=Python, caption=Registo das \textit{blueprints} - \textit{\_\_init\_\_.py}, label=lst:initreg]
 app.register_blueprint(views, url_prefix='/')
 app.register_blueprint(auth, url_prefix='/')
 \end{lstlisting}
-    \end{minipage}
+	\end{minipage}
 \end{center}
 
 Isto quer dizer que ao registar a \textit{blueprint} com o prefixo ``/'', os \acrshort{url}s serão acessíveis através da raiz da aplicação.
@@ -135,7 +135,7 @@ A capacidade de uma aplicação \textit{web} em responder a solicitações de da
 O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como pode ser visto na Listagem \ref{lst:atributorequest}.
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{request} - \textit{auth.py}}, label=lst:atributorequest]
+	\begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{request} - \textit{auth.py}}, label=lst:atributorequest]
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -160,7 +160,7 @@ def login():
 Quando se adiciona um ponto de interrogação (?) seguido de pares chave-valor (key=value) no final de um \acrshort{url}, está a enviar-se dados adicionais ao servidor, esses dados são chamados de \textbf{parâmetros do \acrshort{url}}, como se pode ver na Listagem \ref{lst:paramurl}.
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{args} - \textit{views.py}}, label=lst:argrequest]
+	\begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{args} - \textit{views.py}}, label=lst:argrequest]
 @views.route('/config_VirtualBench', methods=['GET', 'POST'])
 @login_required
 def config_VirtualBench():
@@ -177,7 +177,7 @@ def config_VirtualBench():
 \end{minipage}
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Html, caption=Exemplo argumentos passados ao servidor - ohm.html, label=lst:paramurl]
+	\begin{lstlisting}[language=Html, caption=Exemplo argumentos passados ao servidor - ohm.html, label=lst:paramurl]
 const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistance}`;
 \end{lstlisting}
 \end{minipage}
@@ -187,7 +187,7 @@ No entanto, a criação e renderização das páginas \acrshort{html} é feita a
 Na Listagem \ref{lst:htmljinja2} pode ver-se um exemplo da combinação entre código \acrshort{html} e sintaxe \textit{Jinja2}.
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Html, caption=Exemplo sintaxe \textit{Jinja2} - base.html, label=lst:htmljinja2]
+	\begin{lstlisting}[language=Html, caption=Exemplo sintaxe \textit{Jinja2} - base.html, label=lst:htmljinja2]
 <title>{% block title %}Home{% endblock %}</title>
   </head>
   <body>
@@ -227,7 +227,7 @@ No contexto da documentação do \textit{Flask} e implementação de uma base de
 \textbf{Nota para minha referência: Falar de instalar o pacote SQLAlchemy?}
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Python, caption=Exemplo uso \textit{ SQLAlchemy} - \textit{\_\_init.py\_\_}, label=lst:basedados]
+	\begin{lstlisting}[language=Python, caption=Exemplo uso \textit{ SQLAlchemy} - \textit{\_\_init.py\_\_}, label=lst:basedados]
 
 from flask_sqlalchemy import SQLAlchemy
 
@@ -247,7 +247,7 @@ def create_app():
 A segurança da aplicação é feita com recurso à página de \textit{login} e \textit{logout}, para isso foi instalada a extensão \textit{flask-login}, tal como é apresentado na Listagem \ref{lst:exemplologin}
 
 \begin{minipage}{0.9\linewidth}
-    \begin{lstlisting}[language=Python, caption=Exemplo autenticação \textit{login}, label=lst:exemplologin]
+	\begin{lstlisting}[language=Python, caption=Exemplo autenticação \textit{login}, label=lst:exemplologin]
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -273,10 +273,10 @@ Antes de se avançar para uma explicação mais pormenorizada das experiências,
 
 Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se enquadram nos objectivos deste projecto são:
 \begin{itemize}
-    \item \textit{dmm\_example.py}: exemplo que demonstra como efetuar medições utilizando o multímetro digital;
-    \item \textit{fgen\_example.py}: exemplo que demonstra como configurar e gerar uma onda através do gerador de sinal;
-    \item \textit{mso\_simple\_example.py}: exemplo que demonstra como configurar e adquirir dados do osciloscópio, utilizando a funcionalidade de configuração automática incorporada;
-    \item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
+	\item \textit{dmm\_example.py}: exemplo que demonstra como efetuar medições utilizando o multímetro digital;
+	\item \textit{fgen\_example.py}: exemplo que demonstra como configurar e gerar uma onda através do gerador de sinal;
+	\item \textit{mso\_simple\_example.py}: exemplo que demonstra como configurar e adquirir dados do osciloscópio, utilizando a funcionalidade de configuração automática incorporada;
+	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
 
 \subsection{VirtualBench VB-8012}
@@ -285,31 +285,31 @@ Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns
 Como já se viu na Secção \ref{sec:hardware} o \acrshort{virtualbench} é constituído por 5 instrumentos, 4 dos quais utilizados no \acrshort{lare}: Fonte de tensão, gerador de sinal, osciloscópio e multímetro digital.
 Vários instrumentos podem ser chamados ao mesmo tempo e a cada instrumento, assim como ao \acrshort{virtualbench} é atribuído um \textbf{OBJECTO?endereço?referência? - verificar}
 \begin{center}
-    \begin{minipage}{0.75\linewidth}
-        \begin{lstlisting}[language=Python, caption=Chamada do \acrshort{virtualbench} e instrumentos, label=lst:chamadainstrumentos]
+	\begin{minipage}{0.75\linewidth}
+		\begin{lstlisting}[language=Python, caption=Chamada do \acrshort{virtualbench} e instrumentos, label=lst:chamadainstrumentos]
 virtualbench = PyVirtualBench('VB8012-30A210F')
 ps = virtualbench.acquire_power_supply()
 dmm = virtualbench.acquire_digital_multimeter()
 \end{lstlisting}
-    \end{minipage}
+	\end{minipage}
 \end{center}
 
 O resultado da Listagem \ref{lst:chamadainstrumentos} é:
 \begin{itemize}
-    \item (...)PyVirtualBench object at 0x000001E7DEECAD20.
-    \item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
-    \item (...)PyVirtualBench.DigitalMultimeter object at 0x000001E7DEECBC50;
+	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
+	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
+	\item (...)PyVirtualBench.DigitalMultimeter object at 0x000001E7DEECBC50;
 \end{itemize}
 
 No entanto, no fim da execução do ficheiro, o \acrshort{virtualbench} e os restantes instrumentos têm de ser libertados:
 \begin{center}
-    \begin{minipage}{0.75\linewidth}
-        \begin{lstlisting}[language=Python, caption=Libertar instrumentos e \acrshort{virtualbench}, label=lst:libertarinstrumentos]
+	\begin{minipage}{0.75\linewidth}
+		\begin{lstlisting}[language=Python, caption=Libertar instrumentos e \acrshort{virtualbench}, label=lst:libertarinstrumentos]
 ps.release()
 dmm.release()
 virtualbench.release()
 \end{lstlisting}
-    \end{minipage}
+	\end{minipage}
 \end{center}
 
 Sempre que o ficheiro é chamado é criado um objecto diferente para cada instrumento. Inclusive, havendo várias funções no mesmo ficheiro, os objectos criados têm de ser passados entre funções ou então, terminar e chamar o(s) instrumento(s) entre chamadas de funções. Outra hipótese seria o uso de variáveis globais. Estes factos/procedimentos/whetever levantariam problemas de objectividade e organização do código.
@@ -321,41 +321,82 @@ Na secção seguinte explica-se a solução encontrada.
 Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por 5 circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=0.6\textwidth]{figures/exemplo_reles_spst.png}
-    \caption{Exemplo de utilização de relés \acrshort{spst} e \acrshort{dpst}}
-    \label{fig:relespstdpst}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/exemplo_reles_spst.png}
+	\caption{Exemplo de utilização de relés \acrshort{spst} e \acrshort{dpst}}
+	\label{fig:relespstdpst}
 \end{figure}
 
 Como já se viu na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para isso, é necessário usar o \textit{ULN2003A} que é um \textit{driver} de relés. Na Figura \ref{fig:diagramablocos2003} está representado o diagrama simplificado para uma entrada/saída do \textit{ULN2003A}.
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=0.6\textwidth]{figures/uln2003_diagramablocos.png}
-    \caption{Diagrama de blocos simplificado do ULN2003A}
-    \label{fig:diagramablocos2003}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/uln2003_diagramablocos.png}
+	\caption{Diagrama de blocos simplificado do \textit{ULN2003A}}
+	\label{fig:diagramablocos2003}
+\end{figure}
+
+O terminar 9 - \textit{COM} - é ligado à tensão de comando dos relés e é para os díodos de ``roda livre'', como referido na Secção \ref{sec:reles}. No caso dos modelos de relés utilizados neste projecto, a tensão é de \SI{12}{\volt}.
+O \textit{ULN2003A} faz parte da família dos \textit{drivers} inversores. Se o valor lógico na entrada ``1B'' = ``0'' (ou \SI{0}{\volt}), então, a saída ``1C'' = ``1'' (ou \SI{12}{\volt}).
+
+As Figuras \ref{fig:exemplovoltimetro} e \ref{fig:esquematico74hc595} servem para ilustrar o funcionamento dos relés, em conjunto com o \textit{ULN2003A} e o \textit{SN74HC595}. Neste exemplo usou-se um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, mudando somente os pinos.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/exemplo_voltimetro.png}
+	\caption{Exemplo de comando dos relés, usando o \textit{ULN2003A}}
+	\label{fig:exemplovoltimetro}
+\end{figure}
+
+As entradas $I_{1}$ a $I_{7}$ são comandadas pelo \gls{RaspberryPI}, através do registo de deslocamento - \textit{SN74HC595}. As saídas $O_{1}$ a $O_{7}$ vão comandar os relés - terminais ``3'' e os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}. O funcionamento está descrito na Listagem \ref{Table:exemplouln2003}:
+
+\begin{table}[htb]
+	\centering
+	\caption{Tabela funcionamento \textit{ULN2003A} e relés}
+	\label{Table:exemplouln2003}
+	\begin{tabular}{ccc}
+		\toprule
+		\multicolumn{2}{c}{ULN2003A} & Relés                                \\
+		\midrule
+		Entrada                      & Saída                  & Estado      \\
+		\midrule
+		``0'' (\SI{0}{\volt})        & ``1'' (\SI{12}{\volt}) & Desactivado \\
+		\midrule
+		``1'' (\SI{12}{\volt})       & ``0'' (\SI{0}{\volt})  & Activado    \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5} = I_{15}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado.
+
+Como já foi referido na Secção \ref{sec:registodeslocamento}, o \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits}, do tipo \acrshort{sipo}. Uma trama de \textit{bits} é enviado pelo \gls{RaspberryPI} para o registo através do pino \textit{SER}(\textit{Serial}). Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio. Por cada impulso ascendente no pino \textit{SRCLK} - \textit{Shift Register Clock} - Os \textit{bits} são enviados um-a-um para o registo de deslocamento. No final, um impulso ascendente no \textit{RCLK} - \textit{Register Clock} - faz com que os \textit{bits} sejam enviados para o registo de memória e, por conseguinte, para os relés.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/registo deslocamente.drawio.png}
+	\caption{Envio de \textit{bits} para o registo de deslocamento}
+	\label{fig:esquematico74hc595}
 \end{figure}
 
 \subsection{Lei de Ohm}
-
 Nesta experiência procura-se provar a Lei de Ohm. Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
 \begin{itemize}
-    \item O utilizador ou aluno parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes. No final confronta o valor conhecido com o declive da recta - que pode ser, ou não, apresentado com o gráfico, como pode ser visto na Figura \ref{fig:pagohm}.
-    \item O utilizador ou aluno não sabe o valor da resistência e constrói o gráfico, obtendo o valor prático calculando o declive da recta, que mais uma vez, pode ou não, ser apresentado juntamente com o gráfico, tal como pode ser visto na Figura \ref{fig:pagohmabc}.
+	\item O utilizador ou aluno parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes. No final confronta o valor conhecido com o declive da recta - que pode ser, ou não, apresentado com o gráfico, como pode ser visto na Figura \ref{fig:pagohm}.
+	\item O utilizador ou aluno não sabe o valor da resistência e constrói o gráfico, obtendo o valor prático calculando o declive da recta, que mais uma vez, pode ou não, ser apresentado juntamente com o gráfico, tal como pode ser visto na Figura \ref{fig:pagohmabc}.
 \end{itemize}
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/ohm_escolha.png}
-    \caption{Experiência Lei de Ohm}
-    \label{fig:pagohm}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/ohm_escolha.png}
+	\caption{Experiência Lei de Ohm}
+	\label{fig:pagohm}
 \end{figure}
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/ohm_escolha_abc.png}
-    \caption{Experiência Lei de Ohm - Resistências desconhecidas}
-    \label{fig:pagohmabc}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/ohm_escolha_abc.png}
+	\caption{Experiência Lei de Ohm - Resistências desconhecidas}
+	\label{fig:pagohmabc}
 \end{figure}
 
 Na implementação desta experiência foram criados os ficheiros \textit{ohm.html}, como se pode ver, por exemplo, na Figura \ref{fig:pagohm} e o ficheiro \textit{configVB.py}
@@ -368,10 +409,10 @@ Da forma como está implementado o controlo da experiência, por parte do utiliz
 Após análise e estudo da informação presente no \textit{site} do \textit{Flask} e nos tutoriais mencionados em cima, definiu-se e implementou-se a página de autenticação no ficheiro \textit{auth.py}, tal como pode ser visto na Figura \ref{fig:paglogin}:
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/login.png}
-    \caption{Página de \textit{login}}
-    \label{fig:paglogin}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/login.png}
+	\caption{Página de \textit{login}}
+	\label{fig:paglogin}
 \end{figure}
 
 Um exemplo de como foi implementada a função \textit{login}() está representada na Listagem \ref{lst:exemplologin} e a rota está definida para a página \textit{/login}, como apresentado na mesma Figura, linha 17.
@@ -385,10 +426,10 @@ A juntar às páginas que compõem a estrutura base do \textit{site}, representa
 O menu de escolha foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
 
 \begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/menupage.png}
-    \caption{Página de menus}
-    \label{fig:pagmenu}
+	\centering
+	\includegraphics[width=1\textwidth]{figures/menupage.png}
+	\caption{Página de menus}
+	\label{fig:pagmenu}
 \end{figure}
 
 As páginas referentes às experiências seguem a mesma estrutura de menus.
@@ -399,17 +440,17 @@ Esta matriz, que inclui os circuitos definidos na Secção \ref{sec:solucaopropo
 
 Esta matriz é composta por 3 placas:
 \begin{itemize}
-    \item Alimentação:
-          \begin{itemize}
-              \item Transformador;
-              \item Fonte de tensão de \SI{5}{\volt};
-          \end{itemize}
-    \item Circuito da Lei de Ohm;
-    \item Circuitos de Rectificação e filtros:
-          \begin{itemize}
-              \item Rectificação de meia onda;
-              \item Rectificação de onda completa;
-              \item Filtro passa-baixo;
-              \item filtro passa-alto.
-          \end{itemize}
+	\item Alimentação:
+	      \begin{itemize}
+		      \item Transformador;
+		      \item Fonte de tensão de \SI{5}{\volt};
+	      \end{itemize}
+	\item Circuito da Lei de Ohm;
+	\item Circuitos de Rectificação e filtros:
+	      \begin{itemize}
+		      \item Rectificação de meia onda;
+		      \item Rectificação de onda completa;
+		      \item Filtro passa-baixo;
+		      \item filtro passa-alto.
+	      \end{itemize}
 \end{itemize}
