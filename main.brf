@@ -261,8 +261,8 @@
 \backcite {SN74HC595}{{63}{3.2}{table.caption.67}}
 \backcite {FrontbackEnd}{{63}{3.6}{section.3.6}}
 \backcite {FrontbackEnd}{{63}{3.6}{section.3.6}}
-\backcite {ThePython}{{63}{3.6.1}{section*.68}}
-\backcite {pythonvantagens}{{63}{3.6.1}{section*.68}}
+\backcite {ThePython}{{64}{3.6.1}{section*.68}}
+\backcite {pythonvantagens}{{64}{3.6.1}{section*.68}}
 \backcite {pythonvantagens}{{64}{3.6.1}{section*.68}}
 \backcite {5MainDispython}{{64}{3.6.1}{section*.68}}
 \backcite {ieeespectrum}{{64}{3.6.1}{section*.68}}
@@ -274,11 +274,12 @@
 \backcite {W3C}{{65}{3.6.2}{section*.70}}
 \backcite {HTMLbasics}{{65}{3.6.2}{section*.70}}
 \backcite {HTMLwikipedia}{{65}{3.6.2}{section*.70}}
-\backcite {HTMLbasics}{{65}{3.19}{figure.caption.71}}
+\backcite {HTMLbasics}{{66}{3.19}{figure.caption.71}}
 \backcite {w3ccss}{{66}{3.6.2}{figure.caption.71}}
 \backcite {Startingcss}{{66}{14}{lstnumber.3.1.13}}
 \backcite {Startingcss}{{67}{10}{lstnumber.3.2.9}}
 \backcite {Startingcss}{{67}{6}{lstnumber.3.3.5}}
-\backcite {JavaScriptRef}{{67}{3.6.2}{lstnumber.3.3.5}}
+\backcite {JavaScriptRef}{{68}{3.6.2}{lstnumber.3.3.5}}
 \backcite {JavaScript}{{68}{3.6.2}{lstnumber.3.4.9}}
 \backcite {Flask}{{70}{4.1.1}{figure.caption.72}}
+\backcite {ULN2003}{{81}{4.3}{figure.caption.75}}

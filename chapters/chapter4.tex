@@ -327,7 +327,25 @@ Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} �
 	\label{fig:relespstdpst}
 \end{figure}
 
-Como já se viu na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para isso, é necessário usar o \textit{ULN2003A} que é um \textit{driver} de relés. Na Figura \ref{fig:diagramablocos2003} está representado o diagrama simplificado para uma entrada/saída do \textit{ULN2003A}.
+Como já foi referido na Secção \ref{sec:registodeslocamento}, o \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits}, do tipo \acrshort{sipo}. Uma trama de (até 8) \textit{bits} é enviado pelo \gls{RaspberryPI} para o registo através do pino \acrshort{ser}. Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio:
+
+\begin{enumerate}
+	\item Pinos \acrshort{oe} e \acrshort{srclr} activados;
+	\item Um \textit{bit} ``0'' ou ``1'' é enviado para o pino \acrshort{ser};
+	\item \textit{N} impulsos ascendentes no pino \acrshort{srclk} fazem com que o \textit{N bits} sejam enviado para o registo de deslocamento (\textit{N bits} <= 8);
+	\item Um impulso ascendente no pino \acrshort{rclk} faz com que os \textit{N bits} sejam enviados para o registo de memória e, por conseguinte, para os relés (através do \textit{ULN2003A}).
+\end{enumerate}
+
+%Por cada impulso ascendente no pino \textit{SRCLK} - \textit{Shift Register Clock} - Os \textit{bits} são enviados um-a-um para o registo de deslocamento. No final, um impulso ascendente no \textit{RCLK} - \textit{Register Clock} - faz com que os \textit{bits} sejam enviados para o registo de memória e, por conseguinte, para os relés.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/registo deslocamente.drawio.png}
+	\caption{Envio de \textit{bits} para o registo de deslocamento}
+	\label{fig:esquematico74hc595}
+\end{figure}
+
+Foi referido na Secção \ref{sec:driver}, que o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para isso, é necessário usar o \textit{ULN2003A} que é um \textit{driver} de relés. Na Figura \ref{fig:diagramablocos2003} está representado o diagrama simplificado para uma entrada/saída do \textit{ULN2003A} \cite{ULN2003}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -336,10 +354,17 @@ Como já se viu na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capac
 	\label{fig:diagramablocos2003}
 \end{figure}
 
-O terminar 9 - \textit{COM} - é ligado à tensão de comando dos relés e é para os díodos de ``roda livre'', como referido na Secção \ref{sec:reles}. No caso dos modelos de relés utilizados neste projecto, a tensão é de \SI{12}{\volt}.
+O terminal 9 - \textit{COM} - é ligado à tensão de comando dos relés e é destinado aos díodos de ``roda livre'', conforme mencionado na Secção \ref{sec:reles}. No caso dos modelos de relés utilizados neste projecto, a tensão é de \SI{12}{\volt}.
 O \textit{ULN2003A} faz parte da família dos \textit{drivers} inversores. Se o valor lógico na entrada ``1B'' = ``0'' (ou \SI{0}{\volt}), então, a saída ``1C'' = ``1'' (ou \SI{12}{\volt}).
 
-As Figuras \ref{fig:exemplovoltimetro} e \ref{fig:esquematico74hc595} servem para ilustrar o funcionamento dos relés, em conjunto com o \textit{ULN2003A} e o \textit{SN74HC595}. Neste exemplo usou-se um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, mudando somente os pinos.
+As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplo para ilustrar o funcionamento dos relés, em conjunto com o \textit{ULN2003A} e o \textit{SN74HC595}. Neste exemplo usou-se um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, mudando somente os pinos.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/comandoreles_FULL.png}
+	\caption{Exemplo de uso do \textit{SN74HC595} e \textit{ULN2003A} - REVER}
+	\label{fig:comandorelesfull}
+\end{figure}
 
 \begin{figure}[hbtp]
 	\centering
@@ -348,35 +373,29 @@ As Figuras \ref{fig:exemplovoltimetro} e \ref{fig:esquematico74hc595} servem par
 	\label{fig:exemplovoltimetro}
 \end{figure}
 
-As entradas $I_{1}$ a $I_{7}$ são comandadas pelo \gls{RaspberryPI}, através do registo de deslocamento - \textit{SN74HC595}. As saídas $O_{1}$ a $O_{7}$ vão comandar os relés - terminais ``3'' e os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}. O funcionamento está descrito na Listagem \ref{Table:exemplouln2003}:
+As entradas $I_{1}$ a $I_{7}$ são comandadas pelo \gls{RaspberryPI}, através do registo de deslocamento - \textit{SN74HC595}, tal como apresentado na Figura \ref{fig:comandorelesfull} e as saídas $O_{1}$ a $O_{7}$ vão comandar os relés - terminais ``3'' e os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}, como apresentado na Figura \ref{fig:exemplovoltimetro}.
+%O funcionamento está descrito na Listagem \ref{Table:exemplouln2003}:
 
-\begin{table}[htb]
-	\centering
-	\caption{Tabela funcionamento \textit{ULN2003A} e relés}
-	\label{Table:exemplouln2003}
-	\begin{tabular}{ccc}
-		\toprule
-		\multicolumn{2}{c}{ULN2003A} & Relés                                \\
-		\midrule
-		Entrada                      & Saída                  & Estado      \\
-		\midrule
-		``0'' (\SI{0}{\volt})        & ``1'' (\SI{12}{\volt}) & Desactivado \\
-		\midrule
-		``1'' (\SI{12}{\volt})       & ``0'' (\SI{0}{\volt})  & Activado    \\
-		\bottomrule
-	\end{tabular}
-\end{table}
+% \begin{table}[htb]
+% 	\centering
+% 	\caption{Tabela funcionamento \textit{ULN2003A} e relés}
+% 	\label{Table:exemplouln2003}
+% 	\begin{tabular}{ccc}
+% 		\toprule
+% 		\multicolumn{2}{c}{ULN2003A} & Relés                                \\
+% 		\midrule
+% 		Entrada                      & Saída                  & Estado      \\
+% 		\midrule
+% 		``0'' (\SI{0}{\volt})        & ``1'' (\SI{12}{\volt}) & Desactivado \\
+% 		\midrule
+% 		``1'' (\SI{12}{\volt})       & ``0'' (\SI{0}{\volt})  & Activado    \\
+% 		\bottomrule
+% 	\end{tabular}
+% \end{table}
 
 No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5} = I_{15}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado.
 
-Como já foi referido na Secção \ref{sec:registodeslocamento}, o \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits}, do tipo \acrshort{sipo}. Uma trama de \textit{bits} é enviado pelo \gls{RaspberryPI} para o registo através do pino \textit{SER}(\textit{Serial}). Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio. Por cada impulso ascendente no pino \textit{SRCLK} - \textit{Shift Register Clock} - Os \textit{bits} são enviados um-a-um para o registo de deslocamento. No final, um impulso ascendente no \textit{RCLK} - \textit{Register Clock} - faz com que os \textit{bits} sejam enviados para o registo de memória e, por conseguinte, para os relés.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/registo deslocamente.drawio.png}
-	\caption{Envio de \textit{bits} para o registo de deslocamento}
-	\label{fig:esquematico74hc595}
-\end{figure}
+No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo \textit{SN74HC595} é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
 \subsection{Lei de Ohm}
 Nesta experiência procura-se provar a Lei de Ohm. Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:

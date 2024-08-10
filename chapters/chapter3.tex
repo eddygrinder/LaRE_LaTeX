@@ -1,9 +1,9 @@
 \chapter{LaRE - Laboratório Remoto Expansível}
 \label{Capítulo3}
 \begin{center}
-	\textit{``All we have to decide is what to do with the time that is given us.''}
+    \textit{``All we have to decide is what to do with the time that is given us.''}
 
-	Gandalf
+    Gandalf
 \end{center}
 
 Neste capítulo descreve-se o processo que levou à criação do \acrshort{lare}, a arquitectura de \textit{hardware} e \textit{software}, o motivo das escolhas e a implementação dos circuitos. \textbf{Acho que tem de ser refeito ou complementado}
@@ -19,10 +19,10 @@ A criação do \acrshort{laboratório remoto} surge como forma de resolver algun
 Numa fase mais embrionária, foram feitos alguns testes de controlo de relés com o \gls{arduino} Mega, representado na Figura \ref{fig:arduinomega}, juntamente com um \acrfull{ide} simples desenvolvido em \acrshort{labview}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.6\textwidth]{figures/arduinomega.png}
-	\caption{\textit{Arduino} Mega \cite{ArduinoMega}}
-	\label{fig:arduinomega}
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/arduinomega.png}
+    \caption{\textit{Arduino} Mega \cite{ArduinoMega}}
+    \label{fig:arduinomega}
 \end{figure}
 
 No entanto, de forma a ultrapassar o problema levantado pelo elevado preço do \acrshort{labview}, surge um segundo objectivo que se prende com a substituição deste \textit{software} por outro que fosse gratuito e \textit{open source}. A eliminação do \acrshort{labview} implicou a implementação de um servidor. Sendo assim, numa primeira abordagem, foram analisadas algumas opções, tais como: \textit{FastApi}\footnote{\url{https://fastapi.tiangolo.com/}}, \textit{Django}\footnote{\url{https://www.djangoproject.com/}} e \textit{Flask}\footnote{\url{https://flask.palletsprojects.com/en/3.0.x/}}.
@@ -40,27 +40,27 @@ No mercado, existe o \gls{ESP32}, uma alternativa mais poderosa que o \gls{ardui
 Estas limitações não permitem a implementação de um servidor minimamente robusto usando o \gls{arduino} Mega ou o \gls{ESP32}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.4\textwidth]{figures/ESP32-DevKitC_L_0.png}
-	\caption{\textit{ESP32} \cite{ESPDevKit}}
-	\label{fig:ESP32}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/ESP32-DevKitC_L_0.png}
+    \caption{\textit{ESP32} \cite{ESPDevKit}}
+    \label{fig:ESP32}
 \end{figure}
 
 A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5, apresentada na Figura \ref{fig:Raspberrypi5}. Este dispositivo insere-se numa gama de pequenos computadores, acessíveis e versáteis que podem ser utilizados para os mais variados projectos. Na Secção \ref{sec:hardware} apresenta-se uma descrição mais detalhada do \gls{RaspberryPI}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.6\textwidth]{figures/raspberrypi5.jpg}
-	\caption{\textit{RaspberryPI5} \cite{introRaspberrypi5}}
-	\label{fig:Raspberrypi5}
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/raspberrypi5.jpg}
+    \caption{\textit{RaspberryPI5} \cite{introRaspberrypi5}}
+    \label{fig:Raspberrypi5}
 \end{figure}
 
 Considerou-se, portanto, que seria uma mais-valia desenvolver um \acrshort{laboratório remoto} com as seguintes características:
 \begin{itemize}
-	\item \gls{python} como linguagem principal;
-	\item \gls{RaspberryPI} como servidor \textit{Flask};
-	\item \textit{Interface} com o utilizador desenvolvido em \\
-	      \acrfull{html}.
+    \item \gls{python} como linguagem principal;
+    \item \gls{RaspberryPI} como servidor \textit{Flask};
+    \item \textit{Interface} com o utilizador desenvolvido em \\
+          \acrfull{html}.
 \end{itemize}
 
 Estava dado o passo final para o que viria a ser o \acrshort{lare}.
@@ -83,18 +83,18 @@ A outra forma de controlar o \acrshort{virtualbench} é usando a aplicação dis
 De referir que o \acrshort{virtualbench} não pode ser controlado pelo \textit{pyVirtualBench} e pelo \textit{software} simultaneamente.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{figures/VB8012-OHM_Exemplo.png}
-	\caption{Exemplo do \acrshort{virtualbench} usado como multímetro digital}
-	\label{fig:leituraohm}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/VB8012-OHM_Exemplo.png}
+    \caption{Exemplo do \acrshort{virtualbench} usado como multímetro digital}
+    \label{fig:leituraohm}
 \end{figure}
 
 As características do \acrshort{laboratório remoto} são, agora, as seguintes:
 \begin{itemize}
-	\item \gls{python} como linguagem principal;
-	\item \acrshort{pc} como servidor \textit{Flask};
-	\item \gls{RaspberryPI} como controlador dos relés;
-	\item \textit{Interface} com o utilizador desenvolvido em \acrshort{html}.
+    \item \gls{python} como linguagem principal;
+    \item \acrshort{pc} como servidor \textit{Flask};
+    \item \gls{RaspberryPI} como controlador dos relés;
+    \item \textit{Interface} com o utilizador desenvolvido em \acrshort{html}.
 \end{itemize}
 
 Definidas - de uma forma geral - as soluções de \textit{hardware} e \textit{software}, agora com a integração de um \acrshort{pc} - passou-se ao estudo da arquitectura do \acrshort{lare}.
@@ -104,26 +104,26 @@ Definidas - de uma forma geral - as soluções de \textit{hardware} e \textit{so
 Como já se viu na Secção \ref{sec:contextualização}, a arquitectura do \acrshort{lare} proposta baseia-se numa estrutura cliente-servidor, suportada ao nível do \textit{hardware} pelo \acrshort{virtualbench}, pelo \gls{RaspberryPI} e um \acrshort{pc} como servidor. Uma representação geral do que será o \acrshort{lare} pode ser vista na Figura \ref{fig:representaçãogerallare}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/arquitectura_ver2.drawio.png}
-	\caption{Representação geral do \acrshort{lare}}
-	\label{fig:representaçãogerallare}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/arquitectura_ver2.drawio.png}
+    \caption{Representação geral do \acrshort{lare}}
+    \label{fig:representaçãogerallare}
 \end{figure}
 
 Antes de mais, importa clarificar as formas de comunicação entre os diversos dispositivos que compõem o \acrshort{lare}. Tanto o servidor, como o \gls{RaspberryPI} e o \acrshort{virtualbench} têm disponíveis interfaces de rede sem fios e com fios, assim como \textit{interfaces} \acrshort{usb}.
 
 A comunicação entre os diversos dispositivos é feita da seguinte forma:
 \begin{itemize}
-	\item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Em termos de simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets}. Os \textit{sockets} e a \acrshort{api} de \textit{sockets} facilitam a comunicação entre processos em redes, quer estas sejam físicas (ligadas a outras através de fios ou sem fios) ou lógicas (como a rede local de um computador), isto é, permitem o envio de mensagens através de uma rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} é apresentada na Figura \ref{fig:fluxogramasockets};
-	\item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}. Independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação.
-	\item \textbf{Controlo de relés e medidas}: O controlo e medição comum às experiência é feito através de ligações directas aos dispositivos.
+    \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Em termos de simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets}. Os \textit{sockets} e a \acrshort{api} de \textit{sockets} facilitam a comunicação entre processos em redes, quer estas sejam físicas (ligadas a outras através de fios ou sem fios) ou lógicas (como a rede local de um computador), isto é, permitem o envio de mensagens através de uma rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} é apresentada na Figura \ref{fig:fluxogramasockets};
+    \item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}. Independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação.
+    \item \textbf{Controlo de relés e medidas}: O controlo e medição comum às experiência é feito através de ligações directas aos dispositivos.
 \end{itemize}
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/socketsdiagrama.png}
-	\caption{Fluxograma de uma chamada ao \textit{socket} \cite{Sockets}}
-	\label{fig:fluxogramasockets}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/socketsdiagrama.png}
+    \caption{Fluxograma de uma chamada ao \textit{socket} \cite{Sockets}}
+    \label{fig:fluxogramasockets}
 \end{figure}
 
 Ao nível do \textit{software}, o servidor será implementado no \acrshort{pc} com base no \textit{Flask}, como já foi referido na Secção \ref{sec:contextualização} e \ref{sec:solucaoproposta}, e será descrito com mais pormenor na Secção \ref{sec:software}. A comunicação entre o servidor e o \acrshort{virtualbench}, entre o servidor e o \gls{RaspberryPI} e o controlo dos relés é feita em \textit{Python}. A \textit{interface} com o utilizador é feita em \acrshort{html}.
@@ -131,10 +131,10 @@ Ao nível do \textit{software}, o servidor será implementado no \acrshort{pc} c
 A Figura {\ref{fig:arquitecturalore}} apresenta com mais pormenor a solução implementada no \acrshort{lare}. De uma forma geral, podemos ver como é realizada a comunicação e a troca de informação entre os diferentes dispositivos de \textit{hardware}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/Diagrama_SOFTWARE.drawio.png}
-	\caption{Arquitectura \acrshort{lare}}
-	\label{fig:arquitecturalore}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/Diagrama_SOFTWARE.drawio.png}
+    \caption{Arquitectura \acrshort{lare}}
+    \label{fig:arquitecturalore}
 \end{figure}
 
 \section{Circuitos electrónicos - experiências?}
@@ -143,19 +143,19 @@ A Figura {\ref{fig:arquitecturalore}} apresenta com mais pormenor a solução im
 A escolha dos circuitos teve como base os que estão disponíveis no \acrshort{visir} do \acrshort{isep}, como se pode ver na Figura \ref{fig:circuitosvisir}. Reduzindo os objectivos do \acrshort{lare} à sua forma mais básica, pode afirmar-se que se pretende ``provar um conceito''. Escolhendo experiências com circuitos integrados ou transístores, poderia tornar a implementação desnecessariamente mais complexa e, por conseguinte, com menos experiências. Portanto, o objectivo passará por criar um \acrshort{laboratório remoto} com experiências típicas para a introdução à electrónica e que permitam uma aprendizagem gradual em contexto de sala de aula. E, assim, ``provar o conceito''.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/visir_ISEP.png}
-	\caption{Circuitos \acrshort{visir} - \acrshort{isep} - \textbf{Se calhar retirava a imagem}}
-	\label{fig:circuitosvisir}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/visir_ISEP.png}
+    \caption{Circuitos \acrshort{visir} - \acrshort{isep} - \textbf{Se calhar retirava a imagem}}
+    \label{fig:circuitosvisir}
 \end{figure}
 
 Sendo assim, os circuitos que compõem o \acrshort{lare} e satisfazem os critérios definidos em cima são:
 \begin{itemize}
-	\item Lei de Ohm;
-	\item Rectificador de meia onda;
-	\item Rectificador de onda completa;
-	\item Filtro RC passa-baixo;
-	\item Filtro RC passa-alto.
+    \item Lei de Ohm;
+    \item Rectificador de meia onda;
+    \item Rectificador de onda completa;
+    \item Filtro RC passa-baixo;
+    \item Filtro RC passa-alto.
 \end{itemize}
 
 \section{Hardware}
@@ -164,18 +164,18 @@ Sendo assim, os circuitos que compõem o \acrshort{lare} e satisfazem os critér
 Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e ferramentas de teste, tais como um osciloscópio digital com análise de protocolo, um gerador de formas de onda, um multímetro digital, uma fonte de alimentação \acrfull{cc} programável e E/S digitais num único dispositivo que se liga a um \acrshort{pc}, via \acrshort{usb} ou rede sem fios, como se pode ver na Figura \ref{fig:paineltraseiro}. As principais características deste modelo estão descritas na Figura \ref{fig:paineldianteiro} \cite{datasheetVirtualBench}. A forma como pode ser controlado e configurado já foi abordada na Secção \ref{sec:solucaoproposta}.
 
 \begin{figure}[hbtp]
-	\centering
-	\centering
-	\includegraphics[width=0.9\textwidth]{figures/virtualbench_back-panel.jpg}
-	\caption{Painel traseiro \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
-	\label{fig:paineltraseiro}
+    \centering
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/virtualbench_back-panel.jpg}
+    \caption{Painel traseiro \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
+    \label{fig:paineltraseiro}
 \end{figure}
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.9\textwidth]{figures/virtualbench_front-panel.jpg}
-	\caption{Painel frontal \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
-	\label{fig:paineldianteiro}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/virtualbench_front-panel.jpg}
+    \caption{Painel frontal \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
+    \label{fig:paineldianteiro}
 \end{figure}
 
 %No \acrshort{visir} do \acrshort{isep}, estão disponíveis 11 circuitos, como se pode ver na Figura \ref{fig:circuitosvisir}. Os circuitos que compõem o \acrshort{laboratório remoto} tiveram como base (ou ponto de partida) os que estão implementados no \acrshort{isep}. \textbf{Faz sentido? PROF}
@@ -187,10 +187,10 @@ Encontradas as soluções de \textit{hardware} e \textit{software}, assim como a
 Mais uma vez, tomando como base o \acrshort{visir}, como pode ser visto mais pormenor na Figura \ref{fig:visir104}, decidiu-se projectar uma matriz com a dimensão das placas a obedecerem às definidas pela consórcio \gls{pc/104} \cite{PC104}. Este consórcio definiu um padrão que se destaca pelo seu formato compacto e modular. As dimensões mecânicas das placas estão definidas na \textbf{referência ao datasheet - VER COPMO FAZER REFERÊNCIA}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.3\textwidth]{figures/promenorvisirISEP.png}
-	\caption{Placas PC/104 do \acrshort{visir} - \acrshort{isep} - \textbf{Foto com melhor qualidade}}
-	\label{fig:visir104}
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/promenorvisirISEP.png}
+    \caption{Placas PC/104 do \acrshort{visir} - \acrshort{isep} - \textbf{Foto com melhor qualidade}}
+    \label{fig:visir104}
 \end{figure}
 
 \subsection{RaspberryPI}
@@ -202,29 +202,29 @@ Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desa
 Esta versão traz várias melhorias e novos recursos, sendo que as principais diferenças de \textit{hardware} para a versão 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. No entanto, estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento activo \cite{Raspberrytech}. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/pi5_dissipador.png}
-	\caption{\textit{Raspberry PI5} com dissipador activo utilizado no \acrshort{lare}}
-	\label{fig:pi5dissipador}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/pi5_dissipador.png}
+    \caption{\textit{Raspberry PI5} com dissipador activo utilizado no \acrshort{lare}}
+    \label{fig:pi5dissipador}
 \end{figure}
 
 \begin{table}[htb]
-	\centering
-	\caption{Raspberry PI4 \textit{vs Raspberry PI5 - principais diferenças} \cite{Raspberrypi5}}
-	\label{Table:diferencasPI4PI5}
-	\begin{tabular}{ll}
-		\toprule
-		Raspberry PI4                                            & Raspberry PI5                                             \\
-		\midrule
-		\SI{1.8}{\giga\hertz}                                    & \SI{2.4}{\giga\hertz}                                     \\
-		\midrule
-		VideoCore VI @ \SI{500}{\mega\hertz}, Vulkan 1.0         & VideoCore VII @ \SI{800}{\mega\hertz}, Vulkan 1.2         \\
-		\midrule
-		LPDDR4-3200 SDRAM até \SI{8}{\giga\byte}                 & LPDDR4X-4267 SDRAM \SI{4}{\giga\byte}/\SI{8}{\giga\hertz} \\
-		\midrule
-		\SI{5}{\volt}/\SI{3}{\ampere} via USB-C (\SI{15}{\watt}) & \SI{5}{\volt}/\SI{5}{\ampere} via USB-C (\SI{27}{\watt})  \\
-		\bottomrule
-	\end{tabular}
+    \centering
+    \caption{Raspberry PI4 \textit{vs Raspberry PI5 - principais diferenças} \cite{Raspberrypi5}}
+    \label{Table:diferencasPI4PI5}
+    \begin{tabular}{ll}
+        \toprule
+        Raspberry PI4                                            & Raspberry PI5                                             \\
+        \midrule
+        \SI{1.8}{\giga\hertz}                                    & \SI{2.4}{\giga\hertz}                                     \\
+        \midrule
+        VideoCore VI @ \SI{500}{\mega\hertz}, Vulkan 1.0         & VideoCore VII @ \SI{800}{\mega\hertz}, Vulkan 1.2         \\
+        \midrule
+        LPDDR4-3200 SDRAM até \SI{8}{\giga\byte}                 & LPDDR4X-4267 SDRAM \SI{4}{\giga\byte}/\SI{8}{\giga\hertz} \\
+        \midrule
+        \SI{5}{\volt}/\SI{3}{\ampere} via USB-C (\SI{15}{\watt}) & \SI{5}{\volt}/\SI{5}{\ampere} via USB-C (\SI{27}{\watt})  \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 
 Comum às versões anteriores, o \gls{RaspberryPI} possui um conector de 40 pinos denominados \acrfull{gpio}s, como se pode ver na Figura \ref{fig:gpio}. Os \acrshort{gpio}s são pinos versáteis e configuráveis e permitem que a placa interaja com uma variedade de componentes eletrónicos e outros dispositivos, como por exemplo, relés, sensores, motores, etc.. Os \acrshort{gpio}s são pinos digitais, isto é, o \gls{RaspberryPI} não possui um \acrfull{adc} interno para ler sinais analógicos. No entanto, pode usar-se um \acrshort{adc} externo, como por exemplo, o MCP3008 ou o módulo ADS1115. Quer isto dizer que só trabalham com duas tensões: \SI{3.3}{\volt} ou \SI{0}{\volt}, correspondendo aos valores lógicos ``1'' ou ``0'', respectivamente.
@@ -234,10 +234,10 @@ Dependendo da configuração dos \acrshort{gpio}s - entrada ou saída - estes po
 Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o \gls{RaspberryPI} corre o risco de se danificar irremediavelmente.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/GPIO-Pinout-Diagram-2.png}
-	\caption{\acrshort{gpio}s \textit{RaspberryPI} \cite{Raspberrytech}}
-	\label{fig:gpio}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/GPIO-Pinout-Diagram-2.png}
+    \caption{\acrshort{gpio}s \textit{RaspberryPI} \cite{Raspberrytech}}
+    \label{fig:gpio}
 \end{figure}
 
 Na Figura \ref{fig:gpiocores} está representada uma forma alternativa de visualizar os \acrshort{gpio}s, mais intuitiva e que permite perceber melhor a função dos pinos.
@@ -245,10 +245,10 @@ Na Figura \ref{fig:gpiocores} está representada uma forma alternativa de visual
 Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurados como entrada ou saída; a vermelho, laranja e preto as alimentações de \SI{5}{\volt}, \SI{3.3}{\volt} e \textit{ground}, respectivamentee. Por fim, os \acrshort{gpio}s representados pela cor branca estão reservados para utilização avançada.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.75\textwidth]{figures/GPIO.png}
-	\caption{Representação alternativa dos \acrshort{gpio}s \cite{Raspberrytech}}
-	\label{fig:gpiocores}
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/GPIO.png}
+    \caption{Representação alternativa dos \acrshort{gpio}s \cite{Raspberrytech}}
+    \label{fig:gpiocores}
 \end{figure}
 
 \subsection{Relés}
@@ -257,10 +257,10 @@ Como já foi referido na Capítulo \ref{Capitulo2}, os circuitos que compõem o 
 Os relés electromecânicos são constituídos por uma bobine e um contacto, que pode ser normalmente aberto ou fechado. A corrente eléctrica ao passar pela bobine gera um campo magnético que atrai o contacto, fechando-o ou abrindo-o, conforme o caso. A Figura \ref{fig:esquematicoreles} mostra um esquema simplificado de um relé electromecânico.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/esquematico_rele.png}
-	\caption{\textit{Esquema simplificado de um relé \cite{DryRelay}}}
-	\label{fig:esquematicoreles}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/esquematico_rele.png}
+    \caption{\textit{Esquema simplificado de um relé \cite{DryRelay}}}
+    \label{fig:esquematicoreles}
 \end{figure}
 
 Ainda na Figura \ref{fig:esquematicoreles} pode ver-se a inclusão do díodo de ``roda livre'', que é comum em muitos relés. Este díodo é usado para proteger o circuito de comando de picos de tensão induzidos pela bobine do relé, quando a corrente é desligada, segundo a Lei de Faraday. O díodo permite que a corrente induzida pela bobine circule em circuito fechado, evitando danos no circuito comandados pelos relés.
@@ -272,10 +272,10 @@ No \acrshort{lare} foram usados dois tipos de relés - simples, \acrfull{spst} e
 Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no \textit{datasheet} anexo a este documento. \textbf{Ver como fazer a referência ao datasheet}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, a tensão da bobine é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/reles.png}
-	\caption{\textit{Relés \acrshort{spst} e \acrshort{dpst}} \cite{DryRelay}}
-	\label{fig:reles}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/reles.png}
+    \caption{\textit{Relés \acrshort{spst} e \acrshort{dpst}} \cite{DryRelay}}
+    \label{fig:reles}
 \end{figure}
 
 Como já foi referido na Secção \ref{sec:RaspberryPI}, a tensão de funcionamento dos \acrshort{gpio}s, quer estejam configurados como entrada ou saída, é de \SI{3.3}{\volt}, sendo que a máxima corrente por cada \acrshort{gpio} é de \SI{16}{\mA}.
@@ -289,10 +289,10 @@ Tipicamente, este \textit{driver} é usado em conjunto com microcontroladores ou
 Os ULN2003A possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/2003A_Darling.png}
-	\caption{Diagrama de blocos ULN2003A \cite{ULN2003}}
-	\label{fig:2003blocos}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/2003A_Darling.png}
+    \caption{Diagrama de blocos ULN2003A \cite{ULN2003}}
+    \label{fig:2003blocos}
 \end{figure}
 
 A corrente de colector de saída (única) é de \SI{500}{\mA} e a corrente de entrada, para uma tensão de entrada de \SI{3.85}{\volt}, é \SI{0.93}{\mA} \cite{ULN2003}.
@@ -307,59 +307,72 @@ O uso de registos de deslocamento foi a solução encontrada de forma a ultrapas
 
 O SN74HC595 é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 bits com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.
 
+Descrição dos pinos de controlo:
+\begin{itemize}
+    \item \acrfull{ser}: é utilizado para enviar os \textit{bits} para o registo de deslocamento, um \textit{bit} de cada vez;
+
+    \item \acrfull{srclk}: é o relógio do registo de deslocamento e é ativado no flanco ascendente, por cada impulso dado um \textit{bit} é enviado para o registo de deslocamento;
+
+    \item \acrfull{rclk}: é o relógio do do registo de armazenamento e é activo no flanco ascendente. Quando activo, o conteúdo do registo de deslocamento é transferido para o registo de armazenamento, que eventualmente aparece na saída;
+
+    \item \acrfull{srclr}: permite fazer o \textit{clear} ou \textit{reset} ao registo de deslocamento. Isto equivale a colocar todos os \textit{bits} a zero. Este pino é activo baixo.
+
+    \item \acrfull{oe}: pino activo baixo que controla o estado da saída do registo: Se a zero as saídas estão activas, se a um as saídas estão desactivadas
+\end{itemize}
+
 Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e depois enviados para a saída. A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do SN74HC595 e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/SR_blocos.png}
-	\caption{Diagrama de blocos SN74HC595 \cite{SN74HC595}}
-	\label{fig:SN74HC595blocos}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/SR_blocos.png}
+    \caption{Diagrama de blocos SN74HC595 \cite{SN74HC595}}
+    \label{fig:SN74HC595blocos}
 \end{figure}
 
 Na transmissão das tramas optou-se por dividir as duas: envio de 8 \textit{bits}, na experiência da Lei de Ohm, e envio de 13 \textit{bits}, nas experiências de rectificadores e filtros. Como se pode ver na Tabela \ref{Table:funcSN74HC595}, são precisos 5 \acrshort{gpio}s configurados como saídas para controlar o envio de uma trama, portanto, para realizar o comando dos relés do \acrshort{lare}, são/serão necessários 10 \acrshort{gpio}s.
 Nos capítulos seguintes - \textbf{COLOCAR A REFERÊNCIA} - é explicado com mais pormenor o processo de envio. As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.
 
 \begin{table}[htb]
-	\caption{Modos de funcionamento do SN74HC595 \cite{SN74HC595}}
-	\label{Table:funcSN74HC595}
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{cccccl}
-			\toprule
-			\multicolumn{5}{c}{Entradas}           & \multicolumn{1}{c}{\multirow{3}{*}{Função}}                                                                                        \\
-			\cline {1-5}
-			\multicolumn{5}{l}{}                   &
-			\multicolumn{1}{c}{}                                                                                                                                                        \\
-			\multicolumn{1}{l}{SER}                &
-			\multicolumn{1}{l}{SRCLK}              &
-			\multicolumn{1}{l}{$\overline{SRCLR}$} &
-			\multicolumn{1}{l}{RCLK}               &
-			\multicolumn{1}{l}{$\overline{OE}$}    &
-			\multicolumn{1}{c}{}                                                                                                                                                        \\
-			\midrule
-			X                                      & X                                           & X & X          & H & Saídas $Q_A$ – $Q_H$ estão desabilitadas.                       \\
-			\midrule
-			X                                      & X                                           & X & X          & L & Saídas $Q_A$ – $Q_H$ estão habilitadas.                         \\
-			\midrule
-			X                                      & X                                           & L & X          & X & Registo de deslocamento é limpo.                                \\
-			\midrule
-			L                                      &
-			$\uparrow$                             &
-			H                                      &
-			X                                      &
-			X                                      &
-			\begin{tabular}[c]{@{}l@{}} Primeiro passo do registo de deslocamento vai a ``0''. \\ Passo seguinte armazena os dados do estado anterior, respectivamente. \end{tabular}   \\
-			\midrule
-			H                                      &
-			$\uparrow$                             &
-			H                                      &
-			X                                      &
-			X                                      &
-			\begin{tabular}[c]{@{}l@{}}Primeiro passo do registo de deslocamento vai a ``1''. \\ Passo seguinte armazena os dados do estado anterior, respectivamente. \end{tabular}    \\
-			\midrule
-			X                                      & X                                           & X & $\uparrow$ & X & Os dados do registo de deslocamento são armazenados no registo. \\
-			\bottomrule
-		\end{tabular}%
-	}
+    \caption{Modos de funcionamento do SN74HC595 \cite{SN74HC595}}
+    \label{Table:funcSN74HC595}
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{cccccl}
+            \toprule
+            \multicolumn{5}{c}{Entradas}           & \multicolumn{1}{c}{\multirow{3}{*}{Função}}                                                                                        \\
+            \cline {1-5}
+            \multicolumn{5}{l}{}                   &
+            \multicolumn{1}{c}{}                                                                                                                                                        \\
+            \multicolumn{1}{l}{SER}                &
+            \multicolumn{1}{l}{SRCLK}              &
+            \multicolumn{1}{l}{$\overline{SRCLR}$} &
+            \multicolumn{1}{l}{RCLK}               &
+            \multicolumn{1}{l}{$\overline{OE}$}    &
+            \multicolumn{1}{c}{}                                                                                                                                                        \\
+            \midrule
+            X                                      & X                                           & X & X          & H & Saídas $Q_A$ – $Q_H$ estão desabilitadas.                       \\
+            \midrule
+            X                                      & X                                           & X & X          & L & Saídas $Q_A$ – $Q_H$ estão habilitadas.                         \\
+            \midrule
+            X                                      & X                                           & L & X          & X & Registo de deslocamento é limpo.                                \\
+            \midrule
+            L                                      &
+            $\uparrow$                             &
+            H                                      &
+            X                                      &
+            X                                      &
+            \begin{tabular}[c]{@{}l@{}} Primeiro passo do registo de deslocamento vai a ``0''. \\ Passo seguinte armazena os dados do estado anterior, respectivamente. \end{tabular}   \\
+            \midrule
+            H                                      &
+            $\uparrow$                             &
+            H                                      &
+            X                                      &
+            X                                      &
+            \begin{tabular}[c]{@{}l@{}}Primeiro passo do registo de deslocamento vai a ``1''. \\ Passo seguinte armazena os dados do estado anterior, respectivamente. \end{tabular}    \\
+            \midrule
+            X                                      & X                                           & X & $\uparrow$ & X & Os dados do registo de deslocamento são armazenados no registo. \\
+            \bottomrule
+        \end{tabular}%
+    }
 \end{table}
 
 \textbf{Falta colocar informação complementar no datasheet em tal sítio está representada informação complementar respeitante ao ULN2003A e 74595}
@@ -378,12 +391,12 @@ De uma forma resumida, o desenvolvimento de \textit{Front-end} refere-se ao lado
 \subsubsection{\textit{Python}}
 O \textit{Python} é uma linguagem poderosa e fácil de aprender. Possui estruturas de dados de alto nível eficientes e uma abordagem simples, mas eficaz à programação orientada para objectos \cite{ThePython}. Apresenta, também, uma série de vantagens que se enquadram nos objectivos do desenvolvimento e implementação do \acrshort{lare} \cite{pythonvantagens}:
 \begin{itemize}
-	\item Curva suave de aprendizagem;
-	\item Quantidade e variedade das bibliotecas;
-	\item Portabilidade;
-	\item Flexibilidade;
-	\item Robustez;
-	\item Suporte da comunidade.
+    \item Curva suave de aprendizagem;
+    \item Quantidade e variedade das bibliotecas;
+    \item Portabilidade;
+    \item Flexibilidade;
+    \item Robustez;
+    \item Suporte da comunidade.
 \end{itemize}
 
 Como desvantagens há a referir que, comparado com outras linguagens, o \textit{Python} é mais lento em termos de execução, já que é um tipo de linguagem de alto-nível, pelo que não é adaptado para aplicações móveis e consome mais recursos \cite{pythonvantagens} \cite{5MainDispython}.
@@ -411,18 +424,18 @@ O \acrshort{html} é a linguagem \textit{standard}, usada para definir a estrutu
 
 Existem 3 tipos de elementos \cite{HTMLwikipedia}:
 \begin{itemize}
-	\item \textbf{Normais}: são elementos que têm uma etiqueta de abertura e outra de fecho. Por exemplo, <p></p> define um parágrafo;
-	\item \textbf{Texto}: são elementos que não têm uma etiqueta de fecho. Por exemplo, <Title> especifica o título da página em texto simples;
-	\item \textbf{Vazios}: têm somente uma etiqueta de início na forma de <tag>. Por exemplo, a etiqueta <img> referencia um ficheiro externo, neste caso uma imagem ou <br> que força uma quebra de linha.
+    \item \textbf{Normais}: são elementos que têm uma etiqueta de abertura e outra de fecho. Por exemplo, <p></p> define um parágrafo;
+    \item \textbf{Texto}: são elementos que não têm uma etiqueta de fecho. Por exemplo, <Title> especifica o título da página em texto simples;
+    \item \textbf{Vazios}: têm somente uma etiqueta de início na forma de <tag>. Por exemplo, a etiqueta <img> referencia um ficheiro externo, neste caso uma imagem ou <br> que força uma quebra de linha.
 \end{itemize}
 
 Na Figura \ref{fig:estruturahtml} está representada a estrutura de uma página \acrshort{html}. De referir os navegadores não exibem as etiquetas HTML. O seu propósito é ler os documentos \acrshort{html} e apresentá-los corretamente.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/html_page_structure.png}
-	\caption{Estrutura de uma página \acrshort{html} \cite{HTMLbasics}}
-	\label{fig:estruturahtml}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/html_page_structure.png}
+    \caption{Estrutura de uma página \acrshort{html} \cite{HTMLbasics}}
+    \label{fig:estruturahtml}
 \end{figure}
 
 Segundo o consórcio \acrshort{w3c}, as \acrshort{css} são mecanismos fundamentais para a separação de preocupações no desenvolvimento \textit{web}. Ao delegar a responsabilidade de formatação visual no \acrshort{css}, o \acrshort{html} concentra-se na estrutura semântica do conteúdo. Isso resulta num código mais limpo, de fácil manutenção e acessível. As regras de estilo, que especificam como os elementos \acrshort{html} devem ser apresentados, podem ser aplicadas a elementos individuais, classes ou \textit{IDs}, permitindo um alto grau de customização. Além disso, o \acrshort{css} oferece a possibilidade de criar hierarquias de estilos, onde os mais específicos sobrepõem aos mais gerais. As folhas de estilo podem ser inseridas diretamente no documento \acrshort{html} ou vinculadas a ele através de um arquivo externo, proporcionando maior organização e reutilização de estilos \cite{w3ccss}.
@@ -430,7 +443,7 @@ Segundo o consórcio \acrshort{w3c}, as \acrshort{css} são mecanismos fundament
 Um exemplo simples pode ser visto na Listagem \ref{lst:excss}.
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=HTML, caption=Exemplo \acrshort{css} incluído na página \acrshort{html} \cite{Startingcss}, label=lst:excss]
+    \begin{lstlisting}[language=HTML, caption=Exemplo \acrshort{css} incluído na página \acrshort{html} \cite{Startingcss}, label=lst:excss]
 		<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 		<html>
 		<head>
@@ -450,7 +463,7 @@ Um exemplo simples pode ser visto na Listagem \ref{lst:excss}.
 As linhas 5 e 6 indicam que é uma folha de estilos escrita em \acrshort{css} e que o estilo está aplicado ao elemento \textit{body}. As linhas seguintes definem as cores do texto e fundo. No exemplo dado na Listagem \ref{lst:excss}, a folha de estilos está integrada directamente no ficheiro \acrshort{html}. Mas à medida que a página cresce em complexidade, torna-se incomportável manter a folha de estilos no ficheiro (ou ficheiros) \acrshort{html}. Para isso, cria-se a folha de estilos com a extensão \textit{.css} e referencia-se este ficheiro em todas as páginas. Neste caso, o exemplo da página apresentado na Listagem \ref{lst:excss} ficaria da forma apresentada na Listagem \ref{lst:paginahtmlcss}:
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=HTML, caption=Exemplo da página \acrshort{html} com o \acrshort{css} definida externamente \cite{Startingcss}, label=lst:paginahtmlcss]
+    \begin{lstlisting}[language=HTML, caption=Exemplo da página \acrshort{html} com o \acrshort{css} definida externamente \cite{Startingcss}, label=lst:paginahtmlcss]
 		<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 		<html>
 		<head>
@@ -466,7 +479,7 @@ As linhas 5 e 6 indicam que é uma folha de estilos escrita em \acrshort{css} e 
 Por sua vez, o ficheiro \textit{\textbf{meuestilo.css}} da forma apresentada na Listagem \ref{lst:cssexterno}:
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=HTML, caption=Exemplo do \acrshort{css} definido externamente \cite{Startingcss}, label=lst:cssexterno]
+    \begin{lstlisting}[language=HTML, caption=Exemplo do \acrshort{css} definido externamente \cite{Startingcss}, label=lst:cssexterno]
 		body {
 			color: purple;
 			background-color: #d8da3d }
@@ -488,7 +501,7 @@ O JavaScript pode ser executado não apenas nos navegadores, mas também nos ser
 Na Listagem \ref{lst:exemplojava} está representado um exemplo de \textit{JavaScript} que desabilita os seletores de um formulário quando o botão ``OK'' é clicado.
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=HTML, caption=Exemplo de \textit{JavaScript}, label=lst:exemplojava]
+    \begin{lstlisting}[language=HTML, caption=Exemplo de \textit{JavaScript}, label=lst:exemplojava]
 (...)
 <script>
 //Accionar a funcao habilitarSeletores quando o botao "OK" for clicado

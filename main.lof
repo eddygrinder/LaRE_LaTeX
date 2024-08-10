@@ -45,18 +45,19 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{60}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{61}{figure.caption.65}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de blocos SN74HC595 \cite {SN74HC595}}}{62}{figure.caption.66}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{65}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{66}{figure.caption.71}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Funcionamento geral \textit {Flask}}}{70}{figure.caption.72}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{71}{figure.caption.73}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{80}{figure.caption.74}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{80}{figure.caption.75}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Exemplo de comando dos relés, usando o \textit {ULN2003A}}}{81}{figure.caption.76}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{82}{figure.caption.78}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Experiência Lei de Ohm}}{83}{figure.caption.79}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{83}{figure.caption.80}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Página de \textit {login}}}{84}{figure.caption.81}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Página de menus}}{85}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{81}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{81}{figure.caption.76}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Exemplo de uso do \textit {SN74HC595} e \textit {ULN2003A} - REVER}}{82}{figure.caption.77}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Exemplo de comando dos relés, usando o \textit {ULN2003A}}}{82}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Experiência Lei de Ohm}}{83}{figure.caption.79}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{84}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Página de \textit {login}}}{84}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Página de menus}}{85}{figure.caption.82}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

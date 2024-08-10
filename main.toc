@@ -37,11 +37,11 @@
 \contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{60}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{61}{subsection.3.5.6}%
 \contentsline {section}{\numberline {3.6}Software}{63}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{63}{subsection.3.6.1}%
-\contentsline {subsubsection}{\textit {Python}}{63}{section*.68}%
+\contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{64}{subsection.3.6.1}%
+\contentsline {subsubsection}{\textit {Python}}{64}{section*.68}%
 \contentsline {subsubsection}{\textit {Flask}}{64}{section*.69}%
-\contentsline {subsection}{\numberline {3.6.2}Front-End}{64}{subsection.3.6.2}%
-\contentsline {subsubsection}{\textit {Webpage}}{64}{section*.70}%
+\contentsline {subsection}{\numberline {3.6.2}Front-End}{65}{subsection.3.6.2}%
+\contentsline {subsubsection}{\textit {Webpage}}{65}{section*.70}%
 \contentsline {chapter}{\numberline {4}Implementação}{69}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Servidor Flask}{69}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Estrutura base}{70}{subsection.4.1.1}%
@@ -53,7 +53,7 @@
 \contentsline {section}{\numberline {4.2}pyVirtualBench}{78}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}VirtualBench VB-8012}{79}{subsection.4.2.1}%
 \contentsline {section}{\numberline {4.3}Circuitos/Experiências}{80}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Lei de Ohm}{82}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}Lei de Ohm}{83}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Configuração do VirtualBench}{84}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{84}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Resultados}{87}{chapter.5}%
