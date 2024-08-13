@@ -421,10 +421,34 @@ A medição da tensão e da corrente faz-se da seguinte forma
 	      \end{itemize}
 \end{itemize}
 
-Por exemplo,
+Como se pode pode ver na Figura \ref{paineldianteiro}, o multímetro digital 
 
-Nesta experiência procura-se provar a Lei de Ohm. Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
-\begin{itemize}
+Por exemplo, se se pretendesse estudar a Lei de Ohm para a resistência $R_{1}$, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomedicaoohm}:
+
+\begin{table}[htb]
+	\centering
+	\caption{Exemplo funcionamento de medição da Lei de Ohm}
+	\label{Table:exemplomedicaoohm}
+	\begin{tabular}{lcccccccc}
+	\toprule
+	 & \multicolumn{8}{c}{Estado dos relés} \\
+	 \midrule
+	 & $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ \\
+	 \midrule
+	Medir Tensão & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 1 \\
+	\midrule
+	Medir Corrente & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \\
+	\bottomrule
+	\end{tabular}
+	\end{table}
+	
+De referir que, se se expandir o \acrshort{lare} com mais circuitos é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. Tal como pode ser visto na Figura \ref{fig:esq_geral_ohm}, o voltímetro pode está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
+
+da forma como está implementado o voltímetro e o amperímetro, é possível utilizá-los noutros circuitos, se se expandir o \acrshort{lare} com mais experiências. De facto, desactivando  isolá-los completamente do cira medição é feita em simultâneo. No entanto, a implementação pode ser alterada para que a medição seja feita de forma independente.
+
+	Nesta experiência procura-se provar a Lei de Ohm. Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
+
+	\begin{itemize}
 	\item O utilizador ou aluno parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes. No final confronta o valor conhecido com o declive da recta - que pode ser, ou não, apresentado com o gráfico, como pode ser visto na Figura \ref{fig:pagohm}.
 	\item O utilizador ou aluno não sabe o valor da resistência e constrói o gráfico, obtendo o valor prático calculando o declive da recta, que mais uma vez, pode ou não, ser apresentado juntamente com o gráfico, tal como pode ser visto na Figura \ref{fig:pagohmabc}.
 \end{itemize}
