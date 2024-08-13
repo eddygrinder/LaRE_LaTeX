@@ -409,7 +409,7 @@ Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_gera
 
 O funcionamento do circuito é relativamente simples. Qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $V_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
 
-A medição da tensão e da corrente faz-se da seguinte forma
+A medição da tensão e da corrente faz-se da seguinte forma:
 \begin{itemize}
 	\item Medição da tensão:
 	      \begin{itemize}
@@ -417,13 +417,20 @@ A medição da tensão e da corrente faz-se da seguinte forma
 	      \end{itemize}
 	\item Medição da corrente:
 	      \begin{itemize}
-		      \item Os relés $K_{5}$ e $K_{8}$ são abertos e $K_{6}$ é fechado. Desta forma, o amperímetro fica em série com a resistência a medir - entre os pontos B e A.
+		      \item Os relés $K_{5}$ e $K_{8}$ são abertos e $K_{6}$ é fechado. Desta forma, o amperímetro fica em série com a resistência a medir - entre os pontos B e C.
 	      \end{itemize}
 \end{itemize}
 
-Como se pode pode ver na Figura \ref{paineldianteiro}, o multímetro digital 
+Como se pode pode ver na Figura \ref{fig:frontDMM}, retirada da Figura \ref{fig:paineldianteiro}, o terminal preto (negativo) é comum a ambos os aparelhos de medida, que na Figura \ref{fig:esq_geral_ohm} está representado pelo ponto C. O terminal positivo do voltímetro liga ao ponto A - depois de activo o relé $K_{5}$ e o terminal positivo do amperímetro liga ao ponto B - depois de activo o relé $R_{6}$.
 
-Por exemplo, se se pretendesse estudar a Lei de Ohm para a resistência $R_{1}$, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomedicaoohm}:
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/promenorDMM.png}
+	\caption{Painel frontal Multímetro Digital}
+	\label{fig:frontDMM}
+\end{figure}
+
+Por exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomedicaoohm}:
 
 \begin{table}[htb]
 	\centering
@@ -442,13 +449,13 @@ Por exemplo, se se pretendesse estudar a Lei de Ohm para a resistência $R_{1}$,
 	\end{tabular}
 	\end{table}
 	
-De referir que, se se expandir o \acrshort{lare} com mais circuitos é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. Tal como pode ser visto na Figura \ref{fig:esq_geral_ohm}, o voltímetro pode está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
+De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. Tal como pode ser visto na Figura \ref{fig:esq_geral_ohm}, o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
 
-da forma como está implementado o voltímetro e o amperímetro, é possível utilizá-los noutros circuitos, se se expandir o \acrshort{lare} com mais experiências. De facto, desactivando  isolá-los completamente do cira medição é feita em simultâneo. No entanto, a implementação pode ser alterada para que a medição seja feita de forma independente.
+\textbf{Colocar um exemplo de como ficariam os aparelhos de medida se o lare se expandisse com um circuito? OPINIÃO PROF}
 
-	Nesta experiência procura-se provar a Lei de Ohm. Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
+Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
 
-	\begin{itemize}
+\begin{itemize}
 	\item O utilizador ou aluno parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes. No final confronta o valor conhecido com o declive da recta - que pode ser, ou não, apresentado com o gráfico, como pode ser visto na Figura \ref{fig:pagohm}.
 	\item O utilizador ou aluno não sabe o valor da resistência e constrói o gráfico, obtendo o valor prático calculando o declive da recta, que mais uma vez, pode ou não, ser apresentado juntamente com o gráfico, tal como pode ser visto na Figura \ref{fig:pagohmabc}.
 \end{itemize}
