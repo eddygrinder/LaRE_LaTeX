@@ -398,6 +398,31 @@ No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\vo
 No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo \textit{SN74HC595} é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
 \subsection{Lei de Ohm}
+Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema geral do circuito.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/esquema_simplificado_OHM.png}
+	\caption{Esquema geral da experiência Lei de Ohm}
+	\label{fig:esq_geral_ohm}
+\end{figure}
+
+O funcionamento do circuito é relativamente simples. Qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $V_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
+
+A medição da tensão e da corrente faz-se da seguinte forma
+\begin{itemize}
+	\item Medição da tensão:
+	      \begin{itemize}
+		      \item Os relés $K_{5}$ e $K_{8}$ são fechados e $K_{6}$ é aberto. Desta forma, o voltímetro fica em paralelo com a resistência a medir - entre os pontos A e B.
+	      \end{itemize}
+	\item Medição da corrente:
+	      \begin{itemize}
+		      \item Os relés $K_{5}$ e $K_{8}$ são abertos e $K_{6}$ é fechado. Desta forma, o amperímetro fica em série com a resistência a medir - entre os pontos B e A.
+	      \end{itemize}
+\end{itemize}
+
+Por exemplo,
+
 Nesta experiência procura-se provar a Lei de Ohm. Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
 \begin{itemize}
 	\item O utilizador ou aluno parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes. No final confronta o valor conhecido com o declive da recta - que pode ser, ou não, apresentado com o gráfico, como pode ser visto na Figura \ref{fig:pagohm}.
