@@ -18,4 +18,5 @@
 \contentsline {lstlisting}{\numberline {4.11}{\ignorespaces Exemplo autenticação \textit {login}}}{78}{lstlisting.4.11}%
 \contentsline {lstlisting}{\numberline {4.12}{\ignorespaces Chamada do \acrshort {virtualbench} e instrumentos}}{79}{lstlisting.4.12}%
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces Libertar instrumentos e \acrshort {virtualbench}}}{79}{lstlisting.4.13}%
+\contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Exemplo \textit {ps\_example.py}}}{86}{lstlisting.4.14}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

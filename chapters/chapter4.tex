@@ -281,6 +281,7 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 \end{itemize}
 
 \subsection{VirtualBench VB-8012}
+\label{sec:VB8012}
 Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns pormenores que podem levantar potenciais problemas de interpretação e implementação.
 
 Como já se viu na Secção \ref{sec:hardware} o \acrshort{virtualbench} é constituído por 5 instrumentos, 4 dos quais utilizados no \acrshort{lare}: Fonte de tensão, gerador de sinal, osciloscópio e multímetro digital.
@@ -438,18 +439,18 @@ Por exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, o
 	\caption{Exemplo funcionamento de medição da Lei de Ohm}
 	\label{Table:exemplomedicaoohm}
 	\begin{tabular}{lcccccccc}
-	\toprule
-	 & \multicolumn{8}{c}{Estado dos relés} \\
-	 \midrule
-	 & $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ \\
-	 \midrule
-	Medir Tensão & 1 & 0 & 0 & 1 & 1 & 0 & 1 & 1 \\
-	\midrule
-	Medir Corrente & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 \\
-	\bottomrule
+		\toprule
+		               & \multicolumn{8}{c}{Estado dos relés}                                                                       \\
+		\midrule
+		               & $K_{1}$                              & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ \\
+		\midrule
+		Medir Tensão   & 1                                    & 0       & 0       & 1       & 1       & 0       & 1       & 1       \\
+		\midrule
+		Medir Corrente & 1                                    & 0       & 0       & 1       & 0       & 1       & 1       & 0       \\
+		\bottomrule
 	\end{tabular}
-	\end{table}
-	
+\end{table}
+
 De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. Tal como pode ser visto na Figura \ref{fig:esq_geral_ohm}, o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
 
 \textbf{Colocar um exemplo de como ficariam os aparelhos de medida se o lare se expandisse com um circuito? OPINIÃO PROF}
@@ -475,10 +476,51 @@ Da forma como está implementado, o tutor ou professor, pode optar por apresenta
 	\label{fig:pagohmabc}
 \end{figure}
 
-Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se um desafio no que toca à implementação ao nível do \textit{software}.
+Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se, ao nível do \textit{software}, um desafio no que toca à sua implementação.
 
-Como foi referido na Secção \ref{sec:pyvirtualbench}, alguns ficheiros da biblioteca ``pyVirtualBench'' é que foram usados como base. Um desses exemplos, Se atendermos ao exemplo que é partilhado na 
+Como foi referido na Secção \ref{sec:pyvirtualbench}, alguns exemplos da biblioteca ``pyVirtualBench'' foram usados como base para o desenvolvimento da programação. Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}.
 
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+25V"
+			voltage_level = 1.0
+			current_limit = 0.5
+
+			# You will probably need to replace "myVirtualBench" with the name of your device.
+			# By default, the device name is the model number and serial number separated by a hyphen; e.g., "VB8012-309738A".
+			# You can see the device's name in the VirtualBench Application under File->About
+			virtualbench = PyVirtualBench('VB8012-30A210F')
+			ps = virtualbench.acquire_power_supply()
+
+			ps.configure_voltage_output(channel, voltage_level, current_limit)
+			ps.enable_all_outputs(True)
+
+			for i in range(10):
+				voltage_measurement, current_measurement, ps_state = ps.read_output(channel)
+				print("Measurement [%d]: %f V\t%f A\t(%s)" % (i, voltage_measurement, current_measurement, str(ps_state)))
+
+			ps.release()
+		except PyVirtualBenchException as e:
+    		print("Error/Warning %d occurred\n%s" % (e.status, e))
+		finally:
+    		virtualbench.release()
+
+	\end{lstlisting}
+\end{minipage}
+
+Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha 10 e a fonte de tensão na linha 11. O ciclo \textit{for}, na linha 16, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha 20, e não havendo erro, o \textit{virtualbench} é libertado, linha 22. A execução do \textit{script} é, então, terminada.
+
+Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
+\begin{itemize}
+	\item Iniciar o \textit{virtualbench};
+	\item Iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
+	\item Desenvolvimento do programa;
+	\item Libertar a fonte de tensão;
+	\item Libertar o \textit{virtualbench}.
+\end{itemize}
 
 Na implementação desta experiência foram criados os ficheiros \textit{ohm.html}, como se pode ver, por exemplo, na Figura \ref{fig:pagohm} e o ficheiro \textit{configVB.py}
 
