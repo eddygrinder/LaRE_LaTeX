@@ -269,6 +269,7 @@ def login():
 \end{minipage}
 
 \section{pyVirtualBench}
+\label{sec:pyvirtualbench}
 Antes de se avançar para uma explicação mais pormenorizada das experiências, importa enquadrar o \textit{pyVirtualBench} no contexto do \textit{software}. Já foi referido na Secção \ref{sec:solucaoproposta} que o \textit{pyVirtualBench} é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.
 
 Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se enquadram nos objectivos deste projecto são:
@@ -473,6 +474,11 @@ Da forma como está implementado, o tutor ou professor, pode optar por apresenta
 	\caption{Experiência Lei de Ohm - Resistências desconhecidas}
 	\label{fig:pagohmabc}
 \end{figure}
+
+Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se um desafio no que toca à implementação ao nível do \textit{software}.
+
+Como foi referido na Secção \ref{sec:pyvirtualbench}, alguns ficheiros da biblioteca ``pyVirtualBench'' é que foram usados como base. Um desses exemplos, Se atendermos ao exemplo que é partilhado na 
+
 
 Na implementação desta experiência foram criados os ficheiros \textit{ohm.html}, como se pode ver, por exemplo, na Figura \ref{fig:pagohm} e o ficheiro \textit{configVB.py}
 
