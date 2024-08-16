@@ -516,11 +516,15 @@ Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é cha
 Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
 \begin{itemize}
 	\item Iniciar o \textit{virtualbench};
-	\item Iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
+	\item No caso geral, inicializar os instrumentos, neste caso particular, iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
 	\item Desenvolvimento do programa;
-	\item Libertar a fonte de tensão;
+	\item Libertar a fonte de tensão ou outro instrumento inicializado;
 	\item Libertar o \textit{virtualbench}.
 \end{itemize}
+
+De forma a
+
+Um processo que é melhor explicado se for dividido por partes
 
 Na implementação desta experiência foram criados os ficheiros \textit{ohm.html}, como se pode ver, por exemplo, na Figura \ref{fig:pagohm} e o ficheiro \textit{configVB.py}
 
