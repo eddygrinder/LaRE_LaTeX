@@ -15,6 +15,7 @@ O \acrshort{ide} utilizado no desenvolvimento do \textit{software} foi o \textit
 Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em placas brancas, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}.
 
 \section{Servidor Flask}
+\label{sec:flask}
 \textbf{Não sei se ainad vai ficar desta forma}
 
 Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio é tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
@@ -522,17 +523,31 @@ Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{scri
 	\item Libertar o \textit{virtualbench}.
 \end{itemize}
 
-De forma a
+Portanto, como se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio. A melhor forma de descrever esta experiência é dividi-la por partes.
 
-Um processo que é melhor explicado se for dividido por partes
+\textbf{Ficheiros associados à experiência}: Na implementação desta experiência foram criados os seguintes ficheiros:
+\begin{itemize}
+	\item \textit{views.py} - como já foi referido na Secção \ref{sec:flask}, é o ficheiro que contém as rotas e as funções associadas;
+	\item \textit{ohm.html} - página (``\textit{interface} gráfica'') onde o utilizador controla os elementos da experiência;
+	\item \textit{configVB.py} - \textit{script} que contém configurações a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final;
+	\item \textit{configRelays.py} - \textit{script} que controla o envio da trama de \textit{bits} para o \gls{RaspberryPI}, consoante a escolha do utilizador;
+\end{itemize}
 
-Na implementação desta experiência foram criados os ficheiros \textit{ohm.html}, como se pode ver, por exemplo, na Figura \ref{fig:pagohm} e o ficheiro \textit{configVB.py}
-
+A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1.2\textwidth]{figures/ohm_diagrama.drawio.png}
+	\includegraphics[width=1\textwidth]{figures/ohm_diagrama.drawio.png}
 	\caption{Fluxograma/Esquema da experiência Lei de Ohm}[REVER]
 	\label{fig:fluxohm}
+\end{figure}
+
+\subsubsection{Comunicação entre a página \textit{ohm.html} e o \textit{script views.py}}
+A página que é apresentada ao utilizador está representada na Figura \ref{fig:introohm}.
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/parametros_desabilitados.png}
+	\caption{Página de entrada - \textit{ohm.html}}
+	\label{fig:introohm}
 \end{figure}
 
 \subsection{Configuração do VirtualBench}
