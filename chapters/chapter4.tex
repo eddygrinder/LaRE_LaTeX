@@ -565,12 +565,21 @@ Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilit
 Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias, tal como pode ser visto na Listagem \ref{lst:recebeparametros}.
 
 \begin{minipage}{1\linewidth}
-	\begin{lstlisting}[language=Html, caption=Envio de parâmetros para \textit{views.py}, label=lst:envioparametros]
-	(...)
+	\begin{lstlisting}[language=python, caption=Recepção de parâmetros enviados de \textit{ohm.html}, label=lst:recepcaoparametros]
+	
+	(\ldots)
 	configOK = request.args.get('habilitar_parameter', None, bool)
-
+	(\dots)
+	if configOK == True:
+        configVB.OK()      
+    elif configSTOP == True:
+        configVB.STOP()
+	
+	(\ldots)
 	\end{lstlisting}
 \end{minipage}
+
+Pela Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
 
 \subsection{Configuração do VirtualBench}
 Da forma como está implementado o controlo da experiência, por parte do utilizador, levanta alguns pro

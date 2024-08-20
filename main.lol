@@ -20,5 +20,5 @@
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces Libertar instrumentos e \acrshort {virtualbench}}}{79}{lstlisting.4.13}%
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Exemplo \textit {ps\_example.py}}}{86}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Envio de parâmetros para \textit {views.py}}}{89}{lstlisting.4.15}%
-\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Envio de parâmetros para \textit {views.py}}}{89}{lstlisting.4.16}%
+\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{89}{lstlisting.4.16}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
