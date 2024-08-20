@@ -55,13 +55,13 @@
 \contentsline {section}{\numberline {4.3}Circuitos/Experiências}{80}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Lei de Ohm}{83}{subsection.4.3.1}%
 \contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{87}{section*.85}%
-\contentsline {subsection}{\numberline {4.3.2}Configuração do VirtualBench}{87}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Configuração do VirtualBench}{89}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{89}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{91}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{91}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{91}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{93}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{107}{section*.89}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{123}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{123}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{123}{section.1.A.2}%
+\contentsline {chapter}{\numberline {5}Resultados}{93}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{93}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{93}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{95}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{109}{section*.89}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{125}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{125}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{125}{section.1.A.2}%

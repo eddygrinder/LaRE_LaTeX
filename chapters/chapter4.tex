@@ -545,10 +545,32 @@ A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da 
 A página que é apresentada ao utilizador está representada na Figura \ref{fig:introohm}.
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/parametros_desabilitados.png}
+	\includegraphics[width=0.7\textwidth]{figures/parametros_desabilitados.png}
 	\caption{Página de entrada - \textit{ohm.html}}
 	\label{fig:introohm}
 \end{figure}
+
+Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis, como se pode ver na Figura \ref{fig:introohmhabilitado}. Neste caso, o parâmetro é enviado para o \textit{script} \textit{views.py}, tal como pode representado na Listagem \ref{lst:envioparametros}.
+
+\begin{minipage}{1\linewidth}
+	\begin{lstlisting}[language=Html, caption=Envio de parâmetros para \textit{views.py}, label=lst:envioparametros]
+	const booleanParameter = true;
+	const url = 
+		"/config_VirtualBench?habilitar_parameter=" + 
+		booleanParameter.toString();
+	fetch(url);
+	\end{lstlisting}
+\end{minipage}
+
+Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias, tal como pode ser visto na Listagem \ref{lst:recebeparametros}.
+
+\begin{minipage}{1\linewidth}
+	\begin{lstlisting}[language=Html, caption=Envio de parâmetros para \textit{views.py}, label=lst:envioparametros]
+	(...)
+	configOK = request.args.get('habilitar_parameter', None, bool)
+
+	\end{lstlisting}
+\end{minipage}
 
 \subsection{Configuração do VirtualBench}
 Da forma como está implementado o controlo da experiência, por parte do utilizador, levanta alguns pro
