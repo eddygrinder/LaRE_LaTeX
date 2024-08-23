@@ -401,6 +401,7 @@ No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\vo
 No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo \textit{SN74HC595} é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
 \subsection{Lei de Ohm}
+\label{sec:lei_ohm}
 Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema geral do circuito.
 
 \begin{figure}[hbtp]
@@ -523,17 +524,25 @@ Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{scri
 	\item Libertar o \textit{virtualbench}.
 \end{itemize}
 
-Portanto, como se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio. A melhor forma de descrever esta experiência é dividi-la por partes.
+\subsubsection{Descrição da experiência}
+Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, como pode ser visto nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}. No entanto, no contexto desta dissertação foi implementado o caso descrito na Figura \ref{fig:pagohm}. Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.
 
-\textbf{Ficheiros associados à experiência}: Na implementação desta experiência foram criados os seguintes ficheiros:
+Sendo assim, na implementação desta experiência foram criados os seguintes \textbf{ficheiros associados}:
 \begin{itemize}
-	\item \textit{views.py} - como já foi referido na Secção \ref{sec:flask}, é o ficheiro que contém as rotas e as funções associadas;
-	\item \textit{ohm.html} - página (``\textit{interface} gráfica'') onde o utilizador controla os elementos da experiência;
-	\item \textit{configVB.py} - \textit{script} que contém configurações a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final;
-	\item \textit{configRelays.py} - \textit{script} que controla o envio da trama de \textit{bits} para o \gls{RaspberryPI}, consoante a escolha do utilizador;
+	\item Ficheiros comuns a todas as experiências:
+	      \begin{itemize}
+		      \item \textit{views.py} - como já foi referido na Secção \ref{sec:flask}, é o ficheiro que contém as rotas e as funções associadas;
+		      \item \textit{configVB.py} - \textit{script} que contém configurações a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final;
+		      \item \textit{configRelays.py} - \textit{script} que controla o envio da trama de \textit{bits} para o \gls{RaspberryPI}, consoante a escolha do utilizador;
+	      \end{itemize}
+	\item Ficheiros específicos desta experiência:
+	      \begin{itemize}
+		      \item \textit{ohm.html} - página (``\textit{interface} gráfica'') onde o utilizador controla os elementos da experiência;
+
+	      \end{itemize}
 \end{itemize}
 
-A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
+Como se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio. A melhor forma de descrever esta experiência é dividi-la por partes. A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/ohm_diagrama.drawio.png}
@@ -542,7 +551,36 @@ A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da 
 \end{figure}
 
 \subsubsection{Comunicação entre a página \textit{ohm.html} e o \textit{script views.py}}
-A página que é apresentada ao utilizador está representada na Figura \ref{fig:introohm}.
+De uma forma geral, e como se apresenta na Listagem \ref{lst:exemploenvioparametros}, a comunicação entre a página \textit{ohm.html} e o \textit{script views.py} é feita da seguinte forma:
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=Html, caption=Exemplo de envio de parâmetros da página \textit{ohm.html} para o \textit{script views.py}, label=lst:exemploenvioparametros]
+		(...)
+		const url = 
+		`/config_VirtualBench?parameter1=${variavel_1}&parameter2=${variavel2}&parameter3=${variavel3}`
+		(...)
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+Do lado do servidor (\textit{script views.py}) os parâmetros são recebidos da forma como se pode ver na Listagem \ref{lst:exemplorecepcaoparametros}:
+\begin{center}
+	\begin{minipage}{1\linewidth}
+		\begin{lstlisting}[language=Python, caption=Exemplo da recepção dos parâmetros no \textit{script views.py} enviados da página \textit{ohm.html}, label=lst:exemplorecepcaoparametros]
+			(...)
+			@views.route('/config_VirtualBench', methods=['GET', 'POST'])
+			@login_required
+			def config_VirtualBench():
+				try:
+					Vcc = request.args.get('parametro2', 0, int)
+					Resistance = request.args.get('parametro3', 0, int)
+					measure_parameter = request.args.get('parametro1', 0, str)
+			(...)
+		\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+A página que é apresentada ao utilizador está representada na Figura \ref{fig:pagohm} e com mais pormenor na Figura \ref{fig:introohm}.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/parametros_desabilitados.png}
@@ -550,36 +588,60 @@ A página que é apresentada ao utilizador está representada na Figura \ref{fig
 	\label{fig:introohm}
 \end{figure}
 
-Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis, como se pode ver na Figura \ref{fig:introohmhabilitado}. Neste caso, o parâmetro é enviado para o \textit{script} \textit{views.py}, tal como pode representado na Listagem \ref{lst:envioparametros}.
+Como exemplo, os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis, como se pode ver na Figura \ref{fig:pagohm}. Neste caso, o parâmetro é enviado para o \textit{script} \textit{views.py}, tal como representado na Listagem \ref{lst:envioparametros}.
 
-\begin{minipage}{1\linewidth}
-	\begin{lstlisting}[language=Html, caption=Envio de parâmetros para \textit{views.py}, label=lst:envioparametros]
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python, caption=Envio de parâmetros para \textit{views.py}, label=lst:envioparametros]
 	const booleanParameter = true;
 	const url = 
-		"/config_VirtualBench?habilitar_parameter=" + 
-		booleanParameter.toString();
+		`/config_VirtualBench?habilitar_parameter=${booleanParameter.toString()}`;
 	fetch(url);
 	\end{lstlisting}
 \end{minipage}
 
-Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias, tal como pode ser visto na Listagem \ref{lst:recebeparametros}.
+Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias, tal como pode ser visto na Listagem \ref{lst:recepcaoparametros}.
 
-\begin{minipage}{1\linewidth}
+\begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=python, caption=Recepção de parâmetros enviados de \textit{ohm.html}, label=lst:recepcaoparametros]
-	
-	(\ldots)
+	(...)
 	configOK = request.args.get('habilitar_parameter', None, bool)
 	(\dots)
 	if configOK == True:
         configVB.OK()      
     elif configSTOP == True:
-        configVB.STOP()
-	
-	(\ldots)
+        configVB.STOP()	
+	(...)
 	\end{lstlisting}
 \end{minipage}
 
 Pela Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
+
+O envio dos restantes parâmetros, $V_{CC}$, R, medição de corrente (I) ou tensão (U) e a construção do gráfico é feito de forma idêntica.
+
+Quando se trata de enviar o resultado das medições para a página \textit{ohm.html}, a comunicação é feita da forma como se pode ver nas Listagens \ref{lst:envioresultados} e \ref{lst:recepcaoresultados}:
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=python, caption=Envio de resultados do servidor (\textit{views.py}) para a página \textit{ohm.html}, label=lst:envioresultados]
+			(...)
+			return jsonify({'measurement_result': measurement_result})
+			(...)
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=html, caption=Recepção de resultados na página \textit{ohm.html}, label=lst:recepcaoresultados]
+			(...)
+			fetch(url)
+			.then((response) => response.json())
+		.then((data) => {
+		  document.getElementById("current-measure").innerHTML =
+			data.measurement_result + " mA";
+			(...)
+			\end{lstlisting}
+	\end{minipage}
+\end{center}
 
 \subsection{Configuração do VirtualBench}
 Da forma como está implementado o controlo da experiência, por parte do utilizador, levanta alguns pro
