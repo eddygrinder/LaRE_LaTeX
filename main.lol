@@ -21,8 +21,7 @@
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Exemplo \textit {ps\_example.py}}}{86}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Exemplo de envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{89}{lstlisting.4.15}%
 \contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Exemplo da recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{89}{lstlisting.4.16}%
-\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Envio de parâmetros para \textit {views.py}}}{90}{lstlisting.4.17}%
-\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{90}{lstlisting.4.18}%
-\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{90}{lstlisting.4.19}%
-\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{91}{lstlisting.4.20}%
+\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{90}{lstlisting.4.17}%
+\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{91}{lstlisting.4.18}%
+\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{91}{lstlisting.4.19}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

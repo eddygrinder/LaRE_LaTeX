@@ -542,16 +542,31 @@ Sendo assim, na implementação desta experiência foram criados os seguintes \t
 	      \end{itemize}
 \end{itemize}
 
-Como se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio. A melhor forma de descrever esta experiência é dividi-la por partes. A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
+Como se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio.
+
+A melhor forma de descrever esta experiência é dividi-la por partes. A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/ohm_diagrama.drawio.png}
-	\caption{Fluxograma/Esquema da experiência Lei de Ohm}[REVER]
+	\caption{Fluxograma/Esquema da experiência Lei de Ohm [REVER]}
 	\label{fig:fluxohm}
 \end{figure}
 
 \subsubsection{Comunicação entre a página \textit{ohm.html} e o \textit{script views.py}}
-De uma forma geral, e como se apresenta na Listagem \ref{lst:exemploenvioparametros}, a comunicação entre a página \textit{ohm.html} e o \textit{script views.py} é feita da seguinte forma:
+De uma forma geral, a comunicação entre a página \textit{ohm.html} e o \textit{script views.py}, está representada esquematicamente na Figura \ref{fig:fluxohmpormenor}.
+
+Entre estes dois ficheiros há envio/recepção de parâmetros.
+
+O envio dos parâmetros da página \textit{ohm.html} é feito da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
+%, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/ohm_diagrama_pormenor.drawio.png}
+	\caption{Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}
+	\label{fig:fluxohmpormenor}
+\end{figure}
+
 \begin{center}
 	\begin{minipage}{0.7\linewidth}
 		\begin{lstlisting}[language=Html, caption=Exemplo de envio de parâmetros da página \textit{ohm.html} para o \textit{script views.py}, label=lst:exemploenvioparametros]
@@ -588,24 +603,15 @@ A página que é apresentada ao utilizador está representada na Figura \ref{fig
 	\label{fig:introohm}
 \end{figure}
 
-Como exemplo, os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis, como se pode ver na Figura \ref{fig:pagohm}. Neste caso, o parâmetro é enviado para o \textit{script} \textit{views.py}, tal como representado na Listagem \ref{lst:envioparametros}.
+Como exemplo, os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis, como se pode ver na Figura \ref{fig:pagohm}. Neste caso, o respectivo parâmetro é enviado para o \textit{script} \textit{views.py}. No caso de os selectores estarem habilitados, ao carregar no botão ``STOP'', os selectores ficam desabilitados.
 
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Envio de parâmetros para \textit{views.py}, label=lst:envioparametros]
-	const booleanParameter = true;
-	const url = 
-		`/config_VirtualBench?habilitar_parameter=${booleanParameter.toString()}`;
-	fetch(url);
-	\end{lstlisting}
-\end{minipage}
-
-Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias, tal como pode ser visto na Listagem \ref{lst:recepcaoparametros}.
+Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias. Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=python, caption=Recepção de parâmetros enviados de \textit{ohm.html}, label=lst:recepcaoparametros]
 	(...)
 	configOK = request.args.get('habilitar_parameter', None, bool)
-	(\dots)
+	(...)
 	if configOK == True:
         configVB.OK()      
     elif configSTOP == True:
@@ -614,9 +620,7 @@ Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoa
 	\end{lstlisting}
 \end{minipage}
 
-Pela Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
-
-O envio dos restantes parâmetros, $V_{CC}$, R, medição de corrente (I) ou tensão (U) e a construção do gráfico é feito de forma idêntica.
+O envio dos restantes parâmetros, $V_{CC}$, R, medição de corrente (I) ou tensão (U) é feito de forma idêntica.
 
 Quando se trata de enviar o resultado das medições para a página \textit{ohm.html}, a comunicação é feita da forma como se pode ver nas Listagens \ref{lst:envioresultados} e \ref{lst:recepcaoresultados}:
 \begin{center}
@@ -643,8 +647,22 @@ Quando se trata de enviar o resultado das medições para a página \textit{ohm.
 	\end{minipage}
 \end{center}
 
-\subsection{Configuração do VirtualBench}
-Da forma como está implementado o controlo da experiência, por parte do utilizador, levanta alguns pro
+\subsubsection{O \textit{script configVB.py}}
+Explicar porque é chamado o \textit{script configVB.py} e o que faz cada funlção
+OK faz....
+STOP faz....
+
+Na Secção anterior descreveu-se o processo de comunicação entre a página \textit{ohm.html} e o \textit{script views.py} (servidor).
+
+%Se os parâmetros forem correctamente recebidos no \textit{script views.py} (servidor) são chamados dois \textit{scripts}, que executaram a função : \textit{configVB.py} e \textit{configRelays.py}. 
+
+O primeiro a ser chamado, como pode ser vist
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/ohm_diagramaCUTRelay.drawio.png}
+	\caption{\textit{Script configRelays.py}}
+	\label{fig:cutconfigRelays}
+\end{figure}
 
 \section{qualquer coisa que ainda não sei o quê}
 
@@ -654,6 +672,13 @@ Após análise e estudo da informação presente no \textit{site} do \textit{Fla
 	\centering
 	\includegraphics[width=1\textwidth]{figures/login.png}
 	\caption{Página de \textit{login}}
+	\label{fig:paglogin}
+\end{figure}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/ohm_diagramaCUT.drawio.png}
+	\caption{caralho}
 	\label{fig:paglogin}
 \end{figure}
 
