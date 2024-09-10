@@ -1,12 +1,12 @@
 \babel@toc {portuguese}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {portuguese}{}\relax 
-\contentsline {chapter}{Lista de Figuras}{ix}{chapter*.10}%
-\contentsline {chapter}{Lista de Tabelas}{xi}{chapter*.11}%
-\contentsline {chapter}{Listagens}{xiii}{chapter*.12}%
-\contentsline {chapter}{Gloss\'{a}rio}{xv}{section*.13}%
-\contentsline {chapter}{Lista de Acr\'{o}nimos}{xix}{section*.15}%
-\contentsline {chapter}{Lista de S\'{i}mbolos}{xxiii}{section*.17}%
+\contentsline {chapter}{Lista de Figuras}{vii}{chapter*.10}%
+\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.11}%
+\contentsline {chapter}{Listagens}{xi}{chapter*.12}%
+\contentsline {chapter}{Gloss\'{a}rio}{xiii}{section*.13}%
+\contentsline {chapter}{Lista de Acr\'{o}nimos}{xvii}{section*.15}%
+\contentsline {chapter}{Lista de S\'{i}mbolos}{xxi}{section*.17}%
 \contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Enquadramento}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectivos}{2}{section.1.2}%
