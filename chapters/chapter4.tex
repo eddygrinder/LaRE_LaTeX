@@ -525,6 +525,7 @@ Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{scri
 \end{itemize}
 
 \subsubsection{Descrição da experiência}
+\label{sec:descricao_experiencia}
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, como pode ser visto nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}. No entanto, no contexto desta dissertação foi implementado o caso descrito na Figura \ref{fig:pagohm}. Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.
 
 Sendo assim, na implementação desta experiência foram criados os seguintes \textbf{ficheiros associados}:
@@ -532,12 +533,12 @@ Sendo assim, na implementação desta experiência foram criados os seguintes \t
 	\item Ficheiros comuns a todas as experiências:
 	      \begin{itemize}
 		      \item \textit{views.py} - como já foi referido na Secção \ref{sec:flask}, é o ficheiro que contém as rotas e as funções associadas;
-		      \item \textit{configVB.py} - \textit{script} que contém configurações a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final;
-		      \item \textit{configRelays.py} - \textit{script} que controla o envio da trama de \textit{bits} para o \gls{RaspberryPI}, consoante a escolha do utilizador;
+		      \item \textit{configRelays.py} - \textit{script} que controla o envio da trama de \textit{bits} para o \gls{RaspberryPI}, consoante a escolha do utilizador.
 	      \end{itemize}
 	\item Ficheiros específicos desta experiência:
 	      \begin{itemize}
-		      \item \textit{ohm.html} - página (``\textit{interface} gráfica'') onde o utilizador controla os elementos da experiência;
+		      \item \textit{configVB.py} - \textit{script} que contém configurações a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final;
+		      \item \textit{ohm.html} - página (``\textit{interface} gráfica'') onde o utilizador controla os elementos da experiência.
 
 	      \end{itemize}
 \end{itemize}
@@ -648,7 +649,8 @@ Quando se trata de enviar o resultado das medições para a página \textit{ohm.
 \end{center}
 
 \subsubsection{O \textit{script configVB.py}}
-Neste \textit{script} fazem-se as
+Neste \textit{script} fazem-se as configurações do \acrshort{virtualbench} e a construção do gráfico final.
+
 Explicar porque é chamado o \textit{script configVB.py} e o que faz cada funlção
 OK faz....
 STOP faz....
