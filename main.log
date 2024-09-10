@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  10 SEP 2024 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  10 SEP 2024 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1598,30 +1598,31 @@ File: figures/parametros_desabilitados.png Graphic file (type png)
 Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 602.
 (pdftex.def)             Requested size: 278.8358pt x 111.75829pt.
  [89 <./figures/ohm_diagrama_pormenor.drawio.png>] [90 <./figures/parametros_desabilitados.png>]
-Overfull \hbox (9.38791pt too wide) in paragraph at lines 660--661
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 670--671
 []\T1/lmr/m/n/10.95 Na Sec-ção an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-ção en-tre a pá-gina \T1/lmr/m/it/10.95 ohm.html
  []
 
 <figures/ohm_diagramaCUTRelay.drawio.png, id=2820, 1640.1275pt x 591.20876pt>
 File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUTRelay.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 667.
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 677.
 (pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
-<figures/login.png, id=2822, 1541.76pt x 353.32pt>
+[91]
+<figures/login.png, id=2836, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 678.
+Package pdftex.def Info: figures/login.png  used on input line 688.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
-<figures/ohm_diagramaCUT.drawio.png, id=2823, 1640.1275pt x 560.0925pt>
+<figures/ohm_diagramaCUT.drawio.png, id=2837, 1640.1275pt x 560.0925pt>
 File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUT.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 685.
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 695.
 (pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
-[91] [92 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)> <./figures/ohm_diagramaCUT.drawio.png>]
+ [92 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)> <./figures/ohm_diagramaCUT.drawio.png>]
 <figures/menupage.png, id=2852, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
-Package pdftex.def Info: figures/menupage.png  used on input line 702.
+Package pdftex.def Info: figures/menupage.png  used on input line 712.
 (pdftex.def)             Requested size: 398.33861pt x 229.9719pt.
  [93 <./figures/menupage.png (PNG copy)>]) [94]
 \openout2 = `chapters/chapter5.aux'.
@@ -2041,7 +2042,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (160 pages, 19361516 bytes).
+Output written on main.pdf (160 pages, 19361907 bytes).
 PDF statistics:
  3816 PDF objects out of 4296 (max. 8388607)
  3356 compressed objects within 34 object streams
