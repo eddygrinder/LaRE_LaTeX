@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  27 SEP 2024 18:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  27 SEP 2024 18:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1598,33 +1598,36 @@ File: figures/parametros_desabilitados.png Graphic file (type png)
 Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 602.
 (pdftex.def)             Requested size: 278.8358pt x 111.75829pt.
  [89 <./figures/ohm_diagrama_pormenor.drawio.png>] [90 <./figures/parametros_desabilitados.png>] [91]
-Overfull \hbox (9.38791pt too wide) in paragraph at lines 699--700
+
+LaTeX Warning: Reference `fig:cutconfigVB' on page 92 undefined on input line 693.
+
+[92]
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 708--709
 []\T1/lmr/m/n/10.95 Na Sec-ção an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-ção en-tre a pá-gina \T1/lmr/m/it/10.95 ohm.html
  []
 
-<figures/ohm_diagramaCUTRelay.drawio.png, id=2837, 1640.1275pt x 591.20876pt>
+<figures/ohm_diagramaCUTRelay.drawio.png, id=2862, 1640.1275pt x 591.20876pt>
 File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUTRelay.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 706.
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 715.
 (pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
-<figures/login.png, id=2839, 1541.76pt x 353.32pt>
+<figures/login.png, id=2864, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 717.
+Package pdftex.def Info: figures/login.png  used on input line 726.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
-[92]
 <figures/ohm_diagramaCUT.drawio.png, id=2865, 1640.1275pt x 560.0925pt>
 File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUT.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 724.
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 733.
 (pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
- [93 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)> <./figures/ohm_diagramaCUT.drawio.png>]
-<figures/menupage.png, id=2879, 1168.365pt x 674.52pt>
+[93 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)>]
+<figures/menupage.png, id=2878, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
-Package pdftex.def Info: figures/menupage.png  used on input line 741.
+Package pdftex.def Info: figures/menupage.png  used on input line 750.
 (pdftex.def)             Requested size: 398.33861pt x 229.9719pt.
- [94 <./figures/menupage.png (PNG copy)>]) [95]
+ [94 <./figures/ohm_diagramaCUT.drawio.png> <./figures/menupage.png (PNG copy)>]) [95]
 \openout2 = `chapters/chapter5.aux'.
 
  (./chapters/chapter5.tex [96
@@ -1908,16 +1911,23 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D45C9ECBCB75DAFD7694D4A78E7CE2B4;9863.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 30BFEE81CD483FA1966F51A4CCE37CE5;15356.
  ) 
 Here is how much of TeX's memory you used:
- 40996 strings out of 476015
- 833045 string characters out of 5791583
+ 40997 strings out of 476015
+ 833062 string characters out of 5791583
  2085190 words of memory out of 5000000
- 61561 multiletter control sequences out of 15000+600000
+ 61562 multiletter control sequences out of 15000+600000
  683209 words of font info for 115 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  110i,21n,131p,2456b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2042,7 +2052,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (162 pages, 19364458 bytes).
+Output written on main.pdf (162 pages, 19365251 bytes).
 PDF statistics:
  3851 PDF objects out of 4296 (max. 8388607)
  3389 compressed objects within 34 object streams
