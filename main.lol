@@ -24,4 +24,5 @@
 \contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{90}{lstlisting.4.17}%
 \contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{91}{lstlisting.4.18}%
 \contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{91}{lstlisting.4.19}%
+\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{92}{lstlisting.4.20}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -661,6 +661,44 @@ Este \textit{script} contém quatro funções referenciadas na Secção \textbf{
 
 %é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
 
+Já se viu (\textbf{refirerir a secção}) que na experiência da Lei de \textit{Ohm}, o utilizador selecciona os valores da tensão e resistência através de um formulário, representado na página \textit{ohm.html} da forma como se pode ver na Listagem \ref{lst:formularioescolha}.
+
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=html, caption=Formulário de escolha na página \textit{ohm.html},label=lst:formularioescolha]
+			(...)
+			<div style="display: inline-block; width: 200px">
+      <select id="selectVcc" disabled>
+        <option value="0">Seleccionar V<sub>cc</sub>:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div style="display: inline-block; width: 200px">
+      <select id="selectR" disabled>
+        <option value="0">Seleccionar R:</option>
+        <option value="1">1</option>
+        <option value="2">1.1</option>
+        <option value="3">1.5</option>
+      </select>
+			(...)
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+No entanto, optou-se por adicionar à página \textit{ohm.html} um botão ``OK'' que, ao ser seleccionado, activa os selectores e envia os parâmetros para o servidor. O \textit{script} \textit{configVB.py} é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
+
+explicar porque se optou por colocar o botão ``OK'' e não enviar os parâmetros automaticamente, e só efectuar a medição quando se clicar no link medir.
+
+Aqui vai ter de seexplicar porque se activa o OK. O Ok activa, antes de mais, a fonte de 12V que vai alimentar os integrados e, através do LM317, a fonte de 5V. 
+
+Só depois os formulários são activos, permite seleccionar os valores e só depois é que o uti.lizador pode clicar no link medir.
+Isto permite que o utilizador tenha mais controlo sobre a experiência.
+
 Explicar porque é chamado o \textit{script configVB.py} e o que faz cada funlção
 OK faz....
 STOP faz....
