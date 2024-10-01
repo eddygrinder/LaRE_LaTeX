@@ -651,7 +651,7 @@ Quando se trata de enviar o resultado das medições para a página \textit{ohm.
 \subsubsection{O \textit{script configVB.py}}
 Neste \textit{script} fazem-se as configurações do \acrshort{virtualbench} e a construção do gráfico final.
 
-Este \textit{script} contém quatro funções referenciadas na Secção \textbf{SECÇÃO}:
+Este \textit{script} contém quatro funções referenciadas OU NÃO na Secção \textbf{SECÇÃO}:
 \begin{itemize}
 	\item \textit{OK()};
 	\item \textit{STOP()};
@@ -660,6 +660,32 @@ Este \textit{script} contém quatro funções referenciadas na Secção \textbf{
 \end{itemize}
 
 %é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
+
+Para se perceber melhor a função deste \textit{script} e das funções descritas em cima, importa clarificar o modo de funcionamento da página \textit{ohm.html}.
+
+De forma a prevenir qualquer descuido ou erro de utilização, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
+\begin{enumerate}
+	\item Seleccionar o botão ``OK'' que habilita os selectores;
+	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
+	\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
+\end{enumerate}
+
+A verificação dos erros e escolha de parâmetros é feita na página \textit{ohm.html}, tal como se pode ver pela Listagem \ref{lst:erro} e pelo exemplo da Figura \ref{fig:??} .
+
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=html, caption=Erro na página \textit{ohm.html}, label=lst:erro]
+		(...)
+        if (Vcc === "0" || Resistance === "0") {
+          alert("Tem de primeiro seleccionar os valores de Vcc e R!");
+          return;
+        }
+		(...)
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+Como se pode ver na Figura , os selectores estão desabilitados e os relés nao estão alimentados porque isso é feito através da fonte do VB e do LM317
 
 Já se viu (\textbf{refirerir a secção}) que na experiência da Lei de \textit{Ohm}, o utilizador selecciona os valores da tensão e resistência através de um formulário, representado na página \textit{ohm.html} da forma como se pode ver na Listagem \ref{lst:formularioescolha}.
 
