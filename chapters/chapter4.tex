@@ -649,15 +649,18 @@ Quando se trata de enviar o resultado das medições para a página \textit{ohm.
 \end{center}
 
 \subsubsection{O \textit{script configVB.py}}
-Neste \textit{script} fazem-se as configurações do \acrshort{virtualbench} e a construção do gráfico final.
-
-Este \textit{script} contém quatro funções referenciadas OU NÃO na Secção \textbf{SECÇÃO}:
+\textbf{Este script poderá eventualmente ficar enquadrado numa secção a criar, denominada ``Descrição dos scripts'' ou então, na descrição da experiência lei de ohm.}
+Neste \textit{script} fazem-se as configurações do \acrshort{virtualbench} e a construção do gráfico final e contém quatro funções referenciadas OU NÃO na Secção \textbf{SECÇÃO}:
 \begin{itemize}
 	\item \textit{OK()};
 	\item \textit{STOP()};
 	\item \textit{test\_parameters(Vcc:int, R:int, measure\_parameter:str)};
 	\item \textit{plot\_graphic(current\_measurements, voltage\_measurements)}.
 \end{itemize}
+
+A função ``OK()'' é chamada quando o utilizador selecciona o botão ``OK'' na página \textit{ohm.html}. É responsável por activar a fonte de alimentação de \SI{12}{\volt} do \acrshort{virtualbench} e habilitar os selectores dos parâmetros $V_{CC}$ e R.
+
+A função ´´STOP()´´ é chamada quando o utilizador selecciona o botão ``STOP'' na página \textit{ohm.html}. Esta função é responsável por desactivar a fonte de alimentação do \acrshort{virtualbench} e desabilitar os selectores dos parâmetros $V_{CC}$ e R.
 
 %é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
 
