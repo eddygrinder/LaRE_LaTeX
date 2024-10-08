@@ -664,7 +664,9 @@ A função ``STOP()'' é chamada quando o utilizador selecciona o botão ``STOP'
 
 %é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
 
-Para se perceber melhor a função deste \textit{script} e das funções descritas em cima, importa clarificar o modo de funcionamento da página \textit{ohm.html}.
+Para se perceber melhor a função deste \textit{script} e das funções descritas em cima, importa clarificar o modo de funcionamento e a implementação da página \textit{ohm.html}.
+
+Como se pode ver nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}, representadas na Secção \ref{sec:lei_ohm}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente ou tensão e a construção do gráfico.
 
 De forma a prevenir qualquer descuido ou erro de utilização, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
 \begin{enumerate}
@@ -687,6 +689,21 @@ A verificação dos erros e escolha de parâmetros é feita na página \textit{o
 	\end{lstlisting}
 	\end{minipage}
 \end{center}
+
+\hrule
+
+\subsubsection{Fontes de alimentação - a incluir no hardware}
+O \acrshort{lare} utiliza várias tensões de alimentação:
+\begin{itemize}
+	\item \SI{12}{\volt} - para alimentar os relés e os \textit{drivers} dos relés - ULN2003;
+	\item \SI{5}{\volt} - para alimentar os registos de deslocamento - 74HC595;
+	\item fonte tensão variável (\acrshort{cc}) para alimentar a experiência da Lei de \textit{Ohm};
+	\item fonte tensão \acrshort{ca} para alimentar as experiências de filtros rectificação.
+\end{itemize}
+
+No que concerne à fonte de alimentação variável, esta foi implementada de forma independente, ou seja, não depende do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso.}
+
+
 
 Como se pode ver na Figura , os selectores estão desabilitados e os relés nao estão alimentados porque isso é feito através da fonte do VB e do LM317
 
