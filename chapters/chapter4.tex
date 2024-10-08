@@ -701,9 +701,18 @@ O \acrshort{lare} utiliza várias tensões de alimentação:
 	\item fonte tensão \acrshort{ca} para alimentar as experiências de filtros rectificação.
 \end{itemize}
 
-No que concerne à fonte de alimentação variável, esta foi implementada de forma independente, ou seja, não depende do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso.}
+No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente, ou seja, não depende do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
+Tal como pode ser visto na Figura \ref{fig:fontes_VB}, o \acrshort{virtualbench} possui três fontes de alimentação continua: \SI{6}{\volt}, \SI{25}{\volt} e \SI{-25}{\volt}\footnote{No contexto do \acrshort{lare}, a fonte de tensão de \SI{-25}{\volt} não foi usada}. 
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/fontes_VB.png}
+	\caption{Fontes de tensão contínua \acrshort{virtualbench}}
+	\label{fig:fontes_VB}
+\end{figure}
+
+Para a implementação da experiência da Lei de \textit{Ohm} e como já foi referido em cima, os circuitos integrados necessitam de \SI{5}{\volt} e \SI{12}{\volt} de alimentação e \SI{6}{\volt} variáveis para as medições das tensões e correntes nas resistências. Como só duas fontes de alimentação são controláveis, optou-se por configurar a fonte de \SI{25}{\volt} conforme representado no esquema da Figura \ref{fig:fontes_VB}.
 
 Como se pode ver na Figura , os selectores estão desabilitados e os relés nao estão alimentados porque isso é feito através da fonte do VB e do LM317
 

@@ -58,12 +58,12 @@
 \contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{88}{section*.86}%
 \contentsline {subsubsection}{O \textit {script configVB.py}}{91}{section*.89}%
 \contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{92}{section*.90}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{94}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{97}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{97}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{97}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{99}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{113}{section*.95}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{129}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{129}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{129}{section.1.A.2}%
+\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{95}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Resultados}{99}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{99}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{99}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{101}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{115}{section*.96}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{131}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{131}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{131}{section.1.A.2}%
