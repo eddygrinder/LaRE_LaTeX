@@ -14,7 +14,8 @@ O \acrshort{ide} utilizado no desenvolvimento do \textit{software} foi o \textit
 
 Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em placas brancas, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}.
 
-\section{Servidor Flask}
+\section{Software}
+\subsection{Servidor Flask}
 \label{sec:flask}
 \textbf{Não sei se ainad vai ficar desta forma}
 
@@ -22,7 +23,7 @@ Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na `
 
 A base para a implementação do \textit{Flask} e \underline{\textbf{toda a informação descrita neste}} \underline{\textbf{capítulo}} teve como base a documentação técnica disponível no \textit{site} do \href{https://flask.palletsprojects.com/en/3.0.x/}{\textit{Flask}} e complementada com alguns tutoriais do \textit{Youtube}, como por exemplo: \href{https://www.youtube.com/watch?v=dam0GPOAvVI}{\textit{link}} ou \href{https://www.youtube.com/watch?v=bB6Yyh7nUl4}{\textit{link}} .
 
-\subsection{Estrutura base}
+\subsubsection{Estrutura base}
 O fluxograma apresentado na Figura \ref{fig:funcflask} apresenta o funcionamento geral do servidor \textit{Flask}.
 
 \begin{figure}[hbtp]
@@ -59,7 +60,7 @@ Dentro da raiz, criou-se o directório \textit{website} onde se incluiu os fiche
 	\item \textit{auth.py}: Este ficheiro é responsável por lidar com a autenticação e autorização de utilizadores, pode incluir funções e rotas que permitem aos utilizadores registarem-se, fazer \textit{login} e fazer \textit{logout}.
 \end{itemize}
 
-\subsection{Rotas}
+\subsubsection{Rotas}
 As aplicações \textit{Web} modernas utilizam \acrshort{url}s amigáveis para ajudar os utilizadores a memorizar e utilizar o nome para voltar a visitar diretamente uma página.
 
 No \textit{Flask} utiliza-se o decorador \textit{\textbf{route()}} para associar uma função a um \acrshort{url}, tal como pode ser visto na Listagem \ref{lst:decoradorroute}.
@@ -97,7 +98,7 @@ if user:
 
 Isto quer dizer que o \textit{Flask} gera a \acrshort{url} correspondente à função \textit{\textbf{home()}} definida no ficheiro \textit{\textbf{views.py}} dentro da \textit{Blueprint} \textit{views}. Quando usada dentro de \textit{\textbf{redirect}}, redireciona o utilizador para essa \acrshort{url}.
 
-\subsection{Blueprints}
+\subsubsection{Blueprints}
 O \textit{Flask} usa um conceito de \textit{blueprints} para criar componentes de aplicações e suportar padrões comuns dentro de uma aplicação ou entre aplicações. As \textit{blueprints} podem simplificar muito o funcionamento de grandes aplicações e fornecer um meio central para que as extensões do \textit{Flask} registem operações em aplicações. As \textit{blueprints} permitem organizar a aplicação em partes menores e de mais fácil gestão. O conceito básico das \textit{blueprints} é que registam as operações a executar quando são integrados numa aplicação. O \textit{Flask} associa funções de vista (\textit{views}) a \textit{blueprints} quando processa pedidos e gera \acrshort{url} entre diferentes pontos de acesso.
 
 Nas Listagens \ref{lst:blueprintviews} e \ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
@@ -130,7 +131,7 @@ app.register_blueprint(auth, url_prefix='/')
 
 Isto quer dizer que ao registar a \textit{blueprint} com o prefixo ``/'', os \acrshort{url}s serão acessíveis através da raiz da aplicação.
 
-\subsection{Pedidos}
+\subsubsection{Pedidos}
 A capacidade de uma aplicação \textit{web} em responder a solicitações de dados do cliente é um requisito essencial. No \textit{Flask} esta informação é fornecida pelo objeto global \textit{\textbf{request}}. Este objeto contém todos os detalhes da solicitação, como os métodos \acrshort{http} usados (\textit{GET}, \textit{POST}, etc.), os \textit{headers} os \textit{cookies} ou o corpo da requisição.
 
 O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como pode ser visto na Listagem \ref{lst:atributorequest}.
@@ -220,7 +221,7 @@ Para renderizar um modelo, o método utilizado foi \textit{\textbf{render\_templ
 
 Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros do \acrshort{url} com \textit{\textbf{get}} ou capturando o \textit{\textbf{KeyError}}, uma vez que os utilizadores podem alterar o \acrshort{url} e, nesse caso, apresentar uma página \textit{400 bad request} não é de fácil interpretação.
 
-\subsection{Base de dados}
+\subsubsection{Base de dados}
 A aplicação desenvolvida usa uma base de dados e autenticação de utilizador, a ligação com a base de dados é aberta no início do pedido e é obtida a informação do utilizador. No final do pedido, a ligação com a base de dados é fechada.
 
 No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{ SQLAlchemy}. Tal como referenciado/aconselhado na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, como apresentado na Listagem \ref{lst:basedados}
@@ -244,7 +245,7 @@ def create_app():
 \end{lstlisting}
 \end{minipage}
 
-\subsection{Autenticação}
+\subsubsection{Autenticação}
 A segurança da aplicação é feita com recurso à página de \textit{login} e \textit{logout}, para isso foi instalada a extensão \textit{flask-login}, tal como é apresentado na Listagem \ref{lst:exemplologin}
 
 \begin{minipage}{0.9\linewidth}
@@ -319,7 +320,8 @@ Sempre que o ficheiro é chamado é criado um objecto diferente para cada instru
 
 Na secção seguinte explica-se a solução encontrada.
 
-\section{Circuitos/Experiências}
+\section{Hardware}
+\subsection{Circuitos/Experiências}
 \label{sec:experiencias}
 Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por 5 circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
 
@@ -400,7 +402,7 @@ No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\vo
 
 No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo \textit{SN74HC595} é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
-\subsection{Lei de Ohm}
+\subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
 Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema geral do circuito.
 
