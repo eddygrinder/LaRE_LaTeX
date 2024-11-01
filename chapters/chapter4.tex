@@ -321,8 +321,6 @@ Sempre que o ficheiro é chamado é criado um objecto diferente para cada instru
 Na secção seguinte explica-se a solução encontrada.
 
 \section{Hardware}
-\subsection{Circuitos/Experiências}
-\label{sec:experiencias}
 Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por 5 circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
 
 \begin{figure}[hbtp]
@@ -401,6 +399,23 @@ As entradas $I_{1}$ a $I_{7}$ são comandadas pelo \gls{RaspberryPI}, através d
 No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5} = I_{15}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado.
 
 No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo \textit{SN74HC595} é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
+
+O QUE FAZER A SEGUIR:
+\begin{itemize}
+	\item LIGAÇÃO DAS FONTES DE ALIMENTAÇÃO
+	\begin{itemize}
+		\item FONTE DE 5V, NÃO ESQUECER OS CÁLCULOS RETIRADOS DO DATASHEET. PORQUE SE USOU O LM317, PORQUE SE USOU ESTA FONTE - VERIFICAR SE JÁ ESTÁ EXPLICADO.
+		\item PONTE RETIFICADORA NOS FILTROS E RECTIFICADORES, A RAZÃO PORQUE SE USOU A RECTIFICAÇÃO DE ONDA COMPLETA
+	\end{itemize}
+	\item LIGAÇÃO DOS APARELHOS DE MEDIDA - voltímetro e amperímetro
+\end{itemize}
+
+\textbf{ENQUADRAR ISTO COM O QUE JÁ ESTÁ ESCRITO.}
+
+NÃO ESQUECER A LIGAÇÃO AO VB E APARELHOS DE MEDIDA: OSC, MULTÍMETRO E AS FONTES DE ALIMENTAÇÃO DO VB
+
+\subsection{Circuitos/Experiências}
+\label{sec:experiencias}
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
