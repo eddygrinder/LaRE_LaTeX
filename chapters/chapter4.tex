@@ -321,6 +321,14 @@ Sempre que o ficheiro é chamado é criado um objecto diferente para cada instru
 Na secção seguinte explica-se a solução encontrada.
 
 \section{Hardware}
+<<<<<<< HEAD
+=======
+\subsection{Relés}
+\label{sec:hwreles}
+
+\textbf{---REFERENCIAR NO DATASHEET OU MENCIONAR NESTE CAP?---}
+
+>>>>>>> 295a603 (update cap4)
 Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por 5 circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
 
 \begin{figure}[hbtp]
@@ -330,6 +338,10 @@ Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} �
 	\label{fig:relespstdpst}
 \end{figure}
 
+\subsection{Registo de deslocamento}
+\label{sec:hwregistodeslocamento}
+
+\textbf{---RJá foi referido com pormenor no cap3---}
 Como já foi referido na Secção \ref{sec:registodeslocamento}, o \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits}, do tipo \acrshort{sipo}. Uma trama de (até 8) \textit{bits} é enviado pelo \gls{RaspberryPI} para o registo através do pino \acrshort{ser}. Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio:
 
 \begin{enumerate}
@@ -348,6 +360,10 @@ Como já foi referido na Secção \ref{sec:registodeslocamento}, o \textit{SN74H
 	\label{fig:esquematico74hc595}
 \end{figure}
 
+\subsection{Driver de relés}
+\label{sec:driverreles}
+
+\textbf{---RJá foi referido com pormenor no cap3---}
 Foi referido na Secção \ref{sec:driver}, que o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para isso, é necessário usar o \textit{ULN2003A} que é um \textit{driver} de relés. Na Figura \ref{fig:diagramablocos2003} está representado o diagrama simplificado para uma entrada/saída do \textit{ULN2003A} \cite{ULN2003}.
 
 \begin{figure}[hbtp]
@@ -400,6 +416,7 @@ No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\vo
 
 No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo \textit{SN74HC595} é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
+<<<<<<< HEAD
 O QUE FAZER A SEGUIR:
 \begin{itemize}
 	\item LIGAÇÃO DAS FONTES DE ALIMENTAÇÃO
@@ -416,6 +433,38 @@ NÃO ESQUECER A LIGAÇÃO AO VB E APARELHOS DE MEDIDA: OSC, MULTÍMETRO E AS FON
 
 \subsection{Circuitos/Experiências}
 \label{sec:experiencias}
+=======
+\subsection{Fontes de alimentação}
+\label{sec:fontesalimentacao}
+
+O \acrshort{lare} utiliza várias fontes de alimentação e neste aspecto tentou-se simplificar/limitar o uso de fontes externas, além daquelas que poderiam ser fornecidas pelo \acrshort{virtualbench}. 
+
+Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alimentação:
+\begin{itemize}
+	\item \SI{5}{\volt} - utilizada na alimentação do registo de deslocamento;
+	\item \SI{12}{\volt} - utilizada na alimentação dos relés e dos \textit{drivers} de relés;
+	\item \SI{0}{\volt} - \SI{6}{\volt} variáveis - utilizada na experiência da Lei de Ohm;
+	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt}.
+\end{itemize}
+
+Como pode ser visto na Figura \ref{fig:paineldianteiro} - \textbf{Esta fig já está representada no cap3} - ou na Figura \ref{fig:promenorfontes} com mais pormenor, os \acrshort{virtualbench} possuí três fontes de alimentação (variáveis): \SI{+6}{\volt}, \SI{+25}{\volt} e \SI{-25}{\volt}.
+
+Na Figura 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/fontes_VB.png}
+	\caption{Fontes de tensão do \acrshort{virtualbench}}
+	\label{fig:promenorfontes}
+\end{figure}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/sch_fonte5VB.png}
+	\caption{Fontes de tensão do \acrshort{virtualbench}}
+	\label{fig:promenorfontes}
+\end{figure}
+>>>>>>> 295a603 (update cap4)
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}

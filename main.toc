@@ -54,18 +54,30 @@
 \contentsline {section}{\numberline {4.2}pyVirtualBench}{78}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}VirtualBench VB-8012}{79}{subsection.4.2.1}%
 \contentsline {section}{\numberline {4.3}Hardware}{80}{section.4.3}%
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {4.3.1}Circuitos/Experiências}{83}{subsection.4.3.1}%
 \contentsline {subsubsection}{Lei de Ohm}{83}{section*.85}%
 \contentsline {subsubsection}{Descrição da experiência}{88}{section*.91}%
 \contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{88}{section*.93}%
 \contentsline {subsubsection}{O \textit {script configVB.py}}{92}{section*.96}%
 \contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{93}{section*.97}%
+=======
+\contentsline {subsection}{\numberline {4.3.1}Relés}{80}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Registo de deslocamento}{80}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Driver de relés}{81}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Fontes de alimentação}{83}{subsection.4.3.4}%
+\contentsline {subsubsection}{Lei de Ohm}{83}{section*.87}%
+\contentsline {subsubsection}{Descrição da experiência}{88}{section*.93}%
+\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{89}{section*.95}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{92}{section*.98}%
+\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{93}{section*.99}%
+>>>>>>> 295a603 (update cap4)
 \contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{96}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Resultados}{99}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Limitações}{99}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Melhoramentos}{99}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusões}{101}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{115}{section*.103}%
+\contentsline {chapter}{Refer\^{e}ncias}{115}{section*.105}%
 \contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{131}{appendix.1.A}%
 \contentsline {section}{\numberline {A.1}Secção}{131}{section.1.A.1}%
 \contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{131}{section.1.A.2}%
