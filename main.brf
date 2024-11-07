@@ -281,5 +281,9 @@
 \backcite {Startingcss}{{67}{6}{lstnumber.3.3.5}}
 \backcite {JavaScriptRef}{{68}{3.6.2}{lstnumber.3.3.5}}
 \backcite {JavaScript}{{68}{3.6.2}{lstnumber.3.4.9}}
-\backcite {Flask}{{70}{4.1.1}{figure.caption.72}}
-\backcite {ULN2003}{{81}{4.3}{figure.caption.75}}
+\backcite {Flask}{{70}{4.1.1}{figure.caption.73}}
+<<<<<<< HEAD
+\backcite {ULN2003}{{81}{4.3}{figure.caption.81}}
+=======
+\backcite {ULN2003}{{81}{4.3.3}{subsection.4.3.3}}
+>>>>>>> 295a603 (update cap4)

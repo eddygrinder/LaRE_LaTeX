@@ -43,27 +43,41 @@
 \contentsline {subsection}{\numberline {3.6.2}Front-End}{65}{subsection.3.6.2}%
 \contentsline {subsubsection}{\textit {Webpage}}{65}{section*.70}%
 \contentsline {chapter}{\numberline {4}Implementação}{69}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Servidor Flask}{69}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Estrutura base}{70}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Rotas}{72}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Blueprints}{73}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Pedidos}{73}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Base de dados}{77}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Autenticação}{77}{subsection.4.1.6}%
+\contentsline {section}{\numberline {4.1}Software}{69}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Servidor Flask}{69}{subsection.4.1.1}%
+\contentsline {subsubsection}{Estrutura base}{70}{section*.72}%
+\contentsline {subsubsection}{Rotas}{72}{section*.75}%
+\contentsline {subsubsection}{Blueprints}{73}{section*.76}%
+\contentsline {subsubsection}{Pedidos}{73}{section*.77}%
+\contentsline {subsubsection}{Base de dados}{77}{section*.78}%
+\contentsline {subsubsection}{Autenticação}{77}{section*.79}%
 \contentsline {section}{\numberline {4.2}pyVirtualBench}{78}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}VirtualBench VB-8012}{79}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Circuitos/Experiências}{80}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Lei de Ohm}{83}{subsection.4.3.1}%
-\contentsline {subsubsection}{Descrição da experiência}{87}{section*.84}%
-\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{88}{section*.86}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{91}{section*.89}%
-\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{92}{section*.90}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{94}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{97}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{97}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{97}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{99}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{113}{section*.95}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{129}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{129}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{129}{section.1.A.2}%
+\contentsline {section}{\numberline {4.3}Hardware}{80}{section.4.3}%
+<<<<<<< HEAD
+\contentsline {subsection}{\numberline {4.3.1}Circuitos/Experiências}{83}{subsection.4.3.1}%
+\contentsline {subsubsection}{Lei de Ohm}{83}{section*.85}%
+\contentsline {subsubsection}{Descrição da experiência}{88}{section*.91}%
+\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{88}{section*.93}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{92}{section*.96}%
+\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{93}{section*.97}%
+=======
+\contentsline {subsection}{\numberline {4.3.1}Relés}{80}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Registo de deslocamento}{80}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Driver de relés}{81}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Fontes de alimentação}{83}{subsection.4.3.4}%
+\contentsline {subsubsection}{Lei de Ohm}{83}{section*.87}%
+\contentsline {subsubsection}{Descrição da experiência}{88}{section*.93}%
+\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{89}{section*.95}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{92}{section*.98}%
+\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{93}{section*.99}%
+>>>>>>> 295a603 (update cap4)
+\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{96}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Resultados}{99}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{99}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{99}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{101}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{115}{section*.105}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{131}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{131}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{131}{section.1.A.2}%
