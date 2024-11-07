@@ -53,9 +53,9 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{81}{figure.caption.81}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{82}{figure.caption.82}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Exemplo de uso do \textit {SN74HC595} e \textit {ULN2003A} - REVER}}{82}{figure.caption.83}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Exemplo de comando dos relés, usando o \textit {ULN2003A}}}{83}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Exemplo de comando dos relés, usando o \textit {ULN2003A}}}{82}{figure.caption.84}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{84}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{85}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{84}{figure.caption.86}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Esquema geral da experiência Lei de Ohm}}{85}{figure.caption.88}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Painel frontal Multímetro Digital}}{86}{figure.caption.89}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Experiência Lei de Ohm}}{87}{figure.caption.91}%
@@ -67,7 +67,7 @@
 \contentsline {figure}{\numberline {4.18}{\ignorespaces \textit {Script configRelays.py}}}{97}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Página de \textit {login}}}{97}{figure.caption.102}%
 \contentsline {figure}{\numberline {4.20}{\ignorespaces caralho}}{98}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Página de menus}}{98}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Página de menus}}{99}{figure.caption.104}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
