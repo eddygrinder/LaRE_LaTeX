@@ -59,11 +59,11 @@
 \contentsline {subsection}{\numberline {4.3.3}Driver de relés}{81}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Fontes de alimentação}{83}{subsection.4.3.4}%
 \contentsline {subsubsection}{Lei de Ohm}{85}{section*.87}%
-\contentsline {subsubsection}{Descrição da experiência}{89}{section*.93}%
-\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{91}{section*.95}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{93}{section*.98}%
+\contentsline {subsubsection}{Descrição da experiência}{90}{section*.93}%
+\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{90}{section*.95}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{94}{section*.98}%
 \contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{95}{section*.99}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{97}{section.4.4}%
+\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{98}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Resultados}{101}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Limitações}{101}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Melhoramentos}{101}{section.5.2}%
