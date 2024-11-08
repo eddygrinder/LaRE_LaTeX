@@ -417,17 +417,9 @@ No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a ne
 \subsection{Fontes de alimentação}
 \label{sec:fontesalimentacao}
 
-O \acrshort{lare} utiliza várias fontes de alimentação e neste aspecto tentou-se simplificar/limitar o uso de fontes externas, além daquelas que poderiam ser fornecidas pelo \acrshort{virtualbench}. 
+O \acrshort{lare} utiliza várias fontes de alimentação, todas passíveis de serem controladas por \textit{software} e neste aspecto tentou-se simplificar/limitar o uso de fontes externas, além daquelas que poderiam ser fornecidas pelo \acrshort{virtualbench}. 
 
-Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alimentação:
-\begin{itemize}
-	\item \SI{5}{\volt} - utilizada na alimentação do registo de deslocamento - 74HC595;
-	\item \SI{12}{\volt} - utilizada na alimentação dos relés e dos \textit{drivers} de relés - ULN2003;
-	\item \SI{1}{\volt} - \SI{5}{\volt} variáveis (\acrshort{cc}) - utilizada na experiência da Lei de Ohm;
-	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
-\end{itemize}
-
-Como pode ser visto na Figura \ref{fig:paineldianteiro} - \textbf{Esta fig já está representada no cap3} - ou na Figura \ref{fig:promenorfontes} com mais pormenor - o \acrshort{virtualbench} possuí três fontes de alimentação (\acrshort{cc} variáveis): \SI{+6}{\volt}, \SI{+25}{\volt} e \SI{-25}{\volt}\footnote{No contexto do \acrshort{lare} a fonte de tensão negativa não é usada.}.
+Como pode ser visto na Figura \ref{fig:paineldianteiro} ou na Figura \ref{fig:promenorfontes} com mais pormenor, o \acrshort{virtualbench} possuí três fontes de alimentação (\acrshort{cc} variáveis): \SI{+6}{\volt}, \SI{+25}{\volt} e \SI{-25}{\volt}\footnote{No contexto do \acrshort{lare} a fonte de tensão negativa não é usada.}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -436,7 +428,16 @@ Como pode ser visto na Figura \ref{fig:paineldianteiro} - \textbf{Esta fig já e
 	\label{fig:promenorfontes}
 \end{figure}
 
-A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensões entre \SI{1}{\volt} e \SI{5}{\volt}, para a experiência da Lei de Ohm, é obtida directamente do \acrshort{virtualbench} e ligada ao circuito tal como apresentado na Figura \ref{fig:schfonte5VB}.
+Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alimentação:
+\begin{itemize}
+	\item \SI{1}{\volt} - \SI{5}{\volt} variáveis (\acrshort{cc}) - utilizada na experiência da Lei de Ohm;
+	\item \SI{12}{\volt} - utilizada na alimentação dos relés e dos \textit{drivers} de relés - ULN2003;
+	\item \SI{5}{\volt} - utilizada na alimentação do registo de deslocamento - 74HC595;
+	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
+\end{itemize}
+
+\subsubsection{Fontes de tensão \SI{6}{\volt} variável}
+A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensões entre \SI{1}{\volt} e \SI{5}{\volt}, para a experiência da Lei de Ohm, é obtida directamente do \acrshort{virtualbench} e ligada ao circuito tal como apresentado na Figura \ref{fig:schfonte5VB} - ``$5V_{VB}$'', terminal 1 do relé K4.
 
 \begin{figure}[hbtp]
 	\centering
@@ -445,22 +446,37 @@ A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensõ
 	\label{fig:schfonte5VB}
 \end{figure}
 
-A corrente desta fonte é limitada por \textit{software} a \SI{0.5}{\ampere}, tal como se pode ver na Listagem \ref{lst:limiteI}, linha 5.
+A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{lst:limiteI}. A corrente é limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
 
-\begin{minipage}{0.7\linewidth}
+\begin{minipage}{0.9\linewidth}
 	\centering
-	\begin{lstlisting}[language=Python, caption=Limite de corrente, label=lst:limiteI]
+	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
 		try:
 			# Power Supply Configuration
 			channel = "ps/+6V"
-			voltage_level = 1.0
+			voltage_level = Vcc
 			current_limit = 0.5
 
 		(...)
 	\end{lstlisting}
 \end{minipage}
 
-Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. De forma a alimentar os circuitos com \SI{5}{\volt} e \SI{12}{\volt} fixos, foi projectada uma fonte de alimentação, tal como se pode ver na Figura \ref{fig:schfonte5VB}.
+\subsubsection{Fontes de tensão \SI{12}{\volt} fixa}
+Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. Esta configuração está exemplificada na Listagem \ref{lst:configfonte12} e a corrente é, também, limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{12}{\volt}, label=lst:configfonte12]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+25V"
+			voltage_level = 12.0
+			current_limit = 0.5
+
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+De forma a alimentar os circuitos com \SI{5}{\volt} e \SI{12}{\volt} fixos, foi projectada uma fonte de alimentação, tal como se pode ver na Figura \ref{fig:schfonte5VB}.
 
 No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
