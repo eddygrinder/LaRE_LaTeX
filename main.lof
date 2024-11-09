@@ -56,18 +56,19 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Exemplo de comando dos relés, usando o \textit {ULN2003A}}}{82}{figure.caption.84}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{83}{figure.caption.85}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{84}{figure.caption.87}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Esquema geral da experiência Lei de Ohm}}{86}{figure.caption.90}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Painel frontal Multímetro Digital}}{87}{figure.caption.91}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Experiência Lei de Ohm}}{88}{figure.caption.93}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{88}{figure.caption.94}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{91}{figure.caption.96}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{92}{figure.caption.98}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Página de entrada - \textit {ohm.html}}}{93}{figure.caption.99}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Fontes de tensão contínua \acrshort {virtualbench}}}{96}{figure.caption.102}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces \textit {Script configRelays.py}}}{98}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Página de \textit {login}}}{98}{figure.caption.104}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces caralho}}{99}{figure.caption.105}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Página de menus}}{99}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Fonte de \SI {12}{\volt }}}{85}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Esquema geral da experiência Lei de Ohm}}{86}{figure.caption.92}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Painel frontal Multímetro Digital}}{87}{figure.caption.93}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Experiência Lei de Ohm}}{88}{figure.caption.95}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{89}{figure.caption.96}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{91}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{92}{figure.caption.100}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Página de entrada - \textit {ohm.html}}}{93}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Fontes de tensão contínua \acrshort {virtualbench}}}{96}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \textit {Script configRelays.py}}}{98}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Página de \textit {login}}}{98}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces caralho}}{99}{figure.caption.107}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Página de menus}}{99}{figure.caption.108}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

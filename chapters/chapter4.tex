@@ -436,7 +436,7 @@ Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alime
 	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
 \end{itemize}
 
-\subsubsection{Fontes de tensão \SI{6}{\volt} variável}
+\subsubsection{Fontes de tensão \SI{6}{\volt} - variável}
 A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensões entre \SI{1}{\volt} e \SI{5}{\volt}, para a experiência da Lei de Ohm, é obtida directamente do \acrshort{virtualbench} e ligada ao circuito tal como apresentado na Figura \ref{fig:schfonte5VB} - ``$5V_{VB}$'', terminal 1 do relé K4.
 
 \begin{figure}[hbtp]
@@ -446,7 +446,7 @@ A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensõ
 	\label{fig:schfonte5VB}
 \end{figure}
 
-A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{lst:limiteI}. A corrente é limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
+A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{lst:limiteI}. A variável $V_{cc}$, linha 4,  permite configurar o valor da fonte de tensão com os valores apresentados na Figura \ref{fig:pagohm}, sendo que a corrente é limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
 
 \begin{minipage}{0.9\linewidth}
 	\centering
@@ -461,7 +461,7 @@ A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{
 	\end{lstlisting}
 \end{minipage}
 
-\subsubsection{Fontes de tensão \SI{12}{\volt} fixa}
+\subsubsection{Fontes de tensão \SI{12}{\volt} - fixa}
 Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. Esta configuração está exemplificada na Listagem \ref{lst:configfonte12} e a corrente é, também, limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
 
 \begin{minipage}{0.9\linewidth}
@@ -475,6 +475,17 @@ Tal como referido em cima, de forma a simplificar o uso de fontes externas, opto
 		(...)
 	\end{lstlisting}
 \end{minipage}
+
+Na Figura \ref{fig:fonte12V} está representado um exemplo das ligações da fonte de \SI{12}{\volt} ao pino 9 do ULN2003 e ao pino 2 do relé ($K_{5}$)
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sch_fonte12V.png}
+	\caption{Fonte de \SI{12}{\volt}}
+	\label{fig:fonte12V}
+\end{figure}
+
+\subsubsection{Fontes de tensão \SI{5}{\volt} - fixa}
 
 De forma a alimentar os circuitos com \SI{5}{\volt} e \SI{12}{\volt} fixos, foi projectada uma fonte de alimentação, tal como se pode ver na Figura \ref{fig:schfonte5VB}.
 
