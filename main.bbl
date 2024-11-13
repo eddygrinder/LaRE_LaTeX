@@ -540,8 +540,8 @@ N.~Instruments, ``Virtualbench all-in-one instrument product flyer - national in
 \newblock (Accessed on 07/24/2024).
 
 \bibitem{ULN2003}
-T.~Instruments, ``Uln2003a data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/ULN2003}.
-\newblock (Accessed on 07/25/2024).
+T.~Instruments, ``Uln2003 data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/ULN2003A}.
+\newblock (Accessed on 11/13/2024).
 
 \bibitem{SN74HC595}
 ``Sn54hc595 data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/SN54HC595}.
@@ -606,5 +606,9 @@ R.~Johns, ``Flask vs django: Which python web framework to use in 2024?.'' \url{
 \bibitem{JavaScript}
 ``Javascript tutorial.'' \url{https://www.w3schools.com/js/default.asp}.
 \newblock (Accessed on 08/03/2024).
+
+\bibitem{LM317}
+T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/LM317}.
+\newblock (Accessed on 07/25/2024).
 
 \end{thebibliography}
