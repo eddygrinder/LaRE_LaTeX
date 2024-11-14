@@ -611,4 +611,8 @@ R.~Johns, ``Flask vs django: Which python web framework to use in 2024?.'' \url{
 T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/LM317}.
 \newblock (Accessed on 07/25/2024).
 
+\bibitem{1N400x}
+``1n400x - axial-lead glass passivated standard recovery rectifiers.'' \url{https://cdn.sparkfun.com/assets/2/c/2/d/6/1N400x-D.PDF}.
+\newblock (Accessed on 11/14/2024).
+
 \end{thebibliography}

@@ -417,7 +417,7 @@ No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a ne
 \subsection{Fontes de alimentação}
 \label{sec:fontesalimentacao}
 
-O \acrshort{lare} utiliza várias fontes de alimentação, todas passíveis de serem controladas por \textit{software} e neste aspecto tentou-se simplificar/limitar o uso de fontes externas, além daquelas que poderiam ser fornecidas pelo \acrshort{virtualbench}. 
+O \acrshort{lare} utiliza várias fontes de alimentação, todas passíveis de serem controladas por \textit{software} e neste aspecto tentou-se simplificar/limitar o uso de fontes externas, além das que poderiam ser fornecidas pelo \acrshort{virtualbench}. 
 
 Como pode ser visto na Figura \ref{fig:paineldianteiro} ou na Figura \ref{fig:promenorfontes} com mais pormenor, o \acrshort{virtualbench} possuí três fontes de alimentação (\acrshort{cc} variáveis): \SI{+6}{\volt}, \SI{+25}{\volt} e \SI{-25}{\volt}\footnote{No contexto do \acrshort{lare} a fonte de tensão negativa não é usada.}.
 
@@ -431,8 +431,8 @@ Como pode ser visto na Figura \ref{fig:paineldianteiro} ou na Figura \ref{fig:pr
 Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alimentação:
 \begin{itemize}
 	\item \SI{1}{\volt} - \SI{5}{\volt} variáveis (\acrshort{cc}) - utilizada na experiência da Lei de Ohm;
-	\item \SI{12}{\volt} - utilizada na alimentação dos relés e dos \textit{drivers} de relés - ULN2003;
-	\item \SI{5}{\volt} - utilizada na alimentação do registo de deslocamento - 74HC595;
+	\item \SI{12}{\volt} (\acrshort{cc}) - utilizada na alimentação dos relés e dos \textit{drivers} de relés - ULN2003;
+	\item \SI{5}{\volt} (\acrshort{cc}) - utilizada na alimentação do registo de deslocamento - 74HC595;
 	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
 \end{itemize}
 
@@ -495,42 +495,55 @@ De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada uma fon
 	\label{fig:fonte5V}
 \end{figure}
 
-Esta fonte teve como base o LM317 e o esquema presente na página 11, Figura 9, do \textit{datasheet} \cite{LM317}. A utilização do LM317 em deterimento, por exemplo, do 7805 prendeu-se com a disponibilidade do regulador em contexto laboratorial. Este regulador serve perfeitamente os propósitos deste projecto, já que a tensão de saída, regulável, varia entre os \SI{1.25}{\volt} e os \SI{37}{\volt} e a corrente de saída pode ser supoerior a \SI{1.5}{\ampere}.
+Esta fonte teve como base o LM317 e o esquema presente na página 11, Figura 9, do \textit{datasheet} \cite{LM317}. A utilização do LM317 em deterimento, por exemplo, do 7805 prendeu-se com a disponibilidade do regulador em contexto laboratorial. Este regulador serve perfeitamente os propósitos deste projecto, já que a tensão de saída, regulável, varia entre os \SI{1.25}{\volt} e os \SI{37}{\volt} e a corrente de saída pode ser superior a \SI{1.5}{\ampere}.
 
-Sendo assim, para uma tensão de saída de \SI{5}{\volt}, calcularam-se as resistências com base na expressão apresentada do \textit{datasheet}, representada na Equação \ref{eq:calculolm317}. 
+Relativamente aos díodos de protecção, $D_{1}$ e $D_{2}$, representados no esquema da Figura \ref{fig:fonte5V}, em vez de se usarem os díodos 1N4002, por uma questão de disponibilidade dos componentes, usaram-se os díodos 1N4007. Estes díodos pertencem à mesma família de diodos retificadores da série 1N400x. Ambos têm especificações elétricas e mecânicas semelhantes, nomeadamente, a capacidade de suportar correntes directas até \SI{1}{\ampere} - valor suficiente para o nosso projecto que, relembre-se, é limitado pelo \acrshort{virtualbench} a \SI{0.5}{\ampere}. No entanto, a principal diferença entre eles está na tensão inversa máxima que cada modelo é capaz de suportar \cite{1N400x}:
+
+\begin{itemize}
+	\item 1N4002: Possui uma tensão inversa máxima de 100 V;
+	\item 1N4007: Suporta uma tensão inversa máxima de 1000 V.
+\end{itemize}
+
+Estes valores são, pois, mais que suficientes para os níveis de tensão usados.
+
+Sendo assim, para uma tensão de saída de \SI{5}{\volt}, calcularam-se as resistências com base na expressão apresentada do \textit{datasheet}, representada na Equação \ref{eq:calculolm317}: 
 
 \begin{equation} \label{eq:calculolm317}
 	V_{O} = V_{REF} (1 + \frac{R_{2}}{R_{1}}) + (I_{ADJ} \times R_{2})
 \end{equation}
 
-Considerando $V_{O} = \SI{5}{\volt}$, e uma vez que a Equação \ref{eq:calculolm317} tem duas incógnitas, $R_{1}$ e $R_{2}$, atribuiu-se o valor de \SI{1}{\kilo\ohm} a $R_{1}$, obtendo-se $R_{2} = \SI{333.333}{\ohm}$.
-
-$I_{ADJ}$ é, tipicamente, \SI{50}{\micro\ampere}, sendo que, para o nosso projecto, o valor resultante deste termo pode ser simplificado. , tal como apresentados na consideramos que pode ser  Resolvendo a equação de forma a determinar os valores das resistências $R_{1}$ e $R_{2}$, obtiveram-se os seguintes valores: 
+De notar que, segundo o \textit{datasheet} do LM317 \cite{LM317}, $V_{REF} = \SI{1.25}{\volt}$ e o valor do termo $I_{ADJ} \times R_{2}$ pode ser simplificado. De facto, $I_{ADJ}$ é, tipicamente, \SI{50}{\micro\ampere}, sendo que, para o nosso projecto, o valor escolhido para $R_{2}$ foi de \SI{1}{\kilo\ohm}. Assim, segundo a Equação \ref{eq:simplificação}, tem-se que:
 \begin{equation} \label{eq:simplificação}
-	V_{ADJ} = (I_{ADJ} \times R_{2} = \SI{0.05}{\volt}
+	V_{ADJ} = I_{ADJ} \times R_{2} = \SI{0.05}{\volt}
 \end{equation}
 
-\ref{eq:calculolm317}
+A Equação \ref{eq:calculolm317} fica então reduzida a:
 
-Tal como descrito no \textit{datsheet}, $I_{ADJ}$ é, tipicamente, \SI{50}{\micro\ampere} Resolvendo a equação de forma a determinar os valores das resistências $R_{1}$ e $R_{2}$, obtiveram-se os seguintes valores, para uma tensão de \SI{5}{\volt}:
+\begin{equation} \label{eq:calculoR1simplificado}
+	V_{O} = V_{REF} (1 + \frac{R_{2}}{R_{1}})
+\end{equation}
 
+Considerando $V_{O} = \SI{5}{\volt}$, e uma vez que a Equação \ref{eq:calculoR1simplificado} tem duas incógnitas, $R_{1}$ e $R_{2}$, atribuiu-se a $R_{2}$ o valor de \SI{1}{\kilo\ohm}, tal como foi dito anteriormente. Desta forma, obteve-se $R_{1} = \SI{333.33(3)}{\ohm}$, tal como descrito na Equação \ref{eq:calculoR1}: 
 
-, obtiveram-se os valores normalizados de \SI{330}{\ohm} e \SI{1}{\kilo\ohm}, respectivamente. A corrente de saída é limitada a \SI{1}{\ampere}.
+\begin{equation} \label{eq:calculoR1}
+	\SI{5}{\volt} = 1.25 \times (1 + \frac{1000}{R_{1}}) \Leftrightarrow R_{1} = \SI{333.33(3)}{\ohm}
+\end{equation}
+
+O valor da resistência normalizada mais próxima é de \SI{330}{\ohm}. Importa, pois, reverter a Equação \ref{eq:calculoR1simplificado} e confirmar o valor de  $V_{O}$ obtido:
+
+\begin{equation} \label{eq:confirmacaoVout}
+	V_{O} = 1.25 \times (1 + \frac{1000}{330}) \Leftrightarrow V_{O} = \SI{5,037(87)}{\ohm}
+\end{equation}
+
+Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos integrados.
 
 No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
-
-
-Na Figura 
-
-
-
 
 
 O QUE FAZER A SEGUIR:
 \begin{itemize}
 	\item LIGAÇÃO DAS FONTES DE ALIMENTAÇÃO
 	\begin{itemize}
-		\item FONTE DE 5V, NÃO ESQUECER OS CÁLCULOS RETIRADOS DO DATASHEET. PORQUE SE USOU O LM317, PORQUE SE USOU ESTA FONTE - VERIFICAR SE JÁ ESTÁ EXPLICADO.
 		\item PONTE RETIFICADORA NOS FILTROS E RECTIFICADORES, A RAZÃO PORQUE SE USOU A RECTIFICAÇÃO DE ONDA COMPLETA
 	\end{itemize}
 	\item LIGAÇÃO DOS APARELHOS DE MEDIDA - voltímetro e amperímetro

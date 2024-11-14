@@ -20,12 +20,12 @@
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces Libertar instrumentos e \acrshort {virtualbench}}}{79}{lstlisting.4.13}%
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Configuração da fonte de \SI {6}{\volt }}}{84}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Configuração da fonte de \SI {12}{\volt }}}{85}{lstlisting.4.15}%
-\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Exemplo \textit {ps\_example.py}}}{90}{lstlisting.4.16}%
-\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Exemplo de envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{93}{lstlisting.4.17}%
-\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Exemplo da recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{93}{lstlisting.4.18}%
-\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{94}{lstlisting.4.19}%
-\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{95}{lstlisting.4.20}%
-\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{95}{lstlisting.4.21}%
-\contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Erro na página \textit {ohm.html}}}{96}{lstlisting.4.22}%
-\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{98}{lstlisting.4.23}%
+\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Exemplo \textit {ps\_example.py}}}{91}{lstlisting.4.16}%
+\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Exemplo de envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{94}{lstlisting.4.17}%
+\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Exemplo da recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{94}{lstlisting.4.18}%
+\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{95}{lstlisting.4.19}%
+\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{96}{lstlisting.4.20}%
+\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{96}{lstlisting.4.21}%
+\contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Erro na página \textit {ohm.html}}}{97}{lstlisting.4.22}%
+\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{99}{lstlisting.4.23}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -62,11 +62,11 @@
 \contentsline {subsubsection}{Fontes de tensão \SI {12}{\volt } - fixa}{84}{section*.88}%
 \contentsline {subsubsection}{Fontes de tensão \SI {5}{\volt } - fixa}{85}{section*.90}%
 \contentsline {subsubsection}{Lei de Ohm}{87}{section*.92}%
-\contentsline {subsubsection}{Descrição da experiência}{91}{section*.98}%
+\contentsline {subsubsection}{Descrição da experiência}{92}{section*.98}%
 \contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{92}{section*.100}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{95}{section*.103}%
-\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{96}{section*.104}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{99}{section.4.4}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{96}{section*.103}%
+\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{97}{section*.104}%
+\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{100}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Resultados}{103}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Limitações}{103}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Melhoramentos}{103}{section.5.2}%
