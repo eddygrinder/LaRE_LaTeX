@@ -497,13 +497,25 @@ De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada uma fon
 
 Esta fonte teve como base o LM317 e o esquema presente na página 11, Figura 9, do \textit{datasheet} \cite{LM317}. A utilização do LM317 em deterimento, por exemplo, do 7805 prendeu-se com a disponibilidade do regulador em contexto laboratorial. Este regulador serve perfeitamente os propósitos deste projecto, já que a tensão de saída, regulável, varia entre os \SI{1.25}{\volt} e os \SI{37}{\volt} e a corrente de saída pode ser supoerior a \SI{1.5}{\ampere}.
 
-Sendo assim, a tensão de saída calculou-se com base na expressão dada no mesmo documento, representada na Equação \ref{eq:calculolm317}:
+Sendo assim, para uma tensão de saída de \SI{5}{\volt}, calcularam-se as resistências com base na expressão apresentada do \textit{datasheet}, representada na Equação \ref{eq:calculolm317}. 
 
 \begin{equation} \label{eq:calculolm317}
 	V_{O} = V_{REF} (1 + \frac{R_{2}}{R_{1}}) + (I_{ADJ} \times R_{2})
 \end{equation}
 
-Resolvendo a equação de forma a determinar os valores das resistências $R_{1}$ e $R_{2}$, para uma tensão de \SI{5}{\volt}, obtiveram-se os valores de \SI{240}{\ohm} e \SI{1}{\kilo\ohm}, respectivamente. A corrente de saída é limitada a \SI{1}{\ampere}.
+Considerando $V_{O} = \SI{5}{\volt}$, e uma vez que a Equação \ref{eq:calculolm317} tem duas incógnitas, $R_{1}$ e $R_{2}$, atribuiu-se o valor de \SI{1}{\kilo\ohm} a $R_{1}$, obtendo-se $R_{2} = \SI{333.333}{\ohm}$.
+
+$I_{ADJ}$ é, tipicamente, \SI{50}{\micro\ampere}, sendo que, para o nosso projecto, o valor resultante deste termo pode ser simplificado. , tal como apresentados na consideramos que pode ser  Resolvendo a equação de forma a determinar os valores das resistências $R_{1}$ e $R_{2}$, obtiveram-se os seguintes valores: 
+\begin{equation} \label{eq:simplificação}
+	V_{ADJ} = (I_{ADJ} \times R_{2} = \SI{0.05}{\volt}
+\end{equation}
+
+\ref{eq:calculolm317}
+
+Tal como descrito no \textit{datsheet}, $I_{ADJ}$ é, tipicamente, \SI{50}{\micro\ampere} Resolvendo a equação de forma a determinar os valores das resistências $R_{1}$ e $R_{2}$, obtiveram-se os seguintes valores, para uma tensão de \SI{5}{\volt}:
+
+
+, obtiveram-se os valores normalizados de \SI{330}{\ohm} e \SI{1}{\kilo\ohm}, respectivamente. A corrente de saída é limitada a \SI{1}{\ampere}.
 
 No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
@@ -804,7 +816,7 @@ De forma a prevenir qualquer descuido ou erro de utilização, os parâmetros es
 	\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
 \end{enumerate}
 
-A verificação dos erros e escolha de parâmetros é feita na página \textit{ohm.html}, tal como se pode ver pela Listagem \ref{lst:erro} e pelo exemplo da Figura \ref{fig:??} .
+A verificação dos erros e escolha de parâmetros é feita na página \textit{ohm.html}, tal como se pode ver pela Listagem \ref{lst:erro} e pelo exemplo da Figura .
 
 \begin{center}
 	\begin{minipage}{0.7\linewidth}
@@ -874,7 +886,7 @@ Já se viu (\textbf{refirerir a secção}) que na experiência da Lei de \textit
 	\end{minipage}
 \end{center}
 
-No entanto, optou-se por adicionar à página \textit{ohm.html} um botão ``OK'' que, ao ser seleccionado, activa os selectores e envia os parâmetros para o servidor. O \textit{script} \textit{configVB.py} é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
+No entanto, optou-se por adicionar à página \textit{ohm.html} um botão ``OK'' que, ao ser seleccionado, activa os selectores e envia os parâmetros para o servidor. O \textit{script} \textit{configVB.py} é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura  representa o diagrama de blocos do \textit{script}.
 
 explicar porque se optou por colocar o botão ``OK'' e não enviar os parâmetros automaticamente, e só efectuar a medição quando se clicar no link medir.
 
