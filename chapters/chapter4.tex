@@ -436,7 +436,7 @@ Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alime
 	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
 \end{itemize}
 
-\subsubsection{Fontes de tensão \SI{6}{\volt} - variável}
+\subsubsection{Fonte de tensão \SI{6}{\volt} - variável}
 A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensões entre \SI{1}{\volt} e \SI{5}{\volt}, para a experiência da Lei de Ohm, é obtida directamente do \acrshort{virtualbench} e ligada ao circuito tal como apresentado na Figura \ref{fig:schfonte5VB} - ``$5V_{VB}$'', terminal 1 do relé K4.
 
 \begin{figure}[hbtp]
@@ -461,7 +461,7 @@ A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{
 	\end{lstlisting}
 \end{minipage}
 
-\subsubsection{Fontes de tensão \SI{12}{\volt} - fixa}
+\subsubsection{Fonte de tensão \SI{12}{\volt} - fixa}
 Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. Esta configuração está exemplificada na Listagem \ref{lst:configfonte12} e a corrente é, também, limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
 
 \begin{minipage}{0.9\linewidth}
@@ -485,7 +485,7 @@ Na Figura \ref{fig:fonte12V} está representado um exemplo das ligações da fon
 	\label{fig:fonte12V}
 \end{figure}
 
-\subsubsection{Fontes de tensão \SI{5}{\volt} - fixa}
+\subsubsection{Fonte de tensão \SI{5}{\volt} - fixa}
 De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada uma fonte de alimentação, tal como se pode ver na Figura \ref{fig:fonte5V} \cite{LM317}.
 
 \begin{figure}[hbtp]
@@ -537,7 +537,8 @@ O valor da resistência normalizada mais próxima é de \SI{330}{\ohm}. Importa,
 
 Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos integrados.
 
-No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
+\subsubsection{Fontes de tensão \SI{220}{\volt}/\SI{8}{\volt} CA}
+As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. No entanto, para o estudo da rectificação da onda completa, tal não foi possível. Enquanto que no rectificador de meia-onda (... e filtros) é possível usar o gerador de sinal do \acrshort{virtualbench} para medir as ondas de entrada e saída, tal não é possível no  No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
 
 O QUE FAZER A SEGUIR:
