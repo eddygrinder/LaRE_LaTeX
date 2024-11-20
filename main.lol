@@ -14,7 +14,7 @@
 \contentsline {lstlisting}{\numberline {4.7}{\ignorespaces Exemplo atributo \textit {\textbf {args} - \textit {views.py}}}}{75}{lstlisting.4.7}%
 \contentsline {lstlisting}{\numberline {4.8}{\ignorespaces Exemplo argumentos passados ao servidor - ohm.html}}{75}{lstlisting.4.8}%
 \contentsline {lstlisting}{\numberline {4.9}{\ignorespaces Exemplo sintaxe \textit {Jinja2} - base.html}}{76}{lstlisting.4.9}%
-\contentsline {lstlisting}{\numberline {4.10}{\ignorespaces Exemplo uso \textit { SQLAlchemy} - \textit {\_\_init.py\_\_}}}{77}{lstlisting.4.10}%
+\contentsline {lstlisting}{\numberline {4.10}{\ignorespaces Exemplo uso \textit {SQLAlchemy} - \textit {\_\_init.py\_\_}}}{77}{lstlisting.4.10}%
 \contentsline {lstlisting}{\numberline {4.11}{\ignorespaces Exemplo autenticação \textit {login}}}{78}{lstlisting.4.11}%
 \contentsline {lstlisting}{\numberline {4.12}{\ignorespaces Chamada do \acrshort {virtualbench} e instrumentos}}{79}{lstlisting.4.12}%
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces Libertar instrumentos e \acrshort {virtualbench}}}{79}{lstlisting.4.13}%

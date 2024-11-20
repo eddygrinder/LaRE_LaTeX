@@ -224,12 +224,12 @@ Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros
 \subsubsection{Base de dados}
 A aplicação desenvolvida usa uma base de dados e autenticação de utilizador, a ligação com a base de dados é aberta no início do pedido e é obtida a informação do utilizador. No final do pedido, a ligação com a base de dados é fechada.
 
-No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{ SQLAlchemy}. Tal como referenciado/aconselhado na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, como apresentado na Listagem \ref{lst:basedados}
+No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{SQLAlchemy}. Tal como referenciado/aconselhado na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, como apresentado na Listagem \ref{lst:basedados}
 
 \textbf{Nota para minha referência: Falar de instalar o pacote SQLAlchemy?}
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Exemplo uso \textit{ SQLAlchemy} - \textit{\_\_init.py\_\_}, label=lst:basedados]
+	\begin{lstlisting}[language=Python, caption=Exemplo uso \textit{SQLAlchemy} - \textit{\_\_init.py\_\_}, label=lst:basedados]
 
 from flask_sqlalchemy import SQLAlchemy
 
