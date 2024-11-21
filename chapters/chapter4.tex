@@ -538,7 +538,19 @@ O valor da resistência normalizada mais próxima é de \SI{330}{\ohm}. Importa,
 Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos integrados.
 
 \subsubsection{Fontes de tensão \SI{220}{\volt}/\SI{8}{\volt} CA}
-As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. No entanto, para o estudo da rectificação da onda completa, tal não foi possível. Enquanto que no rectificador de meia-onda (... e filtros) é possível usar o gerador de sinal do \acrshort{virtualbench} para medir as ondas de entrada e saída, como representado na Figura {fig:} tal não é possível na rectificação de onda completa, devido ao problema de massa e consequente curto-circuito nos díodos da ponte rectificadora.  No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
+As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. No entanto, para o estudo da rectificação da onda completa, tal não foi possível. Enquanto que no rectificador de meia-onda (... e filtros) é possível usar o gerador de sinal do \acrshort{virtualbench} para medir as ondas de entrada e saída, como representado na Figura {fig:} tal não é possível na rectificação de onda completa, devido ao problema de massa e consequente curto-circuito nos díodos da ponte rectificadora. 
+Este problema está representado na Figura \ref{fig:ondacompleta-massa}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/sch-ondacompleta-massa.png}
+	\caption{Problema de massa - onda completa}
+	\label{fig:ondacompleta-massa}
+\end{figure}
+
+
+
+No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
 
 O QUE FAZER A SEGUIR:
