@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.3)  21 NOV 2024 14:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.3)  21 NOV 2024 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1594,24 +1594,24 @@ Package pdftex.def Info: figures/sch-ondacompleta-massa.png  used on input line 
 <figures/esquema_simplificado_OHM.png, id=2866, 1505.625pt x 752.8125pt>
 File: figures/esquema_simplificado_OHM.png Graphic file (type png)
 <use figures/esquema_simplificado_OHM.png>
-Package pdftex.def Info: figures/esquema_simplificado_OHM.png  used on input line 574.
+Package pdftex.def Info: figures/esquema_simplificado_OHM.png  used on input line 576.
 (pdftex.def)             Requested size: 398.33861pt x 199.17271pt.
  [88 <./figures/esquema_simplificado_OHM.png (PNG copy)>]
 <figures/promenorDMM.png, id=2875, 761.84625pt x 271.0125pt>
 File: figures/promenorDMM.png Graphic file (type png)
 <use figures/promenorDMM.png>
-Package pdftex.def Info: figures/promenorDMM.png  used on input line 597.
+Package pdftex.def Info: figures/promenorDMM.png  used on input line 599.
 (pdftex.def)             Requested size: 398.33861pt x 141.7006pt.
  [89 <./figures/promenorDMM.png>]
 <figures/ohm_escolha.png, id=2887, 1144.275pt x 610.28pt>
 File: figures/ohm_escolha.png Graphic file (type png)
 <use figures/ohm_escolha.png>
-Package pdftex.def Info: figures/ohm_escolha.png  used on input line 634.
+Package pdftex.def Info: figures/ohm_escolha.png  used on input line 636.
 (pdftex.def)             Requested size: 398.33861pt x 212.44649pt.
 <figures/ohm_escolha_abc.png, id=2888, 1144.275pt x 610.28pt>
 File: figures/ohm_escolha_abc.png Graphic file (type png)
 <use figures/ohm_escolha_abc.png>
-Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 641.
+Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 643.
 (pdftex.def)             Requested size: 398.33861pt x 212.44649pt.
  [90 <./figures/ohm_escolha.png>]
 Overfull \vbox (78.7762pt too high) has occurred while \output is active []
@@ -1620,49 +1620,49 @@ Overfull \vbox (78.7762pt too high) has occurred while \output is active []
 <figures/ohm_diagrama.drawio.png, id=2939, 1640.1275pt x 1308.89pt>
 File: figures/ohm_diagrama.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 716.
+Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 718.
 (pdftex.def)             Requested size: 398.33861pt x 317.89476pt.
 <figures/ohm_diagrama_pormenor.drawio.png, id=2942, 1640.1275pt x 572.1375pt>
 File: figures/ohm_diagrama_pormenor.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama_pormenor.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 731.
+Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 733.
 (pdftex.def)             Requested size: 398.33861pt x 138.95706pt.
  [93 <./figures/ohm_diagrama.drawio.png (PNG copy)>]
 <figures/parametros_desabilitados.png, id=2950, 379.4175pt x 152.06813pt>
 File: figures/parametros_desabilitados.png Graphic file (type png)
 <use figures/parametros_desabilitados.png>
-Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 767.
+Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 769.
 (pdftex.def)             Requested size: 278.8358pt x 111.75829pt.
  [94 <./figures/ohm_diagrama_pormenor.drawio.png>] [95 <./figures/parametros_desabilitados.png>] [96] [97]
 File: figures/fontes_VB.png Graphic file (type png)
 <use figures/fontes_VB.png>
-Package pdftex.def Info: figures/fontes_VB.png  used on input line 875.
+Package pdftex.def Info: figures/fontes_VB.png  used on input line 877.
 (pdftex.def)             Requested size: 398.33861pt x 238.69458pt.
  [98] [99]
-Overfull \hbox (9.38791pt too wide) in paragraph at lines 928--929
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 930--931
 []\T1/lmr/m/n/10.95 Na Sec-ção an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-ção en-tre a pá-gina \T1/lmr/m/it/10.95 ohm.html
  []
 
 <figures/ohm_diagramaCUTRelay.drawio.png, id=3068, 1640.1275pt x 591.20876pt>
 File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUTRelay.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 935.
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 937.
 (pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
 <figures/login.png, id=3070, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 946.
+Package pdftex.def Info: figures/login.png  used on input line 948.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
 <figures/ohm_diagramaCUT.drawio.png, id=3071, 1640.1275pt x 560.0925pt>
 File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUT.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 953.
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 955.
 (pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
 [100 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)>]
 <figures/menupage.png, id=3084, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
-Package pdftex.def Info: figures/menupage.png  used on input line 970.
+Package pdftex.def Info: figures/menupage.png  used on input line 972.
 (pdftex.def)             Requested size: 398.33861pt x 229.9719pt.
  [101 <./figures/ohm_diagramaCUT.drawio.png> <./figures/menupage.png (PNG copy)>]) [102]
 \openout2 = `chapters/chapter5.aux'.
