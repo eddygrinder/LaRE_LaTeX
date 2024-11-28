@@ -538,7 +538,19 @@ O valor da resistência normalizada mais próxima é de \SI{330}{\ohm}. Importa,
 Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos integrados.
 
 \subsubsection{Fontes de tensão \SI{220}{\volt}/\SI{8}{\volt} CA}
-As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. No entanto, para o estudo da rectificação da onda completa, tal não foi possível. Enquanto que no rectificador de meia-onda (... e filtros) é possível usar o gerador de sinal do \acrshort{virtualbench} para medir as ondas de entrada e saída simultaneamente, como representado na Figura {fig:}, tal não é possível na rectificação de onda completa, devido ao problema das massas e consequente curto-circuito do díodo na ponte rectificadora. 
+As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. 
+
+Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas. Quer isto dizer que não é possível usar, simultaneamente, o gerador de sinal para alimentar a ponte rectificadora e o osciloscópio para realizar a medição da onda de saída. Como se pode ver pelo esquema representado na Figura {fig:}, o díodo está curto-circuitado. A forma de controlar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio, tal como representado no esquema da Figura \ref{fig:ondacompleta-massa}. Ainda assim, não é possível medir a onda de entrada e saída simultaneamente.
+
+No caso do \acrshort{lare}, as massas podem ser controladas por \textit{software}, através dos relés, sendo que seria possível, desta forma, evitar o uso do transformador e usar, em vez disso, o gerador de sinal do \acrshort{virtualbench}. Neste caso, os sinais seriam medidos independentemente e o resultado apresentado numa figura. \textbf{APRESENTAR UM EXEMPLO.}
+
+Sendo assim, o uso do transformador jutifica-se pelas seguintes razões:
+\begin{itemize}
+	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$) ou duas no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
+	\item Em contexto laboratorial e de sala de aula usa-se um transformador para rectificar a onda completa.
+\end{itemize}
+
+No entanto, para o estudo da rectificação da onda completa, tal não foi possível. Enquanto que no rectificador de meia-onda (... e filtros) é possível usar o gerador de sinal do \acrshort{virtualbench} para medir as ondas de entrada e saída simultaneamente, tal não é possível na rectificação de onda completa, devido ao problema das massas e consequente curto-circuito do díodo na ponte rectificadora. 
 Este problema está representado na Figura \ref{fig:ondacompleta-massa}
 
 \begin{figure}[hbtp]
@@ -548,7 +560,7 @@ Este problema está representado na Figura \ref{fig:ondacompleta-massa}
 	\label{fig:ondacompleta-massa}
 \end{figure}
 
-$V_{G-}$, $CH_{1-}$ e $CH_{2-}$ são as massas do gerador de sinal e osciloscópio (dois canais), respectivamente. É fácil perceber que estando ligados ao mesmo aparelho de medida, neste caso o \acrshort{virtualbench}, as massas são comuns e, por isso, entre os pontos 2 e 3, o díodo está curto-circuitado. 
+$CH_{1-}$ e $CH_{2-}$ são as massas do gerador de sinal e osciloscópio (dois canais), respectivamente. É fácil perceber que estando ligados ao mesmo aparelho de medida, neste caso o \acrshort{virtualbench}, as massas dos dois canais do osciloscópio são comuns e, por isso, entre os pontos 2 e 3, o díodo está curto-circuitado. 
 
 No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
