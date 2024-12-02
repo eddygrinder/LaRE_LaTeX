@@ -540,7 +540,7 @@ Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos 
 \subsubsection{Fontes de tensão \SI{220}{\volt}/\SI{8}{\volt} CA}
 As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. 
 
-Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas. Quer isto dizer que não é possível usar, simultaneamente, o gerador de sinal para alimentar a ponte rectificadora e o osciloscópio para realizar a medição da onda de saída. Como se pode ver pelo esquema representado na Figura \ref{fig:gerador-massa}, o díodo está curto-circuitado (linha magenta a tracejado, entre os pontos ``2'' e ``3'') devido ao facto das massas do gerador de sinal e canal 1 ($CH_{1-}$) serem comuns. A forma de contornar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio, tal como representado no esquema da Figura \ref{fig:ondacompleta-massa}. Ainda assim, não é possível medir as ondas de entrada e saída \textbf{simultaneamente}, se for esse o objectivo.
+Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas, se se pretender usar um gerador de sinal. Quer isto dizer que não é possível medir, simultaneamente, os sinais de entrada e saída. Como se pode ver pelo esquema representado na Figura \ref{fig:gerador-massa}, o díodo está curto-circuitado (linha magenta a tracejado, entre os pontos ``2'' e ``3'') devido ao facto das massas serem comuns. A forma de contornar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio, tal como representado no esquema da Figura \ref{fig:ondacompleta-massa}. Ainda assim, não é possível medir as ondas de entrada e saída \textbf{simultaneamente}, se for esse o objectivo.
 
 \begin{figure}[hbtp]
 	\centering
@@ -549,7 +549,7 @@ Na prática e em contexto de sala de aula, a experiência de rectificação de o
 	\label{fig:gerador-massa}
 \end{figure}
 
-No caso do \acrshort{lare}, as massas podem ser controladas por \textit{software}, utilizando relés. Dessa forma, seria possível evitar o uso do transformador e, em vez disso, usar o gerador de sinal do \acrshort{virtualbench}. No entanto, o uso do transformador justifica-se pelas seguintes razões:
+No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software}. De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
 \begin{itemize}
 	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$) ou duas no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
 	\item Em contexto laboratorial e de sala de aula usa-se um transformador para rectificar a onda completa.
@@ -565,11 +565,15 @@ No caso do \acrshort{lare}, as massas podem ser controladas por \textit{software
 	\label{fig:ondacompleta-massa}
 \end{figure}
 
+O esquema completo da experiência de rectificação de onda completa pode ser consultado \textbf{no anexo, figura XPTO}.
+
 %$CH_{1-}$ e $CH_{2-}$ são as massas do gerador de sinal e osciloscópio (dois canais), respectivamente. É fácil perceber que estando ligados ao mesmo aparelho de medida, neste caso o \acrshort{virtualbench}, as massas dos dois canais do osciloscópio são comuns e, por isso, entre os pontos 2 e 3, o díodo está curto-circuitado. 
 
 
 %No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
+\subsection{Aparelhos de medida - voltímetro e amperímetro}
+\label{sec:aparelhosmedida}
 
 O QUE FAZER A SEGUIR:
 \begin{itemize}
@@ -662,7 +666,7 @@ Da forma como está implementado, o tutor ou professor, pode optar por apresenta
 	\caption{Experiência Lei de Ohm - Resistências desconhecidas}
 	\label{fig:pagohmabc}
 \end{figure}
-
+%\documentclass[a4paper,12pt,oneside,pdflatex,final,twocolumn]{article}
 Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se, ao nível do \textit{software}, um desafio no que toca à sua implementação.
 
 Como foi referido na Secção \ref{sec:pyvirtualbench}, alguns exemplos da biblioteca ``pyVirtualBench'' foram usados como base para o desenvolvimento da programação. Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}.
