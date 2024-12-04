@@ -62,7 +62,7 @@
 \contentsline {subsubsection}{Fonte de tensão \SI {12}{\volt } - fixa}{84}{section*.88}%
 \contentsline {subsubsection}{Fonte de tensão \SI {5}{\volt } - fixa}{85}{section*.90}%
 \contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{87}{section*.92}%
-\contentsline {subsection}{\numberline {4.3.5}Aparelhos de medida - voltímetro e amperímetro}{89}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.5}Aparelhos de medida - voltímetro e amperímetro}{88}{subsection.4.3.5}%
 \contentsline {subsubsection}{Lei de Ohm}{89}{section*.96}%
 \contentsline {subsubsection}{Descrição da experiência}{94}{section*.102}%
 \contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{94}{section*.104}%

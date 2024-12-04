@@ -551,7 +551,8 @@ Na prática e em contexto de sala de aula, a experiência de rectificação de o
 
 A forma de contornar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio, tal como representado no esquema da Figura \ref{fig:ondacompleta-massa}. Ainda assim, não é possível medir as ondas de entrada e saída \textbf{simultaneamente}, se for esse o objectivo.
 
-No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software}. De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
+No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software}. Desta forma, é possível representar as duas ondas numa imagem, tal como se pode ver na Figura \ref{fig:ondacompleta}. \textbf{Explicar como se fez ou deixar para a parte de software? Opinião PROF}
+De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
 \begin{itemize}
 	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$) ou duas no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
 	\item Em contexto laboratorial e de sala de aula usa-se um transformador para rectificar a onda completa.
@@ -586,7 +587,12 @@ A medição de tensão e corrente são feitas utilizando o multímetro digital -
 	\label{fig:frontDMM}
 \end{figure}
 
-Os aparelhos de medida foram projectados de forma a poderem ser utilizados em qualquer uma das experiências que possam ser acrescentadas ao \acrshort{lare}. 
+Os aparelhos de medida são controlados por um conjunto de relés e foram projectados de forma a serem independentes. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplficado da Lei de Ohm que pode ilustrar o funcionamento dos aparelhos de medida. O ponto ``C'' é comum a ambos os aparelhos e é controlado pelo relé $K_{7}$. O terminal positivo do voltímetro está ligado ao ponto ``A'', controlado pelo relé $K_{5}$ mas o amperímetro necessita de mais um relé, já que o controlo da medição é diferente. Neste caso o relé $K_{8}$ funciona como um \textit{bypass} quando se pretende medir tensão e o relé $K{6}$ controla o terminal positivo do amperímetro.
+
+De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. 
+%Tal como pode ser visto na o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
+
+A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
 O QUE FAZER A SEGUIR:
 \begin{itemize}
@@ -654,8 +660,6 @@ Por exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, o
 		\bottomrule
 	\end{tabular}
 \end{table}
-
-De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. Tal como pode ser visto na Figura \ref{fig:esq_geral_ohm}, o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
 
 \textbf{Colocar um exemplo de como ficariam os aparelhos de medida se o lare se expandisse com um circuito? OPINIÃO PROF}
 
