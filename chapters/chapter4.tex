@@ -551,7 +551,7 @@ Na prática e em contexto de sala de aula, a experiência de rectificação de o
 
 A forma de contornar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio, tal como representado no esquema da Figura \ref{fig:ondacompleta-massa}. Ainda assim, não é possível medir as ondas de entrada e saída \textbf{simultaneamente}, se for esse o objectivo.
 
-No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software}. Desta forma, é possível representar as duas ondas numa imagem, tal como se pode ver na Figura \ref{fig:ondacompleta}. \textbf{Explicar como se fez ou deixar para a parte de software? Opinião PROF}
+No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software}. Desta forma, é possível representar as duas ondas numa imagem, tal como se pode ver na Figura \ref{fig:}. \textbf{Explicar como se fez ou deixar para a parte de software? Opinião PROF}
 De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
 \begin{itemize}
 	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$) ou duas no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
@@ -594,23 +594,10 @@ De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, �
 
 A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
-O QUE FAZER A SEGUIR:
-\begin{itemize}
-	\item LIGAÇÃO DAS FONTES DE ALIMENTAÇÃO
-	\begin{itemize}
-		\item PONTE RETIFICADORA NOS FILTROS E RECTIFICADORES, A RAZÃO PORQUE SE USOU A RECTIFICAÇÃO DE ONDA COMPLETA
-	\end{itemize}
-	\item LIGAÇÃO DOS APARELHOS DE MEDIDA - voltímetro e amperímetro
-\end{itemize}
-
-\textbf{ENQUADRAR ISTO COM O QUE JÁ ESTÁ ESCRITO.}
-
-NÃO ESQUECER A LIGAÇÃO AO VB E APARELHOS DE MEDIDA: OSC, MULTÍMETRO E AS FONTES DE ALIMENTAÇÃO DO VB
-
-
+\subsection{Experiências}
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
-Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema geral do circuito.
+Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado do circuito - o esquema completo pode ser consultado no \textit{Datasheet}, na página ??? - \textbf{Ver como referenciar}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -625,15 +612,15 @@ A medição da tensão e da corrente faz-se da seguinte forma:
 \begin{itemize}
 	\item Medição da tensão:
 	      \begin{itemize}
-		      \item Os relés $K_{5}$ e $K_{8}$ são fechados e $K_{6}$ é aberto. Desta forma, o voltímetro fica em paralelo com a resistência a medir - entre os pontos A e B.
+		      \item Os relés $K_{5}$ e $K_{8}$ são fechados e $K_{6}$ é aberto (Amperímetro desactivado). Desta forma, o voltímetro fica em paralelo com a resistência a medir - entre os pontos A e B.
 	      \end{itemize}
 	\item Medição da corrente:
 	      \begin{itemize}
-		      \item Os relés $K_{5}$ e $K_{8}$ são abertos e $K_{6}$ é fechado. Desta forma, o amperímetro fica em série com a resistência a medir - entre os pontos B e C.
+		      \item Os relés $K_{5}$ e $K_{8}$ são abertos (voltíemtro desactivado) e $K_{6}$ é fechado. Desta forma, o amperímetro fica em série com a resistência a medir - entre os pontos B e C.
 	      \end{itemize}
 \end{itemize}
 
-Como se pode pode ver na Figura \ref{fig:frontDMM}, retirada da Figura \ref{fig:paineldianteiro}, o terminal preto (negativo) é comum a ambos os aparelhos de medida, que na Figura \ref{fig:esq_geral_ohm} está representado pelo ponto C. O terminal positivo do voltímetro liga ao ponto A - depois de activo o relé $K_{5}$ e o terminal positivo do amperímetro liga ao ponto B - depois de activo o relé $R_{6}$.
+Como se pode pode ver na Figura \ref{fig:frontDMM}, retirada da Figura \ref{fig:paineldianteiro}, o terminal negativo (preto) é comum a ambos os aparelhos de medida, que na Figura \ref{fig:esq_geral_ohm} está representado pelo ponto ``C''. O terminal positivo (vermelho) do voltímetro liga ao ponto A - depois de activo o relé $K_{5}$ e o terminal positivo (vermelho) do amperímetro liga ao ponto B - depois de activo o relé $R_{6}$.
 
 \begin{figure}[hbtp]
 	\centering
@@ -642,7 +629,7 @@ Como se pode pode ver na Figura \ref{fig:frontDMM}, retirada da Figura \ref{fig:
 	\label{fig:frontDMM}
 \end{figure}
 
-Por exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomedicaoohm}:
+Se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomedicaoohm}:
 
 \begin{table}[htb]
 	\centering
