@@ -582,7 +582,7 @@ A medição de tensão e corrente são feitas utilizando o multímetro digital -
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/promenorDMM.png}
+	\includegraphics[width=0.7\textwidth]{figures/promenorDMM.png}
 	\caption{Painel frontal Multímetro Digital}
 	\label{fig:frontDMM}
 \end{figure}
@@ -597,12 +597,14 @@ A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a 
 \subsection{Experiências}
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
+\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
+
 Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado do circuito - o esquema completo pode ser consultado no \textit{Datasheet}, na página ??? - \textbf{Ver como referenciar}.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/esquema_simplificado_OHM.png}
-	\caption{Esquema geral da experiência Lei de Ohm}
+	\includegraphics[width=0.8\textwidth]{figures/esquema_simplificado_OHM.png}
+	\caption{Esquema simplificado da experiência Lei de Ohm}
 	\label{fig:esq_geral_ohm}
 \end{figure}
 
@@ -643,30 +645,42 @@ Como exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, 
 	\end{tabular}
 \end{table}
 
-\textbf{Colocar um exemplo de como ficariam os aparelhos de medida se o lare se expandisse com um circuito? OPINIÃO PROF}
+Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambas os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
 
-Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas:
-
-\begin{itemize}
-	\item O utilizador ou aluno parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes. No final confronta o valor conhecido com o declive da recta - que pode ser, ou não, apresentado com o gráfico, como pode ser visto na Figura \ref{fig:pagohm}.
-	\item O utilizador ou aluno não sabe o valor da resistência e constrói o gráfico, obtendo o valor prático calculando o declive da recta, que mais uma vez, pode ou não, ser apresentado juntamente com o gráfico, tal como pode ser visto na Figura \ref{fig:pagohmabc}.
-\end{itemize}
+No caso em que a resistência é dada, exemplificado na Figura \ref{fig:pagohm}, o declive pode ser calculado e confrontado com as soluções.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/ohm_escolha.png}
+	\includegraphics[width=0.8\textwidth]{figures/ohm_escolha.png}
 	\caption{Experiência Lei de Ohm}
 	\label{fig:pagohm}
 \end{figure}
 
+No caso em que a resistência é desconhecida, como exemplificado na Figura \ref{fig:pagohmabc}, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
+
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/ohm_escolha_abc.png}
+	\includegraphics[width=0.8\textwidth]{figures/ohm_escolha_abc.png}
 	\caption{Experiência Lei de Ohm - Resistências desconhecidas}
 	\label{fig:pagohmabc}
 \end{figure}
-%\documentclass[a4paper,12pt,oneside,pdflatex,final,twocolumn]{article}
-Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se, ao nível do \textit{software}, um desafio no que toca à sua implementação.
+
+\subsubsection{Rectificador de meia-onda}
+\label{sec:meia-onda}
+\textbf{Eventualmente os rectificadores podem ficar na mesma secção}
+
+Nestas duas experiências pretende-se estudar e avaliar a diferença nos dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}.
+
+\subsubsection{Rectificador de onda completa}
+\label{sec:onda completa}
+
+\subsubsection{Filtro Passa-alto}
+\label{sec:passa-alto}
+\textbf{Eventualmente os filtros podem ficar na mesma secção}
+\subsubsection{Filtro Passa-baixo}
+\label{sec:passa-baixo}
+
+%Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se, ao nível do \textit{software}, um desafio no que toca à sua implementação.
 
 Como foi referido na Secção \ref{sec:pyvirtualbench}, alguns exemplos da biblioteca ``pyVirtualBench'' foram usados como base para o desenvolvimento da programação. Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}.
 
