@@ -36,11 +36,11 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura \acrshort {lare}}}{54}{figure.caption.54}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Circuitos \acrshort {visir} - \acrshort {isep} - \textbf {Se calhar retirava a imagem}}}{54}{figure.caption.55}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Painel traseiro \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{55}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{55}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{56}{figure.caption.57}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Placas PC/104 do \acrshort {visir} - \acrshort {isep} - \textbf {Foto com melhor qualidade}}}{56}{figure.caption.58}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{57}{figure.caption.59}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{58}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Representação alternativa dos \acrshort {gpio}s \cite {Raspberrytech}}}{58}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Representação alternativa dos \acrshort {gpio}s \cite {Raspberrytech}}}{59}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces \textit {Esquema simplificado de um relé \cite {DryRelay}}}}{59}{figure.caption.63}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{60}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{61}{figure.caption.65}%
@@ -64,14 +64,14 @@
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Esquema simplificado da experiência Lei de Ohm}}{90}{figure.caption.97}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Experiência Lei de Ohm}}{91}{figure.caption.99}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{91}{figure.caption.100}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{94}{figure.caption.106}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{95}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Página de entrada - \textit {ohm.html}}}{96}{figure.caption.109}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Fontes de tensão contínua \acrshort {virtualbench}}}{99}{figure.caption.112}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces \textit {Script configRelays.py}}}{101}{figure.caption.113}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Página de \textit {login}}}{101}{figure.caption.114}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces caralho}}{102}{figure.caption.115}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Página de menus}}{102}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{95}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{96}{figure.caption.108}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Página de entrada - \textit {ohm.html}}}{97}{figure.caption.109}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Fontes de tensão contínua \acrshort {virtualbench}}}{100}{figure.caption.112}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces \textit {Script configRelays.py}}}{102}{figure.caption.113}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Página de \textit {login}}}{102}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces caralho}}{103}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Página de menus}}{103}{figure.caption.116}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
