@@ -1156,8 +1156,9 @@
 		(start 76.2 33.02)
 		(end 111.76 41.91)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.3)
+			(type dash)
+			(color 255 0 0 1)
 		)
 		(fill
 			(type none)
@@ -1168,8 +1169,9 @@
 		(start 62.23 33.02)
 		(end 74.93 59.69)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.3)
+			(type dash)
+			(color 0 0 132 1)
 		)
 		(fill
 			(type none)
@@ -1186,7 +1188,7 @@
 		)
 		(uuid "2a2b016f-458b-4021-855b-ea1340df0ebf")
 	)
-	(label "V_{G}-"
+	(label "V_{G+}"
 		(at 58.42 45.72 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1197,7 +1199,7 @@
 		)
 		(uuid "8d23cd63-7aad-441e-8e81-d66ea8d4b81d")
 	)
-	(label "V_{G}+"
+	(label "V_{G}-"
 		(at 58.42 48.26 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1218,7 +1220,7 @@
 		(dnp no)
 		(uuid "2db6f876-5900-48ce-ac86-05df770473a2")
 		(property "Reference" "K_{7a}"
-			(at 122.936 34.544 0)
+			(at 124.46 36.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1286,7 +1288,7 @@
 		(dnp no)
 		(uuid "3207e7e4-835b-4996-b0b8-34ea7b1e6c5a")
 		(property "Reference" "K_{1a}"
-			(at 68.58 35.306 0)
+			(at 68.072 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1336,7 +1338,7 @@
 			(uuid "29a91ba9-222d-40b5-82c0-0cee2a487aa4")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "K_{1a}")
 					(unit 1)
@@ -1425,7 +1427,7 @@
 			(uuid "2ac69aa1-7473-4ad4-92a2-f4c582a6ac55")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "R2")
 					(unit 1)
@@ -1443,7 +1445,7 @@
 		(dnp no)
 		(uuid "76a6717c-1740-4a7d-924a-ed9ea7b11609")
 		(property "Reference" "K_{1b}"
-			(at 69.342 50.8 0)
+			(at 67.818 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1493,7 +1495,7 @@
 			(uuid "438bb991-cfd9-4f38-8308-b8869420d7ee")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "K_{1b}")
 					(unit 1)
@@ -1511,7 +1513,7 @@
 		(dnp no)
 		(uuid "7920c9ac-693a-4e7a-9a2a-acfdb3833d86")
 		(property "Reference" "K_{7b}"
-			(at 122.936 59.944 0)
+			(at 124.968 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1579,7 +1581,7 @@
 		(dnp no)
 		(uuid "999f8335-d4dd-4a65-b3b2-bfa9f3f3acf5")
 		(property "Reference" "K_{6a}"
-			(at 114.046 34.544 0)
+			(at 115.57 36.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1647,7 +1649,7 @@
 		(dnp no)
 		(uuid "9a1d1073-e29c-44d1-b3b1-7cea4ad1e32c")
 		(property "Reference" "K_{3a}"
-			(at 82.55 35.306 0)
+			(at 81.534 36.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1697,7 +1699,7 @@
 			(uuid "c681e6ae-d369-42c3-92f9-aac9504c16f5")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "K_{3a}")
 					(unit 1)
@@ -1715,7 +1717,7 @@
 		(dnp no)
 		(uuid "9b84238f-770c-4858-9595-5fec3c8b5c8b")
 		(property "Reference" "K_{9b}"
-			(at 140.716 59.944 0)
+			(at 142.494 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1783,7 +1785,7 @@
 		(dnp no)
 		(uuid "aebb19fd-439f-4014-a31e-0931ee8d57db")
 		(property "Reference" "K_{6b}"
-			(at 114.046 59.944 0)
+			(at 116.078 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1919,7 +1921,7 @@
 			(uuid "475b03ef-8e24-4b18-bf0d-675bbdfdbfcd")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "D1")
 					(unit 1)
@@ -1937,7 +1939,7 @@
 		(dnp no)
 		(uuid "bac82c2a-f498-40aa-9da3-259e458fac09")
 		(property "Reference" "K_{3b}"
-			(at 105.156 35.306 0)
+			(at 104.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1987,7 +1989,7 @@
 			(uuid "e8c62369-2cc3-4677-b313-293436bf653f")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "K_{3b}")
 					(unit 1)
@@ -2076,7 +2078,7 @@
 			(uuid "d0193da8-aa18-4e89-92e7-4bddf5682bcb")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "R1")
 					(unit 1)
@@ -2146,7 +2148,7 @@
 			(uuid "eb6a68b3-915a-41fc-8c64-18067979ea19")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "C2")
 					(unit 1)
@@ -2164,7 +2166,7 @@
 		(dnp no)
 		(uuid "d17c5e8f-d4b2-48e2-a98b-9b8b12710877")
 		(property "Reference" "K_{8a}"
-			(at 131.826 34.544 0)
+			(at 133.35 36.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2232,7 +2234,7 @@
 		(dnp no)
 		(uuid "ded517e4-4113-4843-a1c5-1a0e3008bd9d")
 		(property "Reference" "K_{9a}"
-			(at 140.716 34.544 0)
+			(at 142.748 36.068 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2352,7 +2354,7 @@
 			(uuid "3e357ba5-f905-4f13-adac-49ff79bd5745")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "C1")
 					(unit 1)
@@ -2370,7 +2372,7 @@
 		(dnp no)
 		(uuid "ecda4aeb-40fd-4f0b-913d-3f6af33b1d7f")
 		(property "Reference" "K_{4}"
-			(at 93.98 51.308 0)
+			(at 92.964 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2420,7 +2422,7 @@
 			(uuid "f2f30f60-a26b-4dad-a836-81df1ef4631e")
 		)
 		(instances
-			(project ""
+			(project "meia_onda_simplificado"
 				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
 					(reference "K_{4}")
 					(unit 1)
@@ -2438,7 +2440,7 @@
 		(dnp no)
 		(uuid "f1419f9c-99f1-4165-b95b-0c706d8d5cdc")
 		(property "Reference" "K_{8b}"
-			(at 131.826 59.944 0)
+			(at 133.604 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
