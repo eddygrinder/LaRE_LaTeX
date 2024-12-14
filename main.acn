@@ -1,52 +1,24 @@
-\glossaryentry{LV?\glossentry{lv}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{MATLAB?\glossentry{matlab}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{EJS?\glossentry{ejs}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{DIESEL?\glossentry{diesel}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{ISA?\glossentry{ilab}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{ix}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{x}
-\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xiii}
-\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xiii}
-\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xiii}
-\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xiii}
-\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xiii}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{xiii}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{xiii}
-\glossaryentry{IDE?\glossentry{ide}|setentrycounter[]{page}"\glsnumberformat}{xv}
-\glossaryentry{DIAC?\glossentry{Diac}|setentrycounter[]{page}"\glsnumberformat}{xv}
+\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{xi}
+\glossaryentry{IDE?\glossentry{ide}|setentrycounter[]{page}"\glsnumberformat}{xiii}
+\glossaryentry{DIAC?\glossentry{Diac}|setentrycounter[]{page}"\glsnumberformat}{xiii}
+\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xiii}
+\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xiii}
+\glossaryentry{IoT?\glossentry{iot}|setentrycounter[]{page}"\glsnumberformat}{xiii}
+\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xiv}
+\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xiv}
+\glossaryentry{DIAC?\glossentry{Diac}|setentrycounter[]{page}"\glsnumberformat}{xiv}
+\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xv}
 \glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xv}
-\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xv}
-\glossaryentry{IoT?\glossentry{iot}|setentrycounter[]{page}"\glsnumberformat}{xv}
-\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xvi}
-\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xvi}
-\glossaryentry{DIAC?\glossentry{Diac}|setentrycounter[]{page}"\glsnumberformat}{xvi}
-\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xvii}
-\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xvii}
-\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xvii}
-\glossaryentry{CA?\glossentry{ca}|setentrycounter[]{page}"\glsnumberformat}{xvii}
-\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xvii}
-\glossaryentry{CA?\glossentry{ca}|setentrycounter[]{page}"\glsnumberformat}{xvii}
+\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xv}
+\glossaryentry{CA?\glossentry{ca}|setentrycounter[]{page}"\glsnumberformat}{xv}
+\glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xv}
+\glossaryentry{CA?\glossentry{ca}|setentrycounter[]{page}"\glsnumberformat}{xv}
 \glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{2}
@@ -197,7 +169,7 @@
 \glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{RLMS?\glossentry{rlms}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{API?\glossentry{api}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{ISA?\glossentry{ilab}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{ISA?\glossentry{ilab}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{MIT?\glossentry{mit}|setentrycounter[]{page}"\glsnumberformat}{37}
 \glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{37}
 \glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{37}
@@ -219,10 +191,10 @@
 \glossaryentry{PUC?\glossentry{puc}|setentrycounter[]{page}"\glsnumberformat}{38}
 \glossaryentry{PUC?\glossentry{puc}|setentrycounter[]{page}"\glsnumberformat}{38}
 \glossaryentry{LMS?\glossentry{lms}|setentrycounter[]{page}"\glsnumberformat}{38}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{"\textit {LabVIEW}?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{LMS?\glossentry{lms}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{"\textit {LabVIEW}?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{LMS?\glossentry{lms}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{38}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{39}
@@ -230,10 +202,10 @@
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{NI?\glossentry{ni}|setentrycounter[]{page}"\glsnumberformat}{40}
 \glossaryentry{EUA?\glossentry{eua}|setentrycounter[]{page}"\glsnumberformat}{40}
 \glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{40}
@@ -249,11 +221,11 @@
 \glossaryentry{"\textit {LabVIEW}?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{40}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{PC?\glossentry{pc}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{"\textit {LabVIEW}?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{41}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{41}
-\glossaryentry{PC?\glossentry{pc}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{"\textit {LabVIEW}?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{42}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{42}
 \glossaryentry{MCR?\glossentry{mcr}|setentrycounter[]{page}"\glsnumberformat}{42}
 \glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{42}
@@ -263,7 +235,7 @@
 \glossaryentry{USB?\glossentry{usb}|setentrycounter[]{page}"\glsnumberformat}{42}
 \glossaryentry{PIC?\glossentry{pic}|setentrycounter[]{page}"\glsnumberformat}{42}
 \glossaryentry{"\(I^2C"\)?\glossentry{i2c}|setentrycounter[]{page}"\glsnumberformat}{42}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{44}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{45}
@@ -279,11 +251,11 @@
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{SIG?\glossentry{sig}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
-\glossaryentry{SIG?\glossentry{sig}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{46}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{SIG?\glossentry{sig}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{45}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{46}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{46}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{47}
@@ -519,7 +491,7 @@
 \glossaryentry{DMM?\glossentry{dmm}|setentrycounter[]{page}"\glsnumberformat}{88}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{89}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{92}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{94}
+\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{93}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{94}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{98}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{98}
