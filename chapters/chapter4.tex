@@ -667,20 +667,30 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal}
 
-\subsubsection{Rectificador de meia-onda}
-\label{sec:meia-onda}
+\subsubsection{Rectificadores}
+\label{sec:rectificadores}
 \textbf{Eventualmente os rectificadores podem ficar na mesma secção}
 
 Nestas duas experiências pretende-se estudar e avaliar a diferença nos dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}.
 
-O estudo tem como base o circuito representado na Figura \ref{fig:esq_geral_meiaonda}.
+O estudo tem como base o circuito simplificado representado na Figura \ref{fig:meiasimplificado}, sendo que o circuito completo está representado \textbf{REFERÊNCIA AO DATASHEET}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/MeiaOndaSimplificado.png}
+	\caption{Esquema simplificado - Recitificador de Meia-Onda}
+	\label{fig:meiasimplificado}
+\end{figure}
+
+A versatilidade desta experiência permite, não só, estudar a rectificação de meia-onda, mas também a variação da tensão de \textit{ripple}. O tutor ou utilizador controla a frequência do sinal de entrada, representado no esquema da Figura \ref{fig:meiasimplificado} por $V_{G+}$ e $V_{G-}$ (rectângulo tracejado a azul) e mediante a escolha do par condensador/resistência, avalia a influência que tem na variação da tensão de \textit{ripple}.
+
+\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal}
 REFERIR O QUE HÁ DE COMUM ENTRE AS DUAS EXPERIÊNCIAS E O QUE É DIFERENTE
 COLOCAR O ESQUEMA SIMPLIFICADO E REFERENCIAR O ESQUEMA COMPLETO NO DATASHEET.
 
+Os relés foram projectados de forma a isolar totalmente os elementos do circuito, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a magenta) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, até por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
 
-
-\subsubsection{Rectificador de onda completa}
-\label{sec:onda completa}
+\textbf{Talve rever esta justificação, já que, aparentemente, o relé K4 era dispensavel.}
 
 \subsubsection{Filtro Passa-alto}
 \label{sec:passa-alto}
