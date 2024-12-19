@@ -669,10 +669,17 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 
 \subsubsection{Rectificador de meia-onda e onda completa}
 \label{sec:rectificadores}
-\textbf{Eventualmente os rectificadores podem ficar na mesma secção}
 
 Nestas duas experiências pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}.
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/ondacompleta.png}
+	\caption{Rectificador de meia-onda simplificado}
+	\label{fig:meiaondasimplificado}
+\end{figure}
+
+Os componentes representados no rectângulo a tracejado magenta, representam 
 O estudo tem como base o circuito representado na Figura \ref{fig:meiaondasimplificado}.
 REFERIR O QUE HÁ DE COMUM ENTRE AS DUAS EXPERIÊNCIAS E O QUE É DIFERENTE
 COLOCAR O ESQUEMA SIMPLIFICADO E REFERENCIAR O ESQUEMA COMPLETO NO DATASHEET.
@@ -684,7 +691,7 @@ COLOCAR O ESQUEMA SIMPLIFICADO E REFERENCIAR O ESQUEMA COMPLETO NO DATASHEET.
 	\label{fig:meiaondasimplificado}
 \end{figure}
 
-Os relés foram projectados de forma a isolar totalmente os elementos do circuito, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a magenta) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, até por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
+Os relés foram projectados de forma a isolar totalmente os elementos do circuito, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a magenta) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
 
 \textbf{Talve rever esta justificação, já que, aparentemente, o relé K4 era dispensavel.}
 

@@ -2,11 +2,11 @@
 \babel@toc {english}{}\relax 
 \babel@toc {portuguese}{}\relax 
 \contentsline {chapter}{Lista de Figuras}{ix}{chapter*.10}%
-\contentsline {chapter}{Lista de Tabelas}{xi}{chapter*.11}%
-\contentsline {chapter}{Listagens}{xiii}{chapter*.12}%
-\contentsline {chapter}{Gloss\'{a}rio}{xv}{section*.13}%
-\contentsline {chapter}{Lista de Acr\'{o}nimos}{xix}{section*.15}%
-\contentsline {chapter}{Lista de S\'{i}mbolos}{xxiii}{section*.17}%
+\contentsline {chapter}{Lista de Tabelas}{xiii}{chapter*.11}%
+\contentsline {chapter}{Listagens}{xv}{chapter*.12}%
+\contentsline {chapter}{Gloss\'{a}rio}{xvii}{section*.13}%
+\contentsline {chapter}{Lista de Acr\'{o}nimos}{xxi}{section*.15}%
+\contentsline {chapter}{Lista de S\'{i}mbolos}{xxv}{section*.17}%
 \contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Enquadramento}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectivos}{2}{section.1.2}%
@@ -65,19 +65,19 @@
 \contentsline {subsection}{\numberline {4.3.5}Aparelhos de medida - voltímetro e amperímetro}{88}{subsection.4.3.5}%
 \contentsline {subsection}{\numberline {4.3.6}Experiências}{89}{subsection.4.3.6}%
 \contentsline {subsubsection}{Lei de Ohm}{89}{section*.96}%
-\contentsline {subsubsection}{Rectificador de meia-onda e onda completa}{90}{section*.101}%
-\contentsline {subsubsection}{Filtro Passa-alto}{92}{section*.103}%
-\contentsline {subsubsection}{Filtro Passa-baixo}{92}{section*.104}%
-\contentsline {subsubsection}{Descrição da experiência}{94}{section*.105}%
-\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{94}{section*.107}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{98}{section*.110}%
-\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{99}{section*.111}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{102}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{105}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{105}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{105}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{107}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{121}{section*.117}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{137}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{137}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{137}{section.1.A.2}%
+\contentsline {subsubsection}{Rectificador de meia-onda e onda completa}{92}{section*.101}%
+\contentsline {subsubsection}{Filtro Passa-alto}{93}{section*.104}%
+\contentsline {subsubsection}{Filtro Passa-baixo}{93}{section*.105}%
+\contentsline {subsubsection}{Descrição da experiência}{95}{section*.106}%
+\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{95}{section*.108}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{99}{section*.111}%
+\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{100}{section*.112}%
+\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{103}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Resultados}{107}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{107}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{107}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{109}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{123}{section*.118}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{139}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{139}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{139}{section.1.A.2}%
