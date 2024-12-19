@@ -1889,4 +1889,242 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on 
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
-(pdftex.def)            
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [119
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3311, page=11, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [120
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3319, page=12, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [121
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3327, page=13, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [122
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]) (./main.bbl (./main.brf)
+\tf@brf=\write12
+\openout12 = `main.brf'.
+
+
+1: section
+[123
+\newlabel{datasheet}{{6}{123}{Conclusões}{chapter.6}{}}
+
+
+
+] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137]) [138]
+\openout2 = `chapters/appendixA.aux'.
+
+ (./chapters/appendixA.tex
+Anexo A.
+
+Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
+(lipsum)                'portuguese' will be used instead.
+
+1: section
+[139
+
+
+]) [140] (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/appendixA.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C367D2BFCB4D8E54DD23886631D5555D;12735.
+
+Package rerunfilecheck Warning: File `main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `main.brf':
+(rerunfilecheck)             Before: BE8614956B945E7A9B532397F3BA2316;15549
+(rerunfilecheck)             After:  67280145CD946B8E62CE750E489F65A9;15557.
+ ) 
+Here is how much of TeX's memory you used:
+ 41200 strings out of 476056
+ 834490 string characters out of 5793066
+ 2085187 words of memory out of 5000000
+ 61683 multiletter control sequences out of 15000+600000
+ 692313 words of font info for 129 fonts, out of 8000000 for 9000
+ 16 hyphenation exceptions out of 8191
+ 110i,21n,131p,2417b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{https://tek.sapo.pt/noticias/computadores/artigos/entrega-de-computadores-a-alunos-e-professores-tem-se-revelado-muito-dificil-de-cumprir} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{https://www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.40} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.39} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.38} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.37} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.36} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.35} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.34} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.33} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.32} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.30} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.28} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.27} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.26} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.25} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (174 pages, 19638878 bytes).
+PDF statistics:
+ 4145 PDF objects out of 4296 (max. 8388607)
+ 3649 compressed objects within 37 object streams
+ 912 named destinations out of 1000 (max. 500000)
+ 1116 words of extra memory for PDF output out of 10000 (max. 10000000)
+
