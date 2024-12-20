@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  19 DEC 2024 23:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  20 DEC 2024 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1626,18 +1626,22 @@ File: figures/ohm_escolha_abc.png Graphic file (type png)
 <use figures/ohm_escolha_abc.png>
 Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 663.
 (pdftex.def)             Requested size: 318.67209pt x 169.95532pt.
- [90 <./figures/esquema_simplificado_OHM.png (PNG copy)>] [91 <./figures/ohm_escolha.png> <./figures/ohm_escolha_abc.png>]
-<figures/ondacompleta.png, id=2943, 1193.45876pt x 407.5225pt>
-File: figures/ondacompleta.png Graphic file (type png)
-<use figures/ondacompleta.png>
-Package pdftex.def Info: figures/ondacompleta.png  used on input line 678.
+
+
+LaTeX Warning: Reference `fig:blocosrectificacao' on page 90 undefined on input line 674.
+
+[90 <./figures/esquema_simplificado_OHM.png (PNG copy)>] [91 <./figures/ohm_escolha.png> <./figures/ohm_escolha_abc.png>]
+<figures/diagramablocosrectificacao.png, id=2942, 1193.45876pt x 407.5225pt>
+File: figures/diagramablocosrectificacao.png Graphic file (type png)
+<use figures/diagramablocosrectificacao.png>
+Package pdftex.def Info: figures/diagramablocosrectificacao.png  used on input line 678.
 (pdftex.def)             Requested size: 318.67209pt x 108.81375pt.
-<figures/MeiaOndaSimplificado.png, id=2945, 1045.9075pt x 498.86375pt>
+<figures/MeiaOndaSimplificado.png, id=2944, 1045.9075pt x 498.86375pt>
 File: figures/MeiaOndaSimplificado.png Graphic file (type png)
 <use figures/MeiaOndaSimplificado.png>
 Package pdftex.def Info: figures/MeiaOndaSimplificado.png  used on input line 697.
 (pdftex.def)             Requested size: 318.67209pt x 151.99718pt.
- [92 <./figures/ondacompleta.png> <./figures/MeiaOndaSimplificado.png (PNG copy)>] [93] [94]
+ [92 <./figures/diagramablocosrectificacao.png>] [93 <./figures/MeiaOndaSimplificado.png (PNG copy)>] [94]
 <figures/ohm_diagrama.drawio.png, id=3001, 1640.1275pt x 1308.89pt>
 File: figures/ohm_diagrama.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama.drawio.png>
@@ -1982,10 +1986,10 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 67280145CD946B8E62CE750E489F65A9;15557.
  ) 
 Here is how much of TeX's memory you used:
- 41205 strings out of 476015
- 836929 string characters out of 5791583
+ 41206 strings out of 476015
+ 837051 string characters out of 5791583
  2085190 words of memory out of 5000000
- 61688 multiletter control sequences out of 15000+600000
+ 61689 multiletter control sequences out of 15000+600000
  692313 words of font info for 129 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  110i,21n,131p,2456b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2116,10 +2120,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (174 pages, 19639152 bytes).
+Output written on main.pdf (174 pages, 19645087 bytes).
 PDF statistics:
  4151 PDF objects out of 4296 (max. 8388607)
- 3655 compressed objects within 37 object streams
+ 3654 compressed objects within 37 object streams
  916 named destinations out of 1000 (max. 500000)
  1116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
