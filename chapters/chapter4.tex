@@ -687,23 +687,21 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 	\item Estabilização.
 \end{enumerate}
 
-Os componentes no rectângulo tracejado magenta, representado na Figura \ref{fig:meiaondasimplificado}, compõem o Bloco 3 - Filtragem - e são comuns às duas experiências, sendo que o Bloco 4 - Estabilização - não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple}. \textbf{verificar se com a FREQUÊNCIA}.
+(\textbf{Confirnmar se a frase seguinte já foi referida} Como já foi referido na Secção??, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador. Na Os componentes no rectângulo tracejado cor-de-laranja, representado na Figura \ref{fig:rectificadoresimplificado}, compõem o Bloco 3 - Filtragem - e são comuns às duas experiências, sendo que o Bloco 4 - Estabilização - não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple}. \textbf{verificar se com a FREQUÊNCIA}.
 
-O Bloco 2 - Rectificação - é diferente nas duas experiências, sendo que no caso do rectificador de meia-onda, é composto por um díodo e no caso do rectificador de onda completa, por uma ponte rectificadora. TALVEZ FAZER UMA REBIENGA e NO BLOCO VERMELHO APRESENTAR OS DOIS rectificadores
-
-SE CALHAR COLOCAR O ESQUEMA SIMPLIFICADO DO RECTIFICADOR DE ONDA COMPLETA. 
+O Bloco 2 - Rectificação - representado na Figura \ref{fig:rectificadoresimplificado} através dos rectângulos tracejados vermelhos, é diferente nas duas experiências, sendo que no caso do rectificador de meia onda, é composto por um díodo e no caso do rectificador de onda completa, por uma ponte rectificadora. 
 
 \paragraph{Rectificador de meia-onda}
 \label{sec:meia-onda}
-O estudo desta experiência tem como base o circuito representado na Figura \ref{fig:meiaondasimplificado}, sendo que o rectificador de meia-onda é composto 
+O estudo desta experiência tem como base o circuito representado na Figura \ref{fig:rectificadoresimplificado}, sendo que o rectificador de meia-onda é composto 
 REFERIR O QUE HÁ DE COMUM ENTRE AS DUAS EXPERIÊNCIAS E O QUE É DIFERENTE
 COLOCAR O ESQUEMA SIMPLIFICADO E REFERENCIAR O ESQUEMA COMPLETO NO DATASHEET.
 
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/MeiaOndaSimplificado.png}
-	\caption{Rectificador de meia-onda simplificado}
-	\label{fig:meiaondasimplificado}
+	\caption{Esquema dos rectificadores simplificado}
+	\label{fig:rectificadoresimplificado}
 \end{figure}
 
 Os relés foram projectados de forma a isolar totalmente os elementos do circuito, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a magenta) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
