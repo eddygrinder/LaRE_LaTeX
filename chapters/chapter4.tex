@@ -538,6 +538,7 @@ O valor da resistência normalizada mais próxima é de \SI{330}{\ohm}. Importa,
 Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos integrados.
 
 \subsubsection{Fontes de tensão \SI{220}{\volt}/\SI{8}{\volt} CA}
+\label{sec:fontealternada}
 As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. 
 
 Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas, se se pretender usar um gerador de sinal. Quer isto dizer que não é possível medir, simultaneamente, os sinais de entrada e saída. Como se pode ver pelo esquema representado na Figura \ref{fig:gerador-massa}, o díodo está curto-circuitado (linha magenta a tracejado, entre os pontos ``2'' e ``3'') devido ao facto das massas serem comuns. 
@@ -671,6 +672,7 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 \label{sec:rectificadores}
 
 Nestas duas experiências pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}.
+
 Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa.
 
 \begin{figure}[hbtp]
@@ -680,31 +682,32 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 	\label{fig:blocosrectificacao}
 \end{figure}
 
-\begin{enumerate}
-    \item Transformador monofásico;
-    \item Rectificação;
+\begin{itemize}
+	\item Transformador;
+	\item Rectificação;
 	\item Filtragem;
 	\item Estabilização.
-\end{enumerate}
+\end{itemize}
 
-(\textbf{Confirnmar se a frase seguinte já foi referida} Como já foi referido na Secção??, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador. Na Os componentes no rectângulo tracejado cor-de-laranja, representado na Figura \ref{fig:rectificadoresimplificado}, compõem o Bloco 3 - Filtragem - e são comuns às duas experiências, sendo que o Bloco 4 - Estabilização - não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple}. \textbf{verificar se com a FREQUÊNCIA}.
-
-O Bloco 2 - Rectificação - representado na Figura \ref{fig:rectificadoresimplificado} através dos rectângulos tracejados vermelhos, é diferente nas duas experiências, sendo que no caso do rectificador de meia onda, é composto por um díodo e no caso do rectificador de onda completa, por uma ponte rectificadora. 
-
-\paragraph{Rectificador de meia-onda}
-\label{sec:meia-onda}
-O estudo desta experiência tem como base o circuito representado na Figura \ref{fig:rectificadoresimplificado}, sendo que o rectificador de meia-onda é composto 
-REFERIR O QUE HÁ DE COMUM ENTRE AS DUAS EXPERIÊNCIAS E O QUE É DIFERENTE
-COLOCAR O ESQUEMA SIMPLIFICADO E REFERENCIAR O ESQUEMA COMPLETO NO DATASHEET.
+Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificadoresimplificado}.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/MeiaOndaSimplificado.png}
+	\includegraphics[width=0.7\textwidth]{figures/MeiaOndaSimplificado.png}
 	\caption{Esquema dos rectificadores simplificado}
 	\label{fig:rectificadoresimplificado}
 \end{figure}
 
+O Bloco 1 difere nas duas experiências por que, tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 4 não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple}. \textbf{verificar se com a FREQUÊNCIA}.
+
+No que se refere ao Bloco 2, a rectificação é feita utilizando dois circuitos, sendo que o rectificador de meia onda é composto por um díodo e o rectificador de onda completa por uma ponte rectificadora - rectângulos tracejados a vermelho. O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. (Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof)
+
+O estudo desta experiência tem como base o circuito representado na Figura \ref{fig:rectificadoresimplificado}, sendo que o rectificador de meia-onda é composto 
+REFERENCIAR O ESQUEMA COMPLETO NO DATASHEET.
+
 Os relés foram projectados de forma a isolar totalmente os elementos do circuito, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a magenta) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
+
+Complementar e concluir os relés
 
 \textbf{Talve rever esta justificação, já que, aparentemente, o relé K4 era dispensavel.}
 
