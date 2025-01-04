@@ -68,11 +68,11 @@
 \contentsline {subsubsection}{Rectificador de meia-onda e onda completa}{92}{section*.101}%
 \contentsline {subsubsection}{Filtro Passa-alto}{94}{section*.105}%
 \contentsline {subsubsection}{Filtro Passa-baixo}{94}{section*.106}%
-\contentsline {subsubsection}{Descrição da experiência}{95}{section*.107}%
+\contentsline {subsubsection}{Descrição da experiência}{96}{section*.107}%
 \contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{96}{section*.109}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{99}{section*.112}%
-\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{100}{section*.113}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{103}{section.4.4}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{100}{section*.112}%
+\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{101}{section*.113}%
+\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{104}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Resultados}{107}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Limitações}{107}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Melhoramentos}{107}{section.5.2}%
