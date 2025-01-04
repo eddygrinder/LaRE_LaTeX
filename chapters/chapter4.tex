@@ -671,7 +671,9 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 \subsubsection{Rectificador de meia-onda e onda completa}
 \label{sec:rectificadores}
 
-Nestas duas experiências pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa. 
+Nestas duas experiências pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
+
+Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, aplicada a uma fonte de tensão \acrshort{cc} . 
 
 \begin{figure}[hbtp]
 	\centering
@@ -687,6 +689,8 @@ Nestas duas experiências pretende-se estudar e avaliar a diferença entre os do
 	\item Estabilização.
 \end{enumerate}
 
+A tensão de \textit{ripple} é uma componente dependente do tempo que surge à saída do filtro do rectificador - Bloco 3 - sendo que terá de ser minimizada, de forma a estabilizar o valor da tensão de saída \acrshort{cc} - Bloco 4. De uma forma mais pormenorizada pode ver-se, na Figura (...), a forma de onda à saída do filtro do rectificador de meia onda
+
 Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificadoresimplificado}.
 
 \begin{figure}[hbtp]
@@ -696,7 +700,7 @@ Os esquemas simplificados que compõem os diversos blocos estão representados n
 	\label{fig:rectificadoresimplificado}
 \end{figure}
 
-O Bloco 1 difere nas duas experiências por que, tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 4 não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple} com a frequência\. \textbf{verificar se com a FREQUÊNCIA}.
+O Bloco 1 difere nas duas experiências por que, tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 4 não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple} com a frequência. \textbf{verificar se com a FREQUÊNCIA}.
 
 No que se refere ao Bloco 2, a rectificação é feita utilizando dois circuitos, sendo que o rectificador de meia onda é composto por um díodo e o rectificador de onda completa por uma ponte rectificadora - rectângulos tracejados a vermelho. O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. (Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof)
 
