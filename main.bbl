@@ -615,4 +615,8 @@ T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' 
 ``1n400x - axial-lead glass passivated standard recovery rectifiers.'' \url{https://cdn.sparkfun.com/assets/2/c/2/d/6/1N400x-D.PDF}.
 \newblock (Accessed on 11/14/2024).
 
+\bibitem{sedrasmith}
+K.~C.~S. Adel S.~Sedra, {\em Microelectronic circuits}.
+\newblock The Oxford series in electrical and computer engineering, Oxford University Press, 2015.
+
 \end{thebibliography}

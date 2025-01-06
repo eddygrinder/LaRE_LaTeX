@@ -32,45 +32,45 @@ Warning--empty journal in ExperiencesRemoteLaboratories
 Warning--empty booktitle in DevelopingVirtualAndRemoteUndergraduate
 Warning--empty journal in TheVISIRproject
 Warning--empty booktitle in pereira
-You've used 170 entries,
+You've used 171 entries,
             1876 wiz_defined-function locations,
-            1293 strings with 35383 characters,
-and the built_in function-call counts, 33032 in all, are:
-= -- 3044
-> -- 1392
+            1298 strings with 35527 characters,
+and the built_in function-call counts, 33182 in all, are:
+= -- 3059
+> -- 1396
 < -- 0
-+ -- 559
-- -- 389
-* -- 2041
-:= -- 4400
-add.period$ -- 274
-call.type$ -- 170
++ -- 561
+- -- 390
+* -- 2047
+:= -- 4422
+add.period$ -- 276
+call.type$ -- 171
 change.case$ -- 163
 chr.to.int$ -- 0
-cite$ -- 186
-duplicate$ -- 1448
-empty$ -- 3666
-format.name$ -- 389
-if$ -- 8360
+cite$ -- 187
+duplicate$ -- 1457
+empty$ -- 3686
+format.name$ -- 390
+if$ -- 8399
 int.to.chr$ -- 0
-int.to.str$ -- 170
-missing$ -- 75
-newline$ -- 618
-num.names$ -- 93
-pop$ -- 1062
+int.to.str$ -- 171
+missing$ -- 77
+newline$ -- 622
+num.names$ -- 94
+pop$ -- 1066
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1054
+skip$ -- 1056
 stack$ -- 0
 substring$ -- 1208
-swap$ -- 433
+swap$ -- 434
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 16
-while$ -- 188
-width$ -- 173
-write$ -- 1460
+while$ -- 189
+width$ -- 174
+write$ -- 1470
 (There were 16 warnings)
