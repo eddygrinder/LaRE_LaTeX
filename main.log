@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.3)  7 JAN 2025 02:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.3)  7 JAN 2025 13:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1639,7 +1639,7 @@ File: figures/sedra_ripple_OC.png Graphic file (type png)
 <use figures/sedra_ripple_OC.png>
 Package pdftex.def Info: figures/sedra_ripple_OC.png  used on input line 718.
 (pdftex.def)             Requested size: 278.8358pt x 104.4407pt.
-<figures/MeiaOndaSimplificado.png, id=2984, 1201.48875pt x 867.24pt>
+<figures/MeiaOndaSimplificado.png, id=2985, 1201.48875pt x 867.24pt>
 File: figures/MeiaOndaSimplificado.png Graphic file (type png)
 <use figures/MeiaOndaSimplificado.png>
 Package pdftex.def Info: figures/MeiaOndaSimplificado.png  used on input line 735.
@@ -1648,49 +1648,49 @@ Package pdftex.def Info: figures/MeiaOndaSimplificado.png  used on input line 73
 <figures/ohm_diagrama.drawio.png, id=3046, 1640.1275pt x 1308.89pt>
 File: figures/ohm_diagrama.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 850.
+Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 842.
 (pdftex.def)             Requested size: 398.33861pt x 317.89476pt.
 <figures/ohm_diagrama_pormenor.drawio.png, id=3049, 1640.1275pt x 572.1375pt>
 File: figures/ohm_diagrama_pormenor.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama_pormenor.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 865.
+Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 857.
 (pdftex.def)             Requested size: 398.33861pt x 138.95706pt.
  [97] [98 <./figures/ohm_diagrama.drawio.png (PNG copy)>]
 <figures/parametros_desabilitados.png, id=3061, 379.4175pt x 152.06813pt>
 File: figures/parametros_desabilitados.png Graphic file (type png)
 <use figures/parametros_desabilitados.png>
-Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 901.
+Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 893.
 (pdftex.def)             Requested size: 278.8358pt x 111.75829pt.
  [99 <./figures/ohm_diagrama_pormenor.drawio.png>] [100 <./figures/parametros_desabilitados.png>] [101] [102]
 File: figures/fontes_VB.png Graphic file (type png)
 <use figures/fontes_VB.png>
-Package pdftex.def Info: figures/fontes_VB.png  used on input line 1009.
+Package pdftex.def Info: figures/fontes_VB.png  used on input line 1001.
 (pdftex.def)             Requested size: 278.8358pt x 167.08528pt.
  [103] [104]
-Overfull \hbox (9.38791pt too wide) in paragraph at lines 1062--1063
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 1054--1055
 []\T1/lmr/m/n/10.95 Na Sec-ção an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-ção en-tre a pá-gina \T1/lmr/m/it/10.95 ohm.html
  []
 
 <figures/ohm_diagramaCUTRelay.drawio.png, id=3179, 1640.1275pt x 591.20876pt>
 File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUTRelay.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1069.
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1061.
 (pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
 <figures/login.png, id=3181, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 1080.
+Package pdftex.def Info: figures/login.png  used on input line 1072.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
 <figures/ohm_diagramaCUT.drawio.png, id=3182, 1640.1275pt x 560.0925pt>
 File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUT.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1087.
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1079.
 (pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
 [105 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)>]
 <figures/menupage.png, id=3196, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
-Package pdftex.def Info: figures/menupage.png  used on input line 1104.
+Package pdftex.def Info: figures/menupage.png  used on input line 1096.
 (pdftex.def)             Requested size: 398.33861pt x 229.9719pt.
  [106 <./figures/ohm_diagramaCUT.drawio.png> <./figures/menupage.png (PNG copy)>]) [107]
 \openout2 = `chapters/chapter5.aux'.
@@ -1980,9 +1980,6 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7C2E4C9BCB9473A9795ECF23616561BD;12735.
 Package rerunfilecheck Info: File `main.brf' has not changed.
@@ -2123,7 +2120,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (176 pages, 19721084 bytes).
+Output written on main.pdf (176 pages, 19720380 bytes).
 PDF statistics:
  4202 PDF objects out of 4296 (max. 8388607)
  3697 compressed objects within 37 object streams
