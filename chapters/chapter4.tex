@@ -673,7 +673,7 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 
 Nestas duas experiências pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
 
-Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}. 
+Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo. 
 
 \begin{figure}[hbtp]
 	\centering
@@ -691,25 +691,40 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 
 A tensão de \textit{ripple} é uma componente dependente do tempo que surge à saída do filtro do rectificador - Bloco 3 - sendo que terá de ser minimizada, de forma a estabilizar o valor da tensão de saída \acrshort{cc} - Bloco 4. \cite{sedrasmith} 
 
-A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem.
+A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{figures/sedra_ripple.png}
-	\caption{Forma de onda à saída do Bloco 3 - Filtragem \cite{sedrasmith}}
+	\caption{Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite{sedrasmith}}
 	\label{fig:sedraripple}
 \end{figure}
 
+A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vripple}:
 
-De uma forma mais pormenorizada pode ver-se, na Figura (...), a forma de onda à saída do filtro do rectificador de meia onda
+\begin{equation} \label{eq:vripple}
+	V_{r} = \frac{V_{P}}{fRC}
+\end{equation}
 
-Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificadoresimplificado}.
+Observa-se, através da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{O}$, ou seja, a tensão à saída do filtro é practicamente constante e dada por, $v_{O} = V_{P} - \dfrac{1}{2}V_{r}$.
+
+A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco de Filtragem, no que diz respeito a um rectificador de meia onda. No entanto, pode-se tornar este circuito mais eficiente se se usar a rectificação de onda completa. Como pode ser visto na Figura \ref{fig:sedraripplecompleta}, a tensão de \textit{ripple} é menor, já que a frequência de onda completa é o dobro da frequência da onda de meia onda.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/MeiaOndaSimplificado.png}
+	\includegraphics[width=0.8\textwidth]{figures/sedra_ripple_OC.png}
+	\caption{Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite{sedrasmith}}
+	\label{fig:sedraripplecompleta}
+
+	Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificadoresimplificado}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple_OC.png}
 	\caption{Esquema dos rectificadores simplificado}
 	\label{fig:rectificadoresimplificado}
 \end{figure}
+
+
 
 O Bloco 1 difere nas duas experiências por que, tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 4 não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple} com a frequência. \textbf{verificar se com a FREQUÊNCIA}.
 
