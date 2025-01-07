@@ -694,7 +694,7 @@ A tensão de \textit{ripple} é uma componente dependente do tempo que surge à 
 A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/sedra_ripple.png}
+	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple.png}
 	\caption{Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite{sedrasmith}}
 	\label{fig:sedraripple}
 \end{figure}
@@ -705,30 +705,45 @@ A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vr
 	V_{r} = \frac{V_{P}}{fRC}
 \end{equation}
 
-Observa-se, através da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{O}$, ou seja, a tensão à saída do filtro é practicamente constante e dada por, $v_{O} = V_{P} - \dfrac{1}{2}V_{r}$.
+Observa-se, através da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{O}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
 
-A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco de Filtragem, no que diz respeito a um rectificador de meia onda. No entanto, pode-se tornar este circuito mais eficiente se se usar a rectificação de onda completa. Como pode ser visto na Figura \ref{fig:sedraripplecompleta}, a tensão de \textit{ripple} é menor, já que a frequência de onda completa é o dobro da frequência da onda de meia onda.
+\begin{equation} \label{eq:tensaosaida}
+	v_{O} = V_{P} - \dfrac{1}{2}V_{r}	
+\end{equation}
 
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/sedra_ripple_OC.png}
-	\caption{Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite{sedrasmith}}
-	\label{fig:sedraripplecompleta}
-
-	Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificadoresimplificado}.
+No entanto, pode-se tornar este circuito mais eficiente se se usar a rectificação de onda completa e como pode ser visto na Figura \ref{fig:sedraripplecompleta}, a frequência do \textit{ripple} é o dobro da frequência da onda de entrada.
 
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple_OC.png}
+	\caption{Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite{sedrasmith}}
+	\label{fig:sedraripplecompleta}
+\end{figure}
+
+Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela Equação \ref{eq:vrippleOC}:
+
+\begin{equation} \label{eq:vrippleOC}
+	V_{r} = \frac{V_{P}}{2fRC}
+\end{equation}
+
+São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}.
+
+Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificadoresimplificado}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/MeiaOndaSimplificado.png}
 	\caption{Esquema dos rectificadores simplificado}
 	\label{fig:rectificadoresimplificado}
 \end{figure}
 
+--- se calhar nem explicava os blocos ---
 
-
-O Bloco 1 difere nas duas experiências por que, tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 4 não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple} com a frequência. \textbf{verificar se com a FREQUÊNCIA}.
+O Bloco 1 difere nas duas experiências por que, tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 4 não está montado/projectado, visto que o objectivo é o estudo da variação da tensão de \textit{ripple} com a frequência. \textbf{verificar se com a FREQUÊNCIA o rectificador de meia onda, como etá alimentado pelo gerador de sinal, permite acaliar como varia o ripple com a frequência. Já o rectificador de onda completa trabalha `frequencia da rede, 60 hz'}.
 
 No que se refere ao Bloco 2, a rectificação é feita utilizando dois circuitos, sendo que o rectificador de meia onda é composto por um díodo e o rectificador de onda completa por uma ponte rectificadora - rectângulos tracejados a vermelho. O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. (Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof)
+
+--- passava para esta parte ---
 
 Os relés foram projectados de forma a isolar totalmente os blocos dos circuitos, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$. \textbf{Talve rever esta justificação, já que, aparentemente, o relé K4 era dispensavel.}
 
