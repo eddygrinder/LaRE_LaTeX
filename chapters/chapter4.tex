@@ -739,7 +739,7 @@ Os esquemas simplificados que compõem os diversos blocos estão representados n
 
 Os relés foram projectados de forma a isolar totalmente os blocos dos circuitos, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$. \textbf{Talve rever esta justificação, já que, aparentemente, o relé K4 era dispensavel.}
 
-Como exemplo, no caso de o utilizador ou aluno pretender estudar qualquer um dos rectificadores, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomeiaonda}. Neste exemplo, o filtro do rectificador de meia onda é composto por $R_{1}/C_{1}$ e o filtro do rectificador de onda completa é composto por $R_{2}/C_{2}$
+A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}. Se se pretender estudar qualquer uma das experiências, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomeiaonda}. Neste exemplo, o filtro do rectificador de meia onda é composto por $R_{1}/C_{1}$ e o filtro do rectificador de onda completa é composto por $R_{2}/C_{2}$
 
 \begin{table}[htb]
 	\centering
@@ -759,15 +759,12 @@ Como exemplo, no caso de o utilizador ou aluno pretender estudar qualquer um dos
 	\end{tabular}
 \end{table}
 
-Como se pode ver pela Figura (...), a implementação destas duas experiências foi feita de forma a que o utilizador ou aluno possa estudar e avaliar os rectificadores consoante as quatro combinações possíveis, dos pares resistência/condensador, podendo também variar o valor da frequência entre 50 e 2000Hz.
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
 \subsubsection{Filtro Passa-alto}
 \label{sec:passa-alto}
-\textbf{Eventualmente os filtros podem ficar na mesma secção}
-\subsubsection{Filtro Passa-baixo}
-\label{sec:passa-baixo}
+Tendo em conta que os retificadores já se encontravam projetados e testados, considerou-se vantajoso integrar no \acrshort{lare} duas experiências complementares, destinadas ao estudo prático de filtros passa-alto e passa-baixo.
 
 %Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se, ao nível do \textit{software}, um desafio no que toca à sua implementação.
 
