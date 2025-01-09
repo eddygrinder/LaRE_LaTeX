@@ -759,16 +759,28 @@ A implementação destas duas experiências foi feita de forma a que se possa es
 	\end{tabular}
 \end{table}
 
-
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
 \subsubsection{Filtro Passa-alto}
 \label{sec:passa-alto}
-Tendo em conta que os rectificadores já se encontravam projectados e testados, considerou-se vantajoso integrar no \acrshort{lare} duas experiências complementares, destinadas ao estudo práctico de filtros passa-alto e passa-baixo. As modificações feitas foram relativamente simples, uma vez que os blocos de rectificação e filtragem são comuns às duas experiências. Na Figura \ref{fig:filtragemsimplificado} está representado o esquema simplificado dos filtros.
+
+\textbf{ATENÇÃO, NÃO ESQUECER REFERIR QUE NOS FILTROS TAMBÉM SE PODE ESTUDAR A RESPOSTA EM FREQUÊNCIA}
+
+Tendo em conta que os rectificadores já se encontravam projectados e testados, considerou-se vantajoso integrar no \acrshort{lare} duas experiências complementares, destinadas ao estudo práctico de filtros passa-alto e passa-baixo. As modificações feitas foram relativamente simples, uma vez que os blocos de rectificação e filtragem são comuns às duas experiências. Na Figura \ref{fig:filtrosesqgeral} estão representados os esquemas simplificados dos filtros passa-baixo e passa-alto.
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo]{{\includegraphics[width=6cm]{figures/filtro_PB_simplificado.png} }}%
+		\qquad
+		\subfloat[\centering Filtro passa-alto]{{\includegraphics[width=6cm]{figures/filtro_PA_simplificado.png} }}%
+		\caption{Esquemas simplificados dos filtros}%
+		\label{fig:filtrosesqgeral}%
+	\end{figure}
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/filtros_simplificado.png}
+	\includegraphics[width=0.6\textwidth]{figures/filtros_simplificado.png}
 	\caption{Esquema dos filtros simplificado}
 	\label{fig:filtragemsimplificado}
 \end{figure}
