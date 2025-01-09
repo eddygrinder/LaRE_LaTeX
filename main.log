@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.3)  8 JAN 2025 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.3)  9 JAN 2025 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/grinder/Documents/GitHub/LaRE_LaTeX/main
-(/home/grinder/Documents/GitHub/LaRE_LaTeX/main.tex
+**/home/6ea6en6/Documents/LaRE_LaTeX/main
+(/home/6ea6en6/Documents/LaRE_LaTeX/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (./DEEclass.cls
@@ -857,11 +857,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing basic data for english
 (babel)             from babel-en.ini. Reported on input line 11.
-)) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux
-
-LaTeX Warning: Label `fig:rectificadoresimplificado' multiply defined.
-
-) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/appendixA.aux))
+)) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/appendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -1649,62 +1645,58 @@ File: figures/MeiaOndaSimplificado.png Graphic file (type png)
 Package pdftex.def Info: figures/MeiaOndaSimplificado.png  used on input line 735.
 (pdftex.def)             Requested size: 278.8358pt x 201.2607pt.
  [93 <./figures/sedra_ripple_OC.png>] [94 <./figures/MeiaOndaSimplificado.png>]
-Overfull \hbox (14.62833pt too wide) in paragraph at lines 767--768
-\T1/lmr/m/n/10.95 Tendo em conta que os re-ti-fi-ca-do-res já se en-con-tra-vam pro-je-ta-dos e tes-ta-dos, considerou-
- []
-
-<figures/filtros.png, id=2999, 807.015pt x 391.4625pt>
-File: figures/filtros.png Graphic file (type png)
-<use figures/filtros.png>
-Package pdftex.def Info: figures/filtros.png  used on input line 771.
-(pdftex.def)             Requested size: 278.8358pt x 135.25778pt.
-[95 <./figures/filtros.png>] [96]
-<figures/ohm_diagrama.drawio.png, id=3045, 1640.1275pt x 1308.89pt>
+<figures/filtros_simplificado.png, id=3000, 419.5675pt x 328.22626pt>
+File: figures/filtros_simplificado.png Graphic file (type png)
+<use figures/filtros_simplificado.png>
+Package pdftex.def Info: figures/filtros_simplificado.png  used on input line 771.
+(pdftex.def)             Requested size: 278.8358pt x 218.13249pt.
+ [95 <./figures/filtros_simplificado.png>] [96]
+<figures/ohm_diagrama.drawio.png, id=3046, 1640.1275pt x 1308.89pt>
 File: figures/ohm_diagrama.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 847.
+Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 848.
 (pdftex.def)             Requested size: 398.33861pt x 317.89476pt.
-<figures/ohm_diagrama_pormenor.drawio.png, id=3048, 1640.1275pt x 572.1375pt>
+<figures/ohm_diagrama_pormenor.drawio.png, id=3049, 1640.1275pt x 572.1375pt>
 File: figures/ohm_diagrama_pormenor.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama_pormenor.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 862.
+Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 863.
 (pdftex.def)             Requested size: 398.33861pt x 138.95706pt.
  [97] [98 <./figures/ohm_diagrama.drawio.png (PNG copy)>]
-<figures/parametros_desabilitados.png, id=3060, 379.4175pt x 152.06813pt>
+<figures/parametros_desabilitados.png, id=3061, 379.4175pt x 152.06813pt>
 File: figures/parametros_desabilitados.png Graphic file (type png)
 <use figures/parametros_desabilitados.png>
-Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 898.
+Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 899.
 (pdftex.def)             Requested size: 278.8358pt x 111.75829pt.
  [99 <./figures/ohm_diagrama_pormenor.drawio.png>] [100 <./figures/parametros_desabilitados.png>] [101] [102]
 File: figures/fontes_VB.png Graphic file (type png)
 <use figures/fontes_VB.png>
-Package pdftex.def Info: figures/fontes_VB.png  used on input line 1006.
+Package pdftex.def Info: figures/fontes_VB.png  used on input line 1007.
 (pdftex.def)             Requested size: 278.8358pt x 167.08528pt.
  [103] [104]
-Overfull \hbox (9.38791pt too wide) in paragraph at lines 1059--1060
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 1060--1061
 []\T1/lmr/m/n/10.95 Na Sec-ção an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-ção en-tre a pá-gina \T1/lmr/m/it/10.95 ohm.html
  []
 
-<figures/ohm_diagramaCUTRelay.drawio.png, id=3178, 1640.1275pt x 591.20876pt>
+<figures/ohm_diagramaCUTRelay.drawio.png, id=3179, 1640.1275pt x 591.20876pt>
 File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUTRelay.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1066.
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1067.
 (pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
-<figures/login.png, id=3180, 1541.76pt x 353.32pt>
+<figures/login.png, id=3181, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 1077.
+Package pdftex.def Info: figures/login.png  used on input line 1078.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
-<figures/ohm_diagramaCUT.drawio.png, id=3181, 1640.1275pt x 560.0925pt>
+<figures/ohm_diagramaCUT.drawio.png, id=3182, 1640.1275pt x 560.0925pt>
 File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUT.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1084.
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1085.
 (pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
 [105 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)>]
-<figures/menupage.png, id=3195, 1168.365pt x 674.52pt>
+<figures/menupage.png, id=3196, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
-Package pdftex.def Info: figures/menupage.png  used on input line 1101.
+Package pdftex.def Info: figures/menupage.png  used on input line 1102.
 (pdftex.def)             Requested size: 398.33861pt x 229.9719pt.
  [106 <./figures/ohm_diagramaCUT.drawio.png> <./figures/menupage.png (PNG copy)>]) [107]
 \openout2 = `chapters/chapter5.aux'.
@@ -1734,7 +1726,7 @@ Cap\'{\i }tulo 6.
 \openout2 = `chapters/chapter7.aux'.
 
  (./chapters/chapter7.tex
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3226, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3227, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf  used on input line 1.
@@ -1743,7 +1735,7 @@ File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf  used on input line 1.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3229, page=1, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3230, page=1, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
@@ -1770,7 +1762,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on i
 
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3271, page=2, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3272, page=2, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
@@ -1786,7 +1778,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on i
  [113
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3294, page=3, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3295, page=3, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
@@ -1802,7 +1794,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on i
  [114
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3299, page=4, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3300, page=4, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
@@ -1818,7 +1810,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on i
  [115
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3305, page=5, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3306, page=5, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
@@ -1834,7 +1826,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on i
  [116
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3313, page=6, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3314, page=6, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
@@ -1850,7 +1842,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on i
  [117
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3320, page=7, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3321, page=7, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
@@ -1866,7 +1858,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on i
  [118
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3339, page=8, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3340, page=8, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
@@ -1882,7 +1874,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on i
  [119
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3346, page=9, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3347, page=9, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
@@ -1898,7 +1890,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on i
  [120
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3353, page=10, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3354, page=10, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
@@ -1914,7 +1906,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on 
  [121
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3360, page=11, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3361, page=11, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
@@ -1930,7 +1922,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on 
  [122
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3368, page=12, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3369, page=12, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
@@ -1946,7 +1938,7 @@ Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on 
  [123
 
  <./chapters/Datasheet/LaRE_Datasheet.pdf>]
-<chapters/Datasheet/LaRE_datasheet.pdf, id=3377, page=13, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3378, page=13, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
 Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
@@ -1994,22 +1986,19 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 566E5B4C551195445C74EE3E5E2A1A1D;12579.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: DC8931648DC697842E95C86D51901412;15813.
  ) 
 Here is how much of TeX's memory you used:
- 41247 strings out of 476056
- 835604 string characters out of 5793067
+ 41248 strings out of 476056
+ 835701 string characters out of 5793067
  2085187 words of memory out of 5000000
- 61717 multiletter control sequences out of 15000+600000
+ 61718 multiletter control sequences out of 15000+600000
  692313 words of font info for 129 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 110i,21n,131p,2417b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,21n,131p,2410b,1546s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{https://tek.sapo.pt/noticias/computadores/artigos/entrega-de-computadores-a-alunos-e-professores-tem-se-revelado-muito-dificil-de-cumprir} has been referenced but does not exist, replaced by a fixed one
 
@@ -2137,10 +2126,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (176 pages, 19728117 bytes).
+Output written on main.pdf (176 pages, 19727920 bytes).
 PDF statistics:
- 4201 PDF objects out of 4296 (max. 8388607)
- 3695 compressed objects within 37 object streams
+ 4202 PDF objects out of 4296 (max. 8388607)
+ 3696 compressed objects within 37 object streams
  925 named destinations out of 1000 (max. 500000)
  1123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
