@@ -761,10 +761,8 @@ A implementação destas duas experiências foi feita de forma a que se possa es
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
-\subsubsection{Filtro Passa-alto}
-\label{sec:passa-alto}
-
-\textbf{ATENÇÃO, NÃO ESQUECER REFERIR QUE NOS FILTROS TAMBÉM SE PODE ESTUDAR A RESPOSTA EM FREQUÊNCIA}
+\subsubsection{Filtros Passa-Baixo e Passa-alto}
+\label{sec:filtros}
 
 Tendo em conta que os rectificadores já se encontravam projectados e testados, considerou-se vantajoso integrar no \acrshort{lare} duas experiências complementares, destinadas ao estudo práctico de filtros passa-alto e passa-baixo. As modificações feitas foram relativamente simples, uma vez que os blocos de rectificação e filtragem são comuns às duas experiências. Na Figura \ref{fig:filtrosesqgeral} estão representados os esquemas simplificados dos filtros passa-baixo e passa-alto.
 
@@ -778,9 +776,25 @@ Tendo em conta que os rectificadores já se encontravam projectados e testados, 
 		\label{fig:filtrosesqgeral}%
 	\end{figure}
 
+Uma vez que é possível variar a frequência do sinal de entrada, estas experiências permitem estudar a resposta em frequência dos filtros através da análise do Diagrama de \textit{Bode}, aferir a frequência de corte, dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
+A Figura \ref{fig:diagramabode} representa um exemplo do Diagrama de \textit{Bode} de um filtro passa-alto, obtido no \acrshort{lare}.
+
+\begin{equation} \label{eq:frequenciacorte}
+	f_{c} = \frac{1}{2\pi RC}
+\end{equation}
+
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figures/filtros_simplificado.png}
+	\includegraphics[width=0.6\textwidth]{figures/bode_lpf.png}
+	\caption{Diagrama de \textit{Bode} - Filtro passa-alto}
+	\label{fig:diagramabode}
+\end{figure}
+
+O esquema simplificado dos filtros, comandados por dois relés simples, $K_{10}$ e $K_{11}$, está representado na Figura \ref{fig:filtragemsimplificado}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/filtros_simplificado.png}
 	\caption{Esquema dos filtros simplificado}
 	\label{fig:filtragemsimplificado}
 \end{figure}
