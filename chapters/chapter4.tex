@@ -764,14 +764,14 @@ A implementação destas duas experiências foi feita de forma a que se possa es
 \subsubsection{Filtros Passa-Baixo e Passa-alto}
 \label{sec:filtros}
 
-Tendo em conta que os rectificadores já se encontravam projectados e testados, considerou-se vantajoso integrar no \acrshort{lare} duas experiências complementares, destinadas ao estudo práctico de filtros passa-alto e passa-baixo. As modificações feitas foram relativamente simples, uma vez que os blocos de rectificação e filtragem são comuns às duas experiências. Na Figura \ref{fig:filtrosesqgeral} estão representados os esquemas simplificados dos filtros passa-baixo e passa-alto.
+Tendo em conta que os rectificadores já se encontravam projectados e testados, considerou-se vantajoso integrar no \acrshort{lare} duas experiências complementares, destinadas ao estudo práctico de filtros passa-alto e passa-baixo. Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
 
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Filtro passa-baixo]{{\includegraphics[width=6cm]{figures/filtro_PB_simplificado.png} }}%
+		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/filtro_PB_simplificado_trac.png} }}%
 		\qquad
-		\subfloat[\centering Filtro passa-alto]{{\includegraphics[width=6cm]{figures/filtro_PA_simplificado.png} }}%
+		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/filtro_PA_simplificado_trac.png} }}%
 		\caption{Esquemas simplificados dos filtros}%
 		\label{fig:filtrosesqgeral}%
 	\end{figure}
@@ -789,24 +789,16 @@ A possibilidade de variar a frequência do sinal de entrada permite que estas ex
 	\label{fig:diagramabode}
 \end{figure}
 
-Para que estas experiências pudessem ser integradas no circuito, houve a necessidade de se fazer um \textit{bypass} ao díodo $D_{1}$ - rectângulo tracejado vermelho, Figura \ref{fig:rectificadoresimplificado}. 
-Desta forma, conseguiu-se colocar as resistências e condensadores do rectificador, em série com a resistência e condensador do filtro.
-O esquema simplificado dos filtros, comandados por dois relés simples, $K_{10}$ e $K_{11}$, está representado na Figura \ref{fig:filtragemsimplificado}.
+Para integrar essas experiências no circuito, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificadoresimplificado}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
+
+O esquema final simplificado, que inclui, então, o estudo da rectificação de meia onda e dos filtros passa-alto e passa-baixo, está representado na Figura \ref{fig:rectificacao_filtragem_simplificado}.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/filtros_simplificado.png}
-	\caption{Esquema dos filtros simplificado}
-	\label{fig:filtragemsimplificado}
+	\includegraphics[width=0.8\textwidth]{figures/rectificador_filtro_simplificado.png}
+	\caption{Esquema completo - rectificador meia onde e filtros}
+	\label{fig:rectificacao_filtragem_simplificado}
 \end{figure}
-
-<<<<<<< HEAD
-
-
-
-=======
-Para que estas experiências pudessem ser integradas no circuito, houve a necessidade de se fazer um \textit{bypass} ao díodo $D_{1}$. Desta forma, conseguiu-se colocar as resistências e condensadores do rectificador, em série com a resistência e condensador do filtro.
->>>>>>> 8eaf0f68fdd84ecc7d3f67f38abff8c847233568
 
 Explicar agora o funcionamento
 

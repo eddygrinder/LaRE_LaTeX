@@ -163,6 +163,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode:1N4007"
 			(pin_numbers hide)
 			(pin_names hide)
@@ -1003,72 +1124,106 @@
 		)
 	)
 	(junction
-		(at 85.09 19.05)
+		(at 82.55 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fb92670-81fe-48a3-b343-ca30a33f190f")
+	)
+	(junction
+		(at 88.9 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "294c58c8-be7a-41dc-b271-a11fdd8c3a3e")
 	)
 	(junction
-		(at 111.76 19.05)
+		(at 26.67 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ae0894b-ac6c-4d8b-ad8b-d1cea4e13c37")
+	)
+	(junction
+		(at 115.57 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "422cf2cb-3a58-4e32-8e96-e93054f4d738")
 	)
 	(junction
-		(at 93.98 19.05)
+		(at 97.79 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4a2882eb-2a9c-4ab1-a38b-200ae35e37db")
 	)
 	(junction
-		(at 93.98 57.15)
+		(at 97.79 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56d70720-3345-45a4-aaef-848cd131cd08")
 	)
 	(junction
-		(at 102.87 19.05)
+		(at 106.68 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d8ac531-602c-4c5b-bb5f-bb9ddf04ccc4")
 	)
 	(junction
-		(at 111.76 57.15)
+		(at 45.72 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c621a7e-f129-4fe0-a49a-f5017a342abb")
+	)
+	(junction
+		(at 115.57 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99b4816b-0a7b-4fba-a153-4d8173d02df6")
 	)
 	(junction
-		(at 102.87 57.15)
+		(at 74.93 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1315bbd-425d-45f1-becb-0d7168ba7a9f")
+	)
+	(junction
+		(at 106.68 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b88e344d-bc71-4986-af05-aed7703f5938")
 	)
 	(junction
-		(at 85.09 57.15)
+		(at 88.9 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb70e8c2-399d-4195-b75b-ea2302641dbb")
 	)
 	(no_connect
-		(at 81.28 77.47)
+		(at 251.46 142.24)
 		(uuid "07d00499-45e2-468b-8220-1d5a72285ef5")
 	)
 	(no_connect
-		(at 77.47 19.05)
+		(at 80.01 46.99)
 		(uuid "683c55f4-d900-4975-8c8d-179e22543b5d")
 	)
 	(no_connect
-		(at 77.47 57.15)
+		(at 80.01 85.09)
 		(uuid "7c702c86-cd55-4bf8-96c2-53f9506e331e")
 	)
 	(no_connect
-		(at 81.28 87.63)
+		(at 251.46 152.4)
 		(uuid "8a06d59d-3fff-4af0-854e-4014275614b5")
 	)
 	(wire
 		(pts
-			(xy 40.64 45.72) (xy 55.88 45.72)
+			(xy 74.93 27.94) (xy 74.93 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04daed1b-fea0-43a6-96c3-d656e08c889f")
+	)
+	(wire
+		(pts
+			(xy 41.91 85.09) (xy 57.15 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1078,7 +1233,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 41.91) (xy 111.76 45.72)
+			(xy 77.47 46.99) (xy 82.55 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d5c0193-e490-4b2d-8807-6bbad8aa5dd9")
+	)
+	(wire
+		(pts
+			(xy 115.57 69.85) (xy 115.57 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1088,17 +1253,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 19.05) (xy 85.09 19.05)
+			(xy 62.23 36.83) (xy 74.93 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1401bc4e-20bb-46cd-8fd1-166f9535a505")
+		(uuid "0faf1e6a-72d7-4994-b3f7-c2e19d885877")
 	)
 	(wire
 		(pts
-			(xy 40.64 69.85) (xy 54.61 69.85)
+			(xy 210.82 134.62) (xy 224.79 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1108,7 +1273,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 77.47) (xy 62.23 77.47)
+			(xy 236.22 142.24) (xy 232.41 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1118,7 +1283,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 78.74) (xy 26.67 85.09)
+			(xy 196.85 143.51) (xy 196.85 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1128,7 +1293,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 30.48) (xy 57.15 30.48)
+			(xy 54.61 46.99) (xy 57.15 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1138,7 +1303,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 69.85) (xy 26.67 76.2)
+			(xy 196.85 134.62) (xy 196.85 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1148,7 +1313,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 41.91) (xy 93.98 45.72)
+			(xy 97.79 69.85) (xy 97.79 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1158,7 +1323,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 57.15) (xy 93.98 57.15)
+			(xy 88.9 85.09) (xy 97.79 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1168,17 +1333,17 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 45.72) (xy 66.04 45.72)
+			(xy 82.55 27.94) (xy 82.55 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "34b74043-715e-485f-8438-3956d91a80fb")
+		(uuid "2b07083f-2dac-4dcb-ad60-eb907874cb09")
 	)
 	(wire
 		(pts
-			(xy 40.64 85.09) (xy 54.61 85.09)
+			(xy 210.82 149.86) (xy 224.79 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1188,7 +1353,37 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 19.05) (xy 102.87 19.05)
+			(xy 74.93 26.67) (xy 74.93 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca1b796-ae31-4527-bc2c-73089665fecb")
+	)
+	(wire
+		(pts
+			(xy 62.23 19.05) (xy 74.93 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e79ef91-30b1-4c8f-895a-7cb3d3d05beb")
+	)
+	(wire
+		(pts
+			(xy 74.93 27.94) (xy 82.55 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41eb9455-2958-4696-b2b2-03f4f3f14cfb")
+	)
+	(wire
+		(pts
+			(xy 97.79 46.99) (xy 106.68 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1198,7 +1393,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 77.47) (xy 46.99 87.63)
+			(xy 217.17 142.24) (xy 217.17 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1208,7 +1403,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 19.05) (xy 93.98 19.05)
+			(xy 88.9 46.99) (xy 97.79 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1218,7 +1413,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 85.09) (xy 30.48 85.09)
+			(xy 196.85 149.86) (xy 200.66 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1228,7 +1423,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 45.72) (xy 30.48 45.72)
+			(xy 26.67 85.09) (xy 31.75 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1238,7 +1433,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 57.15) (xy 111.76 57.15)
+			(xy 106.68 85.09) (xy 115.57 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1248,7 +1443,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 19.05) (xy 111.76 20.32)
+			(xy 115.57 46.99) (xy 115.57 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1258,7 +1453,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 57.15) (xy 111.76 57.15)
+			(xy 129.54 85.09) (xy 115.57 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1268,7 +1463,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 30.48) (xy 30.48 30.48)
+			(xy 26.67 46.99) (xy 30.48 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1278,7 +1473,27 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 57.15) (xy 102.87 57.15)
+			(xy 45.72 27.94) (xy 45.72 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72dd6b2b-1afe-433c-910c-fe5c3501dc15")
+	)
+	(wire
+		(pts
+			(xy 45.72 36.83) (xy 52.07 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb1a560-468d-4ee8-ba83-c6acc4e766b2")
+	)
+	(wire
+		(pts
+			(xy 97.79 85.09) (xy 106.68 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1288,7 +1503,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 55.88) (xy 102.87 57.15)
+			(xy 106.68 83.82) (xy 106.68 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1298,7 +1513,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 39.37) (xy 26.67 45.72)
+			(xy 26.67 67.31) (xy 26.67 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1308,7 +1523,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 30.48) (xy 111.76 34.29)
+			(xy 115.57 58.42) (xy 115.57 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1318,7 +1533,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 43.18) (xy 85.09 45.72)
+			(xy 88.9 71.12) (xy 88.9 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1328,7 +1543,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 30.48) (xy 85.09 33.02)
+			(xy 88.9 58.42) (xy 88.9 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1338,7 +1553,17 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 39.37) (xy 26.67 39.37)
+			(xy 67.31 85.09) (xy 88.9 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b21272b-952d-4f18-b0c8-716ebd4b684c")
+	)
+	(wire
+		(pts
+			(xy 24.13 67.31) (xy 26.67 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1348,7 +1573,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 43.18) (xy 102.87 45.72)
+			(xy 106.68 71.12) (xy 106.68 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1358,7 +1583,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 19.05) (xy 111.76 19.05)
+			(xy 129.54 46.99) (xy 115.57 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1368,7 +1593,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 77.47) (xy 81.28 77.47)
+			(xy 246.38 142.24) (xy 251.46 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1378,7 +1603,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 55.88) (xy 85.09 57.15)
+			(xy 88.9 83.82) (xy 88.9 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1388,7 +1613,27 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 36.83) (xy 26.67 36.83)
+			(xy 82.55 46.99) (xy 88.9 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1723a69-db67-4dbd-bb2c-082d30cc889a")
+	)
+	(wire
+		(pts
+			(xy 45.72 19.05) (xy 45.72 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b77c8e69-00bb-42d8-a8b9-73345f45aa7c")
+	)
+	(wire
+		(pts
+			(xy 24.13 60.96) (xy 26.67 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1398,7 +1643,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 30.48) (xy 67.31 30.48)
+			(xy 64.77 46.99) (xy 67.31 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1408,7 +1653,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 87.63) (xy 66.04 87.63)
+			(xy 217.17 152.4) (xy 236.22 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1418,7 +1663,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 36.83) (xy 26.67 30.48)
+			(xy 26.67 60.96) (xy 26.67 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1428,7 +1673,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 19.05) (xy 111.76 19.05)
+			(xy 106.68 46.99) (xy 115.57 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1438,27 +1683,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 57.15) (xy 85.09 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb68275a-4d72-44ec-b0a3-284c7b36a79f")
-	)
-	(wire
-		(pts
-			(xy 77.47 30.48) (xy 77.47 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf76fe21-a713-4691-a130-d76d730cc4cc")
-	)
-	(wire
-		(pts
-			(xy 22.86 78.74) (xy 26.67 78.74)
+			(xy 193.04 143.51) (xy 196.85 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1468,7 +1693,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 19.05) (xy 102.87 20.32)
+			(xy 106.68 46.99) (xy 106.68 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1478,7 +1703,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 69.85) (xy 30.48 69.85)
+			(xy 196.85 134.62) (xy 200.66 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1488,7 +1713,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 87.63) (xy 81.28 87.63)
+			(xy 246.38 152.4) (xy 251.46 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1498,7 +1723,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 19.05) (xy 93.98 20.32)
+			(xy 97.79 46.99) (xy 97.79 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1508,7 +1733,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 55.88) (xy 111.76 57.15)
+			(xy 26.67 27.94) (xy 26.67 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e092f0de-9b99-4b7c-b8ec-927495a20000")
+	)
+	(wire
+		(pts
+			(xy 115.57 83.82) (xy 115.57 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1518,7 +1753,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 30.48) (xy 102.87 33.02)
+			(xy 106.68 58.42) (xy 106.68 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1528,7 +1763,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 30.48) (xy 44.45 30.48)
+			(xy 45.72 27.94) (xy 26.67 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e46e7539-fa1e-4721-bce2-f151b61eae13")
+	)
+	(wire
+		(pts
+			(xy 40.64 46.99) (xy 44.45 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1538,7 +1783,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 19.05) (xy 85.09 20.32)
+			(xy 88.9 46.99) (xy 88.9 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1548,7 +1793,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 30.48) (xy 93.98 34.29)
+			(xy 97.79 58.42) (xy 97.79 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1558,7 +1803,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 76.2) (xy 26.67 76.2)
+			(xy 193.04 140.97) (xy 196.85 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1568,17 +1813,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 57.15) (xy 77.47 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0451cd7-871b-4fd1-abd8-9471ed3e1814")
-	)
-	(wire
-		(pts
-			(xy 93.98 55.88) (xy 93.98 57.15)
+			(xy 97.79 83.82) (xy 97.79 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1586,9 +1821,32 @@
 		)
 		(uuid "f4333399-16b0-4315-b591-15544751c5fc")
 	)
+	(wire
+		(pts
+			(xy 45.72 19.05) (xy 52.07 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9ddcd1b-2bdc-441e-8026-9c50ad31d2ed")
+	)
 	(rectangle
-		(start 81.28 16.51)
-		(end 118.11 59.69)
+		(start 41.91 41.91)
+		(end 78.74 50.8)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 51390a31-4b1e-4507-ba46-621a0883e28d)
+	)
+	(rectangle
+		(start 85.09 44.45)
+		(end 121.92 87.63)
 		(stroke
 			(width 0.3)
 			(type dash)
@@ -1600,21 +1858,8 @@
 		(uuid 60741044-5f09-4c99-8569-768deaf4b431)
 	)
 	(rectangle
-		(start 43.18 24.13)
-		(end 78.74 33.02)
-		(stroke
-			(width 0.3)
-			(type dash)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7c643179-6da5-4ef2-9430-f69dd774a6a6)
-	)
-	(rectangle
-		(start 29.718 64.262)
-		(end 42.418 90.932)
+		(start 199.898 129.032)
+		(end 212.598 155.702)
 		(stroke
 			(width 0.3)
 			(type dash)
@@ -1626,8 +1871,8 @@
 		(uuid 7de246fc-a5d2-4ed1-b060-52b583ee98c0)
 	)
 	(rectangle
-		(start 44.196 64.516)
-		(end 77.724 90.932)
+		(start 214.376 129.286)
+		(end 247.904 155.702)
 		(stroke
 			(width 0.3)
 			(type dash)
@@ -1638,44 +1883,9 @@
 		)
 		(uuid 9d9170f4-eb8d-48b8-8a96-4ce5fc77a8ba)
 	)
-	(rectangle
-		(start 29.21 24.13)
-		(end 41.91 50.8)
-		(stroke
-			(width 0.3)
-			(type dash)
-			(color 0 0 132 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid af0b9240-dfff-4cdb-8268-094b91e27879)
-	)
-	(text "Meia Onda"
+	(text "Gerador de sinal"
 		(exclude_from_sim no)
-		(at 48.006 21.082 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-			)
-		)
-		(uuid "08c120ee-a03c-4548-9753-7c829909faa7")
-	)
-	(text "Filtragem (Comum)"
-		(exclude_from_sim no)
-		(at 102.362 62.484 0)
-		(effects
-			(font
-				(size 2 2)
-				(bold yes)
-			)
-		)
-		(uuid "0ff39388-3179-4779-a007-2eb6cf845e32")
-	)
-	(text "Gerador de \nsinal"
-		(exclude_from_sim no)
-		(at 21.844 41.91 0)
+		(at 29.718 64.262 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1685,7 +1895,7 @@
 	)
 	(text "Onda Completa"
 		(exclude_from_sim no)
-		(at 53.848 93.98 0)
+		(at 224.028 158.75 0)
 		(effects
 			(font
 				(size 2 2)
@@ -1695,7 +1905,7 @@
 		(uuid "40e4471b-fd84-4745-b898-41db926bc32a")
 	)
 	(label "B"
-		(at 81.28 87.63 180)
+		(at 251.46 152.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1708,7 +1918,7 @@
 		(uuid "25d2a4f5-aefa-42d9-ae52-419f79c9418f")
 	)
 	(label "v_{out}+"
-		(at 125.73 19.05 0)
+		(at 129.54 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1719,7 +1929,7 @@
 		(uuid "38022552-eb5b-4093-a8aa-4c5e72e2d443")
 	)
 	(label "transf-"
-		(at 22.86 78.74 180)
+		(at 193.04 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1729,8 +1939,19 @@
 		)
 		(uuid "4ac17171-d148-4e91-a831-4eddb3ee54be")
 	)
+	(label "v_{in}"
+		(at 26.67 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4bece4af-cdc7-47ad-b867-5199343f5a22")
+	)
 	(label "B"
-		(at 77.47 57.15 180)
+		(at 80.01 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1738,12 +1959,12 @@
 				(thickness 0.4)
 				(bold yes)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "633eb6d1-7c74-4bc1-83a3-d0e4e77df5f8")
 	)
 	(label "transf+"
-		(at 22.86 76.2 180)
+		(at 193.04 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1753,8 +1974,8 @@
 		)
 		(uuid "767f8208-7354-4de1-95c4-4e3799f0629e")
 	)
-	(label "V_{G+}"
-		(at 24.13 36.83 180)
+	(label "v_{g+}"
+		(at 24.13 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1765,7 +1986,7 @@
 		(uuid "8d23cd63-7aad-441e-8e81-d66ea8d4b81d")
 	)
 	(label "v_{out}-"
-		(at 125.73 57.15 0)
+		(at 129.54 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1776,7 +1997,7 @@
 		(uuid "8f8c1fd4-e7b5-40ce-8f94-2341b2499746")
 	)
 	(label "A"
-		(at 77.47 19.05 180)
+		(at 80.01 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1784,12 +2005,12 @@
 				(thickness 0.4)
 				(bold yes)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "9c55b47c-8f51-4d7e-bf07-d6806d58908d")
 	)
-	(label "V_{G-}"
-		(at 24.13 39.37 180)
+	(label "v_{g-}"
+		(at 24.13 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1800,7 +2021,7 @@
 		(uuid "b15013d2-bc51-4bbd-8c5d-68c70ceec396")
 	)
 	(label "A"
-		(at 81.28 77.47 180)
+		(at 251.46 142.24 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1814,7 +2035,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 71.12 77.47 0)
+		(at 241.3 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1822,7 +2043,7 @@
 		(dnp no)
 		(uuid "07bc4613-7266-409f-9d3c-0a26122a4441")
 		(property "Reference" "K_{5a}"
-			(at 69.342 75.438 0)
+			(at 239.522 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1830,7 +2051,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 71.12 73.66 0)
+			(at 241.3 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1839,7 +2060,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 77.47 0)
+			(at 241.3 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1848,7 +2069,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 77.47 0)
+			(at 241.3 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1857,7 +2078,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 71.12 77.47 0)
+			(at 241.3 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1882,7 +2103,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 35.56 69.85 0)
+		(at 205.74 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1890,7 +2111,7 @@
 		(dnp no)
 		(uuid "1f5f7dcb-0bcd-4a92-a1eb-9a2efcefbd90")
 		(property "Reference" "K_{2a}"
-			(at 33.782 67.818 0)
+			(at 203.962 132.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1898,7 +2119,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 35.56 66.04 0)
+			(at 205.74 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1907,7 +2128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 69.85 0)
+			(at 205.74 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1916,7 +2137,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 69.85 0)
+			(at 205.74 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1925,7 +2146,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 35.56 69.85 0)
+			(at 205.74 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1950,7 +2171,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 35.56 85.09 0)
+		(at 205.74 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1958,7 +2179,7 @@
 		(dnp no)
 		(uuid "1fe13891-f2cc-4643-a6ea-d10e8c0d9c56")
 		(property "Reference" "K_{2b}"
-			(at 33.782 83.058 0)
+			(at 203.962 147.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1966,7 +2187,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 35.56 81.28 0)
+			(at 205.74 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1975,7 +2196,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 85.09 0)
+			(at 205.74 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1984,7 +2205,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 85.09 0)
+			(at 205.74 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1993,7 +2214,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 35.56 85.09 0)
+			(at 205.74 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2017,33 +2238,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 93.98 25.4 90)
+		(lib_id "Device:R")
+		(at 74.93 22.86 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2db6f876-5900-48ce-ac86-05df770473a2")
-		(property "Reference" "K_{7a}"
-			(at 91.44 27.178 0)
+		(uuid "24943332-da44-4e40-866f-a6f141f88dcb")
+		(property "Reference" "R3"
+			(at 73.152 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SW_SPST"
-			(at 90.17 25.4 0)
+		(property "Value" "1K"
+			(at 78.994 21.336 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 93.98 25.4 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal"
+			(at 76.708 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2052,7 +2275,75 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 25.4 0)
+			(at 74.93 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28613f68-1368-4b5f-86f3-cba2f543b2d6")
+		)
+		(pin "2"
+			(uuid "cc920b82-390c-4cdc-a405-2c97fcbc52a5")
+		)
+		(instances
+			(project "meia_onda_simplificado"
+				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 97.79 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2db6f876-5900-48ce-ac86-05df770473a2")
+		(property "Reference" "K_{7a}"
+			(at 95.25 55.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2061,7 +2352,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 93.98 25.4 0)
+			(at 97.79 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2086,7 +2377,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 35.56 30.48 0)
+		(at 35.56 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2094,7 +2385,7 @@
 		(dnp no)
 		(uuid "3207e7e4-835b-4996-b0b8-34ea7b1e6c5a")
 		(property "Reference" "K_{1a}"
-			(at 35.052 27.686 0)
+			(at 35.052 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2102,7 +2393,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 35.56 26.67 0)
+			(at 35.56 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2111,7 +2402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 30.48 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2120,7 +2411,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 30.48 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2129,7 +2420,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 35.56 30.48 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2154,7 +2445,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Elektuur:R")
-		(at 102.87 38.1 0)
+		(at 106.68 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2162,7 +2453,7 @@
 		(dnp no)
 		(uuid "5495008e-8953-45f7-88db-e6464ba77826")
 		(property "Reference" "R2"
-			(at 104.902 35.306 0)
+			(at 108.712 63.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2171,7 +2462,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 105.41 39.3699 0)
+			(at 109.22 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2181,7 +2472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 38.1 0)
+			(at 106.68 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2190,7 +2481,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 38.1 0)
+			(at 106.68 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2199,7 +2490,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 102.87 38.1 0)
+			(at 106.68 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2208,7 +2499,7 @@
 			)
 		)
 		(property "Indicator" "+"
-			(at 99.695 34.925 0)
+			(at 103.505 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2217,7 +2508,7 @@
 			)
 		)
 		(property "Rating" "W"
-			(at 105.41 41.275 0)
+			(at 109.22 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2243,15 +2534,15 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 35.56 45.72 0)
+		(at 57.15 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "76a6717c-1740-4a7d-924a-ed9ea7b11609")
-		(property "Reference" "K_{1b}"
-			(at 34.798 42.926 0)
+		(uuid "55e356c9-cc66-43cd-a05a-93e26baad124")
+		(property "Reference" "K_{11}"
+			(at 56.134 34.544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2259,7 +2550,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 35.56 41.91 0)
+			(at 57.15 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,7 +2559,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 45.72 0)
+			(at 57.15 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2277,7 +2568,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 45.72 0)
+			(at 57.15 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2286,7 +2577,75 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 35.56 45.72 0)
+			(at 57.15 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ce7b290-f1b2-4fc2-8936-70bc83767c7a")
+		)
+		(pin "1"
+			(uuid "cc3d624d-6e97-4241-a3bf-e95245ea14ab")
+		)
+		(instances
+			(project "meia_onda_simplificado"
+				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
+					(reference "K_{11}")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 36.83 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76a6717c-1740-4a7d-924a-ed9ea7b11609")
+		(property "Reference" "K_{1b}"
+			(at 36.068 82.296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 36.83 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 36.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 36.83 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2311,7 +2670,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 93.98 50.8 90)
+		(at 97.79 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2319,7 +2678,7 @@
 		(dnp no)
 		(uuid "7920c9ac-693a-4e7a-9a2a-acfdb3833d86")
 		(property "Reference" "K_{7b}"
-			(at 91.948 52.578 0)
+			(at 95.758 80.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2327,7 +2686,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 90.17 50.8 0)
+			(at 93.98 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2336,7 +2695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 50.8 0)
+			(at 97.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2345,7 +2704,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 50.8 0)
+			(at 97.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,7 +2713,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 93.98 50.8 0)
+			(at 97.79 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2378,33 +2737,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 85.09 25.4 90)
+		(lib_id "Device:C_Polarized")
+		(at 74.93 33.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "999f8335-d4dd-4a65-b3b2-bfa9f3f3acf5")
-		(property "Reference" "K_{6a}"
-			(at 82.55 27.178 0)
+		(uuid "9948fc40-2f09-40da-853d-09cc80084d0c")
+		(property "Reference" "C3"
+			(at 71.882 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SW_SPST"
-			(at 81.28 25.4 0)
+		(property "Value" "10uF"
+			(at 74.676 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 85.09 25.4 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+			(at 73.9648 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,7 +2774,75 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.09 25.4 0)
+			(at 74.93 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 74.93 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9b3e7a90-aa2e-4eb0-9de8-0ed5b8fa2597")
+		)
+		(pin "1"
+			(uuid "a84765f3-35c6-4bd6-ac6f-6101babaaa1c")
+		)
+		(instances
+			(project "meia_onda_simplificado"
+				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 88.9 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "999f8335-d4dd-4a65-b3b2-bfa9f3f3acf5")
+		(property "Reference" "K_{6a}"
+			(at 86.36 55.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 85.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,7 +2851,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 85.09 25.4 0)
+			(at 88.9 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2447,7 +2876,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 49.53 30.48 0)
+		(at 49.53 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2455,7 +2884,7 @@
 		(dnp no)
 		(uuid "9a1d1073-e29c-44d1-b3b1-7cea4ad1e32c")
 		(property "Reference" "K_{3a}"
-			(at 48.514 27.686 0)
+			(at 48.514 44.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2463,7 +2892,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 49.53 26.67 0)
+			(at 49.53 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2472,7 +2901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 30.48 0)
+			(at 49.53 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2481,7 +2910,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 49.53 30.48 0)
+			(at 49.53 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2490,7 +2919,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 49.53 30.48 0)
+			(at 49.53 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2515,7 +2944,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 111.76 50.8 90)
+		(at 115.57 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2523,7 +2952,7 @@
 		(dnp no)
 		(uuid "9b84238f-770c-4858-9595-5fec3c8b5c8b")
 		(property "Reference" "K_{9b}"
-			(at 109.474 52.578 0)
+			(at 113.284 80.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2531,7 +2960,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 107.95 50.8 0)
+			(at 111.76 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2540,7 +2969,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 50.8 0)
+			(at 115.57 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2549,7 +2978,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 50.8 0)
+			(at 115.57 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2558,7 +2987,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 111.76 50.8 0)
+			(at 115.57 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +3012,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 85.09 50.8 90)
+		(at 88.9 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2591,7 +3020,7 @@
 		(dnp no)
 		(uuid "aebb19fd-439f-4014-a31e-0931ee8d57db")
 		(property "Reference" "K_{6b}"
-			(at 83.058 52.578 0)
+			(at 86.868 80.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2599,7 +3028,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 81.28 50.8 0)
+			(at 85.09 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2608,7 +3037,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 50.8 0)
+			(at 88.9 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2617,7 +3046,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.09 50.8 0)
+			(at 88.9 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2626,7 +3055,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 85.09 50.8 0)
+			(at 88.9 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2651,7 +3080,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 71.12 87.63 0)
+		(at 241.3 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2659,7 +3088,7 @@
 		(dnp no)
 		(uuid "b52e5e35-827e-4ce6-8aa9-09bb371beb01")
 		(property "Reference" "K_{5b}"
-			(at 69.342 85.598 0)
+			(at 239.522 150.368 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2667,7 +3096,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 71.12 83.82 0)
+			(at 241.3 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2676,7 +3105,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 87.63 0)
+			(at 241.3 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2685,7 +3114,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 87.63 0)
+			(at 241.3 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2694,7 +3123,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 71.12 87.63 0)
+			(at 241.3 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2719,7 +3148,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4007")
-		(at 60.96 30.48 180)
+		(at 60.96 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2727,7 +3156,7 @@
 		(dnp no)
 		(uuid "b9600a81-fd24-40a2-8151-74dc8080a184")
 		(property "Reference" "D1"
-			(at 60.96 27.432 0)
+			(at 60.96 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2735,7 +3164,7 @@
 			)
 		)
 		(property "Value" "1N4007"
-			(at 60.96 34.29 0)
+			(at 60.96 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2744,7 +3173,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 60.96 26.035 0)
+			(at 60.96 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2753,7 +3182,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 60.96 30.48 0)
+			(at 60.96 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2762,7 +3191,7 @@
 			)
 		)
 		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 60.96 30.48 0)
+			(at 60.96 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2771,7 +3200,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 60.96 30.48 0)
+			(at 60.96 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2780,7 +3209,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 60.96 30.48 0)
+			(at 60.96 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2805,7 +3234,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 72.39 30.48 0)
+		(at 72.39 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2813,7 +3242,7 @@
 		(dnp no)
 		(uuid "bac82c2a-f498-40aa-9da3-259e458fac09")
 		(property "Reference" "K_{3b}"
-			(at 71.12 27.94 0)
+			(at 71.12 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2821,7 +3250,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 72.39 26.67 0)
+			(at 72.39 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2830,7 +3259,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 30.48 0)
+			(at 72.39 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2839,7 +3268,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 30.48 0)
+			(at 72.39 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,7 +3277,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 72.39 30.48 0)
+			(at 72.39 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2873,7 +3302,7 @@
 	)
 	(symbol
 		(lib_id "PCM_Elektuur:R")
-		(at 85.09 38.1 0)
+		(at 88.9 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2881,7 +3310,7 @@
 		(dnp no)
 		(uuid "c3923668-77e7-4bed-9415-42a8477629ec")
 		(property "Reference" "R1"
-			(at 87.122 35.306 0)
+			(at 90.932 63.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,7 +3319,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 87.63 39.3699 0)
+			(at 91.44 67.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2900,7 +3329,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 38.1 0)
+			(at 88.9 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2909,7 +3338,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 38.1 0)
+			(at 88.9 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2918,7 +3347,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 85.09 38.1 0)
+			(at 88.9 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2927,7 +3356,7 @@
 			)
 		)
 		(property "Indicator" "+"
-			(at 81.915 34.925 0)
+			(at 85.725 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2936,7 +3365,7 @@
 			)
 		)
 		(property "Rating" "W"
-			(at 87.63 41.275 0)
+			(at 91.44 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2962,7 +3391,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 111.76 38.1 0)
+		(at 115.57 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2970,7 +3399,7 @@
 		(dnp no)
 		(uuid "c627fa37-9fa7-461d-89e8-96db8fee9c77")
 		(property "Reference" "C2"
-			(at 114.3 35.306 0)
+			(at 118.11 63.246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2979,7 +3408,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 115.57 38.4809 0)
+			(at 119.38 66.4209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2989,7 +3418,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 112.7252 41.91 0)
+			(at 116.5352 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2998,7 +3427,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 38.1 0)
+			(at 115.57 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3007,7 +3436,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 111.76 38.1 0)
+			(at 115.57 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,7 +3461,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 102.87 25.4 90)
+		(at 106.68 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3040,7 +3469,7 @@
 		(dnp no)
 		(uuid "d17c5e8f-d4b2-48e2-a98b-9b8b12710877")
 		(property "Reference" "K_{8a}"
-			(at 100.33 27.178 0)
+			(at 104.14 55.118 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3048,7 +3477,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 99.06 25.4 0)
+			(at 102.87 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3057,7 +3486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 25.4 0)
+			(at 106.68 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3066,7 +3495,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 25.4 0)
+			(at 106.68 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3075,7 +3504,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 102.87 25.4 0)
+			(at 106.68 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3100,7 +3529,7 @@
 	)
 	(symbol
 		(lib_id "Diode_Bridge:B250C2300-1500A")
-		(at 54.61 77.47 0)
+		(at 224.79 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3108,7 +3537,7 @@
 		(dnp no)
 		(uuid "d6a0f1d3-261b-437a-a625-4e4e392238c1")
 		(property "Reference" "D2"
-			(at 54.864 77.216 0)
+			(at 225.044 141.986 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3116,7 +3545,7 @@
 			)
 		)
 		(property "Value" "B250C2300-1500A"
-			(at 56.388 95.504 0)
+			(at 226.568 160.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3125,7 +3554,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm"
-			(at 58.42 74.295 0)
+			(at 228.6 139.065 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +3564,7 @@
 			)
 		)
 		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40c2300.pdf"
-			(at 54.61 77.47 0)
+			(at 224.79 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3144,7 +3573,7 @@
 			)
 		)
 		(property "Description" "Silicon Bridge Rectifier, 250V Vrms, 1.5A If, pins=-AA+, SIL-package"
-			(at 54.61 77.47 0)
+			(at 224.79 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3175,7 +3604,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 111.76 25.4 90)
+		(at 115.57 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3183,7 +3612,7 @@
 		(dnp no)
 		(uuid "ded517e4-4113-4843-a1c5-1a0e3008bd9d")
 		(property "Reference" "K_{9a}"
-			(at 109.728 27.178 0)
+			(at 113.538 55.118 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3191,7 +3620,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 107.95 25.4 0)
+			(at 111.76 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3200,7 +3629,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 25.4 0)
+			(at 115.57 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3209,7 +3638,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 25.4 0)
+			(at 115.57 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3218,7 +3647,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 111.76 25.4 0)
+			(at 115.57 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3243,7 +3672,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 93.98 38.1 0)
+		(at 97.79 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3251,7 +3680,7 @@
 		(dnp no)
 		(uuid "e073da6c-9e57-48c2-a041-f56d0c7c4490")
 		(property "Reference" "C1"
-			(at 95.504 35.56 0)
+			(at 99.314 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3260,7 +3689,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 97.79 38.4809 0)
+			(at 101.6 66.4209 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3270,7 +3699,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 94.9452 41.91 0)
+			(at 98.7552 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3279,7 +3708,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 38.1 0)
+			(at 97.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3288,7 +3717,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 93.98 38.1 0)
+			(at 97.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3313,7 +3742,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 60.96 45.72 0)
+		(at 62.23 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3321,7 +3750,7 @@
 		(dnp no)
 		(uuid "ecda4aeb-40fd-4f0b-913d-3f6af33b1d7f")
 		(property "Reference" "K_{4}"
-			(at 59.944 43.434 0)
+			(at 61.214 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3329,7 +3758,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 60.96 41.91 0)
+			(at 62.23 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,7 +3767,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 45.72 0)
+			(at 62.23 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3347,7 +3776,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 45.72 0)
+			(at 62.23 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3356,7 +3785,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 60.96 45.72 0)
+			(at 62.23 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3381,15 +3810,15 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 102.87 50.8 90)
+		(at 57.15 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f1419f9c-99f1-4165-b95b-0c706d8d5cdc")
-		(property "Reference" "K_{8b}"
-			(at 100.584 52.578 0)
+		(uuid "ee496221-fd18-4f23-ae78-2230ca0ea556")
+		(property "Reference" "K_{10}"
+			(at 56.134 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3397,7 +3826,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 99.06 50.8 0)
+			(at 57.15 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3406,7 +3835,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 50.8 0)
+			(at 57.15 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3415,7 +3844,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 50.8 0)
+			(at 57.15 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3424,7 +3853,75 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 102.87 50.8 0)
+			(at 57.15 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0523c541-d700-4aca-a9ff-2a1e7ee102a0")
+		)
+		(pin "1"
+			(uuid "87b9f71b-4b25-4790-9914-52ed8745daa8")
+		)
+		(instances
+			(project "meia_onda_simplificado"
+				(path "/503ffb7c-03f1-4b74-8c9a-f81a98559f55"
+					(reference "K_{10}")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 106.68 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1419f9c-99f1-4165-b95b-0c706d8d5cdc")
+		(property "Reference" "K_{8b}"
+			(at 104.394 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 102.87 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 106.68 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
