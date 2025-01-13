@@ -776,8 +776,7 @@ Tendo em conta que os rectificadores já se encontravam projectados e testados, 
 		\label{fig:filtrosesqgeral}%
 	\end{figure}
 
-Uma vez que é possível variar a frequência do sinal de entrada, estas experiências permitem estudar a resposta em frequência dos filtros através da análise do Diagrama de \textit{Bode}, aferir a frequência de corte, dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
-A Figura \ref{fig:diagramabode} representa um exemplo do Diagrama de \textit{Bode} de um filtro passa-alto, obtido no \acrshort{lare}.
+A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. A Figura \ref{fig:diagramabode} apresenta um exemplo do Diagrama de \textit{Bode} de um filtro passa-alto, obtido nos testes do LaRE.
 
 \begin{equation} \label{eq:frequenciacorte}
 	f_{c} = \frac{1}{2\pi RC}
@@ -790,6 +789,8 @@ A Figura \ref{fig:diagramabode} representa um exemplo do Diagrama de \textit{Bod
 	\label{fig:diagramabode}
 \end{figure}
 
+Para que estas experiências pudessem ser integradas no circuito, houve a necessidade de se fazer um \textit{bypass} ao díodo $D_{1}$ - rectângulo tracejado vermelho, Figura \ref{fig:rectificadoresimplificado}. 
+Desta forma, conseguiu-se colocar as resistências e condensadores do rectificador, em série com a resistência e condensador do filtro.
 O esquema simplificado dos filtros, comandados por dois relés simples, $K_{10}$ e $K_{11}$, está representado na Figura \ref{fig:filtragemsimplificado}.
 
 \begin{figure}[hbtp]
@@ -798,6 +799,10 @@ O esquema simplificado dos filtros, comandados por dois relés simples, $K_{10}$
 	\caption{Esquema dos filtros simplificado}
 	\label{fig:filtragemsimplificado}
 \end{figure}
+
+
+
+
 
 Explicar agora o funcionamento
 

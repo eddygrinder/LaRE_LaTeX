@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  10 JAN 2025 19:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  13 JAN 2025 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1655,63 +1655,64 @@ File: figures/filtro_PA_simplificado.png Graphic file (type png)
 <use figures/filtro_PA_simplificado.png>
 Package pdftex.def Info: figures/filtro_PA_simplificado.png  used on input line 774.
 (pdftex.def)             Requested size: 170.71652pt x 83.7494pt.
-<figures/bode_lpf.png, id=3010, 722.7pt x 433.62pt>
+<figures/bode_lpf.png, id=3009, 722.7pt x 433.62pt>
 File: figures/bode_lpf.png Graphic file (type png)
 <use figures/bode_lpf.png>
-Package pdftex.def Info: figures/bode_lpf.png  used on input line 788.
+Package pdftex.def Info: figures/bode_lpf.png  used on input line 787.
 (pdftex.def)             Requested size: 239.00558pt x 143.3994pt.
-<figures/filtros_simplificado.png, id=3012, 419.5675pt x 328.22626pt>
+ [95 <./figures/filtro_PB_simplificado.png> <./figures/filtro_PA_simplificado.png (PNG copy)> <./figures/bode_lpf.png>]
+<figures/filtros_simplificado.png, id=3018, 419.5675pt x 328.22626pt>
 File: figures/filtros_simplificado.png Graphic file (type png)
 <use figures/filtros_simplificado.png>
-Package pdftex.def Info: figures/filtros_simplificado.png  used on input line 797.
+Package pdftex.def Info: figures/filtros_simplificado.png  used on input line 798.
 (pdftex.def)             Requested size: 199.1693pt x 155.80891pt.
- [95 <./figures/filtro_PB_simplificado.png> <./figures/filtro_PA_simplificado.png> <./figures/bode_lpf.png>] [96 <./figures/filtros_simplificado.png>] [97]
+ [96 <./figures/filtros_simplificado.png>] [97]
 <figures/ohm_diagrama.drawio.png, id=3063, 1640.1275pt x 1308.89pt>
 File: figures/ohm_diagrama.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 874.
+Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 879.
 (pdftex.def)             Requested size: 398.33861pt x 317.89476pt.
 <figures/ohm_diagrama_pormenor.drawio.png, id=3066, 1640.1275pt x 572.1375pt>
 File: figures/ohm_diagrama_pormenor.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama_pormenor.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 889.
+Package pdftex.def Info: figures/ohm_diagrama_pormenor.drawio.png  used on input line 894.
 (pdftex.def)             Requested size: 398.33861pt x 138.95706pt.
  [98] [99 <./figures/ohm_diagrama.drawio.png (PNG copy)>]
 <figures/parametros_desabilitados.png, id=3079, 379.4175pt x 152.06813pt>
 File: figures/parametros_desabilitados.png Graphic file (type png)
 <use figures/parametros_desabilitados.png>
-Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 925.
+Package pdftex.def Info: figures/parametros_desabilitados.png  used on input line 930.
 (pdftex.def)             Requested size: 278.8358pt x 111.75829pt.
  [100 <./figures/ohm_diagrama_pormenor.drawio.png>] [101 <./figures/parametros_desabilitados.png>] [102] [103]
 File: figures/fontes_VB.png Graphic file (type png)
 <use figures/fontes_VB.png>
-Package pdftex.def Info: figures/fontes_VB.png  used on input line 1033.
+Package pdftex.def Info: figures/fontes_VB.png  used on input line 1038.
 (pdftex.def)             Requested size: 278.8358pt x 167.08528pt.
  [104] [105]
-Overfull \hbox (9.38791pt too wide) in paragraph at lines 1086--1087
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 1091--1092
 []\T1/lmr/m/n/10.95 Na Sec-ção an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-ção en-tre a pá-gina \T1/lmr/m/it/10.95 ohm.html
  []
 
 <figures/ohm_diagramaCUTRelay.drawio.png, id=3197, 1640.1275pt x 591.20876pt>
 File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUTRelay.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1093.
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1098.
 (pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
 <figures/login.png, id=3199, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 1104.
+Package pdftex.def Info: figures/login.png  used on input line 1109.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
 <figures/ohm_diagramaCUT.drawio.png, id=3200, 1640.1275pt x 560.0925pt>
 File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUT.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1111.
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1116.
 (pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
 [106 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)>]
 <figures/menupage.png, id=3213, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
-Package pdftex.def Info: figures/menupage.png  used on input line 1128.
+Package pdftex.def Info: figures/menupage.png  used on input line 1133.
 (pdftex.def)             Requested size: 398.33861pt x 229.9719pt.
  [107 <./figures/ohm_diagramaCUT.drawio.png> <./figures/menupage.png (PNG copy)>]) [108]
 \openout2 = `chapters/chapter5.aux'.
@@ -2141,7 +2142,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (176 pages, 19775944 bytes).
+Output written on main.pdf (176 pages, 19776805 bytes).
 PDF statistics:
  4216 PDF objects out of 4296 (max. 8388607)
  3705 compressed objects within 38 object streams
