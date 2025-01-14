@@ -789,7 +789,7 @@ A possibilidade de variar a frequência do sinal de entrada permite que estas ex
 	\label{fig:diagramabode}
 \end{figure}
 
-Para integrar essas experiências no circuito, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificadoresimplificado}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
+Para integrar estas experiências no circuito, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificadoresimplificado}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
 
 O esquema final simplificado, que inclui, então, o estudo da rectificação de meia onda e dos filtros passa-alto e passa-baixo, está representado na Figura \ref{fig:rectificacao_filtragem_simplificado}.
 
@@ -800,7 +800,33 @@ O esquema final simplificado, que inclui, então, o estudo da rectificação de 
 	\label{fig:rectificacao_filtragem_simplificado}
 \end{figure}
 
-Explicar agora o funcionamento
+A escolha das experiências e combinação das resistências e condensadores é controlada pelo utilizador/\textit{software}, tal como descrito na Secção (...). A Tabela \ref{Table:rectificadoresfiltros} apresenta o estado dos relés, $K_{1}$ a $K_{9}$ consoante a experiência que se pretende realizar.
+
+\begin{table}[htb]
+	\centering
+	\caption{Exemplo funcionamento do rectificador de meia onda} 
+	
+	\label{Table:rectificadoresfiltros}
+	\begin{tabular}{lccccccccc}
+		\toprule
+		               & \multicolumn{9}{c}{Estado dos relés} \\
+		\midrule
+		               & $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ & $K_{9}$ \\
+		\midrule
+		Meia Onda      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      \\
+		\midrule
+		Onda Completa  & 0 		 & 1       & 0       & 0       & 1       & 0       & 0       & 1  	   & 1    \\
+		\midrule
+		Filtro Passa-Alto      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      \\
+		\midrule
+		Filtro Passa-Baixo      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
+
+13 bits começar pelo esquema completo antes de dar os exemplos de funcionamento. a explicação penso que pode ficar dividida como está, mas já com o esquema e relés com os indices certos, a explicação mas os exemplos descritos em tabela só fazem sentido se for o esquema completo,
 
 %Devido à versatilidade e à liberdade que esta experiência proporciona, uma vez que, não só o utilizador ou aluno pode escolher a resistência e a ordem pela qual realiza as medições, mas também porque o professor ou tutor pode alterar os valores das tensões pré-definidas, esta experiência revelou-se, ao nível do \textit{software}, um desafio no que toca à sua implementação.
 
