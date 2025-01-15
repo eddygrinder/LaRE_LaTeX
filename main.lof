@@ -61,25 +61,24 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Problema de massa - onda completa}}{88}{figure.caption.93}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Problema de massa - onda completa}}{88}{figure.caption.94}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Painel frontal Multímetro Digital}}{89}{figure.caption.95}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Esquema simplificado da experiência Lei de Ohm}}{90}{figure.caption.97}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Exemplo de gráfico Lei de \textit {Ohm}}}{91}{figure.caption.99}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Experiência Lei de Ohm}}{92}{figure.caption.100}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{92}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{93}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagrama de blocos geral da rectificação de meia e onda completa}}{94}{figure.caption.105}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite {sedrasmith}}}{94}{figure.caption.106}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite {sedrasmith}}}{95}{figure.caption.107}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Esquema dos rectificadores simplificado}}{96}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Esquemas simplificados dos filtros}}{97}{figure.caption.111}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{97}{figure.caption.112}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{101}{figure.caption.115}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{102}{figure.caption.117}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Página de entrada - \textit {ohm.html}}}{103}{figure.caption.118}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Fontes de tensão contínua \acrshort {virtualbench}}}{106}{figure.caption.121}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces \textit {Script configRelays.py}}}{108}{figure.caption.122}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Página de \textit {login}}}{108}{figure.caption.123}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces caralho}}{109}{figure.caption.124}%
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Página de menus}}{109}{figure.caption.125}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{90}{figure.caption.96}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Esquema simplificado da experiência Lei de Ohm}}{91}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Exemplo de gráfico Lei de \textit {Ohm}}}{92}{figure.caption.100}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Experiência Lei de Ohm}}{92}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Experiência Lei de Ohm - Resistências desconhecidas}}{93}{figure.caption.102}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Diagrama de blocos geral da rectificação de meia e onda completa}}{93}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite {sedrasmith}}}{94}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite {sedrasmith}}}{95}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Esquemas simplificados dos filtros}}{96}{figure.caption.108}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{96}{figure.caption.109}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{100}{figure.caption.112}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{101}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Página de entrada - \textit {ohm.html}}}{102}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Fontes de tensão contínua \acrshort {virtualbench}}}{105}{figure.caption.118}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces \textit {Script configRelays.py}}}{107}{figure.caption.119}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Página de \textit {login}}}{107}{figure.caption.120}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces caralho}}{108}{figure.caption.121}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Página de menus}}{108}{figure.caption.122}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

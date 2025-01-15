@@ -596,21 +596,21 @@ De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, �
 A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
 \subsection{Experiências}
+\label{sec:experiencias}
 Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm}, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa alto e passa baixo.
 
-As experiências foram implementadas de forma independente. Isto permitiu um melhor desenvolvimento, foco, organização, detecção e correcção de erros. Após os testes e conclusão do circuito da Lei de \textit{Ohm} passou-se ao projecto dos rectificadores. O desenvolvimento inicial concentrou-se no estudo dos rectificadores. No entanto, após o desenvolvimento e alguns testes, e uma vez que estas experiências partilham alguns elementos/componentes/blocos, \sout{nomeadamente, o filtro incluido no rectângulo laranja tracejado na Figura \ref{fig:rectificacao_filtragem_full},} considerou-se vantajoso adicionar ao \acrshort{lare} esta experiência complementar, voltada para o estudo práctico de filtros passa-alto e passa-baixo.
+De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do projeto.
 
-As experiências foram implementadas e desenvolvidas de forma independente, uma abordagem que favoreceu um maior foco, organização e eficiência na identificação e correção de erros. Após a conclusão dos testes e do circuito da Lei de \textit{Ohm}, iniciou-se o desenvolvimento dos rectificadores. Embora a abordagem inicial se tenha concentrado exclusivamente nos rectificadores, estas experiências têm alguns elementos e componentes em comum. Diante disso, decidiu-se incluir no \acrshort{lare} uma experiência complementar dedicada ao estudo prático de filtros passa-alto e passa-baixo, ampliando o alcance e a aplicabilidade do projeto.
+Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema completo e simplificado dos circuitos que compõem as duas experiências. Nele se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão representados no rectângulo tracejado magenta.
 
-Na organização e no desenvolvimento do \textit{hardware} e \textit{software} dos circuitos que compõem as experiências, decidiu-se estruturar o projeto em duas partes distintas: Lei de \textit{Ohm} e Retificadores/Filtros. Esta divisão foi adoptada devido ao facto de que entre os rectpara facilitar o desenvolvimento e a implementação dos circuitos, permitindo um foco específico em cada área, de forma a otimizar a integração entre o \textit{hardware} e o \textit{software} e garantir que cada experiência seja explorada de maneira mais aprofundada e didática.
-
-\textbf{Vou considerar que cada experiência compreende dois circuitos - É NECESSÁRIO VERIFICAR A COÊRENCIA ATRÁS}
-
- 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/rec_fil_FULL.png}
+	\caption{Esquema completo (simplificado) - rectificadores e filtros}
+	\label{fig:rectificacao_filtragem_full}
+\end{figure}
 
 No \textit{datasheet} encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
-
-\sout{Os esquemas finais, simplificados, estão representados nas Figuras e Figuras}
 
 \textbf{Coloca aqui, falvez, uma foto da matriz lare}
 
@@ -697,27 +697,10 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
-\subsubsection{Rectificadores e filtros}
+\subsubsection{Rectificadores}
 \label{sec:rectificadoresfiltros}
 
-\sout{Estas duas experiências foram integradas na mesma placa. }
-
-Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema completo e simplificado das duas experiências, sendo que:
-\begin{itemize}
-	\item Meia onda: rectângulo tracejado vermelho e laranja;
-	\item Onda completa: rectângulo tracejado verde e laranja;
-	\item Filtros passa-alto e passa-baixo: rectângulo tracejado magenta e laranja.
-\end{itemize}
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/rec_fil_FULL.png}
-	\caption{Esquema completo (simplificado) - rectificadores e filtros}
-	\label{fig:rectificacao_filtragem_full}
-\end{figure}
-
-\paragraph{Rectificadores}
-No estudo dos rectificadores, meia onda e onda completa, pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
+Nesta experiência pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
 
 Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo. 
 
@@ -774,40 +757,15 @@ Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela 
 
 São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}.
 
-Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificadoresimplificado} e tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal, o que permite estudar a variação do \textit{ripple} com a frequência e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. (Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof). O Bloco 4 não está montado/projectado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/MeiaOndaSimplificado.png}
-	\caption{Esquema dos rectificadores simplificado}
-	\label{fig:rectificadoresimplificado}
-\end{figure}
+Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificacao_filtragem_full} e tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal, o que permite estudar a variação do \textit{ripple} com a frequência e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. (Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof). O Bloco 4 não está montado/projectado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
 
 Os relés foram projectados de forma a isolar totalmente os blocos dos circuitos, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$. \textbf{Talve rever esta justificação, já que, aparentemente, o relé K4 era dispensavel.}
 
-A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}. Se se pretender estudar qualquer uma das experiências, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomeiaonda}. Neste exemplo, o filtro do rectificador de meia onda é composto por $R_{1}/C_{1}$ e o filtro do rectificador de onda completa é composto por $R_{2}/C_{2}$
-
-\begin{table}[htb]
-	\centering
-	\caption{Exemplo funcionamento do rectificador de meia onda} 
-	
-	\label{Table:exemplomeiaonda}
-	\begin{tabular}{lccccccccc}
-		\toprule
-		               & \multicolumn{9}{c}{Estado dos relés} \\
-		\midrule
-		               & $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ & $K_{9}$ \\
-		\midrule
-		Meia Onda      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      \\
-		\midrule
-		Onda Completa  & 0 		 & 1       & 0       & 0       & 1       & 0       & 0       & 1  	   & 1    \\
-		\bottomrule
-	\end{tabular}
-\end{table}
+A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
-\subsubsection{Filtros Passa-Baixo e Passa-alto}
+\subsubsection{Filtros}
 \label{sec:filtros}
 Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
 
@@ -834,32 +792,30 @@ A possibilidade de variar a frequência do sinal de entrada permite que estas ex
 	\label{fig:diagramabode}
 \end{figure}
 
-Para integrar estas experiências no circuito, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificadoresimplificado}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
+Como foi dito na Secção \ref{sec:experiencias}, a integração desta experiência foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificadoresimplificado}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
 
-O esquema final simplificado, que inclui, então, o estudo da rectificação de meia onda e dos filtros passa-alto e passa-baixo, está representado na Figura \ref{fig:rectificacao_filtragem_simplificado}.
+Se se pretender estudar qualquer uma das experiências, os relés seriam activados da forma representada na Tabela \ref{Table:rectificadoresfiltros}. Neste exemplo, o filtro do rectificador de meia onda é composto por $R_{1}/C_{1}$ e o filtro do rectificador de onda completa é composto por $R_{2}/C_{2}$
 
-A escolha das experiências e combinação das resistências e condensadores é controlada pelo utilizador/\textit{software}, tal como descrito na Secção (...). A Tabela \ref{Table:rectificadoresfiltros} apresenta o estado dos relés, $K_{1}$ a $K_{9}$ consoante a experiência que se pretende realizar.
 
 \begin{table}[htb]
 	\centering
 	\caption{Exemplo funcionamento do rectificador de meia onda} 
-	
 	\label{Table:rectificadoresfiltros}
-	\begin{tabular}{lccccccccc}
+	\resizebox{\columnwidth}{!}{\begin{tabular}{lccccccccccccc}
 		\toprule
-		               & \multicolumn{9}{c}{Estado dos relés} \\
+		               & \multicolumn{13}{c}{Estado dos relés} \\
 		\midrule
-		               & $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ & $K_{9}$ \\
+		               & $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ & $K_{9}$ & $K_{10}$ & $K_{11}$ & $K_{12}$ & $K_{13}$\\
 		\midrule
-		Meia Onda      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      \\
+		Meia Onda      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0     & 1       & 1       & 0 	   & 0 \\
 		\midrule
-		Onda Completa  & 0 		 & 1       & 0       & 0       & 1       & 0       & 0       & 1  	   & 1    \\
+		Onda Completa  & 0 		 & 1       & 0       & 0       & 1       & 0       & 0       & 1  	   & 1    & 1       & 1       & 0 	   & 0\\
 		\midrule
-		Filtro Passa-Alto      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      \\
+		Filtro Passa-Alto      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      & 1       & 1       & 0 	   & 0\\
 		\midrule
-		Filtro Passa-Baixo      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      \\
+		Filtro Passa-Baixo      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      & 1       & 1       & 0 	   & 0\\
 		\bottomrule
-	\end{tabular}
+	\end{tabular}}
 \end{table}
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
