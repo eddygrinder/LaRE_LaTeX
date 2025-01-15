@@ -1196,7 +1196,7 @@
 		(uuid "eb70e8c2-399d-4195-b75b-ea2302641dbb")
 	)
 	(no_connect
-		(at 251.46 142.24)
+		(at 92.71 109.22)
 		(uuid "07d00499-45e2-468b-8220-1d5a72285ef5")
 	)
 	(no_connect
@@ -1208,7 +1208,7 @@
 		(uuid "7c702c86-cd55-4bf8-96c2-53f9506e331e")
 	)
 	(no_connect
-		(at 251.46 152.4)
+		(at 92.71 119.38)
 		(uuid "8a06d59d-3fff-4af0-854e-4014275614b5")
 	)
 	(wire
@@ -1263,7 +1263,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 134.62) (xy 224.79 134.62)
+			(xy 52.07 101.6) (xy 66.04 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1273,7 +1273,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 142.24) (xy 232.41 142.24)
+			(xy 77.47 109.22) (xy 73.66 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1283,7 +1283,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 143.51) (xy 196.85 149.86)
+			(xy 38.1 110.49) (xy 38.1 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1303,7 +1303,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 134.62) (xy 196.85 140.97)
+			(xy 38.1 101.6) (xy 38.1 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1343,7 +1343,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 149.86) (xy 224.79 149.86)
+			(xy 52.07 116.84) (xy 66.04 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1393,7 +1393,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 142.24) (xy 217.17 152.4)
+			(xy 58.42 109.22) (xy 58.42 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1413,7 +1413,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 149.86) (xy 200.66 149.86)
+			(xy 38.1 116.84) (xy 41.91 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1593,7 +1593,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 142.24) (xy 251.46 142.24)
+			(xy 87.63 109.22) (xy 92.71 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1653,7 +1653,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 152.4) (xy 236.22 152.4)
+			(xy 58.42 119.38) (xy 77.47 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1683,7 +1683,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 143.51) (xy 196.85 143.51)
+			(xy 34.29 110.49) (xy 38.1 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1703,7 +1703,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 134.62) (xy 200.66 134.62)
+			(xy 38.1 101.6) (xy 41.91 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1713,7 +1713,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 152.4) (xy 251.46 152.4)
+			(xy 87.63 119.38) (xy 92.71 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1803,7 +1803,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 140.97) (xy 196.85 140.97)
+			(xy 34.29 107.95) (xy 38.1 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1858,30 +1858,30 @@
 		(uuid 60741044-5f09-4c99-8569-768deaf4b431)
 	)
 	(rectangle
-		(start 199.898 129.032)
-		(end 212.598 155.702)
+		(start 55.626 96.266)
+		(end 89.154 122.682)
 		(stroke
 			(width 0.3)
 			(type dash)
-			(color 78 222 255 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 7de246fc-a5d2-4ed1-b060-52b583ee98c0)
-	)
-	(rectangle
-		(start 214.376 129.286)
-		(end 247.904 155.702)
-		(stroke
-			(width 0.3)
-			(type dash)
-			(color 255 115 114 1)
+			(color 0 132 0 1)
 		)
 		(fill
 			(type none)
 		)
 		(uuid 9d9170f4-eb8d-48b8-8a96-4ce5fc77a8ba)
+	)
+	(rectangle
+		(start 41.91 13.97)
+		(end 78.74 40.386)
+		(stroke
+			(width 0.3)
+			(type dash)
+			(color 255 0 255 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9ed3912b-64c6-4703-9677-866ff96b9510)
 	)
 	(text "Gerador de sinal"
 		(exclude_from_sim no)
@@ -1895,7 +1895,7 @@
 	)
 	(text "Onda Completa"
 		(exclude_from_sim no)
-		(at 224.028 158.75 0)
+		(at 72.898 125.73 0)
 		(effects
 			(font
 				(size 2 2)
@@ -1904,8 +1904,19 @@
 		)
 		(uuid "40e4471b-fd84-4745-b898-41db926bc32a")
 	)
+	(text "Meia Onda"
+		(exclude_from_sim no)
+		(at 60.198 54.102 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+		)
+		(uuid "fdb351cc-2341-4ce1-8775-ebea6b48e3dc")
+	)
 	(label "B"
-		(at 251.46 152.4 180)
+		(at 92.71 119.38 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1929,7 +1940,7 @@
 		(uuid "38022552-eb5b-4093-a8aa-4c5e72e2d443")
 	)
 	(label "transf-"
-		(at 193.04 143.51 180)
+		(at 34.29 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1964,7 +1975,7 @@
 		(uuid "633eb6d1-7c74-4bc1-83a3-d0e4e77df5f8")
 	)
 	(label "transf+"
-		(at 193.04 140.97 180)
+		(at 34.29 107.95 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2021,7 +2032,7 @@
 		(uuid "b15013d2-bc51-4bbd-8c5d-68c70ceec396")
 	)
 	(label "A"
-		(at 251.46 142.24 180)
+		(at 92.71 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2035,7 +2046,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 241.3 142.24 0)
+		(at 82.55 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2043,7 +2054,7 @@
 		(dnp no)
 		(uuid "07bc4613-7266-409f-9d3c-0a26122a4441")
 		(property "Reference" "K_{5a}"
-			(at 239.522 140.208 0)
+			(at 80.772 107.188 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2051,7 +2062,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 241.3 138.43 0)
+			(at 82.55 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2060,7 +2071,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 142.24 0)
+			(at 82.55 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2069,7 +2080,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 142.24 0)
+			(at 82.55 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2078,7 +2089,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 241.3 142.24 0)
+			(at 82.55 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2103,7 +2114,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 205.74 134.62 0)
+		(at 46.99 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2111,7 +2122,7 @@
 		(dnp no)
 		(uuid "1f5f7dcb-0bcd-4a92-a1eb-9a2efcefbd90")
 		(property "Reference" "K_{2a}"
-			(at 203.962 132.588 0)
+			(at 45.212 99.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2119,7 +2130,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 205.74 130.81 0)
+			(at 46.99 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2128,7 +2139,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 134.62 0)
+			(at 46.99 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2137,7 +2148,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 134.62 0)
+			(at 46.99 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2146,7 +2157,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 205.74 134.62 0)
+			(at 46.99 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2171,7 +2182,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 205.74 149.86 0)
+		(at 46.99 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2179,7 +2190,7 @@
 		(dnp no)
 		(uuid "1fe13891-f2cc-4643-a6ea-d10e8c0d9c56")
 		(property "Reference" "K_{2b}"
-			(at 203.962 147.828 0)
+			(at 45.212 114.808 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2187,7 +2198,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 205.74 146.05 0)
+			(at 46.99 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2196,7 +2207,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 149.86 0)
+			(at 46.99 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2205,7 +2216,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 149.86 0)
+			(at 46.99 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2214,7 +2225,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 205.74 149.86 0)
+			(at 46.99 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +3091,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 241.3 152.4 0)
+		(at 82.55 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3088,7 +3099,7 @@
 		(dnp no)
 		(uuid "b52e5e35-827e-4ce6-8aa9-09bb371beb01")
 		(property "Reference" "K_{5b}"
-			(at 239.522 150.368 0)
+			(at 80.772 117.348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3096,7 +3107,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 241.3 148.59 0)
+			(at 82.55 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3105,7 +3116,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 152.4 0)
+			(at 82.55 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,7 +3125,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 152.4 0)
+			(at 82.55 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3123,7 +3134,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 241.3 152.4 0)
+			(at 82.55 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3529,7 +3540,7 @@
 	)
 	(symbol
 		(lib_id "Diode_Bridge:B250C2300-1500A")
-		(at 224.79 142.24 0)
+		(at 66.04 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3537,7 +3548,7 @@
 		(dnp no)
 		(uuid "d6a0f1d3-261b-437a-a625-4e4e392238c1")
 		(property "Reference" "D2"
-			(at 225.044 141.986 0)
+			(at 66.294 108.966 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3545,7 +3556,7 @@
 			)
 		)
 		(property "Value" "B250C2300-1500A"
-			(at 226.568 160.274 0)
+			(at 67.818 127.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3554,7 +3565,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm"
-			(at 228.6 139.065 0)
+			(at 69.85 106.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3564,7 +3575,7 @@
 			)
 		)
 		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40c2300.pdf"
-			(at 224.79 142.24 0)
+			(at 66.04 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3573,7 +3584,7 @@
 			)
 		)
 		(property "Description" "Silicon Bridge Rectifier, 250V Vrms, 1.5A If, pins=-AA+, SIL-package"
-			(at 224.79 142.24 0)
+			(at 66.04 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)

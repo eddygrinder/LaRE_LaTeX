@@ -596,11 +596,11 @@ De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, �
 A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
 \subsection{Experiências}
-Em termos de organização e desenvolvimento do \textit{hardware} e \textit{software} (abordado nas secções seguintes) dos circuitos, optou-se por dividir as experiências em duas partes: Lei de \textit{Ohm} e Rectificadores e Filtros. 
+Em termos de organização e desenvolvimento do \textit{hardware} e \textit{software} (abordado nas secções seguintes) dos circuitos, optou-se por dividir as experiências em duas partes: Lei de \textit{Ohm} e Rectificadores/Filtros. 
 
 No \textit{datasheet} encontram-se os esquemas completos das experiências, assim como as placas que constituem o \acrshort{lare}: cada experiência ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
 
-Os esquemas finais, simplificados, estão representados nas Figuras e Figuras
+\sout{Os esquemas finais, simplificados, estão representados nas Figuras e Figuras}
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
@@ -652,7 +652,16 @@ Como exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, 
 	\end{tabular}
 \end{table}
 
-Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambas os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
+Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido com a experiência da Lei de Ohm, nos testes do \acrshort{lare}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/ohm_graph.png}
+	\caption{Exemplo de gráfico Lei de \textit{Ohm}}
+	\label{fig:graphohm}
+\end{figure}
+
+Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
 
 No caso em que a resistência é dada, exemplificado na Figura \ref{fig:pagohm}, o declive pode ser calculado e confrontado com as soluções.
 
@@ -672,12 +681,35 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 	\label{fig:pagohmabc}
 \end{figure}
 
+\textbf{Eventualmente as Figuras 4.17 e 4.18 podem ser retiradas}
+
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
 \subsubsection{Rectificadores e filtros}
 \label{sec:rectificadoresfiltros}
 
-No estudo dos rectificadores - meia onda e onda completa - pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
+\textbf{Vou considerar que cada experiência compreende dois circuitos - É NECESSÁRIO VERIFICAR A COÊRENCIA ATRÁS}
+
+Considera-se, nesta secção e seguintes, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa alto e passa baixo. 
+
+\sout{Estas duas experiências foram integradas na mesma placa. }O desenvolvimento inicial concentrou-se no estudo dos rectificadores. No entanto, após o desenvolvimento e alguns testes, e uma vez que estas experiências partilham alguns elementos/componentes/blocos, \sout{nomeadamente, o filtro incluido no rectângulo laranja tracejado na Figura \ref{fig:rectificacao_filtragem_full},} considerou-se vantajoso adicionar ao \acrshort{lare} esta experiência complementar, voltada para o estudo práctico de filtros passa-alto e passa-baixo.
+
+Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema completo e simplificado das duas experiências, sendo que:
+\begin{itemize}
+	\item Meia onda: rectângulo tracejado vermelho e laranja;
+	\item Onda completa: rectângulo tracejado verde e laranja;
+	\item Filtros passa-alto e passa-baixo: rectângulo tracejado magenta e laranja.
+\end{itemize}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/rec_fil_FULL.png}
+	\caption{Esquema completo (simplificado) - rectificadores e filtros}
+	\label{fig:rectificacao_filtragem_full}
+\end{figure}
+
+\paragraph{Rectificadores}
+No estudo dos rectificadores, meia onda e onda completa, pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
 
 Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo. 
 
@@ -769,8 +801,7 @@ A implementação destas duas experiências foi feita de forma a que se possa es
 
 \subsubsection{Filtros Passa-Baixo e Passa-alto}
 \label{sec:filtros}
-
-Tendo em conta que os rectificadores já se encontravam projectados e testados, considerou-se vantajoso integrar no \acrshort{lare} duas experiências complementares, destinadas ao estudo práctico de filtros passa-alto e passa-baixo. Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
+Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -798,13 +829,6 @@ A possibilidade de variar a frequência do sinal de entrada permite que estas ex
 Para integrar estas experiências no circuito, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificadoresimplificado}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
 
 O esquema final simplificado, que inclui, então, o estudo da rectificação de meia onda e dos filtros passa-alto e passa-baixo, está representado na Figura \ref{fig:rectificacao_filtragem_simplificado}.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/rectificador_filtro_simplificado.png}
-	\caption{Esquema completo - rectificador meia onde e filtros}
-	\label{fig:rectificacao_filtragem_simplificado}
-\end{figure}
 
 A escolha das experiências e combinação das resistências e condensadores é controlada pelo utilizador/\textit{software}, tal como descrito na Secção (...). A Tabela \ref{Table:rectificadoresfiltros} apresenta o estado dos relés, $K_{1}$ a $K_{9}$ consoante a experiência que se pretende realizar.
 
