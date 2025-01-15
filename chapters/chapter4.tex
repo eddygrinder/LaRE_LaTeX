@@ -596,11 +596,23 @@ De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, �
 A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
 \subsection{Experiências}
-Em termos de organização e desenvolvimento do \textit{hardware} e \textit{software} (abordado nas secções seguintes) dos circuitos, optou-se por dividir as experiências em duas partes: Lei de \textit{Ohm} e Rectificadores/Filtros. 
+Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm}, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa alto e passa baixo.
 
-No \textit{datasheet} encontram-se os esquemas completos das experiências, assim como as placas que constituem o \acrshort{lare}: cada experiência ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
+As experiências foram implementadas de forma independente. Isto permitiu um melhor desenvolvimento, foco, organização, detecção e correcção de erros. Após os testes e conclusão do circuito da Lei de \textit{Ohm} passou-se ao projecto dos rectificadores. O desenvolvimento inicial concentrou-se no estudo dos rectificadores. No entanto, após o desenvolvimento e alguns testes, e uma vez que estas experiências partilham alguns elementos/componentes/blocos, \sout{nomeadamente, o filtro incluido no rectângulo laranja tracejado na Figura \ref{fig:rectificacao_filtragem_full},} considerou-se vantajoso adicionar ao \acrshort{lare} esta experiência complementar, voltada para o estudo práctico de filtros passa-alto e passa-baixo.
+
+As experiências foram implementadas e desenvolvidas de forma independente, uma abordagem que favoreceu um maior foco, organização e eficiência na identificação e correção de erros. Após a conclusão dos testes e do circuito da Lei de \textit{Ohm}, iniciou-se o desenvolvimento dos rectificadores. Embora a abordagem inicial se tenha concentrado exclusivamente nos rectificadores, estas experiências têm alguns elementos e componentes em comum. Diante disso, decidiu-se incluir no \acrshort{lare} uma experiência complementar dedicada ao estudo prático de filtros passa-alto e passa-baixo, ampliando o alcance e a aplicabilidade do projeto.
+
+Na organização e no desenvolvimento do \textit{hardware} e \textit{software} dos circuitos que compõem as experiências, decidiu-se estruturar o projeto em duas partes distintas: Lei de \textit{Ohm} e Retificadores/Filtros. Esta divisão foi adoptada devido ao facto de que entre os rectpara facilitar o desenvolvimento e a implementação dos circuitos, permitindo um foco específico em cada área, de forma a otimizar a integração entre o \textit{hardware} e o \textit{software} e garantir que cada experiência seja explorada de maneira mais aprofundada e didática.
+
+\textbf{Vou considerar que cada experiência compreende dois circuitos - É NECESSÁRIO VERIFICAR A COÊRENCIA ATRÁS}
+
+ 
+
+No \textit{datasheet} encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
 
 \sout{Os esquemas finais, simplificados, estão representados nas Figuras e Figuras}
+
+\textbf{Coloca aqui, falvez, uma foto da matriz lare}
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
@@ -688,11 +700,7 @@ No caso em que a resistência é desconhecida, como exemplificado na Figura \ref
 \subsubsection{Rectificadores e filtros}
 \label{sec:rectificadoresfiltros}
 
-\textbf{Vou considerar que cada experiência compreende dois circuitos - É NECESSÁRIO VERIFICAR A COÊRENCIA ATRÁS}
-
-Considera-se, nesta secção e seguintes, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa alto e passa baixo. 
-
-\sout{Estas duas experiências foram integradas na mesma placa. }O desenvolvimento inicial concentrou-se no estudo dos rectificadores. No entanto, após o desenvolvimento e alguns testes, e uma vez que estas experiências partilham alguns elementos/componentes/blocos, \sout{nomeadamente, o filtro incluido no rectângulo laranja tracejado na Figura \ref{fig:rectificacao_filtragem_full},} considerou-se vantajoso adicionar ao \acrshort{lare} esta experiência complementar, voltada para o estudo práctico de filtros passa-alto e passa-baixo.
+\sout{Estas duas experiências foram integradas na mesma placa. }
 
 Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema completo e simplificado das duas experiências, sendo que:
 \begin{itemize}
