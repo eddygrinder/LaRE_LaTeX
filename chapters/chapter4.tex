@@ -792,10 +792,9 @@ A possibilidade de variar a frequência do sinal de entrada permite que estas ex
 	\label{fig:diagramabode}
 \end{figure}
 
-Como foi dito na Secção \ref{sec:experiencias}, a integração desta experiência foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificadoresimplificado}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
+Como foi dito na Secção \ref{sec:experiencias}, a integração desta experiência foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
 
-Se se pretender estudar qualquer uma das experiências, os relés seriam activados da forma representada na Tabela \ref{Table:rectificadoresfiltros}. Neste exemplo, o filtro do rectificador de meia onda é composto por $R_{1}/C_{1}$ e o filtro do rectificador de onda completa é composto por $R_{2}/C_{2}$
-
+Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Table:rectificadoresfiltros}, pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
 
 \begin{table}[htb]
 	\centering
@@ -805,20 +804,22 @@ Se se pretender estudar qualquer uma das experiências, os relés seriam activad
 		\toprule
 		               & \multicolumn{13}{c}{Estado dos relés} \\
 		\midrule
-		               & $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ & $K_{9}$ & $K_{10}$ & $K_{11}$ & $K_{12}$ & $K_{13}$\\
+		               			& $K_{1}$ & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ & $K_{9}$ & $K_{10}$ & $K_{11}$ & $K_{12}$ & $K_{13}$\\
 		\midrule
-		Meia Onda      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0     & 1       & 1       & 0 	   & 0 \\
+		Meia Onda      			& 1		 	& 0       	& 1       & 1       & 0       & 1       & 1       & 0 	   & 0     		& 0       & 0       & 0 	   & 0 \\
 		\midrule
-		Onda Completa  & 0 		 & 1       & 0       & 0       & 1       & 0       & 0       & 1  	   & 1    & 1       & 1       & 0 	   & 0\\
+		Onda Completa  			& 0 	 	& 1       	& 0       & 0       & 1       & 0       & 0       & 1  	   & 1    		& 0       & 0       & 1 	   & 1\\
 		\midrule
-		Filtro Passa-Alto      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      & 1       & 1       & 0 	   & 0\\
+		Filtro Passa-Alto      	& 1		 	& 0       	& 0       & 1       & 0       & 0       & 1       & 0 	   & 0    		& 1       & 0       & 1 	   & 1\\
 		\midrule
-		Filtro Passa-Baixo      & 1		 & 0       & 1       & 1       & 0       & 1       & 1       & 0 	   & 0      & 1       & 1       & 0 	   & 0\\
+		Filtro Passa-Baixo      & 1		 	& 0       	& 0       & 1       & 0       & 0       & 0       & 1 	   & 0    		& 0       & 1       & 1 	   & 1\\
 		\bottomrule
 	\end{tabular}}
 \end{table}
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
+
+\textbf{DE UMA FORMA BREVE E RESEUMIDA, REFERIR QUANTO BITS E COMO SE FAZ A COMUNICAÇÃO COM O SER}
 
 13 bits começar pelo esquema completo antes de dar os exemplos de funcionamento. a explicação penso que pode ficar dividida como está, mas já com o esquema e relés com os indices certos, a explicação mas os exemplos descritos em tabela só fazem sentido se for o esquema completo,
 
