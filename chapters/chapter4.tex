@@ -15,11 +15,13 @@ O \acrshort{ide} utilizado no desenvolvimento do \textit{software} foi o \textit
 Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em placas brancas, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}.
 
 \section{Software}
+Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio é tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
+
 \subsection{Servidor Flask}
 \label{sec:flask}
-\textbf{Não sei se ainad vai ficar desta forma}
+\textbf{Não sei se ainda vai ficar desta forma - no cap anterior já foi falada sobre a escolha do flask, por isso não faz sentido abordar novamente.}
 
-Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio é tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
+Na Secção \ref{sec:back-end} foram já referidas as razões que levaram à escolha do \textit{Flask} como servidor \textit{web}. 
 
 A base para a implementação do \textit{Flask} e \underline{\textbf{toda a informação descrita neste}} \underline{\textbf{capítulo}} teve como base a documentação técnica disponível no \textit{site} do \href{https://flask.palletsprojects.com/en/3.0.x/}{\textit{Flask}} e complementada com alguns tutoriais do \textit{Youtube}, como por exemplo: \href{https://www.youtube.com/watch?v=dam0GPOAvVI}{\textit{link}} ou \href{https://www.youtube.com/watch?v=bB6Yyh7nUl4}{\textit{link}} .
 
@@ -270,7 +272,13 @@ def login():
 \end{lstlisting}
 \end{minipage}
 
-\section{pyVirtualBench}
+\vspace{1cm}
+\hrule
+\textbf{PENSO QUE ATÉ AQUI PODEM FICAR ESTAS SECÇÕES}
+\hrule
+\vspace{1cm}
+
+\subsection{pyVirtualBench}
 \label{sec:pyvirtualbench}
 Antes de se avançar para uma explicação mais pormenorizada das experiências, importa enquadrar o \textit{pyVirtualBench} no contexto do \textit{software}. Já foi referido na Secção \ref{sec:solucaoproposta} que o \textit{pyVirtualBench} é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.
 
@@ -367,9 +375,9 @@ Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{scri
 	\item Libertar o \textit{virtualbench}.
 \end{itemize}
 
-\subsubsection{Descrição da experiência}
+\subsection{Descrição da experiência}
 \label{sec:descricao_experiencia}
-Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, como pode ser visto nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}. No entanto, no contexto desta dissertação foi implementado o caso descrito na Figura \ref{fig:pagohm}. Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.
+Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, como pode ser visto nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:pagohm}. Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.
 
 Sendo assim, na implementação desta experiência foram criados os seguintes \textbf{ficheiros associados}:
 \begin{itemize}
