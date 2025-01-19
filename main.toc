@@ -53,30 +53,29 @@
 \contentsline {subsubsection}{Autenticação}{77}{section*.79}%
 \contentsline {section}{\numberline {4.2}pyVirtualBench}{78}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}VirtualBench VB-8012}{79}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Hardware}{80}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Relés}{80}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Registo de deslocamento}{80}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Driver de relés}{81}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Fontes de alimentação}{83}{subsection.4.3.4}%
-\contentsline {subsubsection}{Fonte de tensão \SI {6}{\volt } - variável}{84}{section*.86}%
-\contentsline {subsubsection}{Fonte de tensão \SI {12}{\volt } - fixa}{84}{section*.88}%
-\contentsline {subsubsection}{Fonte de tensão \SI {5}{\volt } - fixa}{85}{section*.90}%
-\contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{87}{section*.92}%
-\contentsline {subsection}{\numberline {4.3.5}Aparelhos de medida - voltímetro e amperímetro}{88}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Experiências}{89}{subsection.4.3.6}%
-\contentsline {subsubsection}{Lei de Ohm}{90}{section*.97}%
-\contentsline {subsubsection}{Rectificadores}{93}{section*.103}%
-\contentsline {subsubsection}{Filtros}{95}{section*.107}%
-\contentsline {subsubsection}{Descrição da experiência}{99}{section*.111}%
-\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{99}{section*.113}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{103}{section*.116}%
-\contentsline {subsubsection}{Fontes de alimentação - a incluir no hardware}{104}{section*.117}%
-\contentsline {section}{\numberline {4.4}qualquer coisa que ainda não sei o quê}{107}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resultados}{111}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{111}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{111}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{113}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{127}{section*.123}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{143}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{143}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{143}{section.1.A.2}%
+\contentsline {subsubsection}{Descrição da experiência}{81}{section*.80}%
+\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{83}{section*.82}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{85}{section*.85}%
+\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{88}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Hardware}{90}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Relés}{90}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Registo de deslocamento}{90}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Driver de relés}{92}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Fontes de alimentação}{93}{subsection.4.4.4}%
+\contentsline {subsubsection}{Fonte de tensão \SI {6}{\volt } - variável}{94}{section*.96}%
+\contentsline {subsubsection}{Fonte de tensão \SI {12}{\volt } - fixa}{95}{section*.98}%
+\contentsline {subsubsection}{Fonte de tensão \SI {5}{\volt } - fixa}{95}{section*.100}%
+\contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{97}{section*.102}%
+\contentsline {subsection}{\numberline {4.4.5}Aparelhos de medida - voltímetro e amperímetro}{99}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Experiências}{99}{subsection.4.4.6}%
+\contentsline {subsubsection}{Lei de Ohm}{100}{section*.107}%
+\contentsline {subsubsection}{Rectificadores}{103}{section*.113}%
+\contentsline {subsubsection}{Filtros}{105}{section*.117}%
+\contentsline {chapter}{\numberline {5}Resultados}{109}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{109}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{109}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{111}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{125}{section*.121}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{141}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{141}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{141}{section.1.A.2}%
