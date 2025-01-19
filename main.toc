@@ -54,7 +54,7 @@
 \contentsline {section}{\numberline {4.2}pyVirtualBench}{78}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}VirtualBench VB-8012}{79}{subsection.4.2.1}%
 \contentsline {subsubsection}{Descrição da experiência}{81}{section*.80}%
-\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{83}{section*.82}%
+\contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{82}{section*.82}%
 \contentsline {subsubsection}{O \textit {script configVB.py}}{85}{section*.85}%
 \contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{88}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Hardware}{90}{section.4.4}%

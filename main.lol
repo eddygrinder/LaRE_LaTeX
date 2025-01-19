@@ -20,8 +20,8 @@
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces Libertar instrumentos e \acrshort {virtualbench}}}{79}{lstlisting.4.13}%
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Exemplo \textit {ps\_example.py}}}{80}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Exemplo de envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{83}{lstlisting.4.15}%
-\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Exemplo da recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{84}{lstlisting.4.16}%
-\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{85}{lstlisting.4.17}%
+\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Exemplo da recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{83}{lstlisting.4.16}%
+\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{84}{lstlisting.4.17}%
 \contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{85}{lstlisting.4.18}%
 \contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{85}{lstlisting.4.19}%
 \contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Erro na página \textit {ohm.html}}}{86}{lstlisting.4.20}%
