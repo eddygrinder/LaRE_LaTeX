@@ -880,7 +880,19 @@ Este facto levantou alguns problemas e dificuldades no desenvolvimento do códig
 \label{sec:descricao_experiencia}
 Um ponto crucial no desenvolvimento foi a organização da estrutura de ficheiros e pastas. Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projeto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
 
-Um dos ficheiros mais importantes é o \textit{views.py} e nele estão definidas todas as rotas \textit{flask}. Quer isto dizer que, qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário.
+Os seguintes ficheiros foram criados e associados às respectivas experiências:
+Específicos:
+\begin{itemize}
+	\item Lei de \textit{Ohm} - \textit{config.py};
+	\item Rectificadores/Filtros - \textit{mixed\_signal\_oscilloscope.py};
+\end{itemize}
+Comuns
+\begin{itemize}
+	\item \textit{views.py};
+	\item \textit{configRelays.py}.
+\end{itemize}
+
+O ficheiro \textit{views.py} é parte central, pois nele estão definidas todas as rotas \textit{flask}. Quer isto dizer que, qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário.
 
 Além do ficheiro \textit{views.py}, foram criados os seguintes ficheiros específicos para cada experiência:
 \begin{itemize}

@@ -71,7 +71,7 @@
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{86}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Funcionamento geral \textit {Flask}}}{88}{figure.caption.104}%
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{88}{figure.caption.105}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{100}{figure.caption.112}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{101}{figure.caption.112}%
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{101}{figure.caption.114}%
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Página de entrada - \textit {ohm.html}}}{102}{figure.caption.115}%
 \contentsline {figure}{\numberline {4.28}{\ignorespaces \textit {Script configRelays.py}}}{106}{figure.caption.117}%
