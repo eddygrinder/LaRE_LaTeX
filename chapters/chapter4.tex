@@ -877,32 +877,34 @@ Este facto levantou alguns problemas e dificuldades no desenvolvimento do códig
 \vspace{1cm}
 
 \subsection{Experiências}
+Aqui taovez mudar o título - organização de pastas e ficheiros ou outra merda similar, tipo ``Organização e estrutura de ficheiros'', ``"Visão Geral da Estrutura de Ficheiros"
+'' ou ``Estrutura Modular de Pastas e Ficheiros''
 \label{sec:descricao_experiencia}
 Um ponto crucial no desenvolvimento foi a organização da estrutura de ficheiros e pastas. Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projeto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
 
 Os seguintes ficheiros foram criados e associados às respectivas experiências:
-Específicos:
+
+\textbf{Específicos}
 \begin{itemize}
 	\item Lei de \textit{Ohm} - \textit{config.py};
 	\item Rectificadores/Filtros - \textit{mixed\_signal\_oscilloscope.py};
 \end{itemize}
-Comuns
+
+\textbf{Comuns}
 \begin{itemize}
-	\item \textit{views.py};
-	\item \textit{configRelays.py}.
+	\item \textit{views.py} - parte central da aplicação, pois nele estão definidas todas as rotas \textit{flask}. Quer isto dizer que, cada roda representa uma funcionalidade ou página \textit{web} específica e qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário;
+	\item \textit{configRelays.py} - ficheiro responsável pelo envio da trama de \textbf{bits} para o \textit{Raspberry PI5}.
 \end{itemize}
 
-O ficheiro \textit{views.py} é parte central, pois nele estão definidas todas as rotas \textit{flask}. Quer isto dizer que, qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário.
+REFERIR TB AS PÁGINAS HTML?
 
-Além do ficheiro \textit{views.py}, foram criados os seguintes ficheiros específicos para cada experiência:
-\begin{itemize}
-	\item configVB.py - controla a experiência da Lei de Ohm;
-	\item mixed\_signal\_oscilloscope.py - controla as experiência dos rectificadores/filtros;
-	\item store\_ps\_dmm.py - organiza e mantém o estado de variáveis globais para diferentes medições (tensão, corrente) e equipamentos (ps, dmm, virtualbench, mso) de forma centralizada.
-	\item configRelays.py - controla os relés \textit{via} envio da trama de bits para o PI5.
-\end{itemize}
+\subsection{Páginas \textit{Web}}
+\label{sec:paginas}
 
-FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS
+pARA A página HTML, não foi o objectivo de fazer as merdas bonitinhas, mas sim simples e práticas, no fundo o suficiente para provar o conceito do LaRE.
+Resumindo Na experiencia da lei de ohm há o controlo dos valores da experiêncianeuica, medições a apresentação do gráfico. Este gráfico só é apresentado quando o utilizador carregar no respectivo link. Nas outras experiências, como o utilizador já tem menos controlo - só controla a frequência - REFERIR COMO É APRESENTADO O GRÁFICO. NÃO ESQUECER DO DIAGRAMA DE BODE.
+
+FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS,  FALTA A PARTE DA COMUNICAÇÃO COM O pi.
 
 ORGANIZAÇÃO DOS FICHEIROS, A FUNCÇÃO DE CADA FICHEIRO OU SCRIPT, NÃO ESQUECER O PI5, COMO É FEITA A COMUNICAÇÃO ENTRE OS SCRIPS, É DIFERENTE NAS VÁRIAS EXPERIÊNCIAS.
 
