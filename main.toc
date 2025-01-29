@@ -21,7 +21,7 @@
 \contentsline {subsubsection}{Laboratório real}{22}{section*.24}%
 \contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.26}%
 \contentsline {subsubsection}{Laboratório remoto}{30}{section*.30}%
-\contentsline {paragraph}{VISIR}{38}{section*.37}%
+\contentsline {paragraph}{VISIR}{39}{section*.37}%
 \contentsline {paragraph}{PILAR}{45}{section*.47}%
 \contentsline {section}{\numberline {2.5}COMENTÁRIO PROF}{46}{section.2.5}%
 \contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{47}{chapter.3}%
@@ -31,9 +31,9 @@
 \contentsline {section}{\numberline {3.4}Circuitos electrónicos - experiências?}{53}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Hardware}{55}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}VirtualBench}{55}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Matriz LaRE}{56}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}RaspberryPI}{56}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Relés}{59}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.2}Matriz LaRE}{55}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}RaspberryPI}{57}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Relés}{58}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{60}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{61}{subsection.3.5.6}%
 \contentsline {section}{\numberline {3.6}Software}{63}{section.3.6}%
@@ -68,10 +68,10 @@
 \contentsline {subsection}{\numberline {4.2.2}pyVirtualBench}{95}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Experiências}{98}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Páginas \textit {Web}}{99}{subsection.4.2.4}%
-\contentsline {subsubsection}{Lei de Ohm}{99}{section*.111}%
+\contentsline {subsubsection}{Lei de Ohm}{100}{section*.111}%
 \contentsline {subsubsection}{Comunicação entre a página \textit {ohm.html} e o \textit {script views.py}}{100}{section*.113}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{103}{section*.116}%
-\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{106}{section.4.3}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{104}{section*.116}%
+\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{107}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Resultados}{109}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Limitações}{109}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Melhoramentos}{109}{section.5.2}%
