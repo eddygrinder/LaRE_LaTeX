@@ -369,25 +369,9 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 
 Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
 
-No caso em que a resistência é dada, exemplificado na Figura \ref{fig:pagohm}, o declive pode ser calculado e confrontado com as soluções.
+No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
 
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/ohm_escolha.png}
-	\caption{Experiência Lei de Ohm}
-	\label{fig:pagohm}
-\end{figure}
-
-No caso em que a resistência é desconhecida, como exemplificado na Figura \ref{fig:pagohmabc}, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/ohm_escolha_abc.png}
-	\caption{Experiência Lei de Ohm - Resistências desconhecidas}
-	\label{fig:pagohmabc}
-\end{figure}
-
-\textbf{Eventualmente as Figuras 4.17 e 4.18 podem ser retiradas}
+\textbf{RETIREI - Eventualmente as Figuras 4.17 e 4.18 podem ser retiradas}
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
@@ -775,6 +759,51 @@ def login():
 \end{lstlisting}
 \end{minipage}
 
+\subsection{Páginas \textit{Web}}
+\label{sec:paginas}
+Como mencionado na Secção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível.
+
+Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
+
+O menu de escolha foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto, por exemplo, na Figura \ref{fig:pagmenu}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/menupage.png}
+	\caption{Página inicial}
+	\label{fig:pagmenu}
+\end{figure}
+
+A navegação ficou dividida da seguinte forma:
+\begin{itemize}
+	\item Autenticação;
+	\begin{itemize}
+		\item Menu Principal;
+		\begin{itemize}
+			\item Página introdutória da experiência;
+			\begin{itemize}
+				\item Página de controle e realização da experiência.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+A título de exemplo, a página sobre a Lei de \textit{Ohm}, que é apresentada ao utilizador, está representada na Figura \ref{fig:ohm_intro}.
+
+O passo seguinte é a página de controlo e realização da experiência, como se pode ver na Figura \ref{fig:ohm_ctrl}. Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis. Seleccionando ``STOP/RESET'' a experiência é interrompida e os selectores ficam desabilitados.
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Introdução\label{fig:ohm_intro}]{{\includegraphics[width=6cm]{figures/ohm_page.png} }}%
+		\qquad
+		\subfloat[\centering Controlo\label{fig:ohm_ctrl}]{{\includegraphics[width=6cm]{figures/ohm_page_controlo.png} }}%
+		\caption{Experiência Lei de \textit{Ohm}}%
+		\label{fig:pagohm}%
+	\end{figure}
+
+As outras experiências seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação.
+
 \subsection{pyVirtualBench}
 \label{sec:pyvirtualbench}
 Antes de se avançar para uma explicação mais pormenorizada das experiências, importa enquadrar o \textit{pyVirtualBench} no contexto do \textit{software}. Já foi referido na Secção \ref{sec:solucaoproposta} que o \textit{pyVirtualBench} é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.
@@ -789,6 +818,16 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 
 Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha 10 e a fonte de tensão na linha 11. O ciclo \textit{for}, na linha 16, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha 20, e não havendo erro, o \textit{virtualbench} é libertado, linha 22. A execução do \textit{script} é, então, terminada.
 
+Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
+\begin{itemize}
+	\item Iniciar o \textit{virtualbench};
+	\item No caso geral, inicializar os instrumentos, neste caso particular, iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
+	\item Desenvolvimento do programa;
+	\item Libertar a fonte de tensão ou outro instrumento inicializado;
+	\item Libertar o \textit{virtualbench}.
+\end{itemize}
+
+Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns pormenores que podem levantar potenciais problemas de interpretação e implementação.
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
 		try:
@@ -818,17 +857,6 @@ Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.p
 
 	\end{lstlisting}
 \end{minipage}
-
-Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
-\begin{itemize}
-	\item Iniciar o \textit{virtualbench};
-	\item No caso geral, inicializar os instrumentos, neste caso particular, iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
-	\item Desenvolvimento do programa;
-	\item Libertar a fonte de tensão ou outro instrumento inicializado;
-	\item Libertar o \textit{virtualbench}.
-\end{itemize}
-
-Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns pormenores que podem levantar potenciais problemas de interpretação e implementação.
 
 Como já se viu na Secção \ref{sec:hardware} o \acrshort{virtualbench} é constituído por 5 instrumentos, 4 dos quais utilizados no \acrshort{lare}: Fonte de tensão, gerador de sinal, osciloscópio e multímetro digital.
 Vários instrumentos podem ser chamados ao mesmo tempo e a cada instrumento, assim como ao \acrshort{virtualbench} é atribuído um \textbf{OBJECTO?endereço?referência? - verificar}
@@ -898,15 +926,6 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 	\item \textit{configRelays.py} - ficheiro responsável pelo envio da trama de \textbf{bits} para o \textit{Raspberry PI5}.
 \end{itemize}
 
-REFERIR TB AS PÁGINAS HTML?
-
-\subsection{Páginas \textit{Web}}
-\label{sec:paginas}
-Como foi referido na Secção \ref{sec:frontend}, tentou-se manter as páginas o mais simples, práticas e intuitivas possível. Uma explicação mais pormenorizada foi feita na Secção XPTO. 
-
-A página de entrada
-
-pARA A página HTML, não foi o objectivo de fazer as merdas bonitinhas, mas sim simples e práticas, no fundo o suficiente para provar o conceito do LaRE.
 Resumindo Na experiencia da lei de ohm há o controlo dos valores da experiêncianeuica, medições a apresentação do gráfico. Este gráfico só é apresentado quando o utilizador carregar no respectivo link. Nas outras experiências, como o utilizador já tem menos controlo - só controla a frequência - REFERIR COMO É APRESENTADO O GRÁFICO. NÃO ESQUECER DO DIAGRAMA DE BODE.
 
 FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS,  FALTA A PARTE DA COMUNICAÇÃO COM O pi.
@@ -994,16 +1013,6 @@ Do lado do servidor (\textit{script views.py}) os parâmetros são recebidos da 
 		\end{lstlisting}
 	\end{minipage}
 \end{center}
-
-A página que é apresentada ao utilizador está representada na Figura \ref{fig:pagohm} e com mais pormenor na Figura \ref{fig:introohm}.
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/parametros_desabilitados.png}
-	\caption{Página de entrada - \textit{ohm.html}}
-	\label{fig:introohm}
-\end{figure}
-
-Como exemplo, os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis, como se pode ver na Figura \ref{fig:pagohm}. Neste caso, o respectivo parâmetro é enviado para o \textit{script} \textit{views.py}. No caso de os selectores estarem habilitados, ao carregar no botão ``STOP'', os selectores ficam desabilitados.
 
 Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias. Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
 
@@ -1175,13 +1184,6 @@ Além da rota definida para o \textit{login}, as outras rotas definidas no fiche
 A juntar às páginas que compõem a estrutura base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as páginas que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Neste caso, serão cinco páginas, correspondentes aos 5 circuitos definidos na Secção \ref{sec:solucaoproposta}.
 
 O menu de escolha foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/menupage.png}
-	\caption{Página de menus}
-	\label{fig:pagmenu}
-\end{figure}
 
 As páginas referentes às experiências seguem a mesma estrutura de menus.
 
