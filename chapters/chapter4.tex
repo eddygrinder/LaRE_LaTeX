@@ -816,7 +816,7 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
 
-Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha 10 e a fonte de tensão na linha 11. O ciclo \textit{for}, na linha 16, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha 20, e não havendo erro, o \textit{virtualbench} é libertado, linha 22. A execução do \textit{script} é, então, terminada.
+Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha~\ref{line:pslibertada}, e não havendo erro, o \textit{virtualbench} é libertado, linha~\ref{line:virtualbenchlibertado}. A execução do \textit{script} é, então, terminada.
 
 Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
 \begin{itemize}
@@ -827,39 +827,42 @@ Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{scri
 	\item Libertar o \textit{virtualbench}.
 \end{itemize}
 
-Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns pormenores que podem levantar potenciais problemas de interpretação e implementação.
+Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
+
+O resultado da Listagem \ref{lst:chamadainstrumentos} é:
+\begin{itemize}
+	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
+	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
+	\item (...)PyVirtualBench.DigitalMultimeter object at 0x000001E7DEECBC50;
+\end{itemize}
+
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
 		try:
 			# Power Supply Configuration
 			channel = "ps/+25V"
 			voltage_level = 1.0
 			current_limit = 0.5
 
-			# You will probably need to replace "myVirtualBench" with the name of your device.
-			# By default, the device name is the model number and serial number separated by a hyphen; e.g., "VB8012-309738A".
-			# You can see the device's name in the VirtualBench Application under File->About
-			virtualbench = PyVirtualBench('VB8012-30A210F')
-			ps = virtualbench.acquire_power_supply()
+			virtualbench = PyVirtualBench('VB8012-30A210F') |\label{line:virtualbench}| 
+			ps = virtualbench.acquire_power_supply() |\label{line:powersource}| 
 
 			ps.configure_voltage_output(channel, voltage_level, current_limit)
 			ps.enable_all_outputs(True)
 
-			for i in range(10):
+			for i in range(10): |\label{line:ciclofor}|
 				voltage_measurement, current_measurement, ps_state = ps.read_output(channel)
 				print("Measurement [%d]: %f V\t%f A\t(%s)" % (i, voltage_measurement, current_measurement, str(ps_state)))
 
-			ps.release()
+			ps.release() |\label{line:pslibertada}|
 		except PyVirtualBenchException as e:
     		print("Error/Warning %d occurred\n%s" % (e.status, e))
 		finally:
-    		virtualbench.release()
+    		virtualbench.release() |\label{line:virtualbenchlibertado}|
 
 	\end{lstlisting}
 \end{minipage}
 
-Como já se viu na Secção \ref{sec:hardware} o \acrshort{virtualbench} é constituído por 5 instrumentos, 4 dos quais utilizados no \acrshort{lare}: Fonte de tensão, gerador de sinal, osciloscópio e multímetro digital.
-Vários instrumentos podem ser chamados ao mesmo tempo e a cada instrumento, assim como ao \acrshort{virtualbench} é atribuído um \textbf{OBJECTO?endereço?referência? - verificar}
 \begin{center}
 	\begin{minipage}{0.75\linewidth}
 		\begin{lstlisting}[language=Python, caption=Chamada do \acrshort{virtualbench} e instrumentos, label=lst:chamadainstrumentos]
@@ -870,14 +873,7 @@ dmm = virtualbench.acquire_digital_multimeter()
 	\end{minipage}
 \end{center}
 
-O resultado da Listagem \ref{lst:chamadainstrumentos} é:
-\begin{itemize}
-	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
-	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
-	\item (...)PyVirtualBench.DigitalMultimeter object at 0x000001E7DEECBC50;
-\end{itemize}
-
-No entanto, no fim da execução do ficheiro, o \acrshort{virtualbench} e os restantes instrumentos têm de ser libertados, Listagem \ref{lst:libertarinstrumentos}:
+No fim da execução do ficheiro/script, o \acrshort{virtualbench} e os restantes instrumentos têm de ser libertados, tal como indica a Listagem \ref{lst:libertarinstrumentos}:
 \begin{center}
 	\begin{minipage}{0.75\linewidth}
 		\begin{lstlisting}[language=Python, caption=Libertar instrumentos e \acrshort{virtualbench}, label=lst:libertarinstrumentos]
@@ -888,27 +884,10 @@ virtualbench.release()
 	\end{minipage}
 \end{center}
 
-\textbf{Talvez precise de melhor explicação - ou como exemplo quando se falar dos ficheiros} Sempre que um ficheiro ou \textit{script} é chamado é criado um objecto diferente para cada instrumento. Inclusive, havendo várias funções no mesmo ficheiro, os objectos criados têm de ser passados entre funções ou então, terminar e chamar o(s) instrumento(s) entre chamadas de funções. Outra hipótese seria o uso de variáveis globais. 
+No entanto, se um ficheiro ou \textit{script} for chamado várias vezes (como no caso da experiência da Lei de Ohm, abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções.
 
-Este facto levantou alguns problemas e dificuldades no desenvolvimento do código referente à experiência da Lei de \textit{Ohm}, referidos e explicados mais à frente na Secção XPTO.
-
-\vspace{1cm}
-\hrule
-\textbf{Colei o que tinha à frente - minha referência}
-\hrule
-\vspace{1cm}
-
-\vspace{1cm}
-\hrule
-\textbf{PENSO QUE ATÉ AQUI PODEM FICAR ESTAS SECÇÕES}
-\hrule
-\vspace{1cm}
-
-\subsection{Experiências}
-\label{sec:descricao_experiencia}
-
-Aqui taovez mudar o título - organização de pastas e ficheiros ou outra merda similar, tipo ``Organização e estrutura de ficheiros'', ``"Visão Geral da Estrutura de Ficheiros"
-'' ou ``Estrutura Modular de Pastas e Ficheiros''
+\subsection{Organização e estrutura de ficheiros}
+\label{sec:organizacao_ficheiros}
 
 Um ponto crucial no desenvolvimento foi a organização da estrutura de ficheiros e pastas. Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projeto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
 
@@ -918,30 +897,36 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 \begin{itemize}
 	\item Lei de \textit{Ohm} - \textit{config.py};
 	\item Rectificadores/Filtros - \textit{mixed\_signal\_oscilloscope.py};
+	\item \textins{ohm, meiaonda, ondacompleta, passaalto, passabaixo}.html.
 \end{itemize}
 
 \textbf{Comuns}
 \begin{itemize}
 	\item \textit{views.py} - parte central da aplicação, pois nele estão definidas todas as rotas \textit{flask}. Quer isto dizer que, cada roda representa uma funcionalidade ou página \textit{web} específica e qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário;
 	\item \textit{configRelays.py} - ficheiro responsável pelo envio da trama de \textbf{bits} para o \textit{Raspberry PI5}.
+	\item \textins{login, base, sign\_up}.html - páginas de autenticação e registo de utilizadores.
 \end{itemize}
 
-Resumindo Na experiencia da lei de ohm há o controlo dos valores da experiêncianeuica, medições a apresentação do gráfico. Este gráfico só é apresentado quando o utilizador carregar no respectivo link. Nas outras experiências, como o utilizador já tem menos controlo - só controla a frequência - REFERIR COMO É APRESENTADO O GRÁFICO. NÃO ESQUECER DO DIAGRAMA DE BODE.
+\subsection{Experiências}
+\label{sec:experiências}
+%Resumindo Na experiencia da lei de ohm há o controlo dos valores da experiêncianeuica, medições a apresentação do gráfico. Este gráfico só é apresentado quando o utilizador carregar no respectivo link. Nas outras experiências, como o utilizador já tem menos controlo - só controla a frequência - REFERIR COMO É APRESENTADO O GRÁFICO. NÃO ESQUECER DO DIAGRAMA DE BODE.
 
-FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS,  FALTA A PARTE DA COMUNICAÇÃO COM O pi.
+%FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS,  FALTA A PARTE DA COMUNICAÇÃO COM O pi.
 
-ORGANIZAÇÃO DOS FICHEIROS, A FUNCÇÃO DE CADA FICHEIRO OU SCRIPT, NÃO ESQUECER O PI5, COMO É FEITA A COMUNICAÇÃO ENTRE OS SCRIPS, É DIFERENTE NAS VÁRIAS EXPERIÊNCIAS.
+%ORGANIZAÇÃO DOS FICHEIROS, A FUNCÇÃO DE CADA FICHEIRO OU SCRIPT, NÃO ESQUECER O PI5, COMO É FEITA A COMUNICAÇÃO ENTRE OS SCRIPS, É DIFERENTE NAS VÁRIAS EXPERIÊNCIAS.
 
-Há um ficheiro central que ``controla'' todas as rotas \textit{flask} - views.py.
-Talvvez colocar um diagrama mais simplificado
+%Há um ficheiro central que ``controla'' todas as rotas \textit{flask} - views.py.
+%Talvvez colocar um diagrama mais simplificado
 
-Na LEI DE OHM FEZ-SE UM FICHEIRO À PARTE PARA CONTROLAR OS RELÉS - configRelays.py - POIS HÁ PARÂMETROS QUE SE TÊM DE ENVIAR. ACHOU-SE QUE EM TERMOS DE ORGANIZAÇÃO FICAVA MELHOR ASSIM.
+%Na LEI DE OHM FEZ-SE UM FICHEIRO À PARTE PARA CONTROLAR OS RELÉS - configRelays.py - POIS HÁ PARÂMETROS QUE SE TÊM DE ENVIAR. %ACHOU-SE QUE EM TERMOS DE ORGANIZAÇÃO FICAVA MELHOR ASSIM.
 
-EXISTE UM FICHEIRO CONFIG.rELAYS.PY PARA ACTIVAR OS RELÉS REFERENTES À EXPERIÊNCIA DA LEI DE OHM. ISTO PORTQUE UM DOS OBJECTIVOS FOI MINIMIZAR O CÓDIGO NO FICHEIRO QUE GERE AS ROTAS VIEWS.PY.
+%EXISTE UM FICHEIRO CONFIG.rELAYS.PY PARA ACTIVAR OS RELÉS REFERENTES À EXPERIÊNCIA DA LEI DE OHM. ISTO PORTQUE UM DOS OBJECTIVOS FOI MINIMIZAR O CÓDIGO NO FICHEIRO QUE GERE AS ROTAS VIEWS.PY.
 
-ENTÃO, QUANDO A FUNÇÃO CONFIG\_VIRTUALBENCH RECEBE OS PARÂMETROS, eles SÃO ENVIADOS PARA O SCRIPT QUE CONTROLA OS RELÉS VI SOCKET E PI5.
+%ENTÃO, QUANDO A FUNÇÃO CONFIG\_VIRTUALBENCH RECEBE OS PARÂMETROS, eles SÃO ENVIADOS PARA O SCRIPT QUE CONTROLA OS RELÉS VI SOCKET E PI5.
 
-NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
+%NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
+
+Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência. Já a segunda parte, que aborda os Retificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências.
 
 \subsubsection{Lei de Ohm}
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, como pode ser visto nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:pagohm}. Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.

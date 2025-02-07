@@ -240,3 +240,10 @@ De acordo com \cite{RemoteLabsImpactVISIR}, e citando \cite{TheVISIRproject} ent
 % Os objectivos principais foram definidos na Secção \ref{sec: Enquadramento}. Com base neles, podemos formular a pergunta fundamental: 
 
 % \textbf{Será o \acrshort{lare} uma alternativa válida ao \acrshort{visir}?}
+
+
+Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns pormenores que podem levantar potenciais problemas de interpretação e implementação, especialmente na forma com foi desenvolvido a programação referente à Lei de \textit{Ohm}. Como já se viu na Secção \ref{sec:hardware} o \acrshort{virtualbench} é constituído por 5 instrumentos, 4 dos quais utilizados no \acrshort{lare}: Fonte de tensão, gerador de sinal, osciloscópio e multímetro digital.
+
+Outra hipótese seria o uso de variáveis globais. 
+
+Este facto levantou alguns problemas e dificuldades no desenvolvimento do código referente à experiência da Lei de \textit{Ohm}, referidos e explicados mais à frente na Secção XPTO.
