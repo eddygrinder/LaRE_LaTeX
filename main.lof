@@ -71,12 +71,20 @@
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{87}{figure.caption.103}%
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Página inicial}}{95}{figure.caption.109}%
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Experiência Lei de \textit {Ohm}}}{95}{figure.caption.110}%
+<<<<<<< HEAD
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Experiência Lei de \textit {Ohm}}}{99}{figure.caption.112}%
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{100}{figure.caption.113}%
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{100}{figure.caption.115}%
 \contentsline {figure}{\numberline {4.28}{\ignorespaces \textit {Script configRelays.py}}}{105}{figure.caption.117}%
 \contentsline {figure}{\numberline {4.29}{\ignorespaces Página de \textit {login}}}{105}{figure.caption.118}%
 \contentsline {figure}{\numberline {4.30}{\ignorespaces caralho}}{106}{figure.caption.119}%
+=======
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Fluxograma/Esquema da experiência Lei de Ohm [REVER]}}{100}{figure.caption.112}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}}{101}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces \textit {Script configRelays.py}}}{105}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Página de \textit {login}}}{106}{figure.caption.117}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces caralho}}{106}{figure.caption.118}%
+>>>>>>> 326f6b5df2e208eb1a6ce300218356b1c486d66e
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
