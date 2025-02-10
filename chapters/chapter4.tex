@@ -371,8 +371,6 @@ Da forma como está implementado, o tutor ou professor, pode optar por apresenta
 
 No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
 
-\textbf{RETIREI - Eventualmente as Figuras 4.17 e 4.18 podem ser retiradas}
-
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
 \subsubsection{Rectificadores}
@@ -929,26 +927,21 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência. Já a segunda parte, que aborda os Retificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências.
 
 \subsubsection{Lei de Ohm}
-Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, como pode ser visto nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:pagohm}. Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.
+Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
 
-Sendo assim, na implementação desta experiência foram criados os seguintes \textbf{ficheiros associados}:
-\begin{itemize}
-	\item Ficheiros comuns a todas as experiências:
-	      \begin{itemize}
-		      \item \textit{views.py} - como já foi referido na Secção \ref{sec:flask}, é o ficheiro que contém as rotas e as funções associadas;
-		      \item \textit{configRelays.py} - \textit{script} que controla o envio da trama de \textit{bits} para o \gls{RaspberryPI}, consoante a escolha do utilizador.
-	      \end{itemize}
-	\item Ficheiros específicos desta experiência:
-	      \begin{itemize}
-		      \item \textit{configVB.py} - \textit{script} que contém configurações a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final;
-		      \item \textit{ohm.html} - página (``\textit{interface} gráfica'') onde o utilizador controla os elementos da experiência.
-
-	      \end{itemize}
-\end{itemize}
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Opção 1\label{fig:Opção_1}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha.png} }}%
+		\qquad
+		\subfloat[\centering Opção 2\label{fig:Opção_2}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
+		\caption{Experiência Lei de \textit{Ohm}}%
+		\label{fig:experienciaOHM}%
+	\end{figure}
 
 Como se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio.
 
-A melhor forma de descrever esta experiência é dividi-la por partes - \textbf{duas partes, como é referido no HW - lei de ohm e os rectificadoers/filtros}. A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
+A melhor forma de descrever/APRESENTAR/EXPLICAR esta experiência é dividi-la por partes - \textbf{Esta frase não está bem. PArtes? Comunicação? VER MELHOR}. A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/ohm_diagrama.drawio.png}

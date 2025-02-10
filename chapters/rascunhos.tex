@@ -247,3 +247,12 @@ Na implementação do \textit{pyVirtualBench} é preciso ter em atenção alguns
 Outra hipótese seria o uso de variáveis globais. 
 
 Este facto levantou alguns problemas e dificuldades no desenvolvimento do código referente à experiência da Lei de \textit{Ohm}, referidos e explicados mais à frente na Secção XPTO.
+
+
+\textbf{Eventualmente este parágrafo pode ficar mais à frente quando se abordar a interpretação do diagrama}
+
+Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.
+
+Sendo assim, na implementação desta experiência, além dos ficheiros \textit{views.py}, \textit{configRelays.py}. \textit{ohm.html}, já referenciados na Secção \ref{sec:organizacao_ficheiros}, foi criado o \textit{configVB.py} que contém as configurações e medições a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final.
+
+JÁ REPETI ESTA MERDA, REVER ESTA PARTE DOS FICHEIROS
