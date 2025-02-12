@@ -927,15 +927,7 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência. Já a segunda parte, que aborda os Retificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências.
 
 \subsubsection{Lei de Ohm}
-<<<<<<< HEAD
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
-=======
-Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, como pode ser visto nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:pagohm}. Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resistência e constrói o gráfico da Tensão \textit{vs} Corrente, efectuando cinco medições diferentes de cada grandeza. 
-
-SE CALHAR CHAMAR O FLUXOGRAMA E PARTIR DAÍ.
-
-Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que os parâmetros passados para o servidor - \textit{views.py} são diferentes. Outro problema que se levanta é a necessidade de armazenar os valores das variáveis correspondentes às medições. Isto advém do facto de que, entre chamadas do \textit{script}, as variáveis são perdidas.
->>>>>>> 326f6b5df2e208eb1a6ce300218356b1c486d66e
 
 \begin{figure}[hbtp]
 	\centering%
@@ -949,28 +941,26 @@ Isto implica que o \textit{script} tenha de ser chamado dez vezes, uma vez que o
 
 Como se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio.
 
-A melhor forma de descrever/APRESENTAR/EXPLICAR esta experiência é dividi-la por partes - \textbf{Esta frase não está bem. PArtes? Comunicação? VER MELHOR}. A Figura \ref{fig:fluxohm} representa o fluxograma do processo de execução da experiência.
+Para melhor descrever esta experiência e o seu funcionamento no que diz respeito ao \textit{software}, pode dividir-se a explicação em duas etapas: configuração inicial do \acrshort{virtualbench} e medição de tensão e corrente - \textbf{eventualmente três partes com o PI metido ao barulho}. A Figura \ref{fig:fluxohm} representa o fluxograma completo do processo de execução da experiência. No entanto, para a primeira etapa, o foco será na comunicação que está assinalada pelo traçado vermelho.
+
+\textbf{Eventualmente poderia colocar a foto do circuito completo e aomplementar com uma imagem mais em pormenor do tracejado vermelho}
+
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/ohm_diagrama.drawio.png}
+	\includegraphics[width=1\textwidth]{figures/ohm_diagrama_ALT.png}
 	\caption{Fluxograma/Esquema da experiência Lei de Ohm [REVER]}
 	\label{fig:fluxohm}
 \end{figure}
 
-\subsubsection{Comunicação entre a página \textit{ohm.html} e o \textit{script views.py}}
-De uma forma geral, a comunicação entre a página \textit{ohm.html} e o \textit{script views.py}, está representada esquematicamente na Figura \ref{fig:fluxohmpormenor}.
+FIQUEI AQUI - COMEÇAR POR DIZER QUE NESTA PARTE ENVOLVE 3 FICHEIROS, TALVEZ DE UMA FORMA MUITO RESUMIDA E DEPOIS PARTIR PARA UMA PARTE RIGOROSA
+
+EXPLICAR PORQUE SE COLOCOU UM BOTÃO DE OK E STOP/RESET, O PROMENOR DAS FONTES DE12v SEREM PRIMEIRO ACTIVADA AINDA NÃO ESTÁ EXPLICADA EM QQ LADO E FOI POR ISSO QUE SE OPTOU POR COLOCAR OS BOTÕES, AO FAZER RESET, OS ci E OS RELE´S DEIXAM DE ESTAR SOB TENSÃO.
+PORTNATO, O PASSO É, PRIMEIRO ACTIVAR IC E RELES, EFECTUAR MEDIÇÕES. NO FIM DA EXPERIENCIA AO CLICAR EM STOP A FONTE É DESLIGADA
 
 Entre estes dois ficheiros há envio/recepção de parâmetros.
 
 O envio dos parâmetros da página \textit{ohm.html} é feito da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
 %, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/ohm_diagrama_pormenor.drawio.png}
-	\caption{Fluxograma da comunicação entre a página ohm.html e o script views.py [REVER]}
-	\label{fig:fluxohmpormenor}
-\end{figure}
 
 \begin{center}
 	\begin{minipage}{0.7\linewidth}
