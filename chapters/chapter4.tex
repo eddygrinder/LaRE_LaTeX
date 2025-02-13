@@ -943,8 +943,6 @@ Como se optou pela liberdade de escolha aos utilizadores, a abordagem à impleme
 
 Para melhor descrever esta experiência e o seu funcionamento no que diz respeito ao \textit{software}, pode dividir-se a explicação em duas etapas: configuração inicial do \acrshort{virtualbench} e medição de tensão e corrente - \textbf{eventualmente três partes com o PI metido ao barulho}. A Figura \ref{fig:fluxohm} representa o fluxograma completo do processo de execução da experiência. No entanto, para a primeira etapa, o foco será na comunicação que está assinalada pelo traçado vermelho.
 
-\textbf{Eventualmente poderia colocar a foto do circuito completo e aomplementar com uma imagem mais em pormenor do tracejado vermelho}
-
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/ohm_diagrama_ALT.png}
@@ -952,12 +950,48 @@ Para melhor descrever esta experiência e o seu funcionamento no que diz respeit
 	\label{fig:fluxohm}
 \end{figure}
 
-FIQUEI AQUI - COMEÇAR POR DIZER QUE NESTA PARTE ENVOLVE 3 FICHEIROS, TALVEZ DE UMA FORMA MUITO RESUMIDA E DEPOIS PARTIR PARA UMA PARTE RIGOROSA
+%FIQUEI AQUI - COMEÇAR POR DIZER QUE NESTA PARTE ENVOLVE 3 FICHEIROS, TALVEZ DE UMA FORMA MUITO RESUMIDA E DEPOIS PARTIR PARA UMA PARTE RIGOROSA
 
-EXPLICAR PORQUE SE COLOCOU UM BOTÃO DE OK E STOP/RESET, O PROMENOR DAS FONTES DE12v SEREM PRIMEIRO ACTIVADA AINDA NÃO ESTÁ EXPLICADA EM QQ LADO E FOI POR ISSO QUE SE OPTOU POR COLOCAR OS BOTÕES, AO FAZER RESET, OS ci E OS RELE´S DEIXAM DE ESTAR SOB TENSÃO.
-PORTNATO, O PASSO É, PRIMEIRO ACTIVAR IC E RELES, EFECTUAR MEDIÇÕES. NO FIM DA EXPERIENCIA AO CLICAR EM STOP A FONTE É DESLIGADA
+%EXPLICAR PORQUE SE COLOCOU UM BOTÃO DE OK E STOP/RESET, O PROMENOR DAS FONTES DE12v SEREM PRIMEIRO ACTIVADA AINDA NÃO ESTÁ EXPLICADA EM QQ LADO E FOI POR ISSO QUE SE OPTOU POR COLOCAR OS BOTÕES, AO FAZER RESET, OS ci E OS RELE´S DEIXAM DE ESTAR SOB TENSÃO.
+%PORTNATO, O PASSO É, PRIMEIRO ACTIVAR IC E RELES, EFECTUAR MEDIÇÕES. NO FIM DA EXPERIENCIA AO CLICAR EM STOP A FONTE É DESLIGADA
 
-Entre estes dois ficheiros há envio/recepção de parâmetros.
+%Entre estes dois ficheiros há envio/recepção de parâmetros.
+
+Como se pode ver nas Figura \ref{fig:ohm_ctrl}, representadas na Secção \ref{sec:paginas}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente ou tensão e a construção do gráfico.
+
+De forma a prevenir qualquer descuido ou erro de utilização, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
+\begin{enumerate}
+	\item Seleccionar o botão ``OK'' que habilita os selectores;
+	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
+	\item Clicar no link ``Medir tensão'' ou ``Medir corrente'';
+	\item Seleccionar o botão ``STOP/RESET'' para interromper a experiência e desabilitar os selectores.
+\end{enumerate}
+
+A verificação dos erros e escolha de parâmetros é feita na página \textit{ohm.html}, tal como se pode ver pela Listagem \ref{lst:erro} e pelo exemplo da Figura \ref{fig:erropagina}.
+
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=html, caption=Erro na página \textit{ohm.html}, label=lst:erro]
+		(...)
+        if (Vcc === "0" || Resistance === "0") {
+          alert("Tem de primeiro seleccionar os valores de Vcc e R!");
+          return;
+        }
+		(...)
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/erro_pagina.png}
+	\caption{Erro de selecção}
+	\label{fig:erropagina}
+\end{figure}
+
+De referir que o botão ``OK'', além de habilitar os selectores, activa e configura, previamente, a fonte de tensão de \SI{25}{\volt}, como descrito na Secção \ref{sec:fontesalimentacao}. Optou-se por esta abordagem, uma vez que, quando se efectuarem as medições, os relés e circuitos integrados já estarão alimentados. Em termos de \textit{software} e da própria estrutura de programação, achou-se vantajoso o envio de parâmetros e configuração do \acrshort{virtualbench} ser separado do envio dos restantes parâmetros de medição,
+
+%serve também para e ``STOP/RESET'' são implementados com recurso a \textit{JavaScript}, tal como se pode ver na Listagem \ref{lst:okstopreset}.
 
 O envio dos parâmetros da página \textit{ohm.html} é feito da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
 %, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
@@ -1049,30 +1083,6 @@ A função ``STOP()'' é chamada quando o utilizador selecciona o botão ``STOP'
 %é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
 
 Para se perceber melhor a função deste \textit{script} e das funções descritas em cima, importa clarificar o modo de funcionamento e a implementação da página \textit{ohm.html}.
-
-Como se pode ver nas Figuras \ref{fig:pagohm} e \ref{fig:pagohmabc}, representadas na Secção \ref{sec:lei_ohm}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente ou tensão e a construção do gráfico.
-
-De forma a prevenir qualquer descuido ou erro de utilização, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
-\begin{enumerate}
-	\item Seleccionar o botão ``OK'' que habilita os selectores;
-	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
-	\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
-\end{enumerate}
-
-A verificação dos erros e escolha de parâmetros é feita na página \textit{ohm.html}, tal como se pode ver pela Listagem \ref{lst:erro} e pelo exemplo da Figura .
-
-\begin{center}
-	\begin{minipage}{0.7\linewidth}
-		\begin{lstlisting}[language=html, caption=Erro na página \textit{ohm.html}, label=lst:erro]
-		(...)
-        if (Vcc === "0" || Resistance === "0") {
-          alert("Tem de primeiro seleccionar os valores de Vcc e R!");
-          return;
-        }
-		(...)
-	\end{lstlisting}
-	\end{minipage}
-\end{center}
 
 \hrule
 \hrule
