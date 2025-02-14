@@ -71,12 +71,12 @@
 \contentsline {subsection}{\numberline {4.2.5}Experiências}{98}{subsection.4.2.5}%
 \contentsline {subsubsection}{Lei de Ohm}{99}{section*.111}%
 \contentsline {subsubsection}{O \textit {script configVB.py}}{103}{section*.115}%
-\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{106}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Resultados}{109}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{109}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{109}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{111}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{125}{section*.119}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{141}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{141}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{141}{section.1.A.2}%
+\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{105}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Resultados}{107}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{107}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{107}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{109}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{123}{section*.119}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{139}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{139}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{139}{section.1.A.2}%

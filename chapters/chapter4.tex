@@ -945,7 +945,7 @@ Para melhor descrever esta experiência e o seu funcionamento no que diz respeit
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/ohm_diagrama_ALT.png}
+	\includegraphics[width=0.9\textwidth]{figures/ohm_diagrama_ALT.png}
 	\caption{Fluxograma/Esquema da experiência Lei de Ohm [REVER]}
 	\label{fig:fluxohm}
 \end{figure}
@@ -957,9 +957,7 @@ Para melhor descrever esta experiência e o seu funcionamento no que diz respeit
 
 %Entre estes dois ficheiros há envio/recepção de parâmetros.
 
-Como se pode ver nas Figura \ref{fig:ohm_ctrl}, representadas na Secção \ref{sec:paginas}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente ou tensão e a construção do gráfico.
-
-De forma a prevenir qualquer descuido ou erro de utilização, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
+Como se pode ver nas Figura \ref{fig:ohm_ctrl}, representadas na Secção \ref{sec:paginas}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente ou tensão e a construção do gráfico. No entanto, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
 \begin{enumerate}
 	\item Seleccionar o botão ``OK'' que habilita os selectores;
 	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
@@ -989,9 +987,12 @@ A verificação dos erros e escolha de parâmetros é feita na página \textit{o
 	\label{fig:erropagina}
 \end{figure}
 
-De referir que o botão ``OK'', além de habilitar os selectores, activa e configura, previamente, a fonte de tensão de \SI{25}{\volt}, como descrito na Secção \ref{sec:fontesalimentacao}. Optou-se por esta abordagem, uma vez que, quando se efectuarem as medições, os relés e circuitos integrados já estarão alimentados. Em termos de \textit{software} e da própria estrutura de programação, achou-se vantajoso o envio de parâmetros e configuração do \acrshort{virtualbench} ser separado do envio dos restantes parâmetros de medição,
+Importa referir que o botão ``OK'', além de habilitar os seletores, também ativa e configura previamente a fonte de tensão de \SI{25}{\volt}, conforme descrito na Secção \ref{sec:fontesalimentacao}. Esta abordagem foi adotada para garantir que, no momento das medições, os relés e circuitos integrados já se encontrem devidamente alimentados. Além disso, do ponto de vista do \textit{software} e da estrutura de programação, bem como para a deteção e análise de possíveis erros, considerou-se vantajoso que o envio destes parâmetros e a configuração do \acrshort{virtualbench} fossem realizados logo nesta fase inicial.
 
 %serve também para e ``STOP/RESET'' são implementados com recurso a \textit{JavaScript}, tal como se pode ver na Listagem \ref{lst:okstopreset}.
+
+Analisando, então, a forma como é feita a comunicação dos parâmentros nesta primeira etapa, pode fazer-se o seguinte: 
+
 
 O envio dos parâmetros da página \textit{ohm.html} é feito da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
 %, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
