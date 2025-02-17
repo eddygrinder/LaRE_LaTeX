@@ -993,20 +993,20 @@ No entanto, os parâmetros escolhidos só serão efectivamente enviados para o s
 	\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
 \end{enumerate}
 
-Importa referir que o botão ``OK'', além de habilitar os selectores, também ativa e configura previamente a fonte de tensão de \SI{25}{\volt}, conforme descrito na Secção \ref{sec:fontesalimentacao}. Esta abordagem foi adotada para garantir que, no momento das medições, os relés e circuitos integrados já se encontrem devidamente alimentados. Além disso, do ponto de vista do \textit{software} e da estrutura de programação, bem como para a deteção e análise de possíveis erros, considerou-se vantajoso que o envio destes parâmetros e a configuração do \acrshort{virtualbench} fossem realizados logo nesta fase inicial.
-O botão ``STOP/RESET'' é responsável por interromper a experiência, desabilitar os selectores e desligar a fonte de alimentação.
+Sequência: 
+1º passo:
+OK - habilita selectores na página HTML e envia o parâmetro para configurar a fonte de 25V, através do ficheiro configVB
+2º passo:
+Seleccionar os parâmetros $V_{CC}$ e R
+3º passo:
+Efectuar medição de tensão ou corrente, através do ficheiro configVB
 
-%serve também para e ``STOP/RESET'' são implementados com recurso a \textit{JavaScript}, tal como se pode ver na Listagem \ref{lst:okstopreset}.
-
-Analisando, então, a forma como é feita a comunicação dos parâmentros nesta primeira etapa, pode fazer-se o seguinte: 
-para realizar a forma como +e feita a comunicação posso introduzir o ficheiro configVB.py e explicar como é feita a comunicação entre os ficheiros. aproveito o que já está escrito à frente, crio um parágrado com a descrição do config.py
-
-O envio dos parâmetros da página \textit{ohm.html} é feito da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
+Partindo da sequência anterior, o primerio passo (1.) é a habilitação dos selectores e a configuração da fonte de \SI{25}{\volt} e pela análise da Figura \ref{fig:fluxohm}, os parâmetros são enviados da página \textit{ohm.html} para o \textit{script views.py}, da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
 %, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
 
 \begin{center}
 	\begin{minipage}{0.7\linewidth}
-		\begin{lstlisting}[language=Html, caption=Exemplo de envio de parâmetros da página \textit{ohm.html} para o \textit{script views.py}, label=lst:exemploenvioparametros]
+		\begin{lstlisting}[language=Html, caption=Envio de parâmetros da página \textit{ohm.html} para o \textit{script views.py}, label=lst:exemploenvioparametros]
 		(...)
 		const url = 
 		`/config_VirtualBench?parameter1=${variavel_1}&parameter2=${variavel2}&parameter3=${variavel3}`
@@ -1015,10 +1015,10 @@ O envio dos parâmetros da página \textit{ohm.html} é feito da forma como indi
 	\end{minipage}
 \end{center}
 
-Do lado do servidor (\textit{script views.py}) os parâmetros são recebidos da forma como se pode ver na Listagem \ref{lst:exemplorecepcaoparametros}:
+Do lado do servidor - \textit{script views.py} - os parâmetros são recebidos da forma como se pode ver na Listagem \ref{lst:exemplorecepcaoparametros}:
 \begin{center}
 	\begin{minipage}{1\linewidth}
-		\begin{lstlisting}[language=Python, caption=Exemplo da recepção dos parâmetros no \textit{script views.py} enviados da página \textit{ohm.html}, label=lst:exemplorecepcaoparametros]
+		\begin{lstlisting}[language=Python, caption=Recepção dos parâmetros no \textit{script views.py} enviados da página \textit{ohm.html}, label=lst:exemplorecepcaoparametros]
 			(...)
 			@views.route('/config_VirtualBench', methods=['GET', 'POST'])
 			@login_required
@@ -1027,12 +1027,22 @@ Do lado do servidor (\textit{script views.py}) os parâmetros são recebidos da 
 					Vcc = request.args.get('parametro2', 0, int)
 					Resistance = request.args.get('parametro3', 0, int)
 					measure_parameter = request.args.get('parametro1', 0, str)
+					configOK = request.args.get('habilitar_parameter', 0, bool)
+					configSTOP = request.args.get('desabilitar_parameter', 0, bool)
 			(...)
 		\end{lstlisting}
 	\end{minipage}
 \end{center}
 
-Do lado do \textit{script} \textit{views.py}, o parâmetro é recebido e, consoante o valor, são executadas as funções necessárias. Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
+A Figura \ref{fig:passagemparametros} mostra um exemplo dos valores que o ficheiro \textit{views.py} recebe, quando se carregar no botão ``OK'':
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/exemplo_dados_Ohm.png}
+	\caption{Exemplo: passagem de parâmetros}
+	\label{fig:passagemparametros}
+\end{figure}
+
+Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=python, caption=Recepção de parâmetros enviados de \textit{ohm.html}, label=lst:recepcaoparametros]

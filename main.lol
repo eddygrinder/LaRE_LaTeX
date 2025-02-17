@@ -22,10 +22,10 @@
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Chamada do \acrshort {virtualbench} e instrumentos}}{97}{lstlisting.4.15}%
 \contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Libertar instrumentos e \acrshort {virtualbench}}}{97}{lstlisting.4.16}%
 \contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Erro na página \textit {ohm.html}}}{101}{lstlisting.4.17}%
-\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Exemplo de envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{102}{lstlisting.4.18}%
-\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Exemplo da recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{102}{lstlisting.4.19}%
-\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{103}{lstlisting.4.20}%
+\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{101}{lstlisting.4.18}%
+\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{102}{lstlisting.4.19}%
+\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Recepção de parâmetros enviados de \textit {ohm.html}}}{102}{lstlisting.4.20}%
 \contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{103}{lstlisting.4.21}%
 \contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{103}{lstlisting.4.22}%
-\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{105}{lstlisting.4.23}%
+\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{104}{lstlisting.4.23}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

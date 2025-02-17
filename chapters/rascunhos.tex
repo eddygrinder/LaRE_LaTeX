@@ -256,3 +256,11 @@ Quer isto dizer que, o utilizador ou aluno, parte do valor já conhecido da resi
 Sendo assim, na implementação desta experiência, além dos ficheiros \textit{views.py}, \textit{configRelays.py}. \textit{ohm.html}, já referenciados na Secção \ref{sec:organizacao_ficheiros}, foi criado o \textit{configVB.py} que contém as configurações e medições a realizar no \acrshort{virtualbench}, assim como a construção do gráfico final.
 
 JÁ REPETI ESTA MERDA, REVER ESTA PARTE DOS FICHEIROS
+
+
+
+
+Importa referir que o botão ``OK'', além de habilitar os selectores, também ativa e configura previamente a fonte de tensão de \SI{25}{\volt}, conforme descrito na Secção \ref{sec:fontesalimentacao}. Esta abordagem foi adotada para garantir que, no momento das medições, os relés e circuitos integrados já se encontrem devidamente alimentados. Além disso, do ponto de vista do \textit{software} e da estrutura de programação, bem como para a deteção e análise de possíveis erros, considerou-se vantajoso que o envio destes parâmetros e a configuração do \acrshort{virtualbench} fossem realizados logo nesta fase inicial.
+O botão ``STOP/RESET'' é responsável por interromper a experiência, desabilitar os selectores e desligar a fonte de alimentação.
+
+%serve também para e ``STOP/RESET'' são implementados com recurso a \textit{JavaScript}, tal como se pode ver na Listagem \ref{lst:okstopreset}.
