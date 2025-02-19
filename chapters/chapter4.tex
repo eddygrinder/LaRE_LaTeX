@@ -502,6 +502,9 @@ Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Ta
 \section{Software}
 Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio foi tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
 
+O projeto está disponível para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no repositório do \textit{GitHub} do \href{https://github.com/eddygrinder/LaRE}{LaRE}. 
+
+
 \subsection{Servidor Flask}
 \label{sec:flask}
 \textbf{Não sei se ainda vai ficar desta forma - no cap anterior já foi falada sobre a escolha do flask, por isso não faz sentido abordar novamente.}
@@ -1045,22 +1048,68 @@ A Figura \ref{fig:passagemparametros} mostra um exemplo dos valores que o fichei
 	\label{fig:passagemparametros}
 \end{figure}
 
-O único parâmetro que é passado, é respeitante ao botão ``OK'', que foi definido como ``True'', representado na Linha \ref{line:trueparameter}, da Listagem \ref{lst:exemploenvioparametros}.
+O único parâmetro que é passado, é respeitante ao botão ``OK'', que foi definido como \textit{``True''}, representado na Linha \ref{line:trueparameter}, da Listagem \ref{lst:exemploenvioparametros}.
 
-Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()} do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
+Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()}, Linha \ref{line:configOK}, do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=python, caption=Recepção de parâmetros enviados de \textit{ohm.html}, label=lst:recepcaoparametros]
+	\begin{lstlisting}[language=python, escapechar=|, caption=Teste do parâmetro ``OK'' (\ldots e ``STOP'') no ficheiro \textit{views.py}, label=lst:recepcaoparametros]
 	(...)
 	configOK = request.args.get('habilitar_parameter', None, bool)
 	(...)
 	if configOK == True:
-        configVB.OK()      
+        configVB.OK() |\label{line:configOK}|  
     elif configSTOP == True:
         configVB.STOP()	
 	(...)
 	\end{lstlisting}
 \end{minipage}
+
+O ficheiro \textit{configVB.py} é responsável pela configuração do \acrshort{virtualbench} e pela construção do gráfico final. Além das supra-mencionadas inclui ainda as seguintes funções:
+\begin{itemize}
+	\item \textit{OK()};
+	\item \textit{STOP()};
+	\item \textit{test\_parameters(Vcc:int, R:int, measure\_parameter:str)};
+	\item \textit{plot\_graphic(current\_measurements, voltage\_measurements)}.
+\end{itemize}
+
+Como já referido anteriormente, a função ``OK()'' é responsável por activar a fonte de alimentação de \SI{25}{\volt} do \acrshort{virtualbench}, configurá-la para \SI{12}{\volt} e habilitar os selectores dos parâmetros $V_{CC}$ e R. 
+
+% referencia fontesalimentacao Coa fonte de 12V que vai alimentar os integrados e, através do LM317, a fonte de 5V. 
+
+A função ``STOP()'' desactiva e liberta todas as saídas do \acrshort{virtualbench}, assim como os instrumentos e o próprio \acrshort{virtualbench}. Os selectores dos parâmetros $V_{CC}$ e R também são desabilitados.
+
+Na Listagem \ref{lst:exemploOKPS} e Listagem \ref{lst:exemploSTOPPS} pode ver-se um exemplo de configuração da fonte de alimentação e do \textit{RESET}, respectivamente. 
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Exemplo de configuração: fonte de alimentação - OK, label=lst:exemploOKPS]
+		(...)
+		channel = "ps/+25V"
+		voltage_level = 12.0
+		current_limit = 0.5 
+		ps.enable_all_outputs(True)
+		ps.configure_voltage_output(channel, voltage_level, current_limit)
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Exemplo de configuração: fonte de alimentação - STOP, label=lst:exemploSTOPPS]
+		(...)
+		if all([ps, dmm, virtualbench]):
+		   	ps.enable_all_outputs(False)
+        	ps.release()
+        	dmm.release()
+        	virtualbench.release()
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+\textbf{ATENÇÃO - Não esquecer de explicar a rebienga do store e get, nestas funções e o porquê}
+
+\vspace{1cm}
+
+ANALISOU-SE ANTERIORMENTE O PROCEDIMENTO DE OK E STOP-RESET. VAMOS AGORA PARA O ENVIO DOS RESTANTES PARAMENTROS E MEDIÇÕES
 
 !!!!!!!!!! FIQUEI AQUI !!!!!!!!!!
 REFERIR, TALVEZ A FONTE DO FLASK, RESPEITANTE AO REQUEST.ARGS
@@ -1094,21 +1143,6 @@ Quando se trata de enviar o resultado das medições para a página \textit{ohm.
 
 \subsubsection{O \textit{script configVB.py}}
 \textbf{Este script poderá eventualmente ficar enquadrado numa secção a criar, denominada ``Descrição dos scripts'' ou então, na descrição da experiência lei de ohm.}
-Neste \textit{script} fazem-se as configurações do \acrshort{virtualbench} e a construção do gráfico final e contém quatro funções referenciadas OU NÃO na Secção \textbf{SECÇÃO}:
-\begin{itemize}
-	\item \textit{OK()};
-	\item \textit{STOP()};
-	\item \textit{test\_parameters(Vcc:int, R:int, measure\_parameter:str)};
-	\item \textit{plot\_graphic(current\_measurements, voltage\_measurements)}.
-\end{itemize}
-
-A função ``OK()'' é chamada quando o utilizador selecciona o botão ``OK'' na página \textit{ohm.html}. É responsável por activar a fonte de alimentação de \SI{12}{\volt} do \acrshort{virtualbench} e habilitar os selectores dos parâmetros $V_{CC}$ e R.
-
-A função ``STOP()'' é chamada quando o utilizador selecciona o botão ``STOP'' na página \textit{ohm.html} e funciona como uma espécie de \textit{RESET}. Esta função é responsável por desactivar e libertar todas saídas do \acrshort{virtualbench}, assim como os instrumentos e o próprio \acrshort{virtualbench}. Os selectores dos parâmetros $V_{CC}$ e R também são desabilitados.
-
-%é chamado no \textit{script views.py}, consoante o valor do parâmetro recebido. A Figura \ref{fig:cutconfigVB} representa o diagrama de blocos do \textit{script}.
-
-Para se perceber melhor a função deste \textit{script} e das funções descritas em cima, importa clarificar o modo de funcionamento e a implementação da página \textit{ohm.html}.
 
 \hrule
 \hrule
