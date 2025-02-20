@@ -993,7 +993,9 @@ No entanto, os parâmetros escolhidos só serão efectivamente enviados para o s
 \begin{enumerate}
 	\item Seleccionar o botão ``OK'' que habilita os selectores;
 	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
-	\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
+	\begin{enumerate}
+		\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
+	\end{enumerate}
 \end{enumerate}
 
 %Sequência: 
@@ -1004,6 +1006,7 @@ No entanto, os parâmetros escolhidos só serão efectivamente enviados para o s
 %3º passo:
 %Efectuar medição de tensão ou corrente, através do ficheiro configVB
 
+\paragraph{Configuração inicial do VB} ~\\
 Partindo da sequência anterior, o primerio passo (1.) é a habilitação dos selectores e a configuração da fonte de \SI{25}{\volt}. Pela análise da Figura \ref{fig:fluxohm}, os parâmetros são enviados da página \textit{ohm.html} para o \textit{script views.py}, da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
 %, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
 
@@ -1104,6 +1107,8 @@ Na Listagem \ref{lst:exemploOKPS} e Listagem \ref{lst:exemploSTOPPS} pode ver-se
 		(...)
 	\end{lstlisting}
 \end{minipage}
+
+Analisado procedimento de configuração inicial do \acrshort{virtualbench}, o próximo passo (2.) é a medição de tensão e corrente e envio/recepção dos respectivos parâmetros.
 
 \textbf{ATENÇÃO - Não esquecer de explicar a rebienga do store e get, nestas funções e o porquê}
 
