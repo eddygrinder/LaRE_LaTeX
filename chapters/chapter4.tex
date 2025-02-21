@@ -1033,7 +1033,7 @@ Do lado do servidor - \textit{script views.py} - os parâmetros são recebidos d
 				try:
 					Vcc = request.args.get('Vcc', 0, int)|\label{line:vccref}|
 					Resistance = request.args.get('R', 0, int)
-					measure_parameter = request.args.get('parameter', 0, str)
+					measure_parameter = request.args.get('parameter', 0, str)|\label{line:measureref}|
 					configOK = request.args.get('habilitar_parameter', 0, bool)
 					configSTOP = request.args.get('desabilitar_parameter', 0, bool)|\label{line:stopref}|
 			(...)
@@ -1111,6 +1111,27 @@ Na Listagem \ref{lst:exemploOKPS} e Listagem \ref{lst:exemploSTOPPS} pode ver-se
 Analisado procedimento de configuração inicial do \acrshort{virtualbench}, o próximo passo (2.) é a medição de tensão e corrente e envio/recepção dos respectivos parâmetros.
 
 \paragraph{Medição da tensão e corrente} ~\\
+Na Listagem \ref{lst:exemploenvioparametros} é possível observar como o parâmetro é enviado para o ficheiro \textit{views.py}. No entanto, nesta etapa, são transmitidos três parâmetros: $V_{CC}$, R e o tipo de medição a realizar — corrente ou tensão. O método de envio desses parâmetros é idêntico ao utilizado para um único parâmetro, conforme ilustrado na Listagem \ref{lst:envioparmedidas}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=html, escapechar=|, caption=Envio de parâmetros da página \textit{ohm.html} para \textit{views.py}, label=lst:envioparmedidas]
+		(...)
+		const parameter = this.dataset.parameter;
+		(...)
+		const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistance}`;
+        fetch(url)
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+Na Listagem \ref{lst:exemplorecepcaoparametros}, Linhas \ref{line:vccref} a \ref{line:measureref} é possível observar como os parâmetros são recebidos no ficheiro \textit{views.py}.
+
+Após o teste aos parâmetros recebidos, o procedimento pode ser descrito da seguinte forma:
+\begin{itemize}
+	\item Configurar os relés;
+	\item Configurar o \acrshort{virtualbench} e efectuar a medição;
+	\item Desligar todos os relés.
+\end{itemize}
 
 \textbf{ATENÇÃO - Não esquecer de explicar a rebienga do store e get, nestas funções e o porquê}
 
