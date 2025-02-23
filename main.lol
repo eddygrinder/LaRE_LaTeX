@@ -28,7 +28,8 @@
 \contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Exemplo de configuração: fonte de alimentação - OK}}{103}{lstlisting.4.21}%
 \contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Exemplo de configuração: fonte de alimentação - STOP}}{104}{lstlisting.4.22}%
 \contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para \textit {views.py}}}{104}{lstlisting.4.23}%
-\contentsline {lstlisting}{\numberline {4.24}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{105}{lstlisting.4.24}%
-\contentsline {lstlisting}{\numberline {4.25}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{105}{lstlisting.4.25}%
-\contentsline {lstlisting}{\numberline {4.26}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{106}{lstlisting.4.26}%
+\contentsline {lstlisting}{\numberline {4.24}{\ignorespaces Procedimento de medição}}{105}{lstlisting.4.24}%
+\contentsline {lstlisting}{\numberline {4.25}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{105}{lstlisting.4.25}%
+\contentsline {lstlisting}{\numberline {4.26}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{106}{lstlisting.4.26}%
+\contentsline {lstlisting}{\numberline {4.27}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{107}{lstlisting.4.27}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

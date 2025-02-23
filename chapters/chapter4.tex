@@ -1137,6 +1137,22 @@ Após o teste aos parâmetros recebidos, o procedimento pode ser descrito da seg
 
 \vspace{1cm}
 
+O procedimento pode ser visto na Listagem \ref{lst:procedimentomedicao}, sendo que a Linha \ref{line:configrelays} é responsável por activar os relés, a Linha \ref{line:measureresult} configura o \acrshort{virtualbench}e efectua a medição da grandeza e a Linha \ref{line:stoprelays} desactiva os relés.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Procedimento de medição, label=lst:procedimentomedicao]
+		(...)
+		configRelays.config_relays_ohm(Resistance, measure_parameter) |\label{line:configrelays}|
+		time.sleep(2)
+		measurement_result = configVB.test_parameters(Vcc, Resistance, measure_parameter) |\label{line:measureresult}|
+		configRelays.config_relays_ohm(0, measure_parameter) |\label{line:stoprelays}|
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+
+A configuração dos relés é realizada no ficheiro 
+
 ANALISOU-SE ANTERIORMENTE O PROCEDIMENTO DE OK E STOP-RESET. VAMOS AGORA PARA O ENVIO DOS RESTANTES PARAMENTROS E MEDIÇÕES
 
 !!!!!!!!!! FIQUEI AQUI !!!!!!!!!!
