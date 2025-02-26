@@ -69,7 +69,7 @@
 \contentsline {subsection}{\numberline {4.2.3}pyVirtualBench}{95}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Organização e estrutura de ficheiros}{98}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Comunicação-Protocolo ou o raio que te parta}{98}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Experiências}{98}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.6}Experiências}{99}{subsection.4.2.6}%
 \contentsline {subsubsection}{Lei de Ohm}{99}{section*.112}%
 \contentsline {paragraph}{Configuração inicial do VB}{101}{section*.116}%
 \contentsline {paragraph}{Medição da tensão e corrente}{104}{section*.118}%
