@@ -70,7 +70,7 @@
 \contentsline {subsection}{\numberline {4.2.4}Organização e estrutura de ficheiros}{98}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Comunicação-Protocolo ou o raio que te parta}{98}{subsection.4.2.5}%
 \contentsline {subsection}{\numberline {4.2.6}Experiências}{99}{subsection.4.2.6}%
-\contentsline {subsubsection}{Lei de Ohm}{100}{section*.112}%
+\contentsline {subsubsection}{Lei de Ohm}{99}{section*.112}%
 \contentsline {paragraph}{Configuração inicial do VB}{102}{section*.116}%
 \contentsline {paragraph}{Medição da tensão e corrente}{105}{section*.118}%
 \contentsline {subsubsection}{O \textit {script configVB.py}}{107}{section*.119}%
