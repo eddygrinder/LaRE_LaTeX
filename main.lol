@@ -21,15 +21,18 @@
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Exemplo \textit {ps\_example.py}}}{97}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Chamada do \acrshort {virtualbench} e instrumentos}}{97}{lstlisting.4.15}%
 \contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Libertar instrumentos e \acrshort {virtualbench}}}{97}{lstlisting.4.16}%
-\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Erro na página \textit {ohm.html}}}{102}{lstlisting.4.17}%
-\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{102}{lstlisting.4.18}%
-\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{103}{lstlisting.4.19}%
-\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Teste do parâmetro ``OK'' (\ldots e ``STOP'') no ficheiro \textit {views.py}}}{104}{lstlisting.4.20}%
-\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Exemplo de configuração: fonte de alimentação - OK}}{104}{lstlisting.4.21}%
-\contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Exemplo de configuração: fonte de alimentação - STOP}}{105}{lstlisting.4.22}%
-\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para \textit {views.py}}}{105}{lstlisting.4.23}%
-\contentsline {lstlisting}{\numberline {4.24}{\ignorespaces Procedimento de medição}}{106}{lstlisting.4.24}%
-\contentsline {lstlisting}{\numberline {4.25}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{106}{lstlisting.4.25}%
-\contentsline {lstlisting}{\numberline {4.26}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{107}{lstlisting.4.26}%
-\contentsline {lstlisting}{\numberline {4.27}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{108}{lstlisting.4.27}%
+\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Comunicação \acrshort {html} - \textit {views.py}}}{99}{lstlisting.4.17}%
+\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Comunicação \textit {views.py} - \acrshort {html}}}{100}{lstlisting.4.18}%
+\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Comunicação \textit {python} - \textit {python}}}{100}{lstlisting.4.19}%
+\contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Erro na página \textit {ohm.html}}}{103}{lstlisting.4.20}%
+\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{103}{lstlisting.4.21}%
+\contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{104}{lstlisting.4.22}%
+\contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Teste do parâmetro ``OK'' (\ldots e ``STOP'') no ficheiro \textit {views.py}}}{105}{lstlisting.4.23}%
+\contentsline {lstlisting}{\numberline {4.24}{\ignorespaces Exemplo de configuração: fonte de alimentação - OK}}{105}{lstlisting.4.24}%
+\contentsline {lstlisting}{\numberline {4.25}{\ignorespaces Exemplo de configuração: fonte de alimentação - STOP}}{106}{lstlisting.4.25}%
+\contentsline {lstlisting}{\numberline {4.26}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para \textit {views.py}}}{106}{lstlisting.4.26}%
+\contentsline {lstlisting}{\numberline {4.27}{\ignorespaces Procedimento de medição}}{107}{lstlisting.4.27}%
+\contentsline {lstlisting}{\numberline {4.28}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{107}{lstlisting.4.28}%
+\contentsline {lstlisting}{\numberline {4.29}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{108}{lstlisting.4.29}%
+\contentsline {lstlisting}{\numberline {4.30}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{109}{lstlisting.4.30}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
