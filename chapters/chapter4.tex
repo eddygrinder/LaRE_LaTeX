@@ -805,87 +805,7 @@ O passo seguinte é a página de controlo e realização da experiência, como s
 
 As outras experiências seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação.
 
-\subsection{pyVirtualBench}
-\label{sec:pyvirtualbench}
-Antes de se avançar para uma explicação mais pormenorizada das experiências, importa enquadrar o \textit{pyVirtualBench} no contexto do \textit{software}. Já foi referido na Secção \ref{sec:solucaoproposta} que o \textit{pyVirtualBench} é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.
-
-Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se enquadram nos objectivos deste projecto são:
-\begin{itemize}
-	\item \textit{dmm\_example.py}: exemplo que demonstra como efetuar medições utilizando o multímetro digital;
-	\item \textit{fgen\_example.py}: exemplo que demonstra como configurar e gerar uma onda através do gerador de sinal;
-	\item \textit{mso\_simple\_example.py}: exemplo que demonstra como configurar e adquirir dados do osciloscópio, utilizando a funcionalidade de configuração automática incorporada;
-	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
-\end{itemize}
-
-Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha~\ref{line:pslibertada}, e não havendo erro, o \textit{virtualbench} é libertado, linha~\ref{line:virtualbenchlibertado}. A execução do \textit{script} é, então, terminada.
-
-Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
-\begin{itemize}
-	\item Iniciar o \textit{virtualbench};
-	\item No caso geral, inicializar os instrumentos, neste caso particular, iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
-	\item Desenvolvimento do programa;
-	\item Libertar a fonte de tensão ou outro instrumento inicializado;
-	\item Libertar o \textit{virtualbench}.
-\end{itemize}
-
-Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
-
-O resultado da Listagem \ref{lst:chamadainstrumentos} é:
-\begin{itemize}
-	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
-	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
-	\item (...)PyVirtualBench.DigitalMultimeter object at 0x000001E7DEECBC50;
-\end{itemize}
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
-		try:
-			# Power Supply Configuration
-			channel = "ps/+25V"
-			voltage_level = 1.0
-			current_limit = 0.5
-
-			virtualbench = PyVirtualBench('VB8012-30A210F') |\label{line:virtualbench}| 
-			ps = virtualbench.acquire_power_supply() |\label{line:powersource}| 
-
-			ps.configure_voltage_output(channel, voltage_level, current_limit)
-			ps.enable_all_outputs(True)
-
-			for i in range(10): |\label{line:ciclofor}|
-				voltage_measurement, current_measurement, ps_state = ps.read_output(channel)
-				print("Measurement [%d]: %f V\t%f A\t(%s)" % (i, voltage_measurement, current_measurement, str(ps_state)))
-
-			ps.release() |\label{line:pslibertada}|
-		except PyVirtualBenchException as e:
-    		print("Error/Warning %d occurred\n%s" % (e.status, e))
-		finally:
-    		virtualbench.release() |\label{line:virtualbenchlibertado}|
-
-	\end{lstlisting}
-\end{minipage}
-
-\begin{center}
-	\begin{minipage}{0.75\linewidth}
-		\begin{lstlisting}[language=Python, caption=Chamada do \acrshort{virtualbench} e instrumentos, label=lst:chamadainstrumentos]
-virtualbench = PyVirtualBench('VB8012-30A210F')
-ps = virtualbench.acquire_power_supply()
-dmm = virtualbench.acquire_digital_multimeter()
-\end{lstlisting}
-	\end{minipage}
-\end{center}
-
-No fim da execução do ficheiro/script, o \acrshort{virtualbench} e os restantes instrumentos têm de ser libertados, tal como indica a Listagem \ref{lst:libertarinstrumentos}:
-\begin{center}
-	\begin{minipage}{0.75\linewidth}
-		\begin{lstlisting}[language=Python, caption=Libertar instrumentos e \acrshort{virtualbench}, label=lst:libertarinstrumentos]
-ps.release()
-dmm.release()
-virtualbench.release()
-\end{lstlisting}
-	\end{minipage}
-\end{center}
-
-No entanto, se um ficheiro ou \textit{script} for chamado várias vezes (como no caso da experiência da Lei de Ohm, abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções.
+\textbf{AQUI ESTAVA A SECÇÃO DEDICADA AO VIRTUALBENCH - OPINIÃO PROF}
 
 \subsection{Organização e estrutura de ficheiros}
 \label{sec:organizacao_ficheiros}
@@ -930,35 +850,94 @@ Entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se,
 	\end{lstlisting}
 \end{minipage}
 
-O envio de parâmetros para as páginas é feito em \acrfull{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
+O envio de parâmetros para as páginas é feito em \gls{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
 
+\begin{center}
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{views.py} - \acrshort{html}, label=lst:returnjson]
 	return jsonify({'measurement_result': resultado})|\label{line:returnjson}|
 	\end{lstlisting}
 \end{minipage}
+\end{center}
 
-
-
-%usando jsonify({'measurement_result': measurement_result}), que converte e devolve os dados numa API Flask.
-
-As setas verdes representam a comunicação entre dois ficheiros \textit{python}. O processo é bastante simples, bastando para isso, importar o ficheiro que contém a função que se pretende chamar. A Lista \ref{lst:pypy} ilustra a forma como se importa um ficheiro \textit{python} e a chamada da respectiva função com o parâmetro a passar.
+As setas verdes representam a comunicação entre dois ficheiros \textit{python}. O processo é bastante simples, bastando para isso, importar o ficheiro que contém a função que se pretende chamar. A Listagem \ref{lst:pypy} ilustra a forma como se importa um ficheiro \textit{python} e a chamada da respectiva função com o parâmetro a passar.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{python} - \textit{python}, label=lst:pypy]
 		from ctrl_hardware import configRelays, configVB, mixed_signal_oscilloscope |\label{line:ficheiros}|
-		configRelays.config_relays_ohm(Resistance, measure_parameter) |\label{line:trueparameter}|
+		configRelays.config_relays_ohm(Resistance, measure_parameter) |\label{line:chamadafuncao}|
 	\end{lstlisting}
 \end{minipage}
 
-Neste caso, são importados três ficheiros
+Neste caso, são importados três ficheiros a partir da pasta ``\textit{ctrl\_hardware}'', como descrito na Linha \ref{line:ficheiros} e a função \textit{config\_relays\_ohm}, que está definida no ficheiro \textit{configRelays}, é chamada com os parâmetros \textit{Resistance} e \textit{measure\_parameter}, Linha \ref{line:chamadafuncao}.
 
-Através do diagrama é possível perceber que há três  comunicação se baseia na troca de parâmetros qualquer troca de parâmetros passa pelo ficheiro \textit{views.py} - Servidor \textit{Flask}. As setas coloridas representam as diferentes trocas entre os diversos tipos de ficheiros.
+O controlo do \acrshort{virtualbench}, representado na Figura \ref{fig:diagramasimplificado} pelas setas a cor vermelha, é feito com recurso à libraria \textit{pyVirtualbench}.
+
+Já foi referido na Secção \ref{sec:solucaoproposta} que o \textit{pyVirtualBench} é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.
+
+Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se enquadram nos objectivos deste projecto são:
 \begin{itemize}
-	\item \acrshort{html} e \textit{python};
-	\item \textit{python} e \textit{python}.
+	\item \textit{dmm\_example.py}: exemplo que demonstra como efetuar medições utilizando o multímetro digital;
+	\item \textit{fgen\_example.py}: exemplo que demonstra como configurar e gerar uma onda através do gerador de sinal;
+	\item \textit{mso\_simple\_example.py}: exemplo que demonstra como configurar e adquirir dados do osciloscópio, utilizando a funcionalidade de configuração automática incorporada;
+	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
-há três tipos de trocas comunicação entre o \textit{Flask} e o \textit{pyVirtualBench} é feita através de \acrshort{http} e \acrshort{url}s. O utilizador, ao aceder à página \textit{ohm.html}, pode escolher os valores de tensão e resistência, que são enviados para o servidor \textit{Flask} através de \acrshort{http} e \acrshort{url}s. O servidor \textit{Flask} recebe os parâmetros e envia-os para o \textit{pyVirtualBench}, que executa a experiência. Os resultados são enviados de volta para o servidor \textit{Flask}, que os apresenta ao utilizador.
+
+Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha~\ref{line:pslibertada}, e não havendo erro, o \textit{virtualbench} é libertado, linha~\ref{line:virtualbenchlibertado}. A execução do \textit{script} é, então, terminada.
+
+Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
+\begin{itemize}
+	\item Iniciar o \textit{virtualbench};
+	\item No caso geral, inicializar os instrumentos, neste caso particular, iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
+	\item Desenvolvimento do programa;
+	\item Libertar a fonte de tensão ou outro instrumento inicializado;
+	\item Libertar o \textit{virtualbench}.
+\end{itemize}
+
+Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
+
+No exemplo seguinte, o resultado da execução das instruções na Linha \ref{line:virtualbench} e Linha \ref{line:powersource}, referente à Listagem \ref{lst:exemplops} é:
+\begin{itemize}
+	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
+	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
+\end{itemize}
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+25V"
+			voltage_level = 1.0
+			current_limit = 0.5
+
+			virtualbench = PyVirtualBench('VB8012-30A210F') |\label{line:virtualbench}| 
+			ps = virtualbench.acquire_power_supply() |\label{line:powersource}| 
+
+			ps.configure_voltage_output(channel, voltage_level, current_limit)
+			ps.enable_all_outputs(True)
+
+			for i in range(10): |\label{line:ciclofor}|
+				voltage_measurement, current_measurement, ps_state = ps.read_output(channel)
+				print("Measurement [%d]: %f V\t%f A\t(%s)" % (i, voltage_measurement, current_measurement, str(ps_state)))
+
+			ps.release() |\label{line:pslibertada}|
+		except PyVirtualBenchException as e:
+    		print("Error/Warning %d occurred\n%s" % (e.status, e))
+		finally:
+    		virtualbench.release() |\label{line:virtualbenchlibertado}|
+
+	\end{lstlisting}
+\end{minipage}
+
+No fim da execução do ficheiro, o \acrshort{virtualbench} e os restantes instrumentos têm de ser libertados, tal como se pode ver na Linha \ref{line:virtualbenchlibertado} e Linha \ref{line:pslibertada}, da Listagem \ref{lst:exemplops}.
+
+No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de Ohm, abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções.
+
+No \acrshort{lare}, o controlo dos relés é feito com recurso ao \textit{RaspberryPI5}, representado na Figura \ref{fig:diagramasimplificado} pela seta azul. A ligação ao \acrshort{lare} é feita por um cabo IDC, 40 pinos, tal como descrito no \textit{datasheet} - ver como fazer a referênia.
+
+Como já foi referido na Secção \ref{sec:arquitectura}, a comunicação entre o \textit{RaspberryPI5} e o servidor é feita através de um \textit{socket}. No caso geral, é enviada uma \textit{string} correspondente ao número de relés que se pretende controlar.
+
+Pela consulta dos esquemas no \textit{datasheet}, a Lei de \textit{Ohm} é composta por 8 relés e as restantes experiências por 13 relés. Logo, será enviada uma \textit{string} com 8 ou 13 \textit{bits}, consoante a experiência que se pretende controlar. 
 
 \subsection{Experiências}
 \label{sec:experiências}

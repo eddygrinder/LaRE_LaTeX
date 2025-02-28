@@ -3,7 +3,7 @@
 \babel@toc {portuguese}{}\relax 
 \contentsline {chapter}{Lista de Figuras}{ix}{chapter*.10}%
 \contentsline {chapter}{Lista de Tabelas}{xiii}{chapter*.11}%
-\contentsline {chapter}{Listagens}{xvi}{chapter*.12}%
+\contentsline {chapter}{Listagens}{xv}{chapter*.12}%
 \contentsline {chapter}{Gloss\'{a}rio}{xvii}{section*.13}%
 \contentsline {chapter}{Lista de Acr\'{o}nimos}{xxi}{section*.15}%
 \contentsline {chapter}{Lista de S\'{i}mbolos}{xxv}{section*.17}%
@@ -66,20 +66,19 @@
 \contentsline {subsubsection}{Base de dados}{93}{section*.107}%
 \contentsline {subsubsection}{Autenticação}{93}{section*.108}%
 \contentsline {subsection}{\numberline {4.2.2}Páginas \textit {Web}}{94}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}pyVirtualBench}{95}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Organização e estrutura de ficheiros}{98}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Arquitectura de Comunicação}{98}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Experiências}{100}{subsection.4.2.6}%
-\contentsline {subsubsection}{Lei de Ohm}{101}{section*.112}%
-\contentsline {paragraph}{Configuração inicial do VB}{103}{section*.116}%
-\contentsline {paragraph}{Medição da tensão e corrente}{106}{section*.118}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{108}{section*.119}%
-\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{110}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Resultados}{113}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{113}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{113}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{115}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{129}{section*.123}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{145}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{145}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{145}{section.1.A.2}%
+\contentsline {subsection}{\numberline {4.2.3}Organização e estrutura de ficheiros}{95}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Arquitectura de Comunicação}{96}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Experiências}{100}{subsection.4.2.5}%
+\contentsline {subsubsection}{Lei de Ohm}{100}{section*.112}%
+\contentsline {paragraph}{Configuração inicial do VB}{102}{section*.116}%
+\contentsline {paragraph}{Medição da tensão e corrente}{105}{section*.118}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{107}{section*.119}%
+\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{109}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Resultados}{111}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{111}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{111}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{113}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{127}{section*.123}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{143}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{143}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{143}{section.1.A.2}%
