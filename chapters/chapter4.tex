@@ -918,7 +918,12 @@ Nesta secção, o foco será analisar a comunicação (e troca de parâmetros) e
 	\label{fig:diagramasimplificado}
 \end{figure}
 
-A arquitectura do sistema é composta por multiplos ficheiros que comunicam entre si, englobando troca de parâmetros. Pelo ficheiro \textit{views.py}, que integra o servidor \textit{Flask}, passa somente a comunicação estritamente necessária. \textbf{Já foi referenciado atrás que pelo views passa, seomente, a comunicação estritamente necessária e que se tentou manter este ficheiro o mais simples possível}  com excepção do controlo do \acrshort{virtualbench} que é feito pela libraria \textit{pyVirtualBench}. 
+A arquitectura do sistema é composta por multiplos ficheiros que comunicam entre si, englobando a troca de parâmetros. O critério utilizado foi o de manter o ficheiro \textit{views.py} o mais leve e simples possível, mantendo-se o comando e controlo dos dispostivos em ficheiros separados.
+
+\textbf{Posso colocar a parte dos ficheiros aqui nesta parte}
+
+A comunicação faz-se enre os ficheiros que estão definidos na Figura \ref{fig:diagramasimplificado}, sendo que, o comando do \acrshort{virtualbench} é feito através da biblioteca \textit{pyVirtualBench}.
+
 
 Entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} a comunicação é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
 
