@@ -166,14 +166,14 @@ Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e 
 \begin{figure}[hbtp]
     \centering
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/virtualbench_back-panel.jpg}
+    \includegraphics[width=0.7\textwidth]{figures/virtualbench_back-panel.jpg}
     \caption{Painel traseiro \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
     \label{fig:paineltraseiro}
 \end{figure}
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/virtualbench_front-panel.jpg}
+    \includegraphics[width=0.7\textwidth]{figures/virtualbench_front-panel.jpg}
     \caption{Painel frontal \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
     \label{fig:paineldianteiro}
 \end{figure}
@@ -197,7 +197,7 @@ Mais uma vez, tomando como base o \acrshort{visir}, como pode ser visto mais por
 \label{sec:RaspberryPI}
 Como já foi referido na Secção \ref{sec:contextualização}, a ideia inicial passava por utilizar o \gls{RaspberryPI} como servidor e como controlador dos relés, no fundo desempenhando as funções de \acrshort{rlms}.
 
-Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \textit{RaspberryPI}\footnote{Doravante, sempre que for referido \textit{RaspberryPI}5, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão 5.
+Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \textit{RaspberryPI}\footnote{Doravante, sempre que for referido \textit{RaspberryPI}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão 5.
 
 Esta versão traz várias melhorias e novos recursos, sendo que as principais diferenças de \textit{hardware} para a versão 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. No entanto, estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento activo \cite{Raspberrytech}. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
 
@@ -235,7 +235,7 @@ Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o 
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{figures/GPIO-Pinout-Diagram-2.png}
+    \includegraphics[width=0.7\textwidth]{figures/GPIO-Pinout-Diagram-2.png}
     \caption{\acrshort{gpio}s \textit{RaspberryPI} \cite{Raspberrytech}}
     \label{fig:gpio}
 \end{figure}
@@ -246,7 +246,7 @@ Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurado
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/GPIO.png}
+    \includegraphics[width=0.7\textwidth]{figures/GPIO.png}
     \caption{Representação alternativa dos \acrshort{gpio}s \cite{Raspberrytech}}
     \label{fig:gpiocores}
 \end{figure}
@@ -258,7 +258,7 @@ Os relés electromecânicos são constituídos por uma bobine e um contacto, que
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.5\textwidth]{figures/esquematico_rele.png}
+    \includegraphics[width=0.3\textwidth]{figures/esquematico_rele.png}
     \caption{\textit{Esquema simplificado de um relé \cite{DryRelay}}}
     \label{fig:esquematicoreles}
 \end{figure}
@@ -273,7 +273,7 @@ Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref.
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{figures/reles.png}
+    \includegraphics[width=0.7\textwidth]{figures/reles.png}
     \caption{\textit{Relés \acrshort{spst} e \acrshort{dpst}} \cite{DryRelay}}
     \label{fig:reles}
 \end{figure}
@@ -290,7 +290,7 @@ Os ULN2003A possuem sete pares de transístores NPN, em configuração \textit{D
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{figures/2003A_Darling.png}
+    \includegraphics[width=0.7\textwidth]{figures/2003A_Darling.png}
     \caption{Diagrama de blocos ULN2003A \cite{ULN2003}}
     \label{fig:2003blocos}
 \end{figure}
@@ -324,8 +324,8 @@ Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e dep
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{figures/SR_blocos.png}
-    \caption{Diagrama de blocos SN74HC595 \cite{SN74HC595}}
+    \includegraphics[width=0.7\textwidth]{figures/SR_blocos.png}
+    \caption{Diagrama \textins{em corte} de blocos SN74HC595 \cite{SN74HC595}}
     \label{fig:SN74HC595blocos}
 \end{figure}
 

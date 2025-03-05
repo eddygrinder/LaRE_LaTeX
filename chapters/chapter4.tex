@@ -47,7 +47,7 @@ Como já foi referido na Secção \ref{sec:registodeslocamento}, o \textit{SN74H
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/registo deslocamente.drawio.png}
+	\includegraphics[width=0.7\textwidth]{figures/registo deslocamente.drawio.png}
 	\caption{Envio de \textit{bits} para o registo de deslocamento}
 	\label{fig:esquematico74hc595}
 \end{figure}
@@ -299,7 +299,7 @@ Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema com
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/rec_fil_FULL.png}
+	\includegraphics[width=0.7\textwidth]{figures/rec_fil_FULL.png}
 	\caption{Esquema completo (simplificado) - rectificadores e filtros}
 	\label{fig:rectificacao_filtragem_full}
 \end{figure}
@@ -316,7 +316,7 @@ Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_gera
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/esquema_simplificado_OHM.png}
+	\includegraphics[width=0.7\textwidth]{figures/esquema_simplificado_OHM.png}
 	\caption{Esquema simplificado da experiência Lei de Ohm}
 	\label{fig:esq_geral_ohm}
 \end{figure}
@@ -902,7 +902,7 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 
 \textbf{Comuns}
 \begin{itemize}
-	\item \textit{views.py} - parte central da aplicação, pois nele estão definidas todas as rotas \textit{flask}. Quer isto dizer que, cada roda representa uma funcionalidade ou página \textit{web} específica e qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário;
+	\item \textit{views.py} - parte central da aplicação, pois nele estão definidas todas as rotas \textit{Flask}. Quer isto dizer que, cada roda representa uma funcionalidade ou página \textit{web} específica e qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário;
 	\item \textit{configRelays.py} - ficheiro responsável pelo envio da trama de \textbf{bits} para o \textit{Raspberry PI5}.
 	\item \textins{login, base, sign\_up}.html - páginas de autenticação e registo de utilizadores.
 \end{itemize}
@@ -918,7 +918,7 @@ Nesta secção, o foco será analisar a comunicação (e troca de parâmetros) e
 	\label{fig:diagramasimplificado}
 \end{figure}
 
-A arquitectura do sistema é composta por multiplos ficheiros que comunicam entre si, englobando troca de parâmetros. A parte central é o ficheiro \textit{views.py}, que integra o servidor \textit{Flask} e por ele passa todo o tipo de comunicação. 
+A arquitectura do sistema é composta por multiplos ficheiros que comunicam entre si, englobando troca de parâmetros. Pelo ficheiro \textit{views.py}, que integra o servidor \textit{Flask}, passa somente a comunicação estritamente necessária. \textbf{Já foi referenciado atrás que pelo views passa, seomente, a comunicação estritamente necessária e que se tentou manter este ficheiro o mais simples possível}  com excepção do controlo do \acrshort{virtualbench} que é feito pela libraria \textit{pyVirtualBench}. 
 
 Entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} a comunicação é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
 
