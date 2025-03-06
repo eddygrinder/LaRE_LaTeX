@@ -805,9 +805,67 @@ O passo seguinte é a página de controlo e realização da experiência, como s
 
 As outras experiências seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação.
 
-\subsection{pyVirtualBench}
+\subsection{Arquitectura de Comunicação}
+\label{sec:comunicacao}
+Nesta secção, o foco será analisar a comunicação (e troca de parâmetros) entre os diversos tipos de ficheiros. Na Figura \ref{fig:diagramasimplificado} é apresentado o diagrama simplificado que ilustra o funcionamento geral deste tipo de comunicação. 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/Diagrama_simplificado.drawio.png}
+	\caption{Diagrama de comunicação simplificado [REVER]}
+	\label{fig:diagramasimplificado}
+\end{figure}
+
+A arquitectura do sistema é composta por multiplos ficheiros que comunicam entre si, englobando a troca de parâmetros. O critério utilizado foi o de manter o ficheiro \textit{views.py} o mais leve e simples possível, mantendo-se o comando e controlo dos dispostivos em ficheiros separados.
+
+Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projeto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
+
+Os seguintes ficheiros foram criados e associados às respectivas experiências:
+
+\textbf{Específicos}
+\begin{itemize}
+	\item Lei de \textit{Ohm} - \textit{config.py};
+	\item Rectificadores/Filtros - \textit{mixed\_signal\_oscilloscope.py};
+	\item \textins{ohm, meiaonda, ondacompleta, passaalto, passabaixo}.html.
+\end{itemize}
+
+\textbf{Comuns}
+\begin{itemize}
+	\item \textit{views.py} - parte central da aplicação, pois nele estão definidas todas as rotas \textit{Flask}. Quer isto dizer que, cada roda representa uma funcionalidade ou página \textit{web} específica e qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário;
+	\item \textit{configRelays.py} - ficheiro responsável pelo envio da trama de \textbf{bits} para o \textit{RaspberryPI}.
+	\item \textins{login, base, sign\_up}.html - páginas de autenticação e registo de utilizadores.
+\end{itemize}
+
+Sendo assim, a comunicação entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=html, escapechar=|, caption=Comunicação \acrshort{html} - \textit{views.py}, label=lst:htmlpy]
+	const url = `/config_VirtualBench?variavel_1=${parametro_1}&variavel_2=${parametro_2}&variavel_3=${parametro_3}`; |\label{line:parametros}|
+	(...)
+	document.getElementById("variavel").innerHTML = data.resultado + " V"; |\label{line:resultado}|
+	\end{lstlisting}
+\end{minipage}
+
+O envio de parâmetros para as páginas é feito em \acrfull{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{views.py} - \acrshort{html}, label=lst:returnjson]
+	return jsonify({'measurement_result': resultado})|\label{line:returnjson}|
+	\end{lstlisting}
+\end{minipage}
+
+As setas verdes representam a comunicação entre dois ficheiros \textit{python}. O processo é bastante simples, bastando para isso, importar o ficheiro que contém a função que se pretende chamar. A Lista \ref{lst:pypy} ilustra a forma como se importa um ficheiro \textit{python} e a chamada da respectiva função com o parâmetro a passar.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{python} - \textit{python}, label=lst:pypy]
+		from ctrl_hardware import configRelays, configVB, mixed_signal_oscilloscope |\label{line:ficheiros}|
+		configRelays.config_relays_ohm(Resistance, measure_parameter) |\label{line:trueparameter}|
+	\end{lstlisting}
+\end{minipage}
+
+\subsubsection{pyVirtualBench - uma secção à parte?? OPINIÃO PROF}
 \label{sec:pyvirtualbench}
-Antes de se avançar para uma explicação mais pormenorizada das experiências, importa enquadrar o \textit{pyVirtualBench} no contexto do \textit{software}. Já foi referido na Secção \ref{sec:solucaoproposta} que o \textit{pyVirtualBench} é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.
+O comando e controlo do \acrshort{virtualbench} é realizado através da biblioteca \textit{pyVirtualBench} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.
 
 Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se enquadram nos objectivos deste projecto são:
 \begin{itemize}
@@ -887,83 +945,30 @@ virtualbench.release()
 
 No entanto, se um ficheiro ou \textit{script} for chamado várias vezes (como no caso da experiência da Lei de Ohm, abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções.
 
-\subsection{Organização e estrutura de ficheiros}
-\label{sec:organizacao_ficheiros}
-Um ponto crucial no desenvolvimento foi a organização da estrutura de ficheiros e pastas. Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projeto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
+\subsubsection{Comunicação com PI - REVER - uma secção à parte?? OPINIÃO PROF}
+\label{sec:raspberrypi}
+A comunicação com o \textit{RaspberryPI} é feita através de \textit{sockets}, método que já foi descrito na Secção~\ref{sec:arquitectura}. Depois de testados os parâmetros no ficheiro \textit{configRelays.py}, é enviada uma \textit{string} - via rede com ou sem fios - correspondente ao número de relés a activar: 8\textit{bits} ou 13\textit{bits} (consoante os circuitos) \textbf{Especificar? OPINIÃO PROF}.
 
-Os seguintes ficheiros foram criados e associados às respectivas experiências:
+\begin{center}
+	\begin{minipage}{1\linewidth}
+		\begin{lstlisting}[language=Python, caption=Comunicação \textit{socket}, label=lst:comunicacaosocket]
+		with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+				s.connect((HOST, PORT))
+	
+				s.sendall(stringValue.encode())
+				print("Mensagem enviada com sucesso.")
 
-\textbf{Específicos}
-\begin{itemize}
-	\item Lei de \textit{Ohm} - \textit{config.py};
-	\item Rectificadores/Filtros - \textit{mixed\_signal\_oscilloscope.py};
-	\item \textins{ohm, meiaonda, ondacompleta, passaalto, passabaixo}.html.
-\end{itemize}
-
-\textbf{Comuns}
-\begin{itemize}
-	\item \textit{views.py} - parte central da aplicação, pois nele estão definidas todas as rotas \textit{Flask}. Quer isto dizer que, cada roda representa uma funcionalidade ou página \textit{web} específica e qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário;
-	\item \textit{configRelays.py} - ficheiro responsável pelo envio da trama de \textbf{bits} para o \textit{Raspberry PI5}.
-	\item \textins{login, base, sign\_up}.html - páginas de autenticação e registo de utilizadores.
-\end{itemize}
-
-\subsection{Arquitectura de Comunicação}
-\label{sec:comunicacao}
-Nesta secção, o foco será analisar a comunicação (e troca de parâmetros) entre os diversos tipos de ficheiros. Na Figura \ref{fig:diagramasimplificado} é apresentado o diagrama simplificado que ilustra o funcionamento geral deste tipo de comunicação. 
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/Diagrama_simplificado.drawio.png}
-	\caption{Diagrama de comunicação simplificado [REVER]}
-	\label{fig:diagramasimplificado}
-\end{figure}
-
-A arquitectura do sistema é composta por multiplos ficheiros que comunicam entre si, englobando a troca de parâmetros. O critério utilizado foi o de manter o ficheiro \textit{views.py} o mais leve e simples possível, mantendo-se o comando e controlo dos dispostivos em ficheiros separados.
-
-\textbf{Posso colocar a parte dos ficheiros aqui nesta parte}
-
-A comunicação faz-se enre os ficheiros que estão definidos na Figura \ref{fig:diagramasimplificado}, sendo que, o comando do \acrshort{virtualbench} é feito através da biblioteca \textit{pyVirtualBench}.
-
-
-Entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} a comunicação é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=html, escapechar=|, caption=Comunicação \acrshort{html} - \textit{views.py}, label=lst:htmlpy]
-	const url = `/config_VirtualBench?variavel_1=${parametro_1}&variavel_2=${parametro_2}&variavel_3=${parametro_3}`; |\label{line:parametros}|
-	(...)
-	document.getElementById("variavel").innerHTML = data.resultado + " V"; |\label{line:resultado}|
-	\end{lstlisting}
-\end{minipage}
-
-O envio de parâmetros para as páginas é feito em \acrfull{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{views.py} - \acrshort{html}, label=lst:returnjson]
-	return jsonify({'measurement_result': resultado})|\label{line:returnjson}|
-	\end{lstlisting}
-\end{minipage}
-
-
-
-%usando jsonify({'measurement_result': measurement_result}), que converte e devolve os dados numa API Flask.
-
-As setas verdes representam a comunicação entre dois ficheiros \textit{python}. O processo é bastante simples, bastando para isso, importar o ficheiro que contém a função que se pretende chamar. A Lista \ref{lst:pypy} ilustra a forma como se importa um ficheiro \textit{python} e a chamada da respectiva função com o parâmetro a passar.
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{python} - \textit{python}, label=lst:pypy]
-		from ctrl_hardware import configRelays, configVB, mixed_signal_oscilloscope |\label{line:ficheiros}|
-		configRelays.config_relays_ohm(Resistance, measure_parameter) |\label{line:trueparameter}|
-	\end{lstlisting}
-\end{minipage}
-
-Neste caso, são importados três ficheiros
-
-Através do diagrama é possível perceber que há três  comunicação se baseia na troca de parâmetros qualquer troca de parâmetros passa pelo ficheiro \textit{views.py} - Servidor \textit{Flask}. As setas coloridas representam as diferentes trocas entre os diversos tipos de ficheiros.
-\begin{itemize}
-	\item \acrshort{html} e \textit{python};
-	\item \textit{python} e \textit{python}.
-\end{itemize}
-há três tipos de trocas comunicação entre o \textit{Flask} e o \textit{pyVirtualBench} é feita através de \acrshort{http} e \acrshort{url}s. O utilizador, ao aceder à página \textit{ohm.html}, pode escolher os valores de tensão e resistência, que são enviados para o servidor \textit{Flask} através de \acrshort{http} e \acrshort{url}s. O servidor \textit{Flask} recebe os parâmetros e envia-os para o \textit{pyVirtualBench}, que executa a experiência. Os resultados são enviados de volta para o servidor \textit{Flask}, que os apresenta ao utilizador.
+				while True:
+					data = s.recv(1024)
+					if not data:
+						break
+					response = data.decode()
+					if response == 'True': 
+						print("Confirmacao recebida do servidor:", response)
+						break
+		\end{lstlisting}
+	\end{minipage}
+\end{center}
 
 \subsection{Experiências}
 \label{sec:experiências}
