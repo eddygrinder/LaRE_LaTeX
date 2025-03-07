@@ -500,6 +500,7 @@ Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Ta
 13 bits começar pelo esquema completo antes de dar os exemplos de funcionamento. a explicação penso que pode ficar dividida como está, mas já com o esquema e relés com os indices certos, a explicação mas os exemplos descritos em tabela só fazem sentido se for o esquema completo,
 
 \section{Software}
+\label{sec:implementacaosoftware}
 Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio foi tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
 
 Este projeto de código fonte aberto está disponível para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no repositório GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE}. Assim, quando se referencia um ficheiro, subentende-se que esteja incluído no referido repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos.
@@ -510,7 +511,7 @@ Este projeto de código fonte aberto está disponível para consulta e modifica�
 
 Na Secção \ref{sec:back-end} foram já referidas as razões que levaram à escolha do \textit{Flask} como servidor \textit{web}. 
 
-A base para a implementação do \textit{Flask} e \underline{\textbf{toda a informação descrita neste}} \underline{\textbf{capítulo}} teve como base a documentação técnica disponível no \textit{site} do \href{https://flask.palletsprojects.com/en/3.0.x/}{\textit{Flask}} e complementada com alguns tutoriais do \textit{Youtube}, como por exemplo: \href{https://www.youtube.com/watch?v=dam0GPOAvVI}{\textit{link}} ou \href{https://www.youtube.com/watch?v=bB6Yyh7nUl4}{\textit{link}} .
+A base para a implementação do \textit{Flask} e \underline{\textbf{toda a informação descrita no}} \underline{\textbf{Capítulo \ref{sec:implementacaosoftware}}} teve como base e referência a documentação técnica disponível no \textit{site} do \href{https://flask.palletsprojects.com/en/3.0.x/}{\textit{Flask}} e complementada com alguns tutoriais do \textit{Youtube}, como por exemplo: \href{https://www.youtube.com/watch?v=dam0GPOAvVI}{\textit{link}} ou \href{https://www.youtube.com/watch?v=bB6Yyh7nUl4}{\textit{link}} .
 
 \subsubsection{Estrutura base}
 O fluxograma apresentado na Figura \ref{fig:funcflask} apresenta o funcionamento geral do servidor \textit{Flask}.
@@ -635,7 +636,7 @@ const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistan
 
 No entanto, a criação e renderização das páginas \acrshort{html} é feita automaticamente através dos modelos \textit{Jinja2}\footnote{A documentação pode ser consultada em \href{https://jinja.palletsprojects.com/en/3.1.x/templates/}{\textit{Jinja}}}. Os modelos podem ser usados para gerar qualquer tipo de ficheiro de texto, sendo que para aplicações \textit{web} serão, principalmente, páginas \acrshort{html}.
 
-No ficheiro base.html, pode ver-se um exemplo da combinação entre código \acrshort{html} e sintaxe \textit{Jinja2}.
+No ficheiro base.html, pode ver-se a combinação entre código \acrshort{html} e sintaxe \textit{Jinja2}.
 
 No código \acrshort{html}, encontram-se secções entre chavetas {} com palavras-chave especiais como por exemplo {\% block \%} e {\% endblock \%}. Estes são blocos de modelo \textit{Jinja2} que definem áreas de conteúdo dinâmico que podem ser preenchidas com lógica ou dados em \textit{Python}. Para renderizar um modelo, o método utilizado foi \textit{\textbf{render\_template()}} \cite{Flask}. O \textit{Flask} procurará por modelos na pasta \textit{templates}, como pode ser visto na Figura \ref{fig:estruturapastas}.
 
@@ -647,29 +648,13 @@ A aplicação desenvolvida usa uma base de dados e autenticação de utilizador,
 No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{SQLAlchemy}. Tal como referenciado/aconselhado na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, descrita no ficheiro \textit{\textunderscore\textunderscore init.py\textunderscore\textunderscore}.
 
 \subsubsection{Autenticação}
-A segurança da aplicação é feita com recurso à página de \textit{login} e \textit{logout}, para isso foi instalada a extensão \textit{flask-login}, tal como é apresentado na Listagem \ref{lst:exemplologin}
+A segurança da aplicação é assegurada através das funcionalidades de \textit{login} e \textit{logout}, implementadas no ficheiro \textit{auth.py}. Para tal, foi instalada a extensão \textit{flask-login}.
 
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Exemplo autenticação \textit{login}, label=lst:exemplologin]
-@auth.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
+Esta extensão facilita a gestão de sessões de utilizadores, permitindo manter o estado autenticado entre diferentes requisições, fornecendo métodos como \textbf{\textit{login\textunderscore user()}}, \textbf{\textit{logout\textunderscore user()}} e \textbf{\textit{current\textunderscore user}}, que simplificam a verificação do estado de autenticação. O processo de registo envolve a recolha de credenciais, como nome de utilizador e senha, garantindo o armazenamento seguro da senha através de \textbf{\textit{hashing}} com \textbf{\textit{generate\textunderscore password\textunderscore hash}}. No \textit{login}, a aplicação verifica as credenciais fornecidas, compara a senha inserida com a armazenada usando \textbf{\textit{check\textunderscore password\textunderscore hash}} e, se for válida, inicia a sessão do utilizador. Além disso, certas rotas são protegidas para garantir que apenas utilizadores autenticados as possam aceder, utilizando o decorador \textbf{\textit{@login\textunderscore required}}, que redireciona utilizadores não autenticados para a página de \textit{login}. A gestão de sessões é feita através de \textit{cookies} seguros, permitindo ainda a funcionalidade de lembrar a sessão entre reinícios do navegador, caso seja activado o parâmetro \textbf{\textit{remember=True}} no \textbf{\textit{login\textunderscore user}}. 
 
-        user = User.query.filter_by(email=email).first()
-        if user:
-            if check_password_hash(user.password, password):
-                flash('Logged in successfully!', category='success')
-                login_user(user, remember=True)
-                return redirect(url_for('views.home'))
-            else:
-                flash('Incorrect password, try again.', category='error')
-        else:
-            flash('Email does not exist.', category='error')
-    return render_template("login.html", user=current_user) 
-\end{lstlisting}
-\end{minipage}
+Devido à complexidade da implementação de uma verificação por \textit{email}, a aplicação restringe-se à autenticação baseada apenas no nome de utilizador e senha. A inclusão desse mecanismo exigiria um serviço de envio de \textit{emails} e a gestão de \textit{tokens} de confirmação.
+
+\textbf{A REVER: Valerá a pena uma página de admin, de forma a que o professor, por exemplo faça os registo e forneça os dados de acesso aos alunos?}
 
 \subsection{Páginas \textit{Web}}
 \label{sec:paginas}
@@ -832,13 +817,13 @@ O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:
 	\end{lstlisting}
 \end{minipage}
 
-No fim da execução do ficheiro, tal como apresentado na Listagem \ref{lst:exemplops}, o \acrshort{virtualbench} - Linha~\ref{line:virtualbenchlibertado} e os restantes instrumentos, neste caso particular, a fonte de tensão - Linha~\ref{line:pslibertada} - têm de ser libertados. \sout{Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis}
+No fim da execução do ficheiro, tal como apresentado na Listagem \ref{lst:exemplops}, o \acrshort{virtualbench} - Linha~\ref{line:virtualbenchlibertado} e os restantes instrumentos, neste caso particular, a fonte de tensão - Linha~\ref{line:pslibertada} - têm de ser libertados. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. \textbf{A REVER: dar um exemplo do que acontece??}
 
 No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de Ohm abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
 
 \subsubsection{Comunicação com PI - REVER - uma secção à parte?? OPINIÃO PROF}
 \label{sec:raspberrypi}
-A comunicação com o \textit{Raspberry Pi} é realizada por meio de \textit{sockets}, um método já descrito na Secção~\ref{sec:arquitectura}. Após a configuração e teste dos parâmetros no ficheiro \textit{configRelays.py}, uma \textit{string} correspondente ao número de relés a activar - 8 \textit{bits} ou 13 \textit{bits}, dependendo dos circuitos - é enviada através de uma \textit{interface} de rede. A Listagem \ref{lst:comunicacaosocket} ilustra a forma como a comunicação é realizada.
+A comunicação com o \textit{Raspberry Pi} é realizada por meio de \textit{sockets}, um método já descrito na Secção~\ref{sec:arquitectura}. Após a configuração e teste dos parâmetros \sout{no ficheiro \textit{configRelays.py}}, uma \textit{string} correspondente ao número de relés a activar - 8 \textit{bits} ou 13 \textit{bits}, dependendo dos circuitos - é enviada através de uma \textit{interface} de rede. No ficheiro \textit{configRelays.py} está implementado a forma como a comunicação é realizada.
 
 \begin{center}
 	\begin{minipage}{1\linewidth}
