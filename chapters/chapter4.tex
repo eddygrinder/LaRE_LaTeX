@@ -502,8 +502,7 @@ Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Ta
 \section{Software}
 Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio foi tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
 
-O projeto está disponível para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no repositório do \textit{GitHub} do \href{https://github.com/eddygrinder/LaRE}{LaRE}. 
-
+Este projeto de código fonte aberto está disponível para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no repositório GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE}. Assim, quando se referencia um ficheiro, subentende-se que esteja incluído no referido repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos.
 
 \subsection{Servidor Flask}
 \label{sec:flask}
@@ -591,7 +590,7 @@ Isto quer dizer que o \textit{Flask} gera a \acrshort{url} correspondente à fun
 \subsubsection{Blueprints}
 O \textit{Flask} usa um conceito de \textit{blueprints} para criar componentes de aplicações e suportar padrões comuns dentro de uma aplicação ou entre aplicações. As \textit{blueprints} podem simplificar muito o funcionamento de grandes aplicações e fornecer um meio central para que as extensões do \textit{Flask} registem operações em aplicações. As \textit{blueprints} permitem organizar a aplicação em partes menores e de mais fácil gestão. O conceito básico das \textit{blueprints} é que registam as operações a executar quando são integrados numa aplicação. O \textit{Flask} associa funções de vista (\textit{views}) a \textit{blueprints} quando processa pedidos e gera \acrshort{url} entre diferentes pontos de acesso.
 
-Nas Listagens \ref{lst:blueprintviews} e \ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
+Na Listagem~\ref{lst:blueprintviews} e Listagem~\ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
 \begin{center}
 	\begin{minipage}{0.7\linewidth}
 		\begin{lstlisting}[language=Python, caption=\textit{Blueprint views} - \textit{views.py}, label=lst:blueprintviews]
@@ -624,49 +623,9 @@ Isto quer dizer que ao registar a \textit{blueprint} com o prefixo ``/'', os \ac
 \subsubsection{Pedidos}
 A capacidade de uma aplicação \textit{web} em responder a solicitações de dados do cliente é um requisito essencial. No \textit{Flask} esta informação é fornecida pelo objeto global \textit{\textbf{request}}. Este objeto contém todos os detalhes da solicitação, como os métodos \acrshort{http} usados (\textit{GET}, \textit{POST}, etc.), os \textit{headers} os \textit{cookies} ou o corpo da requisição.
 
-O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como pode ser visto na Listagem \ref{lst:atributorequest}.
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{request} - \textit{auth.py}}, label=lst:atributorequest]
-@auth.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        email = request.form.get('email')
-        password = request.form.get('password')
-
-        user = User.query.filter_by(email=email).first()
-        if user:
-            if check_password_hash(user.password, password):
-                flash('Logged in successfully!', category='success')
-                login_user(user, remember=True)
-                return redirect(url_for('views.home'))
-            else:
-                flash('Incorrect password, try again.', category='error')
-        else:
-            flash('Email does not exist.', category='error')
-
-    return render_template("login.html", user=current_user)
-\end{lstlisting}
-\end{minipage}
+O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como descrito no ficheiro auth.py.
 
 Quando se adiciona um ponto de interrogação (?) seguido de pares chave-valor (key=value) no final de um \acrshort{url}, está a enviar-se dados adicionais ao servidor, esses dados são chamados de \textbf{parâmetros do \acrshort{url}}, como se pode ver na Listagem \ref{lst:paramurl}.
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Exemplo atributo \textit{\textbf{args} - \textit{views.py}}, label=lst:argrequest]
-@views.route('/config_VirtualBench', methods=['GET', 'POST'])
-@login_required
-def config_VirtualBench():
-    try:
-        Vcc = request.args.get('Vcc', 0, int)
-        Resistance = request.args.get('R', 0, int)
-        (...)
-    except Exception as e:
-        print(e)
-        return jsonify({'measurement_result': 'ERROR'})
-    finally:
-        return jsonify({'measurement_result': measurement_result})
-\end{lstlisting}
-\end{minipage}
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Html, caption=Exemplo argumentos passados ao servidor - ohm.html, label=lst:paramurl]
@@ -676,64 +635,16 @@ const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistan
 
 No entanto, a criação e renderização das páginas \acrshort{html} é feita automaticamente através dos modelos \textit{Jinja2}\footnote{A documentação pode ser consultada em \href{https://jinja.palletsprojects.com/en/3.1.x/templates/}{\textit{Jinja}}}. Os modelos podem ser usados para gerar qualquer tipo de ficheiro de texto, sendo que para aplicações \textit{web} serão, principalmente, páginas \acrshort{html}.
 
-Na Listagem \ref{lst:htmljinja2} pode ver-se um exemplo da combinação entre código \acrshort{html} e sintaxe \textit{Jinja2}.
+No ficheiro base.html, pode ver-se um exemplo da combinação entre código \acrshort{html} e sintaxe \textit{Jinja2}.
 
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Html, caption=Exemplo sintaxe \textit{Jinja2} - base.html, label=lst:htmljinja2]
-<title>{% block title %}Home{% endblock %}</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar">
-        <div class="navbar-nav">
-          {% if user.is_authenticated %}
-          <a class="nav-item nav-link" id="home" href="/">Home</a>
-          <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
-          {% else %}
-          <a class="nav-item nav-link" id="login" href="/login">Login</a>
-          <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
-          {% endif %}
-        </div>
-      </div>\end{lstlisting}
-\end{minipage}
+No código \acrshort{html}, encontram-se secções entre chavetas {} com palavras-chave especiais como por exemplo {\% block \%} e {\% endblock \%}. Estes são blocos de modelo \textit{Jinja2} que definem áreas de conteúdo dinâmico que podem ser preenchidas com lógica ou dados em \textit{Python}. Para renderizar um modelo, o método utilizado foi \textit{\textbf{render\_template()}} \cite{Flask}. O \textit{Flask} procurará por modelos na pasta \textit{templates}, como pode ser visto na Figura \ref{fig:estruturapastas}.
 
-No código \acrshort{html}, encontram-se secções entre chavetas {} com palavras-chave especiais como por exemplo {\% block \%} e {\% endblock \%}. Estes são blocos de modelo \textit{Jinja2} que definem áreas de conteúdo dinâmico que podem ser preenchidas com lógica ou dados em \textit{Python}.
-
-Para renderizar um modelo, o método utilizado foi \textit{\textbf{render\_template()}}, como pode ser visto na Listagem \ref{lst:atributorequest}, linha 18. O \textit{Flask} procurará por modelos na pasta \textit{templates}, como pode ser visto na Figura \ref{fig:estruturapastas}.
-
-Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros do \acrshort{url} com \textit{\textbf{get}} ou capturando o \textit{\textbf{KeyError}}, uma vez que os utilizadores podem alterar o \acrshort{url} e, nesse caso, apresentar uma página \textit{400 bad request} não é de fácil interpretação.
+Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros do \acrshort{url} com \textit{\textbf{get}} ou capturando o \textit{\textbf{KeyError}}, uma vez que os utilizadores podem alterar o \acrshort{url} e, nesse caso, apresentar uma página \textit{400 bad request} não é de fácil interpretação. \textbf{ATENÇÃO: Verificar se será preciso desenvolver mais este parágrafo - OPINIÃO PROF}
 
 \subsubsection{Base de dados}
 A aplicação desenvolvida usa uma base de dados e autenticação de utilizador, a ligação com a base de dados é aberta no início do pedido e é obtida a informação do utilizador. No final do pedido, a ligação com a base de dados é fechada.
 
-No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{SQLAlchemy}. Tal como referenciado/aconselhado na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, como apresentado na Listagem \ref{lst:basedados}
-
-\textbf{Nota para minha referência: Falar de instalar o pacote SQLAlchemy?}
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Exemplo uso \textit{SQLAlchemy} - \textit{\_\_init.py\_\_}, label=lst:basedados]
-
-from flask_sqlalchemy import SQLAlchemy
-
-db = SQLAlchemy()
-DB_NAME = "database.db"
-
-def create_app():
-    app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
-    db.init_app(app)
-(...)
-\end{lstlisting}
-\end{minipage}
+No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{SQLAlchemy}. Tal como referenciado/aconselhado na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, descrita no ficheiro \textit{\textunderscore\textunderscore init.py\textunderscore\textunderscore}.
 
 \subsubsection{Autenticação}
 A segurança da aplicação é feita com recurso à página de \textit{login} e \textit{logout}, para isso foi instalada a extensão \textit{flask-login}, tal como é apresentado na Listagem \ref{lst:exemplologin}
@@ -880,7 +791,7 @@ Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.p
 Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{script}, a estrutura de funcionamento é a seguinte:
 \begin{itemize}
 	\item Iniciar o \textit{virtualbench};
-	\item No caso geral, inicializar os instrumentos, neste caso particular, iniciar a fonte de tensão - relembrar que é criado um objecto, sempre que é chamado o \acrshort{virtualbench} ou um instrumento, tal como foi referido na Secção \ref{sec:VB8012};
+	\item No caso geral, inicializar os instrumentos, neste caso particular, iniciar a fonte de tensão;
 	\item Desenvolvimento do programa;
 	\item Libertar a fonte de tensão ou outro instrumento inicializado;
 	\item Libertar o \textit{virtualbench}.
@@ -888,11 +799,10 @@ Portanto, de uma forma muito geral, depois de iniciado ou chamado o \textit{scri
 
 Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
 
-O resultado da Listagem \ref{lst:chamadainstrumentos} é:
+O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:powersource} da Listagem~\ref{lst:exemplops} é:
 \begin{itemize}
 	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
 	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
-	\item (...)PyVirtualBench.DigitalMultimeter object at 0x000001E7DEECBC50;
 \end{itemize}
 
 \begin{minipage}{0.9\linewidth}
@@ -922,32 +832,13 @@ O resultado da Listagem \ref{lst:chamadainstrumentos} é:
 	\end{lstlisting}
 \end{minipage}
 
-\begin{center}
-	\begin{minipage}{0.75\linewidth}
-		\begin{lstlisting}[language=Python, caption=Chamada do \acrshort{virtualbench} e instrumentos, label=lst:chamadainstrumentos]
-virtualbench = PyVirtualBench('VB8012-30A210F')
-ps = virtualbench.acquire_power_supply()
-dmm = virtualbench.acquire_digital_multimeter()
-\end{lstlisting}
-	\end{minipage}
-\end{center}
+No fim da execução do ficheiro, tal como apresentado na Listagem \ref{lst:exemplops}, o \acrshort{virtualbench} - Linha~\ref{line:virtualbenchlibertado} e os restantes instrumentos, neste caso particular, a fonte de tensão - Linha~\ref{line:pslibertada} - têm de ser libertados. \sout{Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis}
 
-No fim da execução do ficheiro/script, o \acrshort{virtualbench} e os restantes instrumentos têm de ser libertados, tal como indica a Listagem \ref{lst:libertarinstrumentos}:
-\begin{center}
-	\begin{minipage}{0.75\linewidth}
-		\begin{lstlisting}[language=Python, caption=Libertar instrumentos e \acrshort{virtualbench}, label=lst:libertarinstrumentos]
-ps.release()
-dmm.release()
-virtualbench.release()
-\end{lstlisting}
-	\end{minipage}
-\end{center}
-
-No entanto, se um ficheiro ou \textit{script} for chamado várias vezes (como no caso da experiência da Lei de Ohm, abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções.
+No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de Ohm abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
 
 \subsubsection{Comunicação com PI - REVER - uma secção à parte?? OPINIÃO PROF}
 \label{sec:raspberrypi}
-A comunicação com o \textit{RaspberryPI} é feita através de \textit{sockets}, método que já foi descrito na Secção~\ref{sec:arquitectura}. Depois de testados os parâmetros no ficheiro \textit{configRelays.py}, é enviada uma \textit{string} - via rede com ou sem fios - correspondente ao número de relés a activar: 8\textit{bits} ou 13\textit{bits} (consoante os circuitos) \textbf{Especificar? OPINIÃO PROF}.
+A comunicação com o \textit{Raspberry Pi} é realizada por meio de \textit{sockets}, um método já descrito na Secção~\ref{sec:arquitectura}. Após a configuração e teste dos parâmetros no ficheiro \textit{configRelays.py}, uma \textit{string} correspondente ao número de relés a activar - 8 \textit{bits} ou 13 \textit{bits}, dependendo dos circuitos - é enviada através de uma \textit{interface} de rede. A Listagem \ref{lst:comunicacaosocket} ilustra a forma como a comunicação é realizada.
 
 \begin{center}
 	\begin{minipage}{1\linewidth}
