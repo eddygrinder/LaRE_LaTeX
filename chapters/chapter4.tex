@@ -503,7 +503,7 @@ Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Ta
 \label{sec:implementacaosoftware}
 Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio foi tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
 
-Este projeto de código fonte aberto está disponível para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no repositório GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE}. Assim, quando se referencia um ficheiro, subentende-se que esteja incluído no referido repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos.
+Este projeto de código fonte aberto está dividido em dois repositórios, disponíveis para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE} e \href{https://github.com/eddygrinder/LaRE_PICode}{PiCode}. Assim, os ficheiros são referenciados relativamente ao respectivo repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos.
 
 \subsection{Servidor Flask}
 \label{sec:flask}
@@ -737,6 +737,7 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 Sendo assim, a comunicação entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
 
 \textbf{Aqui poderia ficar o parágrafo da explicação do ?}
+
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=html, escapechar=|, caption=Comunicação \acrshort{html} - \textit{views.py}, label=lst:htmlpy]
 	const url = `/config_VirtualBench?variavel_1=${parametro_1}&variavel_2=${parametro_2}&variavel_3=${parametro_3}`; |\label{line:parametros}|
@@ -828,7 +829,47 @@ No entanto, se um ficheiro for chamado várias vezes (como no caso da experiênc
 
 \subsubsection{Comunicação com PI - REVER - uma secção à parte?? OPINIÃO PROF}
 \label{sec:raspberrypi}
-A comunicação com o \textit{Raspberry Pi} é realizada por meio de \textit{sockets}, um método já descrito na Secção~\ref{sec:arquitectura}. Após a configuração e teste dos parâmetros \sout{no ficheiro \textit{configRelays.py}}, uma \textit{string} correspondente ao número de relés a activar - 8 \textit{bits} ou 13 \textit{bits}, dependendo dos circuitos - é enviada através de uma \textit{interface} de rede. No ficheiro \textit{configRelays.py} está implementado a forma como a comunicação é realizada.
+Do lado do \textit{Raspberry Pi}, embora de uma forma mais simples, também se usou a premissa de modularização do código, tal como referido na Secção \ref{sec:comunicacao}. Este ficou dividido em dois ficheiros:
+\begin{itemize}
+	\item \textit{receive.py} - recebe a \textit{string};
+	\item \textit{shift\textunderscore register.py} - responsável por activar os relés.
+\end{itemize}
+
+A comunicação com o \textit{Raspberry Pi} é estabelecida através de sockets, um método já descrito na Secção~\ref{sec:arquitectura}. Após a configuração e teste dos parâmetros, uma \textit{string} representando o número de relés a ativar - 8 \textit{bits} ou 13 \textit{bits}, dependendo dos circuitos - é enviada através da \textit{interface} de rede. A implementação do mecanismo de comunicação encontra-se no ficheiro \textit{configRelays.py}, na função \textit{config\textunderscore Relays}.
+
+Sendo assim, o ficheiro \textit{receive.py} é executado inicialmente e aguarda pela envio da \textit{string}. De referir que, embora o \textit{socket} esteja configurado em \textit{blocking mode} - quer isto dizer que o cliente ficará bloqueado na Linha~\ref{line:blockmode}, da Listagem \ref{lst:socketblock}, esperando uma resposta do servidor \cite{Sockets} (acontece quando a string for totalmente enviada) - optou-se por enviar uma confirmação do servidor ao cliente. Não sendo esta confirmação estritamente necessária, foi adicionada como auxílio à depuração.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{Block Mode \textins{Sockets} configRelays.py}, label=lst:socketblock]
+		# Espera pela resposta do servidor
+        while True:
+            data = s.recv(1024) |\label{line:blockmode}|
+            if not data:
+                break
+            response = data.decode()
+            if response == 'True':  # Espera por uma confirmacao especifica do servidor
+                print("Confirmacao recebida do servidor:", response)
+                break
+	\end{lstlisting}
+\end{minipage}
+
+O passo final é a activação dos relés, realizada no ficheiro \textit{shift\textunderscore register.py}, função \textit{commandRelays}. O procedimento foi descrito na Secção \ref{sec:hwregistodeslocamento}, sendo que os modos de funcionamento estão representados na Tabela \ref{Table:funcSN74HC595}.
+
+Para que as experiências funcionem correctamente, todos os relés terão de ser activados ao mesmo tempo. Isto requer que à \textit{string} seja feito um \textit{and bit} a \textit{bit} e cada um deles enviado para o registo de deslocamento, numa configuração \acrshort{sipo}, tal como pode ser visto na Listagem \ref{lst:andbitabit}. Assim que os 8 \textit{bits} ou 13 \textit{bits} forem todos tranferidos para o registo, será activada a saída paralela e o relés activados. \textbf{A REVER: trocar o termo string por trama?} 
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{And bit} \textit{bit shift\textunderscore register}, label=lst:andbitabit]
+		for i in range(n_bits):
+			binaryShift = binaryString & 1
+			if binaryShift == 1:
+				WriteReg (ON, SERCLK_pin_ctrl, SER_pin_ctrl, WaitTimeSR)
+			else:
+				WriteReg(OFF, SERCLK_pin_ctrl, SER_pin_ctrl, WaitTimeSR)
+			binaryString = binaryString >> 1
+		OutputReg(RCLK_pin_ctrl)
+		return True # Fim da transmissao da trama de bits, reles activados
+	\end{lstlisting}
+\end{minipage}
 
 \subsection{Experiências}
 \label{sec:experiências}
