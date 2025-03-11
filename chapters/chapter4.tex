@@ -847,21 +847,25 @@ O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:
 			channel = "ps/+25V"
 			voltage_level = 1.0
 			current_limit = 0.5
-
+			# Iniciar o VirtualBench
 			virtualbench = PyVirtualBench('VB8012-30A210F') |\label{line:virtualbench}| 
+			
+			# Iniciar a fonte de tensao
 			ps = virtualbench.acquire_power_supply() |\label{line:powersource}| 
 
 			ps.configure_voltage_output(channel, voltage_level, current_limit)
 			ps.enable_all_outputs(True)
 
+			# Desenvolvimento do programa
 			for i in range(10): |\label{line:ciclofor}|
 				voltage_measurement, current_measurement, ps_state = ps.read_output(channel)
 				print("Measurement [%d]: %f V\t%f A\t(%s)" % (i, voltage_measurement, current_measurement, str(ps_state)))
-
+			# Libertar a fonte de tensao
 			ps.release() |\label{line:pslibertada}|
 		except PyVirtualBenchException as e:
     		print("Error/Warning %d occurred\n%s" % (e.status, e))
 		finally:
+			# Libertar o VirtualBench
     		virtualbench.release() |\label{line:virtualbenchlibertado}|
 
 	\end{lstlisting}
@@ -870,6 +874,10 @@ O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:
 No fim da execução do ficheiro, tal como apresentado na Listagem \ref{lst:exemplops}, o \acrshort{virtualbench} - Linha~\ref{line:virtualbenchlibertado} e os restantes instrumentos, neste caso particular, a fonte de tensão - Linha~\ref{line:pslibertada} - têm de ser libertados. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. \textbf{A REVER: dar um exemplo do que acontece??}
 
 No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de Ohm abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
+
+
+
+
 
 Para medições etc, etc, o conjunto completo de funções e configuraçõoes que nos permite controlar e configurar o V encontra-se aqui - https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html. No contexto deste projecto, vamos utilizar a biblioteca, como já foi referido e suportarmo-nos dos exemplos dados na biblioteca instalada a aprtir do respositório do github. Os exemplos dou só alguns, não vale a pensa fá-los todos. Voltámos ao exemplo da fonte de alimentação e podesmo pegar no exemplo do dmm para apresentar como se faz as medições da tensão e corrente e respectivas configurações
 
