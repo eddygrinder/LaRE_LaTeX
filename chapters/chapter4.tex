@@ -734,7 +734,9 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 	\item \textins{login, base, sign\_up}.html - páginas de autenticação e registo de utilizadores.
 \end{itemize}
 
-Sendo assim, a comunicação entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
+\subsubsection{Comunicação entre ficheiros - REVER - OPINIÃO PROF}
+\label{sec:comunicacaoentrefich}
+A comunicação entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
 
 \textbf{Aqui poderia ficar o parágrafo da explicação do ?}
 
@@ -875,9 +877,10 @@ No fim da execução do ficheiro, tal como apresentado na Listagem \ref{lst:exem
 
 No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de Ohm abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
 
-No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento.
+No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento. \textbf{A REVER: ou no início ou no fim da secção}
 
 De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. 
+
 
 Para medições etc, etc, o conjunto completo de funções e configuraçõoes que nos permite controlar e configurar o V encontra-se aqui - . No contexto deste projecto, vamos utilizar a biblioteca, como já foi referido e suportarmo-nos dos exemplos dados na biblioteca instalada a aprtir do respositório do github. Os exemplos dou só alguns, não vale a pensa fá-los todos. Voltámos ao exemplo da fonte de alimentação e podesmo pegar no exemplo do dmm para apresentar como se faz as medições da tensão e corrente e respectivas configurações
 
