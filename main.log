@@ -1899,4 +1899,605 @@ Package pdftex.def Info: figures/ohm_page.png  used on input line 697.
 <figures/ohm_page_controlo.png, id=2939, 1153.30875pt x 604.2575pt>
 File: figures/ohm_page_controlo.png Graphic file (type png)
 <use figures/ohm_page_controlo.png>
-Package pdftex.def Info: figures/ohm_pa
+Package pdftex.def Info: figures/ohm_page_controlo.png  used on input line 699.
+(pdftex.def)             Requested size: 170.71652pt x 89.43608pt.
+<figures/Diagrama_simplificado.drawio.png, id=2941, 424.58624pt x 397.485pt>
+File: figures/Diagrama_simplificado.drawio.png Graphic file (type png)
+<use figures/Diagrama_simplificado.drawio.png>
+Package pdftex.def Info: figures/Diagrama_simplificado.drawio.png  used on input line 712.
+(pdftex.def)             Requested size: 278.8358pt x 261.04903pt.
+
+
+[93 <./figures/ohm_page.png (PNG copy)> <./figures/ohm_page_controlo.png (PNG copy)>]
+
+[94 <./figures/Diagrama_simplificado.drawio.png>]
+
+[95]
+
+[96]
+
+[97]
+
+[98]
+
+[99]
+<figures/ohm_escolha.png, id=3079, 788.9475pt x 505.89pt>
+File: figures/ohm_escolha.png Graphic file (type png)
+<use figures/ohm_escolha.png>
+Package pdftex.def Info: figures/ohm_escolha.png  used on input line 914.
+(pdftex.def)             Requested size: 179.25244pt x 114.93962pt.
+<figures/ohm_escolha_abc.png, id=3080, 778.91pt x 522.95375pt>
+File: figures/ohm_escolha_abc.png Graphic file (type png)
+<use figures/ohm_escolha_abc.png>
+Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 916.
+(pdftex.def)             Requested size: 179.25244pt x 120.34865pt.
+
+
+[100 <./figures/ohm_escolha.png> <./figures/ohm_escolha_abc.png>]
+
+LaTeX Warning: Reference `fig:fluxohm' on page 101 undefined on input line 925.
+
+<figures/experiencia_ohm_diagrama.drawio.png, id=3090, 861.2175pt x 946.53625pt>
+File: figures/experiencia_ohm_diagrama.drawio.png Graphic file (type png)
+<use figures/experiencia_ohm_diagrama.drawio.png>
+Package pdftex.def Info: figures/experiencia_ohm_diagrama.drawio.png  used on input line 929.
+(pdftex.def)             Requested size: 239.00558pt x 262.67413pt.
+<figures/erro_pagina.png, id=3094, 769.87625pt x 430.60875pt>
+File: figures/erro_pagina.png Graphic file (type png)
+<use figures/erro_pagina.png>
+Package pdftex.def Info: figures/erro_pagina.png  used on input line 949.
+(pdftex.def)             Requested size: 278.8358pt x 155.96518pt.
+
+
+[101 <./figures/experiencia_ohm_diagrama.drawio.png>]
+
+LaTeX Warning: Reference `fig:fluxohm' on page 102 undefined on input line 987.
+
+
+
+[102 <./figures/erro_pagina.png>]
+<figures/exemplo_dados_Ohm.png, id=3121, 760.8425pt x 68.255pt>
+File: figures/exemplo_dados_Ohm.png Graphic file (type png)
+<use figures/exemplo_dados_Ohm.png>
+Package pdftex.def Info: figures/exemplo_dados_Ohm.png  used on input line 1026.
+(pdftex.def)             Requested size: 398.33861pt x 35.73546pt.
+
+
+[103 <./figures/exemplo_dados_Ohm.png (PNG copy)>]
+
+[104]
+
+[105]
+
+[106]
+
+[107]
+
+[108]
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 1217--1218
+[]\T1/lmr/m/n/10.95 Na Sec-Á„o an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-Á„o en-tre a p·-gina \T1/lmr/m/it/10.95 ohm.html
+ []
+
+<figures/ohm_diagramaCUTRelay.drawio.png, id=3254, 1640.1275pt x 591.20876pt>
+File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
+<use figures/ohm_diagramaCUTRelay.drawio.png>
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1222.
+(pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
+<figures/login.png, id=3256, 1541.76pt x 353.32pt>
+File: figures/login.png Graphic file (type png)
+<use figures/login.png>
+Package pdftex.def Info: figures/login.png  used on input line 1233.
+(pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
+<figures/ohm_diagramaCUT.drawio.png, id=3257, 1640.1275pt x 560.0925pt>
+File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
+<use figures/ohm_diagramaCUT.drawio.png>
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1240.
+(pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
+
+LaTeX Warning: Reference `lst:exemplologin' on page 109 undefined on input line 1245.
+
+
+LaTeX Warning: Reference `lst:exemplologin' on page 109 undefined on input line 1249.
+
+
+
+[109 <./figures/ohm_diagramaCUTRelay.drawio.png> <./figures/login.png (PNG copy)>])
+
+[110 <./figures/ohm_diagramaCUT.drawio.png>]
+\openout2 = `chapters/chapter5.aux'.
+
+ (./chapters/chapter5.tex
+Cap\'{\i }tulo 5.
+)
+
+[111
+
+
+
+
+]
+\openout2 = `chapters/chapter6.aux'.
+
+ (./chapters/chapter6.tex
+
+[112
+
+
+
+
+]
+Cap\'{\i }tulo 6.
+)
+
+[113]
+\openout2 = `chapters/chapter7.aux'.
+
+ (./chapters/chapter7.tex
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3287, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf  used on input line 1.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3289, page=1, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
+(pdftex.def)             Requested size: 597.5079pt x 845.04504pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 1>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page1 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[114
+
+
+
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3331, page=2, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 2>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page2 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[115
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3354, page=3, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 3>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page3 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[116
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3360, page=4, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 4>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page4 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[117
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3367, page=5, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 5>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page5 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[118
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3375, page=6, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 6>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page6 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[119
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3381, page=7, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 7>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page7 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[120
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3400, page=8, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 8>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page8 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[121
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3407, page=9, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 9>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page9 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[122
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3414, page=10, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 10>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page10 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[123
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3422, page=11, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 11>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page11 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[124
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3430, page=12, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 12>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page12 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[125
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]
+<chapters/Datasheet/LaRE_datasheet.pdf, id=3438, page=13, 597.50829pt x 845.0471pt>
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: chapters/Datasheet/LaRE_datasheet.pdf Graphic file (type pdf)
+<use chapters/Datasheet/LaRE_datasheet.pdf, page 13>
+Package pdftex.def Info: chapters/Datasheet/LaRE_datasheet.pdf , page13 used on input line 1.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[126
+
+ <./chapters/Datasheet/LaRE_Datasheet.pdf>]) (./main.bbl (./main.brf)
+\tf@brf=\write12
+\openout12 = `main.brf'.
+
+
+
+[127
+\newlabel{datasheet}{{6}{127}{Conclus√µes}{chapter.6}{}}
+
+
+
+]
+
+[128]
+
+[129]
+
+[130]
+
+[131]
+
+[132]
+
+[133]
+
+[134]
+
+[135]
+
+[136]
+
+[137]
+
+[138]
+
+[139]
+
+[140]
+
+[141])
+
+[142]
+\openout2 = `chapters/appendixA.aux'.
+
+ (./chapters/appendixA.tex
+Anexo A.
+
+Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
+(lipsum)                'portuguese' will be used instead.
+
+
+
+[143
+
+
+])
+
+[144] (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/chapter6.aux) (./chapters/chapter7.aux) (./chapters/appendixA.aux))
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 84A768EA60FF57F505806559299F8B5E;13319.
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: 5FF4F9F0019C117FFFB9B8726CBB5F56;15905.
+ ) 
+Here is how much of TeX's memory you used:
+ 42476 strings out of 475151
+ 879281 string characters out of 5766394
+ 1669790 words of memory out of 5000000
+ 63884 multiletter control sequences out of 15000+600000
+ 688810 words of font info for 128 fonts, out of 8000000 for 9000
+ 16 hyphenation exceptions out of 8191
+ 100i,21n,131p,2444b,1580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{https://tek.sapo.pt/noticias/computadores/artigos/entrega-de-computadores-a-alunos-e-professores-tem-se-revelado-muito-dificil-de-cumprir} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{https://www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.41} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.40} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.39} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.38} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.37} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.36} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.35} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.34} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.33} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.32} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.30} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.28} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.27} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.26} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.25} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.24} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.8} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+</usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (178 pages, 19664201 bytes).
+PDF statistics:
+ 4254 PDF objects out of 4296 (max. 8388607)
+ 3742 compressed objects within 38 object streams
+ 904 named destinations out of 1000 (max. 500000)
+ 1180 words of extra memory for PDF output out of 10000 (max. 10000000)
+
