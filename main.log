@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.24)  11 MAR 2025 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.2.24)  11 MAR 2025 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1710,7 +1710,12 @@ File: figures/Diagrama_simplificado.drawio.png Graphic file (type png)
 <use figures/Diagrama_simplificado.drawio.png>
 Package pdftex.def Info: figures/Diagrama_simplificado.drawio.png  used on input line 712.
 (pdftex.def)             Requested size: 278.8358pt x 261.04903pt.
- [93 <./figures/ohm_page.png (PNG copy)> <./figures/ohm_page_controlo.png (PNG copy)>] [94 <./figures/Diagrama_simplificado.drawio.png>] [95] [96] [97] [98] [99]
+ [93 <./figures/ohm_page.png (PNG copy)> <./figures/ohm_page_controlo.png (PNG copy)>] [94 <./figures/Diagrama_simplificado.drawio.png>] [95] [96] [97] [98]
+Overfull \hbox (247.22266pt too wide) in paragraph at lines 874--875
+\T1/lmr/m/n/10.95 per-mite con-tro-lar e con-fi-gu-rar o V encontra-se aqui - https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html.
+ []
+
+[99]
 <figures/ohm_escolha.png, id=3068, 788.9475pt x 505.89pt>
 File: figures/ohm_escolha.png Graphic file (type png)
 <use figures/ohm_escolha.png>
@@ -1730,12 +1735,13 @@ File: figures/experiencia_ohm_diagrama.drawio.png Graphic file (type png)
 <use figures/experiencia_ohm_diagrama.drawio.png>
 Package pdftex.def Info: figures/experiencia_ohm_diagrama.drawio.png  used on input line 918.
 (pdftex.def)             Requested size: 239.00558pt x 262.67413pt.
-<figures/erro_pagina.png, id=3076, 769.87625pt x 430.60875pt>
+[100 <./figures/ohm_escolha.png> <./figures/ohm_escolha_abc.png>]
+<figures/erro_pagina.png, id=3083, 769.87625pt x 430.60875pt>
 File: figures/erro_pagina.png Graphic file (type png)
 <use figures/erro_pagina.png>
 Package pdftex.def Info: figures/erro_pagina.png  used on input line 938.
 (pdftex.def)             Requested size: 278.8358pt x 155.96518pt.
-[100 <./figures/ohm_escolha.png> <./figures/ohm_escolha_abc.png>] [101 <./figures/experiencia_ohm_diagrama.drawio.png> <./figures/erro_pagina.png>]
+ [101 <./figures/experiencia_ohm_diagrama.drawio.png> <./figures/erro_pagina.png>]
 
 LaTeX Warning: Reference `fig:fluxohm' on page 102 undefined on input line 976.
 
@@ -2205,7 +2211,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (178 pages, 19678753 bytes).
+Output written on main.pdf (178 pages, 19679281 bytes).
 PDF statistics:
  4242 PDF objects out of 4296 (max. 8388607)
  3729 compressed objects within 38 object streams
