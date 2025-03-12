@@ -798,7 +798,7 @@ O passo final é a activação dos relés, realizada no ficheiro \textit{shift\t
 Para que as experiências funcionem correctamente, todos os relés terão de ser activados ao mesmo tempo. Isto requer que à \textit{string} seja feito um \textit{and bit} a \textit{bit} e cada um deles enviado para o registo de deslocamento, numa configuração \acrshort{sipo}, tal como pode ser visto na Listagem \ref{lst:andbitabit}. Assim que os 8 \textit{bits} ou 13 \textit{bits} forem todos tranferidos para o registo, será activada a saída paralela e o relés activados. \textbf{A REVER: trocar o termo string por trama?} 
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{And bit} \textit{bit shift\textunderscore register}, label=lst:andbitabit]
+	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{And bit} \textit{bit shift\textunderscore register - NOME DO FICH}, label=lst:andbitabit]
 		for i in range(n_bits):
 			binaryShift = binaryString & 1
 			if binaryShift == 1:
@@ -811,11 +811,11 @@ Para que as experiências funcionem correctamente, todos os relés terão de ser
 	\end{lstlisting}
 \end{minipage}
 
-\subsubsection{VirtualBench - Biblioteca pyVirtualBench}
-\label{sec:pyvirtualbench}
-O comando e controlo do \acrshort{virtualbench} é realizado através da biblioteca \textit{pyVirtualBench}\footnote{No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento.\label{fnlabel}} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}. \sout{Viu-se também que este \textit{wrapper} não é compatível com \textit{Linux} e não é suportado oficialmente pela \acrshort{ni}. Por isso, toda a programação, controlo e configuração do \acrshort{virtualbench} foi realizada com base neste \textit{wrapper} que pode ser transferido ou consultado no \href{https://github.com/armstrap/armstrap-pyvirtualbench/tree/master}{GitHub}.}
+\subsubsection{VirtualBench - Configurações e medições}
+\label{sec:configmedicaoes}
+O comando e controlo do \acrshort{virtualbench} é realizado através da biblioteca \textit{pyVirtualBench}\footnote{No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento.\label{fnlabel}} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}.
 
-Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se enquadram nos objectivos deste projecto são:
+Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se adequam aos objectivos deste projecto são:
 \begin{itemize}
 	\item \textit{dmm\_example.py}: exemplo que demonstra como efetuar medições utilizando o multímetro digital;
 	\item \textit{fgen\_example.py}: exemplo que demonstra como configurar e gerar uma onda através do gerador de sinal;
@@ -823,26 +823,11 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
 
-Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha~\ref{line:pslibertada}, e não havendo erro, o \textit{virtualbench} é libertado, linha~\ref{line:virtualbenchlibertado}. A execução do \textit{script} é, então, terminada.
+De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. Não é, de todo, o objectivo desta dissertação dissecar toda e qualquer linha de código ou forma de configurar o \acrshort{virtualbench}. Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da bilblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
 
-Portanto, de uma forma  geral, depois de iniciado ou chamado o \textit{script-ficheiro}, a lógica de funcionamento é a seguinte:
-\begin{enumerate}
-	\label{item:logica}
-	\item Aquisição do \textit{virtualbench};
-	\item Aquisição dos instrumentos;
-	\item Configurações específicas de cada intrumento;
-	\item Desenvolvimento do programa;
-	\item Libertar os instrumentos;
-	\item Libertar o \textit{virtualbench}.
-\end{enumerate}
+Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. 
 
-Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
-
-O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:powersource} da Listagem~\ref{lst:exemplops} é:
-\begin{itemize}
-	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
-	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
-\end{itemize}
+O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha~\ref{line:pslibertada}, e não havendo erro, o \textit{virtualbench} é libertado, linha~\ref{line:virtualbenchlibertado}. A execução do \textit{script} é, então, terminada.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
@@ -875,22 +860,49 @@ O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:
 	\end{lstlisting}
 \end{minipage}
 
+Portanto, de uma forma  geral, depois de iniciado ou chamado o \textit{script-ficheiro}, a lógica de funcionamento é a seguinte:
+\begin{enumerate}
+	\label{item:logica}
+	\item Aquisição do \textit{virtualbench};
+	\item Aquisição dos instrumentos;
+	\item Configurações específicas de cada intrumento;
+	\item Desenvolvimento do programa;
+	\item Libertar os instrumentos;
+	\item Libertar o \textit{virtualbench}.
+\end{enumerate}
+
+Neste contexto e voltando ao exemplo da Listagem \ref{lst:exemplops}, depois de realizada a aquisição do \acrshort{virtualbench} são realizadas as configurações necessárias para o exemplo em questão. Entre a linha~\ref{line:channel} e a linha~\ref{line:current_limit} são definidos os parâmetros da fonte de tensão, nomeadamente o canal - fonte de \SI{25}{\volt}, o nível de tensão - saída definida para \SI{25}{\volt} e o limite de corrente - \SI{0.5}{\ampere}. A fonte de tensão é, então, adquirida na linha~\ref{line:powersource} e configurada na linha~\ref{line:psconfig} com os parâmetros definidos anteriormente e todas as saídas da fonte são activadas na linha~\ref{line:psenable}. 
+
+Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
+
+O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:powersource} da Listagem~\ref{lst:exemplops} é:
+\begin{itemize}
+	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
+	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
+\end{itemize}
+
 No fim da execução do ficheiro, tal como apresentado na Listagem \ref{lst:exemplops}, o \acrshort{virtualbench} - Linha~\ref{line:virtualbenchlibertado} e os restantes instrumentos, neste caso particular, a fonte de tensão - Linha~\ref{line:pslibertada} - têm de ser libertados. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. \textbf{A REVER: dar um exemplo do que acontece??}
 
 No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de Ohm abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
 
-\subsubsection{VirtualBench - Configurações e medições}
-\label{sec:configmedicaoes}
-De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. Não é, de todo, o objectivo desta dissertação dissecar toda e qualquer linha de código ou forma de configurar o \acrshort{virtualbench}. Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da bilblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações. 
+Os restantes instrumentos usados no \acrshort{lare}	seguem a mesma lógica de funcionamento.
 
-Neste contexto e voltando ao exemplo da Listagem \ref{lst:exemplops}, depois de realizada a aquisição do \acrshort{virtualbench} são realizadas as configurações necessárias para o exemplo em questão. Entre a linha~\ref{line:channel} e a linha~\ref{line:current_limit} são definidos os parâmetros da fonte de tensão, nomeadamente o canal - fonte de \SI{25}{\volt}, o nível de tensão - saída definida para \SI{25}{\volt} e o limite de corrente - \SI{0.5}{\ampere}. A fonte de tensão é, então, adquirida na linha~\ref{line:powersource} e configurada na linha~\ref{line:psconfig} com os parâmetros definidos anteriormente e todas as saídas da fonte são activadas na linha~\ref{line:psenable}. 
+Pode-se, no entanto, referir as principais funções que permitem a medição de tensão, corrente ou sinal no osciloscópio \cite{pyvirtualbench} - \textbf{NOTA: valerá a pena esta parte? PROF}:
 
-Os restantes instrumentos usados no \acrshort{lare}	seguem a mesma lógica de funcionamento, como referido em \ref{item:logica} - \textbf{NOTA: Ver esta referência}.
-
-sendo que, para cada um deles, são definidos os parâmetros específicos e realizadas as configurações necessárias para a experiência em questão.
-
-
-Para medições etc, etc, o conjunto completo de funções e configuraçõoes que nos permite controlar e configurar o V encontra-se aqui - . No contexto deste projecto, vamos utilizar a biblioteca, como já foi referido e suportarmo-nos dos exemplos dados na biblioteca instalada a aprtir do respositório do github. Os exemplos dou só alguns, não vale a pensa fá-los todos. Voltámos ao exemplo da fonte de alimentação e podesmo pegar no exemplo do dmm para apresentar como se faz as medições da tensão e corrente e respectivas configurações
+\begin{itemize}
+	\item Multímetro digital - \acrshort{dmm}
+		\begin{itemize}
+			\item \textit{dmm.read()} - efectua a medição de tensão ou corrente, consoante os parâmetros definidos na função de configuração: dmm.configure~\textunderscore measurement(DmmFunction.DC~\textunderscore VOLTS, True, 10) ou dmm.configure~\textunderscore measurement(DmmFunction.DC~\textunderscore CURRENT, True, 10);
+		\end{itemize}
+	\item Osciloscópio
+	\begin{itemize}
+		\item \textit{mso.read~\textunderscore analog~\textunderscore digital~\textunderscore u64()} - efectua a medição de sinal, sendo que a configuração é automática: \textit{mso.auto~\textunderscore setup()};
+	\end{itemize}
+	\item Gerador de sinal
+	\begin{itemize}
+		\item \textit{fgen.run()} - inicia o gerador de sinal, após as configurações iniciais:\\fgen.configure~\textunderscore waveform(fgen~\textunderscore function, frequency, amplitude, offset);
+	\end{itemize}
+\end{itemize}
 
 \subsection{Experiências}
 \label{sec:experiências}
