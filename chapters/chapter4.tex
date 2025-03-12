@@ -923,7 +923,7 @@ Pode-se, no entanto, referir as principais funções que permitem a medição de
 
 %NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
 
-Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência. Já a segunda parte, que aborda os Retificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências.
+Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência. Já a segunda parte, que aborda os Retificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. \textbf{NOTA: Acho que esta parte precisa de ser melhor explicada}
 
 \subsubsection{Lei de Ohm}
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
@@ -942,14 +942,28 @@ Dado que se optou pela liberdade de escolha aos utilizadores, a abordagem à imp
 
 Para melhor descrever esta experiência e o seu funcionamento no que diz respeito ao \textit{software}, pode dividir-se a explicação em duas etapas: configuração inicial do \acrshort{virtualbench} e medição de tensão e corrente - \textbf{eventualmente três partes com o PI metido ao barulho}. 
 
-A Figura \ref{fig:fluxohm} representa o fluxograma(??) completo do processo de execução da experiência. No entanto, para a primeira etapa, o foco será na comunicação entre a página \textit{ohm.html} e o ficheiro \textit{configVB.py}, representado na Figura \ref{fig:comohmconfigvb}.
+A Figura \ref{fig:experiencialeiohm} representa o esquema completo do processo de execução da experiência. 
 
+A configuração inicial do \acrshort{virtualbench} é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação, alimentar os relés e a fonte de alimentação composta pelo LM317 - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva.
+
+No entanto, para a primeira etapa, o foco será a cofiguração do na comunicação entre a página \textit{ohm.html} e o ficheiro \textit{configVB.py}, representado na Figura \ref{fig:comohmconfigvb}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/ohm_diagrama.drawio.png}
+	\caption{Diagrama de funcionamento (?) da experiência - Lei de \textit{Ohm}}
+	\label{fig:experiencialeiohm}
+\end{figure}
+
+
+\begin{comment}
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/experiencia_ohm_diagrama.drawio.png}
 	\caption{Comunicação \textit{ohm.html} e \textit{configVB.py}}
 	\label{fig:comohmconfigvb}
 \end{figure}
+\end{comment}
 
 %FIQUEI AQUI - COMEÇAR POR DIZER QUE NESTA PARTE ENVOLVE 3 FICHEIROS, TALVEZ DE UMA FORMA MUITO RESUMIDA E DEPOIS PARTIR PARA UMA PARTE RIGOROSA
 
