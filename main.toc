@@ -71,10 +71,10 @@
 \contentsline {subsubsection}{Comunicação com RaspberryPi}{95}{section*.113}%
 \contentsline {subsubsection}{VirtualBench - Configurações e medições}{97}{section*.114}%
 \contentsline {subsection}{\numberline {4.2.4}Experiências}{100}{subsection.4.2.4}%
-\contentsline {subsubsection}{Lei de Ohm}{100}{section*.115}%
-\contentsline {paragraph}{Configuração inicial do VB}{103}{section*.120}%
-\contentsline {paragraph}{Medição da tensão e corrente}{104}{section*.121}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{106}{section*.122}%
+\contentsline {subsubsection}{Lei de Ohm}{101}{section*.115}%
+\contentsline {paragraph}{Configuração inicial do VB}{104}{section*.120}%
+\contentsline {paragraph}{Medição da tensão e corrente}{105}{section*.121}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{107}{section*.122}%
 \contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{108}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Resultados}{111}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Limitações}{111}{section.5.1}%
