@@ -795,7 +795,7 @@ Sendo assim, o ficheiro \textit{receive.py} é executado inicialmente e aguarda 
 
 O passo final é a activação dos relés, realizada no ficheiro \textit{shift\textunderscore register.py}, função \textit{commandRelays}. O procedimento foi descrito na Secção \ref{sec:hwregistodeslocamento}, sendo que os modos de funcionamento estão representados na Tabela \ref{Table:funcSN74HC595}.
 
-Para que as experiências funcionem correctamente, todos os relés terão de ser activados ao mesmo tempo. Isto requer que à \textit{string} seja feito um \textit{and bit} a \textit{bit} e cada um deles enviado para o registo de deslocamento, numa configuração \acrshort{sipo}, tal como pode ser visto na Listagem \ref{lst:andbitabit}. Assim que os 8 \textit{bits} ou 13 \textit{bits} forem todos tranferidos para o registo, será activada a saída paralela e o relés activados. \textbf{A REVER: trocar o termo string por trama?} 
+Para que as experiências funcionem correctamente, todos os relés terão de ser activados ao mesmo tempo. Isto requer que à \textit{string} seja feito um \textit{and bit} a \textit{bit} - \textbf{NOTA: Se calhar explicar melhor como é formada a string, no fundo não é uma string mas uma trama de bits} e cada um deles enviado para o registo de deslocamento, numa configuração \acrshort{sipo}, tal como pode ser visto na Listagem \ref{lst:andbitabit}. Assim que os 8 \textit{bits} ou 13 \textit{bits} forem todos tranferidos para o registo, será activada a saída paralela e o relés activados. \textbf{A REVER: trocar o termo string por trama?} 
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{And bit} \textit{bit shift\textunderscore register - NOME DO FICH}, label=lst:andbitabit]
@@ -871,7 +871,7 @@ Portanto, de uma forma  geral, depois de iniciado ou chamado o \textit{script-fi
 	\item Libertar o \textit{virtualbench}.
 \end{enumerate}
 
-Neste contexto e voltando ao exemplo da Listagem \ref{lst:exemplops}, depois de realizada a aquisição do \acrshort{virtualbench} são realizadas as configurações necessárias para o exemplo em questão. Entre a linha~\ref{line:channel} e a linha~\ref{line:current_limit} são definidos os parâmetros da fonte de tensão, nomeadamente o canal - fonte de \SI{25}{\volt}, o nível de tensão - saída definida para \SI{25}{\volt} e o limite de corrente - \SI{0.5}{\ampere}. A fonte de tensão é, então, adquirida na linha~\ref{line:powersource} e configurada na linha~\ref{line:psconfig} com os parâmetros definidos anteriormente e todas as saídas da fonte são activadas na linha~\ref{line:psenable}. 
+Neste contexto e voltando ao exemplo da Listagem \ref{lst:exemplops}, depois de realizada a aquisição do \acrshort{virtualbench} são realizadas as configurações necessárias para o exemplo em questão. Entre a linha~\ref{line:channel} e a linha~\ref{line:current_limit} são definidos os parâmetros da fonte de tensão, nomeadamente o canal de saída - fonte de \SI{25}{\volt}, o nível de tensão - saída definida para \SI{1}{\volt} e o limite de corrente - \SI{0.5}{\ampere}. A fonte de tensão é, então, adquirida na linha~\ref{line:powersource} e configurada na linha~\ref{line:psconfig} com os parâmetros definidos anteriormente e todas as saídas da fonte são activadas na linha~\ref{line:psenable}. 
 
 Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
 
@@ -923,7 +923,9 @@ Pode-se, no entanto, referir as principais funções que permitem a medição de
 
 %NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
 
-Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência. Já a segunda parte, que aborda os Retificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. \textbf{NOTA: Acho que esta parte precisa de ser melhor explicada}
+Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os Rectificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. \textbf{NOTA: Acho que esta parte precisa de ser melhor explicada}
+
+A configuração inicial do \acrshort{virtualbench} - comum a todas as experiências - é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação, alimentar os relés e a fonte de alimentação composta pelo LM317 - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva.
 
 \subsubsection{Lei de Ohm}
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
@@ -940,43 +942,17 @@ Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de real
 
 Dado que se optou pela liberdade de escolha aos utilizadores, a abordagem à implementação foi um desafio. (\textbf{se calhar retirava este parágrafo})
 
-Para melhor descrever esta experiência e o seu funcionamento no que diz respeito ao \textit{software}, pode dividir-se a explicação em duas etapas: configuração inicial do \acrshort{virtualbench} e medição de tensão e corrente - \textbf{eventualmente três partes com o PI metido ao barulho}. 
+Para melhor descrever esta experiência e o seu funcionamento no que diz respeito ao \textit{software}, pode dividir-se a explicação em duas etapas: 
+\begin{enumerate}
+	\item Configuração inicial do \acrshort{virtualbench};
+	\item Medição de tensão, corrente e apresentação do gráfico - \textbf{eventualmente três partes com o PI metido ao barulho}. 
+\end{enumerate}
 
-A Figura \ref{fig:experiencialeiohm} representa o esquema completo do processo de execução da experiência. 
-
-A configuração inicial do \acrshort{virtualbench} é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação, alimentar os relés e a fonte de alimentação composta pelo LM317 - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva.
-
-No entanto, para a primeira etapa, o foco será a cofiguração do na comunicação entre a página \textit{ohm.html} e o ficheiro \textit{configVB.py}, representado na Figura \ref{fig:comohmconfigvb}.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/ohm_diagrama.drawio.png}
-	\caption{Diagrama de funcionamento (?) da experiência - Lei de \textit{Ohm}}
-	\label{fig:experiencialeiohm}
-\end{figure}
-
-
-\begin{comment}
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.6\textwidth]{figures/experiencia_ohm_diagrama.drawio.png}
-	\caption{Comunicação \textit{ohm.html} e \textit{configVB.py}}
-	\label{fig:comohmconfigvb}
-\end{figure}
-\end{comment}
-
-%FIQUEI AQUI - COMEÇAR POR DIZER QUE NESTA PARTE ENVOLVE 3 FICHEIROS, TALVEZ DE UMA FORMA MUITO RESUMIDA E DEPOIS PARTIR PARA UMA PARTE RIGOROSA
-
-%EXPLICAR PORQUE SE COLOCOU UM BOTÃO DE OK E STOP/RESET, O PROMENOR DAS FONTES DE12v SEREM PRIMEIRO ACTIVADA AINDA NÃO ESTÁ EXPLICADA EM QQ LADO E FOI POR ISSO QUE SE OPTOU POR COLOCAR OS BOTÕES, AO FAZER RESET, OS ci E OS RELE´S DEIXAM DE ESTAR SOB TENSÃO.
-%PORTNATO, O PASSO É, PRIMEIRO ACTIVAR IC E RELES, EFECTUAR MEDIÇÕES. NO FIM DA EXPERIENCIA AO CLICAR EM STOP A FONTE É DESLIGADA
-
-%Entre estes dois ficheiros há envio/recepção de parâmetros.
-
-Como se pode ver nas Figura \ref{fig:ohm_ctrl}, representadas na Secção \ref{sec:paginas}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente ou tensão e a construção do gráfico.
+Como se pode ver nas Figura \ref{fig:ohm_ctrl}, representadas na Secção \ref{sec:paginas}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente, tensão e a construção do gráfico.
 
 %\sout{O botão ``OK'' é responsável por habilitar os selectores de parâmetros, assim como habilitar a fonte de 25 do virtualbench. Enquanto que o botão ``STOP/RESET'' é responsável por interromper a experiência e desligar a fonte de alimentação.}
 
-A verificação e detecção dos erros acontece quando o utilizador tenta seleccionar um dos parâmetros, antes de estes estarem habilitados, como exemplificado na Figura \ref{fig:erropagina}. 
+A verificação e detecção dos erros acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -985,50 +961,14 @@ A verificação e detecção dos erros acontece quando o utilizador tenta selecc
 	\label{fig:erropagina}
 \end{figure}
 
-A Listagem \ref{lst:erro} mostra como o alerta está implementado, directamente na página \acrshort{html}.
-
-\begin{center}
-	\begin{minipage}{0.7\linewidth}
-		\begin{lstlisting}[language=html, caption=Erro na página \textit{ohm.html}, label=lst:erro]
-		(...)
-        if (Vcc === "0" || Resistance === "0") {
-          alert("Tem de primeiro seleccionar os valores de Vcc e R!");
-          return;
-        }
-		(...)
-	\end{lstlisting}
-	\end{minipage}
-\end{center}
-
-No entanto, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
-\begin{enumerate}
-	\item Seleccionar o botão ``OK'' que habilita os selectores;
-	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
-	\begin{enumerate}
-		\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
-	\end{enumerate}
-\end{enumerate}
-
-%Sequência: 
-%1º passo:
-%OK - habilita selectores na página HTML e envia o parâmetro para configurar a fonte de 25V, através do ficheiro configVB
-%2º passo:
-%Seleccionar os parâmetros $V_{CC}$ e R
-%3º passo:
-%Efectuar medição de tensão ou corrente, através do ficheiro configVB
-
-\paragraph{Configuração inicial do VB} ~\\
-%Partindo da sequência anterior, o primerio passo (1.) é a habilitação dos selectores e a configuração da fonte de {25}{\volt}. Pela análise da Figura \ref{fig:fluxohm}, os parâmetros são enviados da página \textit{ohm.html} para o \textit{script views.py}, da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
+Partindo da sequência anterior, a primeria etapa (1.) - configuração do \acrshort{virtualbench} - é a habilitação dos selectores e a configuração da fonte de \SI{25}{\volt}. Pela análise da Figura \ref{fig:fluxohm}, os parâmetros são enviados da página \textit{ohm.html} para o \textit{script views.py}, da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
 %, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
 
 \begin{center}
-	\begin{minipage}{0.7\linewidth}
+	\begin{minipage}{0.9\linewidth}
 		\begin{lstlisting}[language=Html,escapechar=|, caption=Envio de parâmetros da página \textit{ohm.html} para o \textit{script views.py}, label=lst:exemploenvioparametros]
-		(...)
 		const booleanParameter = true; |\label{line:trueparameter}|
-		const url = 
-		`/config_VirtualBench?habilitar_parameter=${booleanParameter.toString()}`
-		(...)
+		const url = `/config_VirtualBench?habilitar_parameter=${booleanParameter.toString()}`
 	\end{lstlisting}
 	\end{minipage}
 \end{center}
@@ -1037,22 +977,12 @@ Do lado do servidor - \textit{script views.py} - os parâmetros são recebidos d
 \begin{center}
 	\begin{minipage}{1\linewidth}
 		\begin{lstlisting}[language=Python,escapechar=|, caption=Recepção dos parâmetros no \textit{script views.py} enviados da página \textit{ohm.html}, label=lst:exemplorecepcaoparametros]
-			(...)
-			@views.route('/config_VirtualBench', methods=['GET', 'POST'])
-			@login_required
-			def config_VirtualBench():
-				try:
-					Vcc = request.args.get('Vcc', 0, int)|\label{line:vccref}|
-					Resistance = request.args.get('R', 0, int)
-					measure_parameter = request.args.get('parameter', 0, str)|\label{line:measureref}|
-					configOK = request.args.get('habilitar_parameter', 0, bool)
-					configSTOP = request.args.get('desabilitar_parameter', 0, bool)|\label{line:stopref}|
-			(...)
+			configOK = request.args.get('habilitar_parameter', 0, bool)|\label{line:configOK}|
 		\end{lstlisting}
 	\end{minipage}
 \end{center}
 
-Na função \textit{config\_VirtualBench()}, caso os parâmetros não existam, ou se não forem recebidos, linhas \ref{line:vccref} a \ref{line:stopref}, será retornado o valor ``0''.
+%Na função \textit{config\_VirtualBench()}, caso os parâmetros não existam, ou se não forem recebidos, linhas \ref{line:vccref} a \ref{line:stopref}, será retornado o valor ``0''.
 
 A Figura \ref{fig:passagemparametros} mostra um exemplo dos valores que o ficheiro \textit{views.py} recebe, quando se carregar no botão ``OK'':
 \begin{figure}[hbtp]
@@ -1078,6 +1008,62 @@ Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é rec
 	(...)
 	\end{lstlisting}
 \end{minipage}
+
+
+A Figura \ref{fig:experiencialeiohm} representa o esquema completo do processo de execução da experiência. 
+
+\begin{comment}
+O procedimento respeitante à configuração inicial do \textit{virtualbench} é realizado quando o utilizador carrega no botão ``OK'', sendo que a comunicação se faz entre três ficheiros: \textit{ohm.html - views.py - configVB.py}. 
+
+
+	%const booleanParameter = true;
+    %const url = `/config_VirtualBench?habilitar_parameter=${booleanParameter.toString()}`;
+
+
+do Para a primeira etapa, o foco será a configuração comunicação entre a página \textit{ohm.html} e o ficheiro \textit{configVB.py}, representado na Figura \ref{fig:comohmconfigvb}.
+\end{comment}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/ohm_diagrama.drawio.png}
+	\caption{Diagrama de funcionamento (?) da experiência - Lei de \textit{Ohm}}
+	\label{fig:experiencialeiohm}
+\end{figure}
+
+\begin{comment}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/experiencia_ohm_diagrama.drawio.png}
+	\caption{Comunicação \textit{ohm.html} e \textit{configVB.py}}
+	\label{fig:comohmconfigvb}
+\end{figure}
+\end{comment}
+
+%FIQUEI AQUI - COMEÇAR POR DIZER QUE NESTA PARTE ENVOLVE 3 FICHEIROS, TALVEZ DE UMA FORMA MUITO RESUMIDA E DEPOIS PARTIR PARA UMA PARTE RIGOROSA
+
+%EXPLICAR PORQUE SE COLOCOU UM BOTÃO DE OK E STOP/RESET, O PROMENOR DAS FONTES DE12v SEREM PRIMEIRO ACTIVADA AINDA NÃO ESTÁ EXPLICADA EM QQ LADO E FOI POR ISSO QUE SE OPTOU POR COLOCAR OS BOTÕES, AO FAZER RESET, OS ci E OS RELE´S DEIXAM DE ESTAR SOB TENSÃO.
+%PORTNATO, O PASSO É, PRIMEIRO ACTIVAR IC E RELES, EFECTUAR MEDIÇÕES. NO FIM DA EXPERIENCIA AO CLICAR EM STOP A FONTE É DESLIGADA
+
+%Entre estes dois ficheiros há envio/recepção de parâmetros.
+
+No entanto, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
+\begin{enumerate}
+	\item Seleccionar o botão ``OK'' que habilita os selectores;
+	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
+	\begin{enumerate}
+		\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
+	\end{enumerate}
+\end{enumerate}
+
+%Sequência: 
+%1º passo:
+%OK - habilita selectores na página HTML e envia o parâmetro para configurar a fonte de 25V, através do ficheiro configVB
+%2º passo:
+%Seleccionar os parâmetros $V_{CC}$ e R
+%3º passo:
+%Efectuar medição de tensão ou corrente, através do ficheiro configVB
+
+\paragraph{Configuração inicial do VB} ~\\
 
 O ficheiro \textit{configVB.py} é responsável pela configuração do \acrshort{virtualbench} - E NÃO SÓ - e pela construção do gráfico final. Além das supra-mencionadas inclui ainda as seguintes funções:
 \begin{itemize}
