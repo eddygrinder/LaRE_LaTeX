@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Arch Linux) (preloaded format=pdflatex 2025.3.11)  13 MAR 2025 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Arch Linux) (preloaded format=pdflatex 2025.3.11)  14 MAR 2025 14:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/grinder/Documents/GitHub/LaRE_LaTeX/main
-(/home/grinder/Documents/GitHub/LaRE_LaTeX/main.tex
+**/home/6ea6en6/Documents/LaRE_LaTeX/main
+(/home/6ea6en6/Documents/LaRE_LaTeX/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (./DEEclass.cls
@@ -1943,7 +1943,7 @@ Package pdftex.def Info: figures/erro_pagina.png  used on input line 964.
 (pdftex.def)             Requested size: 278.8358pt x 155.96518pt.
 
 
-LaTeX Warning: Reference `fig:fluxohm' on page 101 undefined on input line 969.
+LaTeX Warning: Reference `fig:fluxohm' on page 101 undefined on input line 971.
 
 
 
@@ -1951,7 +1951,7 @@ LaTeX Warning: Reference `fig:fluxohm' on page 101 undefined on input line 969.
 <figures/exemplo_dados_Ohm.png, id=3120, 760.8425pt x 68.255pt>
 File: figures/exemplo_dados_Ohm.png Graphic file (type png)
 <use figures/exemplo_dados_Ohm.png>
-Package pdftex.def Info: figures/exemplo_dados_Ohm.png  used on input line 995.
+Package pdftex.def Info: figures/exemplo_dados_Ohm.png  used on input line 997.
 (pdftex.def)             Requested size: 398.33861pt x 35.73546pt.
 
 
@@ -1959,10 +1959,10 @@ Package pdftex.def Info: figures/exemplo_dados_Ohm.png  used on input line 995.
 <figures/ohm_diagrama.drawio.png, id=3136, 1640.1275pt x 1308.89pt>
 File: figures/ohm_diagrama.drawio.png Graphic file (type png)
 <use figures/ohm_diagrama.drawio.png>
-Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 1033.
+Package pdftex.def Info: figures/ohm_diagrama.drawio.png  used on input line 1035.
 (pdftex.def)             Requested size: 318.67209pt x 254.30382pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
 
  []
 
@@ -1972,10 +1972,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
 
 [104]
 
-LaTeX Warning: Reference `line:vccref' on page 105 undefined on input line 1129.
+LaTeX Warning: Reference `line:vccref' on page 105 undefined on input line 1131.
 
 
-LaTeX Warning: Reference `line:measureref' on page 105 undefined on input line 1129.
+LaTeX Warning: Reference `line:measureref' on page 105 undefined on input line 1131.
 
 
 
@@ -1984,30 +1984,30 @@ LaTeX Warning: Reference `line:measureref' on page 105 undefined on input line 1
 [106]
 
 [107]
-Overfull \hbox (9.38791pt too wide) in paragraph at lines 1242--1243
+Overfull \hbox (9.38791pt too wide) in paragraph at lines 1244--1245
 []\T1/lmr/m/n/10.95 Na Sec-ção an-te-rior descreveu-se o pro-cesso de co-mu-ni-ca-ção en-tre a pá-gina \T1/lmr/m/it/10.95 ohm.html
  []
 
 <figures/ohm_diagramaCUTRelay.drawio.png, id=3244, 1640.1275pt x 591.20876pt>
 File: figures/ohm_diagramaCUTRelay.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUTRelay.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1247.
+Package pdftex.def Info: figures/ohm_diagramaCUTRelay.drawio.png  used on input line 1249.
 (pdftex.def)             Requested size: 398.33861pt x 143.58896pt.
 <figures/login.png, id=3246, 1541.76pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 1258.
+Package pdftex.def Info: figures/login.png  used on input line 1260.
 (pdftex.def)             Requested size: 398.33861pt x 91.28416pt.
 <figures/ohm_diagramaCUT.drawio.png, id=3247, 1640.1275pt x 560.0925pt>
 File: figures/ohm_diagramaCUT.drawio.png Graphic file (type png)
 <use figures/ohm_diagramaCUT.drawio.png>
-Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1265.
+Package pdftex.def Info: figures/ohm_diagramaCUT.drawio.png  used on input line 1267.
 (pdftex.def)             Requested size: 398.33861pt x 136.03165pt.
 
-LaTeX Warning: Reference `lst:exemplologin' on page 108 undefined on input line 1270.
+LaTeX Warning: Reference `lst:exemplologin' on page 108 undefined on input line 1272.
 
 
-LaTeX Warning: Reference `lst:exemplologin' on page 108 undefined on input line 1274.
+LaTeX Warning: Reference `lst:exemplologin' on page 108 undefined on input line 1276.
 
 
 
@@ -2370,12 +2370,12 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  42470 strings out of 475151
- 879044 string characters out of 5766394
+ 879023 string characters out of 5766394
  1670674 words of memory out of 5000000
  63889 multiletter control sequences out of 15000+600000
  688810 words of font info for 128 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 100i,20n,131p,2444b,1580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,20n,131p,2437b,1580s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{https://tek.sapo.pt/noticias/computadores/artigos/entrega-de-computadores-a-alunos-e-professores-tem-se-revelado-muito-dificil-de-cumprir} has been referenced but does not exist, replaced by a fixed one
 
