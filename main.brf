@@ -287,11 +287,11 @@
 \backcite {LM317}{{75}{4.1.4}{section*.82}}
 \backcite {LM317}{{75}{4.1.4}{figure.caption.83}}
 \backcite {1N400x}{{76}{4.1.4}{figure.caption.83}}
-\backcite {LM317}{{76}{4.1.4}{equation.4.1}}
+\backcite {LM317}{{76}{4.1.4}{equation.4.1.1}}
 \backcite {sedrasmith}{{82}{4.1.6}{Item.8}}
 \backcite {sedrasmith}{{83}{4.17}{figure.caption.95}}
 \backcite {sedrasmith}{{83}{4.18}{figure.caption.96}}
 \backcite {Flask}{{86}{4.2.1}{figure.caption.102}}
 \backcite {Flask}{{91}{4.2.1}{lstnumber.4.8.1}}
-\backcite {Sockets}{{96}{4.2.3}{section*.113}}
-\backcite {pyvirtualbench}{{99}{4.2.3}{Item.14}}
+\backcite {Sockets}{{95}{4.2.3}{section*.111}}
+\backcite {pyvirtualbench}{{98}{4.2.3}{Item.14}}

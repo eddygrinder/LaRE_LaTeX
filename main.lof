@@ -69,16 +69,17 @@
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{85}{figure.caption.99}%
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Funcionamento geral \textit {Flask}}}{87}{figure.caption.102}%
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{87}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Página inicial}}{92}{figure.caption.109}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Experiência Lei de \textit {Ohm}}}{93}{figure.caption.110}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{94}{figure.caption.111}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{93}{figure.caption.109}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Página de \textit {login}}}{100}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Página inicial}}{101}{figure.caption.115}%
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Experiência Lei de \textit {Ohm}}}{101}{figure.caption.116}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Erro de selecção}}{102}{figure.caption.117}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Exemplo: passagem de parâmetros}}{102}{figure.caption.118}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Diagrama de funcionamento (?) da experiência - Lei de \textit {Ohm}}}{103}{figure.caption.119}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces \textit {Script configRelays.py}}}{108}{figure.caption.123}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Página de \textit {login}}}{109}{figure.caption.124}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces caralho}}{109}{figure.caption.125}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Experiência Lei de \textit {Ohm}}}{101}{figure.caption.117}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Erro de selecção}}{102}{figure.caption.118}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Exemplo: passagem de parâmetros}}{103}{figure.caption.119}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Diagrama de funcionamento (?) da experiência - Lei de \textit {Ohm}}}{104}{figure.caption.120}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces \textit {Script configRelays.py}}}{109}{figure.caption.124}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Página de \textit {login}}}{110}{figure.caption.125}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces caralho}}{110}{figure.caption.126}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -656,52 +656,8 @@ Devido à complexidade da implementação de uma verificação por \textit{email
 
 \textbf{A REVER: Valerá a pena uma página de admin, de forma a que o professor, por exemplo faça os registo e forneça os dados de acesso aos alunos?}
 
-\subsection{Páginas \textit{Web}}
+\subsection{Páginas \textit{Web} - esta secção passou para a parte das experiências (Lei de Ohm)}
 \label{sec:paginas}
-\textbf{DÚVIDA - Não sei se esta parte estará bem enquadrada}
-
-Como mencionado na Secção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível.
-
-Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
-
-O menu de escolha foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto, por exemplo, na Figura \ref{fig:pagmenu}.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/menupage.png}
-	\caption{Página inicial}
-	\label{fig:pagmenu}
-\end{figure}
-
-A navegação ficou dividida da seguinte forma:
-\begin{itemize}
-	\item Autenticação;
-	\begin{itemize}
-		\item Menu Principal;
-		\begin{itemize}
-			\item Página introdutória da experiência;
-			\begin{itemize}
-				\item Página de controle e realização da experiência.
-			\end{itemize}
-		\end{itemize}
-	\end{itemize}
-\end{itemize}
-
-A título de exemplo, a página sobre a Lei de \textit{Ohm}, que é apresentada ao utilizador, está representada na Figura \ref{fig:ohm_intro}.
-
-O passo seguinte é a página de controlo e realização da experiência, como se pode ver na Figura \ref{fig:ohm_ctrl}. Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis. Seleccionando ``STOP/RESET'' a experiência é interrompida e os selectores ficam desabilitados.
-
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Introdução\label{fig:ohm_intro}]{{\includegraphics[width=6cm]{figures/ohm_page.png} }}%
-		\qquad
-		\subfloat[\centering Controlo\label{fig:ohm_ctrl}]{{\includegraphics[width=6cm]{figures/ohm_page_controlo.png} }}%
-		\caption{Experiência Lei de \textit{Ohm}}%
-		\label{fig:pagohm}%
-	\end{figure}
-
-As outras experiências seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação.
 
 \subsection{Arquitectura de Comunicação}
 \label{sec:comunicacao}
@@ -932,7 +888,64 @@ Nesta secção, abordam-se de forma mais específica e detalhada os aspectos par
 
 Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} de relés e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva.
 
-\subsubsection{Lei de Ohm}
+\subsubsection{Lei de Ohm - Páginas web}
+\label{sec:paginas}
+
+Como mencionado na Secção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível.
+
+Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
+
+O menu de separadores verticais foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto. \sout{tal como pode ser visto, por exemplo, na Figura \ref{fig:pagmenu} que apresenta a página inicial.}
+
+A navegação ficou dividida da seguinte forma:
+\begin{itemize}
+	\item Autenticação;
+	\begin{itemize}
+		\item Página inicial;
+		\begin{itemize}
+			\item Página introdutória da experiência;
+			\begin{itemize}
+				\item Página de controle e realização da experiência.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+A página de autenticação, representada na Figura \ref{fig:paglogin}, está implementada no ficheiro \textit{auth.py}, função \textit{login}() e os formulários estão implementados na página \textit{login.html}, sendo que os dados de \textit{login} e registo são guardados na directoria \textit{instance}, ficheiro \textit{database.db}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{figures/login.png}
+	\caption{Página de \textit{login}}
+	\label{fig:paglogin}
+\end{figure}
+
+%Além da rota definida para o \textit{login}, as outras rotas definidas no ficheiro \textit{auth.py} foram as \textit{sign-up} e \textit{logout}. A estrutura base da função \textit{login}, representada na Listagem \ref{lst:exemplologin}, é idêntica para as restantes, sendo que ``/\textit{login''} representa a rota especificada, dentro da função há o código especifico inerentes a cada função e o \textit{return render\_template} indica qual a página a ser renderizada.
+
+
+%A título de exemplo, a página sobre a Lei de \textit{Ohm}, que é apresentada ao utilizador, está representada na Figura \ref{fig:ohm_intro}.
+
+O passo seguinte é a página de controlo e realização da experiência, como se pode ver na Figura \ref{fig:ohm_ctrl}. Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis. Seleccionando ``STOP/RESET'' a experiência é interrompida e os selectores ficam desabilitados.
+
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/menupage.png}
+	\caption{Página inicial}
+	\label{fig:pagmenu}
+\end{figure}
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Introdução\label{fig:ohm_intro}]{{\includegraphics[width=6cm]{figures/ohm_page.png} }}%
+		\qquad
+		\subfloat[\centering Controlo\label{fig:ohm_ctrl}]{{\includegraphics[width=6cm]{figures/ohm_page_controlo.png} }}%
+		\caption{Experiência Lei de \textit{Ohm}}%
+		\label{fig:pagohm}%
+	\end{figure}
+
+As outras experiências seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação.
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
 
 \begin{figure}[hbtp]

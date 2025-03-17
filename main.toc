@@ -65,22 +65,22 @@
 \contentsline {subsubsection}{Pedidos}{90}{section*.106}%
 \contentsline {subsubsection}{Base de dados}{91}{section*.107}%
 \contentsline {subsubsection}{Autenticação}{91}{section*.108}%
-\contentsline {subsection}{\numberline {4.2.2}Páginas \textit {Web}}{92}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Arquitectura de Comunicação}{93}{subsection.4.2.3}%
-\contentsline {subsubsection}{Comunicação entre ficheiros}{95}{section*.112}%
-\contentsline {subsubsection}{Comunicação com RaspberryPi}{95}{section*.113}%
-\contentsline {subsubsection}{VirtualBench - Configurações e medições}{97}{section*.114}%
-\contentsline {subsection}{\numberline {4.2.4}Experiências}{100}{subsection.4.2.4}%
-\contentsline {subsubsection}{Lei de Ohm}{101}{section*.115}%
-\contentsline {paragraph}{Configuração inicial do VB}{104}{section*.120}%
-\contentsline {paragraph}{Medição da tensão e corrente}{105}{section*.121}%
-\contentsline {subsubsection}{O \textit {script configVB.py}}{107}{section*.122}%
-\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{108}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Resultados}{111}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{111}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{111}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{113}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{127}{section*.126}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{143}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{143}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{143}{section.1.A.2}%
+\contentsline {subsection}{\numberline {4.2.2}Páginas \textit {Web} - esta secção passou para a parte das experiências (Lei de Ohm)}{92}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Arquitectura de Comunicação}{92}{subsection.4.2.3}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{93}{section*.110}%
+\contentsline {subsubsection}{Comunicação com RaspberryPi}{94}{section*.111}%
+\contentsline {subsubsection}{VirtualBench - Configurações e medições}{96}{section*.112}%
+\contentsline {subsection}{\numberline {4.2.4}Experiências}{99}{subsection.4.2.4}%
+\contentsline {subsubsection}{Lei de Ohm - Páginas web}{100}{section*.113}%
+\contentsline {paragraph}{Configuração inicial do VB}{103}{section*.121}%
+\contentsline {paragraph}{Medição da tensão e corrente}{105}{section*.122}%
+\contentsline {subsubsection}{O \textit {script configVB.py}}{107}{section*.123}%
+\contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{109}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Resultados}{113}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{113}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{113}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{115}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{129}{section*.127}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{145}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{145}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{145}{section.1.A.2}%
