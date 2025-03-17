@@ -925,8 +925,10 @@ A página de autenticação, representada na Figura \ref{fig:paglogin}, está im
 
 %A título de exemplo, a página sobre a Lei de \textit{Ohm}, que é apresentada ao utilizador, está representada na Figura \ref{fig:ohm_intro}.
 
-O passo seguinte é a página de controlo e realização da experiência, como se pode ver na Figura \ref{fig:ohm_ctrl}. Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis. Seleccionando ``STOP/RESET'' a experiência é interrompida e os selectores ficam desabilitados.
+Após o registo e \textit{login} bem sucedido, é apresentada a página inicial, onde é feito um pequeno resumo do que é o \acrshort{lare} e apresentado o menu de escolha das experiências. O menu de escolha foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
 
+
+%O passo seguinte é a página de controlo e realização da experiência, como se pode ver na Figura \ref{fig:ohm_ctrl}. Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis. Seleccionando ``STOP/RESET'' a experiência é interrompida e os selectores ficam desabilitados.
 
 \begin{figure}[hbtp]
 	\centering
@@ -1270,27 +1272,14 @@ Após análise e estudo da informação presente no \textit{site} do \textit{Fla
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/login.png}
-	\caption{Página de \textit{login}}
-	\label{fig:paglogin}
-\end{figure}
-
-\begin{figure}[hbtp]
-	\centering
 	\includegraphics[width=1\textwidth]{figures/ohm_diagramaCUT.drawio.png}
 	\caption{caralho}
 	\label{fig:diagramaCUT}
 \end{figure}
 
-Um exemplo de como foi implementada a função \textit{login}() está representada na Listagem \ref{lst:exemplologin} e a rota está definida para a página \textit{/login}, como apresentado na mesma Figura, linha 17.
-
-Os dados de \textit{login} e registo são guardados na directoria \textit{instance}, ficheiro \textit{database.db}.
-
 Além da rota definida para o \textit{login}, as outras rotas definidas no ficheiro \textit{auth.py} foram as \textit{sign-up} e \textit{logout}. A estrutura base da função \textit{login}, representada na Listagem \ref{lst:exemplologin}, é idêntica para as restantes, sendo que ``/\textit{login''} representa a rota especificada, dentro da função há o código especifico inerentes a cada função e o \textit{return render\_template} indica qual a página a ser renderizada.
 
 A juntar às páginas que compõem a estrutura base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as páginas que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Neste caso, serão cinco páginas, correspondentes aos 5 circuitos definidos na Secção \ref{sec:solucaoproposta}.
-
-O menu de escolha foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
 
 As páginas referentes às experiências seguem a mesma estrutura de menus.
 

@@ -76,11 +76,11 @@
 \contentsline {paragraph}{Medição da tensão e corrente}{105}{section*.122}%
 \contentsline {subsubsection}{O \textit {script configVB.py}}{107}{section*.123}%
 \contentsline {section}{\numberline {4.3}qualquer coisa que ainda não sei o quê}{109}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Resultados}{113}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Limitações}{113}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Melhoramentos}{113}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusões}{115}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{129}{section*.127}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{145}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{145}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{145}{section.1.A.2}%
+\contentsline {chapter}{\numberline {5}Resultados}{111}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitações}{111}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Melhoramentos}{111}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusões}{113}{chapter.6}%
+\contentsline {chapter}{Refer\^{e}ncias}{127}{section*.126}%
+\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{143}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Secção}{143}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{143}{section.1.A.2}%
