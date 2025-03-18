@@ -925,11 +925,7 @@ A página de autenticação, representada na Figura \ref{fig:paglogin}, está im
 
 %A título de exemplo, a página sobre a Lei de \textit{Ohm}, que é apresentada ao utilizador, está representada na Figura \ref{fig:ohm_intro}.
 
-Após o registo e \textit{login} bem sucedido, é apresentada a página inicial, onde é feito um pequeno resumo do que é o \acrshort{lare} e apresentado o menu de escolha das experiências. O menu de escolha foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
-
-o utilizador é levado a escolher as experiências. Em cada uma das experieências é fornecida uma pequena explicação do que é pretendido e o que se pretende medir. Estas páginas seguem um modelo uniforme, onde é apresentado o esquema respeitante
-
-%O passo seguinte é a página de controlo e realização da experiência, como se pode ver na Figura \ref{fig:ohm_ctrl}. Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis. Seleccionando ``STOP/RESET'' a experiência é interrompida e os selectores ficam desabilitados.
+Após o registo e \textit{login} bem sucedido, é apresentada a página inicial, onde é feito um pequeno resumo do que é o \acrshort{lare} e apresentado o menu de escolha das experiências. O menu de separadores verticias foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -937,6 +933,16 @@ o utilizador é levado a escolher as experiências. Em cada uma das experieênci
 	\caption{Página inicial}
 	\label{fig:pagmenu}
 \end{figure}
+
+Depois de seleccionada a experiência, as páginas seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação:
+\begin{itemize}
+	\item ``Introdução'' -  onde é apresentado o esquema e uma breve introdução à experiência a realizar;
+	\item ``Controlo'' - onde o utilizador pode escolher os parâmetros da experiência e as medições a efectuar.
+\end{itemize}
+
+Como exemplo, apresentam-se nas Figuras \ref{fig:ohm_intro} e \ref{fig:ohm_ctrl} as página de introdução e controlo, respectivamente, da experiência da Lei de \textit{Ohm}.
+
+%O passo seguinte é a página de controlo e realização da experiência, como se pode ver na Figura \ref{fig:ohm_ctrl}. Os selectores dos parâmetros ``$V_{CC}$'' e ``R'' estão inicialmente desabilitados. Seleccionando ``OK'' as opções ficam disponíveis. Seleccionando ``STOP/RESET'' a experiência é interrompida e os selectores ficam desabilitados.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -948,7 +954,6 @@ o utilizador é levado a escolher as experiências. Em cada uma das experieênci
 		\label{fig:pagohm}%
 	\end{figure}
 
-As outras experiências seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação.
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
 
 \begin{figure}[hbtp]
