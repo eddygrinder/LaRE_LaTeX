@@ -21,11 +21,11 @@
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Exemplo \textit {ps\_example.py}}}{97}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para o \textit {script views.py}}}{103}{lstlisting.4.15}%
 \contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Recepção dos parâmetros no \textit {script views.py} enviados da página \textit {ohm.html}}}{103}{lstlisting.4.16}%
-\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Teste do parâmetro ``OK'' (\ldots e ``STOP'') no ficheiro \textit {views.py}}}{103}{lstlisting.4.17}%
+\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Teste do parâmetro ``OK'' (\ldots e ``STOP'') no ficheiro \textit {views.py}}}{104}{lstlisting.4.17}%
 \contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Exemplo de configuração: fonte de alimentação - OK}}{105}{lstlisting.4.18}%
 \contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Exemplo de configuração: fonte de alimentação - STOP}}{105}{lstlisting.4.19}%
 \contentsline {lstlisting}{\numberline {4.20}{\ignorespaces Envio de parâmetros da página \textit {ohm.html} para \textit {views.py}}}{106}{lstlisting.4.20}%
-\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Procedimento de medição}}{106}{lstlisting.4.21}%
+\contentsline {lstlisting}{\numberline {4.21}{\ignorespaces Procedimento de medição}}{107}{lstlisting.4.21}%
 \contentsline {lstlisting}{\numberline {4.22}{\ignorespaces Envio de resultados do servidor (\textit {views.py}) para a página \textit {ohm.html}}}{107}{lstlisting.4.22}%
 \contentsline {lstlisting}{\numberline {4.23}{\ignorespaces Recepção de resultados na página \textit {ohm.html}}}{107}{lstlisting.4.23}%
 \contentsline {lstlisting}{\numberline {4.24}{\ignorespaces Formulário de escolha na página \textit {ohm.html}}}{108}{lstlisting.4.24}%
