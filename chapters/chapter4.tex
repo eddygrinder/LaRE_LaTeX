@@ -860,9 +860,11 @@ Pode-se, no entanto, referir as principais funções que permitem a medição de
 	\end{itemize}
 \end{itemize}
 
-\subsection{Experiências}
-\label{sec:experiências}
+\subsection{Interface WEB}
+\label{sec:interfaceweb}
 \textbf{NOTA: Acho que esta secção precisa de ser revista?? melhorada??}
+
+\textbf{NOTA2: Esta secção chamava-se "Experiências" e foi trocado para Interface WEB}
 %Resumindo Na experiencia da lei de ohm há o controlo dos valores da experiêncianeuica, medições a apresentação do gráfico. Este gráfico só é apresentado quando o utilizador carregar no respectivo link. Nas outras experiências, como o utilizador já tem menos controlo - só controla a frequência - REFERIR COMO É APRESENTADO O GRÁFICO. NÃO ESQUECER DO DIAGRAMA DE BODE.
 
 %FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS,  FALTA A PARTE DA COMUNICAÇÃO COM O pi.
@@ -880,24 +882,21 @@ Pode-se, no entanto, referir as principais funções que permitem a medição de
 
 %NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
 
-Do ponto de vista do \textit{software}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os Rectificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. \textbf{NOTA: Acho que esta parte precisa de ser melhor explicada}
+Do ponto de vista do \textit{software ou \acrshort{ide}}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os Rectificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. \textbf{NOTA: Acho que esta parte precisa de ser melhor explicada}
 
-Já foi referido na secção anterior - REF - que não é objetivo deste estudo dissecar todas as linhas de código ou ficheiros do projeto. Optou-se, assim, por apresentar um estudo que permita, de modo geral, compreender a base da Arquitetura de Comunicação, a troca de parâmetros e as configurações entre os diversos tipos de ficheiros.
+Conforme mencionado na secção anterior - ver REF -, não se pretende, neste estudo, proceder a uma análise exaustiva de todas as linhas de código ou ficheiros do projeto. Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
 
-Nesta secção, abordam-se INTERFACE WEB de forma mais específica e detalhada os aspectos particulares das experiências. Considerou-se, assim, que a melhor abordagem para estudá-las é através de um exemplo prático e concreto.
+%\sout{a base da Arquitetura de Comunicação, a troca de parâmetros e as configurações entre os diversos tipos de ficheiros.} \textbf{NOTA: Este parágrafo não faz muito sentido aqui, após a mudança do nome da secção para Interface WEB ou talvez reescrever a última frase após o optou-se...}
+
+\textbf{NOTA: Este parágrafo pode ser retirado ou colocado noutro local. Para já fica aqui - A REVER.}
 
 Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} de relés e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva.
 
 \subsubsection{\sout{Lei de Ohm - Páginas web} Interface web}
 \label{sec:paginas}
-
-SE CALHAR NO PONTO 4.2.4 TROCAVA O TÍTULO EXPERIÊNCIAS POR INTERFACE WEB E DENTRO DESTA SECÇÃO DIVIDIA POR EXPERIÊNCIAS
-
 Como mencionado na Secção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível.
 
 Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
-
-O menu de separadores verticais foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{w3schools}} e modificado de acordo com as necessidades do projecto. \sout{tal como pode ser visto, por exemplo, na Figura \ref{fig:pagmenu} que apresenta a página inicial.}
 
 A navegação ficou dividida da seguinte forma:
 \begin{itemize}
@@ -936,11 +935,14 @@ Após o registo e \textit{login} bem sucedido, é apresentada a página inicial,
 	\label{fig:pagmenu}
 \end{figure}
 
-Depois de seleccionada a experiência, as páginas seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação:
+Depois de seleccionada a experiência, as páginas seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação.
+Nas páginas introdutórias, o modelo é uniforme para todas as experiências, apresentando o respectivo esquema e contextualização da actividade. No entanto, no que diz respeito ao controlo das experiências, tal como referido na Secção \ref{sec: interfaceweb}, a experiência da Lei de \textit{Ohm} apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência.
 \begin{itemize}
-	\item ``Introdução'' -  onde é apresentado o esquema e uma breve introdução à experiência a realizar;
+	\item ``Introdução'' -  O modelo da página é uniforme para todas as experiências, apresentando o respectivo esquema e contextualização da actividade;
 	\item ``Controlo'' - onde o utilizador pode escolher os parâmetros da experiência e as medições a efectuar.
 \end{itemize}
+
+As páginas de Introdução seguem o mesmo 
 
 Como exemplo, as Figuras \ref{fig:ohm_intro} e \ref{fig:ohm_ctrl} apresentam, respetivamente, as páginas de Introdução e Controlo da experiência sobre a Lei de \textit{Ohm}.
 

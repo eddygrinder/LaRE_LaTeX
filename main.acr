@@ -99,7 +99,8 @@
 \glossentry{ide}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{xvii}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{48}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{69}}}%
+		\setentrycounter[]{page}\glsnumberformat{69}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{99}}}%
 \glossentry{iot}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{xvii}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{9}}}%
@@ -274,8 +275,7 @@
 		\setentrycounter[]{page}\glsnumberformat{73\delimN 74}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{76}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{96}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{98\delimN 99}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{102}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{98\delimR 102}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{104\delimR 106}}}%
 \glossentry{visir}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{ix\delimN x}\delimN 
