@@ -882,6 +882,8 @@ Pode-se, no entanto, referir as principais funções que permitem a medição de
 
 %NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
 
+DO PONTO DE VISTA DE SOFTWARE E IMPLEMENTAÇÃO É MAIS COMPLEXO MAS DO PONTO DE VISTA DO IDE É TUDO A MESMA MERDA, ESTE PARÁGRAFO TEM DE SER REVISTO
+
 Do ponto de vista do \textit{software ou \acrshort{ide}}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os Rectificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. \textbf{NOTA: Acho que esta parte precisa de ser melhor explicada}
 
 Conforme mencionado na secção anterior - ver REF -, não se pretende, neste estudo, proceder a uma análise exaustiva de todas as linhas de código ou ficheiros do projeto. Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
@@ -891,6 +893,16 @@ Conforme mencionado na secção anterior - ver REF -, não se pretende, neste es
 \textbf{NOTA: Este parágrafo pode ser retirado ou colocado noutro local. Para já fica aqui - A REVER.}
 
 Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} de relés e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva.
+
+A verificação e detecção dos erros acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados ou, no caso dos rectificadores e filtros, colocar o valor da frequência fora do valor definido nas intruções. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/erro_pagina.png}
+	\caption{Erro de selecção}
+	\label{fig:erropagina}
+\end{figure}
+
 
 Como mencionado na Secção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível. Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
 
@@ -943,16 +955,6 @@ O modelo é uniforme para todas as experiências, apresentando o respectivo esqu
 		\caption{Experiência Lei de \textit{Ohm}}%
 		\label{fig:pagohm}%
 	\end{figure}
-
-\textbf{COLOCAR ESTA MERDA A SEGUIR AO OK E STOP/RESET}
-A verificação e detecção dos erros acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/erro_pagina.png}
-	\caption{Erro de selecção}
-	\label{fig:erropagina}
-\end{figure}
 
 \subsubsection{Lei de \textit{Ohm}}
 Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
