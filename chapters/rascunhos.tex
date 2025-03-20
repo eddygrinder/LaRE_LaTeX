@@ -264,3 +264,296 @@ Importa referir que o botão ``OK'', além de habilitar os selectores, também a
 O botão ``STOP/RESET'' é responsável por interromper a experiência, desabilitar os selectores e desligar a fonte de alimentação.
 
 %serve também para e ``STOP/RESET'' são implementados com recurso a \textit{JavaScript}, tal como se pode ver na Listagem \ref{lst:okstopreset}.
+
+
+
+Para melhor descrever esta experiência e o seu funcionamento no que diz respeito ao \textit{software}, pode dividir-se a explicação em duas etapas: 
+\begin{enumerate}
+	\item Configuração inicial do \acrshort{virtualbench};
+	\item Medição de tensão, corrente e apresentação do gráfico - \textbf{eventualmente três partes com o PI metido ao barulho}. 
+\end{enumerate}
+
+Como se pode ver nas Figura \ref{fig:ohm_ctrl}, representadas na Secção \ref{sec:paginas}, a página \textit{ohm.html} é composta por um formulário que permite ao utilizador escolher os parâmetros $V_{CC}$ e R, assim como a medição a efectuar - corrente, tensão e a construção do gráfico.
+
+%\sout{O botão ``OK'' é responsável por habilitar os selectores de parâmetros, assim como habilitar a fonte de 25 do virtualbench. Enquanto que o botão ``STOP/RESET'' é responsável por interromper a experiência e desligar a fonte de alimentação.}
+
+Partindo da sequência anterior, a primeria etapa (1.) - configuração do \acrshort{virtualbench} - é a habilitação dos selectores e a configuração da fonte de \SI{25}{\volt}. Pela análise da Figura \ref{fig:fluxohm}, os parâmetros são enviados da página \textit{ohm.html} para o \textit{script views.py}, da forma como indica a Listagem \ref{lst:exemploenvioparametros}.
+%, é feita da forma apresentada na Listagem \ref{lst:exemploenvioparametros}:
+
+\begin{center}
+	\begin{minipage}{0.9\linewidth}
+		\begin{lstlisting}[language=Html,escapechar=|, caption=Envio de parâmetros da página \textit{ohm.html} para o \textit{script views.py}, label=lst:exemploenvioparametros]
+		const booleanParameter = true; |\label{line:trueparameter}|
+		const url = `/config_VirtualBench?habilitar_parameter=${booleanParameter.toString()}`
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+\textbf{ESTA MERDA PODE FICAR NOUTRO SÍTIO}
+
+Do lado do servidor - \textit{script views.py} - os parâmetros são recebidos da forma como se pode ver na Listagem \ref{lst:exemplorecepcaoparametros}:
+\begin{center}
+	\begin{minipage}{1\linewidth}
+		\begin{lstlisting}[language=Python,escapechar=|, caption=Recepção dos parâmetros no \textit{script views.py} enviados da página \textit{ohm.html}, label=lst:exemplorecepcaoparametros]
+			configOK = request.args.get('habilitar_parameter', 0, bool)|\label{line:configOK}|
+		\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+%Na função \textit{config\_VirtualBench()}, caso os parâmetros não existam, ou se não forem recebidos, linhas \ref{line:vccref} a \ref{line:stopref}, será retornado o valor ``0''.
+
+A Figura \ref{fig:passagemparametros} mostra um exemplo dos valores que o ficheiro \textit{views.py} recebe, quando se carregar no botão ``OK'':
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/exemplo_dados_Ohm.png}
+	\caption{Exemplo: passagem de parâmetros}
+	\label{fig:passagemparametros}
+\end{figure}
+
+O único parâmetro que é passado, é respeitante ao botão ``OK'', que foi definido como \textit{``True''}, representado na Linha \ref{line:trueparameter}, da Listagem \ref{lst:exemploenvioparametros}.
+
+Através da Listagem \ref{lst:recepcaoparametros} pode ver-se que, quando é recebido o parâmetro ``OK'', é chamada a função \textit{OK()}, Linha \ref{line:configOK}, do \textit{script} \textit{configVB.py}. O procedimento é em tudo idêntico quando é seleccionado o parâmetro ``STOP''.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Teste do parâmetro ``OK'' (\ldots e ``STOP'') no ficheiro \textit{views.py}, label=lst:recepcaoparametros]
+	(...)
+	configOK = request.args.get('habilitar_parameter', None, bool)
+	(...)
+	if configOK == True:
+        configVB.OK() |\label{line:configOK}|  
+    elif configSTOP == True:
+        configVB.STOP()	
+	(...)
+	\end{lstlisting}
+\end{minipage}
+
+
+A Figura \ref{fig:experiencialeiohm} representa o esquema completo do processo de execução da experiência. 
+
+\begin{comment}
+O procedimento respeitante à configuração inicial do \textit{virtualbench} é realizado quando o utilizador carrega no botão ``OK'', sendo que a comunicação se faz entre três ficheiros: \textit{ohm.html - views.py - configVB.py}. 
+
+
+	%const booleanParameter = true;
+    %const url = `/config_VirtualBench?habilitar_parameter=${booleanParameter.toString()}`;
+
+
+do Para a primeira etapa, o foco será a configuração comunicação entre a página \textit{ohm.html} e o ficheiro \textit{configVB.py}, representado na Figura \ref{fig:comohmconfigvb}.
+\end{comment}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/ohm_diagrama.drawio.png}
+	\caption{Diagrama de funcionamento (?) da experiência - Lei de \textit{Ohm}}
+	\label{fig:experiencialeiohm}
+\end{figure}
+
+\begin{comment}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/experiencia_ohm_diagrama.drawio.png}
+	\caption{Comunicação \textit{ohm.html} e \textit{configVB.py}}
+	\label{fig:comohmconfigvb}
+\end{figure}
+\end{comment}
+
+%FIQUEI AQUI - COMEÇAR POR DIZER QUE NESTA PARTE ENVOLVE 3 FICHEIROS, TALVEZ DE UMA FORMA MUITO RESUMIDA E DEPOIS PARTIR PARA UMA PARTE RIGOROSA
+
+%EXPLICAR PORQUE SE COLOCOU UM BOTÃO DE OK E STOP/RESET, O PROMENOR DAS FONTES DE12v SEREM PRIMEIRO ACTIVADA AINDA NÃO ESTÁ EXPLICADA EM QQ LADO E FOI POR ISSO QUE SE OPTOU POR COLOCAR OS BOTÕES, AO FAZER RESET, OS ci E OS RELE´S DEIXAM DE ESTAR SOB TENSÃO.
+%PORTNATO, O PASSO É, PRIMEIRO ACTIVAR IC E RELES, EFECTUAR MEDIÇÕES. NO FIM DA EXPERIENCIA AO CLICAR EM STOP A FONTE É DESLIGADA
+
+%Entre estes dois ficheiros há envio/recepção de parâmetros.
+
+No entanto, os parâmetros escolhidos só serão efectivamente enviados para o servidor \textit{Flask} - (\textit{views.py}) e a medição efectuada quando:
+\begin{enumerate}
+	\item Seleccionar o botão ``OK'' que habilita os selectores;
+	\item Escolher ambos os parâmetros - $V_{CC}$ e R;
+	\begin{enumerate}
+		\item Clicar no link ``Medir tensão'' ou ``Medir corrente''.
+	\end{enumerate}
+\end{enumerate}
+
+%Sequência: 
+%1º passo:
+%OK - habilita selectores na página HTML e envia o parâmetro para configurar a fonte de 25V, através do ficheiro configVB
+%2º passo:
+%Seleccionar os parâmetros $V_{CC}$ e R
+%3º passo:
+%Efectuar medição de tensão ou corrente, através do ficheiro configVB
+
+\paragraph{Configuração inicial do VB} ~\\
+
+O ficheiro \textit{configVB.py} é responsável pela configuração do \acrshort{virtualbench} - E NÃO SÓ - e pela construção do gráfico final. Além das supra-mencionadas inclui ainda as seguintes funções:
+\begin{itemize}
+	\item \textit{OK()};
+	\item \textit{STOP()};
+	\item \textit{test\_parameters(Vcc:int, R:int, measure\_parameter:str)};
+	\item \textit{plot\_graphic(current\_measurements, voltage\_measurements)}.
+\end{itemize}
+
+Como já referido anteriormente, a função ``OK()'' é responsável por activar a fonte de alimentação de \SI{25}{\volt} do \acrshort{virtualbench}, configurá-la para \SI{12}{\volt} e habilitar os selectores dos parâmetros $V_{CC}$ e R. 
+
+% referencia fontesalimentacao Coa fonte de 12V que vai alimentar os integrados e, através do LM317, a fonte de 5V. 
+
+A função ``STOP()'' desactiva e liberta todas as saídas do \acrshort{virtualbench}, assim como os instrumentos e o próprio \acrshort{virtualbench}. Os selectores dos parâmetros $V_{CC}$ e R também são desabilitados.
+
+Na Listagem \ref{lst:exemploOKPS} e Listagem \ref{lst:exemploSTOPPS} pode ver-se um exemplo de configuração da fonte de alimentação e do \textit{RESET}, respectivamente. 
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Exemplo de configuração: fonte de alimentação - OK, label=lst:exemploOKPS]
+		(...)
+		channel = "ps/+25V"
+		voltage_level = 12.0
+		current_limit = 0.5 
+		ps.enable_all_outputs(True)
+		ps.configure_voltage_output(channel, voltage_level, current_limit)
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Exemplo de configuração: fonte de alimentação - STOP, label=lst:exemploSTOPPS]
+		(...)
+		if all([ps, dmm, virtualbench]):
+		   	ps.enable_all_outputs(False)
+        	ps.release()
+        	dmm.release()
+        	virtualbench.release()
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+Analisado procedimento de configuração inicial do \acrshort{virtualbench}, o próximo passo (2.) é a medição de tensão e corrente e envio/recepção dos respectivos parâmetros.
+
+\paragraph{Medição da tensão e corrente} ~\\
+Na Listagem \ref{lst:exemploenvioparametros} é possível observar como o parâmetro é enviado para o ficheiro \textit{views.py}. No entanto, nesta etapa, são transmitidos três parâmetros: $V_{CC}$, R e o tipo de medição a realizar — corrente ou tensão. O método de envio desses parâmetros é idêntico ao utilizado para um único parâmetro, conforme ilustrado na Listagem \ref{lst:envioparmedidas}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=html, escapechar=|, caption=Envio de parâmetros da página \textit{ohm.html} para \textit{views.py}, label=lst:envioparmedidas]
+		(...)
+		const parameter = this.dataset.parameter;
+		(...)
+		const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistance}`;
+        fetch(url)
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+Na Listagem \ref{lst:exemplorecepcaoparametros}, Linhas \ref{line:vccref} a \ref{line:measureref} é possível observar como os parâmetros são recebidos no ficheiro \textit{views.py}.
+
+Após o teste aos parâmetros recebidos, o procedimento pode ser descrito da seguinte forma:
+\begin{itemize}
+	\item Configurar os relés;
+	\item Configurar o \acrshort{virtualbench} e efectuar a medição;
+	\item Desligar todos os relés.
+\end{itemize}
+
+\textbf{ATENÇÃO - Não esquecer de explicar a rebienga do store e get, nestas funções e o porquê}
+
+\vspace{1cm}
+
+O procedimento pode ser visto na Listagem \ref{lst:procedimentomedicao}, sendo que a Linha \ref{line:configrelays} é responsável por activar os relés, a Linha \ref{line:measureresult} configura o \acrshort{virtualbench}e efectua a medição da grandeza e a Linha \ref{line:stoprelays} desactiva os relés.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Procedimento de medição, label=lst:procedimentomedicao]
+		(...)
+		configRelays.config_relays_ohm(Resistance, measure_parameter) |\label{line:configrelays}|
+		time.sleep(2)
+		measurement_result = configVB.test_parameters(Vcc, Resistance, measure_parameter) |\label{line:measureresult}|
+		configRelays.config_relays_ohm(0, measure_parameter) |\label{line:stoprelays}|
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+
+A configuração dos relés é realizada no ficheiro 
+
+ANALISOU-SE ANTERIORMENTE O PROCEDIMENTO DE OK E STOP-RESET. VAMOS AGORA PARA O ENVIO DOS RESTANTES PARAMENTROS E MEDIÇÕES
+
+!!!!!!!!!! FIQUEI AQUI !!!!!!!!!!
+REFERIR, TALVEZ A FONTE DO FLASK, RESPEITANTE AO REQUEST.ARGS
+
+O envio dos restantes parâmetros, $V_{CC}$, R, medição de corrente (I) ou tensão (U) é feito de forma idêntica.
+
+Quando se trata de enviar o resultado das medições para a página \textit{ohm.html}, a comunicação é feita da forma como se pode ver nas Listagens \ref{lst:envioresultados} e \ref{lst:recepcaoresultados}:
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=python, caption=Envio de resultados do servidor (\textit{views.py}) para a página \textit{ohm.html}, label=lst:envioresultados]
+			(...)
+			return jsonify({'measurement_result': measurement_result})
+			(...)
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=html, caption=Recepção de resultados na página \textit{ohm.html}, label=lst:recepcaoresultados]
+			(...)
+			fetch(url)
+			.then((response) => response.json())
+		.then((data) => {
+		  document.getElementById("current-measure").innerHTML =
+			data.measurement_result + " mA";
+			(...)
+			\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+\subsubsection{O \textit{script configVB.py}}
+\textbf{Este script poderá eventualmente ficar enquadrado numa secção a criar, denominada ``Descrição dos scripts'' ou então, na descrição da experiência lei de ohm.}
+
+\hrule
+\hrule
+
+Como se pode ver na Figura , os selectores estão desabilitados e os relés nao estão alimentados porque isso é feito através da fonte do VB e do LM317
+
+Já se viu (\textbf{refirerir a secção}) que na experiência da Lei de \textit{Ohm}, o utilizador selecciona os valores da tensão e resistência através de um formulário, representado na página \textit{ohm.html} da forma como se pode ver na Listagem \ref{lst:formularioescolha}.
+
+\begin{center}
+	\begin{minipage}{0.7\linewidth}
+		\begin{lstlisting}[language=html, caption=Formulário de escolha na página \textit{ohm.html},label=lst:formularioescolha]
+			(...)
+			<div style="display: inline-block; width: 200px">
+      <select id="selectVcc" disabled>
+        <option value="0">Seleccionar V<sub>cc</sub>:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div style="display: inline-block; width: 200px">
+      <select id="selectR" disabled>
+        <option value="0">Seleccionar R:</option>
+        <option value="1">1</option>
+        <option value="2">1.1</option>
+        <option value="3">1.5</option>
+      </select>
+			(...)
+	\end{lstlisting}
+	\end{minipage}
+\end{center}
+
+O primeiro a ser chamado, como pode ser vist
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/ohm_diagramaCUTRelay.drawio.png}
+	\caption{\textit{Script configRelays.py}}
+	\label{fig:cutconfigRelays}
+\end{figure}
+
+\section{qualquer coisa que ainda não sei o quê}
+
+Após análise e estudo da informação presente no \textit{site} do \textit{Flask} e nos tutoriais mencionados em cima, definiu-se e implementou-se a página de autenticação no ficheiro \textit{auth.py}, tal como pode ser visto na Figura \ref{fig:paglogin}:
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/ohm_diagramaCUT.drawio.png}
+	\caption{caralho}
+	\label{fig:diagramaCUT}
+\end{figure}
+
+Além da rota definida para o \textit{login}, as outras rotas definidas no ficheiro \textit{auth.py} foram as \textit{sign-up} e \textit{logout}. A estrutura base da função \textit{login}, representada na Listagem \ref{lst:exemplologin}, é idêntica para as restantes, sendo que ``/\textit{login''} representa a rota especificada, dentro da função há o código especifico inerentes a cada função e o \textit{return render\_template} indica qual a página a ser renderizada.
