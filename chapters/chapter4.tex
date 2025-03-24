@@ -990,4 +990,54 @@ Após a realização das dez medições, o utilizador pode seleccionar a opção
 \label{sec:rectificadores}
 Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}. \textbf{NOTA: Esta parte não foi explicada no Hardware - Verificar onde fica melhot} 
 
-A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
+A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz} - \textbf{NOTA: Acho que já foi explicado, ver onde}.
+
+A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiência do rectificador de meia onda. Os utilizadores podem seleccionar quatro valores para o termo RC, sendo que os valores de C estão definidos para \SI{1}{\micro\farad} e \SI{10}{\micro\farad} e a frequência varia entre \SI{5}{\hertz} e \SI{2000}{\hertz}. 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/meiaonda_page_controlo.png}
+	\caption{Rectificador de meia onda - Selecção dos parâmetros}
+	\label{fig:meiaondamenuCTRL}
+\end{figure}
+
+Pela consulta da Listagem \ref{lst:exemplogerador}, pode ver-se que o gerador de sinal está configurado com uma amplitude de \SI{10}{\volt} e um \textit{duty-cycle} de 50\%. Tal como referido na Secção (...), após a aquisição do instrumento, este é configurado com os valores definidos nas Linhas (...) e iniciado.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo configuração do gerador de sinal - \textit{mixed\textunderscore signal\textunderscore oscilloscope.py}, label=lst:exemplogerador]
+	waveform_function = Waveform.SINE
+	amplitude = 10.0      # 10V
+	dc_offset = 0.0       # 0V
+	duty_cycle = 50.0     # 50% duty cycle
+	fgen = virtualbench.acquire_function_generator()
+	fgen.configure_standard_waveform(waveform_function, amplitude, dc_offset, frequency, duty_cycle)
+	# Start driving the signal. The waveform will continue until Stop is called, even if you close the session.
+	fgen.run()
+	(...)
+	\end{lstlisting}
+\end{minipage}
+
+A Listagem \ref{lst:exemplomso} apresenta a configuração dos osciloscópio que segue o mesmo padrão (?) dos restantes instrumentos. 
+
+O \textit{setup} é feito de forma automática e as restantes configurações, Linhas a a, foram retiradas do exemplo \textit{mso\_simple\_example.py}. Por fim, é realizada a aquisição do sinal na Linha (...).
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo configuração do oscilscópio - \textit{mixed\textunderscore signal\textunderscore oscilloscope.py}, label=lst:exemplomso]
+	mso = virtualbench.acquire_mixed_signal_oscilloscope()
+
+	mso.auto_setup()
+	
+	# Query the configuration that was chosen to properly interpret the data.
+	sample_rate, acquisition_time, pretrigger_time, sampling_mode = mso.query_timing()
+	channels = mso.query_enabled_analog_channels()
+	channels_enabled, number_of_channels = virtualbench.collapse_channel_string(channels)
+	# Start the acquisition.  Auto triggering is enabled to catch a misconfigured trigger condition.
+	mso.run()
+	
+	# Read the data by first querying how big the data needs to be, allocating the memory, and finally performing the read.
+    analog_data, analog_data_stride, analog_t0, digital_data, digital_timestamps, digital_t0, trigger_timestamp, trigger_reason = mso.read_analog_digital_u64()
+	(...)
+	\end{lstlisting}
+\end{minipage}
+
+A implementação completa das configurações do gerador de sinal e osciloscópio estão definidas no ficheiro ``mixed\textunderscore signal\textunderscore oscilloscope.py''. Como referido na Secção \ref{sec:configmedicaoes}, o código foi retirado dos exemplos aquando da instalação do \textit{pyVirtualBench} e modificado consoante as necessidades do projecto. 

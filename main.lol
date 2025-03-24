@@ -19,4 +19,6 @@
 \contentsline {lstlisting}{\numberline {4.12}{\ignorespaces \textit {Block Mode \textins {Sockets} configRelays.py}}}{95}{lstlisting.4.12}%
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces \textit {And bit} \textit {bit shift\textunderscore register - NOME DO FICH}}}{96}{lstlisting.4.13}%
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Exemplo \textit {ps\_example.py}}}{97}{lstlisting.4.14}%
+\contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Exemplo configuração do gerador de sinal - \textit {mixed\textunderscore signal\textunderscore oscilloscope.py}}}{104}{lstlisting.4.15}%
+\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Exemplo configuração do oscilscópio - \textit {mixed\textunderscore signal\textunderscore oscilloscope.py}}}{105}{lstlisting.4.16}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
