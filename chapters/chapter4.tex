@@ -536,7 +536,7 @@ A raiz do projecto é o directório ``\textit{webserver}'' e nele estão contido
 \begin{itemize}
 	\item \textit{main.py}: O ficheiro principal do aplicativo que inicializa e configura o \textit{Flask};
 	\item \textit{requirements.txt}: Uma lista de dependências do projeto que podem ser instaladas usando \gls{pip};
-	\item \textit{static/}: Este diretório contém os ficheiros estáticos como \acrshort{css}, \textit{JavaScript} e as imagens usadas em toda a aplicação;
+	\item \textit{static/}: Este directório contém os ficheiros estáticos como \acrshort{css}, \textit{JavaScript} e as imagens usadas em toda a aplicação;
 	\item \textit{templates/}: Contém os modelos \acrshort{html} usado para renderizar as visualizações;
 	\item \textit{instance/}: Diretório para armazenar ficheiros de configuração ou ficheiros que mudam em tempo de execução, específicos da cada instância, por exemplo, ficheiros da base de dados.
 \end{itemize}
@@ -969,7 +969,7 @@ Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de real
 		\label{fig:experienciaOHM}%
 	\end{figure}
 
-Nesta experiência, optou-se por conceder liberdade de escolha e controlo aos utilizadores, o que representou um desafio à implementação. (\textbf{se calhar retirava este parágrafo}) Em vez de permitir apenas a selecção do valor da resistência, com medições realizadas (automaticamente) por \textit{software}, decidiu-se oferecer ao utilizador a possibilidade de escolher o valor da resistência e controlar as medições de tensão e corrente. Do ponto de vista pedagógico, considerou-se mais benéfico que, neste caso os alunos, verifiquem os valores das grandezas medidas à medida que realizam as medições e avançam na experiência. Além disso, o resultado e o gráfico final serão independentes da ordem pela qual se efectuam as medições. (\textbf{Este parágrafo precisa de ser revisto})
+Nesta experiência, optou-se por conceder liberdade de escolha e controlo aos utilizadores, o que representou um desafio à implementação. (\textbf{se calhar retirava este parágrafo}) Em vez de permitir apenas a selecção do valor da resistência, com medições realizadas (automaticamente) por \textit{software}, decidiu-se oferecer ao utilizador a possibilidade de escolher o valor da resistência e controlar as medições de tensão e corrente. Do ponto de vista pedagógico, considerou-se mais benéfico que, neste caso, os alunos verifiquem os valores das grandezas medidas à medida que realizam as medições e avançam na experiência. Além disso, o resultado e o gráfico final serão independentes da ordem pela qual se efectuam as medições. (\textbf{Este parágrafo precisa de ser revisto})
 
 A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da Lei de \textit{Ohm}. 
 
@@ -980,6 +980,14 @@ A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da 
 	\label{fig:pagmenuCTRL}
 \end{figure}
 
-A selecção dos valores da resistência e do $V_{CC}$ é feito através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência.
+A selecção dos valores da resistência e do $V_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, embora a medição da tensão corresponda ao valor de $V_{CC}$ seleccionado, optou-se, por razões pedagógicas e de coerência com o esquema, pot medir e apresentar a tensão aos terminais da resistência.
 
-As medições só serão efectivamente realizadas e os valores apresentados, quando o utilizador seleccionar a opção ``Medir tensão'' e/ou ``Medir corrente''. Após a realização das dez medições, o utilizador pode seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. (Se o gráfico for solicitado antes da conclusão de todas as medições, este será apresentado, embora de forma incompleta. No entanto, o utilizador poderá continuar a experiência sem impedimentos.\textbf{NOTA: Verificar se isto está bem escrito... Talvez mudar o link para ``ver gráfico''})
+As medições só serão efectivamente realizadas e os valores apresentados, quando o utilizador seleccionar a opção ``Medir tensão'' e/ou ``Medir corrente''. 
+
+Após a realização das dez medições, o utilizador pode seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. (Se o gráfico for solicitado antes da conclusão de todas as medições, este será apresentado, embora de forma incompleta. No entanto, o utilizador poderá continuar a experiência sem impedimentos.\textbf{NOTA: Verificar se isto está bem escrito... Talvez mudar o link para ``ver gráfico''})
+
+\subsubsection{Rectificador de meia onda e onda completa}
+\label{sec:rectificadores}
+Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}. \textbf{NOTA: Esta parte não foi explicada no Hardware - Verificar onde fica melhot} 
+
+A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
