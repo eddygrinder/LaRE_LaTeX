@@ -1001,6 +1001,9 @@ A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiênci
 	\label{fig:meiaondamenuCTRL}
 \end{figure}
 
+As medições e construção do gráfico são realizadas por \textit{software}, baseadas nos valores seleccionados pelos utilizadores. Os resultados obtidos podem, então, ser comparados com o gráfico teórico, definido na Figura \ref{fig:sedraripple} ou pela Equação \ref{eq:vripple}. Para o mesmo par RC, os utilizadores podem, ainda, variar a frequência e comparar os resultados obtidos.
+
+\textbf{NOTA: Esta parte seguinte talvez deva ficar na parte de software. Aqui só o que diz respeito ao IDE na óptica do utilizador.}
 Pela consulta da Listagem \ref{lst:exemplogerador}, pode ver-se que o gerador de sinal está configurado com uma amplitude de \SI{10}{\volt} e um \textit{duty-cycle} de 50\%. Tal como referido na Secção (...), após a aquisição do instrumento, este é configurado com os valores definidos nas Linhas (...) e iniciado.
 
 \begin{minipage}{0.9\linewidth}
@@ -1009,28 +1012,20 @@ Pela consulta da Listagem \ref{lst:exemplogerador}, pode ver-se que o gerador de
 	amplitude = 10.0      # 10V
 	dc_offset = 0.0       # 0V
 	duty_cycle = 50.0     # 50% duty cycle
-	fgen = virtualbench.acquire_function_generator()
-	fgen.configure_standard_waveform(waveform_function, amplitude, dc_offset, frequency, duty_cycle)
-	# Start driving the signal. The waveform will continue until Stop is called, even if you close the session.
-	fgen.run()
 	(...)
 	\end{lstlisting}
 \end{minipage}
 
 A Listagem \ref{lst:exemplomso} apresenta a configuração dos osciloscópio que segue o mesmo padrão (?) dos restantes instrumentos. 
 
-O \textit{setup} é feito de forma automática e as restantes configurações, Linhas a a, foram retiradas do exemplo \textit{mso\_simple\_example.py}. Por fim, é realizada a aquisição do sinal na Linha (...).
+O \textit{setup} é configurado de forma automática e as restantes configurações, Linhas a a, foram retiradas do exemplo \textit{mso\_simple\_example.py}. Por fim, é realizada a aquisição do sinal na Linha (...).
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo configuração do oscilscópio - \textit{mixed\textunderscore signal\textunderscore oscilloscope.py}, label=lst:exemplomso]
-	mso = virtualbench.acquire_mixed_signal_oscilloscope()
-
-	mso.auto_setup()
 	
-	# Query the configuration that was chosen to properly interpret the data.
-	sample_rate, acquisition_time, pretrigger_time, sampling_mode = mso.query_timing()
-	channels = mso.query_enabled_analog_channels()
-	channels_enabled, number_of_channels = virtualbench.collapse_channel_string(channels)
+	(...)
+	mso.auto_setup()
+	(...)
 	# Start the acquisition.  Auto triggering is enabled to catch a misconfigured trigger condition.
 	mso.run()
 	
