@@ -1013,8 +1013,8 @@ Relativamente ao rectificador de onda completa, a Figura \ref{fig:ondacompletame
 \end{figure}
 
 \subsubsection{Filtros}
-\label{sec:filtros}
-A \textit{interface} filtros passa-baixo e passa-alto, é em tudo idêntica à do rectificador de meia onda. Por razões de implementação o utilizador escolhe somente entre dois condensadores, como mostra a Figura XPTO
+\label{sec:filtrosSW}
+As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas à do rectificador de meia onda. Ao utilizador é proposto a escolha entre os dois condensadores já definidos e implementados nas experiências anteriores mas somente uma resistência. \textbf{NOTA:  Isto prende-se com os factos já apresentados na Secção XPTO.} O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. Além disso, considerou-se que, a nível pedagógico, seria uma mais-valia permitir o estudo da resposta em frequência, pelo que, para além do gráfico da tensão \textit{ripple}, o utilizador pode ainda visualizar o diagrama de Bode. A Figura \ref{fig:ondacompletamenuCTRL} apresenta a página do filtro passa-baixo, sendo que a única diferença para o passa-alto é o esquema representado na Figura \ref{fig:ondacompletamenuCTRL}.
 
 \textbf{NOTA: Esta parte seguinte talvez deva ficar na parte de software. Aqui só o que diz respeito ao IDE na óptica do utilizador.}
 Pela consulta da Listagem \ref{lst:exemplogerador}, pode ver-se que o gerador de sinal está configurado com uma amplitude de \SI{10}{\volt} e um \textit{duty-cycle} de 50\%. Tal como referido na Secção (...), após a aquisição do instrumento, este é configurado com os valores definidos nas Linhas (...) e iniciado.
@@ -1048,4 +1048,4 @@ O \textit{setup} é configurado de forma automática e as restantes configuraç�
 	\end{lstlisting}
 \end{minipage}
 
-A implementação completa das configurações do gerador de sinal e osciloscópio estão definidas no ficheiro ``mixed\textunderscore signal\textunderscore oscilloscope.py''. Como referido na Secção \ref{sec:configmedicaoes}, o código foi retirado dos exemplos aquando da instalação do \textit{pyVirtualBench} e modificado consoante as necessidades do projecto. 
+A implementação completa das configurações do gerador de sinal e osciloscópio estão definidas no ficheiro ``mixed\textunderscore signal\textunderscore oscilloscope.py''. Como referido na Secção \ref{sec:configmedicaoes}, o código foi retirado dos exemplos aquando da instalação do \textit{pyVirtualBench} e modificado consoante as necessidades do projecto.
