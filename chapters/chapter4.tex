@@ -952,7 +952,7 @@ O modelo é uniforme para todas as experiências, apresentando o respectivo esqu
 		\subfloat[\centering Introdução\label{fig:ohm_intro}]{{\includegraphics[width=6cm]{figures/ohm_page.png} }}%
 		\qquad
 		\subfloat[\centering Controlo\label{fig:ohm_ctrl}]{{\includegraphics[width=6cm]{figures/ohm_page_controlo.png} }}%
-		\caption{Experiência Lei de \textit{Ohm}}%
+		\caption{\textins{Exemplo} Experiência Lei de \textit{Ohm}}%
 		\label{fig:pagohm}%
 	\end{figure}
 
@@ -990,7 +990,7 @@ Após a realização das dez medições, o utilizador pode seleccionar a opção
 \label{sec:rectificadores}
 Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}. \textbf{NOTA: Esta parte não foi explicada no Hardware - Verificar onde fica melhot} 
 
-A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz} - \textbf{NOTA: Acho que já foi explicado, ver onde}.
+A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa já referenciado na Secção \ref{sec:fontealternada}, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
 
 A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiência do rectificador de meia onda. Os utilizadores podem seleccionar quatro valores para o termo RC, sendo que os valores de C estão definidos para \SI{1}{\micro\farad} e \SI{10}{\micro\farad} e a frequência varia entre \SI{5}{\hertz} e \SI{2000}{\hertz}. 
 
@@ -1002,6 +1002,19 @@ A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiênci
 \end{figure}
 
 As medições e construção do gráfico são realizadas por \textit{software}, baseadas nos valores seleccionados pelos utilizadores. Os resultados obtidos podem, então, ser comparados com o gráfico teórico, definido na Figura \ref{fig:sedraripple} ou pela Equação \ref{eq:vripple}. Para o mesmo par RC, os utilizadores podem, ainda, variar a frequência e comparar os resultados obtidos.
+
+Relativamente ao rectificador de onda completa, a Figura \ref{fig:ondacompletamenuCTRL} apresenta a página de controlo da experiência, que é praticamente idêntica à do rectificador de meia onda, excepto pelo facto de a frequência não poder ser ajustada pelo utilizador. Os valores dos condensadores e resistências são os mesmos para ambas as experiências.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/ondacompleta_control.png}
+	\caption{Rectificador de onda completa - Selecção dos parâmetros}
+	\label{fig:ondacompletamenuCTRL}
+\end{figure}
+
+\subsubsection{Filtros}
+\label{sec:filtros}
+A \textit{interface} filtros passa-baixo e passa-alto, é em tudo idêntica à do rectificador de meia onda. Por razões de implementação o utilizador escolhe somente entre dois condensadores, como mostra a Figura XPTO
 
 \textbf{NOTA: Esta parte seguinte talvez deva ficar na parte de software. Aqui só o que diz respeito ao IDE na óptica do utilizador.}
 Pela consulta da Listagem \ref{lst:exemplogerador}, pode ver-se que o gerador de sinal está configurado com uma amplitude de \SI{10}{\volt} e um \textit{duty-cycle} de 50\%. Tal como referido na Secção (...), após a aquisição do instrumento, este é configurado com os valores definidos nas Linhas (...) e iniciado.
