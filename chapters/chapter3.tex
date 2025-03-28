@@ -46,7 +46,7 @@ Estas limitações não permitem a implementação de um servidor minimamente ro
     \label{fig:ESP32}
 \end{figure}
 
-A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5, apresentada na Figura \ref{fig:Raspberrypi5}. Este dispositivo insere-se numa gama de pequenos computadores, acessíveis e versáteis que podem ser utilizados para os mais variados projectos. Na Secção \ref{sec:hardware} apresenta-se uma descrição mais detalhada do \gls{RaspberryPI}.
+A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, sempre que for referido \textit{RaspberryPI}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão mais actual, apresentada na Figura \ref{fig:Raspberrypi5}. Este dispositivo insere-se numa gama de pequenos computadores, acessíveis e versáteis que podem ser utilizados para os mais variados projectos. Na Secção \ref{sec:hardware} apresenta-se uma descrição mais detalhada do \gls{RaspberryPI}.
 
 \begin{figure}[hbtp]
     \centering
@@ -197,7 +197,7 @@ Mais uma vez, tomando como base o \acrshort{visir}, como pode ser visto mais por
 \label{sec:RaspberryPI}
 Como já foi referido na Secção \ref{sec:contextualização}, a ideia inicial passava por utilizar o \gls{RaspberryPI} como servidor e como controlador dos relés, no fundo desempenhando as funções de \acrshort{rlms}.
 
-Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \textit{RaspberryPI}\footnote{Doravante, sempre que for referido \textit{RaspberryPI}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão 5.
+Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \textit{RaspberryPI}.
 
 Esta versão traz várias melhorias e novos recursos, sendo que as principais diferenças de \textit{hardware} para a versão 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. No entanto, estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento activo \cite{Raspberrytech}. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
 
@@ -283,14 +283,14 @@ Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os rel�
 
 \subsection{\textit{Driver} de Relés}
 \label{sec:driver}
-O circuito integrado ULN2003A é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
+O circuito integrado ULN2003A é um \textit{driver}\footnote{Doravante, sempre que for referido \textit{driver} de relés, subentende-se o circuito integrado \textit{ULN2003A}.} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
 Tipicamente, este \textit{driver} é usado em conjunto com microcontroladores ou \gls{RaspberryPI} no comando de cargas indutivas, como motores, bobines e relés.
 
 Os ULN2003A possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/2003A_Darling.png}
+    \includegraphics[width=0.5\textwidth]{figures/2003A_Darling.png}
     \caption{Diagrama de blocos ULN2003A \cite{ULN2003}}
     \label{fig:2003blocos}
 \end{figure}
@@ -305,7 +305,7 @@ Sendo assim, houve a necessidade de criar uma solução que permitisse comandar 
 \label{sec:registodeslocamento}
 O uso de registos de deslocamento foi a solução encontrada de forma a ultrapassar o problema da falta de \acrshort{gpio}s.
 
-O SN74HC595 é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 \textit{bits} com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.
+O \textit{SN74HC595}\footnote{Doravante, sempre que for referido registo de deslocamento, subentende-se o circuito integrado \textit{SN74HC595}.} é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 \textit{bits} com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.
 
 Descrição dos pinos de controlo:
 \begin{itemize}
@@ -435,7 +435,7 @@ Na Figura \ref{fig:estruturahtml} está representada a estrutura de uma página 
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{figures/html_page_structure.png}
+    \includegraphics[width=0.7\textwidth]{figures/html_page_structure.png}
     \caption{Estrutura de uma página \acrshort{html} \cite{HTMLbasics}}
     \label{fig:estruturahtml}
 \end{figure}
