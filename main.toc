@@ -54,7 +54,7 @@
 \contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{76}{section*.83}%
 \contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{77}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}Experiências}{78}{subsection.4.1.6}%
-\contentsline {subsubsection}{Lei de Ohm}{79}{section*.88}%
+\contentsline {subsubsection}{Lei de Ohm}{78}{section*.88}%
 \contentsline {subsubsection}{Rectificadores}{81}{section*.92}%
 \contentsline {subsubsection}{Filtros}{83}{section*.96}%
 \contentsline {section}{\numberline {4.2}Software}{85}{section.4.2}%
@@ -71,9 +71,9 @@
 \contentsline {subsubsection}{Comunicação com RaspberryPi}{93}{section*.110}%
 \contentsline {subsubsection}{VirtualBench - Configurações e medições}{95}{section*.111}%
 \contentsline {subsection}{\numberline {4.2.4}Interface WEB}{98}{subsection.4.2.4}%
-\contentsline {subsubsection}{Lei de \textit {Ohm}}{100}{section*.116}%
+\contentsline {subsubsection}{Lei de \textit {Ohm}}{101}{section*.116}%
 \contentsline {subsubsection}{Rectificador de meia onda e onda completa}{102}{section*.119}%
-\contentsline {subsubsection}{Filtros}{103}{section*.122}%
+\contentsline {subsubsection}{Filtros}{104}{section*.122}%
 \contentsline {chapter}{\numberline {5}Resultados}{107}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Limitações}{107}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Melhoramentos}{107}{section.5.2}%

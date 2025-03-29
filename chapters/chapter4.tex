@@ -130,6 +130,8 @@ A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensõ
 
 A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{lst:limiteI}. A variável $V_{cc}$, linha 4,  permite configurar o valor da fonte de tensão com os valores apresentados na Figura \ref{fig:pagohm}, sendo que a corrente é limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
 
+\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
+
 \begin{minipage}{0.9\linewidth}
 	\centering
 	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
@@ -145,6 +147,8 @@ A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{
 \subsubsection{Fonte de tensão \SI{12}{\volt} - fixa}
 Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. Esta configuração está exemplificada na Listagem \ref{lst:configfonte12} e a corrente é, também, limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
 
+\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
+
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{12}{\volt}, label=lst:configfonte12]
 		try:
@@ -158,9 +162,11 @@ Tal como referido em cima, de forma a simplificar o uso de fontes externas, opto
 
 Na Figura \ref{fig:fonte12V} está representado um exemplo das ligações da fonte de \SI{12}{\volt} ao pino 9 do ULN2003 e ao pino 2 do relé ($K_{5}$)
 
+\textbf{NOTA: Irrelevante ou mudar a explicação. Acho que a imagem não diz nada}
+
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/sch_fonte12V.png}
+	\includegraphics[width=0.5\textwidth]{figures/sch_fonte12V.png}
 	\caption{Fonte de \SI{12}{\volt}}
 	\label{fig:fonte12V}
 \end{figure}
@@ -170,7 +176,7 @@ De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada uma fon
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/sch_fonte5V.png}
+	\includegraphics[width=0.5\textwidth]{figures/sch_fonte5V.png}
 	\caption{Fonte de \SI{5}{\volt}}
 	\label{fig:fonte5V}
 \end{figure}
@@ -225,7 +231,7 @@ Na prática e em contexto de sala de aula, a experiência de rectificação de o
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/sch_completa_CC.png}
+	\includegraphics[width=0.5\textwidth]{figures/sch_completa_CC.png}
 	\caption{Problema de massa - onda completa}
 	\label{fig:gerador-massa}
 \end{figure}

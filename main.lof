@@ -54,10 +54,10 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{72}{figure.caption.76}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{73}{figure.caption.78}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Fonte de \SI {12}{\volt }}}{74}{figure.caption.80}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Fonte de \SI {5}{\volt }}}{75}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Fonte de \SI {5}{\volt }}}{74}{figure.caption.82}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Problema de massa - onda completa}}{76}{figure.caption.84}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Problema de massa - onda completa}}{77}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Painel frontal Multímetro Digital}}{78}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Painel frontal Multímetro Digital}}{77}{figure.caption.86}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{79}{figure.caption.87}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema simplificado da experiência Lei de Ohm}}{79}{figure.caption.89}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Exemplo de gráfico Lei de \textit {Ohm}}}{80}{figure.caption.91}%
@@ -68,7 +68,7 @@
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{84}{figure.caption.98}%
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Funcionamento geral \textit {Flask}}}{86}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{86}{figure.caption.102}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{92}{figure.caption.108}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{91}{figure.caption.108}%
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Erro de selecção}}{99}{figure.caption.112}%
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Página de \textit {login}}}{100}{figure.caption.113}%
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Página inicial}}{100}{figure.caption.114}%
