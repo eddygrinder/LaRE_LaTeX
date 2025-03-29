@@ -118,6 +118,8 @@ Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alime
 	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
 \end{itemize}
 
+As configurações das fontes são feitas por \textit{software} e podem ser consultadas na Secção \ref{sec:configmedicaoes}.
+
 \subsubsection{Fonte de tensão \SI{6}{\volt} - variável}
 A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensões entre \SI{1}{\volt} e \SI{5}{\volt}, para a experiência da Lei de Ohm, é obtida directamente do \acrshort{virtualbench} e ligada ao circuito tal como apresentado na Figura \ref{fig:schfonte5VB} - ``$5V_{VB}$'', terminal 1 do relé K4.
 
@@ -128,37 +130,8 @@ A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensõ
 	\label{fig:schfonte5VB}
 \end{figure}
 
-A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{lst:limiteI}. A variável $V_{cc}$, linha 4,  permite configurar o valor da fonte de tensão com os valores apresentados na Figura \ref{fig:pagohm}, sendo que a corrente é limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
-
-\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
-
-\begin{minipage}{0.9\linewidth}
-	\centering
-	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
-		try:
-			# Power Supply Configuration
-			channel = "ps/+6V"
-			voltage_level = Vcc
-			current_limit = 0.5
-		(...)
-	\end{lstlisting}
-\end{minipage}
-
 \subsubsection{Fonte de tensão \SI{12}{\volt} - fixa}
-Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. Esta configuração está exemplificada na Listagem \ref{lst:configfonte12} e a corrente é, também, limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
-
-\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{12}{\volt}, label=lst:configfonte12]
-		try:
-			# Power Supply Configuration
-			channel = "ps/+25V"
-			voltage_level = 12.0
-			current_limit = 0.5
-		(...)
-	\end{lstlisting}
-\end{minipage}
+Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. 
 
 Na Figura \ref{fig:fonte12V} está representado um exemplo das ligações da fonte de \SI{12}{\volt} ao pino 9 do ULN2003 e ao pino 2 do relé ($K_{5}$)
 
@@ -250,7 +223,7 @@ De referir que, desta forma, seria possível usar o gerador de sinal. No entanto
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=1\textwidth]{figures/sch-ondacompleta-massa.png}
+	\includegraphics[width=0.7\textwidth]{figures/sch-ondacompleta-massa.png}
 	\caption{Problema de massa - onda completa}
 	\label{fig:ondacompleta-massa}
 \end{figure}
@@ -269,7 +242,7 @@ A medição de tensão e corrente são feitas utilizando o multímetro digital -
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/promenorDMM.png}
+	\includegraphics[width=0.5\textwidth]{figures/promenorDMM.png}
 	\caption{Painel frontal Multímetro Digital}
 	\label{fig:frontDMM}
 \end{figure}
@@ -291,7 +264,7 @@ Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema com
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/rec_fil_FULL.png}
+	\includegraphics[width=0.5\textwidth]{figures/rec_fil_FULL.png}
 	\caption{Esquema completo (simplificado) - rectificadores e filtros}
 	\label{fig:rectificacao_filtragem_full}
 \end{figure}
@@ -308,7 +281,7 @@ Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_gera
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/esquema_simplificado_OHM.png}
+	\includegraphics[width=0.5\textwidth]{figures/esquema_simplificado_OHM.png}
 	\caption{Esquema simplificado da experiência Lei de Ohm}
 	\label{fig:esq_geral_ohm}
 \end{figure}
@@ -648,9 +621,6 @@ Devido à complexidade da implementação de uma verificação por \textit{email
 
 \textbf{A REVER: Valerá a pena uma página de admin, de forma a que o professor, por exemplo faça os registo e forneça os dados de acesso aos alunos?}
 
-\subsection{Páginas \textit{Web} - esta secção passou para a parte das experiências (Lei de Ohm)}
-\label{sec:paginas}
-
 \subsection{Arquitectura de Comunicação}
 \label{sec:comunicacao}
 Nesta secção, o foco será analisar a comunicação (e troca de parâmetros) entre os diversos tipos de ficheiros. Na Figura \ref{fig:diagramasimplificado} é apresentado o diagrama simplificado que ilustra o funcionamento geral deste tipo de comunicação. 
@@ -761,7 +731,44 @@ Para que as experiências funcionem correctamente, todos os relés terão de ser
 
 \subsubsection{VirtualBench - Configurações e medições}
 \label{sec:configmedicaoes}
-O comando e controlo do \acrshort{virtualbench} é realizado através da biblioteca \textit{pyVirtualBench}\footnote{No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento.\label{fnlabel}} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}.
+\textbf{NOTA: Falar aqui das configurações das fontes de alimentação e restantes instrumentos}
+
+\textbf{NOTA: subsecções copiadas do HW}
+
+A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{lst:limiteI}. A variável $V_{cc}$, linha 4,  permite configurar o valor da fonte de tensão com os valores apresentados na Figura \ref{fig:pagohm}, sendo que a corrente é limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
+
+\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
+
+\begin{minipage}{0.9\linewidth}
+	\centering
+	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+6V"
+			voltage_level = Vcc
+			current_limit = 0.5
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+Esta configuração está exemplificada na Listagem \ref{lst:configfonte12} e a corrente é, também, limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
+
+\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{12}{\volt}, label=lst:configfonte12]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+25V"
+			voltage_level = 12.0
+			current_limit = 0.5
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+\textbf{Fim da NOTA}
+
+O comando e controlo do \acrshort{virtualbench} (e respectivos instrumentos) é realizado através da biblioteca \textit{pyVirtualBench}\footnote{No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento.\label{fnlabel}} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}.
 
 Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se adequam aos objectivos deste projecto são:
 \begin{itemize}
