@@ -79,6 +79,4 @@
 \contentsline {section}{\numberline {5.2}Melhoramentos}{107}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusões}{109}{chapter.6}%
 \contentsline {chapter}{Refer\^{e}ncias}{123}{section*.123}%
-\contentsline {chapter}{Anexo \numberline {A}Título do Anexo}{139}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Secção}{139}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Mais uma secção do Anexo~\ref {AppendixA}}{139}{section.1.A.2}%
+\contentsline {section}{\numberline {.1}Mais uma secção do Anexo~\ref {AppendixA}}{154}{section.1..1}%
