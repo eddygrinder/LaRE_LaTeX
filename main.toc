@@ -53,20 +53,20 @@
 \contentsline {subsubsection}{Fonte de tensão \SI {5}{\volt } - fixa}{73}{section*.79}%
 \contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{75}{section*.81}%
 \contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{76}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Experiências}{76}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.6}Experiências}{77}{subsection.4.1.6}%
 \contentsline {subsubsection}{Lei de Ohm}{77}{section*.86}%
 \contentsline {subsubsection}{Rectificadores}{79}{section*.90}%
-\contentsline {subsubsection}{Filtros}{81}{section*.94}%
+\contentsline {subsubsection}{Filtros}{82}{section*.94}%
 \contentsline {section}{\numberline {4.2}Software}{83}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{83}{subsection.4.2.1}%
 \contentsline {subsubsection}{Estrutura base}{84}{section*.98}%
-\contentsline {subsubsection}{Rotas}{85}{section*.101}%
-\contentsline {subsubsection}{Blueprints}{86}{section*.102}%
+\contentsline {subsubsection}{Rotas}{86}{section*.101}%
+\contentsline {subsubsection}{Blueprints}{87}{section*.102}%
 \contentsline {subsubsection}{Pedidos}{87}{section*.103}%
 \contentsline {subsubsection}{Base de dados}{88}{section*.104}%
-\contentsline {subsubsection}{Autenticação}{88}{section*.105}%
+\contentsline {subsubsection}{Autenticação}{89}{section*.105}%
 \contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{89}{subsection.4.2.2}%
-\contentsline {subsubsection}{Comunicação entre ficheiros}{90}{section*.107}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.107}%
 \contentsline {subsubsection}{Comunicação com RaspberryPi}{91}{section*.108}%
 \contentsline {subsubsection}{VirtualBench - Configurações e medições}{93}{section*.109}%
 \contentsline {subsection}{\numberline {4.2.3}Interface WEB}{97}{subsection.4.2.3}%
@@ -78,12 +78,4 @@
 \contentsline {section}{\numberline {5.2}Melhoramentos}{105}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusões}{107}{chapter.6}%
 \contentsline {chapter}{Refer\^{e}ncias}{108}{section*.121}%
-\contentsline {chapter}{Anexo \numberline {A}\textit {Datasheet} LaRE - Protótipo}{125}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Características}{125}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Descrição}{126}{section.1.A.2}%
-\contentsline {section}{\numberline {A.3}Aplicações}{126}{section.1.A.3}%
-\contentsline {section}{\numberline {A.4}Especificações técnicas}{127}{section.1.A.4}%
-\contentsline {section}{\numberline {A.5}Pinout}{128}{section.1.A.5}%
-\contentsline {section}{\numberline {A.6}Dimensões mecânicas}{131}{section.1.A.6}%
-\contentsline {section}{\numberline {A.7}Esquemas elétricos}{133}{section.1.A.7}%
-\contentsline {section}{\numberline {A.8}Esquemas PCB}{136}{section.1.A.8}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{125}{appendix.1.A}%

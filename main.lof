@@ -67,7 +67,7 @@
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{82}{figure.caption.96}%
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Funcionamento geral \textit {Flask}}}{84}{figure.caption.99}%
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{85}{figure.caption.100}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{89}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{90}{figure.caption.106}%
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Erro de selecção}}{98}{figure.caption.110}%
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Página de \textit {login}}}{99}{figure.caption.111}%
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Página inicial}}{99}{figure.caption.112}%
@@ -79,15 +79,3 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces LaRE - Pinout [Fonte de tensão]}}{128}{figure.caption.128}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces LaRE - Pinout [Lei de Ohm]}}{129}{figure.caption.129}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces LaRE - Pinout [Rectificadores/Filtros]}}{130}{figure.caption.130}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Dimensões mecânicas PC/104 - LaRE}}{131}{figure.caption.131}%
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Dimensões mecânicas LaRE}}{132}{figure.caption.132}%
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Perspectiva LaRE}}{132}{figure.caption.133}%
-\contentsline {figure}{\numberline {A.7}{\ignorespaces LaRE - Esquema [Fonte de tensão]}}{133}{figure.caption.134}%
-\contentsline {figure}{\numberline {A.8}{\ignorespaces LaRE - Esquema [Lei de Ohm]}}{134}{figure.caption.135}%
-\contentsline {figure}{\numberline {A.9}{\ignorespaces LaRE - Esquema [Recficadores/Filtros]}}{135}{figure.caption.136}%
-\contentsline {figure}{\numberline {A.10}{\ignorespaces LaRE - PCB [Fonte de tensão]}}{136}{figure.caption.137}%
-\contentsline {figure}{\numberline {A.11}{\ignorespaces LaRE - PCB [Lei de Ohm]}}{137}{figure.caption.138}%
-\contentsline {figure}{\numberline {A.12}{\ignorespaces LaRE - PCB [Recficadores/Filtros]}}{138}{figure.caption.139}%
