@@ -273,17 +273,17 @@ Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref.
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/reles.png}
+    \includegraphics[width=0.5\textwidth]{figures/reles.png}
     \caption{\textit{Relés \acrshort{spst} e \acrshort{dpst}} \cite{DryRelay}}
     \label{fig:reles}
 \end{figure}
 
 Como já foi referido na Secção \ref{sec:RaspberryPI}, a tensão de funcionamento dos \acrshort{gpio}s, quer estejam configurados como entrada ou saída, é de \SI{3.3}{\volt}, sendo que a máxima corrente por cada \acrshort{gpio} é de \SI{16}{\mA}.
-Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os relés, já que funcionam a \SI{12}{\volt}. Para activar os relés, é necessário o uso de \textit{drivers} que consigam fornecer a tensão e corrente necessárias para o efeito.
+Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os relés, já que funcionam a \SI{12}{\volt}. Para activar os relés, é necessário o uso de \textit{drivers}\footnote{Doravante, sempre que for referido o termo \textit{driver} no contexto de relés, subentende-se o circuito integrado \textit{ULN2003A}.} que consigam fornecer a tensão e corrente necessárias para o efeito.
 
 \subsection{\textit{Driver} de Relés}
 \label{sec:driver}
-O circuito integrado ULN2003A é um \textit{driver}\footnote{Doravante, sempre que for referido \textit{driver} de relés, subentende-se o circuito integrado \textit{ULN2003A}.} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
+O circuito integrado ULN2003A é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
 Tipicamente, este \textit{driver} é usado em conjunto com microcontroladores ou \gls{RaspberryPI} no comando de cargas indutivas, como motores, bobines e relés.
 
 Os ULN2003A possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.

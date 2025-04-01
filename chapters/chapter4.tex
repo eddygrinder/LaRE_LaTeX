@@ -112,37 +112,27 @@ Como pode ser visto na Figura \ref{fig:paineldianteiro} ou na Figura \ref{fig:pr
 
 Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alimentação:
 \begin{itemize}
-	\item \SI{1}{\volt} - \SI{5}{\volt} variáveis (\acrshort{cc}) - utilizada na experiência da Lei de Ohm;
-	\item \SI{12}{\volt} (\acrshort{cc}) - utilizada na alimentação dos relés e dos \textit{drivers} de relés;
+	\item \SI{1}{\volt} - \SI{5}{\volt} variáveis (\acrshort{cc}), utilizadas na experiência da Lei de Ohm;
+	\item \SI{12}{\volt} (\acrshort{cc}) - utilizada na alimentação dos relés e dos \textit{drivers};
 	\item \SI{5}{\volt} (\acrshort{cc}) - utilizada na alimentação do registo de deslocamento;
 	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
 \end{itemize}
 
-As configurações das fontes são feitas por \textit{software} e podem ser consultadas na Secção \ref{sec:configmedicaoes}.
-
-\subsubsection{Fonte de tensão \SI{6}{\volt} - variável}
-A fonte de tensão \SI{+6}{\volt} \acrshort{cc} variável, que fornece as tensões entre \SI{1}{\volt} e \SI{5}{\volt}, para a experiência da Lei de Ohm, é obtida directamente do \acrshort{virtualbench} e ligada ao circuito tal como apresentado na Figura \ref{fig:schfonte5VB} - ``$5V_{VB}$'', terminal 1 do relé K4.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/sch_fonte5VB.png}
-	\caption{Fontes de tensão do \acrshort{virtualbench}}
-	\label{fig:schfonte5VB}
-\end{figure}
-
-\subsubsection{Fonte de tensão \SI{12}{\volt} - fixa}
-Tal como referido em cima, de forma a simplificar o uso de fontes externas, optou-se por configurar a fonte de \SI{25}{\volt} para \SI{12}{\volt}. 
-
-Na Figura \ref{fig:fonte12V} está representado um exemplo das ligações da fonte de \SI{12}{\volt} ao pino 9 do ULN2003 e ao pino 2 do relé ($K_{5}$)
-
-\textbf{NOTA: Irrelevante ou mudar a explicação. Acho que a imagem não diz nada}
+\subsubsection{Fonte de tensão \SI{6}{\volt} - variável e {Fonte de tensão \SI{12}{\volt} - fixa}}
+\label{sec:fontes6-12}
+As fontes de tensão de \SI{6}{\volt}, utilizadas na Lei de \textit{Ohm} e de \SI{12}{\volt}, destinadas à alimentação dos relés e dos \textit{drivers}, são fornecidas diretamente pelo \acrshort{virtualbench}. As configurações são definidas por \textit{software} e podem ser consultadas na Secção \ref{sec:configmedicaoes}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/sch_fonte12V.png}
-	\caption{Fonte de \SI{12}{\volt}}
-	\label{fig:fonte12V}
-\end{figure}
+	\centering%
+		\centering
+		\subfloat[\centering Introdução\label{fig:schfonte5VB}]{{\includegraphics[width=6cm]{figures/sch_fonte5VB.png} }}%
+		\qquad
+		\subfloat[\centering Controlo\label{fig:schfonte12VB}]{{\includegraphics[width=6cm]{figures/sch_fonte12V.png} }}%
+		\caption{Implementação Fontes de \SI{6}{\volt} e \SI{12}{\volt}}%
+		\label{fig:fontes6-12}%
+	\end{figure}
+
+As Figuras \ref{fig:schfonte5VB} e \ref{fig:schfonte12VB} ilustram os exemplos das ligações das respetivas fontes de tensão. Complementando com a Figura \ref{fig:promenorfontes}, o terminal 4 do relé $K_{4}$, designado por $5V_{VB}$, está ligado ao terminal de \SI{6}{\volt} do \acrshort{virtualbench}, enquanto todos os terminais 2 dos relés, assim como a alimentação dos \textit{drivers}, estão ligados ao terminal de \SI{25}{\volt}. As configurações destes valores são definidas por \textit{software} e podem ser consultadas na Secção \ref{sec:configmedicaoes}.
 
 \subsubsection{Fonte de tensão \SI{5}{\volt} - fixa}
 De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada uma fonte de alimentação, tal como se pode ver na Figura \ref{fig:fonte5V} \cite{LM317}.
@@ -154,7 +144,7 @@ De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada uma fon
 	\label{fig:fonte5V}
 \end{figure}
 
-Esta fonte teve como base o LM317 e o esquema presente na página 11, Figura 9, do \textit{datasheet} \cite{LM317}. A utilização do LM317 em deterimento, por exemplo, do 7805 prendeu-se com a disponibilidade do regulador em contexto laboratorial. Este regulador serve perfeitamente os propósitos deste projecto, já que a tensão de saída, regulável, varia entre os \SI{1.25}{\volt} e os \SI{37}{\volt} e a corrente de saída pode ser superior a \SI{1.5}{\ampere}.
+Esta fonte teve como base o LM317 e o esquema presente na página 11, Figura 9, do \textit{datasheet} \cite{LM317}. A utilização do LM317 em detrimento, por exemplo, do LM7805 prendeu-se com a disponibilidade do regulador em contexto laboratorial. Este regulador serve perfeitamente os propósitos deste projecto, já que a tensão de saída, regulável, varia entre os \SI{1.25}{\volt} e os \SI{37}{\volt} e a corrente de saída pode ser superior a \SI{1.5}{\ampere}.
 
 Relativamente aos díodos de protecção, $D_{1}$ e $D_{2}$, representados no esquema da Figura \ref{fig:fonte5V}, em vez de se usarem os díodos 1N4002, por uma questão de disponibilidade dos componentes, usaram-se os díodos 1N4007. Estes díodos pertencem à mesma família de diodos retificadores da série 1N400x. Ambos têm especificações elétricas e mecânicas semelhantes, nomeadamente, a capacidade de suportar correntes directas até \SI{1}{\ampere} - valor suficiente para o nosso projecto que, relembre-se, é limitado pelo \acrshort{virtualbench} a \SI{0.5}{\ampere}. No entanto, a principal diferença entre eles está na tensão inversa máxima que cada modelo é capaz de suportar \cite{1N400x}:
 
@@ -200,7 +190,7 @@ Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos 
 \label{sec:fontealternada}
 As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. 
 
-Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas, se se pretender usar um gerador de sinal. Quer isto dizer que não é possível medir, simultaneamente, os sinais de entrada e saída. Como se pode ver pelo esquema representado na Figura \ref{fig:gerador-massa}, o díodo está curto-circuitado (linha magenta a tracejado, entre os pontos ``2'' e ``3'') devido ao facto das massas serem comuns. 
+Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas, se se pretender usar um gerador de sinal. Quer isto dizer que não é possível medir, simultaneamente, os sinais de entrada e saída. Como se pode ver pelo esquema representado na Figura \ref{fig:gerador-massa}, o díodo está curto-circuitado (linha magenta a tracejado, entre os pontos 2 e 3) devido ao facto das massas serem comuns. 
 
 \begin{figure}[hbtp]
 	\centering
@@ -228,12 +218,12 @@ De referir que, desta forma, seria possível usar o gerador de sinal. No entanto
 	\label{fig:ondacompleta-massa}
 \end{figure}
 
-O esquema completo da experiência de rectificação de onda completa pode ser consultado \textbf{no anexo, figura XPTO}.
+O esquema completo da experiência de rectificação de onda completa pode ser consultado no Anexo~\ref{AppendixA}.
 
 %$CH_{1-}$ e $CH_{2-}$ são as massas do gerador de sinal e osciloscópio (dois canais), respectivamente. É fácil perceber que estando ligados ao mesmo aparelho de medida, neste caso o \acrshort{virtualbench}, as massas dos dois canais do osciloscópio são comuns e, por isso, entre os pontos 2 e 3, o díodo está curto-circuitado. 
 
 
-%No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se refferir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
+%No que concerne à fonte de alimentação \acrshort{ca}, esta foi implementada de forma independente do \acrshort{virtualbench}. \textbf{Falar sobre a fonte de alimentação variável e a fonte de alimentação \acrshort{ca}. Colocar a foto do esquema e explicar como se faz a rectificação, cálculos inclusive. Talvez referir o facto de que depende da qualidade e valores dos transformadores e depois concluir com os valores deste caso, pode-se referir que relativamente à fonte AC, só está disponível a fonte do gerador de sinal do VB e é mais fácil controlar através da fonte externa projectada.}
 
 \subsection{Aparelhos de medida - voltímetro e amperímetro}
 \label{sec:aparelhosmedida}
@@ -252,8 +242,6 @@ Os aparelhos de medida são controlados por um conjunto de relés e foram projec
 De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. 
 %Tal como pode ser visto na o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
 
-A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
-
 \subsection{Experiências}
 \label{sec:experiencias}
 Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm}, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa alto e passa baixo.
@@ -269,15 +257,13 @@ Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema com
 	\label{fig:rectificacao_filtragem_full}
 \end{figure}
 
-No \textit{datasheet} encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
-
-\textbf{Coloca aqui, falvez, uma foto da matriz lare}
+No Anexo \ref{AppendixA} encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
 \textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
 
-Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado do circuito - o esquema completo pode ser consultado no \textit{Datasheet}, na página ??? - \textbf{Ver como referenciar}.
+Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado do circuito - o esquema completo pode ser consultado no Anexo \ref{AppendixA}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -778,7 +764,7 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
 
-De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. Não é, de todo, o objectivo desta dissertação dissecar toda e qualquer linha de código ou forma de configurar o \acrshort{virtualbench}. Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da bilblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
+De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. Não é, de todo, o objectivo desta dissertação dissecar toda e qualquer linha de código ou forma de configurar o \acrshort{virtualbench}. Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da biblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
 
 Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. 
 
@@ -891,7 +877,7 @@ Conforme mencionado na secção anterior - ver REF -, não se pretende, neste es
 
 \textbf{NOTA: Este parágrafo pode ser retirado ou colocado noutro local. Para já fica aqui - A REVER.}
 
-Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} de relés e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. \textbf{NOTE: talvez explicar melhor os botões OK e STOP/RESET}
+Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. \textbf{NOTE: talvez explicar melhor os botões OK e STOP/RESET}
 
 A verificação e detecção dos erros acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados ou, no caso dos rectificadores e filtros, colocar o valor da frequência fora do valor definido nas intruções. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
 

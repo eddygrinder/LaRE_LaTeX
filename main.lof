@@ -45,37 +45,49 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{59}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{60}{figure.caption.65}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama \textins {em corte} de blocos SN74HC595 \cite {SN74HC595}}}{61}{figure.caption.66}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{65}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{64}{figure.caption.71}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{70}{figure.caption.72}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{71}{figure.caption.73}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Exemplo de uso do \textit {SN74HC595} e \textit {ULN2003A}}}{71}{figure.caption.74}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{72}{figure.caption.75}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{72}{figure.caption.76}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{73}{figure.caption.78}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Fonte de \SI {12}{\volt }}}{73}{figure.caption.80}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Fonte de \SI {5}{\volt }}}{74}{figure.caption.82}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Problema de massa - onda completa}}{75}{figure.caption.84}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Problema de massa - onda completa}}{76}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Painel frontal Multímetro Digital}}{76}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{78}{figure.caption.87}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema simplificado da experiência Lei de Ohm}}{78}{figure.caption.89}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Exemplo de gráfico Lei de \textit {Ohm}}}{79}{figure.caption.91}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Diagrama de blocos geral da rectificação de meia e onda completa}}{80}{figure.caption.93}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite {sedrasmith}}}{80}{figure.caption.94}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite {sedrasmith}}}{81}{figure.caption.95}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Esquemas simplificados dos filtros}}{82}{figure.caption.97}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{83}{figure.caption.98}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Funcionamento geral \textit {Flask}}}{85}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{85}{figure.caption.102}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{90}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Erro de selecção}}{99}{figure.caption.112}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Página de \textit {login}}}{100}{figure.caption.113}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Página inicial}}{100}{figure.caption.114}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces \textins {Exemplo} Experiência Lei de \textit {Ohm}}}{101}{figure.caption.115}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Experiência Lei de \textit {Ohm}}}{101}{figure.caption.117}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Lei de \textit {Ohm} - Selecção dos parâmetros}}{102}{figure.caption.118}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Rectificador de meia onda - Selecção dos parâmetros}}{103}{figure.caption.120}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Rectificador de onda completa - Selecção dos parâmetros}}{103}{figure.caption.121}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementação Fontes de \SI {6}{\volt } e \SI {12}{\volt }}}{73}{figure.caption.78}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Fonte de \SI {5}{\volt }}}{73}{figure.caption.80}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Problema de massa - onda completa}}{75}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Problema de massa - onda completa}}{76}{figure.caption.83}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Painel frontal Multímetro Digital}}{76}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{77}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Esquema simplificado da experiência Lei de Ohm}}{78}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Exemplo de gráfico Lei de \textit {Ohm}}}{79}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Diagrama de blocos geral da rectificação de meia e onda completa}}{79}{figure.caption.91}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite {sedrasmith}}}{80}{figure.caption.92}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite {sedrasmith}}}{81}{figure.caption.93}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Esquemas simplificados dos filtros}}{82}{figure.caption.95}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Diagrama de \textit {Bode} - Filtro passa-alto}}{82}{figure.caption.96}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Funcionamento geral \textit {Flask}}}{84}{figure.caption.99}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{85}{figure.caption.100}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{89}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Erro de selecção}}{98}{figure.caption.110}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Página de \textit {login}}}{99}{figure.caption.111}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Página inicial}}{99}{figure.caption.112}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces \textins {Exemplo} Experiência Lei de \textit {Ohm}}}{100}{figure.caption.113}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Experiência Lei de \textit {Ohm}}}{100}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Lei de \textit {Ohm} - Selecção dos parâmetros}}{101}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Rectificador de meia onda - Selecção dos parâmetros}}{102}{figure.caption.118}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Rectificador de onda completa - Selecção dos parâmetros}}{103}{figure.caption.119}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces LaRE - Pinout [Fonte de tensão]}}{128}{figure.caption.128}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces LaRE - Pinout [Lei de Ohm]}}{129}{figure.caption.129}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces LaRE - Pinout [Rectificadores/Filtros]}}{130}{figure.caption.130}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Dimensões mecânicas PC/104 - LaRE}}{131}{figure.caption.131}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Dimensões mecânicas LaRE}}{132}{figure.caption.132}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Perspectiva LaRE}}{132}{figure.caption.133}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces LaRE - Esquema [Fonte de tensão]}}{133}{figure.caption.134}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces LaRE - Esquema [Lei de Ohm]}}{134}{figure.caption.135}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces LaRE - Esquema [Recficadores/Filtros]}}{135}{figure.caption.136}%
+\contentsline {figure}{\numberline {A.10}{\ignorespaces LaRE - PCB [Fonte de tensão]}}{136}{figure.caption.137}%
+\contentsline {figure}{\numberline {A.11}{\ignorespaces LaRE - PCB [Lei de Ohm]}}{137}{figure.caption.138}%
+\contentsline {figure}{\numberline {A.12}{\ignorespaces LaRE - PCB [Recficadores/Filtros]}}{138}{figure.caption.139}%

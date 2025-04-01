@@ -1,0 +1,29 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Hardware}{\reset@font\mtcSfont 67}{section.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}Registo de deslocamento}{\reset@font\mtcSSfont 67}{subsection.4.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}Driver de relés}{\reset@font\mtcSSfont 68}{subsection.4.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.3}Relés}{\reset@font\mtcSSfont 69}{subsection.4.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.4}Fontes de alimentação}{\reset@font\mtcSSfont 70}{subsection.4.1.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Fonte de tensão \SI {6}{\volt } - variável e {Fonte de tensão \SI {12}{\volt } - fixa}}{\reset@font\mtcSSSfont 71}{section*.77}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Fonte de tensão \SI {5}{\volt } - fixa}{\reset@font\mtcSSSfont 71}{section*.79}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{\reset@font\mtcSSSfont 73}{section*.81}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{\reset@font\mtcSSfont 74}{subsection.4.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.6}Experiências}{\reset@font\mtcSSfont 74}{subsection.4.1.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Lei de Ohm}{\reset@font\mtcSSSfont 75}{section*.86}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Rectificadores}{\reset@font\mtcSSSfont 77}{section*.90}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Filtros}{\reset@font\mtcSSSfont 79}{section*.94}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Software}{\reset@font\mtcSfont 81}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Servidor Flask}{\reset@font\mtcSSfont 81}{subsection.4.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Estrutura base}{\reset@font\mtcSSSfont 82}{section*.98}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Rotas}{\reset@font\mtcSSSfont 83}{section*.101}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Blueprints}{\reset@font\mtcSSSfont 84}{section*.102}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Pedidos}{\reset@font\mtcSSSfont 85}{section*.103}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Base de dados}{\reset@font\mtcSSSfont 86}{section*.104}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Autenticação}{\reset@font\mtcSSSfont 86}{section*.105}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Arquitectura de Comunicação}{\reset@font\mtcSSfont 87}{subsection.4.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Comunicação entre ficheiros}{\reset@font\mtcSSSfont 88}{section*.107}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Comunicação com RaspberryPi}{\reset@font\mtcSSSfont 89}{section*.108}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode VirtualBench - Configurações e medições}{\reset@font\mtcSSSfont 91}{section*.109}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}Interface WEB}{\reset@font\mtcSSfont 95}{subsection.4.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Lei de \textit {Ohm}}{\reset@font\mtcSSSfont 97}{section*.114}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Rectificador de meia onda e onda completa}{\reset@font\mtcSSSfont 99}{section*.117}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Filtros}{\reset@font\mtcSSSfont 99}{section*.120}}
