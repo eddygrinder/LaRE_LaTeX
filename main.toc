@@ -58,16 +58,16 @@
 \contentsline {subsubsection}{Rectificadores}{80}{section*.91}%
 \contentsline {subsubsection}{Filtros}{82}{section*.95}%
 \contentsline {section}{\numberline {4.2}Software}{84}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{84}{subsection.4.2.1}%
-\contentsline {subsubsection}{Estrutura base}{84}{section*.99}%
-\contentsline {subsubsection}{Rotas}{86}{section*.102}%
-\contentsline {subsubsection}{Blueprints}{87}{section*.103}%
-\contentsline {subsubsection}{Pedidos}{88}{section*.104}%
-\contentsline {subsubsection}{Base de dados}{89}{section*.105}%
-\contentsline {subsubsection}{Autenticação}{89}{section*.106}%
-\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{90}{subsection.4.2.2}%
-\contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.108}%
-\contentsline {subsubsection}{Comunicação com RaspberryPi}{92}{section*.109}%
+\contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{85}{subsection.4.2.1}%
+\contentsline {subsubsection}{Estrutura base}{85}{section*.99}%
+\contentsline {subsubsection}{Rotas}{87}{section*.102}%
+\contentsline {subsubsection}{Blueprints}{88}{section*.103}%
+\contentsline {subsubsection}{Pedidos}{89}{section*.104}%
+\contentsline {subsubsection}{Base de dados}{90}{section*.105}%
+\contentsline {subsubsection}{Autenticação}{90}{section*.106}%
+\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{91}{subsection.4.2.2}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{92}{section*.108}%
+\contentsline {subsubsection}{Comunicação com RaspberryPi}{93}{section*.109}%
 \contentsline {subsubsection}{VirtualBench - Configurações e medições}{94}{section*.110}%
 \contentsline {subsection}{\numberline {4.2.3}Interface WEB}{98}{subsection.4.2.3}%
 \contentsline {subsubsection}{Lei de \textit {Ohm}}{101}{section*.115}%

@@ -237,9 +237,9 @@ A medição de tensão e corrente são feitas utilizando o multímetro digital -
 	\label{fig:frontDMM}
 \end{figure}
 
-Os aparelhos de medida são controlados por um conjunto de relés e foram projectados de forma a serem independentes. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplficado da Lei de Ohm que pode ilustrar o funcionamento dos aparelhos de medida. O ponto ``C'' é comum a ambos os aparelhos e é controlado pelo relé $K_{7}$. O terminal positivo do voltímetro está ligado ao ponto ``A'', controlado pelo relé $K_{5}$ mas o amperímetro necessita de mais um relé, já que o controlo da medição é diferente. Neste caso o relé $K_{8}$ funciona como um \textit{bypass} quando se pretende medir tensão e o relé $K{6}$ controla o terminal positivo do amperímetro.
+Os aparelhos de medida são controlados por um conjunto de relés e foram projectados de forma a serem independentes. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado da Lei de \textit{Ohm} que pode ilustrar o funcionamento dos aparelhos de medida. O ponto C é comum\footnote{Embora os aparelhos de medida sejam independentes e cumpram o propósito do projeto, partilham a mesma massa. Esta escolha foi motivada pela indisponibilidade de relés duplos, pelo que se optou por utilizar apenas o relé $K_{6}$ e manter a massa comum.}  e é controlado pelo relé $K_{7}$. O terminal positivo do voltímetro está ligado ao ponto A, controlado pelo relé $K_{5}$ mas o amperímetro necessita de mais um relé, já que o controlo da medição é diferente. Neste caso o relé $K_{8}$ funciona como um \textit{bypass} quando se pretende medir tensão e o relé $K{6}$ controla o terminal positivo do amperímetro. 
 
-De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão configurados. 
+De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão implementados. 
 %Tal como pode ser visto na o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
 
 A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
@@ -248,9 +248,19 @@ A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a 
 \label{sec:experiencias}
 Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm}, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa-baixo e passa-alto.
 
-De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do projeto.
+De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do \acrshort{lare}.
 
-Relativamente à Lei de \textit{Ohm}, representada esquematicamente na Figura \ref{fig:esq_geral_ohm}, a fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No entanto, esta configuração não permite o uso simultâneo da fonte e do voltímetro. Idealmente, poderiam ter sido utilizados relés duplos para controlar e isolar completamente o voltímetro e a fonte de tensão. Ainda assim, o voltímetro pode ser utilizado noutras experiências, desativando $K_{4}$ e $K_{7}$ e ligando o componente a medir entre os pontos A e C. Da mesma forma, a fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$. O amperímetro, sendo independente, pode ser usado ligando o que se pretende medir entre os pontos B e C.  
+Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas completos e simplificados dos circuitos que compõem as duas experiências - Rectificadores e Filtros. Nele se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão, também, representados no rectângulo tracejado magenta.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/rec_fil_FULL.png}
+	\caption{Esquema completo (simplificado) - rectificadores e filtros}
+	\label{fig:rectificacao_filtragem_full}
+\end{figure}
+
+\textbf{NOTA: está mal exlicado, a tanto a fonte com oo voltimetro podem ser usados numa expansão. reformular este +arágrado só no que diz respeito à fonte}
+Relativamente à Lei de \textit{Ohm}, representada esquematicamente na Figura \ref{fig:esq_geral_ohm}, a fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. \sout{Neste caso, esta configuração não permite o uso simultâneo da fonte e do voltímetro. Idealmente, poderiam ter sido utilizados relés duplos para controlar e isolar completamente o voltímetro e a fonte de tensão. Ainda assim, o voltímetro pode ser utilizado noutras experiências, desativando $K_{4}$ e $K_{7}$ e ligando o componente a medir entre os pontos A e C. Da mesma forma, a fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$. O amperímetro, sendo independente, pode ser usado ligando o que se pretende medir entre os pontos B e C. JÁ FOI FALADO } NÃO HA NECEISSAD E RELÉS DUPLOS, EMBORA SE PUDESSE TER USADO UM RELÉ DUPLO NA FONTE
 
 \begin{figure}[hbtp]
 	\centering
@@ -259,15 +269,7 @@ Relativamente à Lei de \textit{Ohm}, representada esquematicamente na Figura \r
 	\label{fig:esq_geral_ohm}
 \end{figure}
 
-REVER
 O mesmo se aplica aos Rectificadores/Filtros. Tendo como base a Figura \ref{fig:rectificacao_filtragem_full}, no caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/rec_fil_FULL.png}
-	\caption{Esquema completo (simplificado) - rectificadores e filtros}
-	\label{fig:rectificacao_filtragem_full}
-\end{figure}
 
 No Anexo \ref{AppendixA} - \textit{datasheet} - encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
 
@@ -363,16 +365,13 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 
 \subsubsection{Rectificadores}
 \label{sec:rectificadoresfiltros}
-
-Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas completos e simplificado dos circuitos que compõem as duas experiências - Rectificadores e Filtros. Nele se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão representados no rectângulo tracejado magenta.
-
 Nesta experiência pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
 
 Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo. 
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.6\textwidth]{figures/diagramablocosrectificacao.png}
+	\includegraphics[width=0.7\textwidth]{figures/diagramablocosrectificacao.png}
 	\caption{Diagrama de blocos geral da rectificação de meia e onda completa}
 	\label{fig:blocosrectificacao}
 \end{figure}
@@ -384,7 +383,7 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 	\item Estabilização.
 \end{enumerate}
 
-Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificacao_filtragem_full} e tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal, o que permite estudar a variação do \textit{ripple} com a frequência e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. \textbf{NOTA: Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof)}. O Bloco 4 não está montado/projectado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
+No rectificador de meia onda não houve necessidade de usar um transformador, sendo que, neste caso, o Bloco 1 fica reduzido ao gerador de sinal. Esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência. O Bloco 2, rectificação, depende do tipo de rectificador que se pretende estudar - um díodo, rectângulo tracejado vermelho ou uma ponte rectificadora - rectângulo tracejado a verde. O Bloco 3 é o único Bloco comum às duas experiências. Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta. O Bloco 4 não está implementado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
 
 A tensão de \textit{ripple} é uma componente dependente do tempo que surge à saída do filtro do rectificador - Bloco 3 - sendo que terá de ser minimizada, de forma a estabilizar o valor da tensão de saída \acrshort{cc} - Bloco 4. \cite{sedrasmith} 
 
@@ -461,7 +460,7 @@ A Figura \ref{fig:diagramabode} apresenta um exemplo do Diagrama de \textit{Bode
 \end{figure}
 \end{comment}
 
-As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} representam os Diagramas de \textit{Bode} \textins{ideal}, sendo que o que se pretende 
+As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} apresentam os Diagramas de \textit{Bode} \textins{ideais}, que servem de referência para o estudo desta experiência. 
 
 \begin{figure}[hbtp]
 	\centering%
@@ -473,7 +472,22 @@ As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} representam os Diagramas de \te
 		\label{fig:Bodeesqgeral}%
 	\end{figure}
 
-Como foi dito na Secção \ref{sec:experiencias}, a implementação desta experiência foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
+	Para além da análise em frequência, um outro aspeto complementar a considerar é a relação entre as ondas de entrada e saída, em função da frequência. Nos filtros, o intervalo de frequências permitido é igual ao já referido para os rectificadores: entre \SI{50}{\hertz} a \SI{2000}{\hertz}. 
+	
+	A frequência de corte de um filtro é definida como o ponto onde o ganho do filtro sofre uma atenuação de \SI{3}{\decibel} em relação ao seu valor máximo. 	Para um filtro passa-baixo (passa-alto) ideal, o ganho em baixas (altas) frequências é unitário. Quando o sinal atinge a frequência de corte, a relação entre a tensão de saída e a tensão de entrada reduz-se para:  
+	
+	\begin{equation} \label{eq:relacaoGanho}
+		\frac{U_{out}}{U_{in}} = \frac{1}{\sqrt{2}} \approx 0.707
+	\end{equation}
+	
+	\ldots ou na escala logarítmica:  
+\begin{equation} \label{eq:relacaoGanhodB}
+	\frac{U_{out}}{U_{in}} = 20 \log_{10} (0.707) \approx -\SI{3}{\decibel}	
+\end{equation}
+	
+Assim, a frequência de corte de um filtro corresponde ao ponto em que a amplitude do sinal de saída é aproximadamente $70.7\%$ da amplitude do sinal de entrada, o que corresponde a -\SI{3}{\decibel}. 
+
+Como foi dito na Secção \ref{sec:experiencias}, a implementação desta experiência foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}.
 
 Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Table:rectificadoresfiltros}, pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
 
