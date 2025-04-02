@@ -246,28 +246,11 @@ A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a 
 
 \subsection{Experiências}
 \label{sec:experiencias}
-Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm}, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa alto e passa baixo.
+Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm}, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa-baixo e passa-alto.
 
 De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do projeto.
 
-Na Figura \ref{fig:rectificacao_filtragem_full} está representado o esquema completo e simplificado dos circuitos que compõem as duas experiências. Nele se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão representados no rectângulo tracejado magenta.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/rec_fil_FULL.png}
-	\caption{Esquema completo (simplificado) - rectificadores e filtros}
-	\label{fig:rectificacao_filtragem_full}
-\end{figure}
-
-No \textit{datasheet} encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
-
-\textbf{Coloca aqui, falvez, uma foto da matriz lare}
-
-\subsubsection{Lei de Ohm}
-\label{sec:lei_ohm}
-\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
-
-Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado do circuito - o esquema completo pode ser consultado no \textit{Datasheet}, na página ??? - \textbf{Ver como referenciar}.
+Relativamente à Lei de \textit{Ohm}, representada esquematicamente na Figura \ref{fig:esq_geral_ohm}, a fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. No entanto, esta configuração não permite o uso simultâneo da fonte e do voltímetro. Idealmente, poderiam ter sido utilizados relés duplos para controlar e isolar completamente o voltímetro e a fonte de tensão. Ainda assim, o voltímetro pode ser utilizado noutras experiências, desativando $K_{4}$ e $K_{7}$ e ligando o componente a medir entre os pontos A e C. Da mesma forma, a fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$. O amperímetro, sendo independente, pode ser usado ligando o que se pretende medir entre os pontos B e C.  
 
 \begin{figure}[hbtp]
 	\centering
@@ -276,7 +259,59 @@ Nesta experiência pretende-se estudar a Lei de Ohm. Na Figura \ref{fig:esq_gera
 	\label{fig:esq_geral_ohm}
 \end{figure}
 
-O funcionamento do circuito é relativamente simples. Qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $V_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
+REVER
+O mesmo se aplica aos Rectificadores/Filtros. Tendo como base a Figura \ref{fig:rectificacao_filtragem_full}, no caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/rec_fil_FULL.png}
+	\caption{Esquema completo (simplificado) - rectificadores e filtros}
+	\label{fig:rectificacao_filtragem_full}
+\end{figure}
+
+No Anexo \ref{AppendixA} - \textit{datasheet} - encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
+
+\textbf{Coloca aqui, falvez, uma foto da matriz lare}
+
+\subsubsection{Lei de Ohm}
+\label{sec:lei_ohm}
+\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
+
+Na forma da Equação \ref{eq:leideohm}, a Lei de \textit{Ohm} estabelece que a resistência eléctrica ($R$) de um condutor é determinada pelo quociente entre a tensão elétrica ($U$) aplicada aos seus terminais e a corrente eléctrica ($I$) que o atravessa.  
+
+\begin{equation} \label{eq:leideohm}
+	R=\dfrac{U}{I}
+\end{equation}
+
+Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência elétrica ($R$).
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{figures/grafico_Ohm.png}
+	\caption{Gráfico da Lei de \textit{Ohm}}
+	\label{fig:graphohm}
+\end{figure}
+
+Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Opção 1\label{fig:Opção_1}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha.png} }}%
+		\qquad
+		\subfloat[\centering Opção 2\label{fig:Opção_2}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
+		\caption{Experiência Lei de \textit{Ohm}}%
+		\label{fig:experienciaOHM}%
+	\end{figure}
+O tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
+
+No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
+
+\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
+
+\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
+
+O funcionamento do circuito é relativamente simples e está representado na Figura \ref{fig:esq_geral_ohm}. Qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ - \textbf{ATENÇÃO: mudar no esquema de Vcc para Ucc} é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
 
 A medição da tensão e da corrente faz-se da seguinte forma:
 \begin{itemize}
@@ -286,7 +321,7 @@ A medição da tensão e da corrente faz-se da seguinte forma:
 	      \end{itemize}
 	\item Medição da corrente:
 	      \begin{itemize}
-		      \item Os relés $K_{5}$ e $K_{8}$ são abertos (voltíemtro desactivado) e $K_{6}$ é fechado. Desta forma, o amperímetro fica em série com a resistência a medir - entre os pontos B e C.
+		      \item Os relés $K_{5}$ e $K_{8}$ são abertos (voltímetro desactivado) e $K_{6}$ é fechado. Desta forma, o amperímetro fica em série com a resistência a medir - entre os pontos B e C.
 	      \end{itemize}
 \end{itemize}
 
@@ -313,6 +348,9 @@ Como exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, 
 	\end{tabular}
 \end{table}
 
+\begin{comment}
+	% \textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
+	Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado do circuito.
 Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido com a experiência da Lei de Ohm, nos testes do \acrshort{lare}.
 
 \begin{figure}[hbtp]
@@ -321,15 +359,12 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 	\caption{Exemplo de gráfico Lei de \textit{Ohm}}
 	\label{fig:graphohm}
 \end{figure}
-
-Da forma como está implementado, o tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
-
-No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
-
-\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
+\end{comment}
 
 \subsubsection{Rectificadores}
 \label{sec:rectificadoresfiltros}
+
+Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas completos e simplificado dos circuitos que compõem as duas experiências - Rectificadores e Filtros. Nele se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão representados no rectângulo tracejado magenta.
 
 Nesta experiência pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
 
@@ -337,7 +372,7 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{figures/diagramablocosrectificacao.png}
+	\includegraphics[width=0.6\textwidth]{figures/diagramablocosrectificacao.png}
 	\caption{Diagrama de blocos geral da rectificação de meia e onda completa}
 	\label{fig:blocosrectificacao}
 \end{figure}
@@ -348,6 +383,8 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 	\item Filtragem;
 	\item Estabilização.
 \end{enumerate}
+
+Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificacao_filtragem_full} e tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal, o que permite estudar a variação do \textit{ripple} com a frequência e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. \textbf{NOTA: Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof)}. O Bloco 4 não está montado/projectado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
 
 A tensão de \textit{ripple} é uma componente dependente do tempo que surge à saída do filtro do rectificador - Bloco 3 - sendo que terá de ser minimizada, de forma a estabilizar o valor da tensão de saída \acrshort{cc} - Bloco 4. \cite{sedrasmith} 
 
@@ -362,13 +399,13 @@ A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 -
 A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vripple}:
 
 \begin{equation} \label{eq:vripple}
-	V_{r} = \frac{V_{P}}{fRC}
+	U_{r} = \frac{U_{P}}{fRC}
 \end{equation}
 
-Observa-se, a partir da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{O}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
+Observa-se, a partir da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{o}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
 
 \begin{equation} \label{eq:tensaosaida}
-	v_{O} = V_{P} - \dfrac{1}{2}V_{r}	
+	u_{o} = U_{P} - \dfrac{1}{2}U_{r}	
 \end{equation}
 
 No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificação de onda completa e como pode ser visto na Figura \ref{fig:sedraripplecompleta}, a frequência do \textit{ripple} é o dobro da frequência da onda de entrada.
@@ -383,14 +420,10 @@ No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificaç
 Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela Equação \ref{eq:vrippleOC}:
 
 \begin{equation} \label{eq:vrippleOC}
-	V_{r} = \frac{V_{P}}{2fRC}
+	U_{r} = \frac{U_{P}}{2fRC}
 \end{equation}
 
 São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}.
-
-Os esquemas simplificados que compõem os diversos blocos estão representados na Figura \ref{fig:rectificacao_filtragem_full} e tal como foi referido na Secção \ref{sec:fontealternada}, o rectificador de meia onda é alimentado pelo gerador de sinal, o que permite estudar a variação do \textit{ripple} com a frequência e o rectificador de onda completa pelo transformador monofásico - rectângulo tracejado a (...). O Bloco 3 é o único Bloco comum às duas experiências e é composto por um grupo de condensadores e resistências. (Ou "é composto pelo(s) filtro(s) definidos pelas quatro combinações dos condensadores e resistências" - ver com o prof). O Bloco 4 não está montado/projectado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
-
-Os relés foram projectados de forma a isolar totalmente os blocos dos circuitos, permitindo, assim, a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. Tendo como base a Figura \ref{fig:rectificacao_filtragem_full}, no caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
 
 A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
@@ -403,18 +436,22 @@ Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificado
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/filtro_PB_simplificado_trac.png} }}%
+		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/Sedra_FPB.png} }}%
 		\qquad
-		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/filtro_PA_simplificado_trac.png} }}%
-		\caption{Esquemas simplificados dos filtros}%
+		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/Sedra_FPA.png} }}%
+		\caption{Esquemas simplificados dos filtros \cite{sedrasmith}}%
 		\label{fig:filtrosesqgeral}%
 	\end{figure}
 
-A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. A Figura \ref{fig:diagramabode} apresenta um exemplo do Diagrama de \textit{Bode} de um filtro passa-alto, obtido nos testes do LaRE.
+A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
 
 \begin{equation} \label{eq:frequenciacorte}
 	f_{c} = \frac{1}{2\pi RC}
 \end{equation}
+
+\begin{comment}
+	\textbf{Acho que não é necessário referir a relação entre a tensão de entrada e a tensão de saída, já que isso é feito na parte de software. O que se pode fazer é referir que o \acrshort{lare} permite estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode} e determinar a frequência de corte.}
+A Figura \ref{fig:diagramabode} apresenta um exemplo do Diagrama de \textit{Bode} de um filtro passa-alto, obtido nos testes do LaRE.
 
 \begin{figure}[hbtp]
 	\centering
@@ -422,8 +459,21 @@ A possibilidade de variar a frequência do sinal de entrada permite que estas ex
 	\caption{Diagrama de \textit{Bode} - Filtro passa-alto}
 	\label{fig:diagramabode}
 \end{figure}
+\end{comment}
 
-Como foi dito na Secção \ref{sec:experiencias}, a integração desta experiência foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
+As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} representam os Diagramas de \textit{Bode} \textins{ideal}, sendo que o que se pretende 
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo\label{fig:Bode_pb}]{{\includegraphics[width=6cm]{figures/Sedra_BodeFPB.png} }}%
+		\qquad
+		\subfloat[\centering Filtro passa-alto\label{fig:Bode_pa}]{{\includegraphics[width=6cm]{figures/Sedra_BodeFPA.png} }}%
+		\caption{Diagramas de \textit{Bode} \textins{ideal} \cite{sedrasmith}}%
+		\label{fig:Bodeesqgeral}%
+	\end{figure}
+
+Como foi dito na Secção \ref{sec:experiencias}, a implementação desta experiência foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Isto permitiu a inclusão de uma resistência ou de um condensador, dependendo da versão do filtro, conforme representado na Figura~\ref{fig:filtro_pb} e Figura~\ref{fig:filtro_pa}, dentro do retângulo tracejado azul.
 
 Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Table:rectificadoresfiltros}, pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
 
@@ -946,18 +996,6 @@ O modelo é uniforme para todas as experiências, apresentando o respectivo esqu
 	\end{figure}
 
 \subsubsection{Lei de \textit{Ohm}}
-Como foi referido na Secção \ref{sec:lei_ohm}, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
-
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Opção 1\label{fig:Opção_1}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha.png} }}%
-		\qquad
-		\subfloat[\centering Opção 2\label{fig:Opção_2}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
-		\caption{Experiência Lei de \textit{Ohm}}%
-		\label{fig:experienciaOHM}%
-	\end{figure}
-
 Nesta experiência, optou-se por conceder liberdade de escolha e controlo aos utilizadores, o que representou um desafio à implementação. (\textbf{se calhar retirava este parágrafo}) Em vez de permitir apenas a selecção do valor da resistência, com medições realizadas (automaticamente) por \textit{software}, decidiu-se oferecer ao utilizador a possibilidade de escolher o valor da resistência e controlar as medições de tensão e corrente. Do ponto de vista pedagógico, considerou-se mais benéfico que, neste caso, os alunos verifiquem os valores das grandezas medidas à medida que realizam as medições e avançam na experiência. Além disso, o resultado e o gráfico final serão independentes da ordem pela qual se efectuam as medições. (\textbf{Este parágrafo precisa de ser revisto})
 
 A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da Lei de \textit{Ohm}. 
