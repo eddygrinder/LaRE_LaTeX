@@ -7,6 +7,110 @@
      Cooper
 \end{center}
 
+\section{Lei de \textit{Ohm}}
+\label{sec:resultados_lei_de_ohm}
+\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
+
+Na forma da Equação \ref{eq:leideohm}, a Lei de \textit{Ohm} estabelece que a resistência eléctrica ($R$) de um condutor é determinada pelo quociente entre a tensão elétrica ($U$) aplicada aos seus terminais e a corrente eléctrica ($I$) que o atravessa.  
+
+\begin{equation} \label{eq:leideohm}
+	R=\dfrac{U}{I}
+\end{equation}
+
+Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência elétrica ($R$).
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{figures/grafico_Ohm.png}
+	\caption{Gráfico da Lei de \textit{Ohm}}
+	\label{fig:graphohm}
+\end{figure}
+
+Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Opção 1\label{fig:Opção_1}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha.png} }}%
+		\qquad
+		\subfloat[\centering Opção 2\label{fig:Opção_2}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
+		\caption{Experiência Lei de \textit{Ohm}}%
+		\label{fig:experienciaOHM}%
+	\end{figure}
+O tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
+
+No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
+
+\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
+
+\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
+
+
+\section{Rectificadores}
+\label{sec:rectificadoresfiltros}
+Nesta experiência pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
+
+Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo. 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/diagramablocosrectificacao.png}
+	\caption{Diagrama de blocos geral da rectificação de meia e onda completa}
+	\label{fig:blocosrectificacao}
+\end{figure}
+
+\begin{enumerate}
+	\item Transformador;
+	\item Rectificação;
+	\item Filtragem;
+	\item Estabilização.
+\end{enumerate}
+
+No rectificador de meia onda não houve necessidade de usar um transformador, sendo que, neste caso, o Bloco 1 fica reduzido ao gerador de sinal. Esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência. O Bloco 2, rectificação, depende do tipo de rectificador que se pretende estudar - um díodo, rectângulo tracejado vermelho ou uma ponte rectificadora - rectângulo tracejado a verde. O Bloco 3 é o único Bloco comum às duas experiências. Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta. O Bloco 4 não está implementado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
+
+A tensão de \textit{ripple} é uma componente dependente do tempo que surge à saída do filtro do rectificador - Bloco 3 - sendo que terá de ser minimizada, de forma a estabilizar o valor da tensão de saída \acrshort{cc} - Bloco 4. \cite{sedrasmith} 
+
+A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple.png}
+	\caption{Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite{sedrasmith}}
+	\label{fig:sedraripple}
+\end{figure}
+
+A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vripple}:
+
+\begin{equation} \label{eq:vripple}
+	U_{r} = \frac{U_{P}}{fRC}
+\end{equation}
+
+Observa-se, a partir da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{o}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
+
+\begin{equation} \label{eq:tensaosaida}
+	u_{o} = U_{P} - \dfrac{1}{2}U_{r}	
+\end{equation}
+
+No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificação de onda completa e como pode ser visto na Figura \ref{fig:sedraripplecompleta}, a frequência do \textit{ripple} é o dobro da frequência da onda de entrada.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple_OC.png}
+	\caption{Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite{sedrasmith}}
+	\label{fig:sedraripplecompleta}
+\end{figure}
+
+Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela Equação \ref{eq:vrippleOC}:
+
+\begin{equation} \label{eq:vrippleOC}
+	U_{r} = \frac{U_{P}}{2fRC}
+\end{equation}
+
+São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}.
+
+A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
+
+\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
+
 \section{Limitações}
 \section{Melhoramentos}
 

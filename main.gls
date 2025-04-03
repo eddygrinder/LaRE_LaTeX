@@ -33,7 +33,8 @@
 		\setentrycounter[]{page}\glsnumberformat{49\delimR 53}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{56\delimN 57}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{59\delimR 61}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{69\delimR 71}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{69\delimR 71}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{79}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{scr}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{27}}}\glsgroupskip

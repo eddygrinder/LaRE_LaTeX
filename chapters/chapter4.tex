@@ -14,6 +14,8 @@ Para o desenvolvimento do \textit{software}, utilizou-se o \acrshort{ide} \texti
 
 Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em placas brancas, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}.
 
+No Anexo \ref{AppendixA} - \textit{datasheet} - encontram-se todos os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
+
 \section{Hardware}
 \subsection{Registo de deslocamento}
 \label{sec:hwregistodeslocamento}
@@ -237,7 +239,19 @@ A medição de tensão e corrente são feitas utilizando o multímetro digital -
 	\label{fig:frontDMM}
 \end{figure}
 
-Os aparelhos de medida são controlados por um conjunto de relés e foram projectados de forma a serem independentes. Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado da Lei de \textit{Ohm} que pode ilustrar o funcionamento dos aparelhos de medida. O ponto C é comum\footnote{Embora os aparelhos de medida sejam independentes e cumpram o propósito do projeto, partilham a mesma massa. Esta escolha foi motivada pela indisponibilidade de relés duplos, pelo que se optou por utilizar apenas o relé $K_{6}$ e manter a massa comum.}  e é controlado pelo relé $K_{7}$. O terminal positivo do voltímetro está ligado ao ponto A, controlado pelo relé $K_{5}$ mas o amperímetro necessita de mais um relé, já que o controlo da medição é diferente. Neste caso o relé $K_{8}$ funciona como um \textit{bypass} quando se pretende medir tensão e o relé $K{6}$ controla o terminal positivo do amperímetro. 
+Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado da Lei de \textit{Ohm} que pode ilustrar o funcionamento dos aparelhos de medida. O ponto C é comum e é controlado pelo relé $K_{7}$. O terminal positivo do voltímetro está ligado ao ponto A, controlado pelo relé $K_{5}$ mas o amperímetro necessita de mais um relé, já que o controlo da medição é diferente. Neste caso o relé $K_{8}$ funciona como um \textit{bypass} quando se pretende medir tensão e o relé $K{6}$ controla o terminal positivo do amperímetro. 
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Esquema implementado\label{fig:esq_geral_ohm}]{{\includegraphics[width=6.3cm]{figures/esquema_simplificado_OHM.png} }}%
+		\qquad
+		\subfloat[\centering Esquema com os relés duplos\label{fig:full_reles}]{{\includegraphics[width=6.3cm]{figures/esquema_simplificado_OHM_IDEAL.png} }}%
+		\caption{Esquema completo - Lei de \textit{Ohm}}%
+		\label{fig:}%
+	\end{figure}
+
+No entanto, faz-se notar o seguinte: Embora os aparelhos de medida sejam independentes, partilham a mesma massa. Esta escolha foi motivada pela indisponibilidade de relés duplos em contexto laboratorial, pelo que se optou por fazer a gestão da forma a que o propósito do projecto fosse atingido e o conceito provado. Na Figura \ref{fig:full_reles} apresenta-se o esquema simplificado, com os relés duplos, adicionados aos aparelhos de medida. 
 
 De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão implementados. 
 %Tal como pode ser visto na o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
@@ -259,61 +273,15 @@ Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas
 	\label{fig:rectificacao_filtragem_full}
 \end{figure}
 
-\textbf{NOTA: está mal exlicado, a tanto a fonte com oo voltimetro podem ser usados numa expansão. reformular este +arágrado só no que diz respeito à fonte}
-Relativamente à Lei de \textit{Ohm}, representada esquematicamente na Figura \ref{fig:esq_geral_ohm}, a fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. \sout{Neste caso, esta configuração não permite o uso simultâneo da fonte e do voltímetro. Idealmente, poderiam ter sido utilizados relés duplos para controlar e isolar completamente o voltímetro e a fonte de tensão. Ainda assim, o voltímetro pode ser utilizado noutras experiências, desativando $K_{4}$ e $K_{7}$ e ligando o componente a medir entre os pontos A e C. Da mesma forma, a fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$. O amperímetro, sendo independente, pode ser usado ligando o que se pretende medir entre os pontos B e C. JÁ FOI FALADO } NÃO HA NECEISSAD E RELÉS DUPLOS, EMBORA SE PUDESSE TER USADO UM RELÉ DUPLO NA FONTE
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/esquema_simplificado_OHM.png}
-	\caption{Esquema simplificado da experiência Lei de Ohm}
-	\label{fig:esq_geral_ohm}
-\end{figure}
+Relativamente à Lei de \textit{Ohm}, representada esquematicamente na Figura \ref{fig:esq_geral_ohm}, a fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
 
 O mesmo se aplica aos Rectificadores/Filtros. Tendo como base a Figura \ref{fig:rectificacao_filtragem_full}, no caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
-
-No Anexo \ref{AppendixA} - \textit{datasheet} - encontram-se os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
 
 \textbf{Coloca aqui, falvez, uma foto da matriz lare}
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
-\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
-
-Na forma da Equação \ref{eq:leideohm}, a Lei de \textit{Ohm} estabelece que a resistência eléctrica ($R$) de um condutor é determinada pelo quociente entre a tensão elétrica ($U$) aplicada aos seus terminais e a corrente eléctrica ($I$) que o atravessa.  
-
-\begin{equation} \label{eq:leideohm}
-	R=\dfrac{U}{I}
-\end{equation}
-
-Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência elétrica ($R$).
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.3\textwidth]{figures/grafico_Ohm.png}
-	\caption{Gráfico da Lei de \textit{Ohm}}
-	\label{fig:graphohm}
-\end{figure}
-
-Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
-
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Opção 1\label{fig:Opção_1}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha.png} }}%
-		\qquad
-		\subfloat[\centering Opção 2\label{fig:Opção_2}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
-		\caption{Experiência Lei de \textit{Ohm}}%
-		\label{fig:experienciaOHM}%
-	\end{figure}
-O tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
-
-No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
-
-\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
-
-\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
-
-O funcionamento do circuito é relativamente simples e está representado na Figura \ref{fig:esq_geral_ohm}. Qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ - \textbf{ATENÇÃO: mudar no esquema de Vcc para Ucc} é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
+O funcionamento do circuito é relativamente simples e está representado na Figura \ref{fig:esq_geral_ohm}. Qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
 
 A medição da tensão e da corrente faz-se da seguinte forma:
 \begin{itemize}
@@ -363,26 +331,27 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 \end{figure}
 \end{comment}
 
-\subsubsection{Rectificadores}
-\label{sec:rectificadoresfiltros}
-Nesta experiência pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
-
-Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo. 
+A placa desenvolvida para esta experiência, assim como a referência aos ``blocos'', está representada na Figura \ref{fig:placaleideohm}. 
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/diagramablocosrectificacao.png}
-	\caption{Diagrama de blocos geral da rectificação de meia e onda completa}
-	\label{fig:blocosrectificacao}
+	\includegraphics[width=0.5\textwidth]{figures/lare_ohm_BLOCOS.png}
+	\caption{Implementação práctica da Lei de \textit{Ohm}}
+	\label{fig:placaleideohm}
 \end{figure}
 
 \begin{enumerate}
-	\item Transformador;
-	\item Rectificação;
-	\item Filtragem;
-	\item Estabilização.
+	\item Ligação ao \gls{RaspberryPI} através de um conector \acrfull{idc} de 40 pinos;
+	\item Relés;
+	\item Ligações aos aparelhos de medida;
+	\item \textit{Drivers} de relés e registo de deslocamento;
+	\item Resistências em estudo;
+	\item Ligação à placa seguinte através de conectores ``Arduino stackable''.
 \end{enumerate}
 
+\subsubsection{Rectificadores}
+\label{sec:rectificadoresfiltros}
+Na implementação dos rectificadores 
 No rectificador de meia onda não houve necessidade de usar um transformador, sendo que, neste caso, o Bloco 1 fica reduzido ao gerador de sinal. Esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência. O Bloco 2, rectificação, depende do tipo de rectificador que se pretende estudar - um díodo, rectângulo tracejado vermelho ou uma ponte rectificadora - rectângulo tracejado a verde. O Bloco 3 é o único Bloco comum às duas experiências. Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta. O Bloco 4 não está implementado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
 
 A tensão de \textit{ripple} é uma componente dependente do tempo que surge à saída do filtro do rectificador - Bloco 3 - sendo que terá de ser minimizada, de forma a estabilizar o valor da tensão de saída \acrshort{cc} - Bloco 4. \cite{sedrasmith} 
