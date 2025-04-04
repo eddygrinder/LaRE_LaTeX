@@ -8,9 +8,9 @@
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{TRIAC?\glossentry{triac}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{DIAC?\glossentry{diac}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{SCR?\glossentry{scr}|setentrycounter[]{page}"\glsnumberformat}{25}
+\glossaryentry{TRIAC?\glossentry{triac}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{DIAC?\glossentry{diac}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{SCR?\glossentry{scr}|setentrycounter[]{page}"\glsnumberformat}{27}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{29}
 \glossaryentry{ESP32?\glossentry{ESP32}|setentrycounter[]{page}"\glsnumberformat}{29}
 \glossaryentry{Industry 4.0?\glossentry{industria40}|setentrycounter[]{page}"\glsnumberformat}{32}
@@ -23,7 +23,7 @@
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{48}
 \glossaryentry{Python?\glossentry{python}|setentrycounter[]{page}"\glsnumberformat}{48}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{48}
-\glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{48}
+\glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{49}
 \glossaryentry{Python?\glossentry{python}|setentrycounter[]{page}"\glsnumberformat}{49}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{49}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{49}
@@ -33,35 +33,11 @@
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{49}
 \glossaryentry{ESP32?\glossentry{ESP32}|setentrycounter[]{page}"\glsnumberformat}{49}
 \glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{49}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{49}
+\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{50}
 \glossaryentry{Python?\glossentry{python}|setentrycounter[]{page}"\glsnumberformat}{50}
 \glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{50}
-\glossaryentry{"\textit {wrapper}?\glossentry{wrapper}|setentrycounter[]{page}"\glsnumberformat}{50}
-\glossaryentry{Python?\glossentry{python}|setentrycounter[]{page}"\glsnumberformat}{50}
-\glossaryentry{"\textit {wrapper}?\glossentry{wrapper}|setentrycounter[]{page}"\glsnumberformat}{50}
-\glossaryentry{"\textit {wrapper}?\glossentry{wrapper}|setentrycounter[]{page}"\glsnumberformat}{50}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{"\textit {wrapper}?\glossentry{wrapper}|setentrycounter[]{page}"\glsnumberformat}{51}
 \glossaryentry{Python?\glossentry{python}|setentrycounter[]{page}"\glsnumberformat}{51}
+\glossaryentry{"\textit {wrapper}?\glossentry{wrapper}|setentrycounter[]{page}"\glsnumberformat}{51}
 \glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{51}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{52}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{52}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{52}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{52}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{53}
-\glossaryentry{PC/104?\glossentry{pc/104}|setentrycounter[]{page}"\glsnumberformat}{55}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{56}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{56}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{59}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{59}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{59}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{60}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{61}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{69}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{70}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{70}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{71}
-\glossaryentry{RaspberryPI?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{Python?\glossentry{python}|setentryco

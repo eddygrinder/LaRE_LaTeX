@@ -95,6 +95,72 @@ A implementação destas duas experiências foi feita de forma a que se possa es
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
+No caso dos rectificadores, o Bloco 1 fica reduzido ao gerador de sinal, sendo que esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência ou ao transformador monofásico. \textbf{Nota: Complementar com a foto da placa da fonte} O Bloco 2, depende do tipo de rectificador que se pretende estudar - um díodo ou uma ponte rectificadora, item \ref{diodos}. O Bloco 3 é o único bloco comum às duas experiências. Embora no estudo da rectificação de meia onda se use, somente, os componentes descritos nos itens \ref{resistencias} e \ref{condensadores}, já na implementação dos filtros, usou-se mais um condensador e uma resistência, descritos no item \ref{rescond}. 
+
+Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta.
+
+\subsubsection{Filtros}
+\label{sec:filtros}
+Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/Sedra_FPB.png} }}%
+		\qquad
+		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/Sedra_FPA.png} }}%
+		\caption{Esquemas simplificados dos filtros \cite{sedrasmith}}%
+		\label{fig:filtrosesqgeral}%
+	\end{figure}
+
+A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
+
+\begin{equation} \label{eq:frequenciacorte}
+	f_{c} = \frac{1}{2\pi RC}
+\end{equation}
+
+\begin{comment}
+	\textbf{Acho que não é necessário referir a relação entre a tensão de entrada e a tensão de saída, já que isso é feito na parte de software. O que se pode fazer é referir que o \acrshort{lare} permite estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode} e determinar a frequência de corte.}
+A Figura \ref{fig:diagramabode} apresenta um exemplo do Diagrama de \textit{Bode} de um filtro passa-alto, obtido nos testes do LaRE.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/bode_lpf.png}
+	\caption{Diagrama de \textit{Bode} - Filtro passa-alto}
+	\label{fig:diagramabode}
+\end{figure}
+\end{comment}
+
+As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} apresentam os Diagramas de \textit{Bode} \textins{ideais}, que servem de referência para o estudo desta experiência. 
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo\label{fig:Bode_pb}]{{\includegraphics[width=6cm]{figures/Sedra_BodeFPB.png} }}%
+		\qquad
+		\subfloat[\centering Filtro passa-alto\label{fig:Bode_pa}]{{\includegraphics[width=6cm]{figures/Sedra_BodeFPA.png} }}%
+		\caption{Diagramas de \textit{Bode} \textins{ideal} \cite{sedrasmith}}%
+		\label{fig:Bodeesqgeral}%
+	\end{figure}
+
+	Para além da análise em frequência, um outro aspeto complementar a considerar é a relação entre as ondas de entrada e saída, em função da frequência. Nos filtros, o intervalo de frequências permitido é igual ao já referido para os rectificadores: entre \SI{50}{\hertz} a \SI{2000}{\hertz}. 
+	
+	A frequência de corte de um filtro é definida como o ponto onde o ganho do filtro sofre uma atenuação de \SI{3}{\decibel} em relação ao seu valor máximo. 	Para um filtro passa-baixo (passa-alto) ideal, o ganho em baixas (altas) frequências é unitário. Quando o sinal atinge a frequência de corte, a relação entre a tensão de saída e a tensão de entrada reduz-se para:  
+	
+	\begin{equation} \label{eq:relacaoGanho}
+		\frac{U_{out}}{U_{in}} = \frac{1}{\sqrt{2}} \approx 0.707
+	\end{equation}
+	
+	\ldots ou na escala logarítmica:  
+\begin{equation} \label{eq:relacaoGanhodB}
+	\frac{U_{out}}{U_{in}} = 20 \log_{10} (0.707) \approx -\SI{3}{\decibel}	
+\end{equation}
+	
+Assim, a frequência de corte de um filtro corresponde ao ponto em que a amplitude do sinal de saída é aproximadamente $70.7\%$ da amplitude do sinal de entrada, o que corresponde a -\SI{3}{\decibel}. 
+
+
+
+
 \section{Limitações}
 \section{Melhoramentos}
 
