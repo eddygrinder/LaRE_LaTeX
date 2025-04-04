@@ -264,26 +264,15 @@ Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm},
 
 De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do \acrshort{lare}.
 
-\textbf{NOTA: Acho que os par+agrafos seguintes ficariam melhores nas respectivas secções}
-
-Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas completos e simplificados dos circuitos que compõem as duas experiências - Rectificadores e Filtros. Nele se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão, também, representados no rectângulo tracejado magenta.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/rec_fil_FULL.png}
-	\caption{Esquema completo (simplificado) - rectificadores e filtros}
-	\label{fig:rectificacao_filtragem_full}
-\end{figure}
-
-Relativamente à Lei de \textit{Ohm}, representada esquematicamente na Figura \ref{fig:esq_geral_ohm}, a fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
-
 O mesmo se aplica aos Rectificadores/Filtros. Tendo como base a Figura \ref{fig:rectificacao_filtragem_full}, no caso do gerador de sinal, este é isolado utilizando um relé duplo $K_{1}$ e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
 
 \textbf{Coloca aqui, falvez, uma foto da matriz lare}
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
-O funcionamento do circuito é relativamente simples e está representado na Figura \ref{fig:esq_geral_ohm}. Qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
+Na Figura \ref{fig:esq_geral_ohm}, está representado o esquema da Lei de \textit{Ohm} implementado na práctica. A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
+
+O funcionamento do circuito é relativamente simples, sendo que qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
 
 A medição da tensão e da corrente faz-se da seguinte forma:
 \begin{itemize}
@@ -343,17 +332,28 @@ A placa desenvolvida para esta experiência, assim como a referência aos ``bloc
 \end{figure}
 
 \begin{enumerate}
-	\item Ligação ao \gls{RaspberryPI} através de um conector \acrfull{idc} de 40 pinos;
-	\item Relés;
-	\item Ligações aos aparelhos de medida;
-	\item \textit{Drivers} de relés e registo de deslocamento;
-	\item Resistências em estudo;
-	\item Ligação à placa seguinte através de conectores ``Arduino stackable''.
+	\item Ligação ao \gls{RaspberryPI} através de um conector \acrfull{idc} de 40 pinos (1);
+	\item Relés (2);
+	\item Ligações aos aparelhos de medida (3);
+	\item \textit{Drivers} de relés e registo de deslocamento (4);
+	\item Resistências em estudo (5);
+	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6).
 \end{enumerate}
 
-\subsubsection{Rectificadores}
+\subsubsection{Rectificadores e filtros}
 \label{sec:rectificadoresfiltros}
-Na implementação dos rectificadores houve a necessidade de utilizar dois tipos de tensão de entrada. Como referido na Secção \ref{sec:fontesalimentacao}, o circuito de meia onda utiliza o gerador de sinal mas devido ao problema de massa, já explicado na mesma secção, foi necessário usar um transformador.
+Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentar as duas experiências em conjunto. 
+
+Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas completos e simplificados dos circuitos. Nele se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão, também, representados no rectângulo tracejado magenta.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/rec_fil_FULL.png}
+	\caption{Esquema completo (simplificado) - rectificadores e filtros}
+	\label{fig:rectificacao_filtragem_full}
+\end{figure}
+
+Na implementação dos rectificadores houve a necessidade de utilizar dois tipos de tensão de entrada. Como referido na Secção \ref{sec:fontesalimentacao}, o circuito de meia onda utiliza o gerador de sinal mas devido ao problema de massa, já explicado na mesma secção, foi necessário usar um transformador na implementação da rectificação de onda completa.
 
 Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo.
 
@@ -371,14 +371,36 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 	\item Estabilização.
 \end{enumerate}
 
-No caso do rectificador de meia onda, o Bloco 1 fica reduzido ao gerador de sinal, sendo que esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência. O Bloco 2 depende do tipo de rectificador que se pretende estudar - um díodo, rectângulo tracejado vermelho ou uma ponte rectificadora - rectângulo tracejado a verde. O Bloco 3 é o único Bloco comum às duas experiências. Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta. O Bloco 4 não está implementado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
+A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das duas experiências. 
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/lare_rectificador_filtros.jpg}
+	\includegraphics[width=0.5\textwidth]{figures/lare_rectificador_filtros_BLOCOS.png}
 	\caption{Implementação práctica dos rectificadores e filtros}
 	\label{fig:placarectificadores}
 \end{figure}
+
+%A implementação prática é composta pelos três blocos\footnote{A inclusão da estabilização poderá ser objecto de trabalho futuro.}, como se pode ver na Figura \ref{fig:placarectificadores}. 
+\begin{enumerate}
+	\item Bloco 1 - \textbf{NOTA: Adicionaor a foto da outra polaca onde está o transformador, fonte e entradas do gerador de sinal}
+	\item Bloco 2 - Rectificação;
+		\begin{enumerate}
+			\item \label{diodos}Díodo rectificador ($1_{a}$) e Ponte rectificadora ($1_{b}$);	
+		\end{enumerate}
+	\item Bloco 3 - Filtragem \textins{componentes comuns a ambas as experiências};
+		\begin{enumerate}
+			\item \label{resistencias}Resistências (3);
+			\item \label{condensadores}Condensadores (5);
+		\end{enumerate}
+	\item Relés (2);
+	\item \textit{Drivers} de relés e registo de deslocamento (4);
+	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6);
+	\item Resistência e condensador exclusivo dos filtros (7).
+\end{enumerate}
+
+No caso dos rectificadores, o Bloco 1 fica reduzido ao gerador de sinal, sendo que esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência ou ao transformador monofásico. \textbf{Nota: Complementar com a foto da placa da fonte} O Bloco 2, depende do tipo de rectificador que se pretende estudar - um díodo ou uma ponte rectificadora, item \ref{diodos}. O Bloco 3 é o único bloco comum às duas experiências. Embora no estudo da rectificação de meia onda se use, somente, os componentes descritos nos itens \ref{resistencias} e \ref{condensadores}, já na implementação dos filtros, usou-se mais um condensador e uma resistência, descritos no item \ref{rescond}. 
+
+Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta.
 
 \textbf{Colocar aqui a foto com os blocos e enunciar os componentes que estão dentro de cada bloco.}
 
