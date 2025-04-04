@@ -353,20 +353,6 @@ Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas
 	\label{fig:rectificacao_filtragem_full}
 \end{figure}
 
-Como já foi referido na Secção \ref{sec:experiencias}, a implementação dos filtros foi feita após a conclusão dos rectificadores. De forma a integrar estas experiências no circuito já implementado, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (indicado pelo retângulo tracejado vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Isto permitiu a inclusão de uma resistência ou de um condensador.
-% dependendo da versão do filtro, conforme representado no rectângulo tracejado magenta.
-A Figura \ref{fig:filtro_pa}
-
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/Sedra_FPB.png} }}%
-		\qquad
-		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/Sedra_FPA_GIMP.png} }}%
-		\caption{Esquemas simplificados dos filtros \cite{sedrasmith}}%
-		\label{fig:filtrosesqgeral}%
-	\end{figure}
-
 Na implementação dos rectificadores houve a necessidade de utilizar dois tipos de tensão de entrada. Como referido na Secção \ref{sec:fontesalimentacao}, o circuito de meia onda utiliza o gerador de sinal mas devido ao problema de massa, já explicado na mesma secção, foi necessário usar um transformador na rectificação de onda completa.
 
 Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo.
@@ -414,6 +400,24 @@ A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das
 
 \textbf{Colocar aqui a foto com os blocos e enunciar os componentes que estão dentro de cada bloco.}
 
+
+Como referido na Secção \ref{sec:experiencias}, a implementação dos filtros foi realizada após a conclusão dos rectificadores. De forma a permitir a integração desta experiência no circuito já concluído, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (assinalado pelo retângulo tracejado a vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Esta alteração permitiu a introdução de uma resistência ($R_{3}$) ou de um condensador ($C_{3}$), consoante a configuração do filtro em estudo.
+
+Os esquemas teóricos dos filtros estão representados nas Figuras \ref{fig:filtro_pb} e \ref{fig:filtro_pa}, sendo que $R$ e $C$  correspondem a $R_{3}$ e $C_{3}$.
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/Sedra_FPB_GIMP.png} }}%
+		\qquad
+		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/Sedra_FPA_GIMP.png} }}%
+		\caption{Esquemas dos filtros \cite{sedrasmith}}%
+		\label{fig:filtrosesqgeral}%
+	\end{figure}
+
+Portanto, se se pretender estudar o filtro passa-baixo, é activado o relé $K_{10}$ ($R_{3}$) e o condensador de saída pode ser escolhido entre os $C_{1}$ e $C_{2}$, consoante a configuração que se pretende estudar. O mesmo se aplica ao filtro passa-alto, onde o relé $K_{11}$ ($C_{3}$) é activado e a resistência de saída pode ser escolhida entre os $R_{1}$ e $R_{2}$. Um exemplo de configuração para cada filtro pode ser consultado na Tabela \ref{Table:rectificadoresfiltros}.
+
+
 A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
 \textbf{Nota: Colocar aqui as combinações de resistências e condensadores, assim como a foto da placa com os componentes.}
@@ -421,7 +425,7 @@ A implementação destas duas experiências foi feita de forma a que se possa es
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
 
 
-Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} e da Tabela \ref{Table:rectificadoresfiltros}, pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
+Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} (ou do circuito completo apresentado no Anexo \ref{AppendixA}) e da Tabela \ref{Table:rectificadoresfiltros}, pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
 
 \begin{table}[htb]
 	\centering
