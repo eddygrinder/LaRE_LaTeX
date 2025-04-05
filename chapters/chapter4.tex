@@ -267,9 +267,13 @@ De forma a permitir um melhor desenvolvimento, foco, organização, detecção e
 
 \subsubsection{Alimentação e ligação entre placas}
 \label{sec:alimentacaoligacaoplacas}
+Como já referido anteriormente, \textbf{NOTA: verificar a referência} a matriz do \acrshort{lare} é composta por três placas: a placa de das fontes de alimentação, a placa da Lei de \textit{Ohm} e a placa dos rectificadores/filtros. A Figura \ref{AppendixA} apresenta a disposição das placas. O \acrshort{virtualbench} fornece a alimentação \acrshort{cc} às placas das experiências através dos conectores KK, 2.54 mm, M/F. 
+
+Para permitir a interligação entre as placas, facilitando, assim, a manutenção e/ou remoção das placas, usaram-se os conectores de 6 pinos Arduino \textit{Stackable}. 
+
 O tipo de ligações entre as três placas podem ser consultadas na Tabela 3 no Apendice \ref{AppendixA}. 
 
-A ligação das fontes de alimentação e os diversos sinais provenientes do \acrshort{virtualbench} são feitas através de conectores KK, 2.54 mm, M/F. 
+As ligações das fontes de alimentação e os diversos sinais provenientes do \acrshort{virtualbench} são feitas através de conectores KK, 2.54 mm, M/F. Estes mesmos conectores servem para ligar as fontes de alimentação entre placas. Os conectores KK são utilizados para fazer a ligação entre as placas do \acrshort{lare} e o \acrshort{virtualbench}. A ligação entre as placas é feita através de cabos de ligação, de forma a permitir a fácil remoção das placas, caso seja necessário.
 
 
 Na Secção \ref{sec:fontesalimentacao} foram já descritas todas as fontes de alimentação do \acrshort{lare}.Tendo como base a Figura \ref{fig:rectificacao_filtragem_full}, no caso do gerador de sinal, este é comandado através do relé duplo $K_{1}$, sendo que a ligação à placa é feita através de um conector KK, 2.54 mm, M/F  e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
