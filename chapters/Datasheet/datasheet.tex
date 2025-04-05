@@ -18,6 +18,8 @@
 \usepackage{multirow} 
 \usepackage{libertine}
 \usepackage{pdfpages}
+\usepackage{xr} % ou \usepackage{xr-hyper} se estiveres a usar hyperref
+\externaldocument{../appendixA} % o nome do ficheiro .tex que contém a secção que queres referenciar
 
 \renewcommand*\familydefault{\sfdefault}  %% Only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -121,6 +123,7 @@ Relés & \multicolumn{2}{c}{Bobine} & \multicolumn{5}{c}{Contactos}\\
 
 \begin{table}[htb]
 \caption{Ligações entre placas - \textbf{Sujeito a mudança}}
+\label{Table:ligacoesplacas}
 \centering
 \begin{tabular}{lr}
 \toprule
