@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.27)  4 APR 2025 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.27)  5 APR 2025 14:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1930,83 +1930,82 @@ Package pdftex.def Info: figures/esquema_simplificado_OHM_IDEAL.png  used on inp
 <figures/lare_ohm_BLOCOS.png, id=2702, 2906.86pt x 2719.15875pt>
 File: figures/lare_ohm_BLOCOS.png Graphic file (type png)
 <use figures/lare_ohm_BLOCOS.png>
-Package pdftex.def Info: figures/lare_ohm_BLOCOS.png  used on input line 329.
+Package pdftex.def Info: figures/lare_ohm_BLOCOS.png  used on input line 332.
 (pdftex.def)             Requested size: 199.1693pt x 186.29445pt.
 
 
 [78]
-<figures/rec_fil_FULL.png, id=2715, 815.045pt x 778.91pt>
+<figures/rec_fil_FULL.png, id=2716, 815.045pt x 778.91pt>
 File: figures/rec_fil_FULL.png Graphic file (type png)
 <use figures/rec_fil_FULL.png>
-Package pdftex.def Info: figures/rec_fil_FULL.png  used on input line 351.
+Package pdftex.def Info: figures/rec_fil_FULL.png  used on input line 354.
 (pdftex.def)             Requested size: 199.1693pt x 190.34138pt.
-
-
-[79 <./figures/lare_ohm_BLOCOS.png> <./figures/rec_fil_FULL.png>]
-<figures/diagramablocosrectificacao.png, id=2727, 1193.45876pt x 407.5225pt>
+<figures/diagramablocosrectificacao.png, id=2720, 1193.45876pt x 407.5225pt>
 File: figures/diagramablocosrectificacao.png Graphic file (type png)
 <use figures/diagramablocosrectificacao.png>
-Package pdftex.def Info: figures/diagramablocosrectificacao.png  used on input line 362.
+Package pdftex.def Info: figures/diagramablocosrectificacao.png  used on input line 365.
 (pdftex.def)             Requested size: 278.8358pt x 95.20815pt.
-<figures/lare_rectificador_filtros_BLOCOS.png, id=2729, 2849.64626pt x 2761.31625pt>
+<figures/lare_rectificador_filtros_BLOCOS.png, id=2722, 2849.64626pt x 2761.31625pt>
 File: figures/lare_rectificador_filtros_BLOCOS.png Graphic file (type png)
 <use figures/lare_rectificador_filtros_BLOCOS.png>
-Package pdftex.def Info: figures/lare_rectificador_filtros_BLOCOS.png  used on input line 378.
+Package pdftex.def Info: figures/lare_rectificador_filtros_BLOCOS.png  used on input line 381.
 (pdftex.def)             Requested size: 199.1693pt x 192.97481pt.
 
 
-[80 <./figures/diagramablocosrectificacao.png> <./figures/lare_rectificador_filtros_BLOCOS.png>]
-<figures/Sedra_FPB_GIMP.png, id=2745, 500.87125pt x 252.945pt>
+[79 <./figures/lare_ohm_BLOCOS.png>]
+
+[80 <./figures/rec_fil_FULL.png> <./figures/diagramablocosrectificacao.png>]
+<figures/Sedra_FPB_GIMP.png, id=2747, 500.87125pt x 252.945pt>
 File: figures/Sedra_FPB_GIMP.png Graphic file (type png)
 <use figures/Sedra_FPB_GIMP.png>
-Package pdftex.def Info: figures/Sedra_FPB_GIMP.png  used on input line 411.
+Package pdftex.def Info: figures/Sedra_FPB_GIMP.png  used on input line 414.
 (pdftex.def)             Requested size: 170.71652pt x 86.21243pt.
-<figures/Sedra_FPA_GIMP.png, id=2746, 504.88625pt x 288.07625pt>
+<figures/Sedra_FPA_GIMP.png, id=2748, 504.88625pt x 288.07625pt>
 File: figures/Sedra_FPA_GIMP.png Graphic file (type png)
 <use figures/Sedra_FPA_GIMP.png>
-Package pdftex.def Info: figures/Sedra_FPA_GIMP.png  used on input line 413.
+Package pdftex.def Info: figures/Sedra_FPA_GIMP.png  used on input line 416.
 (pdftex.def)             Requested size: 170.71652pt x 97.40834pt.
 
 
-[81 <./figures/Sedra_FPB_GIMP.png> <./figures/Sedra_FPA_GIMP.png>]
+[81 <./figures/lare_rectificador_filtros_BLOCOS.png>]
 
-[82]
-<figures/fluxograma_flask.drawio.png, id=2781, 282.05376pt x 303.1325pt>
+[82 <./figures/Sedra_FPB_GIMP.png> <./figures/Sedra_FPA_GIMP.png>]
+<figures/fluxograma_flask.drawio.png, id=2787, 282.05376pt x 303.1325pt>
 File: figures/fluxograma_flask.drawio.png Graphic file (type png)
 <use figures/fluxograma_flask.drawio.png>
-Package pdftex.def Info: figures/fluxograma_flask.drawio.png  used on input line 476.
+Package pdftex.def Info: figures/fluxograma_flask.drawio.png  used on input line 479.
 (pdftex.def)             Requested size: 278.8358pt x 299.69507pt.
 
 
-[83 <./figures/fluxograma_flask.drawio.png>]
-<figures/tree_flask.png, id=2790, 373.395pt x 767.86874pt>
+[83]
+<figures/tree_flask.png, id=2796, 373.395pt x 767.86874pt>
 File: figures/tree_flask.png Graphic file (type png)
 <use figures/tree_flask.png>
-Package pdftex.def Info: figures/tree_flask.png  used on input line 485.
+Package pdftex.def Info: figures/tree_flask.png  used on input line 488.
 (pdftex.def)             Requested size: 119.50279pt x 245.74644pt.
 
 
-[84 <./figures/tree_flask.png (PNG copy)>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+[84 <./figures/fluxograma_flask.drawio.png>] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
 
-[85]
+[85 <./figures/tree_flask.png (PNG copy)>]
 
 [86]
 
 [87]
 
 [88]
-<figures/Diagrama_simplificado.drawio.png, id=2865, 424.58624pt x 397.485pt>
+<figures/Diagrama_simplificado.drawio.png, id=2874, 424.58624pt x 397.485pt>
 File: figures/Diagrama_simplificado.drawio.png Graphic file (type png)
 <use figures/Diagrama_simplificado.drawio.png>
-Package pdftex.def Info: figures/Diagrama_simplificado.drawio.png  used on input line 620.
+Package pdftex.def Info: figures/Diagrama_simplificado.drawio.png  used on input line 623.
 (pdftex.def)             Requested size: 278.8358pt x 261.04903pt.
 
 
-[89 <./figures/Diagrama_simplificado.drawio.png>]
+[89]
 
-[90]
+[90 <./figures/Diagrama_simplificado.drawio.png>]
 
 [91]
 
@@ -2021,60 +2020,60 @@ Package pdftex.def Info: figures/Diagrama_simplificado.drawio.png  used on input
 [96]
 
 [97]
-<figures/erro_pagina.png, id=3044, 769.87625pt x 430.60875pt>
+<figures/erro_pagina.png, id=3055, 769.87625pt x 430.60875pt>
 File: figures/erro_pagina.png Graphic file (type png)
 <use figures/erro_pagina.png>
-Package pdftex.def Info: figures/erro_pagina.png  used on input line 890.
+Package pdftex.def Info: figures/erro_pagina.png  used on input line 893.
 (pdftex.def)             Requested size: 278.8358pt x 155.96518pt.
-<figures/login.png, id=3050, 308.15125pt x 353.32pt>
+<figures/login.png, id=3061, 308.15125pt x 353.32pt>
 File: figures/login.png Graphic file (type png)
 <use figures/login.png>
-Package pdftex.def Info: figures/login.png  used on input line 916.
+Package pdftex.def Info: figures/login.png  used on input line 919.
 (pdftex.def)             Requested size: 119.50279pt x 137.0179pt.
-<figures/menupage.png, id=3054, 1168.365pt x 674.52pt>
+<figures/menupage.png, id=3065, 1168.365pt x 674.52pt>
 File: figures/menupage.png Graphic file (type png)
 <use figures/menupage.png>
-Package pdftex.def Info: figures/menupage.png  used on input line 930.
+Package pdftex.def Info: figures/menupage.png  used on input line 933.
 (pdftex.def)             Requested size: 278.8358pt x 160.97209pt.
 
 
 [98 <./figures/erro_pagina.png>]
 
 [99 <./figures/login.png (PNG copy)> <./figures/menupage.png (PNG copy)>]
-<figures/ohm_page.png, id=3068, 1141.26375pt x 666.49pt>
+<figures/ohm_page.png, id=3079, 1141.26375pt x 666.49pt>
 File: figures/ohm_page.png Graphic file (type png)
 <use figures/ohm_page.png>
-Package pdftex.def Info: figures/ohm_page.png  used on input line 941.
+Package pdftex.def Info: figures/ohm_page.png  used on input line 944.
 (pdftex.def)             Requested size: 170.71652pt x 99.6946pt.
-<figures/ohm_page_controlo.png, id=3069, 1153.30875pt x 604.2575pt>
+<figures/ohm_page_controlo.png, id=3080, 1153.30875pt x 604.2575pt>
 File: figures/ohm_page_controlo.png Graphic file (type png)
 <use figures/ohm_page_controlo.png>
-Package pdftex.def Info: figures/ohm_page_controlo.png  used on input line 943.
+Package pdftex.def Info: figures/ohm_page_controlo.png  used on input line 946.
 (pdftex.def)             Requested size: 170.71652pt x 89.43608pt.
-<figures/ohm_page_controlo-FULL.png, id=3071, 1153.30875pt x 604.2575pt>
+<figures/ohm_page_controlo-FULL.png, id=3082, 1153.30875pt x 604.2575pt>
 File: figures/ohm_page_controlo-FULL.png Graphic file (type png)
 <use figures/ohm_page_controlo-FULL.png>
-Package pdftex.def Info: figures/ohm_page_controlo-FULL.png  used on input line 955.
+Package pdftex.def Info: figures/ohm_page_controlo-FULL.png  used on input line 958.
 (pdftex.def)             Requested size: 278.8358pt x 146.0943pt.
 
 
-[100 <./figures/ohm_page.png (PNG copy)> <./figures/ohm_page_controlo.png (PNG copy)> <./figures/ohm_page_controlo-FULL.png>]
-<figures/meiaonda_page_controlo.png, id=3084, 1149.29375pt x 602.25pt>
+[100 <./figures/ohm_page.png (PNG copy)> <./figures/ohm_page_controlo.png (PNG copy)>]
+<figures/meiaonda_page_controlo.png, id=3096, 1149.29375pt x 602.25pt>
 File: figures/meiaonda_page_controlo.png Graphic file (type png)
 <use figures/meiaonda_page_controlo.png>
-Package pdftex.def Info: figures/meiaonda_page_controlo.png  used on input line 976.
+Package pdftex.def Info: figures/meiaonda_page_controlo.png  used on input line 979.
 (pdftex.def)             Requested size: 278.8358pt x 146.11436pt.
 
 
-[101 <./figures/meiaonda_page_controlo.png>]
-<figures/ondacompleta_control.png, id=3093, 1161.33875pt x 601.24625pt>
+[101 <./figures/ohm_page_controlo-FULL.png>]
+<figures/ondacompleta_control.png, id=3108, 1161.33875pt x 601.24625pt>
 File: figures/ondacompleta_control.png Graphic file (type png)
 <use figures/ondacompleta_control.png>
-Package pdftex.def Info: figures/ondacompleta_control.png  used on input line 987.
+Package pdftex.def Info: figures/ondacompleta_control.png  used on input line 990.
 (pdftex.def)             Requested size: 278.8358pt x 144.35709pt.
 
 
-[102 <./figures/ondacompleta_control.png (PNG copy)>])
+[102 <./figures/meiaonda_page_controlo.png> <./figures/ondacompleta_control.png (PNG copy)>])
 
 [103]
 \openout2 = `chapters/chapter5.aux'.
@@ -2088,17 +2087,17 @@ Package pdftex.def Info: figures/ondacompleta_control.png  used on input line 98
 
 ]
 Cap\'{\i }tulo 5.
-<figures/grafico_Ohm.png, id=3130, 847.165pt x 832.10875pt>
+<figures/grafico_Ohm.png, id=3147, 847.165pt x 832.10875pt>
 File: figures/grafico_Ohm.png Graphic file (type png)
 <use figures/grafico_Ohm.png>
 Package pdftex.def Info: figures/grafico_Ohm.png  used on input line 24.
 (pdftex.def)             Requested size: 119.50279pt x 117.37051pt.
-<figures/ohm_escolha.png, id=3135, 788.9475pt x 505.89pt>
+<figures/ohm_escolha.png, id=3152, 788.9475pt x 505.89pt>
 File: figures/ohm_escolha.png Graphic file (type png)
 <use figures/ohm_escolha.png>
 Package pdftex.def Info: figures/ohm_escolha.png  used on input line 34.
 (pdftex.def)             Requested size: 179.25244pt x 114.93962pt.
-<figures/ohm_escolha_abc.png, id=3136, 778.91pt x 522.95375pt>
+<figures/ohm_escolha_abc.png, id=3153, 778.91pt x 522.95375pt>
 File: figures/ohm_escolha_abc.png Graphic file (type png)
 <use figures/ohm_escolha_abc.png>
 Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 36.
@@ -2108,12 +2107,12 @@ Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 36.
 [105]
 
 [106 <./figures/grafico_Ohm.png> <./figures/ohm_escolha.png> <./figures/ohm_escolha_abc.png>]
-<figures/sedra_ripple.png, id=3154, 806.01125pt x 381.425pt>
+<figures/sedra_ripple.png, id=3171, 806.01125pt x 381.425pt>
 File: figures/sedra_ripple.png Graphic file (type png)
 <use figures/sedra_ripple.png>
 Package pdftex.def Info: figures/sedra_ripple.png  used on input line 60.
 (pdftex.def)             Requested size: 278.8358pt x 131.9526pt.
-<figures/sedra_ripple_OC.png, id=3162, 836.12375pt x 313.17pt>
+<figures/sedra_ripple_OC.png, id=3179, 836.12375pt x 313.17pt>
 File: figures/sedra_ripple_OC.png Graphic file (type png)
 <use figures/sedra_ripple_OC.png>
 Package pdftex.def Info: figures/sedra_ripple_OC.png  used on input line 81.
@@ -2131,12 +2130,12 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 
 [108 <./figures/sedra_ripple_OC.png>]
-<figures/Sedra_BodeFPB.png, id=3189, 486.81876pt x 473.77pt>
+<figures/Sedra_BodeFPB.png, id=3208, 486.81876pt x 473.77pt>
 File: figures/Sedra_BodeFPB.png Graphic file (type png)
 <use figures/Sedra_BodeFPB.png>
 Package pdftex.def Info: figures/Sedra_BodeFPB.png  used on input line 129.
 (pdftex.def)             Requested size: 170.71652pt x 166.14006pt.
-<figures/Sedra_BodeFPA.png, id=3190, 494.84875pt x 494.84875pt>
+<figures/Sedra_BodeFPA.png, id=3209, 494.84875pt x 494.84875pt>
 File: figures/Sedra_BodeFPA.png Graphic file (type png)
 <use figures/Sedra_BodeFPA.png>
 Package pdftex.def Info: figures/Sedra_BodeFPA.png  used on input line 131.
@@ -2210,12 +2209,12 @@ Cap\'{\i }tulo 6.
 
  (./chapters/appendixA.tex
 Anexo A.
-<chapters/Datasheet/datasheet.pdf, id=3698, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3719, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf  used on input line 8.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<chapters/Datasheet/datasheet.pdf, id=3700, page=1, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3721, page=1, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 1>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page1 used on input line 8.
@@ -2247,7 +2246,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page1 used on input 
 [130
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3747, page=2, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3768, page=2, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 2>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page2 used on input line 8.
@@ -2265,7 +2264,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page2 used on input 
 [131
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3770, page=3, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3791, page=3, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 3>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page3 used on input line 8.
@@ -2283,7 +2282,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page3 used on input 
 [132
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3775, page=4, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3796, page=4, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 4>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page4 used on input line 8.
@@ -2301,7 +2300,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page4 used on input 
 [133
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3781, page=5, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3802, page=5, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 5>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page5 used on input line 8.
@@ -2319,7 +2318,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page5 used on input 
 [134
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3789, page=6, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3810, page=6, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 6>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page6 used on input line 8.
@@ -2337,7 +2336,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page6 used on input 
 [135
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3796, page=7, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3817, page=7, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 7>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page7 used on input line 8.
@@ -2355,7 +2354,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page7 used on input 
 [136
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3815, page=8, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3836, page=8, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 8>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page8 used on input line 8.
@@ -2373,7 +2372,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page8 used on input 
 [137
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3821, page=9, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3842, page=9, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 9>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page9 used on input line 8.
@@ -2391,7 +2390,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page9 used on input 
 [138
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3829, page=10, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3850, page=10, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 10>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page10 used on input line 8.
@@ -2409,7 +2408,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page10 used on input
 [139
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3836, page=11, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3857, page=11, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 11>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page11 used on input line 8.
@@ -2427,7 +2426,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page11 used on input
 [140
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3843, page=12, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3864, page=12, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 12>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page12 used on input line 8.
@@ -2445,7 +2444,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page12 used on input
 [141
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3852, page=13, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3873, page=13, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 13>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page13 used on input line 8.
@@ -2463,7 +2462,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page13 used on input
 [142
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3860, page=14, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3881, page=14, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 14>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page14 used on input line 8.
@@ -2481,7 +2480,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page14 used on input
 [143
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3868, page=15, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3889, page=15, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 15>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page15 used on input line 8.
@@ -2507,16 +2506,30 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 104086C3EDB8E6A1174C0D846E0B3E3C;12207.
-Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 8974803B1EF9E878B699E4F4B6C40F35;16173.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 104086C3EDB8E6A1174C0D846E0B3E3C;12207
+(rerunfilecheck)             After:  7652B6CCD4A80921550F32F1A91594E8;12464.
+
+Package rerunfilecheck Warning: File `main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `main.brf':
+(rerunfilecheck)             Before: 8974803B1EF9E878B699E4F4B6C40F35;16173
+(rerunfilecheck)             After:  21AA1BCBEE32730922F765981CF432B3;16173.
  ) 
 Here is how much of TeX's memory you used:
- 44168 strings out of 475151
- 909327 string characters out of 5766386
- 1705017 words of memory out of 5000000
- 65602 multiletter control sequences out of 15000+600000
+ 44190 strings out of 475151
+ 909665 string characters out of 5766386
+ 1705696 words of memory out of 5000000
+ 65603 multiletter control sequences out of 15000+600000
  693081 words of font info for 129 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  100i,20n,131p,2444b,1580s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2658,11 +2671,71 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
+
+pdfTeX warning (dest): name{table.caption.94} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.87} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.122} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.117} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.114} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.112} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.107} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.103} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.96} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.90} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.88} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.123} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.121} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.116} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.113} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.111} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.104} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.98} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.95} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.89} has been referenced but does not exist, replaced by a fixed one
+
 </usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (178 pages, 54980843 bytes).
+Output written on main.pdf (178 pages, 54981223 bytes).
 PDF statistics:
- 4181 PDF objects out of 4296 (max. 8388607)
- 3657 compressed objects within 37 object streams
- 844 named destinations out of 1000 (max. 500000)
+ 4208 PDF objects out of 4296 (max. 8388607)
+ 3684 compressed objects within 37 object streams
+ 865 named destinations out of 1000 (max. 500000)
  1173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -58,26 +58,26 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Problema de massa - onda completa}}{76}{figure.caption.83}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Painel frontal Multímetro Digital}}{76}{figure.caption.84}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Esquema completo - Lei de \textit {Ohm}}}{77}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Implementação práctica da Lei de \textit {Ohm}}}{79}{figure.caption.88}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{79}{figure.caption.90}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Diagrama de blocos geral da rectificação de meia e onda completa}}{80}{figure.caption.91}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Implementação práctica dos rectificadores e filtros}}{80}{figure.caption.92}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Esquemas dos filtros \cite {sedrasmith}}}{81}{figure.caption.93}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Funcionamento geral \textit {Flask}}}{83}{figure.caption.96}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{84}{figure.caption.97}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{89}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Erro de selecção}}{98}{figure.caption.107}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Página de \textit {login}}}{99}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Página inicial}}{99}{figure.caption.109}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces \textins {Exemplo} Experiência Lei de \textit {Ohm}}}{100}{figure.caption.110}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Lei de \textit {Ohm} - Selecção dos parâmetros}}{100}{figure.caption.112}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Rectificador de meia onda - Selecção dos parâmetros}}{101}{figure.caption.114}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Rectificador de onda completa - Selecção dos parâmetros}}{102}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Implementação práctica da Lei de \textit {Ohm}}}{79}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{80}{figure.caption.91}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Diagrama de blocos geral da rectificação de meia e onda completa}}{80}{figure.caption.92}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Implementação práctica dos rectificadores e filtros}}{81}{figure.caption.93}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Esquemas dos filtros \cite {sedrasmith}}}{82}{figure.caption.94}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Funcionamento geral \textit {Flask}}}{84}{figure.caption.97}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{85}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{90}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Erro de selecção}}{98}{figure.caption.108}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Página de \textit {login}}}{99}{figure.caption.109}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Página inicial}}{99}{figure.caption.110}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces \textins {Exemplo} Experiência Lei de \textit {Ohm}}}{100}{figure.caption.111}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Lei de \textit {Ohm} - Selecção dos parâmetros}}{101}{figure.caption.113}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Rectificador de meia onda - Selecção dos parâmetros}}{102}{figure.caption.115}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Rectificador de onda completa - Selecção dos parâmetros}}{102}{figure.caption.116}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Gráfico da Lei de \textit {Ohm}}}{106}{figure.caption.117}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Experiência Lei de \textit {Ohm}}}{106}{figure.caption.118}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite {sedrasmith}}}{107}{figure.caption.119}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite {sedrasmith}}}{108}{figure.caption.120}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramas de \textit {Bode} \textins {ideal} \cite {sedrasmith}}}{109}{figure.caption.122}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Gráfico da Lei de \textit {Ohm}}}{106}{figure.caption.118}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Experiência Lei de \textit {Ohm}}}{106}{figure.caption.119}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite {sedrasmith}}}{107}{figure.caption.120}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite {sedrasmith}}}{108}{figure.caption.121}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramas de \textit {Bode} \textins {ideal} \cite {sedrasmith}}}{109}{figure.caption.123}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
