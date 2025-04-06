@@ -265,8 +265,9 @@ Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm},
 
 De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do \acrshort{lare}.
 
-\subsubsection{Ligação entre placas e alimentação}
-\label{sec:alimentacaoligacaoplacas}
+\subsubsection{Ligação entre placas}
+%\subsubsection{Ligação entre placas e alimentação}
+\label{sec:ligacaoplacas}
 Como referido anteriormente \textbf{[NOTA: verificar referência]}, a matriz do \acrshort{lare} é constituída por três placas: 
 
 \begin{itemize}
@@ -302,14 +303,24 @@ Os tipos de ligações entre as três placas podem ser consultadas na Tabela 3 n
 \textbf{NOTA: Talvez ficasse por aqui, figuras a ilustrar os conectores e uma ou duas fotos com o lare implementado}
 
 \textbf{NOTA: Colocar só os conectores ou a foto do lare já montado?}
+\begin{comment}
 
+ESTA JUSTIFICAÇÃO DEVERIA FICAR NOUTRO LADO - VERIFICARq!!!!
+
+	\textbf{NOTA: Colocar aqui uma imagem do lare completo, com vista dos conectores??? ou só os conectorres?}
 Na Secção \ref{sec:fontesalimentacao}, foram já descritas todas as fontes de alimentação do \acrshort{lare}. Com base na Figura \ref{fig:rectificacao_filtragem_full}, o gerador de sinal é controlado pelo relé duplo $K_{1}$, enquanto o díodo é isolado através do relé duplo $K_{3}$ (representado pelo rectângulo tracejado a vermelho escuro).
 
 No que respeita ao relé $K_{4}$, este seria, eventualmente, dispensável, uma vez que o terminal negativo do gerador de sinal é igualmente controlado por $K_{1}$. No entanto, considerando que os filtros (identificados pelo rectângulo tracejado a cor-de-laranja) são partilhados com os circuitos rectificadores, e prevendo a possibilidade de utilização do gerador de sinal noutra experiência, optou-se, por uma questão de segurança, pelo isolamento completo dos componentes através do relé $K_{4}$.
+\end{comment}
 
 \textbf{NOTA: Ligação do transformador??}
-\textbf{Coloca aqui, falvez, uma foto da matriz lare}
+\textbf{Coloca aqui, falvez, uma foto da matriz lare. TALVEZ FOTOS DOS CONECTORES E NO FIM, PARA COMPLEMENTAR UMA FOTO DO LARE}
 \textbf{NOTA: Devia tirar uma foto das placas sozinhas}
+
+\subsubsection{Fonte de alimentação - VALERÁ A PENA}
+\label{sec:alimentacaoplacas}
+a IMPLEMENTAÇÕ da placa foi relativamente simples, blá, blá, com umas fotos das placas a indicar onde estão as fontes.
+
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
 Na Figura \ref{fig:esq_geral_ohm}, está representado o esquema da Lei de \textit{Ohm} implementado na práctica. A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
@@ -384,6 +395,8 @@ A placa desenvolvida para esta experiência, assim como a referência aos ``bloc
 
 \subsubsection{Rectificadores e filtros}
 \label{sec:rectificadoresfiltros}
+\textbf{NOTA: Fazer como na lei de ohm, explicar o funcionamento com os relés, o que fecha e deixa de fechar}
+
 Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
 
 Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas completos e simplificados dos circuitos. Nela se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão, também, representados no rectângulo tracejado magenta.
