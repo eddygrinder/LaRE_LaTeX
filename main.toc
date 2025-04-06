@@ -54,31 +54,31 @@
 \contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{75}{section*.81}%
 \contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{76}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}Experiências}{77}{subsection.4.1.6}%
-\contentsline {subsubsection}{Alimentação e ligação entre placas}{77}{section*.86}%
-\contentsline {subsubsection}{Lei de Ohm}{78}{section*.87}%
-\contentsline {subsubsection}{Rectificadores e filtros}{79}{section*.90}%
-\contentsline {section}{\numberline {4.2}Software}{83}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{83}{subsection.4.2.1}%
-\contentsline {subsubsection}{Estrutura base}{83}{section*.96}%
-\contentsline {subsubsection}{Rotas}{85}{section*.99}%
-\contentsline {subsubsection}{Blueprints}{86}{section*.100}%
-\contentsline {subsubsection}{Pedidos}{87}{section*.101}%
-\contentsline {subsubsection}{Base de dados}{88}{section*.102}%
-\contentsline {subsubsection}{Autenticação}{88}{section*.103}%
-\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{89}{subsection.4.2.2}%
-\contentsline {subsubsection}{Comunicação entre ficheiros}{90}{section*.105}%
-\contentsline {subsubsection}{Comunicação com RaspberryPi}{91}{section*.106}%
-\contentsline {subsubsection}{VirtualBench - Configurações e medições}{93}{section*.107}%
-\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{97}{subsection.4.2.3}%
-\contentsline {subsubsection}{Lei de \textit {Ohm}}{100}{section*.112}%
-\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{101}{section*.114}%
-\contentsline {subsubsection}{Filtros}{102}{section*.117}%
+\contentsline {subsubsection}{Ligação entre placas e alimentação}{77}{section*.86}%
+\contentsline {subsubsection}{Lei de Ohm}{79}{section*.89}%
+\contentsline {subsubsection}{Rectificadores e filtros}{80}{section*.92}%
+\contentsline {section}{\numberline {4.2}Software}{84}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{84}{subsection.4.2.1}%
+\contentsline {subsubsection}{Estrutura base}{84}{section*.98}%
+\contentsline {subsubsection}{Rotas}{86}{section*.101}%
+\contentsline {subsubsection}{Blueprints}{87}{section*.102}%
+\contentsline {subsubsection}{Pedidos}{88}{section*.103}%
+\contentsline {subsubsection}{Base de dados}{89}{section*.104}%
+\contentsline {subsubsection}{Autenticação}{89}{section*.105}%
+\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{90}{subsection.4.2.2}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.107}%
+\contentsline {subsubsection}{Comunicação com RaspberryPi}{92}{section*.108}%
+\contentsline {subsubsection}{VirtualBench - Configurações e medições}{94}{section*.109}%
+\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{98}{subsection.4.2.3}%
+\contentsline {subsubsection}{Lei de \textit {Ohm}}{101}{section*.114}%
+\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{102}{section*.116}%
+\contentsline {subsubsection}{Filtros}{103}{section*.119}%
 \contentsline {chapter}{\numberline {5}Resultados}{105}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{105}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Rectificadores}{106}{section.5.2}%
-\contentsline {subsubsection}{Filtros}{108}{section*.122}%
+\contentsline {subsubsection}{Filtros}{108}{section*.124}%
 \contentsline {section}{\numberline {5.3}Limitações}{110}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Melhoramentos}{110}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Conclusões}{111}{chapter.6}%
-\contentsline {chapter}{Refer\^{e}ncias}{112}{section*.124}%
+\contentsline {chapter}{Refer\^{e}ncias}{112}{section*.126}%
 \contentsline {chapter}{Anexo \numberline {A}Datasheet}{129}{appendix.1.A}%

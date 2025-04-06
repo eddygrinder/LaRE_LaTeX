@@ -265,21 +265,51 @@ Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm},
 
 De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do \acrshort{lare}.
 
-\subsubsection{Alimentação e ligação entre placas}
+\subsubsection{Ligação entre placas e alimentação}
 \label{sec:alimentacaoligacaoplacas}
-Como já referido anteriormente, \textbf{NOTA: verificar a referência} a matriz do \acrshort{lare} é composta por três placas: a placa de das fontes de alimentação, a placa da Lei de \textit{Ohm} e a placa dos rectificadores/filtros. A Figura \ref{AppendixA} apresenta a disposição das placas. O \acrshort{virtualbench} fornece a alimentação \acrshort{cc} às placas das experiências através dos conectores KK, 2.54 mm, M/F. 
+Como referido anteriormente \textbf{[NOTA: verificar referência]}, a matriz do \acrshort{lare} é constituída por três placas: 
 
-Para permitir a interligação entre as placas, facilitando, assim, a manutenção e/ou remoção das placas, usaram-se os conectores de 6 pinos Arduino \textit{Stackable}. 
+\begin{itemize}
+	\item Alimentação;
+	\item Lei de \textit{Ohm};
+	\item Rectificadores e filtros.
+\end{itemize}
 
-O tipo de ligações entre as três placas podem ser consultadas na Tabela 3 no Apendice \ref{AppendixA}. 
+A Figura \ref{fig:3placas} apresenta a disposição das placas.
 
-As ligações das fontes de alimentação e os diversos sinais provenientes do \acrshort{virtualbench} são feitas através de conectores KK, 2.54 mm, M/F. Estes mesmos conectores servem para ligar as fontes de alimentação entre placas. Os conectores KK são utilizados para fazer a ligação entre as placas do \acrshort{lare} e o \acrshort{virtualbench}. A ligação entre as placas é feita através de cabos de ligação, de forma a permitir a fácil remoção das placas, caso seja necessário.
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{figures/lare_3placas.jpg}
+	\caption{Lare 3 placas }
+	\label{fig:3placas}
+\end{figure}
 
+\textbf{NOTA: Colocar uma imagem do lare completo, com vista dos conectores??? ou só os conectorres?} Todas as ligações do \acrshort{virtualbench} à matriz - alimentação \acrshort{cc}, a tensão de entrada do gerador de sinal e os canais de entrada do osciloscópio - assim como a alimentação do transformador, são ligados às placas utilizando conectores do tipo KK, de \SI{2,54}{\mm}, macho/fêmea.
 
-Na Secção \ref{sec:fontesalimentacao} foram já descritas todas as fontes de alimentação do \acrshort{lare}.Tendo como base a Figura \ref{fig:rectificacao_filtragem_full}, no caso do gerador de sinal, este é comandado através do relé duplo $K_{1}$, sendo que a ligação à placa é feita através de um conector KK, 2.54 mm, M/F  e o díodo é isolado através do relé duplo $K_{3}$ (rectângulo tracejado a vermelho escuro). Quanto ao relé $K_{4}$, eventualmente, seria dispensavel, já que o terminal negativo do gerador de sinal é (também) controlado por $K_{1}$. No entanto, como os filtros (rectângulo tracejado a cor-de-laranja) são comuns,  também, ao rectificador de onda completa e, caso se pretenda usar o gerador de sinal noutra experiência, optou-se, por uma questão de segurança, de isolar totalmente os componentes através do relé $K_{4}$.
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/lare_conectores.png}
+	\caption{Ligação entre placas }
+	\label{fig:ligacaoplacas}
+\end{figure}
 
+Para permitir a interligação entre as placas, foram utilizados conectores Arduino \textit{Stackable} de 6 pinos, pois considerou-se que esta solução facilita eventuais operações de remoção ou manutenção dos componentes.
+
+A ligação do \gls{RaspberryPI} à placa é feita através de um conector \acrfull{idc}, fêmea, de 40 pinos, \SI{2,54}{\mm}
+
+Os tipos de ligações entre as três placas podem ser consultadas na Tabela 3 no Apendice \ref{AppendixA}. 
+
+\textbf{NOTA: Talvez ficasse por aqui, figuras a ilustrar os conectores e uma ou duas fotos com o lare implementado}
+
+\textbf{NOTA: Colocar só os conectores ou a foto do lare já montado?}
+
+Na Secção \ref{sec:fontesalimentacao}, foram já descritas todas as fontes de alimentação do \acrshort{lare}. Com base na Figura \ref{fig:rectificacao_filtragem_full}, o gerador de sinal é controlado pelo relé duplo $K_{1}$, enquanto o díodo é isolado através do relé duplo $K_{3}$ (representado pelo rectângulo tracejado a vermelho escuro).
+
+No que respeita ao relé $K_{4}$, este seria, eventualmente, dispensável, uma vez que o terminal negativo do gerador de sinal é igualmente controlado por $K_{1}$. No entanto, considerando que os filtros (identificados pelo rectângulo tracejado a cor-de-laranja) são partilhados com os circuitos rectificadores, e prevendo a possibilidade de utilização do gerador de sinal noutra experiência, optou-se, por uma questão de segurança, pelo isolamento completo dos componentes através do relé $K_{4}$.
+
+\textbf{NOTA: Ligação do transformador??}
 \textbf{Coloca aqui, falvez, uma foto da matriz lare}
-
+\textbf{NOTA: Devia tirar uma foto das placas sozinhas}
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
 Na Figura \ref{fig:esq_geral_ohm}, está representado o esquema da Lei de \textit{Ohm} implementado na práctica. A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
