@@ -1,9 +1,0 @@
-\contentsline {section}{\numberline {1}Características}{1}{section.1}%
-\babel@toc {portuguese}{}\relax 
-\contentsline {section}{\numberline {2}Descrição}{1}{section.2}%
-\contentsline {section}{\numberline {3}Aplicações}{1}{section.3}%
-\contentsline {section}{\numberline {4}Especificações técnicas}{2}{section.4}%
-\contentsline {section}{\numberline {5}Pinout}{4}{section.5}%
-\contentsline {section}{\numberline {6}Dimensões mecânicas}{7}{section.6}%
-\contentsline {section}{\numberline {7}Esquemas elétricos}{9}{section.7}%
-\contentsline {section}{\numberline {8}Esquemas PCB}{13}{section.8}%

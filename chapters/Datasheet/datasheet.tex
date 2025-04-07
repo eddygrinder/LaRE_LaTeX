@@ -1,25 +1,31 @@
 %\documentclass[a4paper,12pt,oneside,pdflatex,final,twocolumn]{article}
+%
 \documentclass[a4paper,oneside,final,twocolumn]{article}
 \usepackage[portuguese]{babel}
 
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
+\usepackage{fancyhdr}
+
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage{parallel}
 \usepackage{siunitx}
 \usepackage{booktabs}
-\usepackage{fancyhdr}
 \usepackage{hyperref}
 \usepackage[export]{adjustbox}
 \usepackage[margin=1in]{geometry}
 \addtolength{\topmargin}{0in}
 \usepackage{multirow} 
 \usepackage{libertine}
-\usepackage{pdfpages}
+\usepackage{subcaption}		% enables subfigures
+\usepackage{etoc}
+
+%\usepackage{etoc}
 \usepackage{xr} % ou \usepackage{xr-hyper} se estiveres a usar hyperref
 \externaldocument{../appendixA} % o nome do ficheiro .tex que contém a secção que queres referenciar
+%\externaldocument{../../main}
 
 \renewcommand*\familydefault{\sfdefault}  %% Only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
@@ -129,13 +135,47 @@ Relés & \multicolumn{2}{c}{Bobine} & \multicolumn{5}{c}{Contactos}\\
 \toprule
 \multicolumn{2}{c}{Tipo de ligações}\\
 \midrule
-RaspberryPI-LaRE & Conector acrshort{idc}, fêmea, 40 pinos, \SI{2.54}{\mm}\\
+RaspberryPI-LaRE & Conector IDC, fêmea, 40 pinos, \SI{2.54}{\mm}\\
 Placa Lei de Ohm-Rectificadores/Filtros & Conector de 6 pinos Arduino Stackable\\
 Placa Fontes de tensão-Rectificadores/Filtros &  Conector KK, \SI{2.54}{\mm}, M/F \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\section{Conectores}
+Todas as ligações entre o VirtualBench e a matriz, incluindo alimentação DC, saída do gerador de sinal e canais do osciloscópio, bem como a alimentação do transformador, são efectuadas através de conectores tipo $KK$ \SI{2,54}{\mm}, (macho/fêmea).
+
+Para a interligação entre placas, foram utilizados conectores Arduino Stackable de 6 pinos e a ligação do RaspberryPI à placa é feita através de um conector IDC de 40 pinos. As Figuras \ref{fig:conectoresKK}, \ref{fig:stackable} e \ref{fig:idc40pinos} apresentam os conectores referidos, respectivamente\footnote{Imagens retiradas do \textit{site} \href{https://www.botnroll.com/pt//}{https://www.botnroll.com/pt/}.}
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Fêmea\label{fig:kkfemea}]{{\includegraphics[width=4cm]{kkFemea.png} }}%
+		\qquad
+		\subfloat[\centering Macho\label{fig:kkmacho}]{{\includegraphics[width=4cm]{kkMacho.png} }}%
+		\caption{Conectores $KK$}%
+		\label{fig:conectoresKK}%
+	\end{figure}
+
+
+	\begin{figure}[hbtp]
+		\centering
+		\includegraphics[width=0.3\textwidth]{stackable.png}
+		\caption {Conector \textit{stackable} 6 pinos Arduino}
+		\label{fig:stackable}
+	\end{figure}
+
+	\begin{figure}[hbtp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{gpio-breakout.png}
+		\caption {Ligação IDC 40 pinos [Macho/Fêmea]}
+		\label{fig:idc40pinos}
+	\end{figure}
+
+\newpage
+
 \raggedright
+
 
 \newpage
 
@@ -169,10 +209,10 @@ Placa Fontes de tensão-Rectificadores/Filtros &  Conector KK, \SI{2.54}{\mm}, M
     \label{fig:rectificadoresfiltros}
 \end{figure}
 \centering
+\raggedright
 
 \newpage
 
-\raggedright
 \section{Dimensões mecânicas}
 \begin{figure}[hbtp]
     \centering
@@ -184,7 +224,7 @@ Placa Fontes de tensão-Rectificadores/Filtros &  Conector KK, \SI{2.54}{\mm}, M
 \raggedright
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{LaRE_desenhotecnico.png}
+    \includegraphics[width=0.8\textwidth]{LaRE_desenhotecnico.png}
     \caption{Dimensões mecânicas LaRE}
     \label{fig:DimensõesmecânicasLaRE}
 \end{figure}
@@ -224,6 +264,7 @@ Placa Fontes de tensão-Rectificadores/Filtros &  Conector KK, \SI{2.54}{\mm}, M
     \label{fig:esquemarectificador}
 \end{figure}
 \centering
+\raggedright
 
 \newpage
 
