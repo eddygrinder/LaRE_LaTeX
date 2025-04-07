@@ -8,10 +8,10 @@
 		\setentrycounter[]{page}\glsnumberformat{35}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{48\delimN 49}}}%
 \glossentry{wrapper}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{50}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{51}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossentry{diac}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{27}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossentry{ESP32}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{23}\delimN 
@@ -21,6 +21,9 @@
 \glossentry{industria40}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{32}}}\glsgroupskip
+\glsgroupheading{K}\relax \glsresetentrylist %
+\glossentry{kicad}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{77}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{pc/104}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{55}}}%
@@ -34,11 +37,11 @@
 		\setentrycounter[]{page}\glsnumberformat{56\delimN 57}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{59\delimR 61}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{69\delimR 71}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{78}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{79}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{scr}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{27}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossentry{triac}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{27}}}%
 \end{theglossary}\glossarypostamble

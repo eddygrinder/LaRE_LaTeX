@@ -24,6 +24,7 @@
 \glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{x}
 \glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{x}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{x}
+\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{x}
 \glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xv}
 \glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xv}
 \glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xv}
@@ -36,7 +37,8 @@
 \glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xvii}
 \glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xvii}
 \glossaryentry{IoT?\glossentry{iot}|setentrycounter[]{page}"\glsnumberformat}{xvii}
-\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xviii}
+\glossaryentry{PCB?\glossentry{pcb}|setentrycounter[]{page}"\glsnumberformat}{xviii}
+\glossaryentry{SCR?\glossentry{Scr}|setentrycounter[]{page}"\glsnumberformat}{xix}
 \glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xix}
 \glossaryentry{DIAC?\glossentry{Diac}|setentrycounter[]{page}"\glsnumberformat}{xix}
 \glossaryentry{TRIAC?\glossentry{Triac}|setentrycounter[]{page}"\glsnumberformat}{xix}
@@ -483,9 +485,11 @@
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{77}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{77}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{77}
+\glossaryentry{PCB?\glossentry{pcb}|setentrycounter[]{page}"\glsnumberformat}{77}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{78}
-\glossaryentry{IDC?\glossentry{idc}|setentrycounter[]{page}"\glsnumberformat}{78}
-\glossaryentry{CC?\glossentry{cc}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{78}
+\glossaryentry{IDC?\glossentry{idc}|setentrycounter[]{page}"\glsnumberformat}{79}
+\glossaryentry{CC?\glossentry{cc}|setentrycounter[]{page}"\glsnumberformat}{80}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{84}
 \glossaryentry{PIP?\glossentry{pip}|setentrycounter[]{page}"\glsnumberformat}{84}
 \glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{84}
