@@ -265,7 +265,15 @@ Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm},
 
 De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do \acrshort{lare}.
 
-A matriz do \acrshort{lare} é constituída por três placas, cujos detalhes técnicos podem ser consultados no Anexo \ref{AppendixA}. 
+A matriz é constituída por três placas, cujos detalhes técnicos podem ser consultados no Anexo \ref{AppendixA}. 
+O desenho dos esquemas  e dos \acrfull{pcb} das placas foram elaborados com recurso ao \gls{kicad}. Estas foram desenhadas de forma a serem modulares e estão divididas como representado na Figura \ref{fig:matrizlare}:
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/lare_3placas.png}
+	\caption{Matriz do \acrshort{lare}}
+	\label{fig:matrizlare}
+\end{figure}
 \begin{comment}
 ESTA JUSTIFICAÇÃO DEVERIA FICAR NOUTRO LADO - VERIFICARq!!!!
 
@@ -274,18 +282,6 @@ Na Secção \ref{sec:fontesalimentacao}, foram já descritas todas as fontes de 
 
 No que respeita ao relé $K_{4}$, este seria, eventualmente, dispensável, uma vez que o terminal negativo do gerador de sinal é igualmente controlado por $K_{1}$. No entanto, considerando que os filtros (identificados pelo rectângulo tracejado a cor-de-laranja) são partilhados com os circuitos rectificadores, e prevendo a possibilidade de utilização do gerador de sinal noutra experiência, optou-se, por uma questão de segurança, pelo isolamento completo dos componentes através do relé $K_{4}$.
 \end{comment}
-
-\subsubsection{Fonte de alimentação - VALERÁ A PENA?}
-\label{sec:alimentacaoplacas}
-A elaboração dos esquemas  e dos \acrfull{pcb} das placas foram elaborados com recurso ao \gls{kicad} e encontram-se representadas no Anexo \ref{AppendixA}. As placas foram desenhadas de forma a serem modulares e estão divididas como representado na Figura \ref{fig:matrizlare}:
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.4\textwidth]{figures/lare_3placas.jpg}
-	\caption{Matriz do \acrshort{lare}}
-	\label{fig:matrizlare}
-\end{figure}
-
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
