@@ -361,7 +361,7 @@ A placa desenvolvida para esta experiência, assim como a referência aos ``bloc
 
 Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
 
-Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão, também, representados no rectângulo tracejado magenta.
+Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta.
 
 \begin{figure}[hbtp]
 	\centering
@@ -372,7 +372,7 @@ Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas
 
 Na implementação dos rectificadores houve a necessidade de utilizar dois tipos de tensão de entrada. Como referido na Secção \ref{sec:fontesalimentacao}, o circuito de meia onda utiliza o gerador de sinal mas devido ao problema de massa, já explicado na mesma secção, foi necessário usar um transformador na rectificação de onda completa.
 
-Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada a uma fonte de tensão \acrshort{cc}, por exemplo.
+Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada, por exemplo, a uma fonte de tensão \acrshort{cc}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -381,7 +381,7 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 	\label{fig:blocosrectificacao}
 \end{figure}
 
-A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das duas experiências. 
+A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das duas experiências na respectiva placa, pontos \ref{item2} a \ref{item7}. 
 
 \begin{figure}[hbtp]
 	\centering
@@ -392,8 +392,8 @@ A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das
 
 %A implementação prática é composta pelos três blocos\footnote{A inclusão da estabilização poderá ser objecto de trabalho futuro.}, como se pode ver na Figura \ref{fig:placarectificadores}. 
 \begin{enumerate}
-	\item Bloco 1 - Implementado na placa da alimentação, representada no Figura \ref{fig:} \textbf{NOTA: Adicionaor a foto da outra polaca onde está o transformador, fonte e entradas do gerador de sinal}
-	\item Bloco 2 - Rectificação;
+	\item Bloco 1 - Implementado na placa da alimentação, representada no Figura \ref{fig:placartransformador} 
+	\item \label{item2}Bloco 2 - Rectificação;
 		\begin{enumerate}
 			\item \label{diodos}Díodo rectificador ($1_{a}$) e Ponte rectificadora ($1_{b}$);	
 		\end{enumerate}
@@ -405,18 +405,15 @@ A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das
 	\item Relés (2);
 	\item \textit{Drivers} de relés e registo de deslocamento (4);
 	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6);
-	\item Resistência e condensador exclusivo dos filtros (7).
+	\item \label{item7}Resistência e condensador exclusivo dos filtros (7).
 \end{enumerate}
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/lore_fonte.jpg}
-	\caption{Implementação práctica da alimentação}
-	\label{fig:placaaçimentacao}
+	\includegraphics[width=0.3\textwidth]{figures//lore_fonte.jpg}
+	\caption{Transformador}
+	\label{fig:placartransformador}
 \end{figure}
-
-\textbf{Colocar aqui a foto com os blocos e enunciar os componentes que estão dentro de cada bloco.}
-
 
 Como referido na Secção \ref{sec:experiencias}, a implementação dos filtros foi realizada após a conclusão dos rectificadores. De forma a permitir a integração desta experiência no circuito já concluído, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (assinalado pelo retângulo tracejado a vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Esta alteração permitiu a introdução de uma resistência ($R_{3}$) ou de um condensador ($C_{3}$), consoante a configuração do filtro em estudo.
 
@@ -430,7 +427,7 @@ Os esquemas teóricos dos filtros estão representados nas Figuras \ref{fig:filt
 		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/Sedra_FPA_GIMP.png} }}%
 		\caption{Esquemas dos filtros \cite{sedrasmith}}%
 		\label{fig:filtrosesqgeral}%
-	\end{figure}
+\end{figure}
 
 Portanto, se se pretender estudar o filtro passa-baixo, é activado o relé $K_{10}$ ($R_{3}$) e o condensador de saída pode ser escolhido entre os $C_{1}$ e $C_{2}$, consoante a configuração que se pretende estudar. O mesmo se aplica ao filtro passa-alto, onde o relé $K_{11}$ ($C_{3}$) é activado e a resistência de saída pode ser escolhida entre os $R_{1}$ e $R_{2}$. Um exemplo de configuração para cada filtro pode ser consultado na Tabela \ref{Table:rectificadoresfiltros}.
 
