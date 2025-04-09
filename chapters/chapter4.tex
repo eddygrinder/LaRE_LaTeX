@@ -361,7 +361,7 @@ A placa desenvolvida para esta experiência, assim como a referência aos ``bloc
 
 Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
 
-Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas completos e simplificados dos circuitos. Nela se podem ver os componentes comuns, rectângulo tracejado laranja, assim como os rectificadores de meia e onda completa, rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão, também, representados no rectângulo tracejado magenta.
+Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Os filtros passa-alto e passa-baixo estão, também, representados no rectângulo tracejado magenta.
 
 \begin{figure}[hbtp]
 	\centering
@@ -381,13 +381,6 @@ Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos g
 	\label{fig:blocosrectificacao}
 \end{figure}
 
-\begin{enumerate}
-	\item Transformador;
-	\item Rectificação;
-	\item Filtragem;
-	\item Estabilização.
-\end{enumerate}
-
 A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das duas experiências. 
 
 \begin{figure}[hbtp]
@@ -399,7 +392,7 @@ A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das
 
 %A implementação prática é composta pelos três blocos\footnote{A inclusão da estabilização poderá ser objecto de trabalho futuro.}, como se pode ver na Figura \ref{fig:placarectificadores}. 
 \begin{enumerate}
-	\item Bloco 1 - \textbf{NOTA: Adicionaor a foto da outra polaca onde está o transformador, fonte e entradas do gerador de sinal}
+	\item Bloco 1 - Implementado na placa da alimentação, representada no Figura \ref{fig:} \textbf{NOTA: Adicionaor a foto da outra polaca onde está o transformador, fonte e entradas do gerador de sinal}
 	\item Bloco 2 - Rectificação;
 		\begin{enumerate}
 			\item \label{diodos}Díodo rectificador ($1_{a}$) e Ponte rectificadora ($1_{b}$);	
@@ -414,6 +407,13 @@ A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das
 	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6);
 	\item Resistência e condensador exclusivo dos filtros (7).
 \end{enumerate}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/lore_fonte.jpg}
+	\caption{Implementação práctica da alimentação}
+	\label{fig:placaaçimentacao}
+\end{figure}
 
 \textbf{Colocar aqui a foto com os blocos e enunciar os componentes que estão dentro de cada bloco.}
 
