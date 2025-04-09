@@ -557,3 +557,66 @@ Após análise e estudo da informação presente no \textit{site} do \textit{Fla
 \end{figure}
 
 Além da rota definida para o \textit{login}, as outras rotas definidas no ficheiro \textit{auth.py} foram as \textit{sign-up} e \textit{logout}. A estrutura base da função \textit{login}, representada na Listagem \ref{lst:exemplologin}, é idêntica para as restantes, sendo que ``/\textit{login''} representa a rota especificada, dentro da função há o código especifico inerentes a cada função e o \textit{return render\_template} indica qual a página a ser renderizada.
+
+Pode-se, no entanto, referir as principais funções que permitem a medição de tensão, corrente ou sinal no osciloscópio \cite{pyvirtualbench} - \textbf{NOTA: valerá a pena esta parte? PROF}:
+
+\begin{itemize}
+	\item Multímetro digital - \acrshort{dmm}
+		\begin{itemize}
+			\item \textit{dmm.read()} - efectua a medição de tensão ou corrente, consoante os parâmetros definidos na função de configuração: dmm.configure~\textunderscore measurement(DmmFunction.DC~\textunderscore VOLTS, True, 10) ou dmm.configure~\textunderscore measurement(DmmFunction.DC~\textunderscore CURRENT, True, 10);
+		\end{itemize}
+	\item Osciloscópio
+	\begin{itemize}
+		\item \textit{mso.read~\textunderscore analog~\textunderscore digital~\textunderscore u64()} - efectua a medição de sinal, sendo que a configuração é automática: \textit{mso.auto~\textunderscore setup()};
+	\end{itemize}
+	\item Gerador de sinal
+	\begin{itemize}
+		\item \textit{fgen.run()} - inicia o gerador de sinal, após as configurações iniciais:\\fgen.configure~\textunderscore waveform(fgen~\textunderscore function, frequency, amplitude, offset);
+	\end{itemize}
+\end{itemize}
+
+\begin{minipage}{0.9\linewidth}
+	\centering
+	\begin{lstlisting}[language=Python, escapechar=|, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+6V" |\label{line:channel}|
+			voltage_level = Vcc |\label{line:voltagelevel}|
+			current_limit = 0.5 |\label{line:currentlimit}|
+		(...)
+	\end{lstlisting}
+\end{minipage}
+
+\textbf{NOTA: Esta parte seguinte talvez deva ficar na parte de software. Aqui só o que diz respeito ao IDE na óptica do utilizador.}
+Pela consulta da Listagem \ref{lst:exemplogerador}, pode ver-se que o gerador de sinal está configurado com uma amplitude de \SI{10}{\volt} e um \textit{duty-cycle} de 50\%. Tal como referido na Secção (...), após a aquisição do instrumento, este é configurado com os valores definidos nas Linhas (...) e iniciado.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo configuração do gerador de sinal - \textit{mixed\textunderscore signal\textunderscore oscilloscope.py}, label=lst:exemplogerador]
+	waveform_function = Waveform.SINE
+	amplitude = 10.0      # 10V
+	dc_offset = 0.0       # 0V
+	duty_cycle = 50.0     # 50% duty cycle
+	(...)
+	\end{lstlisting}
+\end{minipage}
+
+A Listagem \ref{lst:exemplomso} apresenta a configuração dos osciloscópio que segue o mesmo padrão (?) dos restantes instrumentos. 
+
+O \textit{setup} é configurado de forma automática e as restantes configurações, Linhas a a, foram retiradas do exemplo \textit{mso\_simple\_example.py}. Por fim, é realizada a aquisição do sinal na Linha (...).
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo configuração do oscilscópio - \textit{mixed\textunderscore signal\textunderscore oscilloscope.py}, label=lst:exemplomso]
+	
+	(...)
+	mso.auto_setup()
+	(...)
+	# Start the acquisition.  Auto triggering is enabled to catch a misconfigured trigger condition.
+	mso.run()
+	
+	# Read the data by first querying how big the data needs to be, allocating the memory, and finally performing the read.
+    analog_data, analog_data_stride, analog_t0, digital_data, digital_timestamps, digital_t0, trigger_timestamp, trigger_reason = mso.read_analog_digital_u64()
+	(...)
+	\end{lstlisting}
+\end{minipage}
+
+A implementação completa das configurações do gerador de sinal e osciloscópio estão definidas no ficheiro ``mixed\textunderscore signal\textunderscore oscilloscope.py''. Como referido na Secção \ref{sec:configmedicaoes}, o código foi retirado dos exemplos aquando da instalação do \textit{pyVirtualBench} e modificado consoante as necessidades do projecto.

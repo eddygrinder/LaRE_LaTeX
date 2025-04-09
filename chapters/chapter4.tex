@@ -735,7 +735,11 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
 
-De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. Não é, de todo, o objectivo desta dissertação dissecar toda e qualquer linha de código ou forma de configurar o \acrshort{virtualbench}. Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da biblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
+De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. 
+
+Nesta secção, apresenta-se como exemplo a configuração da fonte de alimentação, por ser o único instrumento utilizado em todas as experiências realizadas. Não se pretende, contudo, abordar exaustivamente todas as instruções ou métodos de configuração do \acrshort{virtualbench}. Os ficheiros anteriormente referidos encontram-se devidamente comentados, sendo possível obter informações adicionais através da sua consulta.
+
+Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da biblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
 
 Através da análise dos exemplos disponibilizados para o \acrshort{virtualbench} (e que estão definidos no repositório já mencionado do \textit{GitHub}), foi possível compreender a estrutura geral de configuração aplicada aos instrumentos e fontes de alimentação. Com base nessa análise, determinou-se a seguinte lógica de funcionamento:
 
@@ -762,107 +766,45 @@ A aquisição do \acrshort{virtualbench}, identificado como \textit{VB8012-30A21
 
 A partir do objeto \textit{virtualbench}, é possível aceder aos diferentes instrumentos, sendo que a aquisição é feita através do método \textit{acquire\_\textless instrumento\textgreater()}. Essa instância é armazenada numa variável definida pelo utilizador, permitindo o acesso às funcionalidades de configuração, controlo e medição disponibilizadas por esse instrumento. Na Listagem \ref{lst:instanciacao}, linha \ref{line:acquireps}, pode ver-se, a título de exemplo, como é feita a aquisição da fonte de alimentação, que é armazenada na variável \textit{ps}.
 
+Um exemplo da configuração da fonte está descrita na Listagem \ref{lst:exemploconfigps}
 
 \begin{minipage}{0.7\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemploconfigps]
 		try:
-			# Power Supply Configuration
+			# Configuracao da fonte de alimentacao
 			channel = "ps/+25V" |\label{line:channel}| 
 			voltage_level = 1.0 |\label{line:voltagelevel}|
-			current_limit = 0.5 |\label{line:currentlimit}| 
+			current_limit = 0.5 |\label{line:currentlimit}|
+			# Configuracao especifica
+			ps.configure_voltage_output(channel, voltage_level, current_limit)|\label{line:configvoltage}|
+			ps.enable_all_outputs(True)|\label{line:enableoutputs}|
 	\end{lstlisting}
 \end{minipage}
 
 \begin{itemize}
 	\item \textit{channel} - linha \ref{line:channel}: especifica o canal da fonte de tensão a utilizar, sendo que, neste exemplo, é selecionado o canal de \SI{25}{\volt}, através do nome ``ps/+25V'' (podendo também ser utilizado ``ps/+6V'' para o canal de \SI{6}{\volt});
 	\item \textit{voltage\_level} - linha \ref{line:voltagelevel}: define o valor da tensão de saída. No caso deste exemplo, \SI{1.0}{\volt}. Pode ser, também, atribuída uma variável - $V_{cc}$ - com base nos valores apresentados na Figura~\ref{fig:pagohm});
-	\item  \textit{current\_limit} - linha \ref{line:currentlimit}: é configurado o limite de corrente para \SI{0.5}{\ampere}.
+	\item  \textit{current\_limit} - linha \ref{line:currentlimit}: é configurado o limite de corrente para \SI{0.5}{\ampere};
+	\item \textit{ps.configure\_voltage\_output(channel, voltage\_level, current\_limit)} - linha \ref{line:configvoltage}: configura a fonte de alimentação com os parâmetros definidos nas linhas \ref{line:channel} a \ref{line:currentlimit};
+	\item \textit{ps.enable\_all\_outputs(True)} - linha \ref{line:enableoutputs}: ativa todas as saídas da fonte de alimentação. No entanto, só a saída correspondente ao canal definido na linha \ref{line:channel} será ativada.
 \end{itemize}
 
-Como se pode ver na mesma Listagem, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. 
-O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha~\ref{line:pslibertada}, e não havendo erro, o \textit{virtualbench} é libertado, linha~\ref{line:virtualbenchlibertado}. A execução do \textit{script} é, então, terminada.
+No final da execução, os instrumentos e o \acrshort{virtualbench} têm de ser libertados, por esta ordem. Isto é feito através do método \textit{instrumento.release()}. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. \textbf{A REVER: dar um exemplo do que acontece??}
 
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemplops]
-		try:
-			# Power Supply Configuration
-			channel = "ps/+25V" |\label{line:channel}| 
-			voltage_level = 1.0 |\label{line:voltagelevel}|
-			current_limit = 0.5 |\label{line:currentlimit}| 
-			# Iniciar o VirtualBench
-			virtualbench = PyVirtualBench('VB8012-30A210F') |\label{line:virtualbench}| 
-			
-			# Iniciar a fonte de tensao
-			ps = virtualbench.acquire_power_supply() |\label{line:powersource}| 
+De referir que vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
 
-			ps.configure_voltage_output(channel, voltage_level, current_limit) |\label{line:psconfig}|
-			ps.enable_all_outputs(True) |\label{line:psenable}|
-
-			# Desenvolvimento do programa
-			for i in range(10): |\label{line:ciclofor}|
-				voltage_measurement, current_measurement, ps_state = ps.read_output(channel)
-				print("Measurement [%d]: %f V\t%f A\t(%s)" % (i, voltage_measurement, current_measurement, str(ps_state)))
-			# Libertar a fonte de tensao
-			ps.release() |\label{line:pslibertada}|
-		except PyVirtualBenchException as e:
-    		print("Error/Warning %d occurred\n%s" % (e.status, e))
-		finally:
-			# Libertar o VirtualBench
-    		virtualbench.release() |\label{line:virtualbenchlibertado}|
-
-	\end{lstlisting}
-\end{minipage}
-
-Neste contexto e voltando ao exemplo da Listagem \ref{lst:exemplops}, depois de realizada a aquisição do \acrshort{virtualbench} são realizadas as configurações necessárias para o exemplo em questão. Entre a linha~\ref{line:channel} e a linha~\ref{line:currentlimit} são definidos os parâmetros da fonte de tensão, nomeadamente o canal de saída - fonte de \SI{25}{\volt}, o nível de tensão - saída definida para \SI{1}{\volt} e o limite de corrente - \SI{0.5}{\ampere}. A fonte de tensão é, então, adquirida na linha~\ref{line:powersource} e configurada na linha~\ref{line:psconfig} com os parâmetros definidos anteriormente e todas as saídas da fonte são activadas na linha~\ref{line:psenable}. 
-
-Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
-
-O resultado das instruções na Linha~\ref{line:virtualbench} e Linha~\ref{line:powersource} da Listagem~\ref{lst:exemplops} é:
+O resultado das instruções na Linha~\ref{line:acquireps} e Linha~\ref{line:vb8012} da Listagem~\ref{lst:instanciacao} é:
 \begin{itemize}
 	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
 	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
 \end{itemize}
 
-No fim da execução do ficheiro, tal como apresentado na Listagem \ref{lst:exemplops}, o \acrshort{virtualbench} - Linha~\ref{line:virtualbenchlibertado} e os restantes instrumentos, neste caso particular, a fonte de tensão - Linha~\ref{line:pslibertada} - têm de ser libertados. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. \textbf{A REVER: dar um exemplo do que acontece??}
-
-No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de Ohm abordada na Secção XXX), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
-
-Os restantes instrumentos usados no \acrshort{lare}	seguem a mesma lógica de funcionamento.
-
-Pode-se, no entanto, referir as principais funções que permitem a medição de tensão, corrente ou sinal no osciloscópio \cite{pyvirtualbench} - \textbf{NOTA: valerá a pena esta parte? PROF}:
-
-\begin{itemize}
-	\item Multímetro digital - \acrshort{dmm}
-		\begin{itemize}
-			\item \textit{dmm.read()} - efectua a medição de tensão ou corrente, consoante os parâmetros definidos na função de configuração: dmm.configure~\textunderscore measurement(DmmFunction.DC~\textunderscore VOLTS, True, 10) ou dmm.configure~\textunderscore measurement(DmmFunction.DC~\textunderscore CURRENT, True, 10);
-		\end{itemize}
-	\item Osciloscópio
-	\begin{itemize}
-		\item \textit{mso.read~\textunderscore analog~\textunderscore digital~\textunderscore u64()} - efectua a medição de sinal, sendo que a configuração é automática: \textit{mso.auto~\textunderscore setup()};
-	\end{itemize}
-	\item Gerador de sinal
-	\begin{itemize}
-		\item \textit{fgen.run()} - inicia o gerador de sinal, após as configurações iniciais:\\fgen.configure~\textunderscore waveform(fgen~\textunderscore function, frequency, amplitude, offset);
-	\end{itemize}
-\end{itemize}
-
-\begin{minipage}{0.9\linewidth}
-	\centering
-	\begin{lstlisting}[language=Python, escapechar=|, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
-		try:
-			# Power Supply Configuration
-			channel = "ps/+6V" |\label{line:channel}|
-			voltage_level = Vcc |\label{line:voltagelevel}|
-			current_limit = 0.5 |\label{line:currentlimit}|
-		(...)
-	\end{lstlisting}
-\end{minipage}
+No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de \textit{Ohm}), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
 
 \subsection{Interface WEB}
 \label{sec:interfaceweb}
 \textbf{NOTA: Acho que esta secção precisa de ser revista?? melhorada??}
 
-\textbf{NOTA2: Esta secção chamava-se "Experiências" e foi trocado para Interface WEB}
 %Resumindo Na experiencia da lei de ohm há o controlo dos valores da experiêncianeuica, medições a apresentação do gráfico. Este gráfico só é apresentado quando o utilizador carregar no respectivo link. Nas outras experiências, como o utilizador já tem menos controlo - só controla a frequência - REFERIR COMO É APRESENTADO O GRÁFICO. NÃO ESQUECER DO DIAGRAMA DE BODE.
 
 %FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS,  FALTA A PARTE DA COMUNICAÇÃO COM O pi.
@@ -1001,37 +943,3 @@ Relativamente ao rectificador de onda completa, a Figura \ref{fig:ondacompletame
 \subsubsection{Filtros}
 \label{sec:filtrosSW}
 As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas à do rectificador de meia onda. Ao utilizador é proposto a escolha entre os dois condensadores já definidos e implementados nas experiências anteriores mas somente uma resistência. \textbf{NOTA:  Isto prende-se com os factos já apresentados na Secção XPTO.} O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. Além disso, considerou-se que, a nível pedagógico, seria uma mais-valia permitir o estudo da resposta em frequência, pelo que, para além do gráfico da tensão \textit{ripple}, o utilizador pode ainda visualizar o diagrama de Bode. A Figura \ref{fig:ondacompletamenuCTRL} apresenta a página do filtro passa-baixo, sendo que a única diferença para o passa-alto é o esquema representado na Figura \ref{fig:ondacompletamenuCTRL}.
-
-\textbf{NOTA: Esta parte seguinte talvez deva ficar na parte de software. Aqui só o que diz respeito ao IDE na óptica do utilizador.}
-Pela consulta da Listagem \ref{lst:exemplogerador}, pode ver-se que o gerador de sinal está configurado com uma amplitude de \SI{10}{\volt} e um \textit{duty-cycle} de 50\%. Tal como referido na Secção (...), após a aquisição do instrumento, este é configurado com os valores definidos nas Linhas (...) e iniciado.
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo configuração do gerador de sinal - \textit{mixed\textunderscore signal\textunderscore oscilloscope.py}, label=lst:exemplogerador]
-	waveform_function = Waveform.SINE
-	amplitude = 10.0      # 10V
-	dc_offset = 0.0       # 0V
-	duty_cycle = 50.0     # 50% duty cycle
-	(...)
-	\end{lstlisting}
-\end{minipage}
-
-A Listagem \ref{lst:exemplomso} apresenta a configuração dos osciloscópio que segue o mesmo padrão (?) dos restantes instrumentos. 
-
-O \textit{setup} é configurado de forma automática e as restantes configurações, Linhas a a, foram retiradas do exemplo \textit{mso\_simple\_example.py}. Por fim, é realizada a aquisição do sinal na Linha (...).
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo configuração do oscilscópio - \textit{mixed\textunderscore signal\textunderscore oscilloscope.py}, label=lst:exemplomso]
-	
-	(...)
-	mso.auto_setup()
-	(...)
-	# Start the acquisition.  Auto triggering is enabled to catch a misconfigured trigger condition.
-	mso.run()
-	
-	# Read the data by first querying how big the data needs to be, allocating the memory, and finally performing the read.
-    analog_data, analog_data_stride, analog_t0, digital_data, digital_timestamps, digital_t0, trigger_timestamp, trigger_reason = mso.read_analog_digital_u64()
-	(...)
-	\end{lstlisting}
-\end{minipage}
-
-A implementação completa das configurações do gerador de sinal e osciloscópio estão definidas no ficheiro ``mixed\textunderscore signal\textunderscore oscilloscope.py''. Como referido na Secção \ref{sec:configmedicaoes}, o código foi retirado dos exemplos aquando da instalação do \textit{pyVirtualBench} e modificado consoante as necessidades do projecto.
