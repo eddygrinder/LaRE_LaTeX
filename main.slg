@@ -1,7 +1,5 @@
 This is makeindex, version 2.17 [TeX Live 2024] (kpathsea + Thai support).
 Scanning style file ./main.ist...........................done (27 attributes redefined, 0 ignored).
-Scanning input file main.syg....done (12 entries accepted, 0 rejected).
-Sorting entries....done (58 comparisons).
-Generating output file main.syi....done (27 lines written, 0 warnings).
-Output written in main.syi.
+Scanning input file main.syg...done (0 entries accepted, 0 rejected).
+Nothing written in main.syi.
 Transcript written in main.slg.

@@ -138,16 +138,19 @@ As fontes de tensão de \SI{6}{\volt}, utilizadas na Lei de \textit{Ohm} e de \S
 As Figuras \ref{fig:schfonte5VB} e \ref{fig:schfonte12VB} ilustram os exemplos das ligações das respetivas fontes de tensão. Complementando com a Figura \ref{fig:promenorfontes}, o terminal 4 do relé $K_{4}$, designado por $5V_{VB}$, está ligado ao terminal de \SI{6}{\volt} do \acrshort{virtualbench}, enquanto todos os terminais 2 dos relés, assim como a alimentação dos \textit{drivers}, estão ligados ao terminal de \SI{25}{\volt}. As configurações destes valores são definidas por \textit{software} e podem ser consultadas na Secção \ref{sec:configmedicaoes}.
 
 \subsubsection{Fonte de tensão \SI{5}{\volt} - fixa}
-De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada uma fonte de alimentação, tal como se pode ver na Figura \ref{fig:fonte5V} \cite{LM317}.
+De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada - Figura \ref{fig:esqlm317} e implementada - Figura \ref{fig:impllm317} - uma fonte de alimentação \cite{LM317}.
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/sch_fonte5V.png}
-	\caption{Fonte de \SI{5}{\volt}}
-	\label{fig:fonte5V}
-\end{figure}
+	\centering%
+		\centering
+		\subfloat[\centering Esquemático\label{fig:esqlm317}]{{\includegraphics[width=6.3cm]{figures/sch_fonte5V.png} }}%
+		\qquad
+		\subfloat[\centering Implementação\label{fig:impllm317}]{{\includegraphics[width=6.3cm]{figures/fonte_LM317.png} }}%
+		\caption{Fonte de \SI{5}{\volt} \textins{LM317}}%
+		\label{fig:fonte5V}%
+	\end{figure}
 
-Esta fonte teve como base o LM317 e o esquema presente na página 11, Figura 9, do \textit{datasheet} \cite{LM317}. A utilização do LM317 em detrimento, por exemplo, do LM7805 prendeu-se com a disponibilidade do regulador em contexto laboratorial. Este regulador serve perfeitamente os propósitos deste projecto, já que a tensão de saída, regulável, varia entre os \SI{1.25}{\volt} e os \SI{37}{\volt} e a corrente de saída pode ser superior a \SI{1.5}{\ampere}.
+Esta fonte teve como base o LM317 e o esquema presente na página 11, Figura 9, do \textit{datasheet} \cite{LM317}. A utilização do LM317 em detrimento, por exemplo, do LM7805 prendeu-se com a disponibilidade do regulador em contexto laboratorial. Este regulador serve perfeitamente os propósitos deste projecto, já que a tensão de saída, regulável, varia entre os \SI{1.25}{\volt} e os \SI{37}{\volt} e a corrente de saída pode ser superior a \SI{1.5}{\ampere}. 
 
 Relativamente aos díodos de protecção, $D_{1}$ e $D_{2}$, representados no esquema da Figura \ref{fig:fonte5V}, em vez de se usarem os díodos 1N4002, por uma questão de disponibilidade dos componentes, usaram-se os díodos 1N4007. Estes díodos pertencem à mesma família de diodos retificadores da série 1N400x. Ambos têm especificações elétricas e mecânicas semelhantes, nomeadamente, a capacidade de suportar correntes directas até \SI{1}{\ampere} - valor suficiente para o nosso projecto que, relembre-se, é limitado pelo \acrshort{virtualbench} a \SI{0.5}{\ampere}. No entanto, a principal diferença entre eles está na tensão inversa máxima que cada modelo é capaz de suportar \cite{1N400x}:
 
@@ -357,8 +360,6 @@ A placa desenvolvida para esta experiência, assim como a referência aos ``bloc
 
 \subsubsection{Rectificadores e filtros}
 \label{sec:rectificadoresfiltros}
-\textbf{NOTA: Fazer como na lei de ohm, explicar o funcionamento com os relés, o que fecha e deixa de fechar}
-
 Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
 
 Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta.
@@ -434,12 +435,7 @@ Portanto, se se pretender estudar o filtro passa-baixo, é activado o relé $K_{
 
 A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
-\textbf{Nota: Colocar aqui as combinações de resistências e condensadores, assim como a foto da placa com os componentes.}
-
-\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
-
-
-Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} (ou do circuito completo apresentado no Anexo \ref{AppendixA}) e da Tabela \ref{Table:rectificadoresfiltros}, pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
+Na Tabela \ref{Table:rectificadoresfiltros} e com o auxílio da Figura \ref{fig:rectificacao_filtragem_full} (ou do circuito completo apresentado no Anexo \ref{AppendixA}), pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
 
 \begin{table}[htb]
 	\centering
@@ -461,12 +457,6 @@ Com auxílio da Figura \ref{fig:rectificacao_filtragem_full} (ou do circuito com
 		\bottomrule
 	\end{tabular}}
 \end{table}
-
-\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
-
-\textbf{DE UMA FORMA BREVE E RESEUMIDA, REFERIR QUANTO BITS E COMO SE FAZ A COMUNICAÇÃO COM O SER}
-
-13 bits começar pelo esquema completo antes de dar os exemplos de funcionamento. a explicação penso que pode ficar dividida como está, mas já com o esquema e relés com os indices certos, a explicação mas os exemplos descritos em tabela só fazem sentido se for o esquema completo,
 
 \section{Software}
 \label{sec:implementacaosoftware}
@@ -735,43 +725,6 @@ Para que as experiências funcionem correctamente, todos os relés terão de ser
 
 \subsubsection{VirtualBench - Configurações e medições}
 \label{sec:configmedicaoes}
-\textbf{NOTA: Falar aqui das configurações das fontes de alimentação e restantes instrumentos}
-
-\textbf{NOTA: subsecções copiadas do HW}
-
-A configuração da fonte de \SI{6}{\volt} está exemplificada na Listagem \ref{lst:limiteI}. A variável $V_{cc}$, linha 4,  permite configurar o valor da fonte de tensão com os valores apresentados na Figura \ref{fig:pagohm}, sendo que a corrente é limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
-
-\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
-
-\begin{minipage}{0.9\linewidth}
-	\centering
-	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
-		try:
-			# Power Supply Configuration
-			channel = "ps/+6V"
-			voltage_level = Vcc
-			current_limit = 0.5
-		(...)
-	\end{lstlisting}
-\end{minipage}
-
-Esta configuração está exemplificada na Listagem \ref{lst:configfonte12} e a corrente é, também, limitada a \SI{0.5}{\ampere}, tal como se pode ver na linha 5 da mesma Listagem.
-
-\textbf{NOTA: Passar isto para uma secção na parte de software - "configuração"}
-
-\begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python, caption=Configuração da fonte de \SI{12}{\volt}, label=lst:configfonte12]
-		try:
-			# Power Supply Configuration
-			channel = "ps/+25V"
-			voltage_level = 12.0
-			current_limit = 0.5
-		(...)
-	\end{lstlisting}
-\end{minipage}
-
-\textbf{Fim da NOTA}
-
 O comando e controlo do \acrshort{virtualbench} (e respectivos instrumentos) é realizado através da biblioteca \textit{pyVirtualBench}\footnote{No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento.\label{fnlabel}} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}.
 
 Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se adequam aos objectivos deste projecto são:
@@ -784,8 +737,49 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 
 De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. Não é, de todo, o objectivo desta dissertação dissecar toda e qualquer linha de código ou forma de configurar o \acrshort{virtualbench}. Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da biblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
 
-Um desses exemplos é o que configura a fonte de tensão - \textit{ps\_example.py}. Como se pode ver na Listagem \ref{lst:exemplops}, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. 
+Através da análise dos exemplos disponibilizados para o \acrshort{virtualbench} (e que estão definidos no repositório já mencionado do \textit{GitHub}), foi possível compreender a estrutura geral de configuração aplicada aos instrumentos e fontes de alimentação. Com base nessa análise, determinou-se a seguinte lógica de funcionamento:
 
+\begin{enumerate}
+	\label{item:logica}
+	\item Aquisição do \textit{virtualbench};
+	\item Aquisição dos instrumentos;
+	\item Configurações específicas de cada instrumento;
+	\item Desenvolvimento do programa;
+	\item Libertar os instrumentos;
+	\item Libertar o \textit{virtualbench}.
+\end{enumerate}
+
+A aquisição do \acrshort{virtualbench}, identificado como \textit{VB8012-30A210F}, é feita através da criação de uma instância da classe \textit{PyVirtualBench}, que é a classe principal da biblioteca \textit{pyVirtualBench}, definida na Linha \ref{line:vb8012}, da Listagem \ref{lst:instanciacao}.
+
+\begin{center}
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Instanciação da classe \textit{PyVirtualBench}, label=lst:instanciacao]
+		virtualbench = PyVirtualBench('VB8012-30A210F') |\label{line:vb8012}|
+		ps = virtualbench.acquire_power_supply() |\label{line:acquireps}|
+	\end{lstlisting}
+\end{minipage}
+\end{center}
+
+A partir do objeto \textit{virtualbench}, é possível aceder aos diferentes instrumentos, sendo que a aquisição é feita através do método \textit{acquire\_\textless instrumento\textgreater()}. Essa instância é armazenada numa variável definida pelo utilizador, permitindo o acesso às funcionalidades de configuração, controlo e medição disponibilizadas por esse instrumento. Na Listagem \ref{lst:instanciacao}, linha \ref{line:acquireps}, pode ver-se, a título de exemplo, como é feita a aquisição da fonte de alimentação, que é armazenada na variável \textit{ps}.
+
+
+\begin{minipage}{0.7\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemploconfigps]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+25V" |\label{line:channel}| 
+			voltage_level = 1.0 |\label{line:voltagelevel}|
+			current_limit = 0.5 |\label{line:currentlimit}| 
+	\end{lstlisting}
+\end{minipage}
+
+\begin{itemize}
+	\item \textit{channel} - linha \ref{line:channel}: especifica o canal da fonte de tensão a utilizar, sendo que, neste exemplo, é selecionado o canal de \SI{25}{\volt}, através do nome ``ps/+25V'' (podendo também ser utilizado ``ps/+6V'' para o canal de \SI{6}{\volt});
+	\item \textit{voltage\_level} - linha \ref{line:voltagelevel}: define o valor da tensão de saída. No caso deste exemplo, \SI{1.0}{\volt}. Pode ser, também, atribuída uma variável - $V_{cc}$ - com base nos valores apresentados na Figura~\ref{fig:pagohm});
+	\item  \textit{current\_limit} - linha \ref{line:currentlimit}: é configurado o limite de corrente para \SI{0.5}{\ampere}.
+\end{itemize}
+
+Como se pode ver na mesma Listagem, o \textit{virtualbench} é chamado na linha~\ref{line:virtualbench} e a fonte de tensão na linha~\ref{line:powersource}. 
 O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 medições de tensão e corrente. A fonte é depois libertada, linha~\ref{line:pslibertada}, e não havendo erro, o \textit{virtualbench} é libertado, linha~\ref{line:virtualbenchlibertado}. A execução do \textit{script} é, então, terminada.
 
 \begin{minipage}{0.9\linewidth}
@@ -793,8 +787,8 @@ O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 med
 		try:
 			# Power Supply Configuration
 			channel = "ps/+25V" |\label{line:channel}| 
-			voltage_level = 1.0
-			current_limit = 0.5 |\label{line:current_limit}| 
+			voltage_level = 1.0 |\label{line:voltagelevel}|
+			current_limit = 0.5 |\label{line:currentlimit}| 
 			# Iniciar o VirtualBench
 			virtualbench = PyVirtualBench('VB8012-30A210F') |\label{line:virtualbench}| 
 			
@@ -819,18 +813,7 @@ O ciclo \textit{for}, na linha~\ref{line:ciclofor}, executa uma série de 10 med
 	\end{lstlisting}
 \end{minipage}
 
-Portanto, de uma forma  geral, depois de iniciado ou chamado o \textit{script-ficheiro}, a lógica de funcionamento é a seguinte:
-\begin{enumerate}
-	\label{item:logica}
-	\item Aquisição do \textit{virtualbench};
-	\item Aquisição dos instrumentos;
-	\item Configurações específicas de cada intrumento;
-	\item Desenvolvimento do programa;
-	\item Libertar os instrumentos;
-	\item Libertar o \textit{virtualbench}.
-\end{enumerate}
-
-Neste contexto e voltando ao exemplo da Listagem \ref{lst:exemplops}, depois de realizada a aquisição do \acrshort{virtualbench} são realizadas as configurações necessárias para o exemplo em questão. Entre a linha~\ref{line:channel} e a linha~\ref{line:current_limit} são definidos os parâmetros da fonte de tensão, nomeadamente o canal de saída - fonte de \SI{25}{\volt}, o nível de tensão - saída definida para \SI{1}{\volt} e o limite de corrente - \SI{0.5}{\ampere}. A fonte de tensão é, então, adquirida na linha~\ref{line:powersource} e configurada na linha~\ref{line:psconfig} com os parâmetros definidos anteriormente e todas as saídas da fonte são activadas na linha~\ref{line:psenable}. 
+Neste contexto e voltando ao exemplo da Listagem \ref{lst:exemplops}, depois de realizada a aquisição do \acrshort{virtualbench} são realizadas as configurações necessárias para o exemplo em questão. Entre a linha~\ref{line:channel} e a linha~\ref{line:currentlimit} são definidos os parâmetros da fonte de tensão, nomeadamente o canal de saída - fonte de \SI{25}{\volt}, o nível de tensão - saída definida para \SI{1}{\volt} e o limite de corrente - \SI{0.5}{\ampere}. A fonte de tensão é, então, adquirida na linha~\ref{line:powersource} e configurada na linha~\ref{line:psconfig} com os parâmetros definidos anteriormente e todas as saídas da fonte são activadas na linha~\ref{line:psenable}. 
 
 Vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
 
@@ -862,6 +845,18 @@ Pode-se, no entanto, referir as principais funções que permitem a medição de
 		\item \textit{fgen.run()} - inicia o gerador de sinal, após as configurações iniciais:\\fgen.configure~\textunderscore waveform(fgen~\textunderscore function, frequency, amplitude, offset);
 	\end{itemize}
 \end{itemize}
+
+\begin{minipage}{0.9\linewidth}
+	\centering
+	\begin{lstlisting}[language=Python, escapechar=|, caption=Configuração da fonte de \SI{6}{\volt}, label=lst:limiteI]
+		try:
+			# Power Supply Configuration
+			channel = "ps/+6V" |\label{line:channel}|
+			voltage_level = Vcc |\label{line:voltagelevel}|
+			current_limit = 0.5 |\label{line:currentlimit}|
+		(...)
+	\end{lstlisting}
+\end{minipage}
 
 \subsection{Interface WEB}
 \label{sec:interfaceweb}
