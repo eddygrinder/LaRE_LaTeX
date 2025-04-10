@@ -440,6 +440,7 @@
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{78}
 \glossaryentry{IDC?\glossentry{idc}|setentrycounter[]{page}"\glsnumberformat}{79}
 \glossaryentry{CC?\glossentry{cc}|setentrycounter[]{page}"\glsnumberformat}{80}
+\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{83}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{83}
 \glossaryentry{PIP?\glossentry{pip}|setentrycounter[]{page}"\glsnumberformat}{83}
 \glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{83}
@@ -477,7 +478,6 @@
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{93}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{93}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{93}
-\glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{93}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{94}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{94}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{94}
@@ -485,8 +485,8 @@
 \glossaryentry{IDE?\glossentry{ide}|setentrycounter[]{page}"\glsnumberformat}{95}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{95}
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{95}
-\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{96}
+\glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{95}
+\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{95}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{96}
-\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{96}
-\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{98}
+\glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{97}
 \glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{98}

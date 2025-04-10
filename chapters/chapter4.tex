@@ -462,7 +462,7 @@ Na Tabela \ref{Table:rectificadoresfiltros} e com o auxílio da Figura \ref{fig:
 \label{sec:implementacaosoftware}
 Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e teste dos assuntos mais técnicos revelou-se longa e muitas vezes extenuante. Os recursos são (quase) incomensuráveis e o grande desafio foi tentar perceber a dicotomia certo/errado. Recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
 
-Este projeto de código fonte aberto está dividido em dois repositórios, disponíveis para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE} e \href{https://github.com/eddygrinder/LaRE_PICode}{PiCode}. Assim, os ficheiros são referenciados relativamente ao respectivo repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos.
+Este projeto de código fonte aberto está dividido em dois repositórios, disponíveis para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE} e \href{https://github.com/eddygrinder/LaRE_PICode}{PiCode}. Assim, os ficheiros são referenciados relativamente ao respectivo repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos. Não se pretende, contudo, abordar exaustivamente todas as instruções ou métodos de configuração do \acrshort{virtualbench}, sendo que os ficheiros se encontram devidamente comentados, sendo possível obter informações adicionais através da sua consulta. 
 
 \subsection{Servidor Flask}
 \label{sec:flask}
@@ -737,7 +737,7 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 
 De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. 
 
-Nesta secção, apresenta-se como exemplo a configuração da fonte de alimentação, por ser o único instrumento utilizado em todas as experiências realizadas. Não se pretende, contudo, abordar exaustivamente todas as instruções ou métodos de configuração do \acrshort{virtualbench}. Os ficheiros anteriormente referidos encontram-se devidamente comentados, sendo possível obter informações adicionais através da sua consulta.
+Nesta secção, apresenta-se como exemplo a configuração da fonte de alimentação, por ser o único instrumento utilizado em todas as experiências realizadas. 
 
 Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da biblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
 
@@ -822,19 +822,17 @@ No entanto, se um ficheiro for chamado várias vezes (como no caso da experiênc
 
 %NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
 
-DO PONTO DE VISTA DE SOFTWARE E IMPLEMENTAÇÃO É MAIS COMPLEXO MAS DO PONTO DE VISTA DO IDE É TUDO A MESMA MERDA, ESTE PARÁGRAFO TEM DE SER REVISTO
+Do ponto de vista do \textit{software ou \acrshort{ide}}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os rectificadores e filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências.
 
-Do ponto de vista do \textit{software ou \acrshort{ide}}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os Rectificadores e Filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. \textbf{NOTA: Acho que esta parte precisa de ser melhor explicada}
-
-Conforme mencionado na secção anterior - ver REF -, não se pretende, neste estudo, proceder a uma análise exaustiva de todas as linhas de código ou ficheiros do projeto. Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
+Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
 
 %\sout{a base da Arquitetura de Comunicação, a troca de parâmetros e as configurações entre os diversos tipos de ficheiros.} \textbf{NOTA: Este parágrafo não faz muito sentido aqui, após a mudança do nome da secção para Interface WEB ou talvez reescrever a última frase após o optou-se...}
 
-\textbf{NOTA: Este parágrafo pode ser retirado ou colocado noutro local. Para já fica aqui - A REVER.}
+Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento, tal como descrito na Secção \ref{sec:fontesalimentacao}. 
 
-Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento - \textbf{NOTA: Fazer referência à secção de HW}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. \textbf{NOTE: talvez explicar melhor os botões OK e STOP/RESET}
+Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. 
 
-A verificação e detecção dos erros acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados ou, no caso dos rectificadores e filtros, colocar o valor da frequência fora do valor definido nas intruções. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
+A verificação e detecção dos erros, Figura \ref{fig:erropagina}, acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados ou, no caso dos rectificadores e filtros, colocar o valor da frequência fora do valor definido nas instruções. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -842,7 +840,6 @@ A verificação e detecção dos erros acontece quando o utilizador tenta selecc
 	\caption{Erro de selecção}
 	\label{fig:erropagina}
 \end{figure}
-
 
 Como mencionado na Secção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível. Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
 
@@ -883,8 +880,9 @@ Após o registo e \textit{login} bem sucedido, é apresentada a página inicial,
 	\label{fig:pagmenu}
 \end{figure}
 
-O modelo é uniforme para todas as experiências, apresentando o respectivo esquema e contextualização da actividade. Após a selecção da experiência, as páginas introdutórias e de controlo seguem a mesma estrutura de menus e o mesmo padrão de organização e navegação. Na Figura \ref{fig:ohm_intro} e Figura \ref{fig:ohm_ctrl} pode ver-se um exemplo referente à experiência da Lei de \textit{Ohm}. 
-\textbf{NOTA: Não sei se esta frase se enquadra bem- opinião PROF} No entanto, no que diz respeito ao controlo das experiências, tal como referido na Secção \ref{sec:interfaceweb}, a experiência da Lei de \textit{Ohm} apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência.
+O modelo adoptado é uniforme para todas as experiências, apresentando o respectivo esquema e contextualização da actividade. Após a selecção da experiência, tanto as páginas introdutórias como as de controlo seguem a mesma estrutura de menus, mantendo o mesmo padrão de organização e navegação. A título de exemplo, as Figuras \ref{fig:ohm_intro} e \ref{fig:ohm_ctrl} ilustram, respetivamente, as páginas de introdução e controlo relativas à Lei de Ohm. 
+
+% No entanto, no que diz respeito ao controlo das experiências, tal como referido na Secção \ref{sec:interfaceweb}, a experiência da Lei de \textit{Ohm} apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -897,7 +895,7 @@ O modelo é uniforme para todas as experiências, apresentando o respectivo esqu
 	\end{figure}
 
 \subsubsection{Lei de \textit{Ohm}}
-Nesta experiência, optou-se por conceder liberdade de escolha e controlo aos utilizadores, o que representou um desafio à implementação. (\textbf{se calhar retirava este parágrafo}) Em vez de permitir apenas a selecção do valor da resistência, com medições realizadas (automaticamente) por \textit{software}, decidiu-se oferecer ao utilizador a possibilidade de escolher o valor da resistência e controlar as medições de tensão e corrente. Do ponto de vista pedagógico, considerou-se mais benéfico que, neste caso, os alunos verifiquem os valores das grandezas medidas à medida que realizam as medições e avançam na experiência. Além disso, o resultado e o gráfico final serão independentes da ordem pela qual se efectuam as medições. (\textbf{Este parágrafo precisa de ser revisto})
+Nesta experiência, optou-se por conceder liberdade de escolha e controlo aos utilizadores, o que representou um desafio à implementação. Em vez de permitir apenas a selecção do valor da resistência, com medições realizadas (automaticamente) por \textit{software}, decidiu-se oferecer ao utilizador a possibilidade de escolher o valor da resistência e controlar as medições de tensão e corrente. Do ponto de vista pedagógico, considerou-se mais benéfico que, neste caso, os alunos verifiquem os valores das grandezas medidas à medida que realizam as medições e avançam na experiência. Além disso, o resultado e o gráfico final serão independentes da ordem pela qual se efectuam as medições.
 
 A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da Lei de \textit{Ohm}. 
 
@@ -908,11 +906,13 @@ A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da 
 	\label{fig:pagmenuCTRL}
 \end{figure}
 
-A selecção dos valores da resistência e do $V_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, embora a medição da tensão corresponda ao valor de $V_{CC}$ seleccionado, optou-se, por razões pedagógicas e de coerência com o esquema, pot medir e apresentar a tensão aos terminais da resistência.
+A selecção dos valores da resistência e do $U_{CC}$ \textbf{NOTA: Não esquecer de mudar o termo para Ucc nas páginas} é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, embora a medição da tensão corresponda ao valor de $U_{CC}$ seleccionado, optou-se, por razões pedagógicas e de coerência com o esquema, por medir e apresentar a tensão aos terminais da resistência.
 
 As medições só serão efectivamente realizadas e os valores apresentados, quando o utilizador seleccionar a opção ``Medir tensão'' e/ou ``Medir corrente''. 
 
-Após a realização das dez medições, o utilizador pode seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. (Se o gráfico for solicitado antes da conclusão de todas as medições, este será apresentado, embora de forma incompleta. No entanto, o utilizador poderá continuar a experiência sem impedimentos.\textbf{NOTA: Verificar se isto está bem escrito... Talvez mudar o link para ``ver gráfico''})
+Após a realização das dez medições, o utilizador pode seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. (Se o gráfico for solicitado antes da conclusão de todas as medições, este será apresentado, embora de forma incompleta. No entanto, o utilizador poderá continuar a experiência sem impedimentos.
+
+\textbf{NOTA: Referir o procedimento da experiência?}
 
 \subsubsection{Rectificador de meia onda e onda completa}
 \label{sec:rectificadores}
