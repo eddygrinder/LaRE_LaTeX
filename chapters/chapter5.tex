@@ -47,50 +47,6 @@ No caso em que a resistência é dada, o declive pode ser calculado e confrontad
 
 
 \section{Rectificadores}
-Nesta experiência pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação e a influência que têm na variação da tensão de \textit{ripple}. 
-
-
-No rectificador de meia onda não houve necessidade de usar um transformador, sendo que, neste caso, o Bloco 1 fica reduzido ao gerador de sinal. Esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência. O Bloco 2, rectificação, depende do tipo de rectificador que se pretende estudar - um díodo, rectângulo tracejado vermelho ou uma ponte rectificadora - rectângulo tracejado a verde. O Bloco 3 é o único Bloco comum às duas experiências. Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta. O Bloco 4 não está implementado, visto que, como já foi dito anteriormente, o objectivo é o estudo da variação da tensão de \textit{ripple}. (A inclusão da estabilização poderá ser objecto de trabalho futuro)
-
-A tensão de \textit{ripple} é uma componente dependente do tempo que surge à saída do filtro do rectificador - Bloco 3 - sendo que terá de ser minimizada, de forma a estabilizar o valor da tensão de saída \acrshort{cc} - Bloco 4. \cite{sedrasmith} 
-
-A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple.png}
-	\caption{Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite{sedrasmith}}
-	\label{fig:sedraripple}
-\end{figure}
-
-A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vripple}:
-
-\begin{equation} \label{eq:vripple}
-	U_{r} = \frac{U_{P}}{fRC}
-\end{equation}
-
-Observa-se, a partir da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{o}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
-
-\begin{equation} \label{eq:tensaosaida}
-	u_{o} = U_{P} - \dfrac{1}{2}U_{r}	
-\end{equation}
-
-No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificação de onda completa e como pode ser visto na Figura \ref{fig:sedraripplecompleta}, a frequência do \textit{ripple} é o dobro da frequência da onda de entrada.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple_OC.png}
-	\caption{Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite{sedrasmith}}
-	\label{fig:sedraripplecompleta}
-\end{figure}
-
-Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela Equação \ref{eq:vrippleOC}:
-
-\begin{equation} \label{eq:vrippleOC}
-	U_{r} = \frac{U_{P}}{2fRC}
-\end{equation}
-
-São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}.
-
 A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
 \textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
@@ -98,6 +54,7 @@ A implementação destas duas experiências foi feita de forma a que se possa es
 No caso dos rectificadores, o Bloco 1 fica reduzido ao gerador de sinal, sendo que esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência ou ao transformador monofásico. \textbf{Nota: Complementar com a foto da placa da fonte} O Bloco 2, depende do tipo de rectificador que se pretende estudar - um díodo ou uma ponte rectificadora, item \ref{diodos}. O Bloco 3 é o único bloco comum às duas experiências. Embora no estudo da rectificação de meia onda se use, somente, os componentes descritos nos itens \ref{resistencias} e \ref{condensadores}, já na implementação dos filtros, usou-se mais um condensador e uma resistência, descritos no item \ref{rescond}. 
 
 Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta.
+
 
 \subsubsection{Filtros}
 \label{sec:filtros}

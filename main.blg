@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: front/title.aux
+A level-1 auxiliary file: front/1_dedicatory.aux
+A level-1 auxiliary file: front/2_acknowledgements.aux
+A level-1 auxiliary file: front/3_abstract.aux
+A level-1 auxiliary file: front/4_frontmatterlists.aux
+A level-1 auxiliary file: chapters/chapter1.aux
+A level-1 auxiliary file: chapters/chapter2.aux
+A level-1 auxiliary file: chapters/chapter3.aux
+A level-1 auxiliary file: chapters/chapter4.aux
+The style file: ieeetr.bst
+A level-1 auxiliary file: chapters/appendixA.aux
+Database file #1: sampleRefs.bib
+Warning--empty publisher in Hofstein
+Warning--empty publisher in pisa2018
+Warning--empty booktitle in zutinlab2go
+Warning--empty journal in faina
+Warning--empty booktitle in multisimVLUmenne
+Warning--empty journal in PaperTit40:online
+Warning--empty booktitle in yoder
+Warning--empty publisher in Marzoli
+Warning--empty booktitle in lynch
+Warning--empty journal in Gherasim
+Warning--empty booktitle in deMel
+Warning--empty publisher in controversy
+Warning--empty journal in ExperiencesRemoteLaboratories
+Warning--empty booktitle in DevelopingVirtualAndRemoteUndergraduate
+Warning--empty journal in TheVISIRproject
+Warning--empty booktitle in pereira
+You've used 171 entries,
+            1876 wiz_defined-function locations,
+            1295 strings with 35464 characters,
+and the built_in function-call counts, 33182 in all, are:
+= -- 3059
+> -- 1396
+< -- 0
++ -- 561
+- -- 390
+* -- 2047
+:= -- 4422
+add.period$ -- 276
+call.type$ -- 171
+change.case$ -- 163
+chr.to.int$ -- 0
+cite$ -- 187
+duplicate$ -- 1457
+empty$ -- 3686
+format.name$ -- 390
+if$ -- 8399
+int.to.chr$ -- 0
+int.to.str$ -- 171
+missing$ -- 77
+newline$ -- 622
+num.names$ -- 94
+pop$ -- 1066
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1056
+stack$ -- 0
+substring$ -- 1208
+swap$ -- 434
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 16
+while$ -- 189
+width$ -- 174
+write$ -- 1470
+(There were 16 warnings)
