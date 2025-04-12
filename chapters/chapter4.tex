@@ -1050,36 +1050,32 @@ A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfil
 A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiência do rectificador de meia onda. Os utilizadores podem seleccionar quatro valores para o termo RC, sendo que os valores de C estão definidos para \SI{1}{\micro\farad} e \SI{10}{\micro\farad} e a frequência varia entre \SI{5}{\hertz} e \SI{2000}{\hertz}. 
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/meiaonda_page_controlo.png}
-	\caption{Rectificador de meia onda - Selecção dos parâmetros}
-	\label{fig:meiaondamenuCTRL}
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo\label{fig:meiaondamenuCTRL}]{{\includegraphics[width=6cm]{figures/meiaonda_page_controlo-FULL.png} }}%
+		\qquad
+		\subfloat[\centering Rectificador de onda completa\label{fig:ondacompletamenuCTRL}]{{\includegraphics[width=6cm]{figures/ondacompleta_control.png} }}%
+		\caption{Selecção de parâmetros}%
+		\label{fig:seleccaoparametros}%
 \end{figure}
 
 As medições e construção do gráfico são realizadas por \textit{software}, baseadas nos valores seleccionados pelos utilizadores. Os resultados obtidos podem, então, ser comparados com o gráfico teórico, definido na Figura \ref{fig:sedraripple} ou pela Equação \ref{eq:vripple}. Para o mesmo par RC, os utilizadores podem, ainda, variar a frequência e comparar os resultados obtidos.
 
 Relativamente ao rectificador de onda completa, a Figura \ref{fig:ondacompletamenuCTRL} apresenta a página de controlo da experiência, que é praticamente idêntica à do rectificador de meia onda, excepto pelo facto de a frequência não poder ser ajustada pelo utilizador. Os valores dos condensadores e resistências são os mesmos para ambas as experiências.
 
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/ondacompleta_control.png}
-	\caption{Rectificador de onda completa - Selecção dos parâmetros}
-	\label{fig:ondacompletamenuCTRL}
-\end{figure}
+O procedimento para a realização da experiência é o seguinte:
+\begin{enumerate}
+	\item Seleccionar ``OK'' para activar a fonte do \acrshort{virtualbench} e alimentar os integrados;
+	\item Escolher o valor da resistência;
+	\item Escolher o valor do condensador;
+	\item Efectuar as medições;
+	\item Ver o gráfico resultante.
+	\item Seleccionar ``STOP/RESET'' para desactivar a fonte do \acrshort{virtualbench}.
+\end{enumerate}
 
 \subsubsection{Filtros}
 \label{sec:filtrosSW}
 As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas à do rectificador de meia onda.
-
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/Sedra_FPB_GIMP.png} }}%
-		\qquad
-		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/Sedra_FPA_GIMP.png} }}%
-		\caption{Esquemas dos filtros \cite{sedrasmith}}%
-		\label{fig:filtrosesqgeral}%
-\end{figure}
 
 Consoante a configuração do filtro, o utilizador escolhe entre dois condensadores ou duas resistências, representados no rectângulo tracejado cor-de-laranja, na Figura \ref{fig:rectificacao_filtragem_full}. Como já foi referido na Secção \ref{sec:experiencias}, os componentes dentro do rectângulo tracejado vermelho, representados na mesma figura, foram adicionados após a implementação dos rectificadores. Assim, quando se pretende estudar o filtro passa-baixo, o utilizador escolhe entre os dois condensadores (de saída) e se pretender estudar o passa-alto, escolhe entre as duas resistências (de saída). 
 

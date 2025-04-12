@@ -20,7 +20,7 @@ Numa fase mais embrionária, foram feitos alguns testes de controlo de relés co
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/arduinomega.png}
+    \includegraphics[width=0.4\textwidth]{figures/arduinomega.png}
     \caption{\textit{Arduino} Mega \cite{ArduinoMega}}
     \label{fig:arduinomega}
 \end{figure}
@@ -41,7 +41,7 @@ Estas limitações não permitem a implementação de um servidor minimamente ro
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.4\textwidth]{figures/ESP32-DevKitC_L_0.png}
+    \includegraphics[width=0.3\textwidth]{figures/ESP32-DevKitC_L_0.png}
     \caption{\textit{ESP32} \cite{ESPDevKit}}
     \label{fig:ESP32}
 \end{figure}
@@ -50,7 +50,7 @@ A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, se
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/raspberrypi5.jpg}
+    \includegraphics[width=0.4\textwidth]{figures/raspberrypi5.jpg}
     \caption{\textit{RaspberryPI5} \cite{introRaspberrypi5}}
     \label{fig:Raspberrypi5}
 \end{figure}
@@ -84,7 +84,7 @@ De referir que o \acrshort{virtualbench} não pode ser controlado pelo \textit{p
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/VB8012-OHM_Exemplo.png}
+    \includegraphics[width=0.7\textwidth]{figures/VB8012-OHM_Exemplo.png}
     \caption{Exemplo do \acrshort{virtualbench} usado como multímetro digital}
     \label{fig:leituraohm}
 \end{figure}
@@ -166,14 +166,14 @@ Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e 
 \begin{figure}[hbtp]
     \centering
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/virtualbench_back-panel.jpg}
+    \includegraphics[width=0.5\textwidth]{figures/virtualbench_back-panel.jpg}
     \caption{Painel traseiro \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
     \label{fig:paineltraseiro}
 \end{figure}
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/virtualbench_front-panel.jpg}
+    \includegraphics[width=0.5\textwidth]{figures/virtualbench_front-panel.jpg}
     \caption{Painel frontal \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
     \label{fig:paineldianteiro}
 \end{figure}
@@ -184,7 +184,7 @@ Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e 
 \label{sec:matriz}
 Encontradas as soluções de \textit{hardware} e \textit{software}, assim como as experiências a serem implementadas, partiu-se para o projecto da matriz.
 
-Mais uma vez, tomando como base o \acrshort{visir}, como pode ser visto mais pormenor na Figura \ref{fig:visir104}, decidiu-se projectar uma matriz com a dimensão das placas a obedecerem às definidas pela consórcio \gls{pc/104} \cite{PC104}. Este consórcio definiu um padrão que se destaca pelo seu formato compacto e modular. As dimensões mecânicas das placas estão definidas na \textbf{referência ao datasheet - VER COPMO FAZER REFERÊNCIA}.
+Mais uma vez, tomando como base o \acrshort{visir}, como pode ser visto mais pormenor na Figura \ref{fig:visir104}, decidiu-se projectar uma matriz com a dimensão das placas a obedecerem às definidas pela consórcio \gls{pc/104} \cite{PC104}. Este consórcio definiu um padrão que se destaca pelo seu formato compacto e modular. As dimensões mecânicas das placas estão definidas no Anexo \ref{AppendixA}.
 
 \begin{figure}[hbtp]
     \centering
@@ -203,7 +203,7 @@ Esta versão traz várias melhorias e novos recursos, sendo que as principais di
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/pi5_dissipador.png}
+    \includegraphics[width=0.5\textwidth]{figures/pi5_dissipador.png}
     \caption{\textit{Raspberry PI5} com dissipador activo utilizado no \acrshort{lare}}
     \label{fig:pi5dissipador}
 \end{figure}
@@ -269,7 +269,7 @@ Os relés utilizados no \acrshort{lare} estavam disponíveis em contexto laborat
 
 No \acrshort{lare} foram usados dois tipos de relés - simples, \acrfull{spst} e duplos, \acrfull{dpst}, como se pode ver na Figura \ref {fig:reles}.
 
-Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no \textit{datasheet} anexo a este documento. \textbf{Ver como fazer a referência ao datasheet}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, a tensão da bobine é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
+Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no Anexo \ref{AppendixA}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, a tensão da bobine é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
 
 \begin{figure}[hbtp]
     \centering
