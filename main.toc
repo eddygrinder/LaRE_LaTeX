@@ -75,5 +75,5 @@
 \contentsline {subsubsection}{Lei de \textit {Ohm}}{101}{section*.122}%
 \contentsline {subsubsection}{Rectificador de meia onda e onda completa}{102}{section*.124}%
 \contentsline {subsubsection}{Filtros}{103}{section*.127}%
-\contentsline {chapter}{Refer\^{e}ncias}{105}{section*.128}%
+\contentsline {chapter}{Refer\^{e}ncias}{105}{section*.129}%
 \contentsline {chapter}{Anexo \numberline {A}Datasheet}{121}{appendix.1.A}%

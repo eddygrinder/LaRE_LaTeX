@@ -1043,7 +1043,7 @@ Sendo assim, o procedimento para a realização da experiência é o seguinte:
 
 \subsubsection{Rectificador de meia onda e onda completa}
 \label{sec:rectificadores}
-Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}. \textbf{NOTA: Esta parte não foi explicada no Hardware - Verificar onde fica melhot} 
+Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}.
 
 A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa já referenciado na Secção \ref{sec:fontealternada}, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
 
@@ -1069,6 +1069,20 @@ Relativamente ao rectificador de onda completa, a Figura \ref{fig:ondacompletame
 
 \subsubsection{Filtros}
 \label{sec:filtrosSW}
-As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas à do rectificador de meia onda. Ao utilizador é proposto a escolha entre os dois condensadores já definidos e implementados nas experiências anteriores mas somente uma resistência. \textbf{NOTA:  Isto prende-se com os factos já apresentados na Secção XPTO.} O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. Além disso, considerou-se que, a nível pedagógico, seria uma mais-valia permitir o estudo da resposta em frequência, pelo que, para além do gráfico da tensão \textit{ripple}, o utilizador pode ainda visualizar o diagrama de Bode. A Figura \ref{fig:ondacompletamenuCTRL} apresenta a página do filtro passa-baixo, sendo que a única diferença para o passa-alto é o esquema representado na Figura \ref{fig:ondacompletamenuCTRL}.
+As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas à do rectificador de meia onda.
 
-Foda-se
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo\label{fig:filtro_pb}]{{\includegraphics[width=6cm]{figures/Sedra_FPB_GIMP.png} }}%
+		\qquad
+		\subfloat[\centering Filtro passa-alto\label{fig:filtro_pa}]{{\includegraphics[width=6cm]{figures/Sedra_FPA_GIMP.png} }}%
+		\caption{Esquemas dos filtros \cite{sedrasmith}}%
+		\label{fig:filtrosesqgeral}%
+\end{figure}
+
+Consoante a configuração do filtro, o utilizador escolhe entre dois condensadores ou duas resistências, representados no rectângulo tracejado cor-de-laranja, na Figura \ref{fig:rectificacao_filtragem_full}. Como já foi referido na Secção \ref{sec:experiencias}, os componentes dentro do rectângulo tracejado vermelho, representados na mesma figura, foram adicionados após a implementação dos rectificadores. Assim, quando se pretende estudar o filtro passa-baixo, o utilizador escolhe entre os dois condensadores (de saída) e se pretender estudar o passa-alto, escolhe entre as duas resistências (de saída). 
+
+Eventualmente, poder-se-ia ter adicionado mais resistências/condensadores aos filtros, nomeadamente, no rectângulo tracejado vermelho, de forma a permitir uma maior versatilidade no estudo. No entanto, além de não existir o número suficiente de relés em contexto laboratorial, considerou-se que, desta forma, o estudo e os objectivos da experiência, ficariam provados.
+
+O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. A Figura \ref{fig:ondacompletamenuCTRL} apresenta a página do filtro passa-baixo, sendo que a única diferença para o passa-alto é o esquema representado na Figura \ref{fig:ondacompletamenuCTRL}.
