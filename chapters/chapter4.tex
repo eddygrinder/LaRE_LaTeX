@@ -774,24 +774,44 @@ A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da
 \textbf{Aqui poderia ficar o parágrafo da explicação do ?}
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=html, escapechar=|, caption=Comunicação \acrshort{html} $\rightarrow$ \textit{views.py}, label=lst:htmlpy]
+	\begin{lstlisting}[language=html, escapechar=|, caption=Envio de parâmetros \acrshort{html} $\rightarrow$ \textit{views.py}, label=lst:htmlpy]
 	const url = `/config_VirtualBench?variavel_1=${parametro_1}&variavel_2=${parametro_2}&variavel_3=${parametro_3}`; |\label{line:parametros}|
 	\end{lstlisting}
 \end{minipage}
 
-Do lado do servidor, o \textit{Flask} disponibiliza o método \textit{request} e os parâmetros são recebidos através de \textit{request.args.get()}, como representado na Listagem \ref{lst:metodorequest}.
+Do lado do servidor, o \textit{Flask} disponibiliza o objecto \textit{request}, a partir do qual os parâmetros enviados por \acrshort{url} podem ser acedidos através da função \textit{request.args.get()}, como representado na Listagem~\ref{lst:metodorequest}.
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{views.py} - \acrshort{html}, label=lst:metodorequest]
+	\begin{lstlisting}[language=python, escapechar=|, caption=Recepção de parâmetros, label=lst:metodorequest]
 		Vcc = request.args.get('parametro_1', 0, int)  |\label{line:vccrequest}|
 	\end{lstlisting}
 \end{minipage}
 
-O envio de parâmetros do ficheiro textit{python} para as páginas \acrshort{html} é feito em \acrfull{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
+O envio de parâmetros do ficheiro \textit{python} para as páginas \acrshort{html} é feito em \acrfull{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=python, escapechar=|, caption=Envio de parâmetros \textit{views.py} $\rightarrow$ \acrshort{html}, label=lst:returnjson]
+		return jsonify({'measurement_result': measurement_result})
+	\end{lstlisting}
+\end{minipage}
+
+Do lado das páginas \acrshort{html} a recepção do resultado é feita através do método \textit{fetch()}, como se pode ver na Listagem \ref{lst:recepcaojson}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=html, escapechar=|, caption=Recepção de parâmetros, label=lst:recepcaojson]
+		fetch(url)
+		.then((response) => response.json())
+		// Aceder a variavel measurement_result
+		.then((data) => {
+		  document.getElementById("current-measure").innerHTML = 
+		  	data.measurement_result + " mA";	
+		\end{lstlisting}
+\end{minipage}
 
 As setas verdes representam a comunicação entre dois ficheiros \textit{python}. O processo é bastante simples, bastando para isso, importar o ficheiro que contém a função que se pretende chamar. A Lista \ref{lst:pypy} ilustra a forma como se importa um ficheiro \textit{python} e a chamada da respectiva função com o parâmetro a passar.
 
 \textbf{DÚVIDA: Explicar melhor as linhas 1 e 2?}
+\textbf{NOTA: Explicar aqui, talvez, o pormenor de chamar várias vezes o ficheiro?}
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{python} - \textit{python}, label=lst:pypy]
