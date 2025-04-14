@@ -121,7 +121,7 @@ A comunicação entre os diversos dispositivos é feita da seguinte forma:
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/socketsdiagrama.png}
+    \includegraphics[width=0.5\textwidth]{figures/socketsdiagrama.png}
     \caption{Fluxograma de uma chamada ao \textit{socket} \cite{Sockets}}
     \label{fig:fluxogramasockets}
 \end{figure}
@@ -132,8 +132,8 @@ A Figura {\ref{fig:arquitecturalore}} apresenta com mais pormenor a solução im
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{figures/Diagrama_SOFTWARE.drawio.png}
-    \caption{Arquitectura \acrshort{lare}}
+    \includegraphics[width=0.7\textwidth]{figures/Diagrama_SOFTWARE.drawio.png}
+    \caption{Arquitectura \acrshort{lare} - \textbf{NOTE: Fig tem de ser revista}}
     \label{fig:arquitecturalore}
 \end{figure}
 
@@ -235,7 +235,7 @@ Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o 
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/GPIO-Pinout-Diagram-2.png}
+    \includegraphics[width=0.5\textwidth]{figures/GPIO-Pinout-Diagram-2.png}
     \caption{\acrshort{gpio}s \textit{RaspberryPI} \cite{Raspberrytech}}
     \label{fig:gpio}
 \end{figure}
@@ -246,7 +246,7 @@ Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurado
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.7\textwidth]{figures/GPIO.png}
+    \includegraphics[width=0.5\textwidth]{figures/GPIO.png}
     \caption{Representação alternativa dos \acrshort{gpio}s \cite{Raspberrytech}}
     \label{fig:gpiocores}
 \end{figure}
@@ -269,7 +269,7 @@ Os relés utilizados no \acrshort{lare} estavam disponíveis em contexto laborat
 
 No \acrshort{lare} foram usados dois tipos de relés - simples, \acrfull{spst} e duplos, \acrfull{dpst}, como se pode ver na Figura \ref {fig:reles}.
 
-Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no Anexo \ref{AppendixA}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, a tensão da bobine é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
+Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no Anexo \ref{AppendixA} e as completas nos respectivos \textit{datasheet} \cite{DryRelay}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, a tensão da bobine é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
 
 \begin{figure}[hbtp]
     \centering
@@ -283,10 +283,10 @@ Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os rel�
 
 \subsection{\textit{Driver} de Relés}
 \label{sec:driver}
-O circuito integrado ULN2003A é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
-Tipicamente, este \textit{driver} é usado em conjunto com microcontroladores ou \gls{RaspberryPI} no comando de cargas indutivas, como motores, bobines e relés.
+O circuito integrado ULN2003A, é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
+Tipicamente, é usado em conjunto com microcontroladores ou \gls{RaspberryPI} no comando de cargas indutivas, como motores, bobines e relés.
 
-Os ULN2003A possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
+Estes \textit{drivers} possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
 
 \begin{figure}[hbtp]
     \centering
@@ -297,7 +297,7 @@ Os ULN2003A possuem sete pares de transístores NPN, em configuração \textit{D
 
 A corrente de colector de saída (única) é de \SI{500}{\mA} e a corrente de entrada, para uma tensão de entrada de \SI{3.85}{\volt}, é \SI{0.93}{\mA} \cite{ULN2003}.
 
-Pela análise dos esquemas \textbf{DATASHEET - REFERÊNCIA} verifica-se que os \acrshort{gpio}s disponíveis no \gls{RaspberryPI} - 26 no total - não são suficientes para comandar os relés do \acrshort{lare}. Ao todo são utilizados 21 relés, o que corresponderia a 21 saídas. A experiência da Lei de Ohm, possui 8 relés. No caso das experiências correspondentes aos circuitos de rectificadores e filtros, o número de relés para efectuar as experiências é de 13. Falta adicionar os 10 \acrshort{gpio}s necessários para o controlo da transmissão das tramas de \textit{bits} \footnote{Este procedimento será abordado com mais \textbf{rigor, explicado melhor, blá, blá, nas secções seguintes - COLOCAR REFERÊNCIA}}.
+Pela análise dos esquemas, representados no Anexo \ref{AppendixA}, verifica-se que os \acrshort{gpio}s disponíveis no \gls{RaspberryPI} - 26 no total - não são suficientes para comandar os relés do \acrshort{lare}. Ao todo são utilizados 21 relés, o que corresponderia a 21 saídas. A experiência da Lei de Ohm, possui 8 relés. No caso das experiências correspondentes aos circuitos de rectificadores e filtros, o número de relés para efectuar as experiências é de 13. Falta adicionar os 10 \acrshort{gpio}s necessários para o controlo da transmissão das tramas de \textit{bits}.
 
 Sendo assim, houve a necessidade de criar uma solução que permitisse comandar os relés, já que o \gls{RaspberryPI} não possui \acrshort{gpio}s suficientes.
 
@@ -320,7 +320,7 @@ Descrição dos pinos de controlo:
     \item \acrfull{oe}: pino activo baixo que controla o estado da saída do registo: Se a zero as saídas estão activas, se a um as saídas estão desactivadas
 \end{itemize}
 
-Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e depois enviados para a saída. A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do SN74HC595 e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
+Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e depois enviados para a saída. A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do registo e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
 
 \begin{figure}[hbtp]
     \centering
@@ -330,7 +330,7 @@ Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e dep
 \end{figure}
 
 Na transmissão das tramas optou-se por dividir as duas: envio de 8 \textit{bits}, na experiência da Lei de Ohm, e envio de 13 \textit{bits}, nas experiências de rectificadores e filtros. Como se pode ver na Tabela \ref{Table:funcSN74HC595}, são precisos 5 \acrshort{gpio}s configurados como saídas para controlar o envio de uma trama, portanto, para realizar o comando dos relés do \acrshort{lare}, são/serão necessários 10 \acrshort{gpio}s.
-Nos capítulos seguintes - \textbf{COLOCAR A REFERÊNCIA} - é explicado com mais pormenor o processo de envio. As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.
+As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.
 
 \begin{table}[htb]
     \caption{Modos de funcionamento do SN74HC595 \cite{SN74HC595}}
@@ -374,8 +374,6 @@ Nos capítulos seguintes - \textbf{COLOCAR A REFERÊNCIA} - é explicado com mai
         \end{tabular}%
     }
 \end{table}
-
-\textbf{Falta colocar informação complementar no datasheet em tal sítio está representada informação complementar respeitante ao ULN2003A e 74595}
 
 \section{Software}
 \label{sec:arquitecturasoftware} 

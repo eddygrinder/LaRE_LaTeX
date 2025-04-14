@@ -33,7 +33,7 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo do \acrshort {virtualbench} usado como multímetro digital}}{51}{figure.caption.51}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Representação geral do \acrshort {lare}}}{52}{figure.caption.52}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxograma de uma chamada ao \textit {socket} \cite {Sockets}}}{53}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura \acrshort {lare}}}{53}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura \acrshort {lare} - \textbf {NOTE: Fig tem de ser revista}}}{53}{figure.caption.54}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Circuitos \acrshort {visir} - \acrshort {isep} - \textbf {Se calhar retirava a imagem}}}{54}{figure.caption.55}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Painel traseiro \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{55}{figure.caption.56}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{55}{figure.caption.57}%
@@ -44,7 +44,7 @@
 \contentsline {figure}{\numberline {3.15}{\ignorespaces \textit {Esquema simplificado de um relé \cite {DryRelay}}}}{58}{figure.caption.63}%
 \contentsline {figure}{\numberline {3.16}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{58}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{59}{figure.caption.65}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama \textins {em corte} de blocos SN74HC595 \cite {SN74HC595}}}{61}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama \textins {em corte} de blocos SN74HC595 \cite {SN74HC595}}}{60}{figure.caption.66}%
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{64}{figure.caption.71}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{68}{figure.caption.72}%
@@ -72,7 +72,7 @@
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Transformador}}{83}{figure.caption.104}%
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Funcionamento geral \textit {Flask}}}{85}{figure.caption.107}%
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{86}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{91}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{90}{figure.caption.114}%
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Erro de selecção}}{98}{figure.caption.118}%
 \contentsline {figure}{\numberline {4.28}{\ignorespaces Página de \textit {login}}}{98}{figure.caption.119}%
 \contentsline {figure}{\numberline {4.29}{\ignorespaces Página inicial}}{99}{figure.caption.120}%

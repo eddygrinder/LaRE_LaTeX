@@ -11,7 +11,7 @@
 \contentsline {lstlisting}{\numberline {4.4}{\ignorespaces \textit {Blueprint auth} - \textit {auth.py}}}{88}{lstlisting.4.4}%
 \contentsline {lstlisting}{\numberline {4.5}{\ignorespaces Registo das \textit {blueprints} - \textit {\_\_init\_\_.py}}}{88}{lstlisting.4.5}%
 \contentsline {lstlisting}{\numberline {4.6}{\ignorespaces Exemplo argumentos passados ao servidor - ohm.html}}{89}{lstlisting.4.6}%
-\contentsline {lstlisting}{\numberline {4.7}{\ignorespaces Comunicação \acrshort {html} - \textit {views.py}}}{92}{lstlisting.4.7}%
+\contentsline {lstlisting}{\numberline {4.7}{\ignorespaces Comunicação \acrshort {html} $\rightarrow $ \textit {views.py}}}{92}{lstlisting.4.7}%
 \contentsline {lstlisting}{\numberline {4.8}{\ignorespaces Comunicação \textit {views.py} - \acrshort {html}}}{92}{lstlisting.4.8}%
 \contentsline {lstlisting}{\numberline {4.9}{\ignorespaces Comunicação \textit {python} - \textit {python}}}{92}{lstlisting.4.9}%
 \contentsline {lstlisting}{\numberline {4.10}{\ignorespaces \textit {Block Mode \textins {Sockets} configRelays.py}}}{93}{lstlisting.4.10}%

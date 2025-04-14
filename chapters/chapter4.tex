@@ -7,7 +7,7 @@
 
 	Master Yoda
 \end{center}
-Este capítulo aprofunda os aspetos técnicos do LaRE, tomando como referência a arquitetura apresentada na Figura \ref{fig:arquitecturalore}.
+Este capítulo aprofunda os aspectos técnicos do LaRE, tomando como referência a arquitetura apresentada na Figura \ref{fig:arquitecturalore}.
 
 O desenvolvimento começou pela implementação e desenvolvimento do servidor \textit{Flask} e página \textit{web}, sendo que o primeiro circuito a ser implementado e testado foi a Lei de Ohm. O projecto foi evoluindo com a adição dos restantes circuitos que compõem o \acrshort{lare}.
 
@@ -40,7 +40,7 @@ O \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits} do tipo \a
 
 \subsection{Driver de relés}
 \label{sec:driverreles}
-Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para esse efeito, é necessário utilizar o \textit{ULN2003A}, um \textit{driver} de relés. A Figura \ref{fig:diagramablocos2003} apresenta o diagrama simplificado para uma entrada/saída do \textit{driver} \cite{ULN2003}.
+Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para esse efeito, é necessário utilizar um \textit{driver} de relés. A Figura \ref{fig:diagramablocos2003} apresenta o diagrama simplificado para uma entrada/saída do \textit{driver} \cite{ULN2003}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -49,8 +49,8 @@ Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem cap
 	\label{fig:diagramablocos2003}
 \end{figure}
 
-O terminal 9 - \textit{COM} - é ligado à tensão de comando dos relés e é destinado aos díodos de ``roda livre'', conforme mencionado na Secção \ref{sec:reles}. No caso dos modelos de relés utilizados neste projecto, a tensão é de \SI{12}{\volt}.
-O \textit{ULN2003A} faz parte da família dos \textit{drivers} inversores. Se o valor lógico na entrada ``1B'' = ``0'' (ou \SI{0}{\volt}), então, a saída ``1C'' = ``1'' (ou \SI{12}{\volt}).
+O terminal 9 - \textit{COM} - é ligado à tensão de comando dos relés e é destinado aos díodos de ``roda livre'', conforme mencionado na Secção \ref{sec:reles}. No caso dos modelos de relés utilizados neste projecto, a tensão é de \SI{12}{\volt}. Se o valor lógico na entrada ``1B'' = ``0'' (ou \SI{0}{\volt}), então, a saída ``1C'' = ``1'' (ou \SI{12}{\volt}) - 
+O \textit{ULN2003A} faz parte da família dos \textit{drivers} inversores.
 
 As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplos práctico que ilustram o funcionamento do procedimento referido na Figura \ref{fig:esquematico74hc595}. Neste exemplo, foi utilizado um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, variando apenas a disposição dos pinos.
 
@@ -767,25 +767,27 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 
 \subsubsection{Comunicação entre ficheiros}
 \label{sec:comunicacaoentrefich}
-A comunicação entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python} - Linha \ref{line:parametros} - e como os resultados são recebidos - Linha \ref{line:resultado}.
+A comunicação entre as páginas \acrshort{html} e o ficheiro \textit{python}\footnote{Pode-se, neste caso, reduzir a comunicação ao caso mais geral de troca de informação entre ficheiros \acrshort{html} e \textit{python}, já que, no fundo, o ficheiro \textit{views.py} está escrito em \textit{python}.} é feita nos dois sentidos - setas amarelas - já que os utilizadores enviam os parâmetros específicos de cada experiência e os resultados são apresentados nas páginas. 
+
+A Listagem \ref{lst:htmlpy} ilustra a forma como os parâmetros são enviados da página \acrshort{html} para o ficheiro \textit{python}, através de uma \textit{query string}.
 
 \textbf{Aqui poderia ficar o parágrafo da explicação do ?}
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=html, escapechar=|, caption=Comunicação \acrshort{html} - \textit{views.py}, label=lst:htmlpy]
+	\begin{lstlisting}[language=html, escapechar=|, caption=Comunicação \acrshort{html} $\rightarrow$ \textit{views.py}, label=lst:htmlpy]
 	const url = `/config_VirtualBench?variavel_1=${parametro_1}&variavel_2=${parametro_2}&variavel_3=${parametro_3}`; |\label{line:parametros}|
-	(...)
-	document.getElementById("variavel").innerHTML = data.resultado + " V"; |\label{line:resultado}|
 	\end{lstlisting}
 \end{minipage}
 
-O envio de parâmetros para as páginas é feito em \acrfull{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
+Do lado do servidor, o \textit{Flask} disponibiliza o método \textit{request} e os parâmetros são recebidos através de \textit{request.args.get()}, como representado na Listagem \ref{lst:metodorequest}.
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{views.py} - \acrshort{html}, label=lst:returnjson]
-	return jsonify({'measurement_result': resultado})|\label{line:returnjson}|
+	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{views.py} - \acrshort{html}, label=lst:metodorequest]
+		Vcc = request.args.get('parametro_1', 0, int)  |\label{line:vccrequest}|
 	\end{lstlisting}
 \end{minipage}
+
+O envio de parâmetros do ficheiro textit{python} para as páginas \acrshort{html} é feito em \acrfull{json}, usando a instrução definida na Listagem \ref{lst:returnjson}.
 
 As setas verdes representam a comunicação entre dois ficheiros \textit{python}. O processo é bastante simples, bastando para isso, importar o ficheiro que contém a função que se pretende chamar. A Lista \ref{lst:pypy} ilustra a forma como se importa um ficheiro \textit{python} e a chamada da respectiva função com o parâmetro a passar.
 
