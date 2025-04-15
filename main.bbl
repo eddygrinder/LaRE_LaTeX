@@ -619,4 +619,8 @@ T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' 
 K.~C.~S. Adel S.~Sedra, {\em Microelectronic circuits}.
 \newblock The Oxford series in electrical and computer engineering, Oxford University Press, 2015.
 
+\bibitem{NumPy}
+``Numpy.''
+\newblock [Online; accessed 2025-04-15].
+
 \end{thebibliography}

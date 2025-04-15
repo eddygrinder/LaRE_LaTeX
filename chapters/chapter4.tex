@@ -817,10 +817,20 @@ As setas verdes representam a comunicação entre dois ficheiros \textit{python}
 	\end{lstlisting}
 \end{minipage}
 
-No entanto, o caso das medições da Lei de \textit{Ohm}, reveste-se de alguma particularidade. Para garantir a persistência das medições ao longo de várias chamadas à API, sem necessidade de utilizar uma base de dados ou ficheiros externos, foi implementado um módulo Python (estado\_medicoes.py) que recorre a variáveis globais para armazenar os dados.
+No entanto, o caso das medições no âmbito da Lei de \textit{Ohm} reveste-se de particularidades. A Figura~\ref{fig:processoleituraUI} ilustra o processo de leitura das medições de tensão e corrente.
 
-Como o servidor Flask permanece ativo durante o processo de medição, estas variáveis mantêm-se em memória entre chamadas, permitindo o armazenamento cumulativo de valores de corrente e tensão. Esta abordagem simplifica a gestão de estado numa fase inicial do desenvolvimento, sendo eficiente desde que o processo não seja reiniciado.
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/medicoes_OHM.drawio.png}
+	\caption{Processo de leitura das medições de tensão e corrente}
+	\label{fig:processoleituraUI}
+\end{figure}
 
+As setas a verde e vermelho representam o fluxo do processo iniciado pelo utilizador ao solicitar uma medição. Este ciclo repete-se cinco vezes para cada grandeza (tensão e corrente). No entanto, como o ficheiro \textit{configVB.py} é executado de forma independente em cada chamada, num total de dez execuções, os valores medidos não são retidos entre invocações sucessivas.
+
+Para contornar esta limitação e garantir a persistência das medições ao longo das múltiplas chamadas à \acrshort{api}, sem recorrer a mecanismos clássicos de persistência, como ficheiros \textit{.json}, \textit{.csv} ou bases de dados locais, que implicariam operações de escrita/leitura ao sistema de ficheiros, foi desenvolvido um módulo auxiliar em Python, implementado no ficheiro \textit{store\_ps\_dmm.py}. Este módulo utiliza variáveis globais como mecanismo de armazenamento em memória. Os valores de tensão e corrente são armazenados num \textit{array} através da função \textit{np.append}, da biblioteca \textit{NumPy} \cite{NumPy}.
+
+Dado que o servidor \textit{Flask} se mantém activo durante todo o processo de medição, as variáveis globais permanecem acessíveis em memória entre chamadas à \acrshort{api}. Esta abordagem simplifica a gestão do estado da aplicação numa fase inicial de desenvolvimento, sendo eficaz enquanto o processo da aplicação não for reiniciado.
 
 
 \subsubsection{Comunicação com RaspberryPi}
@@ -1077,7 +1087,7 @@ A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiênci
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Filtro passa-baixo\label{fig:meiaondamenuCTRL}]{{\includegraphics[width=6cm]{figures/meiaonda_page_controlo-FULL.png} }}%
+		\subfloat[\centering Rectificador de meia onda\label{fig:meiaondamenuCTRL}]{{\includegraphics[width=6cm]{figures/meiaonda_page_controlo-FULL.png} }}%
 		\qquad
 		\subfloat[\centering Rectificador de onda completa\label{fig:ondacompletamenuCTRL}]{{\includegraphics[width=6cm]{figures/ondacompleta_control.png} }}%
 		\caption{Selecção de parâmetros}%
@@ -1094,16 +1104,35 @@ O procedimento para a realização da experiência é o seguinte:
 	\item Escolher o valor da resistência;
 	\item Escolher o valor do condensador;
 	\item Efectuar as medições;
-	\item Ver o gráfico resultante.
+	\item Ver o gráfico resultante;
 	\item Seleccionar ``STOP/RESET'' para desactivar a fonte do \acrshort{virtualbench}.
 \end{enumerate}
 
 \subsubsection{Filtros}
 \label{sec:filtrosSW}
-As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas à do rectificador de meia onda.
+As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas às dos rectificadores e estão representadas na Figura \ref{fig:passabaixomenuCTRL} e Figura \ref{fig:passaaltomenuCTRL}. Os objectivos foram já definidos na Secção \ref{sec:objectivosexperiencias}.
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Filtro passa-baixo\label{fig:passabaixomenuCTRL}]{{\includegraphics[width=6cm]{figures/passabaixo_page_controlo.png} }}%
+		\qquad
+		\subfloat[\centering Filtro passa-alto\label{fig:passaaltomenuCTRL}]{{\includegraphics[width=6cm]{figures/passaalto_page_controlo.png} }}%
+		\caption{Selecção de parâmetros}%
+		\label{fig:controlofiltros}%
+\end{figure}
 
 Consoante a configuração do filtro, o utilizador escolhe entre dois condensadores ou duas resistências, representados no rectângulo tracejado cor-de-laranja, na Figura \ref{fig:rectificacao_filtragem_full}. Como já foi referido na Secção \ref{sec:experiencias}, os componentes dentro do rectângulo tracejado vermelho, representados na mesma figura, foram adicionados após a implementação dos rectificadores. Assim, quando se pretende estudar o filtro passa-baixo, o utilizador escolhe entre os dois condensadores (de saída) e se pretender estudar o passa-alto, escolhe entre as duas resistências (de saída). 
 
-Eventualmente, poder-se-ia ter adicionado mais resistências/condensadores aos filtros, nomeadamente, no rectângulo tracejado vermelho, de forma a permitir uma maior versatilidade no estudo. No entanto, além de não existir o número suficiente de relés em contexto laboratorial, considerou-se que, desta forma, o estudo e os objectivos da experiência, ficariam provados.
+Eventualmente, poder-se-ia ter adicionado mais resistências/condensadores aos filtros, nomeadamente, no rectângulo tracejado vermelho, de forma a permitir uma maior versatilidade no estudo. No entanto, além de não existir o número suficiente de relés em contexto laboratorial, considerou-se que, desta forma, o estudo e os objectivos da experiência, ficariam provados. O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. 
 
-O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. A Figura \ref{fig:ondacompletamenuCTRL} apresenta a página do filtro passa-baixo, sendo que a única diferença para o passa-alto é o esquema representado na Figura \ref{fig:ondacompletamenuCTRL}.
+O procedimento para a realização da experiência é o seguinte:
+\begin{enumerate}
+	\item Seleccionar ``OK'' para activar a fonte do \acrshort{virtualbench} e alimentar os integrados;
+	\item Escolher o valor do condensador - passa-baixo;
+	\item Escolher o valor da resistência - passa-alto;
+	\item Efectuar as medições;
+	\item Ver o gráfico resultante;
+	\item Ver o gráfico resultante da resposta em frequência;
+	\item Seleccionar ``STOP/RESET'' para desactivar a fonte do \acrshort{virtualbench}.
+\end{enumerate}
