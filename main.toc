@@ -70,10 +70,10 @@
 \contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{90}{subsection.4.2.2}%
 \contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.115}%
 \contentsline {subsubsection}{Comunicação com RaspberryPi}{93}{section*.116}%
-\contentsline {subsubsection}{VirtualBench - Configurações e medições}{94}{section*.117}%
+\contentsline {subsubsection}{VirtualBench - Configurações e medições}{95}{section*.117}%
 \contentsline {subsection}{\numberline {4.2.3}Interface WEB}{97}{subsection.4.2.3}%
 \contentsline {subsubsection}{Lei de \textit {Ohm}}{99}{section*.122}%
-\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{100}{section*.124}%
+\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{101}{section*.124}%
 \contentsline {subsubsection}{Filtros}{102}{section*.126}%
 \contentsline {chapter}{Refer\^{e}ncias}{103}{section*.127}%
 \contentsline {chapter}{Anexo \numberline {A}Datasheet}{119}{appendix.1.A}%

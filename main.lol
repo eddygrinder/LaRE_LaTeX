@@ -16,8 +16,8 @@
 \contentsline {lstlisting}{\numberline {4.9}{\ignorespaces Envio de parâmetros \textit {views.py} $\rightarrow $ \acrshort {html}}}{92}{lstlisting.4.9}%
 \contentsline {lstlisting}{\numberline {4.10}{\ignorespaces Recepção de parâmetros}}{92}{lstlisting.4.10}%
 \contentsline {lstlisting}{\numberline {4.11}{\ignorespaces Comunicação \textit {python} - \textit {python}}}{93}{lstlisting.4.11}%
-\contentsline {lstlisting}{\numberline {4.12}{\ignorespaces \textit {Block Mode \textins {Sockets} configRelays.py}}}{93}{lstlisting.4.12}%
+\contentsline {lstlisting}{\numberline {4.12}{\ignorespaces \textit {Block Mode \textins {Sockets} configRelays.py}}}{94}{lstlisting.4.12}%
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces \textit {And bit} \textit {bit shift\textunderscore register - NOME DO FICH}}}{94}{lstlisting.4.13}%
-\contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Instanciação da classe \textit {PyVirtualBench}}}{95}{lstlisting.4.14}%
+\contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Instanciação da classe \textit {PyVirtualBench}}}{96}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Exemplo \textit {ps\_example.py}}}{96}{lstlisting.4.15}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

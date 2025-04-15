@@ -810,15 +810,18 @@ Do lado das páginas \acrshort{html} a recepção do resultado é feita através
 
 As setas verdes representam a comunicação entre dois ficheiros \textit{python}. O processo é bastante simples, bastando para isso, importar o ficheiro que contém a função que se pretende chamar. A Lista \ref{lst:pypy} ilustra a forma como se importa um ficheiro \textit{python} e a chamada da respectiva função com o parâmetro a passar.
 
-\textbf{DÚVIDA: Explicar melhor as linhas 1 e 2?}
-\textbf{NOTA: Explicar aqui, talvez, o pormenor de chamar várias vezes o ficheiro?}
-
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=python, escapechar=|, caption=Comunicação \textit{python} - \textit{python}, label=lst:pypy]
 		from ctrl_hardware import configRelays, configVB, mixed_signal_oscilloscope |\label{line:ficheiros}|
 		configRelays.config_relays_ohm(Resistance, measure_parameter) |\label{line:trueparameter}|
 	\end{lstlisting}
 \end{minipage}
+
+No entanto, o caso das medições da Lei de \textit{Ohm}, reveste-se de alguma particularidade. Para garantir a persistência das medições ao longo de várias chamadas à API, sem necessidade de utilizar uma base de dados ou ficheiros externos, foi implementado um módulo Python (estado\_medicoes.py) que recorre a variáveis globais para armazenar os dados.
+
+Como o servidor Flask permanece ativo durante o processo de medição, estas variáveis mantêm-se em memória entre chamadas, permitindo o armazenamento cumulativo de valores de corrente e tensão. Esta abordagem simplifica a gestão de estado numa fase inicial do desenvolvimento, sendo eficiente desde que o processo não seja reiniciado.
+
+
 
 \subsubsection{Comunicação com RaspberryPi}
 \label{sec:raspberrypi}
