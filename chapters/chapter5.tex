@@ -6,22 +6,29 @@
      
      Cooper
 \end{center}
-Os testes foram realizados com o intuito de validar a implementação do \acrshort{lare} e verificar se estes estão de acordo com os esperados. A confrontação/validação dos resultados práticos obtidos é feita com recurso ao \textit{MultisimLive}, \textit{VirtualBench} e aos resultados teóricos já descritos na Secção \ref{sec:experiencias}. Relativamente à Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, há ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada.
+Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. A confrontação dos resultados experimentais foi efetuada com recurso ao \textit{MultisimLive}, ao \textit{VirtualBench} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
+
+No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, havendo ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada.
+
+As experiências podem ser realizadas com diferentes combinações e configurações:
+\begin{itemize}
+	\item \textbf{Lei de \textit{Ohm}}: três opções de estudo de resistências;
+	\item \textbf{Rectificadores}: quatro combinações possíveis de resistências e condensadores para cada rectificador;
+	\item \textbf{Filtros}: duas combinações possiveis de resistencias e condensadores para cada filtro.
+\end{itemize}
 
 \section{Lei de \textit{Ohm}}
 \label{sec:resultados_lei_de_ohm}
-O objectivo para o estudo da Lei de Ohm - VERIFICAR REFERÊNCIA - é determinar o valor da resistência através do cálculo do declive da recta obtida no gráfico da tensão em função da corrente. 
-
-A Figura \ref{fig:graphohm} representa o gráfico esperado.
-
-Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência elétrica ($R$).
+O objetivo desta experiência é determinar o valor da resistência através do cálculo do declive da reta obtida no gráfico da tensão em função da corrente e, assim, confirmar a Lei de \textit{Ohm}. A Figura \ref{fig:graphohmrepetido}, que novamente aqui se apresenta, representa o gráfico esperado. \textbf{NOTA: Vale a pena? é correcto? Opinião PROF}
 
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.3\textwidth]{figures/grafico_Ohm.png}
 	\caption{Gráfico da Lei de \textit{Ohm}}
-	\label{fig:graphohm}
+	\label{fig:graphohmrepetido}
 \end{figure}
+
+Como já foi referido - VER REFERÊNCIA - o utilizador efectua cinco medições de cada grandeza (tensão e corrente), para uma das três resistências disponíveis. 
 
 Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
 

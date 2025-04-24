@@ -76,10 +76,10 @@
 \contentsline {subsubsection}{Rectificador de meia onda e onda completa}{101}{section*.125}%
 \contentsline {subsubsection}{Filtros}{103}{section*.127}%
 \contentsline {chapter}{\numberline {5}Resultados}{105}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{105}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{106}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Rectificadores}{107}{section.5.2}%
 \contentsline {subsubsection}{Filtros}{107}{section*.131}%
-\contentsline {section}{\numberline {5.3}Limitações}{108}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Melhoramentos}{108}{section.5.4}%
-\contentsline {chapter}{Refer\^{e}ncias}{109}{section*.133}%
-\contentsline {chapter}{Anexo \numberline {A}Datasheet}{125}{appendix.1.A}%
+\contentsline {section}{\numberline {5.3}Limitações}{109}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Melhoramentos}{109}{section.5.4}%
+\contentsline {chapter}{Refer\^{e}ncias}{110}{section*.133}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{127}{appendix.1.A}%
