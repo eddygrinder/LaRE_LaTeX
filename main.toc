@@ -1,0 +1,85 @@
+\babel@toc {portuguese}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {portuguese}{}\relax 
+\contentsline {chapter}{Lista de Figuras}{ix}{chapter*.10}%
+\contentsline {chapter}{Lista de Tabelas}{xiii}{chapter*.11}%
+\contentsline {chapter}{Listagens}{xv}{chapter*.12}%
+\contentsline {chapter}{Gloss\'{a}rio}{xvii}{section*.13}%
+\contentsline {chapter}{Lista de Acr\'{o}nimos}{xxi}{section*.15}%
+\contentsline {chapter}{Lista de S\'{i}mbolos}{xxv}{section*.17}%
+\contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Enquadramento}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectivos}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Estrutura do documento}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Estado da Arte}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Transformação digital na educação}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Educação Digital em Portugal: Avanços e Desafios}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}eLearning e abordagem STEM}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Laboratórios na educação}{16}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Tipos de laboratórios}{18}{subsection.2.4.1}%
+\contentsline {subsubsection}{Uma questão de conceitos}{21}{section*.21}%
+\contentsline {subsubsection}{Laboratório real}{22}{section*.24}%
+\contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.26}%
+\contentsline {subsubsection}{Laboratório remoto}{30}{section*.30}%
+\contentsline {paragraph}{VISIR}{38}{section*.37}%
+\contentsline {paragraph}{PILAR}{45}{section*.47}%
+\contentsline {section}{\numberline {2.5}COMENTÁRIO PROF}{46}{section.2.5}%
+\contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Contextualização}{47}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Solução proposta}{50}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Arquitectura}{51}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Circuitos electrónicos - experiências?}{52}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Hardware}{54}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}VirtualBench}{54}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Matriz LaRE}{55}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}RaspberryPI}{56}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Relés}{57}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{59}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{59}{subsection.3.5.6}%
+\contentsline {section}{\numberline {3.6}Software}{61}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{62}{subsection.3.6.1}%
+\contentsline {subsubsection}{\textit {Python}}{62}{section*.68}%
+\contentsline {subsubsection}{\textit {Flask}}{62}{section*.69}%
+\contentsline {subsection}{\numberline {3.6.2}Front-End}{63}{subsection.3.6.2}%
+\contentsline {subsubsection}{\textit {Webpage}}{63}{section*.70}%
+\contentsline {chapter}{\numberline {4}Implementação}{67}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hardware}{68}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Registo de deslocamento}{68}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Driver de relés}{68}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Relés}{69}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Fontes de alimentação}{70}{subsection.4.1.4}%
+\contentsline {subsubsection}{Fonte de tensão \SI {6}{\volt } - variável e {Fonte de tensão \SI {12}{\volt } - fixa}}{71}{section*.77}%
+\contentsline {subsubsection}{Fonte de tensão \SI {5}{\volt } - fixa}{71}{section*.79}%
+\contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{73}{section*.81}%
+\contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{74}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Experiências}{75}{subsection.4.1.6}%
+\contentsline {subsubsection}{Objectivos}{75}{section*.87}%
+\contentsline {paragraph}{Lei de \textit {Ohm}}{75}{section*.88}%
+\contentsline {paragraph}{Rectificadores}{77}{section*.91}%
+\contentsline {paragraph}{Filtros}{78}{section*.94}%
+\contentsline {subsubsection}{Lei de Ohm}{80}{section*.97}%
+\contentsline {subsubsection}{Rectificadores e filtros}{81}{section*.100}%
+\contentsline {section}{\numberline {4.2}Software}{84}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{84}{subsection.4.2.1}%
+\contentsline {subsubsection}{Estrutura base}{84}{section*.106}%
+\contentsline {subsubsection}{Rotas}{86}{section*.109}%
+\contentsline {subsubsection}{Blueprints}{87}{section*.110}%
+\contentsline {subsubsection}{Pedidos}{88}{section*.111}%
+\contentsline {subsubsection}{Base de dados}{89}{section*.112}%
+\contentsline {subsubsection}{Autenticação}{89}{section*.113}%
+\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{90}{subsection.4.2.2}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.115}%
+\contentsline {subsubsection}{Comunicação com RaspberryPi}{94}{section*.117}%
+\contentsline {subsubsection}{VirtualBench - Configurações e medições}{95}{section*.118}%
+\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{98}{subsection.4.2.3}%
+\contentsline {subsubsection}{Lei de \textit {Ohm}}{100}{section*.123}%
+\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{101}{section*.125}%
+\contentsline {subsubsection}{Filtros}{103}{section*.127}%
+\contentsline {chapter}{\numberline {5}Resultados}{105}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{105}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Rectificadores}{107}{section.5.2}%
+\contentsline {subsubsection}{Filtros}{107}{section*.131}%
+\contentsline {section}{\numberline {5.3}Limitações}{108}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Melhoramentos}{108}{section.5.4}%
+\contentsline {chapter}{Refer\^{e}ncias}{109}{section*.133}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{125}{appendix.1.A}%
