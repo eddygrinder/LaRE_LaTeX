@@ -73,17 +73,29 @@ O erro relativo entre o valor teórico(real) e o valor obtido experimentalmente,
 
 No caso descrito em cima, o erro relativo obtido é de, aproximadamente, \SI{1.2}{\percent}, sendo um valor perfeitamente aceitável.
 
-Ainda assim e como forma de complementar a análise dos resultados, foram efectuados testes complementares usando, neste caso, o \href{https://www.multisim.com}{\textit{MultisimLive}} e o \href{https://www.circuitlab.com/}{\textit{CircuitLab}}. A Figura \ref{fig:multisim_ohm} e a Figura {fig:} apresentam os resultados obtidos.
+Ainda assim e como forma de complementar a análise dos resultados, foram efectuados testes complementares usando dois simuladores, neste caso, o \href{https://www.multisim.com}{\textit{MultisimLive}} e o \href{https://www.circuitlab.com/}{\textit{CircuitLab}}. A Figura \ref{fig:multisimOHM} e a Figura \ref{fig:circuitlab} mostram os resultados obtidos.
 
 \begin{figure}[hbtp]
 	\centering%
 		\centering
 		\subfloat[\centering Multisim\label{fig:multisimOHM}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_circuitlab.png} }}%
 		\qquad
-		\subfloat[\centering CircuitLab\label{fig:circuitlab}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
+		\subfloat[\centering CircuitLab\label{fig:circuitlab}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_multisim.png} }}%
 		\caption{Experiência Lei de \textit{Ohm}}%
-		\label{fig:experienciaOHM}%
+		\label{fig:experienciaOHM_simuladores}%
 	\end{figure}
+
+Através da análise do gráfico obtido no \textit{MultisimLive}, por exemplo, é possível calcular o declive da recta, dado pela Equação \ref{eq:declive}
+
+\begin{equation} \label{eq:declive}
+	\text{m} = \frac{y_{b} - y_{a}}{x_{b} - x_{a}}
+\end{equation}
+
+O valor obtido para o declive é $\text{m} \approx{1.0204}$
+
+calcular o valor deo ero relativo e comparar com o valor real da resistência, que é de \SI{1}{\kilo\ohm}.
+
+Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o \acrshort{lare} são semelhantes aos obtidos com os simuladores e aos valores reais.
 
 Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
 
