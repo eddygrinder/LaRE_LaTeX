@@ -6,7 +6,7 @@
      
      Cooper
 \end{center}
-Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. A confrontação dos resultados experimentais foi efetuada com recurso ao \textit{MultisimLive}, ao \textit{VirtualBench} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
+Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. A confrontação dos resultados experimentais foi efetuada com recurso ao \href{https://www.multisim.com}{\textit{MultisimLive}}, ao \textit{VirtualBench} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
 
 No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, há ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada.
 
@@ -28,9 +28,11 @@ O objetivo desta experiência é determinar o valor de uma determinada resistên
 	\label{fig:graphohmrepetido}
 \end{figure}
 
+\subsection{Resultados prácticos}
+\label{sec:resultados_praticos}
 Como já foi referido - VER REFERÊNCIA - o utilizador efectua cinco medições de cada grandeza (tensão e corrente), para uma das três resistências disponíveis.
 
-Na Figura \ref{fig:resultados_medicoes_1k} está representado o resultado de um par de medições para uma resistência de \SI{1}{\kilo\ohm}. Os restantes resultados, em intervalos de \SI{1}{\volt} até \SI{5}{\volt}, são obtidos de forma análoga.
+Na Figura \ref{fig:resultados_medicoes_1k} está representado o resultado de um par de medições para uma resistência de \SI{1}{\kilo\ohm}. As restantes medições, em intervalos de \SI{1}{\volt} até \SI{5}{\volt}, são obtidas de forma análoga.
 
 \begin{figure}[hbtp]
 	\centering
@@ -39,9 +41,8 @@ Na Figura \ref{fig:resultados_medicoes_1k} está representado o resultado de um 
 	\label{fig:resultados_medicoes_1k}
 \end{figure}
 
-O valor real da resistência foi obtido por medição directa e é de \SI{998}{\ohm}, sendo que está dentro da tolerância que é de $\pm$5\%.
+O valor real da resistência, obtida por medição directa, é de \SI{998}{\ohm}, estando dentro da tolerância que é de $\pm$5\%.
 
-Portanto, a diferença entre a tensão fornecida pela fonte — \SI{1}{\volt} — e os valores medidos — \SI{0.98}{\volt} e \SI{0.97}{\milli\ampere} — deve-se, principalmente, à tolerância da resistência utilizada.
 O erro associado aos instrumentos de medição pode ser considerado desprezável. De acordo com as especificações do modelo \textit{VB-8012}\cite{datasheetvb8012}, a precisão para medições de tensão em corrente contínua é:
 
 \begin{itemize}
@@ -53,9 +54,9 @@ O erro associado aos instrumentos de medição pode ser considerado desprezável
 
 Estes valores indicam que, para uma leitura de \SI{1}{\volt}, o erro máximo estimado devido à precisão do instrumento seria de, aproximadamente $\pm$\SI{0.0002}{\volt}, ou seja, $\pm$\SI{0.2}{\milli\volt}.
 
-Assim, conclui-se que os valores medidos se encontram dentro dos limites expectáveis, sendo perfeitamente aceitáveis face às tolerâncias envolvidas.
+Portanto, a diferença entre a tensão fornecida pela fonte — \SI{1}{\volt} — e os valores medidos — \SI{0.98}{\volt} e \SI{0.97}{\milli\ampere} — deve-se, principalmente, à tolerância da resistência utilizada. Assim, conclui-se que os valores medidos se encontram dentro dos limites expectáveis, sendo perfeitamente aceitáveis face às tolerâncias envolvidas.
 
-O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figura \ref{fig:grafico_LaRE_1k}. O declive da recta, que representa a resistência, foi calculado e confrontado com o valor real da resistência. O valor obtido foi de \SI{1.02}{\kilo\ohm}, o que corresponde a um erro de \SI{2}{\percent}.
+O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figura \ref{fig:grafico_LaRE_1k}. O declive da recta, que representa a resistência, foi calculado e confrontado com o valor real da resistência. 
 
 \begin{figure}[hbtp]
 	\centering
@@ -63,6 +64,26 @@ O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figu
 	\caption{Gráfico da Lei de \textit{Ohm} - \SI{1}{\kilo\ohm} - MUDAR}
 	\label{fig:grafico_LaRE_1k}
 \end{figure}
+
+O erro relativo entre o valor teórico(real) e o valor obtido experimentalmente, pode ser calculado através da Equação \ref{eq:errorelativo}:
+
+\begin{equation} \label{eq:errorelativo}
+	\text{Erro Relativo} = \frac{|R_{real} - R_{obtido}|}{R_{real}} \times 100
+\end{equation}
+
+No caso descrito em cima, o erro relativo obtido é de, aproximadamente, \SI{1.2}{\percent}, sendo um valor perfeitamente aceitável.
+
+Ainda assim e como forma de complementar a análise dos resultados, foram efectuados testes complementares usando, neste caso, o \href{https://www.multisim.com}{\textit{MultisimLive}} e o \href{https://www.circuitlab.com/}{\textit{CircuitLab}}. A Figura \ref{fig:multisim_ohm} e a Figura {fig:} apresentam os resultados obtidos.
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Multisim\label{fig:multisimOHM}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_circuitlab.png} }}%
+		\qquad
+		\subfloat[\centering CircuitLab\label{fig:circuitlab}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
+		\caption{Experiência Lei de \textit{Ohm}}%
+		\label{fig:experienciaOHM}%
+	\end{figure}
 
 Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
 
