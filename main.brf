@@ -291,7 +291,7 @@
 \backcite {LM317}{{71}{4.1.4}{section*.79}}
 \backcite {LM317}{{71}{4.1.4}{figure.caption.80}}
 \backcite {1N400x}{{72}{4.1.4}{figure.caption.80}}
-\backcite {LM317}{{72}{4.1.4}{equation.4.1.1}}
+\backcite {LM317}{{72}{4.1.4}{equation.4.1}}
 \backcite {sedrasmith}{{77}{4.1.6}{section*.91}}
 \backcite {sedrasmith}{{78}{4.15}{figure.caption.92}}
 \backcite {sedrasmith}{{78}{4.16}{figure.caption.93}}
@@ -301,4 +301,5 @@
 \backcite {Flask}{{89}{4.2.1}{lstnumber.4.6.1}}
 \backcite {NumPy}{{93}{4.2.2}{figure.caption.116}}
 \backcite {Sockets}{{94}{4.2.2}{section*.117}}
-\backcite {sedrasmith}{{108}{5.3}{figure.caption.132}}
+\backcite {datasheetvb8012}{{106}{5.1}{figure.caption.130}}
+\backcite {sedrasmith}{{109}{5.5}{figure.caption.134}}

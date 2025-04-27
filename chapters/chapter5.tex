@@ -8,18 +8,18 @@
 \end{center}
 Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. A confrontação dos resultados experimentais foi efetuada com recurso ao \textit{MultisimLive}, ao \textit{VirtualBench} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
 
-No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, havendo ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada.
+No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, há ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada.
 
 As experiências podem ser realizadas com diferentes combinações e configurações:
 \begin{itemize}
 	\item \textbf{Lei de \textit{Ohm}}: três opções de estudo de resistências;
 	\item \textbf{Rectificadores}: quatro combinações possíveis de resistências e condensadores para cada rectificador;
-	\item \textbf{Filtros}: duas combinações possiveis de resistencias e condensadores para cada filtro.
+	\item \textbf{Filtros}: duas combinações possiveis de resistências e condensadores para cada filtro.
 \end{itemize}
 
 \section{Lei de \textit{Ohm}}
 \label{sec:resultados_lei_de_ohm}
-O objetivo desta experiência é determinar o valor da resistência através do cálculo do declive da reta obtida no gráfico da tensão em função da corrente e, assim, confirmar a Lei de \textit{Ohm}. A Figura \ref{fig:graphohmrepetido}, que novamente aqui se apresenta, representa o gráfico esperado. \textbf{NOTA: Vale a pena? é correcto? Opinião PROF}
+O objetivo desta experiência é determinar o valor de uma determinada resistência através do cálculo do declive da recta obtida no gráfico da tensão em função da corrente e, assim, confirmar a Lei de \textit{Ohm}. A Figura \ref{fig:graphohmrepetido}, que novamente aqui se apresenta, representa o gráfico esperado. \textbf{NOTA: Vale a pena? é correcto? Opinião PROF}
 
 \begin{figure}[hbtp]
 	\centering
@@ -28,7 +28,41 @@ O objetivo desta experiência é determinar o valor da resistência através do 
 	\label{fig:graphohmrepetido}
 \end{figure}
 
-Como já foi referido - VER REFERÊNCIA - o utilizador efectua cinco medições de cada grandeza (tensão e corrente), para uma das três resistências disponíveis. 
+Como já foi referido - VER REFERÊNCIA - o utilizador efectua cinco medições de cada grandeza (tensão e corrente), para uma das três resistências disponíveis.
+
+Na Figura \ref{fig:resultados_medicoes_1k} está representado o resultado de um par de medições para uma resistência de \SI{1}{\kilo\ohm}. Os restantes resultados, em intervalos de \SI{1}{\volt} até \SI{5}{\volt}, são obtidos de forma análoga.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/resultados_medicoes_ohm.png}
+	\caption{Medição práctica}
+	\label{fig:resultados_medicoes_1k}
+\end{figure}
+
+O valor real da resistência foi obtido por medição directa e é de \SI{998}{\ohm}, sendo que está dentro da tolerância que é de $\pm$5\%.
+
+Portanto, a diferença entre a tensão fornecida pela fonte — \SI{1}{\volt} — e os valores medidos — \SI{0.98}{\volt} e \SI{0.97}{\milli\ampere} — deve-se, principalmente, à tolerância da resistência utilizada.
+O erro associado aos instrumentos de medição pode ser considerado desprezável. De acordo com as especificações do modelo \textit{VB-8012}\cite{datasheetvb8012}, a precisão para medições de tensão em corrente contínua é:
+
+\begin{itemize}
+	\item Faixa de \SI{1}{\volt}
+	\begin{itemize}
+		\item Precisão garantida (1 ano): $\pm$(0.015\% da leitura $\pm$ 0.005\% da faixa)
+	\end{itemize}
+\end{itemize}
+
+Estes valores indicam que, para uma leitura de \SI{1}{\volt}, o erro máximo estimado devido à precisão do instrumento seria de, aproximadamente $\pm$\SI{0.0002}{\volt}, ou seja, $\pm$\SI{0.2}{\milli\volt}.
+
+Assim, conclui-se que os valores medidos se encontram dentro dos limites expectáveis, sendo perfeitamente aceitáveis face às tolerâncias envolvidas.
+
+O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figura \ref{fig:grafico_LaRE_1k}. O declive da recta, que representa a resistência, foi calculado e confrontado com o valor real da resistência. O valor obtido foi de \SI{1.02}{\kilo\ohm}, o que corresponde a um erro de \SI{2}{\percent}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/ohm_graph.png}
+	\caption{Gráfico da Lei de \textit{Ohm} - \SI{1}{\kilo\ohm} - MUDAR}
+	\label{fig:grafico_LaRE_1k}
+\end{figure}
 
 Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
 
