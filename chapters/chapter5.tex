@@ -65,9 +65,9 @@ O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figu
 	\label{fig:grafico_LaRE_1k}
 \end{figure}
 
-O erro relativo entre o valor teórico(real) e o valor obtido experimentalmente, pode ser calculado através da Equação \ref{eq: errorelativo}:
+O erro relativo entre o valor teórico(real) e o valor obtido experimentalmente, pode ser calculado através da Equação \ref{eq:errorelativo}:
 
-\begin{equation} \label{eq: errorelativo}
+\begin{equation} \label{eq:errorelativo}
 	\text{Erro Relativo} = \frac{|R_{real} - R_{obtido}|}{R_{real}} \times 100
 \end{equation}
 
@@ -85,13 +85,13 @@ Ainda assim e como forma de complementar a análise dos resultados, foram efectu
 		\label{fig:experienciaOHM_simuladores}%
 	\end{figure}
 
-Através da análise do gráfico obtido no \textit{MultisimLive}, por exemplo, é possível calcular o declive da recta, dado pela Equação \ref{eq:declive}
+Através da análise do gráfico obtido no \textit{MultisimLive} e no \textit{CircuitLab} é possível calcular os declives das rectas, dados pela Equação \ref{eq:declive}
 
 \begin{equation} \label{eq:declive}
 	\text{m} = \frac{y_{b} - y_{a}}{x_{b} - x_{a}}
 \end{equation}
 
-O valor obtido para o declive no multisim e circuit lab é $\text{m} \approx{1.0204}$ - como a escala do eixo do x está representada em \SI{}{\milli\ampere} o valor correspondente da resistência é de \SI{1.0204}{\kilo\ohm}. Aplicando a Equação \ref{eq:errorelativo} chega-se a um valor para o erro relativo de \SI{2.24}{\percent}.
+O valor do declive obtido para estes dois simuladores é, respectivamente, \linebreak $m_\text{{multisim}} \approx{1.0204}$ e $m_{\text{CircuitLab}} \approx{1.002}$. Tendo em conta que a escala do eixo do $x$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}. Assim aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo de \SI{2.24}{\percent} e \SI{0.4}{\percent}, respectivamente.
 
 Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o \acrshort{lare} são semelhantes aos obtidos com os simuladores e aos valores reais.
 
