@@ -91,39 +91,14 @@ Através da análise do gráfico obtido no \textit{MultisimLive} e no \textit{Ci
 	\text{m} = \frac{y_{b} - y_{a}}{x_{b} - x_{a}}
 \end{equation}
 
-COLOCAR O VALOR DAS RESISTÊNCIAS O valor do declive obtido para estes dois simuladores é, respectivamente, \linebreak $m_\text{{multisim}} \approx{1.0204}$ e $m_{\text{CircuitLab}} \approx{1.002}$. Tendo em conta que a escala do eixo do $x$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}. Assim aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo de \SI{2.24}{\percent} e \SI{0.4}{\percent}, respectivamente.
+O valor do declive, correspondente à resistência, obtido para estes dois simuladores é, respectivamente, $m_\text{{multisim}} \approx{0.980}$ e $m_{\text{CircuitLab}} \approx{1.002}$. Tendo em conta que a escala do eixo do $y$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}, isto é, $R_\text{{multisim}} = \SI{0.980}{\kilo\ohm}$ e $R_{\text{CircuitLab}} = \SI{1.002}{\kilo\ohm}$.  Assim aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo de \SI{1.80}{\percent} e \SI{0.4}{\percent}, respectivamente.
 
 Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o \acrshort{lare} são semelhantes aos obtidos com os simuladores e aos valores reais.
 
-Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
-
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Opção 1\label{fig:Opção_1}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha.png} }}%
-		\qquad
-		\subfloat[\centering Opção 2\label{fig:Opção_2}]{{\includegraphics[width=6.3cm]{figures/ohm_escolha_abc.png} }}%
-		\caption{Experiência Lei de \textit{Ohm}}%
-		\label{fig:experienciaOHM}%
-	\end{figure}
-O tutor ou professor, pode optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. 
-
-No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
-
-\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
-
-\textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}
-
-
 \section{Rectificadores}
-A implementação destas duas experiências foi feita de forma a que se possa estudar e avaliar o \textit{ripple} dos rectificadores, consoante as quatro combinações possíveis dos pares resistência/condensador. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
+As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. COLOCAR REFERÊNCIA.
 
-\textbf{Tal como o prof disse, refrerir que os valores, imagem, iformação e enviada para a página via xpto, blá, blá, através do ficheiro, flask, tal como referido no cap tal - referir também como é enviada a string}
-
-No caso dos rectificadores, o Bloco 1 fica reduzido ao gerador de sinal, sendo que esta configuração permite estudar a variação da tensão de \textit{ripple} com a frequência ou ao transformador monofásico. \textbf{Nota: Complementar com a foto da placa da fonte} O Bloco 2, depende do tipo de rectificador que se pretende estudar - um díodo ou uma ponte rectificadora, item \ref{diodos}. O Bloco 3 é o único bloco comum às duas experiências. Embora no estudo da rectificação de meia onda se use, somente, os componentes descritos nos itens \ref{resistencias} e \ref{condensadores}, já na implementação dos filtros, usou-se mais um condensador e uma resistência, descritos no item \ref{rescond}. 
-
-Dentro do rectângulo tracejado a laranja, encontram-se os componentes do filtro dos rectificadores, sendo que, para o estudo dos filtros, são usados, também, os componentes dentro do rectângulo tracejado magenta.
-
+As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripple} e Equação \ref{eq:vrippleOC}. \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
 
 \subsubsection{Filtros}
 \label{sec:filtros}
