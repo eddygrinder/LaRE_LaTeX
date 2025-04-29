@@ -65,9 +65,9 @@ O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figu
 	\label{fig:grafico_LaRE_1k}
 \end{figure}
 
-O erro relativo entre o valor teórico(real) e o valor obtido experimentalmente, pode ser calculado através da Equação \ref{eq:errorelativo}:
+O erro relativo entre o valor teórico(real) e o valor obtido experimentalmente, pode ser calculado através da Equação \ref{eq: errorelativo}:
 
-\begin{equation} \label{eq:errorelativo}
+\begin{equation} \label{eq: errorelativo}
 	\text{Erro Relativo} = \frac{|R_{real} - R_{obtido}|}{R_{real}} \times 100
 \end{equation}
 
@@ -78,9 +78,9 @@ Ainda assim e como forma de complementar a análise dos resultados, foram efectu
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Multisim\label{fig:multisimOHM}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_circuitlab.png} }}%
+		\subfloat[\centering Multisim\label{fig:multisimOHM}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_multisim.png} }}%
 		\qquad
-		\subfloat[\centering CircuitLab\label{fig:circuitlab}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_multisim.png} }}%
+		\subfloat[\centering CircuitLab\label{fig:circuitlab}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_circuitlab.png} }}%
 		\caption{Experiência Lei de \textit{Ohm}}%
 		\label{fig:experienciaOHM_simuladores}%
 	\end{figure}
@@ -91,9 +91,7 @@ Através da análise do gráfico obtido no \textit{MultisimLive}, por exemplo, �
 	\text{m} = \frac{y_{b} - y_{a}}{x_{b} - x_{a}}
 \end{equation}
 
-O valor obtido para o declive é $\text{m} \approx{1.0204}$
-
-calcular o valor deo ero relativo e comparar com o valor real da resistência, que é de \SI{1}{\kilo\ohm}.
+O valor obtido para o declive no multisim e circuit lab é $\text{m} \approx{1.0204}$ - como a escala do eixo do x está representada em \SI{}{\milli\ampere} o valor correspondente da resistência é de \SI{1.0204}{\kilo\ohm}. Aplicando a Equação \ref{eq:errorelativo} chega-se a um valor para o erro relativo de \SI{2.24}{\percent}.
 
 Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o \acrshort{lare} são semelhantes aos obtidos com os simuladores e aos valores reais.
 

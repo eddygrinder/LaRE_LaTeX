@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.27)  28 APR 2025 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.27)  29 APR 2025 12:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2073,44 +2073,47 @@ File: figures/ohm_graph.png Graphic file (type png)
 <use figures/ohm_graph.png>
 Package pdftex.def Info: figures/ohm_graph.png  used on input line 63.
 (pdftex.def)             Requested size: 278.8358pt x 209.13432pt.
-<figures/OHM_resultado_circuitlab.png, id=3247, 1659.19875pt x 796.9775pt>
-File: figures/OHM_resultado_circuitlab.png Graphic file (type png)
-<use figures/OHM_resultado_circuitlab.png>
-Package pdftex.def Info: figures/OHM_resultado_circuitlab.png  used on input line 81.
-(pdftex.def)             Requested size: 179.25244pt x 86.09903pt.
-<figures/OHM_resultado_multisim.png, id=3248, 1361.085pt x 568.1225pt>
+<figures/OHM_resultado_multisim.png, id=3247, 1361.085pt x 568.1225pt>
 File: figures/OHM_resultado_multisim.png Graphic file (type png)
 <use figures/OHM_resultado_multisim.png>
-Package pdftex.def Info: figures/OHM_resultado_multisim.png  used on input line 83.
+Package pdftex.def Info: figures/OHM_resultado_multisim.png  used on input line 81.
 (pdftex.def)             Requested size: 179.25244pt x 74.82076pt.
+<figures/OHM_resultado_circuitlab.png, id=3248, 1659.19875pt x 796.9775pt>
+File: figures/OHM_resultado_circuitlab.png Graphic file (type png)
+<use figures/OHM_resultado_circuitlab.png>
+Package pdftex.def Info: figures/OHM_resultado_circuitlab.png  used on input line 83.
+(pdftex.def)             Requested size: 179.25244pt x 86.09903pt.
 
 
 [107 <./figures/ohm_graph.png>]
+
+LaTeX Warning: Reference `eq:errorelativo' on page 108 undefined on input line 94.
+
 File: figures/ohm_escolha.png Graphic file (type png)
 <use figures/ohm_escolha.png>
-Package pdftex.def Info: figures/ohm_escolha.png  used on input line 105.
+Package pdftex.def Info: figures/ohm_escolha.png  used on input line 103.
 (pdftex.def)             Requested size: 179.25244pt x 114.93962pt.
 File: figures/ohm_escolha_abc.png Graphic file (type png)
 <use figures/ohm_escolha_abc.png>
-Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 107.
+Package pdftex.def Info: figures/ohm_escolha_abc.png  used on input line 105.
 (pdftex.def)             Requested size: 179.25244pt x 120.34865pt.
 
 
-[108 <./figures/OHM_resultado_circuitlab.png> <./figures/OHM_resultado_multisim.png>]
+[108 <./figures/OHM_resultado_multisim.png> <./figures/OHM_resultado_circuitlab.png>]
 
-LaTeX Warning: Reference `rescond' on page 109 undefined on input line 125.
+LaTeX Warning: Reference `rescond' on page 109 undefined on input line 123.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 130.
+(hyperref)                than one, level fixed on input line 128.
 
 File: figures/Sedra_BodeFPB.png Graphic file (type png)
 <use figures/Sedra_BodeFPB.png>
-Package pdftex.def Info: figures/Sedra_BodeFPB.png  used on input line 157.
+Package pdftex.def Info: figures/Sedra_BodeFPB.png  used on input line 155.
 (pdftex.def)             Requested size: 170.71652pt x 166.14006pt.
 File: figures/Sedra_BodeFPA.png Graphic file (type png)
 <use figures/Sedra_BodeFPA.png>
-Package pdftex.def Info: figures/Sedra_BodeFPA.png  used on input line 159.
+Package pdftex.def Info: figures/Sedra_BodeFPA.png  used on input line 157.
 (pdftex.def)             Requested size: 170.71652pt x 170.71545pt.
 
 
@@ -2471,10 +2474,10 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: AFE708A4F6A10E58810AECF7933CA366;16389.
  ) 
 Here is how much of TeX's memory you used:
- 42619 strings out of 475151
- 882224 string characters out of 5766386
+ 42620 strings out of 475151
+ 882242 string characters out of 5766386
  1622761 words of memory out of 5000000
- 64100 multiletter control sequences out of 15000+600000
+ 64101 multiletter control sequences out of 15000+600000
  690085 words of font info for 128 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  100i,21n,131p,2444b,1580s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2620,7 +2623,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (178 pages, 94569776 bytes).
+Output written on main.pdf (178 pages, 94569927 bytes).
 PDF statistics:
  4267 PDF objects out of 4296 (max. 8388607)
  3721 compressed objects within 38 object streams
