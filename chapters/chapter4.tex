@@ -207,7 +207,7 @@ Na prática e em contexto de sala de aula, a experiência de rectificação de o
 
 A forma de contornar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio, tal como representado no esquema da Figura \ref{fig:ondacompleta-massa}. Ainda assim, não é possível medir as ondas de entrada e saída \textbf{simultaneamente}, se for esse o objectivo.
 
-No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software}. Desta forma, é possível representar as duas ondas numa imagem, tal como se pode ver na Figura \ref{fig:}. \textbf{Explicar como se fez ou deixar para a parte de software? Opinião PROF}
+No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software} e representar as duas ondas na mesma imagem.
 De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
 \begin{itemize}
 	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$) ou duas no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
@@ -954,6 +954,43 @@ O resultado das instruções na Linha~\ref{line:acquireps} e Linha~\ref{line:vb8
 \end{itemize}
 
 No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de \textit{Ohm}), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
+
+\subsubsection{Gráficos}
+\label{sec:graficos}
+Os gráficos apresentados são gerados com recurso às bibliotecas \textit{NumPy} \cite{NumPy} e \textit{Matplotlib} \cite{Matplotlib}, amplamente utilizadas em \textit{Python}. 
+
+A \textit{NumPy} é uma biblioteca fundamental para computação científica, permitindo a manipulação eficiente de \textit{arrays} multidimensionais e fornecendo um vasto conjunto de funções matemáticas, estatísticas e de álgebra linear. No contexto da construção de gráficos, o \textit{NumPy} é essencial na preparação e transformação dos dados a representar. O declive da recta obtido experimentalmente, no estudo da Lei de \textit{Ohm}, representado na Listagem \ref{lst:decliverecta}, foi calculado com recurso à biblioteca \textit{SciPy}, que disponibiliza ferramentas avançadas de análise científica, incluindo ajustamento de curvas e complementa a \textit{NumPy}, sobre a qual está construída.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Cálculo do declive da recta, label=lst:decliverecta]
+		slope, intercept, r_value, p_value, std_err = stats.linregress(voltage_measurements, current_measurements)
+	\end{lstlisting}
+\end{minipage}
+
+A visualização dos dados é realizada através da \textit{Matplotlib}, uma biblioteca consolidada para criação de gráficos em \textit{Python}. Esta permite gerar representações visuais, como gráficos de linhas, dispersão, histogramas, entre outros. Neste projecto, a \textit{Matplotlib} é utilizada para representar de forma clara e interpretável os dados e resultados obtidos. A Listagem \ref{lst:graficoUvsI} ilustra a forma como se gera um gráfico experimental correspondente à Lei de \textit{Ohm}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Gráfico Corrente \textit{vs} Tensão, label=lst:graficoUvsI]
+		plt.plot(voltage_measurements, current_measurements, label='V Vs I', marker = 'o')
+	\end{lstlisting}
+\end{minipage}
+
+Outro tipo de gráficos que são gerados são os diagramas de Bode, que representam a resposta em frequência dos filtros. A Listagem \ref{lst:diagramaBode} ilustra a forma como são gerados os pontos das frequências para o gráfico de Bode. Neste caso, as frequências são geradas logaritmicamente, utilizando a função \textit{logspace} da biblioteca \textit{NumPy}.
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Filtros - Diagrama de \textit{Bode}, label=lst:diagramaBode]
+		num_points = int(np.log10(stop_freq / start_freq) * points_per_decade)
+		frequencies = np.logspace(np.log10(start_freq), np.log10(stop_freq), num=num_points)	
+	\end{lstlisting}
+\end{minipage}
+
+As imagens geradas são gravadas na pasta ``webserver/website/static/images/'', tal como indica o exemplo na Listagem \ref{lst:gravacaoimagem}. 
+
+\begin{minipage}{0.9\linewidth}
+	\begin{lstlisting}[language=Python,escapechar=|, caption=Gravação do gráfico, label=lst:gravacaoimagem]
+	    plt.savefig("webserver/website/static/images/ohm_graph.png")	
+	\end{lstlisting}
+\end{minipage}
 
 \subsection{Interface WEB}
 \label{sec:interfaceweb}

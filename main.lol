@@ -20,4 +20,8 @@
 \contentsline {lstlisting}{\numberline {4.13}{\ignorespaces \textit {And bit} \textit {bit shift\textunderscore register - NOME DO FICH}}}{95}{lstlisting.4.13}%
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Instanciação da classe \textit {PyVirtualBench}}}{96}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Exemplo \textit {ps\_example.py}}}{97}{lstlisting.4.15}%
+\contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Cálculo do declive da recta}}{98}{lstlisting.4.16}%
+\contentsline {lstlisting}{\numberline {4.17}{\ignorespaces Gráfico Corrente \textit {vs} Tensão}}{98}{lstlisting.4.17}%
+\contentsline {lstlisting}{\numberline {4.18}{\ignorespaces Filtros - Diagrama de \textit {Bode}}}{99}{lstlisting.4.18}%
+\contentsline {lstlisting}{\numberline {4.19}{\ignorespaces Gravação do gráfico}}{99}{lstlisting.4.19}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
