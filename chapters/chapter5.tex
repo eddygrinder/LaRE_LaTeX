@@ -98,12 +98,11 @@ Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o 
 \section{Rectificadores}
 As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. COLOCAR REFERÊNCIA.
 
-As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripple} e Equação \ref{eq:vrippleOC}. \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
+As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} (ou Equação \ref{eq:vripple}) e Equação \ref{eq:vrippleOC}. \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
 
 \subsection{resultados práticos}
 \label{sec:resultados_praticosRectificadores}
-
-Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
+Nestas experiências os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
 
 A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
 
@@ -123,17 +122,7 @@ A Figura \ref{fig:diagramabode} apresenta um exemplo do Diagrama de \textit{Bode
 \end{figure}
 \end{comment}
 
-As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} apresentam os Diagramas de \textit{Bode} \textins{ideais}, que servem de referência para o estudo desta experiência. 
 
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Filtro passa-baixo\label{fig:Bode_pb}]{{\includegraphics[width=6cm]{figures/Sedra_BodeFPB.png} }}%
-		\qquad
-		\subfloat[\centering Filtro passa-alto\label{fig:Bode_pa}]{{\includegraphics[width=6cm]{figures/Sedra_BodeFPA.png} }}%
-		\caption{Diagramas de \textit{Bode} \textins{ideal} \cite{sedrasmith}}%
-		\label{fig:Bodeesqgeral}%
-\end{figure}
 
 	Para além da análise em frequência, um outro aspeto complementar a considerar é a relação entre as ondas de entrada e saída, em função da frequência. Nos filtros, o intervalo de frequências permitido é igual ao já referido para os rectificadores: entre \SI{50}{\hertz} a \SI{2000}{\hertz}. 
 	
