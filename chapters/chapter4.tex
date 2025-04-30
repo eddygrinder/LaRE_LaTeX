@@ -319,7 +319,7 @@ Da forma como foi implementado, há duas possibilidades de realizar este estudo,
 No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
 
 \paragraph{Rectificadores}
-Nas experiências dos rectificadores pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação, consoante as quatro combinações possíveis dos pares resistência/condensador e a influência que têm na variação da tensão de \textit{ripple}. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
+Nas experiências dos rectificadores pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação, consoante as quatro combinações possíveis dos pares resistência/condensador e a influência que têm na variação da tensão de \textit{ripple}. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} - \textbf{NOTA: Estes limites podem ter que ser ajustados} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
 A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do filtro do rectificador, Bloco 3, como representado na Figura \ref{fig:blocosrectificacao}. Esta componente deve ser minimizada para estabilizar a tensão de saída em corrente contínua, Bloco 4, representado na mesma figura \cite{sedrasmith}.
 
@@ -331,13 +331,19 @@ A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 -
 	\label{fig:sedraripple}
 \end{figure}
 
-A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vripple}:
+A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vripplecompleta}:
+
+\begin{equation} \label{eq:vripplecompleta}
+	U_{r} = U_{P}(1-e^{-\frac{T}{RC}})
+\end{equation}
+
+Observa-se, a partir da Equação \ref{eq:vripplecompleta}, que quando a constante de tempo $RC >> T$, o cálculo da tensão de \textit{ripple} pode ser reduzido à Equação \ref{eq:vripple}.
 
 \begin{equation} \label{eq:vripple}
 	U_{r} = \frac{U_{P}}{fRC}
 \end{equation}
 
-Observa-se, a partir da Figura \ref{fig:sedraripple} e também da Equação \ref{eq:vripple} que, quando a constante de tempo $CR >> T$, a tensão de \textit{ripple} é pequena. Sendo que, $v_{o}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
+Sendo que, neste caso, a tensão de \textit{ripple} é baixa e $v_{o}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
 
 \begin{equation} \label{eq:tensaosaida}
 	u_{o} = U_{P} - \dfrac{1}{2}U_{r}	
@@ -358,7 +364,7 @@ Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela 
 	U_{r} = \frac{U_{P}}{2fRC}
 \end{equation}
 
-São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}.
+São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}. (A Equação \ref{eq:vripplecompleta} deve ser usada quando os valores dos condensadores e resistências são pequenos ou frequência é baixa, isto é, quando o \textit{ripple} não é desprezável.)
 
 \paragraph{Filtros}
 Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
