@@ -28,7 +28,7 @@ O objetivo desta experiência é determinar o valor de uma determinada resistên
 	\label{fig:graphohmrepetido}
 \end{figure}
 
-\subsection{Resultados prácticos}
+\subsection{Resultados experimentais}
 \label{sec:resultados_praticosOHM}
 Como já foi referido - VER REFERÊNCIA - o utilizador efectua cinco medições de cada grandeza (tensão e corrente), para uma das três resistências disponíveis.
 
@@ -100,9 +100,32 @@ As duas experiências foram implementados com o objectivo de estudar e avaliar a
 
 As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} (ou Equação \ref{eq:vripple}) e Equação \ref{eq:vrippleOC}. \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
 
-\subsection{resultados práticos}
+\subsection{Resultados experimentais}
 \label{sec:resultados_praticosRectificadores}
 Nestas experiências os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
+
+Sendo assim, a análise será feita para o caso em que $f=\SI{200}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{4.7}{\micro\farad}$. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
+
+\begin{equation} \label{eq:verificarcondicao}
+	\SI{2.2}{\kilo\ohm} * \SI{4.7}{\micro\farad} >> \dfrac{1}{200}
+\end{equation}
+
+Uma vez que esta condição não se verifica, a expressão a utilizar para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vripplecompleta}. O resultado obtido está representado na Equação \ref{eq:vripplecalculado}:
+
+\begin{equation} \label{eq:vripplecalculado}
+	U_{r} = \SI{5}{\volt}(1-e^{-\frac{\SI{0.005}{\second}}{\SI{2.2}{\kilo\ohm}*\SI{4.7}{\micro\farad}}}) \approx \SI{1.92}{\volt}
+\end{equation}
+
+Analisando os resultados obtidos experimentalmente no \textit{Multisim}, representados na Figura \ref{fig:rippleexperimentalmeiaonda}, a tensão de \textit{ripple} obtida é de, aproximadamente, \SI{1.51}{\volt}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/resultados_meia-onda.png}
+	\caption{Tensão de \textit{ripple} experimental - meia onda}
+	\label{fig:rippleexperimentalmeiaonda}
+\end{figure}
+
+O valor do erro relativo é de \SI{21.35}{\percent}. Esta diferença entre o valor calculado teoricamente e o obtido na simulação do \textit{Multisim} deve-se às simplificações da expressão analítica usada. Esta fórmula assume componentes ideais e condições perfeitas, como uma resistência constante e condensador sem perdas \cite{sedrasmith}. No entanto, o simulador considera comportamentos mais realistas, como a resistência interna do condensador (ESR), quedas de tensão nos díodos e efeitos transitórios. Por isso, a discrepância observada é esperada e perfeitamente aceitável.
 
 A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
 
