@@ -95,6 +95,8 @@ O valor do declive, correspondente à resistência, obtido para estes dois simul
 
 Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o \acrshort{lare} são semelhantes aos obtidos com os simuladores e aos valores reais.
 
+\textbf{NOTA PROF: Vale a pena fazer o gráfico com um circuito real?}
+
 \section{Rectificadores}
 As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. COLOCAR REFERÊNCIA.
 
@@ -116,7 +118,18 @@ Uma vez que esta condição não se verifica, a expressão a utilizar para calcu
 	U_{r} = \SI{5}{\volt}(1-e^{-\frac{\SI{0.005}{\second}}{\SI{2.2}{\kilo\ohm}*\SI{4.7}{\micro\farad}}}) \approx \SI{1.92}{\volt}
 \end{equation}
 
-Analisando os resultados obtidos experimentalmente no \textit{Multisim}, representados na Figura \ref{fig:rippleexperimentalmeiaonda}, a tensão de \textit{ripple} obtida é de, aproximadamente, \SI{1.51}{\volt}.
+Os resultados obtidos experimentalmente usando o circuito real, estão representados na Figura \ref{fig:ripplerealmeiaonda}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/meiaonda-4.7-2.2.png}
+	\caption{Tensão de \textit{ripple} experimental - meia onda - circuito real}
+	\label{fig:ripplerealmeiaonda}
+\end{figure}
+
+O valor obtido foi de: \SI{1.38}{\volt}, representado na figura pelo $\Delta y$
+
+Como complemento aos valores reais, foi realizada a experiência com recurso ao \textit{Multisim}. Os resultados obtidos e a respectiva forma de onda estão representados na Figura \ref{fig:rippleexperimentalmeiaonda}. 
 
 \begin{figure}[hbtp]
 	\centering
@@ -125,7 +138,11 @@ Analisando os resultados obtidos experimentalmente no \textit{Multisim}, represe
 	\label{fig:rippleexperimentalmeiaonda}
 \end{figure}
 
-O valor do erro relativo é de \SI{21.35}{\percent}. Esta diferença entre o valor calculado teoricamente e o obtido na simulação do \textit{Multisim} deve-se às simplificações da expressão analítica usada. Esta fórmula assume componentes ideais e condições perfeitas, como uma resistência constante e condensador sem perdas \cite{sedrasmith}. No entanto, o simulador considera comportamentos mais realistas, como a resistência interna do condensador (ESR), quedas de tensão nos díodos e efeitos transitórios. Por isso, a discrepância observada é esperada e perfeitamente aceitável.
+A tensão de \textit{ripple} obtida é de, aproximadamente, \SI{1.51}{\volt}.
+
+\textbf{NOTA PROF: Vale a pena incluir outra análise com o circuitlab?}
+
+Os erros relativos obtidos foram de \SI{28.13}{\percent} e \SI{21.35}{\percent}, respetivamente para os valores medidos experimentalmente e simulados no Multisim. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. Por outro lado, a simulação considera comportamentos mais realistas, como a resistência interna do condensador (ESR), as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ainda ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores eletrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
 
 A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
 
