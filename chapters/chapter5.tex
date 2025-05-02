@@ -98,12 +98,13 @@ Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o 
 \textbf{NOTA PROF: Vale a pena fazer o gráfico com um circuito real?}
 
 \section{Rectificadores}
+\label{sec:resultados_rectificadores}
 As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. COLOCAR REFERÊNCIA.
 
-As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} (ou Equação \ref{eq:vripple}) e Equação \ref{eq:vrippleOC}. \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
+As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
 
-\subsection{Resultados experimentais}
-\label{sec:resultados_praticosRectificadores}
+\subsection{Resultados experimentais [meia onda]}
+\label{sec:resultados_RectificadoresMeiaOnda}
 Nestas experiências os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
 
 Sendo assim, a análise será feita para o caso em que $f=\SI{200}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{4.7}{\micro\farad}$. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
@@ -127,28 +128,39 @@ Os resultados obtidos experimentalmente usando o circuito real, estão represent
 	\label{fig:ripplerealmeiaonda}
 \end{figure}
 
-O valor obtido foi de: \SI{1.38}{\volt}, representado na figura pelo $\Delta y$
+O valor obtido foi de: \SI{1.38}{\volt}, representado na figura pelo $\Delta y$.
 
-Como complemento aos valores reais, foi realizada a experiência com recurso ao \textit{Multisim}. Os resultados obtidos e a respectiva forma de onda estão representados na Figura \ref{fig:rippleexperimentalmeiaonda}. 
+Para complementar os resultados experimentais, foi também realizada uma simulação no \textit{Multisim}. Os valores obtidos, bem como a respetiva forma de onda, encontram-se representados na Figura \ref{fig:rippleexperimentalmeiaonda}.
 
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/resultados_meia-onda.png}
-	\caption{Tensão de \textit{ripple} experimental - meia onda}
+	\caption{Tensão de \textit{ripple} experimental - meia onda - 	\textit{multisim}}
 	\label{fig:rippleexperimentalmeiaonda}
 \end{figure}
 
-A tensão de \textit{ripple} obtida é de, aproximadamente, \SI{1.51}{\volt}.
+A tensão de \textit{ripple} obtida é de, aproximadamente, \SI{1.51}{\volt}, representado novamente pelo $\Delta y$.
 
-\textbf{NOTA PROF: Vale a pena incluir outra análise com o circuitlab?}
+\textbf{NOTA PROF: Vale a pena incluir outra análise com o circuitlab? Enretanto, actualizo as imagens com o esquema do circuito.}
 
-Os erros relativos obtidos foram de \SI{28.13}{\percent} e \SI{21.35}{\percent}, respetivamente para os valores medidos experimentalmente e simulados no Multisim. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. Por outro lado, a simulação considera comportamentos mais realistas, como a resistência interna do condensador (ESR), as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ainda ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores eletrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
+Os erros relativos obtidos foram de \SI{28.13}{\percent} e \SI{21.35}{\percent}, respetivamente para os valores medidos experimentalmente e simulados no Multisim. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. A simulação, embora mais próxima da realidade, utiliza também componentes ideais por omissão, como é o caso do condensador sem resistência série (ESR). Ainda assim, considera fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores electrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
+
+\subsection{Resultados experimentais [onda completa]}
+\label{sec:resultados_RectificadoresOndacompleta}
+
+\section{Filtros}
+\label{sec:resultados_filtros}
+Estas duas experiências foram realizadas com o objetivo de estudar a resposta em frequência dos filtros $RC$, nomeadamente nas configurações passa-alto e passa-baixo, resultantes das diferentes configurações entre as resistências e os condensadores. Os utilizadores podem variar a frequência entre \SI{50}{\hertz} e \SI{80000}{\hertz}, analisando o comportamento da tensão de saída em função da frequência. A frequência de corte é calculada através da Equação \ref{eq:frequenciacorte}, sendo posteriormente comparada com os valores obtidos experimentalmente no diagrama de \textit{Bode}. Adicionalmente, a atenuação da tensão de saída pode ser determinada através da Equação \ref{eq:relacaoGanho}, ou expressa em \SI{}{\decibel} utilizando a Equação \ref{eq:relacaoGanhodB}.
+
+Sendo assim, o circuito analisado será o filtro passa-alto, representado na Figura \ref{fig:filtro_pa} e configurado com $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{10}{\nano\farad}$. Os gráficos que se esperam obter estão representados na Figura \ref{fig:Bode_pa} e Figura{}. Para os restantes valores e configurações, os resultados poderão obtidos de forma análoga.
+
+\textbf{NOTA: Esntretanto, vi que me esqueci de colocar a imagem da relação entre vin e vout, na parte teórica.}
+
+\subsection{Resultados experimentais [filtro passa-alto]}
+\label{sec:resultados_filtros_passaalto}
+
 
 A possibilidade de variar a frequência do sinal de entrada permite que estas experiências sejam utilizadas para estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode}, determinar a frequência de corte dada pela Equação \ref{eq:frequenciacorte} e ainda relacionar, por exemplo, o valor da tensão de entrada com a tensão de saída. 
-
-\begin{equation} \label{eq:frequenciacorte}
-	f_{c} = \frac{1}{2\pi RC}
-\end{equation}
 
 \begin{comment}
 	\textbf{Acho que não é necessário referir a relação entre a tensão de entrada e a tensão de saída, já que isso é feito na parte de software. O que se pode fazer é referir que o \acrshort{lare} permite estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode} e determinar a frequência de corte.}
