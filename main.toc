@@ -79,12 +79,12 @@
 \contentsline {chapter}{\numberline {5}Resultados}{107}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{108}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Resultados experimentais}{108}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Rectificadores}{110}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{110}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{112}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Filtros}{112}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{112}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.2}Rectificadores}{111}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{111}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{113}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Filtros}{113}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{113}{subsection.5.3.1}%
 \contentsline {section}{\numberline {5.4}Limitações}{116}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Melhoramentos}{116}{section.5.5}%
-\contentsline {chapter}{Refer\^{e}ncias}{117}{section*.142}%
+\contentsline {chapter}{Refer\^{e}ncias}{117}{section*.143}%
 \contentsline {chapter}{Anexo \numberline {A}Datasheet}{133}{appendix.1.A}%

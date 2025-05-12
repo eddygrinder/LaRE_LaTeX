@@ -6,7 +6,10 @@
      
      Cooper
 \end{center}
-Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. A confrontação dos resultados experimentais foi efetuada com recurso ao \href{https://www.multisim.com}{\textit{MultisimLive}}, ao \textit{VirtualBench} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
+Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. 
+
+Doravante, e neste capítulo, designar-se-ão os testes efectuados na ``placa branca'' como experiências prácticas.
+A confrontação dos resultados obtidos no \acrshort{lare} foi efetuada com recurso às experiências prácticas ao \href{https://www.multisim.com}{\textit{MultisimLive}} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
 
 No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, há ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada.
 
@@ -73,29 +76,49 @@ O erro relativo entre o valor teórico(real) e o valor obtido experimentalmente,
 
 No caso descrito em cima, o erro relativo obtido é de, aproximadamente, \SI{1.2}{\percent}, sendo um valor perfeitamente aceitável.
 
-Ainda assim e como forma de complementar a análise dos resultados, foram efectuados testes complementares usando dois simuladores, neste caso, o \href{https://www.multisim.com}{\textit{MultisimLive}} e o \href{https://www.circuitlab.com/}{\textit{CircuitLab}}. A Figura \ref{fig:multisimOHM} e a Figura \ref{fig:circuitlab} mostram os resultados obtidos.
+Os resultados da experiência práctica, efectuados com a mesma resistência utilizada no \acrshort{lare}, estão representados na Tabela \ref{Table:valoresexperimentaisohm}.
+
+\begin{table}[htb]
+	\centering
+	\caption{Valores prácticos - Lei de \textit{Ohm}} 
+	\label{Table:valoresexperimentaisohm}
+	\begin{tabular}{lcc}
+		\toprule
+		Tensão (V)& Corrente (mA) & Resistência (\SI{}{\kilo\ohm}) \\
+		\midrule
+		$0.998$ & 0.998 & 1  \\
+		\midrule
+		 $1.99$ & 1.99  & 1  \\
+		 \midrule
+		 $2.99$ & 2.99  & 1  \\
+		 \midrule
+		 $3.99$ & 3.99  & 1  \\
+		 \midrule
+		 $4.99$ & 4.99  & 1  \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Estes valores foram obtidos com recurso ao \acrshort{virtualbench} e demonstram que o valor da resistência, que corresponde ao declive da recta, é constante, o que confirma a Lei de \textit{Ohm}. A partir da Equação \ref{eq:errorelativo}, o valor do erro relativo é inferior a \SI{1}{\percent}. 
+
+Ainda assim e como forma de complementar a análise dos resultados, foram efectuados testes complementares com o \href{https://www.multisim.com}{\textit{MultisimLive}}. A Figura \ref{fig:multisimOHM} mostra os resultados obtidos.
 
 \begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Multisim\label{fig:multisimOHM}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_multisim.png} }}%
-		\qquad
-		\subfloat[\centering CircuitLab\label{fig:circuitlab}]{{\includegraphics[width=6.3cm]{figures/OHM_resultado_circuitlab.png} }}%
-		\caption{Experiência Lei de \textit{Ohm}}%
-		\label{fig:experienciaOHM_simuladores}%
-	\end{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/OHM_resultado_multisim.png}
+	\caption{Multisim - Lei de \textit{Ohm}}
+	\label{fig:multisimOHM}
+\end{figure}
 
-Através da análise do gráfico obtido no \textit{MultisimLive} e no \textit{CircuitLab} é possível calcular os declives das rectas, dados pela Equação \ref{eq:declive}
+Através da análise do gráfico obtido no \textit{MultisimLive} é possível calcular o declives da recta, dados pela Equação \ref{eq:declive}
 
 \begin{equation} \label{eq:declive}
 	\text{m} = \frac{y_{b} - y_{a}}{x_{b} - x_{a}}
 \end{equation}
 
-O valor do declive, correspondente à resistência, obtido para estes dois simuladores é, respectivamente, $m_\text{{multisim}} \approx{0.980}$ e $m_{\text{CircuitLab}} \approx{1.002}$. Tendo em conta que a escala do eixo do $y$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}, isto é, $R_\text{{multisim}} = \SI{0.980}{\kilo\ohm}$ e $R_{\text{CircuitLab}} = \SI{1.002}{\kilo\ohm}$.  Assim aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo de \SI{1.80}{\percent} e \SI{0.4}{\percent}, respectivamente.
+O valor do declive, correspondente à resistência, obtido para estes simulador é de $m_\text{{multisim}} \approx{0.980}$. Tendo em conta que a escala do eixo do $y$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}, isto é, $R_\text{{multisim}} = \SI{0.980}{\kilo\ohm}$. Assim aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo de \SI{1.80}{\percent} e \SI{0.4}{\percent}, respectivamente.
 
 Pela análise dos gráficos obtidos, conclui-se que os resultados obtidos com o \acrshort{lare} são semelhantes aos obtidos com os simuladores e aos valores reais.
-
-\textbf{NOTA PROF: Vale a pena fazer o gráfico com um circuito real?}
 
 \section{Rectificadores}
 \label{sec:resultados_rectificadores}
