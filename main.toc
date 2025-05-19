@@ -1,12 +1,12 @@
 \babel@toc {portuguese}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {portuguese}{}\relax 
-\contentsline {chapter}{Lista de Figuras}{vii}{chapter*.10}%
-\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.11}%
-\contentsline {chapter}{Listagens}{xi}{chapter*.12}%
-\contentsline {chapter}{Gloss\'{a}rio}{xiii}{section*.13}%
-\contentsline {chapter}{Lista de Acr\'{o}nimos}{xvii}{section*.15}%
-\contentsline {chapter}{Lista de S\'{i}mbolos}{xxi}{section*.17}%
+\contentsline {chapter}{Lista de Figuras}{ix}{chapter*.10}%
+\contentsline {chapter}{Lista de Tabelas}{xiii}{chapter*.11}%
+\contentsline {chapter}{Listagens}{xv}{chapter*.12}%
+\contentsline {chapter}{Gloss\'{a}rio}{xvii}{section*.13}%
+\contentsline {chapter}{Lista de Acr\'{o}nimos}{xxi}{section*.15}%
+\contentsline {chapter}{Lista de S\'{i}mbolos}{xxv}{section*.17}%
 \contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Enquadramento}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectivos}{2}{section.1.2}%
@@ -21,22 +21,22 @@
 \contentsline {subsubsection}{Laboratório real}{22}{section*.24}%
 \contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.26}%
 \contentsline {subsubsection}{Laboratório remoto}{30}{section*.30}%
-\contentsline {paragraph}{VISIR}{39}{section*.37}%
+\contentsline {paragraph}{VISIR}{38}{section*.37}%
 \contentsline {paragraph}{PILAR}{45}{section*.47}%
 \contentsline {section}{\numberline {2.5}COMENTÁRIO PROF}{46}{section.2.5}%
 \contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{47}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contextualização}{47}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Solução proposta}{50}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Arquitectura}{51}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Circuitos electrónicos - experiências?}{54}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Circuitos electrónicos - experiências?}{52}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Hardware}{54}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}VirtualBench}{54}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Matriz LaRE}{55}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}RaspberryPI}{55}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.3}RaspberryPI}{56}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}Relés}{57}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{59}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{59}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Software}{60}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Software}{61}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{62}{subsection.3.6.1}%
 \contentsline {subsubsection}{\textit {Python}}{62}{section*.68}%
 \contentsline {subsubsection}{\textit {Flask}}{62}{section*.69}%
