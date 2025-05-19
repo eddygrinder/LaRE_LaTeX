@@ -8,9 +8,9 @@
 \end{center}
 Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. 
 
-Como forma de uniformizar conceitos, apesar de tanto as experiências desenvolvidas no \acrshort{lare} como as realizadas na 'placa branca' serem reais, designar-se-ão os testes efetuados na 'placa branca' como experiências práticas ou valores práticos.
+Como forma de uniformizar conceitos, apesar de tanto as experiências desenvolvidas no \acrshort{lare} como as realizadas na ``placa branca'' serem reais, designar-se-ão os testes efetuados na ``placa branca'' como experiências práticas ou valores práticos.
 
-A confrontação dos resultados obtidos no \acrshort{lare} foi efetuada com recurso às experiências prácticas, ao \href{https://www.multisim.com}{\textit{MultisimLive}} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
+Sendo assim, a confrontação dos resultados obtidos no \acrshort{lare} foi efetuada com recurso às experiências prácticas, ao \href{https://www.multisim.com}{\textit{MultisimLive}} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga.
 
 No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, há ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada.
 
@@ -69,7 +69,7 @@ O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figu
 	\label{fig:grafico_LaRE_1k}
 \end{figure}
 
-O erro relativo entre o valor teórico e o valor obtido no \acrfull{lare}, pode ser calculado através da Equação \ref{eq:errorelativo}:
+O erro relativo entre o valor teórico e o valor obtido no \acrshort{lare}, pode ser calculado através da Equação \ref{eq:errorelativo}:
 
 \begin{equation} \label{eq:errorelativo}
 	\text{Erro Relativo} = \frac{|R_{real} - R_{obtido}|}{R_{real}} \times 100
@@ -102,7 +102,7 @@ Os resultados da experiência práctica, efectuados com a mesma resistência uti
 
 Estes valores foram obtidos com recurso ao \acrshort{virtualbench} e demonstram que o valor da resistência, que corresponde ao declive da recta é constante, o que confirma a Lei de \textit{Ohm}. A partir da Equação \ref{eq:errorelativo}, o valor do erro relativo é inferior a \SI{1}{\percent}. 
 
-Ainda assim e como forma de complementar a análise dos resultados, foram efectuados testes com o \href{https://www.multisim.com}{\textit{MultisimLive}}. A Figura \ref{fig:multisimOHM} mostra o gráfico obtido.
+Ainda assim e como forma de complementar a análise dos resultados, foram efectuados testes com o \href{https://www.multisim.com}{\textit{Multisim}}. A Figura \ref{fig:multisimOHM} mostra o gráfico obtido.
 
 \begin{figure}[hbtp]
 	\centering
@@ -119,7 +119,7 @@ Analisando os valores é possível calcular o declive da recta, dado pela Equaç
 
 O valor do declive, correspondente à resistência, obtido para estes simulador é de $m_\text{{multisim}} \approx{0.980}$. Tendo em conta que a escala do eixo do $y$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}, isto é, $R_\text{{multisim}} = \SI{0.980}{\kilo\ohm}$. Assim, aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo inferior a \SI{1}{\percent}.
 
-Verifica-se, através da análise dos gráficos, que os dados obtidos com o \acrshort{lare} estão em concordância com os resultados simulados e com os valores experimentais.
+Verifica-se, através da análise dos gráficos, que os dados obtidos com o \acrshort{lare} estão em concordância com os resultados simulados e com os valores prácticos.
 
 \section{Rectificadores}
 \label{sec:resultados_rectificadores}
@@ -128,6 +128,7 @@ As duas experiências foram implementados com o objectivo de estudar e avaliar a
 As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
 \subsection{Resultados experimentais [meia onda]}
 \label{sec:resultados_RectificadoresMeiaOnda}
+\textbf{NOTA: Para manter a corência, colocar a foto da pagina de medição}	
 Nestas experiências implementadas no \acrshort{lare} os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
 
 Sendo assim, a análise será feita para o caso em que $f=\SI{200}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{4.7}{\micro\farad}$. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
@@ -146,28 +147,24 @@ A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de sa
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/resultados_LaRE_meia_onda.png}
-	\caption{Tensão de \textit{ripple} experimental - meia onda - \acrshort{lare}}
+	\includegraphics[width=0.5\textwidth]{figures/resultados_LaRE_meia_onda.png}
+	\caption{Tensão de \textit{ripple} no \acrshort{lare}- meia onda}
 	\label{fig:ripplelaremeiaonda}
 \end{figure}
 
-Os resultados obtidos experimentalmente usando o circuito montado na placa branca e a simulação no \textit{multisim} estão representados na Figura \ref{fig:realmeiaonda} e Figura \ref{fig:multisimmeiaonda}, respectivamente.
+As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, respectivamente, os resultados práticos e simulados. A tensão de ripple medida foi de \SI{1.38}{\volt} e \SI{1.51}{\volt}.
 
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Circuito real\label{fig:realmeiaonda}]{{\includegraphics[width=6.3cm]{figures/meiaonda-4.7-2.2.png} }}%
+		\subfloat[\centering Circuito práctico\label{fig:realmeiaonda}]{{\includegraphics[width=6.3cm]{figures/meiaonda-4.7-2.2.png} }}%
 		\qquad
 		\subfloat[\centering Simulação \textit{multisim}\label{fig:multisimmeiaonda}]{{\includegraphics[width=6.3cm]{figures/resultados_meia-onda.png} }}%
-		\caption{Valores experimentais reais e simulados - tensão de \textit{ripple}}%
+		\caption{Valores experimentais e simulados - tensão de \textit{ripple}}%
 		\label{fig:simulacaoripple}%
 	\end{figure}
 
-Como se pode verificar pela análise das Figuras anteriores, os valores obtidos foram de \SI{1.38}{\volt} e \SI{1.51}{\volt}, respectivamente para o circuito real e a simulação.
-
-\textbf{NOTA PROF: Vale a pena incluir outra análise com o circuitlab? Enretanto, actualizo as imagens com o esquema do circuito.}
-
-Os erros relativos obtidos foram de \SI{30.21}{\percent} para o \acrshort{lare}, \SI{28.13}{\percent} e \SI{21.35}{\percent}, respetivamente, para os valores medidos no circuito real e simulados no Multisim. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. A simulação, embora mais próxima da realidade, utiliza também componentes ideais por omissão, como é o caso do condensador sem resistência série (ESR). Ainda assim, considera fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores electrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
+Os erros relativos obtidos foram de \SI{30.21}{\percent} para o \acrshort{lare}, \SI{28.13}{\percent} e \SI{21.35}{\percent}, para os valores medidos no circuito prácticos e simulados. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. A simulação, embora mais próxima da realidade, utiliza também componentes ideais por omissão, como é o caso do condensador sem resistência série (ESR). Ainda assim, considera fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores electrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}
