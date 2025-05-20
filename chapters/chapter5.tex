@@ -175,32 +175,11 @@ Estas duas experiências foram realizadas com o objetivo de estudar a resposta e
 
 \subsection{Resultados experimentais [filtro passa-alto]}
 \label{sec:resultados_filtros_passaalto}
-O circuito analisado será o filtro passa-alto, representado na Figura \ref{fig:filtro_pa} e configurado com $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{10}{\nano\farad}$. Os gráficos que se esperam obter estão representados na Figura \ref{fig:Bode_pa} e Figura{}. Para os restantes valores e configurações, os resultados poderão obtidos de forma análoga.
+O circuito analisado será o filtro passa-alto, representado na Figura \ref{fig:filtro_pa} e configurado com $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{10}{\nano\farad}$. Os gráficos que se esperam obter estão representados na Figura \ref{fig:Bode_pa}. Para os restantes valores e configurações, os resultados poderão ser obtidos de forma análoga.
 
 Para estes valores, a frequência de corte teórica é dada pela Equação \ref{eq:frequenciacorte}, sendo que o valor obtido é de \SI{7234.32}{\hertz}.
 
-Os valores experimentais obtidos com o \acrshort{lare} estão representados na Figura \ref{fig:voutvinlare}. Como se pode ver pela análise da figura, o ganho a altas frequências é prácticamente unitário.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/filtro_passa-alto.png}
-	\caption{$v_{out}$ \textit{vs} $v_{in}$ experimental \acrshort{lare} - TEMPORÁRIO}
-	\label{fig:voutvinlare}
-\end{figure}
-
-Comparando estes valores com os obtidos através do circuito real, representados na Figura \ref{fig:realPA} e Figura \ref{fig:multisimPA} do circuito simulado no \textit{multisim} verifica-se que os valores obtidos são prácticamente iguais, podendo ser considerado, com segurança, que em ambos os casos o ganho de tensão é unitário. \textbf{NOTA: Podem ficar duas imagens separadas. Opinião PRof}
-
-\begin{figure}[hbtp]
-	\centering%
-		\centering
-		\subfloat[\centering Circuito real\label{fig:realPA}]{{\includegraphics[width=6.3cm]{figures/PA_10nF2k2-80Khz.png} }}%
-		\qquad
-		\subfloat[\centering simulação \textit{multisim}\label{fig:multisimPA}]{{\includegraphics[width=6.3cm]{figures/boda_HPF_vout.png} }}%
-		\caption{Valores experimentais reais e simulados - $v_{out}$ \textit{vs} $v_{in}$}%
-		\label{fig:simulacaoPA}%
-	\end{figure}
-
-Relativamente à análise ao digarama de \textit{Bode}, pode ver-se na Figura \ref{fig:fcBode} que o valor aproximado da frequência de corte, obtido no \acrshort{lare}, é de \SI{7071.1}{\hertz}. O erro relativo é, aproximadamente, \SI{2.26}{\percent}. Este valor é perfeitamente aceitável, tendo em conta a tolerância dos componentes utilizados, os erros de medição e aproximações.
+Os valores experimentais obtidos com o \acrshort{lare} relativamente à análise do digarama de \textit{Bode}, estão representados na Figura \ref{fig:fcBode}, sendo que o valor aproximado da frequência de corte é de \SI{7071.1}{\hertz}. O erro relativo é, aproximadamente, \SI{2.26}{\percent}. Este valor é perfeitamente aceitável, tendo em conta a tolerância dos componentes utilizados, os erros de medição e aproximações.
 
 \begin{figure}[hbtp]
 	\centering
@@ -209,16 +188,39 @@ Relativamente à análise ao digarama de \textit{Bode}, pode ver-se na Figura \r
 	\label{fig:fcBode}
 \end{figure}
 
-Os resultados complementares obtidos com base na simulação efectuada no \textit{multisim}, já que o \acrshort{virtualbench} não permite gerar o diagrama de Bode, representados na Figura \ref{fig:fcBodemultisim}, mostram que a frequência de corte é de \SI{7282.4}{\hertz}. O erro relativo é de \SI{0.67}{\percent}, o que é prácticamente desprezável.
+Os resultados complementares obtidos com base na simulação efectuada no \textit{multisim}, já que não é possível gerar o diagrama de \textit{Bode} do circuito práctico, representados na Figura \ref{fig:fcBodemultisim}, mostram que a frequência de corte é de \SI{7282.4}{\hertz}. O erro relativo é de \SI{0.67}{\percent}, o que é prácticamente desprezável.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/boda_HPF_fc.png}
+	\includegraphics[width=0.6\textwidth]{figures/boda_HPF_fc.png}
 	\caption{Frequência de corte - \textit{multisim} - Diagrama de \textit{Bode}}
 	\label{fig:fcBodemultisim}
 \end{figure}
 
-O valor da frequência de corte também pode ser obtido através da análise dos gráficos que representam a relação entre a tensão de saída e a tensão de entrada. Como se pode ver na Figura \ref{fig:fcvoutlare}, o valor obtido para o \acrshort{lare} é de \SI{7230}{\kilo\hertz}, o que corresponde a um erro relativo menor que \SI{1}{\percent}.
+O valor da frequência de corte também pode ser obtido através da análise dos gráficos que representam a relação entre a tensão de saída e a tensão de entrada. 
+
+Como se pode ver pela análise da Figura \ref{fig:voutvinlare}, o ganho a altas frequências é prácticamente unitário, estando em consonância com os valores obtidos no diagrama de \textit{Bode}, representado na Figura \ref{fig:fcBode}. 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/filtro_passa-alto.png}
+	\caption{$v_{out}$ \textit{vs} $v_{in}$ experimental \acrshort{lare} - TEMPORÁRIO}
+	\label{fig:voutvinlare}
+\end{figure}
+
+Comparando estes valores com os obtidos através do circuito práctico, representados na Figura \ref{fig:realPA} e Figura \ref{fig:multisimPA} do circuito simulado no \textit{multisim} verifica-se que os valores obtidos são prácticamente iguais, podendo ser considerado, com segurança, que em ambos os casos o ganho de tensão é unitário. 
+
+\begin{figure}[hbtp]
+	\centering%
+		\centering
+		\subfloat[\centering Circuito práctico\label{fig:realPA}]{{\includegraphics[width=6.3cm]{figures/PA_10nF2k2-80Khz.png} }}%
+		\qquad
+		\subfloat[\centering Simulação \textit{multisim}\label{fig:multisimPA}]{{\includegraphics[width=6.3cm]{figures/boda_HPF_vout.png} }}%
+		\caption{Valores prácticos e simulados - $v_{out}$ \textit{vs} $v_{in}$}%
+		\label{fig:simulacaoPA}%
+	\end{figure}
+
+Relativamente à análise da frequência de corte, representado na Figura \ref{fig:fcvoutlare}, o valor obtido para o \acrshort{lare} é de \SI{7230}{\hertz}, o que corresponde a um erro relativo menor que \SI{1}{\percent}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -227,7 +229,7 @@ O valor da frequência de corte também pode ser obtido através da análise dos
 	\label{fig:fcvoutlare}
 \end{figure}
 
-Os resultados obtidos estão de acordo com o valor teórico da frequência de corte. O circuito real apresentou uma frequência de corte de \SI{7000}{\hertz}, com um erro relativo de \SI{3.24}{\percent}, enquanto a simulação no \textit{Multisim} apresentou \SI{7300}{\hertz}, com um erro ainda mais reduzido de \SI{0.9}{\percent}. Estes desvios podem ser considerados baixos e encontram-se dentro de margens aceitáveis, tendo em conta as limitações práticas do circuito real, como tolerâncias dos componentes, ruído, e eventuais imprecisões nas medições. O valor obtido na simulação, por outro lado, está mais próximo do valor teórico, o que é expectável dado que os modelos usados assumem, geralmente, componentes ideais ou com parâmetros controlados.
+O circuito práctico apresenta uma frequência de corte de \SI{7000}{\hertz}, com um erro relativo de \SI{3.24}{\percent}, enquanto a simulação no \textit{Multisim} apresenta \SI{7300}{\hertz}, com um erro ainda mais reduzido de \SI{0.9}{\percent}. Estes desvios podem ser considerados baixos e encontram-se dentro de margens aceitáveis, tendo em conta as limitações práticas do circuito real, como tolerâncias dos componentes, ruído, e eventuais imprecisões nas medições. O valor obtido na simulação, por outro lado, está mais próximo do valor teórico, o que é expectável dado que os modelos usados assumem, geralmente, componentes ideais ou com parâmetros controlados.
 
 \begin{figure}[hbtp]
 	\centering%
