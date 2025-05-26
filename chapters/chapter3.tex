@@ -61,22 +61,22 @@ Considerou-se, portanto, que seria uma mais-valia desenvolver um \acrshort{labor
           \acrfull{html}.
 \end{itemize}
 
-Estava dado o passo final para o que viria a ser o \acrshort{lare}.
+Estava dado o último passo na escolha do \textit{hardware} e do \textins{software} que viriam a compor o \acrshort{lare}.
 
 \section{Solução proposta}
 \label{sec:solucaoproposta}
 Os objectivos principais foram definidos na Secção \ref{sec: Objectivos} e as características gerais definidas na Secção \ref{sec:contextualização}.
 
-Pretende-se que o \acrshort{lare} seja um \acrshort{laboratório remoto} capaz de controlar e comandar um conjunto de experiências electrónicas, assim como efectuar medições de várias grandezas electricas. Para que a solução proposta seja completa e definitiva, falta definir os instrumentos de medida, assim como os circuitos que compõem as experiências.
+Pretende-se que o \acrshort{lare} seja um \acrshort{laboratório remoto} capaz de controlar e comandar um conjunto de experiências electrónicas, assim como efectuar medições de várias grandezas eléctricas. Para que a solução proposta seja completa e definitiva, é necessário definir os instrumentos de medida, assim como os circuitos que compõem as experiências.
 
 No contexto desta dissertação, o instrumento de medida sugerido para implementar o \acrshort{lare} foi o \textit{VirtualBench}, modelo VB-8012.
 
 O \textit{VirtualBench} pode ser controlado de duas formas: através do \textit{software} fornecido pela \acrshort{ni} ou através do \textit{pyVirtualBench} \cite{AutomatingVB}. (Apesar de não ser abordado no contexto desta dissertação, existe também a possibilidade de aceder ao \acrshort{virtualbench} através do \acrshort{labview}.)
 
 O \textit{pyVirtualBench} é um \gls{wrapper}\footnote{Este \gls{wrapper} é um \textit{software} de terceiros, suportado e mantido pela comunidade e não é diretamente suportado pela \acrshort{ni}.} que permite controlar o \acrshort{virtualbench} através de uma aplicação \gls{python} \cite{pyvirtualbench}. No entanto, este \gls{wrapper} não é compatível com \textit{Linux}.
-Perante este facto, decidiu-se integrar um \acrshort{pc} no \acrshort{lare} - pormenores da instalação do \textit{driver} no \textit{site} da \acrshort{ni} (\href{https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000kHUFSA2&l=pt-PT}{\textit{link}}) - sendo que todo o peso computacional passaria para o \acrshort{pc} e o \gls{RaspberryPI} controlaria os relés. Esta decisão de o manter como controlador dos relés prendeu-se com o facto de, futuramente, poder haver espaço para uma evolução ao nível da compatibilidade com o \textit{pyVirtualBench}.
+Perante este facto, decidiu-se integrar um \acrshort{pc} no \acrshort{lare} - pormenores da instalação do \textit{driver} no \textit{site} da \acrshort{ni} \cite{AutomatingVB} - sendo que todo o peso computacional passaria para o \acrshort{pc} e o \gls{RaspberryPI} controlaria os relés. Esta decisão de o manter como controlador dos relés prendeu-se com o facto de, futuramente, poder haver espaço para uma evolução ao nível da compatibilidade com o \textit{pyVirtualBench}.
 
-A outra forma de controlar o \acrshort{virtualbench} é usando a aplicação disponibilizada pela \acrshort{ni}  e compatível com \textit{Windows}. Esta aplicação faz uma apresentação integrada dos cinco instrumentos apresentados no \acrshort{virtualbench}, como pode ser visto na Figura \ref{fig:leituraohm}. A aplicação também inclui funcionalidades de fluxo de trabalho, como a importação e exportação de configurações de instrumentos e a captura de dados\footnote{\href{https://www.ni.com/en/support/downloads/drivers/download.virtualbench-software.html}{Transferir VirtualBench}}.
+A outra forma de controlar o \acrshort{virtualbench} é usando a aplicação disponibilizada pela \acrshort{ni}  e compatível com \textit{Windows}. Esta aplicação faz uma apresentação integrada dos cinco instrumentos apresentados no \acrshort{virtualbench}, como pode ser visto na Figura \ref{fig:leituraohm}. A aplicação também inclui funcionalidades de fluxo de trabalho, como a importação e exportação de configurações de instrumentos e a captura de dados.
 
 De referir que o \acrshort{virtualbench} não pode ser controlado pelo \textit{pyVirtualBench} e pelo \textit{software} simultaneamente.
 
@@ -87,7 +87,7 @@ De referir que o \acrshort{virtualbench} não pode ser controlado pelo \textit{p
     \label{fig:leituraohm}
 \end{figure}
 
-As características do \acrshort{laboratório remoto} são, agora, as seguintes:
+As características do \acrshort{laboratório remoto} são as seguintes:
 \begin{itemize}
     \item \gls{python} como linguagem principal;
     \item \acrshort{pc} como servidor \textit{Flask};
@@ -103,8 +103,8 @@ Como já se viu na Secção \ref{sec:contextualização}, a arquitectura do \acr
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=1\textwidth]{figures/arquitectura_ver2.drawio.png}
-    \caption{Representação geral do \acrshort{lare}}
+    \includegraphics[width=0.7\textwidth]{figures/arquitectura_ver2.drawio.png}
+    \caption{Arquitectura \acrshort{lare}}
     \label{fig:representaçãogerallare}
 \end{figure}
 
@@ -112,9 +112,9 @@ Antes de mais, importa clarificar as formas de comunicação entre os diversos d
 
 A comunicação entre os diversos dispositivos é feita da seguinte forma:
 \begin{itemize}
-    \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Em termos de simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets}. Os \textit{sockets} e a \acrshort{api} de \textit{sockets} facilitam a comunicação entre processos em redes, quer estas sejam físicas (ligadas a outras através de fios ou sem fios) ou lógicas (como a rede local de um computador), isto é, permitem o envio de mensagens através de uma rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} é apresentada na Figura \ref{fig:fluxogramasockets};
-    \item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}. Independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação.
-    \item \textbf{Controlo de relés e medidas}: O controlo e medição comum às experiência é feito através de ligações directas aos dispositivos.
+    \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Em termos de simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets} que, através da sua API, facilitam a comunicação entre processos em rede, independentemente da infra-estrutura utilizada — seja por ligação com fios, sem fios ou através de redes locais, permitindo, assim, o envio e recepção de mensagens entre dispositivos ligados em rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} está representado na Figura \ref{fig:fluxogramasockets};
+    \item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}. Independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação;
+    \item \textbf{Controlo de relés e medidas}: As medições das grandezas eléctricas, comuns às experiências, são realizadas por meio do controlo directo dos relés, os quais são comandados pelo \gls{RaspberryPI} através de um \textit{driver} específico. Por sua vez, as leituras dessas grandezas são efectuadas pelo \acrshort{virtualbench}, ligado directamente aos pontos específicos do circuito.
 \end{itemize}
 
 \begin{figure}[hbtp]
@@ -137,15 +137,7 @@ A Figura {\ref{fig:arquitecturalore}} apresenta com mais pormenor a solução im
 
 \section{Circuitos electrónicos - experiências?}
 \label{sec:circuitos}
-\textbf{Não sei até que ponto esta secaçõp não se enquadra melhor no hardware}
-A escolha dos circuitos teve como base os que estão disponíveis no \acrshort{visir} do \acrshort{isep}, como se pode ver na Figura \ref{fig:circuitosvisir}. Reduzindo os objectivos do \acrshort{lare} à sua forma mais básica, pode afirmar-se que se pretende ``provar um conceito''. Escolhendo experiências com circuitos integrados ou transístores, poderia tornar a implementação desnecessariamente mais complexa e, por conseguinte, com menos experiências. Portanto, o objectivo passará por criar um \acrshort{laboratório remoto} com experiências típicas para a introdução à electrónica e que permitam uma aprendizagem gradual em contexto de sala de aula. E, assim, ``provar o conceito''.
-
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=1\textwidth]{figures/visir_ISEP.png}
-    \caption{Circuitos \acrshort{visir} - \acrshort{isep} - \textbf{Se calhar retirava a imagem}}
-    \label{fig:circuitosvisir}
-\end{figure}
+A escolha dos circuitos teve como base os que estão disponíveis no \acrshort{visir} do \acrshort{isep} e reduzindo os objectivos do \acrshort{lare} à sua forma mais básica, pode afirmar-se que se pretende ``provar um conceito''. Escolhendo experiências com circuitos integrados ou transístores, poderia tornar a implementação desnecessariamente mais complexa e, por conseguinte, com menos experiências. Portanto, o objectivo passará por criar um \acrshort{laboratório remoto} com experiências típicas para a introdução à electrónica e que permitam uma aprendizagem gradual em contexto de sala de aula. E, assim, ``provar o conceito''.
 
 Sendo assim, os circuitos que compõem o \acrshort{lare} e satisfazem os critérios definidos em cima são:
 \begin{itemize}
