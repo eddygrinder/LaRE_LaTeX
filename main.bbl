@@ -508,7 +508,7 @@ R.~Candido, ``Arduino with python: How to get started – real python.'' \url{ht
 \newblock (Accessed on 07/01/2024).
 
 \bibitem{AutomatingVB}
-``Automating ni virtualbench using python - ni.'' \url{https://knowledge.ni.com/KnowledgeArticleDetails?id=kA00Z000000kHUFSA2&l=pt-PT}.
+NI, ``Automating ni virtualbench using python - ni.'' \url{https://knowledge.ni.com/}.
 \newblock (Accessed on 08/01/2024).
 
 \bibitem{pyvirtualbench}
