@@ -519,6 +519,10 @@ armstrap, ``Github - armstrap/armstrap-pyvirtualbench: Python wrappers to contro
 N.~Jennings, ``Socket programming in python (guide) – real python.'' \url{https://realpython.com/python-sockets/}.
 \newblock (Accessed on 08/01/2024).
 
+\bibitem{sedrasmith}
+K.~C.~S. Adel S.~Sedra, {\em Microelectronic circuits}.
+\newblock The Oxford series in electrical and computer engineering, Oxford University Press, 2015.
+
 \bibitem{datasheetVirtualBench}
 N.~Instruments, ``Virtualbench all-in-one instrument product flyer - national instruments.'' \url{https://www.ni.com/pdf/product-flyers/virtualbench-all-in-one-instrument.pdf}.
 \newblock (Accessed on 07/21/2024).
@@ -614,10 +618,6 @@ T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' 
 \bibitem{1N400x}
 ``1n400x - axial-lead glass passivated standard recovery rectifiers.'' \url{https://cdn.sparkfun.com/assets/2/c/2/d/6/1N400x-D.PDF}.
 \newblock (Accessed on 11/14/2024).
-
-\bibitem{sedrasmith}
-K.~C.~S. Adel S.~Sedra, {\em Microelectronic circuits}.
-\newblock The Oxford series in electrical and computer engineering, Oxford University Press, 2015.
 
 \bibitem{NumPy}
 ``Numpy.''

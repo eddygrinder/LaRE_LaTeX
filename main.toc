@@ -34,55 +34,58 @@
 \contentsline {section}{\numberline {3.5}Hardware}{58}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}VirtualBench}{58}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Matriz LaRE}{58}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}RaspberryPI}{59}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Relés}{60}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{62}{subsection.3.5.5}%
-\contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{63}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Software}{64}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{65}{subsection.3.6.1}%
-\contentsline {subsubsection}{\textit {Python}}{65}{section*.71}%
-\contentsline {subsubsection}{\textit {Flask}}{65}{section*.72}%
-\contentsline {subsection}{\numberline {3.6.2}Front-End}{66}{subsection.3.6.2}%
-\contentsline {subsubsection}{\textit {Webpage}}{66}{section*.73}%
-\contentsline {chapter}{\numberline {4}Implementação}{71}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Hardware}{72}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Registo de deslocamento}{72}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Driver de relés}{72}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Relés}{73}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Fontes de alimentação}{74}{subsection.4.1.4}%
-\contentsline {subsubsection}{Fonte de tensão \SI {6}{\volt } - variável e {Fonte de tensão \SI {12}{\volt } - fixa}}{75}{section*.80}%
-\contentsline {subsubsection}{Fonte de tensão \SI {5}{\volt } - fixa}{75}{section*.82}%
-\contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{77}{section*.84}%
-\contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{78}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}Experiências}{79}{subsection.4.1.6}%
-\contentsline {subsubsection}{Lei de Ohm}{79}{section*.90}%
-\contentsline {subsubsection}{Rectificadores e filtros}{81}{section*.93}%
-\contentsline {section}{\numberline {4.2}Software}{84}{section.4.2}%
+\contentsline {subsubsection}{Lei de \textit {Ohm}}{59}{section*.62}%
+\contentsline {subsubsection}{Rectificadores/Filtros}{60}{section*.64}%
+\contentsline {subsubsection}{Fontes de alimentação}{61}{section*.66}%
+\contentsline {subsection}{\numberline {3.5.3}Raspberry Pi}{61}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Relés}{63}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{64}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{65}{subsection.3.5.6}%
+\contentsline {section}{\numberline {3.6}Software}{66}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{67}{subsection.3.6.1}%
+\contentsline {subsubsection}{\textit {Python}}{67}{section*.77}%
+\contentsline {subsubsection}{\textit {Flask}}{68}{section*.78}%
+\contentsline {subsection}{\numberline {3.6.2}Front-End}{68}{subsection.3.6.2}%
+\contentsline {subsubsection}{\textit {Webpage}}{68}{section*.79}%
+\contentsline {chapter}{\numberline {4}Implementação}{73}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Hardware}{74}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Registo de deslocamento}{74}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Driver de relés}{74}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Relés}{75}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Fontes de alimentação}{76}{subsection.4.1.4}%
+\contentsline {subsubsection}{Fonte de tensão \SI {6}{\volt } - variável e {Fonte de tensão \SI {12}{\volt } - fixa}}{77}{section*.86}%
+\contentsline {subsubsection}{Fonte de tensão \SI {5}{\volt } - fixa}{77}{section*.88}%
+\contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{79}{section*.90}%
+\contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{80}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Experiências}{81}{subsection.4.1.6}%
+\contentsline {subsubsection}{Lei de Ohm}{81}{section*.95}%
+\contentsline {subsubsection}{Rectificadores e filtros}{82}{section*.97}%
+\contentsline {section}{\numberline {4.2}Software}{83}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{84}{subsection.4.2.1}%
-\contentsline {subsubsection}{Estrutura base}{85}{section*.99}%
-\contentsline {subsubsection}{Rotas}{86}{section*.102}%
-\contentsline {subsubsection}{Blueprints}{87}{section*.103}%
-\contentsline {subsubsection}{Pedidos}{88}{section*.104}%
-\contentsline {subsubsection}{Base de dados}{89}{section*.105}%
-\contentsline {subsubsection}{Autenticação}{89}{section*.106}%
+\contentsline {subsubsection}{Estrutura base}{84}{section*.100}%
+\contentsline {subsubsection}{Rotas}{86}{section*.103}%
+\contentsline {subsubsection}{Blueprints}{87}{section*.104}%
+\contentsline {subsubsection}{Pedidos}{88}{section*.105}%
+\contentsline {subsubsection}{Base de dados}{89}{section*.106}%
+\contentsline {subsubsection}{Autenticação}{89}{section*.107}%
 \contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{90}{subsection.4.2.2}%
-\contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.108}%
-\contentsline {subsubsection}{Comunicação com RaspberryPi}{94}{section*.110}%
-\contentsline {subsubsection}{VirtualBench - Configurações e medições}{95}{section*.111}%
-\contentsline {subsubsection}{Gráficos}{98}{section*.112}%
-\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{99}{subsection.4.2.3}%
-\contentsline {subsubsection}{Lei de \textit {Ohm}}{102}{section*.117}%
-\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{103}{section*.119}%
-\contentsline {subsubsection}{Filtros}{104}{section*.121}%
-\contentsline {chapter}{\numberline {5}Resultados}{107}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{108}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Resultados experimentais}{108}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Rectificadores}{111}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{111}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{112}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Filtros}{112}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{113}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Limitações}{115}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Melhoramentos}{115}{section.5.5}%
-\contentsline {chapter}{Refer\^{e}ncias}{116}{section*.136}%
-\contentsline {chapter}{Anexo \numberline {A}Datasheet}{133}{appendix.1.A}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.109}%
+\contentsline {subsubsection}{Comunicação com RaspberryPi}{93}{section*.111}%
+\contentsline {subsubsection}{VirtualBench - Configurações e medições}{95}{section*.112}%
+\contentsline {subsubsection}{Gráficos}{97}{section*.113}%
+\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{98}{subsection.4.2.3}%
+\contentsline {subsubsection}{Lei de \textit {Ohm}}{101}{section*.118}%
+\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{102}{section*.120}%
+\contentsline {subsubsection}{Filtros}{103}{section*.122}%
+\contentsline {chapter}{\numberline {5}Resultados}{105}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{106}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Resultados experimentais}{106}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Rectificadores}{109}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{109}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{110}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Filtros}{110}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{111}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Limitações}{113}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Melhoramentos}{113}{section.5.5}%
+\contentsline {chapter}{Refer\^{e}ncias}{114}{section*.137}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{131}{appendix.1.A}%

@@ -265,19 +265,8 @@ A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a 
 
 \subsection{Experiências}
 \label{sec:experiencias}
-Nesta secção e seguintes, considera-se, com excepção da Lei de \textit{Ohm}, que cada experiência compreende dois circuitos, isto é, a experiência da rectificação compreende o circuito de meia onda e onda completa; a experiência dos filtros compreende o circuito passa-baixo e passa-alto.
-
 De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do \acrshort{lare}.
 
-A matriz é constituída por três placas, cujos detalhes técnicos podem ser consultados no Anexo \ref{AppendixA}. 
-O desenho dos esquemas  e dos \acrfull{pcb} das placas foram elaborados com recurso ao \gls{kicad}. Estas foram desenhadas de forma a serem modulares e estão divididas como representado na Figura \ref{fig:matrizlare}:
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.4\textwidth]{figures/lare_3placas.png}
-	\caption{Matriz do \acrshort{lare}}
-	\label{fig:matrizlare}
-\end{figure}
 \begin{comment}
 ESTA JUSTIFICAÇÃO DEVERIA FICAR NOUTRO LADO - VERIFICARq!!!!
 
@@ -341,24 +330,6 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 \end{figure}
 \end{comment}
 
-A placa desenvolvida para esta experiência, assim como a referência aos ``blocos'', está representada na Figura \ref{fig:placaleideohm}. 
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/lare_ohm_BLOCOS.png}
-	\caption{Implementação práctica da Lei de \textit{Ohm}}
-	\label{fig:placaleideohm}
-\end{figure}
-
-\begin{enumerate}
-	\item Ligação ao \gls{RaspberryPI} através de um conector \acrfull{idc} de 40 pinos (1);
-	\item Relés (2);
-	\item Ligações aos aparelhos de medida (3);
-	\item \textit{Drivers} de relés e registo de deslocamento (4);
-	\item Resistências em estudo (5);
-	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6).
-\end{enumerate}
-
 \subsubsection{Rectificadores e filtros}
 \label{sec:rectificadoresfiltros}
 Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
@@ -373,49 +344,6 @@ Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas
 \end{figure}
 
 Na implementação dos rectificadores houve a necessidade de utilizar dois tipos de tensão de entrada. Como referido na Secção \ref{sec:fontesalimentacao}, o circuito de meia onda utiliza o gerador de sinal mas devido ao problema de massa, já explicado na mesma secção, foi necessário usar um transformador na rectificação de onda completa.
-
-Na Figura \ref{fig:blocosrectificacao} está representado o diagrama de blocos geral da rectificação de meia e onda completa, (que pode ser aplicada)/aplicada, por exemplo, a uma fonte de tensão \acrshort{cc}.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/diagramablocosrectificacao.png}
-	\caption{Diagrama de blocos geral da rectificação de meia e onda completa}
-	\label{fig:blocosrectificacao}
-\end{figure}
-
-A Figura \ref{fig:placarectificadores} apresenta a implementação práctica das duas experiências na respectiva placa, pontos \ref{item2} a \ref{item7}. 
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/lare_rectificador_filtros_BLOCOS.png}
-	\caption{Implementação práctica dos rectificadores e filtros}
-	\label{fig:placarectificadores}
-\end{figure}
-
-%A implementação prática é composta pelos três blocos\footnote{A inclusão da estabilização poderá ser objecto de trabalho futuro.}, como se pode ver na Figura \ref{fig:placarectificadores}. 
-\begin{enumerate}
-	\item Bloco 1 - Implementado na placa da alimentação, representada no Figura \ref{fig:placartransformador} 
-	\item \label{item2}Bloco 2 - Rectificação;
-		\begin{enumerate}
-			\item \label{diodos}Díodo rectificador ($1_{a}$) e Ponte rectificadora ($1_{b}$);	
-		\end{enumerate}
-	\item Bloco 3 - Filtragem \textins{componentes comuns a ambas as experiências};
-		\begin{enumerate}
-			\item \label{resistencias}Resistências (3);
-			\item \label{condensadores}Condensadores (5);
-		\end{enumerate}
-	\item Relés (2);
-	\item \textit{Drivers} de relés e registo de deslocamento (4);
-	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6);
-	\item \label{item7}Resistência e condensador exclusivo dos filtros (7).
-\end{enumerate}
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.3\textwidth]{figures//lore_fonte.jpg}
-	\caption{Transformador}
-	\label{fig:placartransformador}
-\end{figure}
 
 Como referido na Secção \ref{sec:experiencias}, a implementação dos filtros foi realizada após a conclusão dos rectificadores. De forma a permitir a integração desta experiência no circuito já concluído, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (assinalado pelo retângulo tracejado a vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Esta alteração permitiu a introdução de uma resistência ($R_{3}$) ou de um condensador ($C_{3}$), consoante a configuração do filtro em estudo.
 

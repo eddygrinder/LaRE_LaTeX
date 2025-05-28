@@ -44,7 +44,7 @@ Estas limitações não permitem a implementação de um servidor minimamente ro
     \label{fig:ESP32}
 \end{figure}
 
-A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, sempre que for referido \textit{RaspberryPI}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão mais actual, apresentada na Figura \ref{fig:Raspberrypi5}. Este dispositivo insere-se numa gama de pequenos computadores de placa única (SBCs), acessíveis e versáteis, como o \textit{Banana Pi}, \textit{BeagleBone Black}, \textit{Orange Pi} ou \textit{Odroid}, amplamente utilizados em ensino, prototipagem e aplicações de \acrshort{iot}. Na Secção \ref{sec:hardware} apresenta-se uma descrição mais detalhada do \gls{RaspberryPI}.
+A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, sempre que for referido \textit{RaspberryPI}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão mais actual, apresentada na Figura \ref{fig:Raspberrypi5}. 
 
 \begin{figure}[hbtp]
     \centering
@@ -147,6 +147,8 @@ Sendo assim, os circuitos que compõem o \acrshort{lare} e satisfazem os critér
     \item Filtro RC passa-baixo;
     \item Filtro RC passa-alto.
 \end{itemize}
+
+Doravante, considera-se que cada experiência é composta por dois circuitos distintos, com excepção da experiência dedicada à Lei de \textit{Ohm}. Por exemplo, a experiência sobre rectificação inclui os circuitos de meia onda e de onda completa; já a experiência dos filtros abrange os circuitos passa-baixo e passa-alto.
 
 \subsection{Lei de \textit{Ohm}}
 Na forma da Equação \ref{eq:leideohm}, a Lei de \textit{Ohm} estabelece que a resistência eléctrica ($R$) de um condutor é determinada pelo quociente entre a tensão elétrica ($U$) aplicada aos seus terminais e a corrente eléctrica ($I$) que o atravessa.  
@@ -308,22 +310,84 @@ Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e 
 
 \subsection{Matriz LaRE}
 \label{sec:matriz}
-Encontradas as soluções de \textit{hardware} e \textit{software}, assim como as experiências a serem implementadas, partiu-se para o projecto da matriz.
+Definidas as soluções de \textit{hardware} e \textit{software}, bem como as experiências a implementar, iniciou-se o projecto da matriz. Tal como anteriormente, e tendo o \acrshort{visir} como referência, decidiu-se desenvolver uma matriz cujas placas respeitem as dimensões definidas pelo consórcio \gls{pc/104} \cite{PC104}, o qual estabelece um padrão caracterizado pelo seu formato compacto e modular.
 
-Mais uma vez, tomando como base o \acrshort{visir}, como pode ser visto mais pormenor na Figura \ref{fig:visir104}, decidiu-se projectar uma matriz com a dimensão das placas a obedecerem às definidas pela consórcio \gls{pc/104} \cite{PC104}. Este consórcio definiu um padrão que se destaca pelo seu formato compacto e modular. As dimensões mecânicas das placas estão definidas no Anexo \ref{AppendixA}.
+Os esquemas finais das experiências encontram-se no Anexo \ref{AppendixA}, onde se pode verificar que o número de relés necessários varia entre 8 — no caso da Lei de \textit{Ohm} — e 13 — nos casos dos rectificadores e dos filtros. Sendo assim, com o objectivo de facilitar a implementação, os testes, a detecção de erros e, mais tarde, a manutenção, optou-se por dividir o \acrshort{lare} em três placas. O desenho dos esquemas e dos \acrfull{pcb} foram elaborados com recurso ao \gls{kicad}. A Figura \ref{fig:matrizlare} apresenta uma visão geral da matriz do \acrshort{lare}. 
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.4\textwidth]{figures/lare_3placas.png}
+	\caption{Matriz do \acrshort{lare}}
+	\label{fig:matrizlare}
+\end{figure}
+
+\subsubsection{Lei de \textit{Ohm}}
+A placa desenvolvida para esta experiência está representada na Figura \ref{fig:placaleideohm}:
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/lare_ohm_BLOCOS.png}
+	\caption{\textins{Placa} Lei de \textit{Ohm}}
+	\label{fig:placaleideohm}
+\end{figure}
+
+\begin{enumerate}
+	\item Ligação ao \gls{RaspberryPI} através de um conector \acrfull{idc} de 40 pinos (1);
+	\item Relés (2);
+	\item Ligações aos aparelhos de medida (3);
+	\item \textit{Drivers} de relés e registo de deslocamento (4);
+	\item Resistências em estudo (5);
+	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6).
+\end{enumerate}
+
+\subsubsection{Rectificadores/Filtros}
+A Figura \ref{fig:placarectificadores} apresenta a placa da experiência referente aos rectificadores/filtros:
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/lare_rectificador_filtros_BLOCOS.png}
+	\caption{\textins{Placa} rectificadores e filtros}
+	\label{fig:placarectificadores}
+\end{figure}
+
+%A implementação prática é composta pelos três blocos\footnote{A inclusão da estabilização poderá ser objecto de trabalho futuro.}, como se pode ver na Figura \ref{fig:placarectificadores}. 
+\begin{enumerate}
+	\item Rectificação;
+		\begin{enumerate}
+			\item \label{diodos}Díodo rectificador - meia onda ($1_{a}$) e Ponte rectificadora - onda completa ($1_{b}$);	
+		\end{enumerate}
+    \item Relés (2);
+    \item Resistências - \textins{componentes comuns a ambas as experiência}(3);
+  	\item \textit{Drivers} de relés e registo de deslocamento (4);
+	\item Condensadores \textins{componentes comuns a ambas as experiências}(5);
+	\item Ligação à placa seguinte através de conectores ``Arduino stackable'' (6);
+	\item Resistência e condensador exclusivo dos filtros (7).
+\end{enumerate}
+
+\subsubsection{Fontes de alimentação}
+A placa referente às fontes de alimentação está representada na Figura \ref{fig:placartransformador}. Esta placa é constituída por um transformador e uma fonte de \SI{5}{\volt}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.3\textwidth]{figures//lore_fonte.jpg}
+	\caption{\textins{Placa} fontes de alimentação}
+	\label{fig:placartransformador}
+\end{figure}
+
+\begin{comment}
 \begin{figure}[hbtp]
     \centering
     \includegraphics[width=0.3\textwidth]{figures/promenorvisirISEP.png}
     \caption{Placas PC/104 do \acrshort{visir} - \acrshort{isep} - \textbf{Foto com melhor qualidade}}
     \label{fig:visir104}
 \end{figure}
+\end{comment}
 
-\subsection{RaspberryPI}
+\subsection{Raspberry Pi}
 \label{sec:RaspberryPI}
-Como já foi referido na Secção \ref{sec:contextualização}, a ideia inicial passava por utilizar o \gls{RaspberryPI} como servidor e como controlador dos relés, no fundo desempenhando as funções de \acrshort{rlms}.
+Como já foi referido na Secção \ref{sec:contextualização}, a ideia inicial passava por utilizar o \gls{RaspberryPI} como servidor e como controlador dos relés, no fundo desempenhando as funções de \acrshort{rlms}. Este dispositivo insere-se numa gama de pequenos computadores de placa única \gls{sbc}, acessíveis e versáteis, como o \textit{Banana Pi}, \textit{BeagleBone Black}, \textit{Orange Pi} ou \textit{Odroid}, amplamente utilizados em ensino, prototipagem e aplicações de \acrshort{iot}. 
 
-Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \textit{RaspberryPI}.
+Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \gls{RaspberryPI}, que à data da escrita deste documento é a 5.
 
 Esta versão traz várias melhorias e novos recursos, sendo que as principais diferenças de \textit{hardware} para a versão 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. No entanto, estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento activo \cite{Raspberrytech}. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
 
@@ -353,11 +417,7 @@ Esta versão traz várias melhorias e novos recursos, sendo que as principais di
     \end{tabular}
 \end{table}
 
-Comum às versões anteriores, o \gls{RaspberryPI} possui um conector de 40 pinos denominados \acrfull{gpio}s, como se pode ver na Figura \ref{fig:gpio}. Os \acrshort{gpio}s são pinos versáteis e configuráveis e permitem que a placa interaja com uma variedade de componentes eletrónicos e outros dispositivos, como por exemplo, relés, sensores, motores, etc.. Os \acrshort{gpio}s são pinos digitais, isto é, o \gls{RaspberryPI} não possui um \acrfull{adc} interno para ler sinais analógicos. No entanto, pode usar-se um \acrshort{adc} externo, como por exemplo, o MCP3008 ou o módulo ADS1115. Quer isto dizer que só trabalham com duas tensões: \SI{3.3}{\volt} ou \SI{0}{\volt}, correspondendo aos valores lógicos ``1'' ou ``0'', respectivamente.
-Dependendo da configuração dos \acrshort{gpio}s - entrada ou saída - estes podem ler ou fornecer as tensões correspondentes aos níveis lógicos desejados. O \gls{RaspberryPI} pode fornecer uma corrente até \SI{16}{\milli\ampere} por cada \acrshort{gpio} ou \SI{50}{\milli\ampere} se combinados \cite{Raspberrytech}.
-%No caso extremo de todas os 17 \acrshort{gpio}s estarem activos ao mesmo tempo, a corrente total seria de \SI{272}{\mA}. Nesta situação, a fonte de \SI{3.3}{\volt} colapsava.
-
-Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o \gls{RaspberryPI} corre o risco de se danificar irremediavelmente.
+Comum às versões anteriores, o \gls{RaspberryPI} possui um conector de 40 pinos denominados \acrfull{gpio}s, como se pode ver na Figura~\ref{fig:gpio}. Os \acrshort{gpio}s são pinos versáteis e configuráveis e permitem que a placa interaja com uma variedade de componentes eletrónicos e outros dispositivos, como por exemplo, relés, sensores, motores, etc.. Os \acrshort{gpio}s são pinos digitais, isto é, o \gls{RaspberryPI} não possui um \acrfull{adc} interno para ler sinais analógicos. No entanto, pode usar-se um \acrshort{adc} externo, como por exemplo, o MCP3008 ou o módulo ADS1115. Quer isto dizer que só trabalham com duas tensões: \SI{3.3}{\volt} ou \SI{0}{\volt}, correspondendo aos valores lógicos ``1'' ou ``0'', respectivamente. Dependendo da configuração dos \acrshort{gpio}s - entrada ou saída - estes podem ler ou fornecer as tensões correspondentes aos níveis lógicos desejados. 
 
 \begin{figure}[hbtp]
     \centering
@@ -366,9 +426,9 @@ Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o 
     \label{fig:gpio}
 \end{figure}
 
-Na Figura \ref{fig:gpiocores} está representada uma forma alternativa de visualizar os \acrshort{gpio}s, mais intuitiva e que permite perceber melhor a função dos pinos.
+A corrente no \gls{RaspberryPI} pode ser configurada para valores entre \SI{2}{\milli\ampere} e \SI{16}{\milli\ampere} (em intervalos de \SI{2}{\milli\ampere}) por cada \acrshort{gpio}. No entanto, quando vários \acrshort{gpio}s são utilizados em simultâneo, o valor total combinado da corrente não deve exceder os \SI{50}{\milli\ampere}. Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o \gls{RaspberryPI} corre o risco de se danificar irremediavelmente. \cite{Raspberrytech}. 
 
-Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurados como entrada ou saída; a vermelho, laranja e preto as alimentações de \SI{5}{\volt}, \SI{3.3}{\volt} e \textit{ground}, respectivamentee. Por fim, os \acrshort{gpio}s representados pela cor branca estão reservados para utilização avançada.
+Na Figura \ref{fig:gpiocores} está representada uma forma alternativa de visualizar os \acrshort{gpio}s, mais intuitiva e que permite perceber melhor a função dos pinos. Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurados como entrada ou saída; a vermelho, laranja e preto as alimentações de \SI{5}{\volt}, \SI{3.3}{\volt} e \textit{ground}, respectivamentee. Por fim, os \acrshort{gpio}s representados pela cor branca, \acrshort{gpio}0  e \acrshort{gpio}1, correspondentes aos pinos físicos 27 e 28, respectivamente, estão reservados para utilização avançada, nomeadamente, a comunicação \acrshort{i2c} com a \gls{eeprom} de identificação presente em \gls{hat}s compatíveis. Esta \gls{eeprom} permite a configuração automática do sistema aquando do arranque. 
 
 \begin{figure}[hbtp]
     \centering
@@ -395,7 +455,7 @@ Os relés utilizados no \acrshort{lare} estavam disponíveis em contexto laborat
 
 No \acrshort{lare} foram usados dois tipos de relés - simples, \acrfull{spst} e duplos, \acrfull{dpst}, como se pode ver na Figura \ref {fig:reles}.
 
-Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no Anexo \ref{AppendixA} e as completas nos respectivos \textit{datasheet} \cite{DryRelay}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, a tensão da bobine é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
+Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no Anexo \ref{AppendixA} e as completas nos respectivos \textit{datasheet} \cite{DryRelay}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão nominal da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, esta tensão é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
 
 \begin{figure}[hbtp]
     \centering
@@ -410,7 +470,7 @@ Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os rel�
 \subsection{\textit{Driver} de Relés}
 \label{sec:driver}
 O circuito integrado ULN2003A, é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
-Tipicamente, é usado em conjunto com microcontroladores ou \gls{RaspberryPI} no comando de cargas indutivas, como motores, bobines e relés.
+Tipicamente, é usado em conjunto com microcontroladores ou \gls{RaspberryPI}\footnote{Importa distinguir entre \gls{sbc}s, como o \gls{RaspberryPI} e microcontroladores, como o Arduino. Enquanto os \gls{sbc}s funcionam como computadores completos capazes de executar sistemas operativos e aplicações complexas, os microcontroladores são dispositivos mais simples, ideais para tarefas de controlo directo, operando sem sistema operativo e com recursos significativamente mais limitados.} no comando de cargas indutivas, como motores, bobines e relés.
 
 Estes \textit{drivers} possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
 
@@ -423,15 +483,13 @@ Estes \textit{drivers} possuem sete pares de transístores NPN, em configuraçã
 
 A corrente de colector de saída (única) é de \SI{500}{\mA} e a corrente de entrada, para uma tensão de entrada de \SI{3.85}{\volt}, é \SI{0.93}{\mA} \cite{ULN2003}.
 
-Pela análise dos esquemas, representados no Anexo \ref{AppendixA}, verifica-se que os \acrshort{gpio}s disponíveis no \gls{RaspberryPI} - 26 no total - não são suficientes para comandar os relés do \acrshort{lare}. Ao todo são utilizados 21 relés, o que corresponderia a 21 saídas. A experiência da Lei de Ohm, possui 8 relés. No caso das experiências correspondentes aos circuitos de rectificadores e filtros, o número de relés para efectuar as experiências é de 13. Falta adicionar os 10 \acrshort{gpio}s necessários para o controlo da transmissão das tramas de \textit{bits}.
-
-Sendo assim, houve a necessidade de criar uma solução que permitisse comandar os relés, já que o \gls{RaspberryPI} não possui \acrshort{gpio}s suficientes.
+Pela análise dos esquemas, representados no Anexo \ref{AppendixA} e já referenciado na Secção \ref{sec:matriz}, verifica-se que os \acrshort{gpio}s disponíveis no \gls{RaspberryPI} - 26 no total - não são suficientes para comandar os relés do \acrshort{lare}. Ao todo são utilizados 21 relés, o que corresponderia a 21 saídas, faltando adicionar 10 \acrshort{gpio}s necessários para o controlo da transmissão das tramas de \textit{bits}. Sendo assim, houve a necessidade de criar uma solução que permitisse comandar os relés, já que o \gls{RaspberryPI} não possui \acrshort{gpio}s suficientes.
 
 \subsection{Registo de deslocamento}
 \label{sec:registodeslocamento}
 O uso de registos de deslocamento foi a solução encontrada de forma a ultrapassar o problema da falta de \acrshort{gpio}s.
 
-O \textit{SN74HC595}\footnote{Doravante, sempre que for referido registo de deslocamento, subentende-se o circuito integrado \textit{SN74HC595}.} é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 \textit{bits} com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.
+O \textit{SN74HC595}\footnote{Doravante, sempre que for referido registo de deslocamento, subentende-se o circuito integrado \textit{SN74HC595}.} é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 \textit{bits} com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O sinal de relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.
 
 Descrição dos pinos de controlo:
 \begin{itemize}
@@ -446,7 +504,9 @@ Descrição dos pinos de controlo:
     \item \acrfull{oe}: pino activo baixo que controla o estado da saída do registo: Se a zero as saídas estão activas, se a um as saídas estão desactivadas
 \end{itemize}
 
-Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e depois enviados para a saída. A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do registo e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
+Como referido na Secção~\ref{sec:matriz}, a experiência da Lei de \textit{Ohm} requer 8 relés, enquanto as experiências de rectificadores e filtros exigem 13. Cada relé é acionado por um \textit{bit} de um registo de deslocamento, sendo que cada registo permite o controlo de até 8 relés. Assim, é necessário um registo de deslocamento para a experiência da Lei de \textit{Ohm} e dois registos para as experiências de rectificação e filtragem. Sendo assim, será enviada uma trama de 8 ou 13 \textit{bits} consoante as experiências a controlar.  
+
+A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do registo e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
 
 \begin{figure}[hbtp]
     \centering
@@ -455,8 +515,11 @@ Neste caso, os \textit{bits} são enviados um-a-um, armazenados no registo e dep
     \label{fig:SN74HC595blocos}
 \end{figure}
 
-Na transmissão das tramas optou-se por dividir as duas: envio de 8 \textit{bits}, na experiência da Lei de Ohm, e envio de 13 \textit{bits}, nas experiências de rectificadores e filtros. Como se pode ver na Tabela \ref{Table:funcSN74HC595}, são precisos 5 \acrshort{gpio}s configurados como saídas para controlar o envio de uma trama, portanto, para realizar o comando dos relés do \acrshort{lare}, são/serão necessários 10 \acrshort{gpio}s.
+Como se pode ver na Tabela \ref{Table:funcSN74HC595}, são precisos 5 \acrshort{gpio}s configurados como saídas para controlar o envio de uma trama, portanto, para realizar o comando dos relés do \acrshort{lare}, são/serão necessários 10 \acrshort{gpio}s.
 As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.
+
+, correspondente a um registo de deslocamento
+, correspondente a dois registos de deslocamento.
 
 \begin{table}[htb]
     \caption{Modos de funcionamento do SN74HC595 \cite{SN74HC595}}
