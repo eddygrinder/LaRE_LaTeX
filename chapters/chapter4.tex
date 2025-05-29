@@ -8,40 +8,23 @@
 \end{flushright}
 
 
-Este capítulo aprofunda os aspectos técnicos do LaRE, tomando como referência a arquitetura apresentada na Figura \ref{fig:arquitecturalore}.
-
-O desenvolvimento começou pela implementação e desenvolvimento do servidor \textit{Flask} e página \textit{web}, sendo que o primeiro circuito a ser implementado e testado foi a Lei de Ohm. O projecto foi evoluindo com a adição dos restantes circuitos que compõem o \acrshort{lare}.
-
-Para o desenvolvimento do \textit{software}, utilizou-se o \acrshort{ide} \textit{Visual Studio Code}\footnote{\url{https://code.visualstudio.com/}}, e o projeto encontra-se alojado no \textit{GitHub}. O sistema operativo instalado no \gls{RaspberryPI} é uma versão ligeiramente modificada do \textit{Arch Linux ARM}.
-
-Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em placas brancas, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}.
-
-No Anexo \ref{AppendixA} - \textit{datasheet} - encontram-se todos os esquemas completos das experiências, assim como as placas que constituem a matriz do \acrshort{lare}: cada uma ficou dividida por uma placa, mais uma dedicada às fontes de alimentação, num total de três placas. 
+Este capítulo aprofunda os aspectos técnicos do LaRE, tomando como referência a arquitetura apresentada na Figura \ref{fig:arquitecturalore}. O desenvolvimento começou pela implementação e desenvolvimento do servidor \textit{Flask} e página \textit{web}, sendo que o primeiro circuito a ser implementado e testado foi a Lei de Ohm. O projecto foi evoluindo com a adição dos restantes circuitos que compõem o \acrshort{lare}. Para o desenvolvimento do \textit{software}, utilizou-se o \acrshort{ide} \textit{Visual Studio Code}\footnote{\url{https://code.visualstudio.com/}}, e o projeto encontra-se alojado no \textit{GitHub}. O sistema operativo instalado no \gls{RaspberryPI} é uma versão ligeiramente modificada do \textit{Arch Linux ARM}. Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em \textit{breadboards}, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}. No Anexo~\ref{AppendixA} encontram-se os esquemas completos de todas as experiências, bem como o desenho das placas que compõem a matriz do \acrshort{lare}. Esta matriz foi organizada em três placas distintas: uma dedicada à experiência da Lei de \textit{Ohm}, outra às experiências de rectificação e filtragem e uma terceira exclusivamente responsável pelas fontes de alimentação.
 
 \section{Hardware}
-\subsection{Registo de deslocamento}
-\label{sec:hwregistodeslocamento}
-O \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits} do tipo \acrshort{sipo}, cujo funcionamento já foi detalhado na Secção \ref{sec:registodeslocamento}. Uma trama de (até 8) \textit{bits} é enviada pelo \gls{RaspberryPI} para o registo através do pino \acrshort{ser}. Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio:
-
-\begin{enumerate}
-	\item Pinos \acrshort{oe} e \acrshort{srclr} activados;
-	\item Um \textit{bit} ``0'' ou ``1'' é enviado para o pino \acrshort{ser};
-	\item \textit{N} impulsos ascendentes no pino \acrshort{srclk} fazem com que o \textit{N bits} sejam enviado para o registo de deslocamento (\textit{N bits} <= 8);
-	\item Um impulso ascendente no pino \acrshort{rclk} faz com que os \textit{N bits} sejam enviados para o registo de memória e, por conseguinte, para os relés (através do \textit{ULN2003A}).
-\end{enumerate}
-
-%Por cada impulso ascendente no pino \textit{SRCLK} - \textit{Shift Register Clock} - Os \textit{bits} são enviados um-a-um para o registo de deslocamento. No final, um impulso ascendente no \textit{RCLK} - \textit{Register Clock} - faz com que os \textit{bits} sejam enviados para o registo de memória e, por conseguinte, para os relés.
+\subsection{Relés}
+\label{sec:hwreles}
+Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por cinco circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/registo deslocamente.drawio.png}
-	\caption{Envio de \textit{bits} para o registo de deslocamento}
-	\label{fig:esquematico74hc595}
+	\includegraphics[width=0.3\textwidth]{figures/exemplo_reles_spst.png}
+	\caption{Exemplo de utilização de relés \acrshort{spst} e \acrshort{dpst}}
+	\label{fig:relespstdpst}
 \end{figure}
 
 \subsection{Driver de relés}
 \label{sec:driverreles}
-Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capacidade para comandar os relés. Para esse efeito, é necessário utilizar um \textit{driver} de relés. A Figura \ref{fig:diagramablocos2003} apresenta o diagrama simplificado para uma entrada/saída do \textit{driver} \cite{ULN2003}.
+Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem capacidade para comandar directamente os relés. Para esse efeito, é necessário utilizar um \textit{driver} de relés. A Figura~\ref{fig:diagramablocos2003} apresenta o diagrama simplificado correspondente a um canal de entrada e saída do \textit{driver} \cite{ULN2003}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -50,10 +33,7 @@ Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem cap
 	\label{fig:diagramablocos2003}
 \end{figure}
 
-O terminal 9 - \textit{COM} - é ligado à tensão de comando dos relés e é destinado aos díodos de ``roda livre'', conforme mencionado na Secção \ref{sec:reles}. No caso dos modelos de relés utilizados neste projecto, a tensão é de \SI{12}{\volt}. Se o valor lógico na entrada ``1B'' = ``0'' (ou \SI{0}{\volt}), então, a saída ``1C'' = ``1'' (ou \SI{12}{\volt}) - 
-O \textit{ULN2003A} faz parte da família dos \textit{drivers} inversores.
-
-As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplos práctico que ilustram o funcionamento do procedimento referido na Figura \ref{fig:esquematico74hc595}. Neste exemplo, foi utilizado um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, variando apenas a disposição dos pinos.
+O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimentação dos relés — \SI{12}{\volt} no caso dos utilizados neste projecto — e destina-se aos díodos de roda livre'', conforme descrito na Secção~\ref{sec:reles}. As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplos práctico que ilustram o funcionamento do procedimento referido na Figura \ref{fig:esquematico74hc595}. Neste exemplo, foi utilizado um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, variando apenas a disposição dos pinos.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -85,24 +65,30 @@ As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{Raspbe
 % 	\end{tabular}
 % \end{table}
 
-No caso particular do exemplo descrito em cima, se $I_{5} = I_{15}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5} = I_{15}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado.
+No caso particular do exemplo descrito em cima, se $I_{5}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado. No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
-No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
+\subsection{Registo de deslocamento}
+\label{sec:hwregistodeslocamento}
+O \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits} do tipo \acrshort{sipo}, cujo funcionamento já foi detalhado na Secção \ref{sec:registodeslocamento}. Uma trama de (até 8) \textit{bits} é enviada pelo \gls{RaspberryPI} para o registo através do pino \acrshort{ser}. Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio:
 
-\subsection{Relés}
-\label{sec:hwreles}
-Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por cinco circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
+\begin{enumerate}
+	\item Pinos \acrshort{oe} e \acrshort{srclr} activados;
+	\item Um \textit{bit} ``0'' ou ``1'' é enviado para o pino \acrshort{ser};
+	\item \textit{N} impulsos ascendentes no pino \acrshort{srclk} fazem com que o \textit{N bits} sejam enviado para o registo de deslocamento (\textit{N bits} <= 8);
+	\item Um impulso ascendente no pino \acrshort{rclk} faz com que os \textit{N bits} sejam enviados para o registo de memória e, por conseguinte, para os relés (através do \textit{ULN2003A}).
+\end{enumerate}
+
+%Por cada impulso ascendente no pino \textit{SRCLK} - \textit{Shift Register Clock} - Os \textit{bits} são enviados um-a-um para o registo de deslocamento. No final, um impulso ascendente no \textit{RCLK} - \textit{Register Clock} - faz com que os \textit{bits} sejam enviados para o registo de memória e, por conseguinte, para os relés.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.3\textwidth]{figures/exemplo_reles_spst.png}
-	\caption{Exemplo de utilização de relés \acrshort{spst} e \acrshort{dpst}}
-	\label{fig:relespstdpst}
+	\includegraphics[width=0.7\textwidth]{figures/registo deslocamente.drawio.png}
+	\caption{Envio de \textit{bits} para o registo de deslocamento}
+	\label{fig:esquematico74hc595}
 \end{figure}
 
 \subsection{Fontes de alimentação}
 \label{sec:fontesalimentacao}
-
 O \acrshort{lare} utiliza várias fontes de alimentação, todas passíveis de serem controladas por \textit{software} e neste aspecto tentou-se simplificar/limitar o uso de fontes externas, além das que poderiam ser fornecidas pelo \acrshort{virtualbench}. 
 
 Como pode ser visto na Figura \ref{fig:paineldianteiro} ou na Figura \ref{fig:promenorfontes} com mais pormenor, o \acrshort{virtualbench} possuí três fontes de alimentação (\acrshort{cc} variáveis): \SI{+6}{\volt}, \SI{+25}{\volt} e \SI{-25}{\volt}\footnote{No contexto do \acrshort{lare} a fonte de tensão negativa não é usada.}.
@@ -114,17 +100,21 @@ Como pode ser visto na Figura \ref{fig:paineldianteiro} ou na Figura \ref{fig:pr
 	\label{fig:promenorfontes}
 \end{figure}
 
-Assim, o \acrshort{lare} utiliza os seguintes níveis de tensão/fontes de alimentação:
+Assim, referente ao \acrshort{virtualbench} e à Figura~\ref{fig:promenorfontes}, o \acrshort{lare} utiliza as seguintes fontes de alimentação:
 \begin{itemize}
-	\item \SI{1}{\volt} - \SI{5}{\volt} variáveis (\acrshort{cc}), utilizadas na experiência da Lei de Ohm;
-	\item \SI{12}{\volt} (\acrshort{cc}) - utilizada na alimentação dos relés e dos \textit{drivers};
-	\item \SI{5}{\volt} (\acrshort{cc}) - utilizada na alimentação do registo de deslocamento;
-	\item Para o estudo dos circuitos rectificadores e filtros utilizou-se um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}.
+	\item \SI{6}{\volt} (\acrshort{cc}), utilizada na experiência da Lei de Ohm;
+	\item \SI{25}{\volt} (\acrshort{cc}), utilizada na alimentação dos relés e dos \textit{drivers}.
+\end{itemize}
+
+No entanto, ainda são necessárias mais duas fontes de alimentação, nomeadamente:
+\begin{itemize}
+	\item \SI{5}{\volt} (\acrshort{cc}), fonte projectada com recurso ao \textit{LM317} e com tensão de entrada obtida a partir da fonte de \SI{25}{\volt} - utilizada na alimentação dos registos de deslocamento;
+	\item Para o estudo dos circuitos rectificação e filtragem, foi utilizado um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}, disponível em contexto laboratorial e que se mostrou adequado aos objectivos trabalho.
 \end{itemize}
 
 \subsubsection{Fonte de tensão \SI{6}{\volt} - variável e {Fonte de tensão \SI{12}{\volt} - fixa}}
 \label{sec:fontes6-12}
-As fontes de tensão de \SI{6}{\volt}, utilizadas na Lei de \textit{Ohm} e de \SI{12}{\volt}, destinadas à alimentação dos relés e dos \textit{drivers}, são fornecidas diretamente pelo \acrshort{virtualbench}. As configurações são definidas por \textit{software} e podem ser consultadas na Secção \ref{sec:configmedicaoes}.
+As fontes de \SI{6}{\volt} e \SI{25}{\volt} são configuradas por \textit{software}. A primeira, utilizada na experiência da Lei de \textit{Ohm}, varia entre \SI{1}{\volt} e \SI{6}{\volt}, enquanto a segunda é ajustada para fornecer \SI{12}{\volt}. Mais detalhes sobre estas configurações são apresentados na Secção~\ref{sec:configmedicaoes} e os esquemas consultados no Anexo~\ref{AppendixA}.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -136,7 +126,7 @@ As fontes de tensão de \SI{6}{\volt}, utilizadas na Lei de \textit{Ohm} e de \S
 		\label{fig:fontes6-12}%
 	\end{figure}
 
-As Figuras \ref{fig:schfonte5VB} e \ref{fig:schfonte12VB} ilustram os exemplos das ligações das respetivas fontes de tensão. Complementando com a Figura \ref{fig:promenorfontes}, o terminal 4 do relé $K_{4}$, designado por $5V_{VB}$, está ligado ao terminal de \SI{6}{\volt} do \acrshort{virtualbench}, enquanto todos os terminais 2 dos relés, assim como a alimentação dos \textit{drivers}, estão ligados ao terminal de \SI{25}{\volt}. As configurações destes valores são definidas por \textit{software} e podem ser consultadas na Secção \ref{sec:configmedicaoes}.
+As Figuras \ref{fig:schfonte5VB} e \ref{fig:schfonte12VB} ilustram os exemplos das ligações das respetivas fontes de tensão. Complementando com a Figura \ref{fig:promenorfontes}, o terminal ``1'' do relé $K_{4}$, designado por $5V_{VB}$, está ligado ao terminal de \SI{6}{\volt} do \acrshort{virtualbench}, enquanto a alimentação dos relés -  terminais ``2'' e a alimentação dos \textit{drivers} -  terminais ``9'' , estão ligados ao terminal de \SI{25}{\volt}. 
 
 \subsubsection{Fonte de tensão \SI{5}{\volt} - fixa}
 De forma a alimentar os circuitos com \SI{5}{\volt} fixos foi projectada - Figura \ref{fig:esqlm317} e implementada - Figura \ref{fig:impllm317} - uma fonte de alimentação \cite{LM317}.
@@ -263,6 +253,24 @@ De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, �
 
 A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
+\begin{table}[htb]
+	\centering
+	\caption{Exemplo funcionamento de medição da Lei de Ohm} 
+	
+	\label{Table:exemplomedicaoohm}
+	\begin{tabular}{lcccccccc}
+		\toprule
+		               & \multicolumn{8}{c}{Estado dos relés}                                                                       \\
+		\midrule
+		               & $K_{1}$                              & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ \\
+		\midrule
+		Medir Tensão   & 1                                    & 0       & 0       & 1       & 1       & 0       & 1       & 1       \\
+		\midrule
+		Medir Corrente & 1                                    & 0       & 0       & 1       & 0       & 1       & 1       & 0       \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
 \subsection{Experiências}
 \label{sec:experiencias}
 De forma a permitir um melhor desenvolvimento, foco, organização, detecção e correcção de erros, as experiências foram implementadas de forma independente. As primeiras ideias passavam por, além da Lei de \textit{Ohm}, implementar o estudo da rectificação de meia e onda completa. Contudo, verificou-se que seria possível incluir uma experiência adicional, dedicada ao estudo prático de filtros passa-alto e passa-baixo, já que estas duas experiências possuem componentes comuns, ampliando, assim, o alcance e a aplicabilidade do \acrshort{lare}.
@@ -298,24 +306,6 @@ A medição da tensão e da corrente faz-se da seguinte forma:
 % Como se pode pode ver na Figura \ref{fig:frontDMM}, retirada da Figura \ref{fig:paineldianteiro}, o terminal negativo (preto) é comum a ambos os aparelhos de medida, que na Figura \ref{fig:esq_geral_ohm} está representado pelo ponto ``C''. O terminal positivo (vermelho) do voltímetro liga ao ponto A - depois de activo o relé $K_{5}$ e o terminal positivo (vermelho) do amperímetro liga ao ponto B - depois de activo o relé $R_{6}$.
 
 Como exemplo, se se pretender estudar a Lei de Ohm para a resistência $R_{1}$, os relés seriam activados da forma representada na Tabela \ref{Table:exemplomedicaoohm}:
-
-\begin{table}[htb]
-	\centering
-	\caption{Exemplo funcionamento de medição da Lei de Ohm} 
-	
-	\label{Table:exemplomedicaoohm}
-	\begin{tabular}{lcccccccc}
-		\toprule
-		               & \multicolumn{8}{c}{Estado dos relés}                                                                       \\
-		\midrule
-		               & $K_{1}$                              & $K_{2}$ & $K_{3}$ & $K_{4}$ & $K_{5}$ & $K_{6}$ & $K_{7}$ & $K_{8}$ \\
-		\midrule
-		Medir Tensão   & 1                                    & 0       & 0       & 1       & 1       & 0       & 1       & 1       \\
-		\midrule
-		Medir Corrente & 1                                    & 0       & 0       & 1       & 0       & 1       & 1       & 0       \\
-		\bottomrule
-	\end{tabular}
-\end{table}
 
 \begin{comment}
 	% \textbf{Falta o complemento com imagens do gráfico/resultado final e a imagem da placa já feita, opinião PROF}

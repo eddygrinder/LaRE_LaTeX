@@ -504,9 +504,8 @@ Descrição dos pinos de controlo:
     \item \acrfull{oe}: pino activo baixo que controla o estado da saída do registo: Se a zero as saídas estão activas, se a um as saídas estão desactivadas
 \end{itemize}
 
-Como referido na Secção~\ref{sec:matriz}, a experiência da Lei de \textit{Ohm} requer 8 relés, enquanto as experiências de rectificadores e filtros exigem 13. Cada relé é acionado por um \textit{bit} de um registo de deslocamento, sendo que cada registo permite o controlo de até 8 relés. Assim, é necessário um registo de deslocamento para a experiência da Lei de \textit{Ohm} e dois registos para as experiências de rectificação e filtragem. Sendo assim, será enviada uma trama de 8 ou 13 \textit{bits} consoante as experiências a controlar.  
-
-A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do registo e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
+Como referido na Secção~\ref{sec:matriz}, a experiência da Lei de \textit{Ohm} requer 8 relés, enquanto as experiências de rectificadores e filtros necessitam de 13. Cada relé é acionado por um \textit{bit} de um registo de deslocamento, sendo que cada registo permite o controlo de até 8 relés. Assim, é necessário um registo para a experiência da Lei de \textit{Ohm} e dois registos para as experiências de rectificação e filtragem.
+Deste modo, é enviada uma trama de 8 ou 13 \textit{bits}, conforme a experiência a controlar - os \textit{bits} são enviados um-a-um, armazenados no registo e depois enviados para a saída. Dado que o número de \textit{bits} varia entre experiências e estas se encontram distribuídas por duas placas distintas (conforme descrito na Secção~\ref{sec:matriz}), optou-se por utilizar pinos diferentes do \gls{RaspberryPI} para o envio das tramas. No Anexo \ref{AppendixA}, Figura 11 e Figura 12, estão definidos os pinos usados na configuração e envio das tramas. A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do registo e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
 
 \begin{figure}[hbtp]
     \centering
@@ -515,11 +514,9 @@ A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do registo e 
     \label{fig:SN74HC595blocos}
 \end{figure}
 
-Como se pode ver na Tabela \ref{Table:funcSN74HC595}, são precisos 5 \acrshort{gpio}s configurados como saídas para controlar o envio de uma trama, portanto, para realizar o comando dos relés do \acrshort{lare}, são/serão necessários 10 \acrshort{gpio}s.
-As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.
+Como se pode verificar na Tabela~\ref{Table:funcSN74HC595}, são necessários 5 \acrshort{gpio}, configurados como saídas, para controlar o envio de uma trama. Assim, para comandar os relés associados às experiências implementadas nas duas placas, são utilizados 10 pinos \acrshort{gpio} no total.
 
-, correspondente a um registo de deslocamento
-, correspondente a dois registos de deslocamento.
+Importa notar que seria tecnicamente possível reduzir este número para apenas 6 pinos, utilizando os mesmos sinais de controlo para ambos os registos de deslocamento e activando-os seletivamente através da linha \textit{OE - Output Enable} de cada registo. No entanto, dado que a implementação e os testes dos circuitos foram realizados de forma faseada, optou-se por manter conjuntos de pinos independentes para cada registo de deslocamento, facilitando a deteção e resolução de eventuais erros. As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.
 
 \begin{table}[htb]
     \caption{Modos de funcionamento do SN74HC595 \cite{SN74HC595}}
@@ -566,7 +563,7 @@ As implicações ao nível do \textit{software} de programação são mínimas e
 
 \section{Software}
 \label{sec:arquitecturasoftware} 
-O \textit{software} do \acrshort{lare} foi dividido em duas grandes grupos/partes/secções(riscar o que não interessa): \textit{Back-end} e \textit{Front-end}.
+O \textit{software} do \acrshort{lare} foi dividido em duas grandes partes: \textit{Back-end} e \textit{Front-end}.
 
 Por \textit{Back-end} pode entender-se toda a programação e os processos a correr em segundo plano, que sustentam o funcionamento do \acrshort{lare}, incluindo servidor, \acrshort{api}s ou base de dados \cite{FrontbackEnd}. Existe uma grande variedade de linguagens de programação, \textit{frameworks} e ferramentas para realizar a gestão do \textit{Back-end}. Na implementação do \acrshort{lare}, utilizou-se o \textit{Python} como linguagem de programação e o \textit{Flask} como \textit{Framework}.
 
@@ -607,8 +604,6 @@ Como já foi referido na Secção \ref{sec:arquitecturasoftware}, o \textit{Fron
 
 A escolha do desenvolvimento da página recaiu no \acrshort{html}, \acrshort{css} e (pontualmente - \textbf{REVER}) \textit{JavaScript}.
 
-O \acrfull{w3c} é uma organização internacional que desenvolve padrões e diretrizes para a \textit{web} visando garantir que a esta permaneça aberta, acessível e interoperável para todos. Os principais objetivos são promover a compatibilidade entre diferentes sistemas e garantir que a \textit{web} seja acessível a todos os utilizadores, independentemente das suas capacidades ou dispositivos. O \acrshort{w3c} trabalha em várias áreas, incluindo \acrshort{html} e \acrshort{css} \cite{W3C}.
-
 O \acrshort{html} é a linguagem \textit{standard}, usada para definir a estrutura do seu conteúdo e consiste numa série de elementos usados para delimitar ou agrupar diferentes partes do conteúdo. As \textit{tags} ou etiquetas, podem transformar uma palavra ou imagem num \textit{hyperlink}, pôr palavras em itálico, aumentar ou diminuir a fonte, etc. \cite{HTMLbasics}
 
 Existem 3 tipos de elementos \cite{HTMLwikipedia}:
@@ -627,7 +622,7 @@ Na Figura \ref{fig:estruturahtml} está representada a estrutura de uma página 
     \label{fig:estruturahtml}
 \end{figure}
 
-Segundo o consórcio \acrshort{w3c}, as \acrshort{css} são mecanismos fundamentais para a separação de preocupações no desenvolvimento \textit{web}. Ao delegar a responsabilidade de formatação visual no \acrshort{css}, o \acrshort{html} concentra-se na estrutura semântica do conteúdo. Isso resulta num código mais limpo, de fácil manutenção e acessível. As regras de estilo, que especificam como os elementos \acrshort{html} devem ser apresentados, podem ser aplicadas a elementos individuais, classes ou \textit{IDs}, permitindo um alto grau de customização. Além disso, o \acrshort{css} oferece a possibilidade de criar hierarquias de estilos, onde os mais específicos sobrepõem aos mais gerais. As folhas de estilo podem ser inseridas diretamente no documento \acrshort{html} ou vinculadas a ele através de um arquivo externo, proporcionando maior organização e reutilização de estilos \cite{w3ccss}.
+Segundo o consórcio \gls{w3c}, as \acrshort{css} são mecanismos fundamentais para a separação de preocupações no desenvolvimento \textit{web}. Ao delegar a responsabilidade de formatação visual no \acrshort{css}, o \acrshort{html} concentra-se na estrutura semântica do conteúdo. Isso resulta num código mais limpo, de fácil manutenção e acessível. As regras de estilo, que especificam como os elementos \acrshort{html} devem ser apresentados, podem ser aplicadas a elementos individuais, classes ou \textit{IDs}, permitindo um alto grau de customização. Além disso, o \acrshort{css} oferece a possibilidade de criar hierarquias de estilos, onde os mais específicos sobrepõem aos mais gerais. As folhas de estilo podem ser inseridas diretamente no documento \acrshort{html} ou vinculadas a ele através de um arquivo externo, proporcionando maior organização e reutilização de estilos \cite{w3ccss}.
 
 Um exemplo simples pode ser visto na Listagem \ref{lst:excss}.
 
@@ -677,15 +672,9 @@ Por sua vez, o ficheiro \textit{\textbf{meuestilo.css}} da forma apresentada na 
 	\end{lstlisting}
 \end{minipage}
 
-No \href{https://jigsaw.w3.org/css-validator/}{link} e \href{https://validator.w3.org/}{link} é possível validar as folhas de estilo e as páginas \acrshort{html}, respectivamente.
+As folhas de estilo \acrshort{css} e as páginas \acrshort{html} podem ser validadas para garantir que estão de acordo com os padrões definidos pelo consórcio \gls{w3c} \cite{cssvalidator, htmlvalidator}. Esta validação é importante para assegurar a compatibilidade entre navegadores e dispositivos, bem como para melhorar a acessibilidade e a experiência do utilizador.
 
-Já o \textit{JavaScript} é uma linguagem de programação orientada para objectos e utilizada principalmente para \textit{scripts} dinâmicos do lado do cliente, permitindo que uma aplicação coloque elementos num formulário \acrshort{html} e responda a eventos do utilizador, como cliques do rato, preenchimento de formulários e navegação na página. Também pode ser utilizada no lado do servidor, permitindo que uma aplicação comunique com uma base de dados, mantenha a continuidade das informações entre diferentes chamadas da aplicação ou manipule ficheiro no servidor.
-
-Isso significa que, no navegador, o \textit{JavaScript} pode alterar a aparência da página e, da mesma forma, o \textit{Node.js} - versão mais avançada do \textit{JavaScript} no servidor - pode responder a solicitações personalizadas enviadas pelo código executado no navegador.
-
-Os programas nesta linguagem são chamados \textit{scripts}. Podem ser escritos directamente numa página \acrshort{html} e executados automaticamente quando a página é carregada. Estes \textit{scripts} são escritos e executados em texto simples e não precisam de compilador para correr.
-
-O JavaScript pode ser executado não apenas nos navegadores, mas também nos servidores, ou, basicamente, em qualquer dispositivo que tenha um \textit{JavaScript Engine}, isto é, \textit{software} específico que execute o código \textit{JavaScript} \cite{JavaScriptRef}.
+Já o \textit{JavaScript} é uma linguagem de programação orientada para objectos e utilizada principalmente para \textit{scripts} dinâmicos do lado do cliente, permitindo que uma aplicação coloque elementos num formulário \acrshort{html} e responda a eventos do utilizador, como cliques do rato, preenchimento de formulários e navegação na página. Também pode ser utilizada no lado do servidor, permitindo que uma aplicação comunique com uma base de dados, mantenha a continuidade das informações entre diferentes chamadas da aplicação ou manipule ficheiro no servidor. Isso significa que, no navegador, o \textit{JavaScript} pode alterar a aparência da página e, da mesma forma, o \textit{Node.js} - versão mais avançada do \textit{JavaScript} no servidor - pode responder a solicitações personalizadas enviadas pelo código executado no navegador.  Os programas escritos nesta linguagem são designados por \textit{scripts} e podem ser inseridos diretamente numa página \acrshort{html}, sendo executados automaticamente aquando do seu carregamento. Por serem interpretados, estes scripts são escritos em texto simples e não requerem compilação prévia para serem executados. O JavaScript pode ser executado não apenas nos navegadores, mas também nos servidores, ou, basicamente, em qualquer dispositivo que tenha um \textit{JavaScript Engine}, isto é, \textit{software} específico que execute o código \textit{JavaScript} \cite{JavaScriptRef}.
 
 Na Listagem \ref{lst:exemplojava} está representado um exemplo de \textit{JavaScript} que desabilita os seletores de um formulário quando o botão ``OK'' é clicado.
 

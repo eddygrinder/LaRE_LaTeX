@@ -55,10 +55,10 @@
 \contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama \textins {em corte} de blocos SN74HC595 \cite {SN74HC595}}}{66}{figure.caption.75}%
 \contentsline {figure}{\numberline {3.27}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{69}{figure.caption.80}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{74}{figure.caption.81}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{75}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{74}{figure.caption.81}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{74}{figure.caption.82}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Exemplo de uso do \textit {SN74HC595} e \textit {ULN2003A}}}{75}{figure.caption.83}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{76}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{76}{figure.caption.84}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{76}{figure.caption.85}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Implementação Fontes de \SI {6}{\volt } e \SI {12}{\volt }}}{77}{figure.caption.87}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Fonte de \SI {5}{\volt } \textins {LM317}}}{78}{figure.caption.89}%
@@ -66,8 +66,8 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Problema de massa - onda completa}}{80}{figure.caption.92}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Painel frontal Multímetro Digital}}{80}{figure.caption.93}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Esquema completo - Lei de \textit {Ohm}}}{81}{figure.caption.94}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{82}{figure.caption.98}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Funcionamento geral \textit {Flask}}}{84}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{83}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Funcionamento geral \textit {Flask}}}{85}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{85}{figure.caption.102}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{90}{figure.caption.108}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Processo de leitura das medições de tensão e corrente}}{92}{figure.caption.110}%

@@ -23,6 +23,10 @@ X.~Xu, Y.~Lu, B.~Vogel-Heuser, and L.~Wang, ``Industry 4.0 and industry 5.0—in
 ``Raspberry pi.'' \url{https://www.raspberrypi.com/}.
 \newblock (Accessed on 06/30/2024).
 
+\bibitem{W3C}
+``W3c.'' \url{https://www.w3.org/}.
+\newblock (Accessed on 08/03/2024).
+
 \bibitem{Hofstein}
 A.~Hofstein, {\em The Role of Laboratory in Science Teaching and Learning}, pp.~357--368.
 \newblock 01 2017.
@@ -583,10 +587,6 @@ D.~Mashutin, ``Django vs flask: Which is the best python web framework? | the py
 R.~Johns, ``Flask vs django: Which python web framework to use in 2024?.'' \url{https://hackr.io/blog/flask-vs-django}.
 \newblock (Accessed on 07/26/2024).
 
-\bibitem{W3C}
-``W3c.'' \url{https://www.w3.org/}.
-\newblock (Accessed on 08/03/2024).
-
 \bibitem{HTMLbasics}
 ``Html basics - learn web development | mdn.'' \url{https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics}.
 \newblock (Accessed on 07/26/2024).
@@ -602,6 +602,14 @@ R.~Johns, ``Flask vs django: Which python web framework to use in 2024?.'' \url{
 \bibitem{Startingcss}
 ``Starting with html + css.'' \url{https://www.w3.org/Style/Examples/011/firstcss}.
 \newblock (Accessed on 08/03/2024).
+
+\bibitem{cssvalidator}
+``Serviço de validação de css do w3c.''
+\newblock [Online; accessed 2025-05-29].
+
+\bibitem{htmlvalidator}
+``The w3c markup validation service.''
+\newblock [Online; accessed 2025-05-29].
 
 \bibitem{JavaScriptRef}
 ``Javascript reference - javascript | mdn.'' \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference}.

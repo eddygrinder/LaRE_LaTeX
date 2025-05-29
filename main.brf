@@ -40,6 +40,7 @@
 \backcite {Raspberrypi}{{xix}{(document)}{Doc-Start}}
 \backcite {matias}{{xix}{(document)}{Doc-Start}}
 \backcite {matias}{{xix}{(document)}{Doc-Start}}
+\backcite {W3C}{{xx}{(document)}{Doc-Start}}
 \backcite {Hofstein}{{1}{1.1}{section.1.1}}
 \backcite {BRINSON2015218}{{1}{1.1}{section.1.1}}
 \backcite {feisel}{{1}{1.1}{section.1.1}}
@@ -269,11 +270,11 @@
 \backcite {ULN2003}{{65}{3.25}{figure.caption.74}}
 \backcite {SN74HC595}{{65}{3.5.6}{subsection.3.5.6}}
 \backcite {SN74HC595}{{66}{3.26}{figure.caption.75}}
-\backcite {FrontbackEnd}{{66}{3.6}{section.3.6}}
 \backcite {SN74HC595}{{67}{3.2}{table.caption.76}}
 \backcite {FrontbackEnd}{{67}{3.6}{section.3.6}}
-\backcite {ThePython}{{67}{3.6.1}{section*.77}}
-\backcite {pythonvantagens}{{67}{3.6.1}{section*.77}}
+\backcite {FrontbackEnd}{{67}{3.6}{section.3.6}}
+\backcite {ThePython}{{68}{3.6.1}{section*.77}}
+\backcite {pythonvantagens}{{68}{3.6.1}{section*.77}}
 \backcite {pythonvantagens}{{68}{3.6.1}{section*.77}}
 \backcite {5MainDispython}{{68}{3.6.1}{section*.77}}
 \backcite {ieeespectrum}{{68}{3.6.1}{section*.77}}
@@ -282,14 +283,14 @@
 \backcite {Jinja}{{68}{3.6.1}{section*.78}}
 \backcite {Djangovsflask}{{68}{3.6.1}{section*.78}}
 \backcite {FlaskvsDjango}{{68}{3.6.1}{section*.78}}
-\backcite {W3C}{{69}{3.6.2}{section*.79}}
 \backcite {HTMLbasics}{{69}{3.6.2}{section*.79}}
 \backcite {HTMLwikipedia}{{69}{3.6.2}{section*.79}}
 \backcite {HTMLbasics}{{69}{3.27}{figure.caption.80}}
-\backcite {w3ccss}{{69}{3.6.2}{figure.caption.80}}
+\backcite {w3ccss}{{70}{3.6.2}{figure.caption.80}}
 \backcite {Startingcss}{{70}{14}{lstnumber.3.1.13}}
-\backcite {Startingcss}{{70}{10}{lstnumber.3.2.9}}
+\backcite {Startingcss}{{71}{10}{lstnumber.3.2.9}}
 \backcite {Startingcss}{{71}{6}{lstnumber.3.3.5}}
+\backcite {cssvalidator, htmlvalidator}{{71}{3.6.2}{lstnumber.3.3.5}}
 \backcite {JavaScriptRef}{{71}{3.6.2}{lstnumber.3.3.5}}
 \backcite {JavaScript}{{72}{3.6.2}{lstnumber.3.4.9}}
 \backcite {ULN2003}{{74}{4.1.2}{subsection.4.1.2}}
@@ -297,7 +298,7 @@
 \backcite {LM317}{{77}{4.1.4}{figure.caption.89}}
 \backcite {1N400x}{{78}{4.1.4}{figure.caption.89}}
 \backcite {LM317}{{78}{4.1.4}{equation.4.1.1}}
-\backcite {Flask}{{85}{4.2.1}{figure.caption.101}}
+\backcite {Flask}{{84}{4.2.1}{figure.caption.101}}
 \backcite {Flask}{{88}{4.2.1}{lstnumber.4.6.1}}
 \backcite {NumPy}{{93}{4.2.2}{figure.caption.110}}
 \backcite {Sockets}{{93}{4.2.2}{section*.111}}
