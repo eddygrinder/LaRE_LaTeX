@@ -196,10 +196,9 @@ Na prática e em contexto de sala de aula, a experiência de rectificação de o
 	\label{fig:gerador-massa}
 \end{figure}
 
-A forma de contornar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio, tal como representado no esquema da Figura \ref{fig:ondacompleta-massa}. Ainda assim, não é possível medir as ondas de entrada e saída \textbf{simultaneamente}, se for esse o objectivo.
+A forma de contornar este problema é usar um transformador e, assim, medir a onda de saída com o osciloscópio. Ainda assim, não é possível medir as ondas de entrada e saída \textbf{simultaneamente}, se for esse o objectivo.
 
-No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar as massas por \textit{software} e representar as duas ondas na mesma imagem.
-De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
+No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar a massa dos dois canais do osciloscópio por \textit{software}, tal como representado no esquema simplificado da Figura \ref{fig:ondacompleta-massa} e representar as duas ondas (entrada e saída) na mesma imagem. De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
 \begin{itemize}
 	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$) ou duas no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
 	\item Em contexto laboratorial e de sala de aula usa-se um transformador para rectificar a onda completa.
@@ -211,7 +210,7 @@ De referir que, desta forma, seria possível usar o gerador de sinal. No entanto
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/sch-ondacompleta-massa.png}
-	\caption{Problema de massa - onda completa}
+	\caption{Problema de massa - onda completa [Resolvido]}
 	\label{fig:ondacompleta-massa}
 \end{figure}
 
@@ -234,7 +233,7 @@ A medição de tensão e corrente são feitas utilizando o multímetro digital -
 	\label{fig:frontDMM}
 \end{figure}
 
-Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado da Lei de \textit{Ohm} que pode ilustrar o funcionamento dos aparelhos de medida. O ponto C é comum e é controlado pelo relé $K_{7}$. O terminal positivo do voltímetro está ligado ao ponto A, controlado pelo relé $K_{5}$ mas o amperímetro necessita de mais um relé, já que o controlo da medição é diferente. Neste caso o relé $K_{8}$ funciona como um \textit{bypass} quando se pretende medir tensão e o relé $K{6}$ controla o terminal positivo do amperímetro. 
+Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado da Lei de \textit{Ohm} que pode ilustrar o funcionamento dos aparelhos de medida. O ponto C é comum e é controlado pelo relé $K_{7}$. O terminal positivo do voltímetro está ligado ao ponto A, controlado pelo relé $K_{5}$ mas o amperímetro necessita de mais um relé, já que é inserido em série. Neste caso o relé $K_{8}$ funciona como um \textit{bypass} quando se pretende medir tensão e o relé $K{6}$ controla o terminal positivo do amperímetro. 
 
 \begin{figure}[hbtp]
 	\centering%
@@ -250,7 +249,7 @@ No entanto, faz-se notar o seguinte: Embora os aparelhos de medida sejam indepen
 
 De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão implementados. 
 %Tal como pode ser visto na o voltímetro está disponível entre os pontos A e C e o amperímetro entre os pontos B e C.
-
+!!!!!!!!!!!!!!!!!!! VERIFICAR !!!!!!!!!!!!!!!!!!!!!
 A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
 \begin{table}[htb]

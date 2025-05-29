@@ -58,9 +58,9 @@
 \contentsline {subsubsection}{Fontes de tensão \SI {220}{\volt }/\SI {8}{\volt } CA}{79}{section*.90}%
 \contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{80}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}Experiências}{81}{subsection.4.1.6}%
-\contentsline {subsubsection}{Lei de Ohm}{81}{section*.96}%
+\contentsline {subsubsection}{Lei de Ohm}{82}{section*.96}%
 \contentsline {subsubsection}{Rectificadores e filtros}{82}{section*.97}%
-\contentsline {section}{\numberline {4.2}Software}{83}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Software}{84}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{84}{subsection.4.2.1}%
 \contentsline {subsubsection}{Estrutura base}{84}{section*.100}%
 \contentsline {subsubsection}{Rotas}{86}{section*.103}%

@@ -8,12 +8,12 @@
 \contentsline {lstlisting}{\numberline {4.1}{\ignorespaces Decorador \textit {route()} - \textit {views.py}}}{86}{lstlisting.4.1}%
 \contentsline {lstlisting}{\numberline {4.2}{\ignorespaces Contrução de \textit {url}s - \textit {auth.py}}}{87}{lstlisting.4.2}%
 \contentsline {lstlisting}{\numberline {4.3}{\ignorespaces \textit {Blueprint views} - \textit {views.py}}}{87}{lstlisting.4.3}%
-\contentsline {lstlisting}{\numberline {4.4}{\ignorespaces \textit {Blueprint auth} - \textit {auth.py}}}{87}{lstlisting.4.4}%
+\contentsline {lstlisting}{\numberline {4.4}{\ignorespaces \textit {Blueprint auth} - \textit {auth.py}}}{88}{lstlisting.4.4}%
 \contentsline {lstlisting}{\numberline {4.5}{\ignorespaces Registo das \textit {blueprints} - \textit {\_\_init\_\_.py}}}{88}{lstlisting.4.5}%
 \contentsline {lstlisting}{\numberline {4.6}{\ignorespaces Exemplo argumentos passados ao servidor - ohm.html}}{88}{lstlisting.4.6}%
 \contentsline {lstlisting}{\numberline {4.7}{\ignorespaces Envio de parâmetros \acrshort {html} $\rightarrow $ \textit {views.py}}}{91}{lstlisting.4.7}%
 \contentsline {lstlisting}{\numberline {4.8}{\ignorespaces Recepção de parâmetros}}{91}{lstlisting.4.8}%
-\contentsline {lstlisting}{\numberline {4.9}{\ignorespaces Envio de parâmetros \textit {views.py} $\rightarrow $ \acrshort {html}}}{91}{lstlisting.4.9}%
+\contentsline {lstlisting}{\numberline {4.9}{\ignorespaces Envio de parâmetros \textit {views.py} $\rightarrow $ \acrshort {html}}}{92}{lstlisting.4.9}%
 \contentsline {lstlisting}{\numberline {4.10}{\ignorespaces Recepção de parâmetros}}{92}{lstlisting.4.10}%
 \contentsline {lstlisting}{\numberline {4.11}{\ignorespaces Comunicação \textit {python} - \textit {python}}}{92}{lstlisting.4.11}%
 \contentsline {lstlisting}{\numberline {4.12}{\ignorespaces \textit {Block Mode \textins {Sockets} configRelays.py}}}{94}{lstlisting.4.12}%
