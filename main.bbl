@@ -627,6 +627,14 @@ T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' 
 ``1n400x - axial-lead glass passivated standard recovery rectifiers.'' \url{https://cdn.sparkfun.com/assets/2/c/2/d/6/1N400x-D.PDF}.
 \newblock (Accessed on 11/14/2024).
 
+\bibitem{tutorialsiteflask}
+T.~W. Tim, ``(887) python website full tutorial - flask, authentication, databases \& more - youtube.''
+\newblock [Online; accessed 2025-05-30].
+
+\bibitem{flaskDigitalOcean}
+DigitalOcean, ``(887) getting started with flask | 1-hour tech talk - youtube.''
+\newblock [Online; accessed 2025-05-30].
+
 \bibitem{NumPy}
 ``Numpy.''
 \newblock [Online; accessed 2025-04-15].

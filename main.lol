@@ -5,7 +5,7 @@
 \contentsline {lstlisting}{\numberline {3.2}{\ignorespaces Exemplo da página \acrshort {html} com o \acrshort {css} definida externamente \cite {Startingcss}}}{71}{lstlisting.3.2}%
 \contentsline {lstlisting}{\numberline {3.3}{\ignorespaces Exemplo do \acrshort {css} definido externamente \cite {Startingcss}}}{71}{lstlisting.3.3}%
 \contentsline {lstlisting}{\numberline {3.4}{\ignorespaces Exemplo de \textit {JavaScript}}}{72}{lstlisting.3.4}%
-\contentsline {lstlisting}{\numberline {4.1}{\ignorespaces Decorador \textit {route()} - \textit {views.py}}}{86}{lstlisting.4.1}%
+\contentsline {lstlisting}{\numberline {4.1}{\ignorespaces \textit {Decorator} \textit {route()} - \textit {views.py}}}{86}{lstlisting.4.1}%
 \contentsline {lstlisting}{\numberline {4.2}{\ignorespaces Contrução de \textit {url}s - \textit {auth.py}}}{87}{lstlisting.4.2}%
 \contentsline {lstlisting}{\numberline {4.3}{\ignorespaces \textit {Blueprint views} - \textit {views.py}}}{87}{lstlisting.4.3}%
 \contentsline {lstlisting}{\numberline {4.4}{\ignorespaces \textit {Blueprint auth} - \textit {auth.py}}}{88}{lstlisting.4.4}%

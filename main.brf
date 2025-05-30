@@ -298,6 +298,8 @@
 \backcite {LM317}{{77}{4.1.4}{figure.caption.89}}
 \backcite {1N400x}{{78}{4.1.4}{figure.caption.89}}
 \backcite {LM317}{{78}{4.1.4}{equation.4.1.1}}
+\backcite {Flask}{{84}{4.2.1}{subsection.4.2.1}}
+\backcite {tutorialsiteflask, flaskDigitalOcean}{{84}{4.2.1}{subsection.4.2.1}}
 \backcite {Flask}{{84}{4.2.1}{figure.caption.101}}
 \backcite {Flask}{{89}{4.2.1}{lstnumber.4.6.1}}
 \backcite {NumPy}{{93}{4.2.2}{figure.caption.110}}
