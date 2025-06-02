@@ -597,6 +597,30 @@ No entanto, o \textit{Flask} foi concebido para tornar a iniciação rápida e f
 
 Pelas razões referidas anteriormente, e tendo em conta a análise feita aos prós e contras, considerou-se que tanto o \textit{Python} como o \textit{Flask} são as linguagens que melhor se enquadram e adaptam aos objectivos propostos para o \acrshort{lare}.
 
+\subsubsection{\textit{Jinja2}}
+\label{sec:jinja2}
+O \textit{Jinja2}\footnote{O nome \textit{Jinja2} refere-se à versão actual do motor de \textit{templates} Jinja, resultante de uma reescrita significativa da sua versão original. Na documentação e na comunidade, é comum referir-se a este motor simplesmente como \textit{Jinja} \cite{Jinja}. Assim, e sem perda de generalidade, será adoptada ao longo deste trabalho a designação \textit{Jinja}.} é um motor de \textit{templates} para aplicações \textit{Web} escrito em \textit{Python}, amplamente utilizado em conjunto com a \textit{framework} \textit{Flask}. O seu principal objetivo é permitir a separação entre a lógica da aplicação e a apresentação visual, promovendo um desenvolvimento mais organizado, modular e sustentável. Inspirado na sintaxe do próprio \textit{Python}, o \textit{Jinja} permite incorporar estruturas de controlo, como ciclos e condições, diretamente nos ficheiros \acrshort{html} através de marcação específica, facilitando a criação dinâmica de conteúdo \cite{Jinja}. Na Listagem \ref{lst:exemplojinja} pode ver-se um exemplo de código \textit{Jinja} incluído na página \textit{base.html}.
+
+\begin{minipage}{0.9\linewidth}
+    \begin{lstlisting}[language=python, caption=Exemplo \textit{Jinja} incluído na página \textit{base.html}, label=lst:exemplojinja]
+	<title>{% block title %}Home{% endblock %}</title>
+    {% if user.is_authenticated %}
+        <a class="nav-item nav-link" id="home" href="/">Home</a>
+    {% else %}
+        <a class="nav-item nav-link" id="login" href="/login">Login</a>
+    {% endif %}
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+        {{ message }}
+    {% endfor %}
+    {% endwith %}
+
+	\end{lstlisting}
+\end{minipage}
+
+O mecanismo de \textit{renderização} disponibilizado pelo \textit{Flask}, através da função \textit{render\_template()}, tira partido do \textit{Jinja} para gerar páginas \acrshort{html} com base em \textit{templates} pré-definidos e dados fornecidos pela aplicação. Isto permite, por exemplo, apresentar resultados de medições, estado dos relés ou mensagens personalizadas, de forma automatizada e responsiva. O \textit{Jinja2} permite gerar \acrshort{html} dinâmico através da substituição de variáveis $(\{\{ \ldots \}\})$ e da execução de instruções lógicas ({\% \ldots \%}) no lado do servidor, antes de o conteúdo ser enviado ao navegador. Como resultado, o utilizador final visualiza apenas o \acrshort{html} já processado, sem qualquer traço do código \textit{Jinja}. Esta abordagem estabelece uma ligação simples e segura entre a lógica implementada em \textit{Python} no \textit{back-end} e a apresentação em \acrshort{html} no \textit{front-end} \cite{Jinja}. 
+
 \subsection{Front-End}
 \label{sec:frontend}
 \subsubsection{\textit{Webpage}}

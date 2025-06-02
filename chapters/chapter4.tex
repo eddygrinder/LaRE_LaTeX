@@ -331,7 +331,7 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 \label{sec:rectificadoresfiltros}
 Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
 
-Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta. O esquema completo encontra-se representado no \ref{AppendixA}
+Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta. O esquema completo encontra-se representado no Anexo \ref{AppendixA}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -345,7 +345,7 @@ A Figura~\ref{fig:implementacaoplacarectificadores}, já anteriormente apresenta
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/lare_rectificador_filtros_BLOCOS.png}
-	\caption{\textins{Placa} rectificadores e filtros}
+	\caption{\textins{Implementação} rectificadores e filtros}
 	\label{fig:implementacaoplacarectificadores}
 \end{figure}
 
@@ -496,11 +496,7 @@ app.register_blueprint(auth, url_prefix='/')
 Isto quer dizer que ao registar a \textit{blueprint} com o prefixo ``/'', os \acrshort{url}s serão acessíveis através da raiz da aplicação.
 
 \subsubsection{Pedidos}
-A capacidade de uma aplicação \textit{web} em responder a solicitações de dados do cliente é um requisito essencial. No \textit{Flask} esta informação é fornecida pelo objeto global \textit{\textbf{request}}. Este objeto contém todos os detalhes da solicitação, como os métodos \acrshort{http} usados (\textit{GET}, \textit{POST}, etc.), os \textit{headers} os \textit{cookies} ou o corpo da requisição.
-
-O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como descrito no ficheiro auth.py.
-
-Quando se adiciona um ponto de interrogação (?) seguido de pares chave-valor (key=value) no final de um \acrshort{url}, está a enviar-se dados adicionais ao servidor, esses dados são chamados de \textbf{parâmetros do \acrshort{url}}, como se pode ver na Listagem \ref{lst:paramurl}.
+A capacidade de uma aplicação \textit{web} em responder a solicitações de dados do cliente é um requisito essencial. No \textit{Flask} esta informação é fornecida pelo objeto global \textit{\textbf{request}}. Este objeto contém todos os detalhes da solicitação, como os métodos \acrshort{http} usados (\textit{GET}, \textit{POST}, etc.), os \textit{headers} os \textit{cookies} ou o corpo da requisição. O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como descrito no ficheiro auth.py. Quando se adiciona um ponto de interrogação (?) seguido de pares chave-valor (key=value) no final de um \acrshort{url}, está a enviar-se dados adicionais ao servidor, esses dados são chamados de \textbf{parâmetros do \acrshort{url}}, como se pode ver na Listagem \ref{lst:paramurl}.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Html, caption=Exemplo argumentos passados ao servidor - ohm.html, label=lst:paramurl]
@@ -508,11 +504,7 @@ const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistan
 \end{lstlisting}
 \end{minipage}
 
-No entanto, a criação e renderização das páginas \acrshort{html} é feita automaticamente através dos modelos \textit{Jinja2}\footnote{A documentação pode ser consultada em \href{https://jinja.palletsprojects.com/en/3.1.x/templates/}{\textit{Jinja}}}. Os modelos podem ser usados para gerar qualquer tipo de ficheiro de texto, sendo que para aplicações \textit{web} serão, principalmente, páginas \acrshort{html}.
-
-No ficheiro base.html, pode ver-se a combinação entre código \acrshort{html} e sintaxe \textit{Jinja2}.
-
-No código \acrshort{html}, encontram-se secções entre chavetas {} com palavras-chave especiais como por exemplo {\% block \%} e {\% endblock \%}. Estes são blocos de modelo \textit{Jinja2} que definem áreas de conteúdo dinâmico que podem ser preenchidas com lógica ou dados em \textit{Python}. Para renderizar um modelo, o método utilizado foi \textit{\textbf{render\_template()}} \cite{Flask}. O \textit{Flask} procurará por modelos na pasta \textit{templates}, como pode ser visto na Figura \ref{fig:estruturapastas}.
+Como referido na Secção~\ref{sec:jinja2}, a renderização das páginas \acrshort{html} é realizada através do motor \textit{Jinja}. No caso específico do \acrshort{lare}, o \textit{Flask} procura os modelos a renderizar na pasta \textit{templates}, conforme ilustrado na Figura~\ref{fig:estruturapastas}. 
 
 Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros do \acrshort{url} com \textit{\textbf{get}} ou capturando o \textit{\textbf{KeyError}}, uma vez que os utilizadores podem alterar o \acrshort{url} e, nesse caso, apresentar uma página \textit{400 bad request} não é de fácil interpretação.
 
@@ -732,7 +724,7 @@ Um exemplo da configuração da fonte está descrita na Listagem \ref{lst:exempl
 	\item \textit{ps.enable\_all\_outputs(True)} - linha \ref{line:enableoutputs}: ativa todas as saídas da fonte de alimentação. No entanto, só a saída correspondente ao canal definido na linha \ref{line:channel} será ativada.
 \end{itemize}
 
-No final da execução, os instrumentos e o \acrshort{virtualbench} têm de ser libertados, por esta ordem. Isto é feito através do método \textit{instrumento.release()}. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. \textbf{A REVER: dar um exemplo do que acontece??}
+No final da execução, os instrumentos e o \acrshort{virtualbench} têm de ser libertados, por esta ordem. Isto é feito através do método \textit{instrumento.release()}. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. 
 
 De referir que vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
 
@@ -742,7 +734,7 @@ O resultado das instruções na Linha~\ref{line:acquireps} e Linha~\ref{line:vb8
 	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
 \end{itemize}
 
-No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de \textit{Ohm}), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções. \textbf{voltar a verificar isto}
+No entanto, se um ficheiro for chamado várias vezes (como no caso da experiência da Lei de \textit{Ohm}), uma nova instância do instrumento será sempre criada a cada chamada. Além disso, se houver várias funções no mesmo ficheiro, os objetos criados (por exemplo, 0x000001E7DEECAD20) devem ser passados entre funções ou, alternativamente, o instrumento deve ser encerrado e reinicializado entre chamadas de funções.
 
 \subsubsection{Gráficos}
 \label{sec:graficos}
@@ -783,8 +775,6 @@ As imagens geradas são gravadas na pasta ``webserver/website/static/images/'', 
 
 \subsection{Interface WEB}
 \label{sec:interfaceweb}
-\textbf{NOTA: Acho que esta secção precisa de ser revista?? melhorada??}
-
 %Resumindo Na experiencia da lei de ohm há o controlo dos valores da experiêncianeuica, medições a apresentação do gráfico. Este gráfico só é apresentado quando o utilizador carregar no respectivo link. Nas outras experiências, como o utilizador já tem menos controlo - só controla a frequência - REFERIR COMO É APRESENTADO O GRÁFICO. NÃO ESQUECER DO DIAGRAMA DE BODE.
 
 %FALAR DA PARTE HTML PARA DEPOIS EMBARCAR NA TROCA DE DADOS,  FALTA A PARTE DA COMUNICAÇÃO COM O pi.
@@ -886,7 +876,7 @@ A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da 
 	\label{fig:pagmenuCTRL}
 \end{figure}
 
-A selecção dos valores da resistência e do $U_{CC}$ \textbf{NOTA: Não esquecer de mudar o termo para Ucc nas páginas} é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, embora a medição da tensão corresponda ao valor de $U_{CC}$ seleccionado, optou-se, por razões pedagógicas e de coerência com o esquema, por medir e apresentar a tensão aos terminais da resistência.
+A selecção dos valores da resistência e do $U_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, embora a medição da tensão corresponda ao valor de $U_{CC}$ seleccionado, optou-se, por razões pedagógicas e de coerência com o esquema, por medir e apresentar a tensão aos terminais da resistência.
 
 As medições só serão efectivamente realizadas e os valores apresentados, quando o utilizador seleccionar a opção ``Medir tensão'' e/ou ``Medir corrente''. 
 

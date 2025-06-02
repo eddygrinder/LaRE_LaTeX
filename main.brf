@@ -262,7 +262,7 @@
 \backcite {Raspberrytech}{{62}{3.5.3}{figure.caption.70}}
 \backcite {Raspberrytech}{{63}{3.22}{figure.caption.71}}
 \backcite {DryRelay}{{63}{3.23}{figure.caption.72}}
-\backcite {DryRelay}{{64}{3.5.4}{figure.caption.72}}
+\backcite {DryRelay}{{63}{3.5.4}{figure.caption.72}}
 \backcite {DryRelay}{{64}{3.5.4}{figure.caption.72}}
 \backcite {DryRelay}{{64}{3.24}{figure.caption.73}}
 \backcite {ULN2003}{{64}{3.5.5}{subsection.3.5.5}}
@@ -283,28 +283,30 @@
 \backcite {Jinja}{{68}{3.6.1}{section*.78}}
 \backcite {Djangovsflask}{{68}{3.6.1}{section*.78}}
 \backcite {FlaskvsDjango}{{68}{3.6.1}{section*.78}}
-\backcite {HTMLbasics}{{69}{3.6.2}{section*.79}}
-\backcite {HTMLwikipedia}{{69}{3.6.2}{section*.79}}
-\backcite {HTMLbasics}{{69}{3.27}{figure.caption.80}}
-\backcite {w3ccss}{{70}{3.6.2}{figure.caption.80}}
-\backcite {Startingcss}{{70}{14}{lstnumber.3.1.13}}
-\backcite {Startingcss}{{71}{10}{lstnumber.3.2.9}}
-\backcite {Startingcss}{{71}{6}{lstnumber.3.3.5}}
-\backcite {cssvalidator, htmlvalidator}{{71}{3.6.2}{lstnumber.3.3.5}}
-\backcite {JavaScriptRef}{{72}{3.6.2}{lstnumber.3.3.5}}
-\backcite {JavaScript}{{72}{3.6.2}{lstnumber.3.4.9}}
-\backcite {ULN2003}{{74}{4.1.2}{subsection.4.1.2}}
-\backcite {LM317}{{77}{4.1.4}{section*.88}}
-\backcite {LM317}{{77}{4.1.4}{figure.caption.89}}
-\backcite {1N400x}{{78}{4.1.4}{figure.caption.89}}
-\backcite {LM317}{{78}{4.1.4}{equation.4.1}}
-\backcite {Flask}{{85}{4.2.1}{subsection.4.2.1}}
-\backcite {tutorialsiteflask, flaskDigitalOcean}{{85}{4.2.1}{subsection.4.2.1}}
-\backcite {Flask}{{85}{4.2.1}{figure.caption.103}}
-\backcite {Flask}{{90}{4.2.1}{lstnumber.4.6.1}}
-\backcite {NumPy}{{94}{4.2.2}{figure.caption.112}}
-\backcite {Sockets}{{94}{4.2.2}{section*.113}}
-\backcite {NumPy}{{98}{4.2.2}{section*.115}}
-\backcite {Matplotlib}{{98}{4.2.2}{section*.115}}
-\backcite {datasheetvb8012}{{109}{5.1.1}{figure.caption.127}}
-\backcite {sedrasmith}{{112}{5.2.1}{figure.caption.132}}
+\backcite {Jinja}{{69}{3.6.1}{section*.79}}
+\backcite {Jinja}{{69}{10}{section*.79}}
+\backcite {Jinja}{{70}{3.6.1}{lstnumber.3.1.13}}
+\backcite {HTMLbasics}{{70}{3.6.2}{section*.80}}
+\backcite {HTMLwikipedia}{{70}{3.6.2}{section*.80}}
+\backcite {HTMLbasics}{{70}{3.27}{figure.caption.81}}
+\backcite {w3ccss}{{71}{3.6.2}{figure.caption.81}}
+\backcite {Startingcss}{{71}{14}{lstnumber.3.2.13}}
+\backcite {Startingcss}{{72}{10}{lstnumber.3.3.9}}
+\backcite {Startingcss}{{72}{6}{lstnumber.3.4.5}}
+\backcite {cssvalidator, htmlvalidator}{{72}{3.6.2}{lstnumber.3.4.5}}
+\backcite {JavaScriptRef}{{72}{3.6.2}{lstnumber.3.4.5}}
+\backcite {JavaScript}{{73}{3.6.2}{lstnumber.3.5.9}}
+\backcite {ULN2003}{{76}{4.1.2}{subsection.4.1.2}}
+\backcite {LM317}{{79}{4.1.4}{section*.89}}
+\backcite {LM317}{{79}{4.1.4}{figure.caption.90}}
+\backcite {1N400x}{{80}{4.1.4}{figure.caption.90}}
+\backcite {LM317}{{80}{4.1.4}{equation.4.1.1}}
+\backcite {Flask}{{87}{4.2.1}{subsection.4.2.1}}
+\backcite {tutorialsiteflask, flaskDigitalOcean}{{87}{4.2.1}{subsection.4.2.1}}
+\backcite {Flask}{{87}{4.2.1}{figure.caption.104}}
+\backcite {NumPy}{{95}{4.2.2}{figure.caption.113}}
+\backcite {Sockets}{{96}{4.2.2}{section*.114}}
+\backcite {NumPy}{{100}{4.2.2}{section*.116}}
+\backcite {Matplotlib}{{100}{4.2.2}{section*.116}}
+\backcite {datasheetvb8012}{{109}{5.1.1}{figure.caption.128}}
+\backcite {sedrasmith}{{112}{5.2.1}{figure.caption.133}}
