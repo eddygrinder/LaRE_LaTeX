@@ -284,7 +284,16 @@ No que respeita ao relé $K_{4}$, este seria, eventualmente, dispensável, uma v
 
 \subsubsection{Lei de Ohm}
 \label{sec:lei_ohm}
-Na Figura \ref{fig:esq_geral_ohm}, está representado o esquema da Lei de \textit{Ohm} implementado na práctica. A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
+Na Figura~\ref{fig:esq_geral_ohm} apresenta-se o esquema simplificado da implementação prática da Lei de \textit{Ohm}. O esquema completo pode ser consultado no Anexo~\ref{AppendixA}. A Figura~\ref{fig:Implementacaoleideohm}, anteriormente apresentada, é aqui repetida com o objetivo de ilustrar de forma mais clara a correspondência entre o circuito e a sua implementação física na placa, tal como representado na imagem.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/lare_ohm_BLOCOS.png}
+	\caption{\textins{Implementação} Lei de \textit{Ohm}}
+	\label{fig:Implementacaoleideohm}
+\end{figure}
+
+A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
 
 O funcionamento do circuito é relativamente simples, sendo que qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
 
@@ -322,7 +331,7 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 \label{sec:rectificadoresfiltros}
 Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
 
-Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta.
+Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta. O esquema completo encontra-se representado no \ref{AppendixA}
 
 \begin{figure}[hbtp]
 	\centering
@@ -331,7 +340,14 @@ Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas
 	\label{fig:rectificacao_filtragem_full}
 \end{figure}
 
-Na implementação dos rectificadores houve a necessidade de utilizar dois tipos de tensão de entrada. Como referido na Secção \ref{sec:fontesalimentacao}, o circuito de meia onda utiliza o gerador de sinal mas devido ao problema de massa, já explicado na mesma secção, foi necessário usar um transformador na rectificação de onda completa.
+A Figura~\ref{fig:implementacaoplacarectificadores}, já anteriormente apresentada, é aqui retomada para ilustrar com maior clareza a correspondência entre o circuito e a sua implementação física na placa. Nesta implementação, foi necessário recorrer a dois tipos distintos de tensão de entrada. Como referido na Secção~\ref{sec:fontesalimentacao}, o circuito de meia onda utiliza o gerador de sinal, mas, devido ao problema de massa já descrito nessa mesma secção, optou-se por utilizar um transformador no circuito de rectificação de onda completa.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/lare_rectificador_filtros_BLOCOS.png}
+	\caption{\textins{Placa} rectificadores e filtros}
+	\label{fig:implementacaoplacarectificadores}
+\end{figure}
 
 Como referido na Secção \ref{sec:experiencias}, a implementação dos filtros foi realizada após a conclusão dos rectificadores. De forma a permitir a integração desta experiência no circuito já concluído, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (assinalado pelo retângulo tracejado a vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Esta alteração permitiu a introdução de uma resistência ($R_{3}$) ou de um condensador ($C_{3}$), consoante a configuração do filtro em estudo.
 

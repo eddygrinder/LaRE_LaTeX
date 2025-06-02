@@ -262,7 +262,7 @@
 \backcite {Raspberrytech}{{62}{3.5.3}{figure.caption.70}}
 \backcite {Raspberrytech}{{63}{3.22}{figure.caption.71}}
 \backcite {DryRelay}{{63}{3.23}{figure.caption.72}}
-\backcite {DryRelay}{{63}{3.5.4}{figure.caption.72}}
+\backcite {DryRelay}{{64}{3.5.4}{figure.caption.72}}
 \backcite {DryRelay}{{64}{3.5.4}{figure.caption.72}}
 \backcite {DryRelay}{{64}{3.24}{figure.caption.73}}
 \backcite {ULN2003}{{64}{3.5.5}{subsection.3.5.5}}
@@ -291,20 +291,20 @@
 \backcite {Startingcss}{{71}{10}{lstnumber.3.2.9}}
 \backcite {Startingcss}{{71}{6}{lstnumber.3.3.5}}
 \backcite {cssvalidator, htmlvalidator}{{71}{3.6.2}{lstnumber.3.3.5}}
-\backcite {JavaScriptRef}{{71}{3.6.2}{lstnumber.3.3.5}}
+\backcite {JavaScriptRef}{{72}{3.6.2}{lstnumber.3.3.5}}
 \backcite {JavaScript}{{72}{3.6.2}{lstnumber.3.4.9}}
 \backcite {ULN2003}{{74}{4.1.2}{subsection.4.1.2}}
 \backcite {LM317}{{77}{4.1.4}{section*.88}}
 \backcite {LM317}{{77}{4.1.4}{figure.caption.89}}
 \backcite {1N400x}{{78}{4.1.4}{figure.caption.89}}
-\backcite {LM317}{{78}{4.1.4}{equation.4.1.1}}
-\backcite {Flask}{{84}{4.2.1}{subsection.4.2.1}}
-\backcite {tutorialsiteflask, flaskDigitalOcean}{{84}{4.2.1}{subsection.4.2.1}}
-\backcite {Flask}{{84}{4.2.1}{figure.caption.101}}
-\backcite {Flask}{{89}{4.2.1}{lstnumber.4.6.1}}
-\backcite {NumPy}{{93}{4.2.2}{figure.caption.110}}
-\backcite {Sockets}{{93}{4.2.2}{section*.111}}
-\backcite {NumPy}{{97}{4.2.2}{section*.113}}
-\backcite {Matplotlib}{{97}{4.2.2}{section*.113}}
-\backcite {datasheetvb8012}{{107}{5.1.1}{figure.caption.125}}
-\backcite {sedrasmith}{{110}{5.2.1}{figure.caption.130}}
+\backcite {LM317}{{78}{4.1.4}{equation.4.1}}
+\backcite {Flask}{{85}{4.2.1}{subsection.4.2.1}}
+\backcite {tutorialsiteflask, flaskDigitalOcean}{{85}{4.2.1}{subsection.4.2.1}}
+\backcite {Flask}{{85}{4.2.1}{figure.caption.103}}
+\backcite {Flask}{{90}{4.2.1}{lstnumber.4.6.1}}
+\backcite {NumPy}{{94}{4.2.2}{figure.caption.112}}
+\backcite {Sockets}{{94}{4.2.2}{section*.113}}
+\backcite {NumPy}{{98}{4.2.2}{section*.115}}
+\backcite {Matplotlib}{{98}{4.2.2}{section*.115}}
+\backcite {datasheetvb8012}{{109}{5.1.1}{figure.caption.127}}
+\backcite {sedrasmith}{{112}{5.2.1}{figure.caption.132}}

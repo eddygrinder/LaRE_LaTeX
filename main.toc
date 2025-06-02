@@ -59,33 +59,33 @@
 \contentsline {subsection}{\numberline {4.1.5}Aparelhos de medida - voltímetro e amperímetro}{80}{subsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.1.6}Experiências}{81}{subsection.4.1.6}%
 \contentsline {subsubsection}{Lei de Ohm}{82}{section*.96}%
-\contentsline {subsubsection}{Rectificadores e filtros}{82}{section*.97}%
-\contentsline {section}{\numberline {4.2}Software}{83}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{84}{subsection.4.2.1}%
-\contentsline {subsubsection}{Estrutura base}{84}{section*.100}%
-\contentsline {subsubsection}{Rotas}{86}{section*.103}%
-\contentsline {subsubsection}{Blueprints}{87}{section*.104}%
-\contentsline {subsubsection}{Pedidos}{88}{section*.105}%
-\contentsline {subsubsection}{Base de dados}{89}{section*.106}%
-\contentsline {subsubsection}{Autenticação}{89}{section*.107}%
-\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{90}{subsection.4.2.2}%
-\contentsline {subsubsection}{Comunicação entre ficheiros}{91}{section*.109}%
-\contentsline {subsubsection}{Comunicação com RaspberryPi}{93}{section*.111}%
-\contentsline {subsubsection}{VirtualBench - Configurações e medições}{95}{section*.112}%
-\contentsline {subsubsection}{Gráficos}{97}{section*.113}%
-\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{98}{subsection.4.2.3}%
-\contentsline {subsubsection}{Lei de \textit {Ohm}}{101}{section*.118}%
-\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{102}{section*.120}%
-\contentsline {subsubsection}{Filtros}{103}{section*.122}%
-\contentsline {chapter}{\numberline {5}Resultados}{105}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{106}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Resultados experimentais}{106}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Rectificadores}{109}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{109}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{110}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Filtros}{110}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{111}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Limitações}{113}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Melhoramentos}{113}{section.5.5}%
-\contentsline {chapter}{Refer\^{e}ncias}{114}{section*.137}%
-\contentsline {chapter}{Anexo \numberline {A}Datasheet}{131}{appendix.1.A}%
+\contentsline {subsubsection}{Rectificadores e filtros}{83}{section*.98}%
+\contentsline {section}{\numberline {4.2}Software}{84}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{85}{subsection.4.2.1}%
+\contentsline {subsubsection}{Estrutura base}{85}{section*.102}%
+\contentsline {subsubsection}{Rotas}{87}{section*.105}%
+\contentsline {subsubsection}{Blueprints}{88}{section*.106}%
+\contentsline {subsubsection}{Pedidos}{89}{section*.107}%
+\contentsline {subsubsection}{Base de dados}{90}{section*.108}%
+\contentsline {subsubsection}{Autenticação}{90}{section*.109}%
+\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{91}{subsection.4.2.2}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{92}{section*.111}%
+\contentsline {subsubsection}{Comunicação com RaspberryPi}{94}{section*.113}%
+\contentsline {subsubsection}{VirtualBench - Configurações e medições}{96}{section*.114}%
+\contentsline {subsubsection}{Gráficos}{98}{section*.115}%
+\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{99}{subsection.4.2.3}%
+\contentsline {subsubsection}{Lei de \textit {Ohm}}{102}{section*.120}%
+\contentsline {subsubsection}{Rectificador de meia onda e onda completa}{103}{section*.122}%
+\contentsline {subsubsection}{Filtros}{104}{section*.124}%
+\contentsline {chapter}{\numberline {5}Resultados}{107}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{108}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Resultados experimentais}{108}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Rectificadores}{111}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{111}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{112}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Filtros}{112}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{113}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Limitações}{115}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Melhoramentos}{115}{section.5.5}%
+\contentsline {chapter}{Refer\^{e}ncias}{116}{section*.139}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{133}{appendix.1.A}%
