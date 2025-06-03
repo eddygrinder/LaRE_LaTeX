@@ -65,11 +65,11 @@ As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{Raspbe
 % 	\end{tabular}
 % \end{table}
 
-No caso particular do exemplo descrito em cima, se $I_{5}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado. No caso em que a trama a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
+No caso particular do exemplo descrito em cima, se $I_{5}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado. No caso em que a \textit{string} a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
 \subsection{Registo de deslocamento}
 \label{sec:hwregistodeslocamento}
-O \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits} do tipo \acrshort{sipo}, cujo funcionamento já foi detalhado na Secção \ref{sec:registodeslocamento}. Uma trama de (até 8) \textit{bits} é enviada pelo \gls{RaspberryPI} para o registo através do pino \acrshort{ser}. Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio:
+O \textit{SN74HC595} é um registo de deslocamento de 8 \textit{bits} do tipo \acrshort{sipo}, cujo funcionamento já foi detalhado na Secção \ref{sec:registodeslocamento}. Uma \textit{string} de (até 8) \textit{bits} é enviada pelo \gls{RaspberryPI} para o registo através do pino \acrshort{ser}. Na Figura \ref{fig:esquematico74hc595} pode ver-se o diagrama explicativo do processo de envio:
 
 \begin{enumerate}
 	\item Pinos \acrshort{oe} e \acrshort{srclr} activados;
@@ -547,7 +547,7 @@ Os seguintes ficheiros foram criados e associados às respectivas experiências:
 \textbf{Comuns}
 \begin{itemize}
 	\item \textit{views.py} - parte central da aplicação, pois nele estão definidas todas as rotas \textit{Flask}. Quer isto dizer que, cada roda representa uma funcionalidade ou página \textit{web} específica e qualquer troca de dados ou argumentos entre ficheiros e/ou \textit{scripts}, passa obrigatoriamente por este ficheiro. Sendo assim, tentou-se, sempre que possível, reduzir o código ao estritamente necessário;
-	\item \textit{configRelays.py} - ficheiro responsável pelo envio da trama de \textbf{bits} para o \textit{RaspberryPI}.
+	\item \textit{configRelays.py} - ficheiro responsável pelo envio da \textit{string} para o \textit{RaspberryPI}.
 	\item \textins{login, base, sign\_up}.html - páginas de autenticação e registo de utilizadores.
 \end{itemize}
 
@@ -642,10 +642,10 @@ Sendo assim, o ficheiro \textit{receive.py} é executado inicialmente e aguarda 
 
 O passo final é a activação dos relés, realizada no ficheiro \textit{shift\textunderscore register.py}, função \textit{commandRelays}. O procedimento foi descrito na Secção \ref{sec:hwregistodeslocamento}, sendo que os modos de funcionamento estão representados na Tabela \ref{Table:funcSN74HC595}.
 
-Para que as experiências funcionem correctamente, todos os relés terão de ser activados ao mesmo tempo. Isto requer que à \textit{string} seja feito um \textit{and bit} a \textit{bit} - \textbf{NOTA: Se calhar explicar melhor como é formada a string, no fundo não é uma string mas uma trama de bits} e cada um deles enviado para o registo de deslocamento, numa configuração \acrshort{sipo}, tal como pode ser visto na Listagem \ref{lst:andbitabit}. Assim que os 8 \textit{bits} ou 13 \textit{bits} forem todos tranferidos para o registo, será activada a saída paralela e o relés activados. \textbf{A REVER: trocar o termo string por trama?} 
+Para que as experiências funcionem correctamente, todos os relés devem ser activados em simultaneo. Para isso, a sequência de controlo dos relés é representada por uma \textit{string} composta por 8 ou 13 digitos binários, conforme as experiências, onde cada carácter indica o estado (ligado ou desligado) de um relé. Esta \textit{string} é posteriormente convertida para um número inteiro, sobre o qual é realizada uma operação de \textit{and bit} a \textit{bit}. Cada um dos \textit{bits} resultantes é, então, enviado sequencialmente para o registo de deslocamento, numa configuração \acrshort{sipo}, conforme ilustrado na Listagem \ref{lst:andbitabit}. Assim que os 8 ou 13 \textit{bits} forem transferidos para o registo, a saída paralela será ativada, resultando na activação dos relés.
 
 \begin{minipage}{0.9\linewidth}
-	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{And bit} \textit{bit shift\textunderscore register - NOME DO FICH}, label=lst:andbitabit]
+	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{And bit} \textit{bit shift\textunderscore register.py}, label=lst:andbitabit]
 		for i in range(n_bits):
 			binaryShift = binaryString & 1
 			if binaryShift == 1:
@@ -654,13 +654,13 @@ Para que as experiências funcionem correctamente, todos os relés terão de ser
 				WriteReg(OFF, SERCLK_pin_ctrl, SER_pin_ctrl, WaitTimeSR)
 			binaryString = binaryString >> 1
 		OutputReg(RCLK_pin_ctrl)
-		return True # Fim da transmissao da trama de bits, reles activados
+		return True # Fim da transmissao da string de bits, reles activados
 	\end{lstlisting}
 \end{minipage}
 
 \subsubsection{VirtualBench - Configurações e medições}
 \label{sec:configmedicaoes}
-O comando e controlo do \acrshort{virtualbench} (e respectivos instrumentos) é realizado através da biblioteca \textit{pyVirtualBench}\footnote{No \textit{site} - \href{https://pymeasure.readthedocs.io/en/latest/api/instruments/ni/virtualbench.html}{\textit{link}} - está incluída documentação detalhada sobre a biblioteca \textit{pyVirtualBench} e os métodos disponíveis para cada instrumento.\label{fnlabel}} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}.
+O comando e controlo do \acrshort{virtualbench} (e respectivos instrumentos) é realizado através da biblioteca \textit{pyVirtualBench}\cite{docpyvirtualbench} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}.
 
 Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se adequam aos objectivos deste projecto são:
 \begin{itemize}

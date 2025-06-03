@@ -18,7 +18,7 @@
 \contentsline {lstlisting}{\numberline {4.10}{\ignorespaces Recepção de parâmetros}}{94}{lstlisting.4.10}%
 \contentsline {lstlisting}{\numberline {4.11}{\ignorespaces Comunicação \textit {python} - \textit {python}}}{95}{lstlisting.4.11}%
 \contentsline {lstlisting}{\numberline {4.12}{\ignorespaces \textit {Block Mode \textins {Sockets} configRelays.py}}}{96}{lstlisting.4.12}%
-\contentsline {lstlisting}{\numberline {4.13}{\ignorespaces \textit {And bit} \textit {bit shift\textunderscore register - NOME DO FICH}}}{97}{lstlisting.4.13}%
+\contentsline {lstlisting}{\numberline {4.13}{\ignorespaces \textit {And bit} \textit {bit shift\textunderscore register.py}}}{97}{lstlisting.4.13}%
 \contentsline {lstlisting}{\numberline {4.14}{\ignorespaces Instanciação da classe \textit {PyVirtualBench}}}{98}{lstlisting.4.14}%
 \contentsline {lstlisting}{\numberline {4.15}{\ignorespaces Exemplo \textit {ps\_example.py}}}{99}{lstlisting.4.15}%
 \contentsline {lstlisting}{\numberline {4.16}{\ignorespaces Cálculo do declive da recta}}{100}{lstlisting.4.16}%

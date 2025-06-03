@@ -127,7 +127,8 @@
 		\setentrycounter[]{page}\glsnumberformat{50\delimR 53}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{59}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{61}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{63\delimN 64}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{63}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{65}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{67\delimR 69}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{75\delimR 78}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{81}\delimN 
@@ -135,7 +136,7 @@
 		\setentrycounter[]{page}\glsnumberformat{87}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{90\delimN 91}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{102\delimN 103}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{109\delimR 117}}}%
+		\setentrycounter[]{page}\glsnumberformat{107\delimR 115}}}%
 \glossentry{lms}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{38\delimN 39}}}%
 \glossentry{laboratório remoto}{\glossaryentrynumbers{\relax 
@@ -240,7 +241,7 @@
 		\setentrycounter[]{page}\glsnumberformat{65}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{77}}}%
 \glossentry{srclr}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{65}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{66}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{77}}}%
 \glossentry{stem}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
@@ -278,8 +279,8 @@
 		\setentrycounter[]{page}\glsnumberformat{87}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{97\delimR 99}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{101}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{104\delimR 107}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{112}}}%
+		\setentrycounter[]{page}\glsnumberformat{104\delimR 106}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{110}}}%
 \glossentry{visir}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{ix}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
