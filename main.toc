@@ -44,7 +44,7 @@
 \contentsline {section}{\numberline {3.6}Software}{67}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{68}{subsection.3.6.1}%
 \contentsline {subsubsection}{\textit {Python}}{68}{section*.78}%
-\contentsline {subsubsection}{\textit {Flask}}{69}{section*.79}%
+\contentsline {subsubsection}{\textit {Flask}}{68}{section*.79}%
 \contentsline {subsubsection}{\textit {Jinja2}}{69}{section*.80}%
 \contentsline {subsection}{\numberline {3.6.2}Front-End}{70}{subsection.3.6.2}%
 \contentsline {subsubsection}{\textit {Webpage}}{70}{section*.81}%
@@ -78,14 +78,15 @@
 \contentsline {subsubsection}{Lei de \textit {Ohm}}{103}{section*.122}%
 \contentsline {subsubsection}{Rectificador de meia onda e onda completa}{105}{section*.124}%
 \contentsline {subsubsection}{Filtros}{106}{section*.126}%
-\contentsline {section}{\numberline {4.3}Lei de \textit {Ohm}}{108}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Resultados experimentais}{108}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Rectificadores}{111}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Resultados experimentais [meia onda]}{111}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Resultados experimentais [onda completa]}{113}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Filtros}{113}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Resultados experimentais [filtro passa-alto]}{113}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Limitações}{116}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Melhoramentos}{116}{section.4.7}%
-\contentsline {chapter}{Refer\^{e}ncias}{117}{section*.140}%
-\contentsline {chapter}{Anexo \numberline {A}Datasheet}{133}{appendix.1.A}%
+\contentsline {chapter}{\numberline {5}Resultados}{109}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{110}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Resultados experimentais}{110}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Rectificadores}{112}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{112}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{114}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Filtros}{114}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{114}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Limitações}{117}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Melhoramentos}{117}{section.5.5}%
+\contentsline {chapter}{Refer\^{e}ncias}{118}{section*.140}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{135}{appendix.1.A}%

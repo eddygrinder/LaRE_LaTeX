@@ -70,7 +70,7 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces \textins {Implementação} Lei de \textit {Ohm}}}{84}{figure.caption.99}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{85}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces \textins {Implementação} rectificadores e filtros}}{86}{figure.caption.102}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{88}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{87}{figure.caption.105}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{88}{figure.caption.106}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{93}{figure.caption.112}%
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Processo de leitura das medições de tensão e corrente}}{95}{figure.caption.114}%
@@ -81,15 +81,16 @@
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Lei de \textit {Ohm} - Selecção dos parâmetros}}{104}{figure.caption.123}%
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Selecção de parâmetros}}{105}{figure.caption.125}%
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Selecção de parâmetros}}{106}{figure.caption.127}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Medição práctica}}{109}{figure.caption.128}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Gráfico da Lei de \textit {Ohm} - \SI {1}{\kilo \ohm } - \acrshort {lare}}}{110}{figure.caption.129}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{110}{figure.caption.131}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare}- meia onda}}{112}{figure.caption.132}%
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{112}{figure.caption.133}%
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{114}{figure.caption.134}%
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{114}{figure.caption.135}%
-\contentsline {figure}{\numberline {4.33}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ experimental \acrshort {lare} - TEMPORÁRIO}}{114}{figure.caption.136}%
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{115}{figure.caption.137}%
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Frequência de corte - \acrshort {lare}}}{115}{figure.caption.138}%
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{116}{figure.caption.139}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Medição práctica}}{110}{figure.caption.128}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfico da Lei de \textit {Ohm} - \SI {1}{\kilo \ohm } - \acrshort {lare}}}{111}{figure.caption.129}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{112}{figure.caption.131}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare}- meia onda}}{113}{figure.caption.132}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{113}{figure.caption.133}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{115}{figure.caption.134}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{115}{figure.caption.135}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ experimental \acrshort {lare} - TEMPORÁRIO}}{116}{figure.caption.136}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{116}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - \acrshort {lare}}}{117}{figure.caption.138}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{117}{figure.caption.139}%
 \addvspace {10\p@ }

@@ -45,27 +45,7 @@ O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimenta
 		\label{fig:ligacao5952003}%
 	\end{figure}
 
-As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{RaspberryPI} através do registo de deslocamento, conforme apresentado na Figura \ref{fig:comandorelesfull}. As saídas $O_{1}$ a $O_{7}$ controlam os relés nos terminais ``3'', enquanto os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}, como ilustrado na Figura \ref{fig:exemplovoltimetro}.
-%O funcionamento está descrito na Listagem \ref{Table:exemplouln2003}:
-
-% \begin{table}[htb]
-% 	\centering
-% 	\caption{Tabela funcionamento \textit{ULN2003A} e relés}
-% 	\label{Table:exemplouln2003}
-% 	\begin{tabular}{ccc}
-% 		\toprule
-% 		\multicolumn{2}{c}{ULN2003A} & Relés                                \\
-% 		\midrule
-% 		Entrada                      & Saída                  & Estado      \\
-% 		\midrule
-% 		``0'' (\SI{0}{\volt})        & ``1'' (\SI{12}{\volt}) & Desactivado \\
-% 		\midrule
-% 		``1'' (\SI{12}{\volt})       & ``0'' (\SI{0}{\volt})  & Activado    \\
-% 		\bottomrule
-% 	\end{tabular}
-% \end{table}
-
-No caso particular do exemplo descrito em cima, se $I_{5}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado. No caso em que a \textit{string} a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
+As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{RaspberryPI} através do registo de deslocamento, conforme apresentado na Figura \ref{fig:comandorelesfull}. As saídas $O_{1}$ a $O_{7}$ controlam os relés nos terminais ``3'', enquanto os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}, como ilustrado na Figura \ref{fig:exemplovoltimetro}. No caso particular do exemplo descrito em cima, se $I_{5}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado. No caso em que a \textit{string} a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
 \subsection{Registo de deslocamento}
 \label{sec:hwregistodeslocamento}
@@ -159,6 +139,7 @@ Sendo assim, para uma tensão de saída de \SI{5}{\volt}, calcularam-se as resis
 \end{equation}
 
 De notar que, segundo o \textit{datasheet} do LM317 \cite{LM317}, $V_{REF} = \SI{1.25}{\volt}$ e o valor do termo $I_{ADJ} \times R_{2}$ pode ser simplificado. De facto, $I_{ADJ}$ é, tipicamente, \SI{50}{\micro\ampere}, sendo que, para o nosso projecto, o valor escolhido para $R_{2}$ foi de \SI{1}{\kilo\ohm}. Assim, segundo a Equação \ref{eq:simplificação}, tem-se que:
+
 \begin{equation} \label{eq:simplificação}
 	V_{ADJ} = I_{ADJ} \times R_{2} = \SI{0.05}{\volt}
 \end{equation}
@@ -247,9 +228,7 @@ Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado da L
 
 No entanto, faz-se notar o seguinte: Embora os aparelhos de medida sejam independentes, partilham a mesma massa. Esta escolha foi motivada pela indisponibilidade de relés duplos em contexto laboratorial, pelo que se optou por fazer a gestão da forma a que o propósito do projecto fosse atingido e o conceito provado. Na Figura \ref{fig:full_reles} apresenta-se o esquema simplificado, com os relés duplos, adicionados aos aparelhos de medida. 
 
-De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão implementados. 
-
-A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
+De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão implementados. A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
 \begin{table}[htb]
 	\centering
@@ -293,11 +272,10 @@ Na Figura~\ref{fig:esq_geral_ohm} apresenta-se o esquema simplificado da impleme
 	\label{fig:Implementacaoleideohm}
 \end{figure}
 
-A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$.
+A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$. 
 
-O funcionamento do circuito é relativamente simples, sendo que qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$.
+O funcionamento do circuito é relativamente simples, sendo que qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$. A medição da tensão e da corrente faz-se da seguinte forma:
 
-A medição da tensão e da corrente faz-se da seguinte forma:
 \begin{itemize}
 	\item Medição da tensão:
 	      \begin{itemize}
@@ -329,9 +307,7 @@ Na Figura \ref{fig:graphohm} está representado um exemplo de um gráfico obtido
 
 \subsubsection{Rectificadores e filtros}
 \label{sec:rectificadoresfiltros}
-Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. 
-
-Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta. O esquema completo encontra-se representado no Anexo \ref{AppendixA}.
+Uma vez que a implementação destas duas experiência foi realizada na mesma placa, além de que partilham componentes, optou-se por apresentá-las em conjunto. Na Figura \ref{fig:rectificacao_filtragem_full} estão representados os esquemas simplificados dos circuitos. Nela se podem ver os componentes comuns - rectângulo tracejado laranja - assim como os rectificadores de meia e onda completa - rectângulo tracejado vermelho e verde, respectivamente. Exclusivo dos filtros estão, também, representados, o condensador e resistência, no rectângulo tracejado magenta. O esquema completo encontra-se representado no Anexo \ref{AppendixA}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -349,13 +325,9 @@ A Figura~\ref{fig:implementacaoplacarectificadores}, já anteriormente apresenta
 	\label{fig:implementacaoplacarectificadores}
 \end{figure}
 
-Como referido na Secção \ref{sec:experiencias}, a implementação dos filtros foi realizada após a conclusão dos rectificadores. De forma a permitir a integração desta experiência no circuito já concluído, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (assinalado pelo retângulo tracejado a vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Esta alteração permitiu a introdução de uma resistência ($R_{3}$) ou de um condensador ($C_{3}$), consoante a configuração do filtro em estudo.
+Como referido na Secção \ref{sec:experiencias}, a implementação dos filtros foi realizada após a conclusão dos rectificadores. De forma a permitir a integração desta experiência no circuito já concluído, foi necessário realizar um \textit{bypass} ao díodo $D_{1}$ (assinalado pelo retângulo tracejado a vermelho na Figura \ref{fig:rectificacao_filtragem_full}). Esta alteração permitiu a introdução de uma resistência ($R_{3}$) ou de um condensador ($C_{3}$), consoante a configuração do filtro em estudo. Os esquemas teóricos dos filtros estão representados nas Figuras \ref{fig:filtro_pb} e \ref{fig:filtro_pa}, sendo que $R$ e $C$  correspondem a $R_{3}$ e $C_{3}$. 
 
-Os esquemas teóricos dos filtros estão representados nas Figuras \ref{fig:filtro_pb} e \ref{fig:filtro_pa}, sendo que $R$ e $C$  correspondem a $R_{3}$ e $C_{3}$.
-
-Portanto, se se pretender estudar o filtro passa-baixo, é activado o relé $K_{10}$ ($R_{3}$) e o condensador de saída pode ser escolhido entre os $C_{1}$ e $C_{2}$, consoante a configuração que se pretende estudar. O mesmo se aplica ao filtro passa-alto, onde o relé $K_{11}$ ($C_{3}$) é activado e a resistência de saída pode ser escolhida entre os $R_{1}$ e $R_{2}$. 
-
-Na Tabela \ref{Table:rectificadoresfiltros} e com o auxílio da Figura \ref{fig:rectificacao_filtragem_full} (ou do circuito completo apresentado no Anexo \ref{AppendixA}), pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
+Portanto, se se pretender estudar o filtro passa-baixo, é activado o relé $K_{10}$ ($R_{3}$) e o condensador de saída pode ser escolhido entre os $C_{1}$ e $C_{2}$, consoante a configuração que se pretende estudar. O mesmo se aplica ao filtro passa-alto, onde o relé $K_{11}$ ($C_{3}$) é activado e a resistência de saída pode ser escolhida entre os $R_{1}$ e $R_{2}$. Na Tabela \ref{Table:rectificadoresfiltros} e com o auxílio da Figura \ref{fig:rectificacao_filtragem_full} (ou do circuito completo apresentado no Anexo \ref{AppendixA}), pode ver-se o estado dos relés, respeitante a uma combinação possível para cada circuito. 
 
 \begin{table}[htb]
 	\centering
@@ -387,9 +359,7 @@ Este projeto de código fonte aberto está dividido em dois repositórios, dispo
 
 \subsection{Servidor Flask}
 \label{sec:flask}
-Na Secção \ref{sec:back-end} foram já referidas as razões que levaram à escolha do \textit{Flask} como servidor \textit{web}. 
-
-A base para a implementação do \textit{Flask} teve como base e referência a documentação técnica disponível no \textit{site} do \textit{Flask} \cite{Flask} e complementada com alguns tutoriais do \textit{Youtube} \cite{tutorialsiteflask, flaskDigitalOcean}.
+Na Secção \ref{sec:back-end} foram já referidas as razões que levaram à escolha do \textit{Flask} como servidor \textit{web}. A base para a implementação do \textit{Flask} teve como base e referência a documentação técnica disponível no \textit{site} do \textit{Flask} \cite{Flask} e complementada com alguns tutoriais do \textit{Youtube} \cite{tutorialsiteflask, flaskDigitalOcean}.
 
 \subsubsection{Estrutura base}
 O fluxograma apresentado na Figura \ref{fig:funcflask} apresenta o funcionamento geral do servidor \textit{Flask}.
@@ -458,14 +428,11 @@ if user:
 \end{lstlisting}
 \end{minipage}
 
-Isto quer dizer que o \textit{Flask} gera a \acrshort{url} correspondente à função \textit{\textbf{home()}} definida no ficheiro \textit{\textbf{views.py}} dentro da \textit{Blueprint} \textit{views}. Quando usada dentro de \textit{\textbf{redirect}}, redireciona o utilizador para essa \acrshort{url}.
-
-No \textit{Flask}, os \textit{decorators} são utilizados para associar funcionalidades adicionais a funções que representam rotas. Um \textit{decorator} é uma construção da linguagem \textit{Python} que permite modificar o comportamento de uma função sem alterar o seu conteúdo. Ao utilizar \textit{@route}, \textit{@login\_required} e outros \textit{decorators}, o \textit{Flask} cria uma camada adicional de lógica que é aplicada automaticamente antes (ou depois) da execução da função ``decorada''.
+Isto quer dizer que o \textit{Flask} gera a \acrshort{url} correspondente à função \textit{\textbf{home()}} definida no ficheiro \textit{\textbf{views.py}} dentro da \textit{Blueprint} \textit{views}. Quando usada dentro de \textit{\textbf{redirect}}, redireciona o utilizador para essa \acrshort{url}. No \textit{Flask}, os \textit{decorators} são utilizados para associar funcionalidades adicionais a funções que representam rotas. Um \textit{decorator} é uma construção da linguagem \textit{Python} que permite modificar o comportamento de uma função sem alterar o seu conteúdo. Ao utilizar \textit{@route}, \textit{@login\_required} e outros \textit{decorators}, o \textit{Flask} cria uma camada adicional de lógica que é aplicada automaticamente antes (ou depois) da execução da função ``decorada''.
 
 \subsubsection{Blueprints}
-O \textit{Flask} usa um conceito de \textit{blueprints} para criar componentes de aplicações e suportar padrões comuns dentro de uma aplicação ou entre aplicações. As \textit{blueprints} podem simplificar muito o funcionamento de grandes aplicações e fornecer um meio central para que as extensões do \textit{Flask} registem operações em aplicações. As \textit{blueprints} permitem organizar a aplicação em partes menores e de mais fácil gestão. O conceito básico das \textit{blueprints} é que registam as operações a executar quando são integrados numa aplicação. O \textit{Flask} associa funções de vista (\textit{views}) a \textit{blueprints} quando processa pedidos e gera \acrshort{url} entre diferentes pontos de acesso.
+O \textit{Flask} usa um conceito de \textit{blueprints} para criar componentes de aplicações e suportar padrões comuns dentro de uma aplicação ou entre aplicações. As \textit{blueprints} podem simplificar muito o funcionamento de grandes aplicações e fornecer um meio central para que as extensões do \textit{Flask} registem operações em aplicações. As \textit{blueprints} permitem organizar a aplicação em partes menores e de mais fácil gestão. O conceito básico das \textit{blueprints} é que registam as operações a executar quando são integrados numa aplicação. O \textit{Flask} associa funções de vista (\textit{views}) a \textit{blueprints} quando processa pedidos e gera \acrshort{url} entre diferentes pontos de acesso. Na Listagem~\ref{lst:blueprintviews} e Listagem~\ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
 
-Na Listagem~\ref{lst:blueprintviews} e Listagem~\ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
 \begin{center}
 	\begin{minipage}{0.7\linewidth}
 		\begin{lstlisting}[language=Python, caption=\textit{Blueprint views} - \textit{views.py}, label=lst:blueprintviews]
@@ -504,19 +471,15 @@ const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistan
 \end{lstlisting}
 \end{minipage}
 
-Como referido na Secção~\ref{sec:jinja2}, a renderização das páginas \acrshort{html} é realizada através do motor \textit{Jinja}. No caso específico do \acrshort{lare}, o \textit{Flask} procura os modelos a renderizar na pasta \textit{templates}, conforme ilustrado na Figura~\ref{fig:estruturapastas}. 
-
-Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros do \acrshort{url} com \textit{\textbf{get}} ou capturando o \textit{\textbf{KeyError}}, uma vez que os utilizadores podem alterar o \acrshort{url} e, nesse caso, apresentar uma página \textit{400 bad request} não é de fácil interpretação.
+Como referido na Secção~\ref{sec:jinja2}, a renderização das páginas \acrshort{html} é realizada através do motor \textit{Jinja}. No caso específico do \acrshort{lare}, o \textit{Flask} procura os modelos a renderizar na pasta \textit{templates}, conforme ilustrado na Figura~\ref{fig:estruturapastas}. Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros do \acrshort{url} com \textit{\textbf{get}} ou capturando o \textit{\textbf{KeyError}}, uma vez que os utilizadores podem alterar o \acrshort{url} e, nesse caso, apresentar uma página \textit{400 bad request} não é de fácil interpretação.
 
 \subsubsection{Base de dados}
-A aplicação desenvolvida usa uma base de dados e autenticação de utilizador, a ligação com a base de dados é aberta no início do pedido e é obtida a informação do utilizador. No final do pedido, a ligação com a base de dados é fechada.
+A aplicação desenvolvida usa uma base de dados e autenticação de utilizador, a ligação com a base de dados é aberta no início do pedido e é obtida a informação do utilizador. No final do pedido, a ligação com a base de dados é fechada. 
 
 No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{SQLAlchemy}. Tal como sugeridoo na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, descrita no ficheiro \textit{\textunderscore\textunderscore init.py\textunderscore\textunderscore}.
 
 \subsubsection{Autenticação}
-A segurança da aplicação é assegurada através das funcionalidades de \textit{login} e \textit{logout}, implementadas no ficheiro \textit{auth.py}. Para tal, foi instalada a extensão \textit{flask-login}.
-
-Esta extensão facilita a gestão de sessões de utilizadores, permitindo manter o estado autenticado entre diferentes requisições, fornecendo métodos como \textbf{\textit{login\textunderscore user()}}, \textbf{\textit{logout\textunderscore user()}} e \textbf{\textit{current\textunderscore user}}, que simplificam a verificação do estado de autenticação. O processo de registo envolve a recolha de credenciais, como nome de utilizador e senha, garantindo o armazenamento seguro da senha através de \textbf{\textit{hashing}} com \textbf{\textit{generate\textunderscore password\textunderscore hash}}. No \textit{login}, a aplicação verifica as credenciais fornecidas, compara a senha inserida com a armazenada usando \textbf{\textit{check\textunderscore password\textunderscore hash}} e, se for válida, inicia a sessão do utilizador. Além disso, certas rotas são protegidas para garantir que apenas utilizadores autenticados as possam aceder, utilizando o \textit{decorator} \textbf{\textit{@login\textunderscore required}}, que redireciona utilizadores não autenticados para a página de \textit{login}. A gestão de sessões é feita através de \textit{cookies} seguros, permitindo ainda a funcionalidade de lembrar a sessão entre reinícios do navegador, caso seja activado o parâmetro \textbf{\textit{remember=True}} no \textbf{\textit{login\textunderscore user}}. 
+A segurança da aplicação é assegurada através das funcionalidades de \textit{login} e \textit{logout}, implementadas no ficheiro \textit{auth.py}. Para esse fim, foi instalada a extensão \textit{flask-login} que simplifica a gestão de sessões de utilizadores ao permitir manter o estado autenticado entre diferentes requisições. Esta ferramenta disponibiliza métodos como \textbf{\textit{login\textunderscore user()}}, \textbf{\textit{logout\textunderscore user()}} e \textbf{\textit{current\textunderscore user}}, que simplificam a verificação e controlo do estado de autenticação. O processo de registo envolve a recolha de credenciais, como nome de utilizador e senha, garantindo o armazenamento seguro da senha através de \textbf{\textit{hashing}} com \textbf{\textit{generate\textunderscore password\textunderscore hash}}. No \textit{login}, a aplicação verifica as credenciais fornecidas, compara a senha inserida com a armazenada usando \textbf{\textit{check\textunderscore password\textunderscore hash}} e, se for válida, inicia a sessão do utilizador. Além disso, certas rotas são protegidas para garantir que apenas utilizadores autenticados as possam aceder, utilizando o \textit{decorator} \textbf{\textit{@login\textunderscore required}}, que redireciona utilizadores não autenticados para a página de \textit{login}. A gestão de sessões é feita através de \textit{cookies} seguros, permitindo ainda a funcionalidade de lembrar a sessão entre reinícios do navegador, caso seja activado o parâmetro \textbf{\textit{remember=True}} no \textbf{\textit{login\textunderscore user}}. 
 
 Devido à complexidade da implementação de uma verificação por \textit{email}, a aplicação restringe-se à autenticação baseada apenas no nome de utilizador e senha. A inclusão desse mecanismo exigiria um serviço de envio de \textit{emails} e a gestão de \textit{tokens} de confirmação.
 
@@ -610,9 +573,7 @@ No entanto, o processo de medição na experiência da Lei de \textit{Ohm} possu
 	\label{fig:processoleituraUI}
 \end{figure}
 
-As setas a verde e vermelho representam o fluxo do processo iniciado pelo utilizador ao solicitar uma medição. Este ciclo repete-se cinco vezes para cada grandeza (tensão e corrente). No entanto, como o ficheiro \textit{configVB.py} é executado de forma independente em cada chamada, num total de dez execuções, os valores medidos não são retidos entre invocações sucessivas. Para contornar esta limitação e garantir a persistência das medições ao longo das múltiplas chamadas à \acrshort{api}, sem recorrer a mecanismos clássicos de persistência, como ficheiros \textit{.json}, \textit{.csv} ou bases de dados locais — os quais implicariam operações adicionais de escrita e leitura no sistema de ficheiros — foi desenvolvido um módulo auxiliar em \textit{Python}, implementado no ficheiro \textit{store\_ps\_dmm.py}. Este módulo utiliza variáveis globais como mecanismo de armazenamento em memória. Os valores de tensão e corrente são armazenados num \textit{array} através da função \textit{np.append}, da biblioteca \textit{NumPy} \cite{NumPy}.
-
-Dado que o servidor \textit{Flask} se mantém activo durante todo o processo de medição, as variáveis globais permanecem acessíveis em memória entre chamadas à \acrshort{api}. Esta abordagem simplifica a gestão do estado da aplicação numa fase inicial de desenvolvimento, sendo eficaz enquanto o processo da aplicação não for reiniciado.
+As setas a verde e vermelho representam o fluxo do processo iniciado pelo utilizador ao solicitar uma medição. Este ciclo repete-se cinco vezes para cada grandeza (tensão e corrente). No entanto, como o ficheiro \textit{configVB.py} é executado de forma independente em cada chamada, num total de dez execuções, os valores medidos não são retidos entre invocações sucessivas. Para contornar esta limitação e garantir a persistência das medições ao longo das múltiplas chamadas à \acrshort{api}, sem recorrer a mecanismos clássicos de persistência, como ficheiros \textit{.json}, \textit{.csv} ou bases de dados locais — os quais implicariam operações adicionais de escrita e leitura no sistema de ficheiros — foi desenvolvido um módulo auxiliar em \textit{Python}, implementado no ficheiro \textit{store\_ps\_dmm.py}. Este módulo utiliza variáveis globais como mecanismo de armazenamento em memória. Os valores de tensão e corrente são armazenados num \textit{array} através da função \textit{np.append}, da biblioteca \textit{NumPy} \cite{NumPy}. Dado que o servidor \textit{Flask} se mantém activo durante todo o processo de medição, as variáveis globais permanecem acessíveis em memória entre chamadas à \acrshort{api}. Esta abordagem simplifica a gestão do estado da aplicação numa fase inicial de desenvolvimento, sendo eficaz enquanto o processo da aplicação não for reiniciado.
 
 \subsubsection{Comunicação com RaspberryPi}
 \label{sec:raspberrypi}
@@ -695,9 +656,7 @@ A aquisição do \acrshort{virtualbench}, identificado como \textit{VB8012-30A21
 \end{minipage}
 \end{center}
 
-A partir do objeto \textit{virtualbench}, é possível aceder aos diferentes instrumentos, sendo que a aquisição é feita através do método \textit{acquire\_\textless instrumento\textgreater()}. Essa instância é armazenada numa variável definida pelo utilizador, permitindo o acesso às funcionalidades de configuração, controlo e medição disponibilizadas por esse instrumento. Na Listagem \ref{lst:instanciacao}, linha \ref{line:acquireps}, pode ver-se, a título de exemplo, como é feita a aquisição da fonte de alimentação, que é armazenada na variável \textit{ps}.
-
-Um exemplo da configuração da fonte está descrita na Listagem \ref{lst:exemploconfigps}
+A partir do objeto \textit{virtualbench}, é possível aceder aos diferentes instrumentos, sendo que a aquisição é feita através do método \textit{acquire\_\textless instrumento\textgreater()}. Essa instância é armazenada numa variável definida pelo utilizador, permitindo o acesso às funcionalidades de configuração, controlo e medição disponibilizadas por esse instrumento. Na Listagem \ref{lst:instanciacao}, linha \ref{line:acquireps}, pode ver-se, a título de exemplo, como é feita a aquisição da fonte de alimentação, que é armazenada na variável \textit{ps}. Um exemplo da configuração da fonte está descrita na Listagem \ref{lst:exemploconfigps}
 
 \begin{minipage}{0.7\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemploconfigps]
@@ -722,9 +681,8 @@ Um exemplo da configuração da fonte está descrita na Listagem \ref{lst:exempl
 
 No final da execução, os instrumentos e o \acrshort{virtualbench} têm de ser libertados, por esta ordem. Isto é feito através do método \textit{instrumento.release()}. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. 
 
-De referir que vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. 
+De referir que vários instrumentos podem ser chamados simultaneamente e, para cada um deles, assim como para o \acrshort{virtualbench}, é criada uma instância para o respectivo objecto, cuja referência corresponde a um endereço de memória. O resultado das instruções na Linha~\ref{line:acquireps} e Linha~\ref{line:vb8012} da Listagem~\ref{lst:instanciacao} é:
 
-O resultado das instruções na Linha~\ref{line:acquireps} e Linha~\ref{line:vb8012} da Listagem~\ref{lst:instanciacao} é:
 \begin{itemize}
 	\item (...)PyVirtualBench object at 0x000001E7DEECAD20.
 	\item (...)PyVirtualBench.PowerSupply object at 0x000001E7DEECB2F0;
@@ -734,9 +692,7 @@ No entanto, se um ficheiro for chamado várias vezes (como no caso da experiênc
 
 \subsubsection{Gráficos}
 \label{sec:graficos}
-Os gráficos apresentados são gerados com recurso às bibliotecas \textit{NumPy} \cite{NumPy} e \textit{Matplotlib} \cite{Matplotlib}, amplamente utilizadas em \textit{Python}. 
-
-A \textit{NumPy} é uma biblioteca fundamental para computação científica, permitindo a manipulação eficiente de \textit{arrays} multidimensionais e fornecendo um vasto conjunto de funções matemáticas, estatísticas e de álgebra linear. No contexto da construção de gráficos, o \textit{NumPy} é essencial na preparação e transformação dos dados a representar. O declive da recta obtido experimentalmente, no estudo da Lei de \textit{Ohm}, representado na Listagem \ref{lst:decliverecta}, foi calculado com recurso à biblioteca \textit{SciPy}, que disponibiliza ferramentas avançadas de análise científica, incluindo ajustamento de curvas e complementa a \textit{NumPy}, sobre a qual está construída.
+Os gráficos apresentados são gerados com recurso às bibliotecas \textit{NumPy} \cite{NumPy} e \textit{Matplotlib} \cite{Matplotlib}, amplamente utilizadas em \textit{Python}. A \textit{NumPy} é uma biblioteca fundamental para computação científica, permitindo a manipulação eficiente de \textit{arrays} multidimensionais e fornecendo um vasto conjunto de funções matemáticas, estatísticas e de álgebra linear. No contexto da construção de gráficos, o \textit{NumPy} é essencial na preparação e transformação dos dados a representar. O declive da recta obtido experimentalmente, no estudo da Lei de \textit{Ohm}, representado na Listagem \ref{lst:decliverecta}, foi calculado com recurso à biblioteca \textit{SciPy}, que disponibiliza ferramentas avançadas de análise científica, incluindo ajustamento de curvas e complementa a \textit{NumPy}, sobre a qual está construída.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=Cálculo do declive da recta, label=lst:decliverecta]
@@ -888,9 +844,7 @@ Sendo assim, o procedimento para a realização da experiência é o seguinte:
 
 \subsubsection{Rectificador de meia onda e onda completa}
 \label{sec:rectificadores}
-Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}.
-
-A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa já referenciado na Secção \ref{sec:fontealternada}, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
+Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}. A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa já referenciado na Secção \ref{sec:fontealternada}, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
 
 A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiência do rectificador de meia onda. Os utilizadores podem seleccionar quatro valores para o termo RC, sendo que os valores de C estão definidos para \SI{1}{\micro\farad} e \SI{10}{\micro\farad} e a frequência varia entre \SI{5}{\hertz} e \SI{2000}{\hertz}. 
 
@@ -932,11 +886,8 @@ As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas às do
 		\label{fig:controlofiltros}%
 \end{figure}
 
-Consoante a configuração do filtro, o utilizador escolhe entre dois condensadores ou duas resistências, representados no rectângulo tracejado cor-de-laranja, na Figura \ref{fig:rectificacao_filtragem_full}. Como já foi referido na Secção \ref{sec:experiencias}, os componentes dentro do rectângulo tracejado vermelho, representados na mesma figura, foram adicionados após a implementação dos rectificadores. Assim, quando se pretende estudar o filtro passa-baixo, o utilizador escolhe entre os dois condensadores (de saída) e se pretender estudar o passa-alto, escolhe entre as duas resistências (de saída). 
+Consoante a configuração do filtro, o utilizador escolhe entre dois condensadores ou duas resistências, representados no rectângulo tracejado cor-de-laranja, na Figura \ref{fig:rectificacao_filtragem_full}. Como já foi referido na Secção \ref{sec:experiencias}, os componentes dentro do rectângulo tracejado vermelho, representados na mesma figura, foram adicionados após a implementação dos rectificadores. Assim, quando se pretende estudar o filtro passa-baixo, o utilizador escolhe entre os dois condensadores (de saída) e se pretender estudar o passa-alto, escolhe entre as duas resistências (de saída). Eventualmente, poder-se-iam ter adicionado mais resistências/condensadores aos filtros, nomeadamente, no rectângulo tracejado vermelho, de forma a permitir uma maior versatilidade no estudo. No entanto, além de não existir o número suficiente de relés em contexto laboratorial, considerou-se que, desta forma, o estudo e os objectivos da experiência, ficariam provados. O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. O procedimento para a realização da experiência é o seguinte:
 
-Eventualmente, poder-se-ia ter adicionado mais resistências/condensadores aos filtros, nomeadamente, no rectângulo tracejado vermelho, de forma a permitir uma maior versatilidade no estudo. No entanto, além de não existir o número suficiente de relés em contexto laboratorial, considerou-se que, desta forma, o estudo e os objectivos da experiência, ficariam provados. O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. 
-
-O procedimento para a realização da experiência é o seguinte:
 \begin{enumerate}
 	\item Seleccionar ``OK'' para activar a fonte do \acrshort{virtualbench} e alimentar os integrados;
 	\item Escolher o valor do condensador - passa-baixo;

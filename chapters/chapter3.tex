@@ -185,7 +185,7 @@ A Figura~\ref{fig:blocosrectificacao} apresenta o diagrama de blocos simplificad
 	\label{fig:blocosrectificacao}
 \end{figure}
 
-A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do filtro do rectificador, Bloco 3, como representado na Figura \ref{fig:blocosrectificacao}. Esta componente deve ser minimizada para estabilizar a tensão de saída em corrente contínua, Bloco 4, representado na mesma figura \cite{sedrasmith}. A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
+A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída da filtragem, Bloco 3, como representado na Figura \ref{fig:blocosrectificacao}. Esta componente deve ser minimizada para estabilizar a tensão de saída em corrente contínua, Bloco 4, representado na mesma figura \cite{sedrasmith}. A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple.png}
@@ -426,9 +426,7 @@ Comum às versões anteriores, o \gls{RaspberryPI} possui um conector de 40 pino
     \label{fig:gpio}
 \end{figure}
 
-A corrente no \gls{RaspberryPI} pode ser configurada para valores entre \SI{2}{\milli\ampere} e \SI{16}{\milli\ampere} (em intervalos de \SI{2}{\milli\ampere}) por cada \acrshort{gpio}. No entanto, quando vários \acrshort{gpio}s são utilizados em simultâneo, o valor total combinado da corrente não deve exceder os \SI{50}{\milli\ampere}. Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o \gls{RaspberryPI} corre o risco de se danificar irremediavelmente. \cite{Raspberrytech}. 
-
-Na Figura \ref{fig:gpiocores} está representada uma forma alternativa de visualizar os \acrshort{gpio}s, mais intuitiva e que permite perceber melhor a função dos pinos. Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurados como entrada ou saída; a vermelho, laranja e preto as alimentações de \SI{5}{\volt}, \SI{3.3}{\volt} e \textit{ground}, respectivamentee. Por fim, os \acrshort{gpio}s representados pela cor branca, \acrshort{gpio}0  e \acrshort{gpio}1, correspondentes aos pinos físicos 27 e 28, respectivamente, estão reservados para utilização avançada, nomeadamente, a comunicação \acrshort{i2c} com a \gls{eeprom} de identificação presente em \gls{hat}s compatíveis. Esta \gls{eeprom} permite a configuração automática do sistema aquando do arranque. 
+A corrente no \gls{RaspberryPI} pode ser configurada para valores entre \SI{2}{\milli\ampere} e \SI{16}{\milli\ampere} (em intervalos de \SI{2}{\milli\ampere}) por cada \acrshort{gpio}. No entanto, quando vários \acrshort{gpio}s são utilizados em simultâneo, o valor total combinado da corrente não deve exceder os \SI{50}{\milli\ampere}. Se for fornecida uma tensão superior a \SI{3.3}{\volt} aos \acrshort{gpio}s, o \gls{RaspberryPI} corre o risco de se danificar irremediavelmente. \cite{Raspberrytech}. Na Figura \ref{fig:gpiocores} está representada uma forma alternativa de visualizar os \acrshort{gpio}s, mais intuitiva e que permite perceber melhor a função dos pinos. Representados a cor amarela estão os \acrshort{gpio}s que podem ser configurados como entrada ou saída; a vermelho, laranja e preto as alimentações de \SI{5}{\volt}, \SI{3.3}{\volt} e \textit{ground}, respectivamentee. Por fim, os \acrshort{gpio}s representados pela cor branca, \acrshort{gpio}0  e \acrshort{gpio}1, correspondentes aos pinos físicos 27 e 28, respectivamente, estão reservados para utilização avançada, nomeadamente, a comunicação \acrshort{i2c} com a \gls{eeprom} de identificação presente em \gls{hat}s compatíveis. Esta \gls{eeprom} permite a configuração automática do sistema aquando do arranque. 
 
 \begin{figure}[hbtp]
     \centering
@@ -449,13 +447,11 @@ Os relés electromecânicos são constituídos por uma bobine e um contacto, que
     \label{fig:esquematicoreles}
 \end{figure}
 
-Ainda na Figura \ref{fig:esquematicoreles} pode ver-se a inclusão do díodo de ``roda livre'', que é comum em muitos relés. Este díodo é usado para proteger o circuito de comando de picos de tensão induzidos pela bobine do relé, quando a corrente é desligada, segundo a Lei de Faraday. O díodo permite que a corrente induzida pela bobine circule em circuito fechado, evitando danos no circuito comandados pelos relés.
+Ainda na Figura \ref{fig:esquematicoreles} pode observar-se a inclusão do díodo de ``roda livre'', comum em muitos circuitos de comando com relés. Este díodo é utilizado para proteger o circuito de comando de picos de tensão induzidos pela bobine do relé, quando a corrente é desligada, segundo a Lei de Faraday. O díodo permite que a corrente induzida pela bobine circule em circuito fechado, evitando danos nos componentes de comando. 
 
-Os relés utilizados no \acrshort{lare} estavam disponíveis em contexto laboratorial e são em tudo idênticos aos que se encontram montados no \acrshort{visir}  do \acrshort{isep}.
+Os relés utilizados no \acrshort{lare} estavam disponíveis em contexto laboratorial e são em tudo idênticos aos que se encontram instalados no \acrshort{visir}  do \acrshort{isep}. Foram usados dois tipos de relés: simples ()\acrfull{spst}) e duplos (\acrfull{dpst}), como ilustrado na Figura \ref {fig:reles}. Ambos os modelos são da marca \textit{Comus} - o relé \acrshort{spst}, ref. 3570-1331-123 e o relé \acrshort{dpst}, ref. 3572-1220-123. As características principais encontram-se descritas no Anexo \ref{AppendixA} e as completas nos respectivos \textit{datasheet} \cite{DryRelay}. 
 
-No \acrshort{lare} foram usados dois tipos de relés - simples, \acrfull{spst} e duplos, \acrfull{dpst}, como se pode ver na Figura \ref {fig:reles}.
-
-Os modelos utilizados foram ambos da \textit{Comus}: relé \acrshort{spst}, ref. 3570-1331-123 e relé \acrshort{dpst}, ref. 3572-1220-123. As características mais importantes encontram-se descritas no Anexo \ref{AppendixA} e as completas nos respectivos \textit{datasheet} \cite{DryRelay}. Os dois primeiros quartetos indicam a série do relé e os três números indicam a tensão nominal da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos relés usados, esta tensão é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
+Nos códigos de referência dos relés, os dois primeiros quartetos indicam a série, enquanto os três dígitos indicam a tensão nominal da bobine e a presença, ou não, do díodo de ``roda livre''. No caso dos modelos utilizados, esta tensão é de \SI{12}{\volt} e o díodo está ligado entre os pinos 2(+) e 6(-) \cite{DryRelay}. Sempre que possível, tentou-se utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes. Serão devidamente referidos os casos em que isso não foi possível, por indisponibilidade dos componentes.
 
 \begin{figure}[hbtp]
     \centering
@@ -469,10 +465,7 @@ Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os rel�
 
 \subsection{\textit{Driver} de Relés}
 \label{sec:driver}
-O circuito integrado ULN2003A, é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial.
-Tipicamente, é usado em conjunto com microcontroladores ou \gls{RaspberryPI}\footnote{Importa distinguir entre \gls{sbc}s, como o \gls{RaspberryPI} e microcontroladores, como o Arduino. Enquanto os \gls{sbc}s funcionam como computadores completos capazes de executar sistemas operativos e aplicações complexas, os microcontroladores são dispositivos mais simples, ideais para tarefas de controlo directo, operando sem sistema operativo e com recursos significativamente mais limitados.} no comando de cargas indutivas, como motores, bobines e relés.
-
-Estes \textit{drivers} possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
+O circuito integrado ULN2003A, é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial. Tipicamente, é usado em conjunto com microcontroladores ou \gls{RaspberryPI}\footnote{Importa distinguir entre \gls{sbc}s, como o \gls{RaspberryPI} e microcontroladores, como o Arduino. Enquanto os \gls{sbc}s funcionam como computadores completos capazes de executar sistemas operativos e aplicações complexas, os microcontroladores são dispositivos mais simples, ideais para tarefas de controlo directo, operando sem sistema operativo e com recursos significativamente mais limitados.} no comando de cargas indutivas, como motores, bobines e relés. Estes \textit{drivers} possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
 
 \begin{figure}[hbtp]
     \centering
@@ -483,13 +476,11 @@ Estes \textit{drivers} possuem sete pares de transístores NPN, em configuraçã
 
 A corrente de colector de saída (única) é de \SI{500}{\mA} e a corrente de entrada, para uma tensão de entrada de \SI{3.85}{\volt}, é \SI{0.93}{\mA} \cite{ULN2003}.
 
-Pela análise dos esquemas, representados no Anexo \ref{AppendixA} e já referenciado na Secção \ref{sec:matriz}, verifica-se que os \acrshort{gpio}s disponíveis no \gls{RaspberryPI} - 26 no total - não são suficientes para comandar os relés do \acrshort{lare}. Ao todo são utilizados 21 relés, o que corresponderia a 21 saídas, faltando adicionar 10 \acrshort{gpio}s necessários para o controlo da transmissão das tramas de \textit{bits}. Sendo assim, houve a necessidade de criar uma solução que permitisse comandar os relés, já que o \gls{RaspberryPI} não possui \acrshort{gpio}s suficientes.
+Pela análise dos esquemas, representados no Anexo \ref{AppendixA} e já referenciado na Secção \ref{sec:matriz}, verifica-se que os \acrshort{gpio}s disponíveis no \gls{RaspberryPI} - 26 no total - não são suficientes para comandar os relés do \acrshort{lare}. Ao todo são utilizados 21 relés, o que corresponderia a 21 saídas, faltando adicionar 10 \acrshort{gpio}s necessários para o controlo da transmissão das \textit{strings} de \textit{bits}. Sendo assim, houve a necessidade de criar uma solução que permitisse comandar os relés, já que o \gls{RaspberryPI} não possui \acrshort{gpio}s suficientes.
 
 \subsection{Registo de deslocamento}
 \label{sec:registodeslocamento}
-O uso de registos de deslocamento foi a solução encontrada de forma a ultrapassar o problema da falta de \acrshort{gpio}s.
-
-O \textit{SN74HC595}\footnote{Doravante, sempre que for referido registo de deslocamento, subentende-se o circuito integrado \textit{SN74HC595}.} é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 \textit{bits} com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O sinal de relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.
+O uso de registos de deslocamento foi a solução encontrada de forma a ultrapassar o problema da falta de \acrshort{gpio}s. O \textit{SN74HC595}\footnote{Doravante, sempre que for referido registo de deslocamento, subentende-se o circuito integrado \textit{SN74HC595}.} é um circuito integrado comum e bastante utilizado que contém um registo de deslocamento de 8 \textit{bits} com saídas \textit{3-State}, do tipo \acrfull{sipo}, que alimenta um registo de armazenamento do tipo D, também de 8 \textit{bits} e com saídas paralelas \textit{3-State}. O sinal de relógio para o registo de deslocamento e armazenamento é independente. A potência consumida é muito baixa, assim como a corrente de entrada \cite{SN74HC595}.
 
 Descrição dos pinos de controlo:
 \begin{itemize}
@@ -505,7 +496,7 @@ Descrição dos pinos de controlo:
 \end{itemize}
 
 Como referido na Secção~\ref{sec:matriz}, a experiência da Lei de \textit{Ohm} requer 8 relés, enquanto as experiências de rectificadores e filtros necessitam de 13. Cada relé é acionado por um \textit{bit} de um registo de deslocamento, sendo que cada registo permite o controlo de até 8 relés. Assim, é necessário um registo para a experiência da Lei de \textit{Ohm} e dois registos para as experiências de rectificação e filtragem.
-Deste modo, é enviada uma trama de 8 ou 13 \textit{bits}, conforme a experiência a controlar - os \textit{bits} são enviados um-a-um, armazenados no registo e depois enviados para a saída. Dado que o número de \textit{bits} varia entre experiências e estas se encontram distribuídas por duas placas distintas (conforme descrito na Secção~\ref{sec:matriz}), optou-se por utilizar pinos diferentes do \gls{RaspberryPI} para o envio das tramas. No Anexo \ref{AppendixA}, Figura 11 e Figura 12, estão definidos os pinos usados na configuração e envio das tramas. A Figura \ref{fig:SN74HC595blocos} representa o diagrama de blocos do registo e a Tabela \ref{Table:funcSN74HC595} representa os modos de funcionamento.
+Deste modo, é enviada uma \textit{string} de 8 ou 13 \textit{bits}, conforme a experiência a controlar - os \textit{bits} são enviados um-a-um, armazenados no registo e depois enviados para a saída. Dado que o número de \textit{bits} varia entre experiências e estas se encontram distribuídas por duas placas distintas (conforme descrito na Secção~\ref{sec:matriz}), optou-se por utilizar pinos diferentes do \gls{RaspberryPI} para o envio das \textit{strings}. No Anexo \ref{AppendixA}, Figura 11 e Figura 12, estão definidos os pinos usados na configuração e envio das \textit{strings}. A Figura~\ref{fig:SN74HC595blocos} apresenta o diagrama de blocos do registo de deslocamento, enquanto a Tabela~\ref{Table:funcSN74HC595} descreve os seus modos de funcionamento. Como se pode observar, o controlo do envio de uma \textit{string} de dados requer 5 pinos \acrshort{gpio} configurados como saídas. Deste modo, para comandar os relés das experiências distribuídas pelas duas placas, são necessários 10 pinos \acrshort{gpio} no total.
 
 \begin{figure}[hbtp]
     \centering
@@ -513,8 +504,6 @@ Deste modo, é enviada uma trama de 8 ou 13 \textit{bits}, conforme a experiênc
     \caption{Diagrama \textins{em corte} de blocos SN74HC595 \cite{SN74HC595}}
     \label{fig:SN74HC595blocos}
 \end{figure}
-
-Como se pode verificar na Tabela~\ref{Table:funcSN74HC595}, são necessários 5 \acrshort{gpio}, configurados como saídas, para controlar o envio de uma trama. Assim, para comandar os relés associados às experiências implementadas nas duas placas, são utilizados 10 pinos \acrshort{gpio} no total.
 
 Importa notar que seria tecnicamente possível reduzir este número para apenas 6 pinos, utilizando os mesmos sinais de controlo para ambos os registos de deslocamento e activando-os seletivamente através da linha \textit{OE - Output Enable} de cada registo. No entanto, dado que a implementação e os testes dos circuitos foram realizados de forma faseada, optou-se por manter conjuntos de pinos independentes para cada registo de deslocamento, facilitando a deteção e resolução de eventuais erros. As implicações ao nível do \textit{software} de programação são mínimas e ao nível do \textit{hardware} estão dentro dos limites de número de \acrshort{gpio}s do \gls{RaspberryPI}.
 
@@ -535,9 +524,9 @@ Importa notar que seria tecnicamente possível reduzir este número para apenas 
             \multicolumn{1}{l}{$\overline{OE}$}    &
             \multicolumn{1}{c}{}                                                                                                                                                        \\
             \midrule
-            X                                      & X                                           & X & X          & H & Saídas $Q_A$ – $Q_H$ estão desabilitadas.                       \\
+            X                                      & X                                           & X & X          & H & Saídas $Q_A$ - $Q_H$ estão desabilitadas.                       \\
             \midrule
-            X                                      & X                                           & X & X          & L & Saídas $Q_A$ – $Q_H$ estão habilitadas.                         \\
+            X                                      & X                                           & X & X          & L & Saídas $Q_A$ - $Q_H$ estão habilitadas.                         \\
             \midrule
             X                                      & X                                           & L & X          & X & Registo de deslocamento é limpo.                                \\
             \midrule
@@ -565,11 +554,11 @@ Importa notar que seria tecnicamente possível reduzir este número para apenas 
 \label{sec:arquitecturasoftware} 
 O \textit{software} do \acrshort{lare} foi dividido em duas grandes partes: \textit{Back-end} e \textit{Front-end}.
 
-Por \textit{Back-end} pode entender-se toda a programação e os processos a correr em segundo plano, que sustentam o funcionamento do \acrshort{lare}, incluindo servidor, \acrshort{api}s ou base de dados \cite{FrontbackEnd}. Existe uma grande variedade de linguagens de programação, \textit{frameworks} e ferramentas para realizar a gestão do \textit{Back-end}. Na implementação do \acrshort{lare}, utilizou-se o \textit{Python} como linguagem de programação e o \textit{Flask} como \textit{Framework}.
+Por \textit{Back-end} entende-se toda a programação e os processos que correm em segundo plano w que sustentam o funcionamento do \acrshort{lare}, incluindo o servidor, as \acrshort{api}s ou base de dados \cite{FrontbackEnd}. Existem diversas linguagens de programação, \textit{frameworks} e ferramentas para gerir esta parte do sistema. Na implementação do \acrshort{lare}, foi utilizada a linguagem \textit{Python}, em conjunto com a \textit{Framework} \textit{Flask} .
 
-Já o \textit{Front-end} gere a parte do \textit{site}, isto é, a \textit{interface} com o utilizador e as aplicações que os utilizadores veem e com as quais interagem para realizar determinadas tarefas. As linguagens utilizadas na implementação do \textit{Front-end} para o \acrshort{lare} foram o \acrshort{html}, \acrfull{css} e \textit{JavaScript}. Enquanto o \acrshort{html} é a ``espinha dorsal'' estrutural de um \textit{site}, o \acrshort{css} lida com a aparência personalizada que define o estilo dos elementos visuais e o JavaScript afecta a forma como os elementos da página se movimentam \cite{FrontbackEnd}.
+O \textit{Front-end}, por sua vez, gere a \textit{interface} do \textit{site}, ou seja, a camada com que o utilizador interage directamente. As linguagens utilizadas na sua implementação foram o \acrshort{html}, \acrfull{css} e \textit{JavaScript}. Enquanto o \acrshort{html} constitui a estrutura base da página, o \acrshort{css} define o estilo visual dos elementos o \textit{JavaScript} permite a criação de comportamentos dinâmicos e interactivos \cite{FrontbackEnd}.
 
-De uma forma resumida, o desenvolvimento de \textit{Front-end} refere-se ao lado do cliente (aspeto de uma página \textit{Web}) e o desenvolvimento de \textit{Back-end} refere-se ao lado do servidor (funcionamento de uma página \textit{Web}).
+De forma resumida, o desenvolvimento de \textit{Front-end} corresponde ao lado do cliente (aspecto da página \textit{Web}), enquanto o \textit{Back-end} diz respeito ao lado do servidor (funcionamento da página \textit{Web}).
 
 \subsection{\textit{Back-End}}
 \label{sec:back-end}
@@ -586,14 +575,12 @@ O \textit{Python} é uma linguagem poderosa e fácil de aprender. Possui estrutu
 
 Como desvantagens há a referir que, comparado com outras linguagens, o \textit{Python} é mais lento em termos de execução, já que é um tipo de linguagem de alto-nível, pelo que não é adaptado para aplicações móveis e consome mais recursos \cite{pythonvantagens} \cite{5MainDispython}.
 
-Ainda assim, segundo a \textit{\href{https://spectrum.ieee.org/the-top-programming-languages-2023}{\textit{IEEE Spectrum}}} \cite{ieeespectrum}, o \textit{Python} foi considerada a linguagem mais popular em 2023.
+Ainda assim, segundo a \textit{IEEE Spectrum} \cite{ieeespectrum}, a linguagem \textit{Python} foi considerada a mais popular em 2023.
 
 \subsubsection{\textit{Flask}}
 O \textit{Flask} é uma \textit{framework} leve e flexível para \textit{Python} que segue a filosofia \textit{UNIX} de ``fazer uma coisa bem feita''. A escolha do \textit{Flask} deveu-se, essencialmente, à facilidade de integração com o \textit{Python}, sendo uma das \textit{frameworks} mais populares em \textit{Python} \cite{Flask}. É uma \textit{framework} de aplicações \acrfull{wsgi} que descreve a forma como um servidor \textit{Web} comunica com aplicações \textit{Web} e como essas aplicações podem ser encadeadas para processar um pedido \cite{wsgi}. Depende, ainda do  \textit{Jinja}, que é um motor de criação de modelos que permite escrever código semelhante à sintaxe do \textit{Python}, de forma a renderizar o documento final \cite{Jinja}.
 
-Tal como foi referido na Secção \ref{sec:contextualização}, foram ainda analisadas várias opções, incluindo a \textit{Django}, outra \textit{framework} bastante popular. Em \cite{Djangovsflask} e \cite{FlaskvsDjango}, por exemplo, é feita uma comparação exaustiva entre as duas \textit{frameworks}, não havendo uma decisão final sobre qual a melhor, mas sim sobre qual a que melhor se adapta às necessidades de implementação e desenvolvimento dos projectos.
-
-No entanto, o \textit{Flask} foi concebido para tornar a iniciação rápida e fácil, com a capacidade de evoluir até aplicações mais complexas, sendo mais adapatado a pequenos projectos.
+Tal como foi referido na Secção \ref{sec:contextualização}, foram ainda analisadas várias opções, incluindo a \textit{Django}, outra \textit{framework} bastante popular. Em \cite{Djangovsflask} e \cite{FlaskvsDjango}, por exemplo, é feita uma comparação exaustiva entre as duas \textit{frameworks}, não havendo uma decisão final sobre qual a melhor, mas sim sobre qual a que melhor se adapta às necessidades de implementação e desenvolvimento dos projectos. No entanto, o \textit{Flask} foi concebido para tornar a iniciação rápida e fácil, com a capacidade de evoluir até aplicações mais complexas, sendo mais adapatado a pequenos projectos.
 
 Pelas razões referidas anteriormente, e tendo em conta a análise feita aos prós e contras, considerou-se que tanto o \textit{Python} como o \textit{Flask} são as linguagens que melhor se enquadram e adaptam aos objectivos propostos para o \acrshort{lare}.
 
@@ -624,9 +611,7 @@ O mecanismo de \textit{renderização} disponibilizado pelo \textit{Flask}, atra
 \subsection{Front-End}
 \label{sec:frontend}
 \subsubsection{\textit{Webpage}}
-Como já foi referido na Secção \ref{sec:arquitecturasoftware}, o \textit{Front-end} diz respeito ao aspecto gráfico das páginas \textit{Web} e pretende-se que a prioridade na construção da página seja a simplicidade.
-
-A escolha do desenvolvimento da página recaiu no \acrshort{html}, \acrshort{css} e (pontualmente - \textbf{REVER}) \textit{JavaScript}.
+Como já foi referido na Secção \ref{sec:arquitecturasoftware}, o \textit{Front-end} diz respeito ao aspecto gráfico das páginas \textit{Web} e pretende-se que a prioridade na construção da página seja a simplicidade. A escolha do desenvolvimento da página recaiu no \acrshort{html}, \acrshort{css} e \textit{JavaScript}.
 
 O \acrshort{html} é a linguagem \textit{standard}, usada para definir a estrutura do seu conteúdo e consiste numa série de elementos usados para delimitar ou agrupar diferentes partes do conteúdo. As \textit{tags} ou etiquetas, podem transformar uma palavra ou imagem num \textit{hyperlink}, pôr palavras em itálico, aumentar ou diminuir a fonte, etc. \cite{HTMLbasics}
 
@@ -646,9 +631,7 @@ Na Figura \ref{fig:estruturahtml} está representada a estrutura de uma página 
     \label{fig:estruturahtml}
 \end{figure}
 
-Segundo o consórcio \gls{w3c}, as \acrshort{css} são mecanismos fundamentais para a separação de preocupações no desenvolvimento \textit{web}. Ao delegar a responsabilidade de formatação visual no \acrshort{css}, o \acrshort{html} concentra-se na estrutura semântica do conteúdo. Isso resulta num código mais limpo, de fácil manutenção e acessível. As regras de estilo, que especificam como os elementos \acrshort{html} devem ser apresentados, podem ser aplicadas a elementos individuais, classes ou \textit{IDs}, permitindo um alto grau de customização. Além disso, o \acrshort{css} oferece a possibilidade de criar hierarquias de estilos, onde os mais específicos sobrepõem aos mais gerais. As folhas de estilo podem ser inseridas diretamente no documento \acrshort{html} ou vinculadas a ele através de um arquivo externo, proporcionando maior organização e reutilização de estilos \cite{w3ccss}.
-
-Um exemplo simples pode ser visto na Listagem \ref{lst:excss}.
+Segundo o consórcio \gls{w3c}, as \acrshort{css} são mecanismos fundamentais para a separação de preocupações no desenvolvimento \textit{web}. Ao delegar a responsabilidade de formatação visual no \acrshort{css}, o \acrshort{html} concentra-se na estrutura semântica do conteúdo. Isso resulta num código mais limpo, de fácil manutenção e acessível. As regras de estilo, que especificam como os elementos \acrshort{html} devem ser apresentados, podem ser aplicadas a elementos individuais, classes ou \textit{IDs}, permitindo um alto grau de customização. Além disso, o \acrshort{css} oferece a possibilidade de criar hierarquias de estilos, onde os mais específicos sobrepõem aos mais gerais. As folhas de estilo podem ser inseridas diretamente no documento \acrshort{html} ou vinculadas a ele através de um arquivo externo, proporcionando maior organização e reutilização de estilos \cite{w3ccss}. Um exemplo simples pode ser visto na Listagem \ref{lst:excss}.
 
 \begin{minipage}{0.9\linewidth}
     \begin{lstlisting}[language=HTML, caption=Exemplo \acrshort{css} incluído na página \acrshort{html} \cite{Startingcss}, label=lst:excss]
@@ -698,9 +681,7 @@ Por sua vez, o ficheiro \textit{\textbf{meuestilo.css}} da forma apresentada na 
 
 As folhas de estilo \acrshort{css} e as páginas \acrshort{html} podem ser validadas para garantir que estão de acordo com os padrões definidos pelo consórcio \gls{w3c} \cite{cssvalidator, htmlvalidator}. Esta validação é importante para assegurar a compatibilidade entre navegadores e dispositivos, bem como para melhorar a acessibilidade e a experiência do utilizador.
 
-Já o \textit{JavaScript} é uma linguagem de programação orientada para objectos e utilizada principalmente para \textit{scripts} dinâmicos do lado do cliente, permitindo que uma aplicação coloque elementos num formulário \acrshort{html} e responda a eventos do utilizador, como cliques do rato, preenchimento de formulários e navegação na página. Também pode ser utilizada no lado do servidor, permitindo que uma aplicação comunique com uma base de dados, mantenha a continuidade das informações entre diferentes chamadas da aplicação ou manipule ficheiro no servidor. Isso significa que, no navegador, o \textit{JavaScript} pode alterar a aparência da página e, da mesma forma, o \textit{Node.js} - versão mais avançada do \textit{JavaScript} no servidor - pode responder a solicitações personalizadas enviadas pelo código executado no navegador.  Os programas escritos nesta linguagem são designados por \textit{scripts} e podem ser inseridos diretamente numa página \acrshort{html}, sendo executados automaticamente aquando do seu carregamento. Por serem interpretados, estes scripts são escritos em texto simples e não requerem compilação prévia para serem executados. O JavaScript pode ser executado não apenas nos navegadores, mas também nos servidores, ou, basicamente, em qualquer dispositivo que tenha um \textit{JavaScript Engine}, isto é, \textit{software} específico que execute o código \textit{JavaScript} \cite{JavaScriptRef}.
-
-Na Listagem \ref{lst:exemplojava} está representado um exemplo de \textit{JavaScript} que desabilita os seletores de um formulário quando o botão ``OK'' é clicado.
+Já o \textit{JavaScript} é uma linguagem de programação orientada para objectos e utilizada principalmente para \textit{scripts} dinâmicos do lado do cliente, permitindo que uma aplicação coloque elementos num formulário \acrshort{html} e responda a eventos do utilizador, como cliques do rato, preenchimento de formulários e navegação na página. Também pode ser utilizada no lado do servidor, permitindo que uma aplicação comunique com uma base de dados, mantenha a continuidade das informações entre diferentes chamadas da aplicação ou manipule ficheiro no servidor. Isso significa que, no navegador, o \textit{JavaScript} pode alterar a aparência da página e, da mesma forma, o \textit{Node.js} - versão mais avançada do \textit{JavaScript} no servidor - pode responder a solicitações personalizadas enviadas pelo código executado no navegador.  Os programas escritos nesta linguagem são designados por \textit{scripts} e podem ser inseridos diretamente numa página \acrshort{html}, sendo executados automaticamente aquando do seu carregamento. Por serem interpretados, estes scripts são escritos em texto simples e não requerem compilação prévia para serem executados. O JavaScript pode ser executado não apenas nos navegadores, mas também nos servidores, ou, basicamente, em qualquer dispositivo que tenha um \textit{JavaScript Engine}, isto é, \textit{software} específico que execute o código \textit{JavaScript} \cite{JavaScriptRef}. Na Listagem \ref{lst:exemplojava} está representado um exemplo de \textit{JavaScript} que desabilita os seletores de um formulário quando o botão ``OK'' é clicado.
 
 \begin{minipage}{0.9\linewidth}
     \begin{lstlisting}[language=HTML, caption=Exemplo de \textit{JavaScript}, label=lst:exemplojava]
