@@ -169,6 +169,22 @@ No caso em que a resistência é dada, o declive pode ser calculado e confrontad
 \label{sec:circuitosrectificadores}
 Nas experiências dos rectificadores pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação, consoante as quatro combinações possíveis dos pares resistência/condensador e a influência que têm na variação da tensão de \textit{ripple}. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} - \textbf{NOTA: Estes limites podem ter que ser ajustados} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
+A Figura~\ref{fig:blocosrectificacao} apresenta o diagrama de blocos simplificado do processo de rectificação, que pode ser usado, por exemplo, para o projecto duma fonte de alimentação em contexto de sala de aula. Este é composto por quatro blocos principais:
+
+\begin{itemize}
+    \item Bloco 1 - Transformador: reduz a tensão proveniente da rede eléctrica para valores mais baixos e adequada ao nível de tensão alternada que se deseja;
+    \item Bloco 2 - Rectificação: realiza a conversão da tensão alternada \acrshort{ca} em tensão contínua unidirecional, ainda com ondulação;
+    \item Bloco 3 - Filtragem: responsável pela suavização da forma de onda, reduzindo a componente alternada (\textit{ripple});
+    \item Bloco 4 - Estabilização:  regula e estabiliza a tensão de saída, garantindo um valor contínuo e constante.
+\end{itemize}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/diagramablocosrectificacao.png}
+	\caption{Diagrama de blocos da rectificação \textins{meia onda e onda completa}}
+	\label{fig:blocosrectificacao}
+\end{figure}
+
 A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do filtro do rectificador, Bloco 3, como representado na Figura \ref{fig:blocosrectificacao}. Esta componente deve ser minimizada para estabilizar a tensão de saída em corrente contínua, Bloco 4, representado na mesma figura \cite{sedrasmith}. A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
 \begin{figure}[hbtp]
 	\centering
