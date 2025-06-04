@@ -1,11 +1,11 @@
 % Chapter 5
 \label{Capítulo5}
-\chapter{Resultados}
-\begin{center}
-    \textit{``Newton's third law. You've got to leave something behind''}
-     
-     Cooper
-\end{center}
+
+\begin{flushright}
+\textit{``Newton's third law. You've got to leave something behind''} \\[0.5em]
+--- Cooper, \textit{Interstellar}
+\end{flushright}
+
 Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. 
 
 Como forma de uniformizar conceitos, apesar de tanto as experiências desenvolvidas no \acrshort{lare} como as realizadas na ``placa branca'' serem reais, designar-se-ão os testes efetuados na ``placa branca'' como experiências práticas ou valores práticos.
@@ -23,20 +23,11 @@ As experiências podem ser realizadas com diferentes combinações e configuraç
 
 \section{Lei de \textit{Ohm}}
 \label{sec:resultados_lei_de_ohm}
-O objetivo desta experiência é determinar o valor de uma determinada resistência através do cálculo do declive da recta obtida no gráfico da tensão em função da corrente e, assim, confirmar a Lei de \textit{Ohm}. A Figura \ref{fig:graphohmrepetido}, que novamente aqui se apresenta, representa o gráfico esperado. \textbf{NOTA: Vale a pena? é correcto? Opinião PROF}
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.3\textwidth]{figures/grafico_Ohm.png}
-	\caption{Gráfico da Lei de \textit{Ohm}}
-	\label{fig:graphohmrepetido}
-\end{figure}
+O objetivo desta experiência é determinar o valor de uma determinada resistência através do cálculo do declive da recta obtida no gráfico da tensão em função da corrente apresentado na Figura \ref{fig:graphohm} e, assim, confirmar a Lei de \textit{Ohm}.
 
 \subsection{Resultados experimentais}
 \label{sec:resultados_praticosOHM}
-No \acrshort{lare} o utilizador efectua cinco medições de cada grandeza (tensão e corrente), para uma das três resistências disponíveis.
-
-Na Figura \ref{fig:resultados_medicoes_1k} está representado o resultado de um par de medições para uma resistência de \SI{1}{\kilo\ohm}. As restantes medições, em intervalos de \SI{1}{\volt} até \SI{5}{\volt}, são obtidas de forma análoga.
+No \acrshort{lare} o utilizador efectua cinco medições de cada grandeza (tensão e corrente), para uma das três resistências disponíveis. Na Figura \ref{fig:resultados_medicoes_1k} está representado o resultado de um par de medições para uma resistência de \SI{1}{\kilo\ohm}. As restantes medições, em intervalos de \SI{1}{\volt} até \SI{5}{\volt}, são obtidas de forma análoga.
 
 \begin{figure}[hbtp]
 	\centering
@@ -45,12 +36,10 @@ Na Figura \ref{fig:resultados_medicoes_1k} está representado o resultado de um 
 	\label{fig:resultados_medicoes_1k}
 \end{figure}
 
-O valor real da resistência, obtida por medição directa, é de \SI{998}{\ohm}, estando dentro da tolerância que é de $\pm$5\%.
-
-O erro associado aos instrumentos de medição pode ser considerado desprezável. De acordo com as especificações do modelo \textit{VB-8012}\cite{datasheetvb8012}, a precisão para medições de tensão em corrente contínua é:
+O valor real da resistência, obtida por medição directa, é de \SI{998}{\ohm}, estando dentro da tolerância que é de $\pm$5\%. O erro associado aos instrumentos de medição pode ser considerado desprezável. De acordo com as especificações do modelo \textit{VB-8012}\cite{datasheetvb8012}, a precisão para medições de tensão em corrente contínua é:
 
 \begin{itemize}
-	\item Faixa de \SI{1}{\volt}
+	\item Escala de \SI{1}{\volt}
 	\begin{itemize}
 		\item Precisão garantida (1 ano): $\pm$(0.015\% da leitura $\pm$ 0.005\% da faixa)
 	\end{itemize}
@@ -60,12 +49,12 @@ Estes valores indicam que, para uma leitura de \SI{1}{\volt}, o erro máximo est
 
 Portanto, a diferença entre a tensão fornecida pela fonte — \SI{1}{\volt} — e os valores medidos — \SI{0.98}{\volt} e \SI{0.97}{\milli\ampere} — deve-se, principalmente, à tolerância da resistência utilizada. Assim, conclui-se que os valores medidos se encontram dentro dos limites expectáveis, sendo perfeitamente aceitáveis face às tolerâncias envolvidas.
 
-O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figura \ref{fig:grafico_LaRE_1k}. O declive da recta, que representa a resistência, foi calculado e confrontado com o valor real da resistência. 
+O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figura \ref{fig:grafico_LaRE_1k}. O declive da recta, que representa a resistência, foi calculado e comparado com o valor real da resistência. 
 
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/ohm_graph.png}
-	\caption{Gráfico da Lei de \textit{Ohm} - \SI{1}{\kilo\ohm} - MUDAR}
+	\caption{Gráfico da Lei de \textit{Ohm} - \SI{1}{\kilo\ohm} - \acrshort{lare}}
 	\label{fig:grafico_LaRE_1k}
 \end{figure}
 
@@ -123,15 +112,13 @@ Verifica-se, através da análise dos gráficos, que os dados obtidos com o \acr
 
 \section{Rectificadores}
 \label{sec:resultados_rectificadores}
-As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. COLOCAR REFERÊNCIA.
+As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). 
 
-As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). \textbf{NOTA: Aqui coloquei a referência às imagens, ao contrário da Lei de ohm. Opinião PROF}
 \subsection{Resultados experimentais [meia onda]}
 \label{sec:resultados_RectificadoresMeiaOnda}
-\textbf{NOTA: Para manter a corência, colocar a foto da pagina de medição}	
 Nestas experiências implementadas no \acrshort{lare} os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
 
-Sendo assim, a análise será feita para o caso em que $f=\SI{200}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{4.7}{\micro\farad}$. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
+Sendo assim, o exemplo da análise será feita para o caso em que $f=\SI{200}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{4.7}{\micro\farad}$. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
 
 \begin{equation} \label{eq:verificarcondicao}
 	\SI{2.2}{\kilo\ohm} * \SI{4.7}{\micro\farad} >> \dfrac{1}{200}

@@ -639,6 +639,10 @@ DigitalOcean, ``(887) getting started with flask | 1-hour tech talk - youtube.''
 ``Numpy.''
 \newblock [Online; accessed 2025-04-15].
 
+\bibitem{docpyvirtualbench}
+N.~Instruments, ``Ni virtual bench — pymeasure 0.15.1.dev69+g6ab0fdb.d20250312 documentation.''
+\newblock [Online; accessed 2025-03-12].
+
 \bibitem{Matplotlib}
 ``Matplotlib — visualization with python.''
 \newblock [Online; accessed 2025-04-30].

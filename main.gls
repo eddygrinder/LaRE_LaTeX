@@ -13,14 +13,14 @@
 		\setentrycounter[]{page}\glsnumberformat{27}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossentry{eeprom}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{63}}}%
+		\setentrycounter[]{page}\glsnumberformat{62}}}%
 \glossentry{ESP32}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{23}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{30}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{49}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossentry{hat}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{63}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{62}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossentry{industria40}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
@@ -37,10 +37,11 @@
 \glossentry{RaspberryPI}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{23}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{35}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{49\delimR 53}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{60\delimR 62}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{49\delimR 52}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{59}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61\delimN 62}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{64\delimR 67}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{75\delimR 77}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{73\delimR 75}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{sbc}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{61}\delimN 
@@ -53,6 +54,5 @@
 \glsgroupheading{W}\relax \glsresetentrylist %
 \glossentry{w3c}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{xx}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{70}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{72}}}%
+		\setentrycounter[]{page}\glsnumberformat{70\delimN 71}}}%
 \end{theglossary}\glossarypostamble

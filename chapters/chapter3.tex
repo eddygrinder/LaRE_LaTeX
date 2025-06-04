@@ -9,12 +9,11 @@ Neste capítulo descreve-se o processo que levou à criação do \acrshort{lare}
 
 \section{Contextualização}
 \label{sec:contextualização}
-Como já foi referido na Secção \ref{sec:Objectivos} o principal objectivo desta dissertação passa pelo desenvolvimento de um \acrshort{laboratório remoto} para o ensino da electrónica, que visa colmatar (ou resolver) alguns dos problemas que afectam o \acrshort{visir}.
+Como já foi referido na Secção \ref{sec:Objectivos} o principal objectivo desta dissertação passa pelo desenvolvimento de um \acrshort{laboratório remoto} para o ensino da electrónica, que visa colmatar (ou resolver) algumas dos limitações que afectam o \acrshort{visir}.
 
-Como referido na Secção \ref{sec:visir}, o \textit{software} do \acrshort{visir} foi lançado sob a licença GNU GPL. 
-No entanto, o \textit{software} de programação do \textit{firmware} do controlador da matriz, fornecido com a própria matriz, não é livre. Isto significa que não pode ser programado ou atualizado por terceiros. ALém disso, como referido na Secção \ref{sec:visir}, o equipamento que inclui módulos e placas de instrumentação é controlado pelo \acrshort{labview}, cujas diferentes versões apresentam preços que variam, aproximadamente, entre os 523€ e os 4300€ anuais \cite{labviewpricing}.
+De acordo com a Secção~\ref{sec:visir}, o \textit{software} do \acrshort{visir} foi disponibilizado sob licença GNU GPL. No entanto, o \textit{software} de programação do \textit{firmware} do controlador da matriz, fornecido com o próprio sistema, não é livre, o que significa que não pode ser modificado ou atualizado por terceiros. Acresce ainda que o equipamento associado aos módulos e placas de instrumentação é controlado através do \acrshort{labview}, cujas licenças têm custos anuais que variam entre 523€ e 4300€, conforme a versão adquirida \cite{labviewpricing}.
 
-A criação do \acrshort{laboratório remoto} surge como forma de resolver alguns dos problemas que afectam o \acrshort{visir}. Numa fase mais embrionária, foram feitos alguns testes de controlo de relés com o \gls{arduino} Mega, representado na Figura \ref{fig:arduinomega}, juntamente com um \acrfull{ide} simples desenvolvido em \acrshort{labview}.
+A criação do \acrshort{laboratório remoto} surge, assim, como resposta prática a estas limitações. Numa fase inicial do desenvolvimento, foram realizados testes preliminares de controlo de relés utilizando um \gls{arduino} Mega, representado na Figura~\ref{fig:arduinomega}, em conjunto com um ambiente de programação simples implementado em \acrshort{labview}.
 
 \begin{figure}[hbtp]
     \centering
@@ -23,9 +22,7 @@ A criação do \acrshort{laboratório remoto} surge como forma de resolver algun
     \label{fig:arduinomega}
 \end{figure}
 
-No entanto, de forma a ultrapassar o problema levantado pelo elevado preço do \acrshort{labview}, surge um segundo objectivo que se prende com a substituição deste \textit{software} por outro que fosse gratuito e \textit{open source}. A eliminação do \acrshort{labview} implicou a implementação de um servidor. Sendo assim, numa primeira abordagem, foram analisadas algumas opções, tais como: \textit{FastApi}\footnote{\url{https://fastapi.tiangolo.com/}}, \textit{Django}\footnote{\url{https://www.djangoproject.com/}} e \textit{Flask}\footnote{\url{https://flask.palletsprojects.com/en/3.0.x/}}.
-
-As opções analisadas enquadram-se no que se pode chamar \textit{frameworks} ou \textit{micro-frameworks}. Neste caso são todas desenvolvidas para aplicação em \gls{python}.
+No entanto, de forma a ultrapassar o problema levantado pelo elevado preço do \acrshort{labview}, surge um segundo objectivo que se prende com a substituição deste \textit{software} por outro que fosse gratuito e \textit{open source}. A eliminação do \acrshort{labview} implicou a implementação de um servidor. Sendo assim, numa primeira abordagem, foram analisadas algumas opções, tais como: \textit{FastApi}\footnote{\url{https://fastapi.tiangolo.com/}}, \textit{Django}\footnote{\url{https://www.djangoproject.com/}} e \textit{Flask}\footnote{\url{https://flask.palletsprojects.com/en/3.0.x/}}. Estas opções enquadram-se no que se pode chamar \textit{frameworks} ou \textit{micro-frameworks}. Neste caso são todas desenvolvidas para aplicação em \gls{python}.
 
 Uma \textit{micro-framework} é um tipo de \textit{framework} minimalista, que fornece apenas as funcionalidades essenciais para o desenvolvimento de aplicações, sem incluir bibliotecas ou componentes adicionais que não os estritamente necessários. Isso permite a quem desenvolve adicionar apenas as funcionalidades específicas para cada projecto ou aplicação. Daqui resulta um ambiente de desenvolvimento mais leve e flexível \cite{Flask}.
 Optou-se, então, pelo \textit{Flask} e as razões da escolha, assim como uma explicação mais detalhada serão apresentadas na Secção \ref{sec:arquitecturasoftware}.
@@ -33,9 +30,7 @@ Optou-se, então, pelo \textit{Flask} e as razões da escolha, assim como uma ex
 É possível combinar o \gls{arduino} com o \gls{python}, mas isso implicaria uma mudança ao nível do \textit{firmware}, uma tarefa que não é trivial \cite{Arduinopython}. A linguagem nativa do \gls{arduino} é similar ao \textit{C++} e o \textit{firmware} instalado foi projectado para interpretar e executar código escrito nesse tipo de linguagem. De forma mais rigorosa, o uso do \textit{Python} no \gls{arduino} ou em qualquer outro microcontrolador, faz-se através de \textit{MicroPython}, uma implementação simples e eficiente do \gls{python} que inclui um pequeno subconjunto da bibliotecas padrão e é optimizado para funcionar em microcontroladores e em ambientes limitados \cite{MicroPythondefinition}. Quer isto dizer que todas as bibliotecas usadas na programação da aplicação ou projecto têm de ser carregadas para a memória dos microcontroladores. No caso do \gls{arduino} Mega, uma análise ao \textit{datasheet} \cite{megadatasheet} revela que este tem \SI{256}{Kbytes} reservados para o envio de programas e \SI{8}{Kbytes} de memória \textit{SRAM} reservado para variáveis temporárias.
 Além destes problemas de memória e uma vez que é necessário que o \gls{arduino} funcione como servidor, a versão apresentada na Figura \ref{fig:arduinomega} não é adequada.
 
-No mercado, existe o \gls{ESP32}, uma alternativa mais poderosa que o \gls{arduino} e com placa de rede sem fios integrada, tal como é apresentado na Figura \ref{fig:ESP32}. No entanto, este microcontrolador sofre dos mesmos problemas de memória que o \gls{arduino} Mega e da utilização do \textit{MicroPython}. Uma análise ao \textit{datasheet} \cite{esp32datasheet} revela que a memória \textit{flash} varia entre os 4-16 \acrlong{mb}. No modelo ''ESP32-DEVKITC-32E``, que estava disponível para este projecto, o valor é de 4 \acrshort{mb} \cite{diferencaspython}.
-
-Estas limitações não permitem a implementação de um servidor minimamente robusto usando o \gls{arduino} Mega ou o \gls{ESP32}.
+No mercado, existe o \gls{ESP32}, uma alternativa mais poderosa que o \gls{arduino} e com placa de rede sem fios integrada, tal como é apresentado na Figura \ref{fig:ESP32}. No entanto, este microcontrolador sofre dos mesmos problemas de memória que o \gls{arduino} Mega e da utilização do \textit{MicroPython}. Uma análise ao \textit{datasheet} \cite{esp32datasheet} revela que a memória \textit{flash} varia entre os 4-16 \acrlong{mb}. No modelo ''ESP32-DEVKITC-32E``, que estava disponível para este projecto, o valor é de 4 \acrshort{mb} \cite{diferencaspython}. Estas limitações não permitem a implementação de um servidor minimamente robusto usando o \gls{arduino} Mega ou o \gls{ESP32}.
 
 \begin{figure}[hbtp]
     \centering
@@ -44,7 +39,7 @@ Estas limitações não permitem a implementação de um servidor minimamente ro
     \label{fig:ESP32}
 \end{figure}
 
-A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, sempre que for referido \textit{RaspberryPI}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão mais actual, apresentada na Figura \ref{fig:Raspberrypi5}. 
+A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, sempre que for referido \textit{Raspberry Pi}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão mais actual, apresentada na Figura \ref{fig:Raspberrypi5}. 
 
 \begin{figure}[hbtp]
     \centering
@@ -57,28 +52,20 @@ Considerou-se, portanto, que seria uma mais-valia desenvolver um \acrshort{labor
 \begin{itemize}
     \item \gls{python} como linguagem principal;
     \item \gls{RaspberryPI} como servidor \textit{Flask};
-    \item \textit{Interface} com o utilizador desenvolvido em \\
-          \acrfull{html}.
+    \item \textit{Interface} com o utilizador desenvolvido em ~\acrfull{html}.
 \end{itemize}
 
-Estava dado o último passo na escolha do \textit{hardware} e do \textins{software} que viriam a compor o \acrshort{lare}.
+Estava dado o último passo na escolha do \textit{hardware} e do \textit{software} que viriam a compor o \acrshort{lare}.
 
 \section{Solução proposta}
 \label{sec:solucaoproposta}
-Os objectivos principais foram definidos na Secção \ref{sec: Objectivos} e as características gerais definidas na Secção \ref{sec:contextualização}.
+Os objectivos principais foram apresentados na Secção \ref{sec:Objectivos} e as características gerais do projecto descritas na Secção \ref{sec:contextualização}. Pretende-se que o \acrshort{lare} seja um \acrshort{laboratório remoto} capaz de controlar e comandar um conjunto de experiências electrónicas, assim como efectuar medições de várias grandezas eléctricas. Para que a solução proposta seja completa e definitiva, é necessário definir os instrumentos de medida e os circuitos que compõem as experiências.
 
-Pretende-se que o \acrshort{lare} seja um \acrshort{laboratório remoto} capaz de controlar e comandar um conjunto de experiências electrónicas, assim como efectuar medições de várias grandezas eléctricas. Para que a solução proposta seja completa e definitiva, é necessário definir os instrumentos de medida, assim como os circuitos que compõem as experiências.
+No contexto desta dissertação, o instrumento de medida adoptado foi o \acrfull{virtualbench}, modelo VB-8012 que pode ser controlado de duas formas: através do \textit{software} fornecido pela \acrshort{ni} ou através do \textit{pyVirtualBench}\footnote{Apesar de não ser abordado no contexto desta dissertação, existe também a possibilidade de aceder ao \acrshort{virtualbench} através do \acrshort{labview}.} \cite{AutomatingVB}. O \textit{pyVirtualBench} é um \gls{wrapper}\footnote{Este \gls{wrapper} é um \textit{software} de terceiros, suportado e mantido pela comunidade e não é diretamente suportado pela \acrshort{ni}.} que permite controlar o \acrshort{virtualbench} através de uma aplicação \gls{python} \cite{pyvirtualbench}. No entanto, este \gls{wrapper} não é compatível com \textit{Linux}.
 
-No contexto desta dissertação, o instrumento de medida sugerido para implementar o \acrshort{lare} foi o \textit{VirtualBench}, modelo VB-8012.
+Perante este facto, decidiu-se integrar um \acrshort{pc} no \acrshort{lare} - pormenores da instalação do \textit{driver} no \textit{site} da \acrshort{ni} \cite{AutomatingVB} - sendo que todo o peso computacional passaria para o \acrshort{pc} e o \gls{RaspberryPI} controlaria os relés. Esta decisão justifica-se pela possibilidade de, no futuro, o \textit{pyVirtualBench} vir a ser compatível com sistemas \textit{Linux}.
 
-O \textit{VirtualBench} pode ser controlado de duas formas: através do \textit{software} fornecido pela \acrshort{ni} ou através do \textit{pyVirtualBench} \cite{AutomatingVB}. (Apesar de não ser abordado no contexto desta dissertação, existe também a possibilidade de aceder ao \acrshort{virtualbench} através do \acrshort{labview}.)
-
-O \textit{pyVirtualBench} é um \gls{wrapper}\footnote{Este \gls{wrapper} é um \textit{software} de terceiros, suportado e mantido pela comunidade e não é diretamente suportado pela \acrshort{ni}.} que permite controlar o \acrshort{virtualbench} através de uma aplicação \gls{python} \cite{pyvirtualbench}. No entanto, este \gls{wrapper} não é compatível com \textit{Linux}.
-Perante este facto, decidiu-se integrar um \acrshort{pc} no \acrshort{lare} - pormenores da instalação do \textit{driver} no \textit{site} da \acrshort{ni} \cite{AutomatingVB} - sendo que todo o peso computacional passaria para o \acrshort{pc} e o \gls{RaspberryPI} controlaria os relés. Esta decisão de o manter como controlador dos relés prendeu-se com o facto de, futuramente, poder haver espaço para uma evolução ao nível da compatibilidade com o \textit{pyVirtualBench}.
-
-A outra forma de controlar o \acrshort{virtualbench} é usando a aplicação disponibilizada pela \acrshort{ni}  e compatível com \textit{Windows}. Esta aplicação faz uma apresentação integrada dos cinco instrumentos apresentados no \acrshort{virtualbench}, como pode ser visto na Figura \ref{fig:leituraohm}. A aplicação também inclui funcionalidades de fluxo de trabalho, como a importação e exportação de configurações de instrumentos e a captura de dados.
-
-De referir que o \acrshort{virtualbench} não pode ser controlado pelo \textit{pyVirtualBench} e pelo \textit{software} simultaneamente.
+A outra forma de controlar o \acrshort{virtualbench} é usando a aplicação disponibilizada pela \acrshort{ni}  e compatível com \textit{Windows}. Esta aplicação faz uma apresentação integrada dos cinco instrumentos apresentados no \acrshort{virtualbench}, como pode ser visto na Figura \ref{fig:leituraohm}. A aplicação também inclui funcionalidades de fluxo de trabalho, como a importação e exportação de configurações de instrumentos e a captura de dados. Importa salientar que o \acrshort{virtualbench} não pode ser controlado simultaneamente por ambas as \textit{interfaces}.
 
 \begin{figure}[hbtp]
     \centering
@@ -108,9 +95,7 @@ Como já se viu na Secção \ref{sec:contextualização}, a arquitectura do \acr
     \label{fig:representaçãogerallare}
 \end{figure}
 
-Antes de mais, importa clarificar as formas de comunicação entre os diversos dispositivos que compõem o \acrshort{lare}. Tanto o servidor, como o \gls{RaspberryPI} e o \acrshort{virtualbench} têm disponíveis interfaces de rede sem fios e com fios, assim como \textit{interfaces} \acrshort{usb}.
-
-A comunicação entre os diversos dispositivos é feita da seguinte forma:
+Antes de mais, importa clarificar as formas de comunicação entre os diversos dispositivos que compõem o \acrshort{lare}. Tanto o servidor, como o \gls{RaspberryPI} e o \acrshort{virtualbench} têm disponíveis interfaces de rede sem fios e com fios, assim como \textit{interfaces} \acrshort{usb}. A comunicação entre os diversos dispositivos é feita da seguinte forma:
 \begin{itemize}
     \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Em termos de simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets} que, através da sua API, facilitam a comunicação entre processos em rede, independentemente da infra-estrutura utilizada — seja por ligação com fios, sem fios ou através de redes locais, permitindo, assim, o envio e recepção de mensagens entre dispositivos ligados em rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} está representado na Figura \ref{fig:fluxogramasockets};
     \item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}. Independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação;
@@ -181,11 +166,10 @@ Da forma como foi implementado, há duas possibilidades de realizar este estudo,
 No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
 
 \subsection{Rectificadores}
+\label{sec:circuitosrectificadores}
 Nas experiências dos rectificadores pretende-se estudar e avaliar a diferença entre os dois tipos de rectificação, consoante as quatro combinações possíveis dos pares resistência/condensador e a influência que têm na variação da tensão de \textit{ripple}. No caso da rectificação de meia onda, é ainda possível variar a frequência entre os \SI{50}{\hertz} e \SI{2000}{\hertz} - \textbf{NOTA: Estes limites podem ter que ser ajustados} mas no caso da rectificação de onda completa, a frequência é fixa ao valor da rede eléctrica - \SI{60}{\hertz}.
 
-A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do filtro do rectificador, Bloco 3, como representado na Figura \ref{fig:blocosrectificacao}. Esta componente deve ser minimizada para estabilizar a tensão de saída em corrente contínua, Bloco 4, representado na mesma figura \cite{sedrasmith}.
-
-A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
+A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do filtro do rectificador, Bloco 3, como representado na Figura \ref{fig:blocosrectificacao}. Esta componente deve ser minimizada para estabilizar a tensão de saída em corrente contínua, Bloco 4, representado na mesma figura \cite{sedrasmith}. A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple.png}

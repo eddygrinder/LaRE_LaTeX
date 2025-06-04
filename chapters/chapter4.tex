@@ -660,7 +660,7 @@ Para que as experiências funcionem correctamente, todos os relés devem ser act
 
 \subsubsection{VirtualBench - Configurações e medições}
 \label{sec:configmedicaoes}
-O comando e controlo do \acrshort{virtualbench} (e respectivos instrumentos) é realizado através da biblioteca \textit{pyVirtualBench}\cite{docpyvirtualbench} - representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas - que, como já foi referido na Secção \ref{sec:solucaoproposta}, é um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação \textit{Python}.
+O comando e controlo do \acrshort{virtualbench} (e dos respetivos instrumentos) — representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas — é realizado através da biblioteca \textit{pyVirtualBench} \cite{docpyvirtualbench}, a qual, como referido na Secção~\ref{sec:solucaoproposta}, funciona como um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação desenvolvida em \textit{Python}. A documentação desta biblioteca, disponível no endereço indicado, é bastante completa e detalhada, sendo recomendada para aprofundamento técnico.
 
 Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se adequam aos objectivos deste projecto são:
 \begin{itemize}
@@ -670,13 +670,9 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
 
-De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a biblioteca \textit{pyVirtualBench} e adaptaram-se ao contexto do projecto. 
+De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a referida biblioteca e adaptaram-se ao contexto do projecto. 
 
-Nesta secção, apresenta-se como exemplo a configuração da fonte de alimentação, por ser o único instrumento utilizado em todas as experiências realizadas. 
-
-Como referido na Secção \ref{sec:comunicacaoentrefich}, nota de rodapé \footref{fnlabel}, a documentação da biblioteca, bastante completa e detalhada, está disponível para consulta no referido \textit{link}, pelo que se aconselha a sua consulta para mais informações \textbf{??}. 
-
-Através da análise dos exemplos disponibilizados para o \acrshort{virtualbench} (e que estão definidos no repositório já mencionado do \textit{GitHub}), foi possível compreender a estrutura geral de configuração aplicada aos instrumentos e fontes de alimentação. Com base nessa análise, determinou-se a seguinte lógica de funcionamento:
+Nesta secção, apresenta-se como exemplo a configuração da fonte de alimentação, por ser o único instrumento utilizado em todas as experiências realizadas.  Através da análise dos exemplos disponibilizados para o \acrshort{virtualbench} (e que estão definidos no repositório já mencionado do \textit{GitHub}), foi possível compreender a estrutura geral de configuração aplicada aos instrumentos e fontes de alimentação. Com base nessa análise, determinou-se a seguinte lógica de funcionamento:
 
 \begin{enumerate}
 	\label{item:logica}
@@ -876,11 +872,9 @@ A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da 
 	\label{fig:pagmenuCTRL}
 \end{figure}
 
-A selecção dos valores da resistência e do $U_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, embora a medição da tensão corresponda ao valor de $U_{CC}$ seleccionado, optou-se, por razões pedagógicas e de coerência com o esquema, por medir e apresentar a tensão aos terminais da resistência.
+A selecção dos valores da resistência e do $U_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, a tensão medida no voltímetro é, efectivamente, a tensão aos terminais da fonte de tensão, $U_{CC}$ e da resistência. Por razões pedagógicas e de coerência com o esquema, optou-se por medir e apresentar a tensão directamente nos terminais da resistência.
 
-As medições só serão efectivamente realizadas e os valores apresentados, quando o utilizador seleccionar a opção ``Medir tensão'' e/ou ``Medir corrente''. 
-
-Após a realização das dez medições, o utilizador pode seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. (Se o gráfico for solicitado antes da conclusão de todas as medições, este será apresentado, embora de forma incompleta. No entanto, o utilizador poderá continuar a experiência sem impedimentos.
+Como se observa na Figura~\ref{fig:pagmenuCTRL}, a tensão indicada pelo voltímetro corresponde à tensão presente entre os terminais da fonte de tensão $U_{CC}$ e da resistência. Por razões pedagógicas e para manter a coerência com o esquema apresentado, optou-se por medir e representar a tensão diretamente nos terminais da resistência. As medições só serão efectivamente realizadas e os valores apresentados, quando a opção ``Medir tensão'' e/ou ``Medir corrente'' forem seleccionadas. O utilizador dispõe de alguma flexibilidade na forma como realiza as medições (cinco de tensão e cinco de corrente), desde que mantenha a mesma ordem. Por exemplo, pode optar por medir todos os valores de tensão - desde o mais baixo ao mais alto - e, de seguida proceder da mesma forma com as medições de corrente. Após a conclusão das dez medições, torna-se possível seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. Caso esta opção seja seleccionada antes da conclusão de todas as medições, o gráfico será apresentado com as medições disponíveis até ao momento, permitindo, ainda assim, a continuação normal da experiência.
 
 Sendo assim, o procedimento para a realização da experiência é o seguinte:
 \begin{enumerate}
