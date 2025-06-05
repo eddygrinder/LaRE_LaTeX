@@ -27,19 +27,19 @@
 \contentsline {section}{\numberline {3.1}Contextualização}{47}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Solução proposta}{50}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Arquitectura}{51}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Circuitos electrónicos - experiências?}{53}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Lei de \textit {Ohm}}{54}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.4}Circuitos electrónicos - experiências?}{52}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Lei de \textit {Ohm}}{53}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Rectificadores}{55}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Filtros}{57}{subsection.3.4.3}%
 \contentsline {section}{\numberline {3.5}Hardware}{58}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}VirtualBench}{58}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Matriz LaRE}{59}{subsection.3.5.2}%
-\contentsline {subsubsection}{Lei de \textit {Ohm}}{60}{section*.63}%
+\contentsline {subsection}{\numberline {3.5.2}Matriz LaRE}{58}{subsection.3.5.2}%
+\contentsline {subsubsection}{Lei de \textit {Ohm}}{59}{section*.63}%
 \contentsline {subsubsection}{Rectificadores/Filtros}{60}{section*.65}%
 \contentsline {subsubsection}{Fontes de alimentação}{61}{section*.67}%
 \contentsline {subsection}{\numberline {3.5.3}Raspberry Pi}{61}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}Relés}{63}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{65}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{64}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{65}{subsection.3.5.6}%
 \contentsline {section}{\numberline {3.6}Software}{67}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{68}{subsection.3.6.1}%
