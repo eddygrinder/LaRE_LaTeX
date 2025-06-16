@@ -87,10 +87,11 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{112}{figure.caption.131}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare}- meia onda}}{113}{figure.caption.132}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{113}{figure.caption.133}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{115}{figure.caption.134}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{115}{figure.caption.135}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ experimental \acrshort {lare} - TEMPORÁRIO}}{116}{figure.caption.136}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{116}{figure.caption.137}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - \acrshort {lare}}}{117}{figure.caption.138}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{117}{figure.caption.139}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare}- meia onda}}{114}{figure.caption.134}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{116}{figure.caption.135}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{116}{figure.caption.136}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ experimental \acrshort {lare} - TEMPORÁRIO}}{116}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{117}{figure.caption.138}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Frequência de corte - \acrshort {lare}}}{117}{figure.caption.139}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{118}{figure.caption.140}%
 \addvspace {10\p@ }

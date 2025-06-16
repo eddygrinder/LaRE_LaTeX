@@ -121,7 +121,7 @@ Sendo assim, o exemplo da análise será feita para o caso em que $f=\SI{200}{\h
 Uma vez que esta condição não se verifica, a expressão a utilizar para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vripplecompleta}. O resultado obtido está representado na Equação \ref{eq:vripplecalculado}:
 
 \begin{equation} \label{eq:vripplecalculado}
-	U_{ripple} = \SI{5}{\volt}(1-e^{-\frac{\SI{0.005}{\second}}{\SI{2.2}{\kilo\ohm}*\SI{4.7}{\micro\farad}}}) \approx \SI{1.92}{\volt}
+	U_{ripple} = \SI{4.3}{\volt}(1-e^{-\frac{\SI{0.005}{\second}}{\SI{2.2}{\kilo\ohm}*\SI{4.7}{\micro\farad}}}) \approx \SI{1.65}{\volt}
 \end{equation}
 
 A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de saída e o valor da tensão de \textit{ripple} obtido no \acrshort{lare}, que foi de \SI{1.34}{\volt}.
@@ -145,10 +145,30 @@ As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, resp
 		\label{fig:simulacaoripple}%
 	\end{figure}
 
-Os erros relativos obtidos foram de \SI{30.21}{\percent} para o \acrshort{lare}, \SI{28.13}{\percent} e \SI{21.35}{\percent}, para os valores medidos no circuito prácticos e simulados. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. A simulação, embora mais próxima da realidade, utiliza também componentes ideais por omissão, como é o caso do condensador sem resistência série (ESR). Ainda assim, considera fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores electrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
+Os erros relativos obtidos foram de \SI{18.79}{\percent} para o \acrshort{lare}, \SI{16.36}{\percent} e \SI{8.49}{\percent}, para os valores medidos no circuito prácticos e simulados. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. A simulação, embora mais próxima da realidade, utiliza também componentes ideais por omissão, como é o caso do condensador sem resistência série (ESR). Ainda assim, considera fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores electrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}
+Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}:
+
+\begin{equation} \label{eq:vrippleOCTeorico}
+	U_{ripple} = \frac{\SI{5.6}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{250}{\milli\volt}
+\end{equation}
+
+Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura~\ref{fig:ripplelareonda}, onde é possível observar a forma de onda da tensão de saída, bem como o valor correspondente da tensão de \textit{ripple}. 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/onda-completa.png}
+	\caption{Tensão de \textit{ripple} no \acrshort{lare}- meia onda}
+	\label{fig:ripplelareonda}
+\end{figure}
+
+\textbf{Justificação do desfasamento entre as ondas de entrada e saída. OPINIÃO PROF:} É importante referir que, embora ambas as formas de onda (entrada e saída) tenham sido adquiridas com os mesmos parâmetros de configuração — nomeadamente, a mesma frequência de amostragem e tempo de aquisição —, os sinais não foram captados em simultâneo. Este procedimento foi necessário devido à configuração desta experiência, onde a ligação comum de massas entre a entrada do transformador e a saída do circuito impede a medição simultânea dos dois sinais com o \acrshort{virtualbench}, sob pena de provocar curto-circuito de massas. Assim, as medições tiveram de ser realizadas de forma sequencial, com reconfiguração dos relés entre cada aquisição. Ao reiniciar o osciloscópio, o sistema volta a aguardar pela condição de disparo (trigger), a qual pode ocorrer em pontos ligeiramente diferentes do ciclo da onda. Esta diferença no instante inicial da aquisição introduz um desfasamento temporal aparente entre os sinais apresentados, que não deve ser interpretado como um desfasamento real entre os circuitos, mas sim como uma consequência natural da aquisição faseada.
+
+\textbf{Referir que a onda de saída foi alvo de um filtro para suavizar os picos e ruído??? Opinião PROF}
+
+
 
 \section{Filtros}
 \label{sec:resultados_filtros}
