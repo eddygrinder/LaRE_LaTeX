@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.27)  5 JUN 2025 10:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.3.27)  6 JUN 2025 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1138,7 +1138,7 @@ l.5 \tableofcontents
 pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 ...line {3.4.3}Filtros}{56}{subsection.3.4.3}
+l.33 ...line {3.4.3}Filtros}{57}{subsection.3.4.3}
                                                   % [5]
 
 
@@ -2155,12 +2155,12 @@ Package pdftex.def Info: figures/boda_HPF_vout_fc.png  used on input line 220.
 
  (./chapters/appendixA.tex
 Anexo A.
-<chapters/Datasheet/datasheet.pdf, id=3925, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3922, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf  used on input line 8.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<chapters/Datasheet/datasheet.pdf, id=3927, page=1, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3924, page=1, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 1>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page1 used on input line 8.
@@ -2192,7 +2192,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page1 used on input 
 [136
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3974, page=2, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3971, page=2, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 2>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page2 used on input line 8.
@@ -2210,7 +2210,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page2 used on input 
 [137
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=3998, page=3, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=3995, page=3, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 3>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page3 used on input line 8.
@@ -2228,7 +2228,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page3 used on input 
 [138
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4011, page=4, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4008, page=4, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 4>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page4 used on input line 8.
@@ -2246,7 +2246,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page4 used on input 
 [139
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4016, page=5, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4013, page=5, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 5>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page5 used on input line 8.
@@ -2264,7 +2264,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page5 used on input 
 [140
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4022, page=6, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4019, page=6, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 6>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page6 used on input line 8.
@@ -2282,7 +2282,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page6 used on input 
 [141
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4030, page=7, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4027, page=7, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 7>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page7 used on input line 8.
@@ -2300,7 +2300,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page7 used on input 
 [142
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4036, page=8, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4033, page=8, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 8>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page8 used on input line 8.
@@ -2318,7 +2318,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page8 used on input 
 [143
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4056, page=9, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4053, page=9, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 9>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page9 used on input line 8.
@@ -2336,7 +2336,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page9 used on input 
 [144
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4065, page=10, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4062, page=10, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 10>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page10 used on input line 8.
@@ -2354,7 +2354,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page10 used on input
 [145
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4072, page=11, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4069, page=11, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 11>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page11 used on input line 8.
@@ -2372,7 +2372,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page11 used on input
 [146
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4079, page=12, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4076, page=12, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 12>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page12 used on input line 8.
@@ -2390,7 +2390,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page12 used on input
 [147
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4086, page=13, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4083, page=13, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 13>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page13 used on input line 8.
@@ -2408,7 +2408,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page13 used on input
 [148
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4094, page=14, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4091, page=14, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 14>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page14 used on input line 8.
@@ -2426,7 +2426,7 @@ Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page14 used on input
 [149
 
  <./chapters/Datasheet/datasheet.pdf>]
-<chapters/Datasheet/datasheet.pdf, id=4103, page=15, 597.50829pt x 845.0471pt>
+<chapters/Datasheet/datasheet.pdf, id=4100, page=15, 597.50829pt x 845.0471pt>
 File: chapters/Datasheet/datasheet.pdf Graphic file (type pdf)
 <use chapters/Datasheet/datasheet.pdf, page 15>
 Package pdftex.def Info: chapters/Datasheet/datasheet.pdf , page15 used on input line 8.
@@ -2452,18 +2452,10 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4AD9325B55F0FFB9AB90EFB36A93388A;13991.
-
-Package rerunfilecheck Warning: File `main.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `main.brf':
-(rerunfilecheck)             Before: 9E5CBE48870F956ACE020FF43C272E15;16836
-(rerunfilecheck)             After:  B2E15C4EA3B43066C1B12C0D85F5F5E0;16836.
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: B2E15C4EA3B43066C1B12C0D85F5F5E0;16836.
  ) 
 Here is how much of TeX's memory you used:
  42713 strings out of 475151
@@ -2612,10 +2604,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (182 pages, 94796443 bytes).
+Output written on main.pdf (182 pages, 94796391 bytes).
 PDF statistics:
- 4438 PDF objects out of 5155 (max. 8388607)
- 3869 compressed objects within 39 object streams
+ 4435 PDF objects out of 5155 (max. 8388607)
+ 3866 compressed objects within 39 object streams
  879 named destinations out of 1000 (max. 500000)
  1343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
