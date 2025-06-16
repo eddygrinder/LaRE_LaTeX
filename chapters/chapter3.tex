@@ -34,7 +34,7 @@ No mercado, existe o \gls{ESP32}, uma alternativa mais poderosa que o \gls{ardui
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/ESP32-DevKitC_L_0.png}
+    \includegraphics[width=0.4\textwidth]{figures/ESP32-DevKitC_L_0.png}
     \caption{\textit{ESP32} \cite{ESPDevKit}}
     \label{fig:ESP32}
 \end{figure}
@@ -247,18 +247,6 @@ A possibilidade de variar a frequência do sinal de entrada permite que estas ex
 	f_{c} = \frac{1}{2\pi RC}
 \end{equation}
 
-\begin{comment}
-	\textbf{Acho que não é necessário referir a relação entre a tensão de entrada e a tensão de saída, já que isso é feito na parte de software. O que se pode fazer é referir que o \acrshort{lare} permite estudar a resposta em frequência dos filtros, analisar o Diagrama de \textit{Bode} e determinar a frequência de corte.}
-A Figura \ref{fig:diagramabode} apresenta um exemplo do Diagrama de \textit{Bode} de um filtro passa-alto, obtido nos testes do LaRE.
-
-\begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.6\textwidth]{figures/bode_lpf.png}
-	\caption{Diagrama de \textit{Bode} - Filtro passa-alto}
-	\label{fig:diagramabode}
-\end{figure}
-\end{comment}
-
 As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} apresentam os Diagramas de \textit{Bode} \textins{ideais}, que servem de referência para o estudo desta experiência. 
 
 \begin{figure}[hbtp]
@@ -271,7 +259,7 @@ As Figuras \ref{fig:Bode_pb} e \ref{fig:Bode_pa} apresentam os Diagramas de \tex
 		\label{fig:Bodeesqgeral}%
 \end{figure}
 
-	Para além da análise em frequência, um outro aspeto complementar a considerar é a relação entre as ondas de entrada e saída, em função da frequência. Nos filtros, o intervalo de frequências permitido é igual ao já referido para os rectificadores: entre \SI{50}{\hertz} a \SI{2000}{\hertz}. 
+	Para além da análise em frequência, um outro aspeto complementar a considerar é a relação entre as ondas de entrada e saída, em função da frequência. Nos filtros, o intervalo de frequências permitido é igual ao já referido para os rectificadores: entre \SI{50}{\hertz} a \SI{80000}{\hertz}. 
 	
 	A frequência de corte de um filtro é definida como o ponto onde o ganho do filtro sofre uma atenuação de \SI{3}{\decibel} em relação ao seu valor máximo. 	Para um filtro passa-baixo (passa-alto) ideal, o ganho em baixas (altas) frequências é unitário. Quando o sinal atinge a frequência de corte, a relação entre a tensão de saída e a tensão de entrada reduz-se para:  
 	
@@ -305,8 +293,6 @@ Este dispositivo desenvolvido pela \acrshort{ni} integra vários instrumentos e 
     \caption{Painel frontal \textit{VirtualBench} VB-8012  \cite{datasheetVirtualBench}.}
     \label{fig:paineldianteiro}
 \end{figure}
-
-%No \acrshort{visir} do \acrshort{isep}, estão disponíveis 11 circuitos, como se pode ver na Figura \ref{fig:circuitosvisir}. Os circuitos que compõem o \acrshort{laboratório remoto} tiveram como base (ou ponto de partida) os que estão implementados no \acrshort{isep}. \textbf{Faz sentido? PROF}
 
 \subsection{Matriz LaRE}
 \label{sec:matriz}
@@ -349,8 +335,7 @@ A Figura \ref{fig:placarectificadores} apresenta a placa da experiência referen
 	\caption{\textins{Placa} rectificadores e filtros}
 	\label{fig:placarectificadores}
 \end{figure}
-
-%A implementação prática é composta pelos três blocos\footnote{A inclusão da estabilização poderá ser objecto de trabalho futuro.}, como se pode ver na Figura \ref{fig:placarectificadores}. 
+ 
 \begin{enumerate}
 	\item Rectificação;
 		\begin{enumerate}
@@ -365,7 +350,7 @@ A Figura \ref{fig:placarectificadores} apresenta a placa da experiência referen
 \end{enumerate}
 
 \subsubsection{Fontes de alimentação}
-A placa referente às fontes de alimentação está representada na Figura \ref{fig:placartransformador}. Esta placa é constituída por um transformador e uma fonte de \SI{5}{\volt}.
+A placa referente às fontes de alimentação está representada na Figura \ref{fig:placartransformador}. Esta placa é constituída por um transformador e uma fonte de \SI{5}{\volt}. O esquema completo está disponível no Anexo \ref{AppendixA}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -387,9 +372,7 @@ A placa referente às fontes de alimentação está representada na Figura \ref{
 \label{sec:RaspberryPI}
 Como já foi referido na Secção \ref{sec:contextualização}, a ideia inicial passava por utilizar o \gls{RaspberryPI} como servidor e como controlador dos relés, no fundo desempenhando as funções de \acrshort{rlms}. Este dispositivo insere-se numa gama de pequenos computadores de placa única \gls{sbc}, acessíveis e versáteis, como o \textit{Banana Pi}, \textit{BeagleBone Black}, \textit{Orange Pi} ou \textit{Odroid}, amplamente utilizados em ensino, prototipagem e aplicações de \acrshort{iot}. 
 
-Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \gls{RaspberryPI}, que à data da escrita deste documento é a 5.
-
-Esta versão traz várias melhorias e novos recursos, sendo que as principais diferenças de \textit{hardware} para a versão 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. No entanto, estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento activo \cite{Raspberrytech}. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
+Em contexto de laboratório estavam disponíveis os modelos PI2 e PI3, algo desactualizados. O PI3 já se mostrou lento nos primeiros testes e, por isso, optou-se pela última versão do \gls{RaspberryPI}, que à data da escrita deste documento é a 5. Esta versão traz várias melhorias e novos recursos, sendo que as principais diferenças de \textit{hardware} para a versão 4B estão representadas na Tabela \ref{Table:diferencasPI4PI5}. No entanto, estas melhorias acarretam um maior consumo de energia e, por isso, é recomendado o uso de arrefecimento activo \cite{Raspberrytech}. Na Figura \ref{fig:pi5dissipador} está representado o \gls{RaspberryPI} usado no \acrshort{lare}.
 
 \begin{figure}[hbtp]
     \centering
@@ -438,7 +421,7 @@ A corrente no \gls{RaspberryPI} pode ser configurada para valores entre \SI{2}{\
 \subsection{Relés}
 \label{sec:reles}
 Como já foi referido na Capítulo \ref{Capitulo2}, os circuitos que compõem o \acrshort{visir} são controlados através de relés. Estes dispositivos funcionam como interruptores electromecânicos simples que utilizam um sinal elétrico para controlar um eletroíman.
-Os relés electromecânicos são constituídos por uma bobine e um contacto, que pode ser normalmente aberto ou fechado. A corrente eléctrica ao passar pela bobine gera um campo magnético que atrai o contacto, fechando-o ou abrindo-o, conforme o caso. A Figura \ref{fig:esquematicoreles} mostra um esquema simplificado de um relé electromecânico.
+Os relés electromecânicos são constituídos por uma bobine e um contacto, que pode ser normalmente aberto ou fechado. A corrente eléctrica ao passar pela bobine gera um campo magnético que atrai o contacto, fechando-o ou abrindo-o, conforme o caso. A Figura \ref{fig:esquematicoreles} mostra um esquema simplificado de um relé electromecânico, onde se pode observar a inclusão do díodo de ``roda livre'', comum em muitos circuitos de comando com relés. Este díodo é utilizado para proteger o circuito de comando de picos de tensão induzidos pela bobine do relé, quando a corrente é desligada, segundo a Lei de Faraday. O díodo permite que a corrente induzida pela bobine circule em circuito fechado, evitando danos nos componentes de comando. 
 
 \begin{figure}[hbtp]
     \centering
@@ -446,8 +429,6 @@ Os relés electromecânicos são constituídos por uma bobine e um contacto, que
     \caption{\textit{Esquema simplificado de um relé \cite{DryRelay}}}
     \label{fig:esquematicoreles}
 \end{figure}
-
-Ainda na Figura \ref{fig:esquematicoreles} pode observar-se a inclusão do díodo de ``roda livre'', comum em muitos circuitos de comando com relés. Este díodo é utilizado para proteger o circuito de comando de picos de tensão induzidos pela bobine do relé, quando a corrente é desligada, segundo a Lei de Faraday. O díodo permite que a corrente induzida pela bobine circule em circuito fechado, evitando danos nos componentes de comando. 
 
 Os relés utilizados no \acrshort{lare} estavam disponíveis em contexto laboratorial e são em tudo idênticos aos que se encontram instalados no \acrshort{visir}  do \acrshort{isep}. Foram usados dois tipos de relés: simples ()\acrfull{spst}) e duplos (\acrfull{dpst}), como ilustrado na Figura \ref {fig:reles}. Ambos os modelos são da marca \textit{Comus} - o relé \acrshort{spst}, ref. 3570-1331-123 e o relé \acrshort{dpst}, ref. 3572-1220-123. As características principais encontram-se descritas no Anexo \ref{AppendixA} e as completas nos respectivos \textit{datasheet} \cite{DryRelay}. 
 
@@ -573,9 +554,7 @@ O \textit{Python} é uma linguagem poderosa e fácil de aprender. Possui estrutu
     \item Suporte da comunidade.
 \end{itemize}
 
-Como desvantagens há a referir que, comparado com outras linguagens, o \textit{Python} é mais lento em termos de execução, já que é um tipo de linguagem de alto-nível, pelo que não é adaptado para aplicações móveis e consome mais recursos \cite{pythonvantagens} \cite{5MainDispython}.
-
-Ainda assim, segundo a \textit{IEEE Spectrum} \cite{ieeespectrum}, a linguagem \textit{Python} foi considerada a mais popular em 2023.
+Como desvantagens há a referir que, comparado com outras linguagens, o \textit{Python} é mais lento em termos de execução, já que é um tipo de linguagem de alto-nível, pelo que não é adaptado para aplicações móveis e consome mais recursos \cite{pythonvantagens} \cite{5MainDispython}. Ainda assim, segundo a \textit{IEEE Spectrum} \cite{ieeespectrum}, a linguagem \textit{Python} foi considerada a mais popular em 2023.
 
 \subsubsection{\textit{Flask}}
 O \textit{Flask} é uma \textit{framework} leve e flexível para \textit{Python} que segue a filosofia \textit{UNIX} de ``fazer uma coisa bem feita''. A escolha do \textit{Flask} deveu-se, essencialmente, à facilidade de integração com o \textit{Python}, sendo uma das \textit{frameworks} mais populares em \textit{Python} \cite{Flask}. É uma \textit{framework} de aplicações \acrfull{wsgi} que descreve a forma como um servidor \textit{Web} comunica com aplicações \textit{Web} e como essas aplicações podem ser encadeadas para processar um pedido \cite{wsgi}. Depende, ainda do  \textit{Jinja}, que é um motor de criação de modelos que permite escrever código semelhante à sintaxe do \textit{Python}, de forma a renderizar o documento final \cite{Jinja}.

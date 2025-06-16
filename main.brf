@@ -258,8 +258,8 @@
 \backcite {PC104}{{59}{3.5.2}{subsection.3.5.2}}
 \backcite {Raspberrytech}{{62}{3.5.3}{subsection.3.5.3}}
 \backcite {Raspberrypi5}{{62}{3.1}{table.caption.70}}
+\backcite {Raspberrytech}{{62}{3.5.3}{figure.caption.71}}
 \backcite {Raspberrytech}{{63}{3.22}{figure.caption.71}}
-\backcite {Raspberrytech}{{63}{3.5.3}{figure.caption.71}}
 \backcite {Raspberrytech}{{63}{3.23}{figure.caption.72}}
 \backcite {DryRelay}{{64}{3.24}{figure.caption.73}}
 \backcite {DryRelay}{{64}{3.5.4}{figure.caption.73}}
@@ -268,11 +268,11 @@
 \backcite {ULN2003}{{65}{3.5.5}{subsection.3.5.5}}
 \backcite {ULN2003}{{65}{3.26}{figure.caption.75}}
 \backcite {ULN2003}{{65}{3.5.5}{figure.caption.75}}
-\backcite {SN74HC595}{{66}{3.5.6}{subsection.3.5.6}}
+\backcite {SN74HC595}{{65}{3.5.6}{subsection.3.5.6}}
 \backcite {SN74HC595}{{67}{3.27}{figure.caption.76}}
 \backcite {SN74HC595}{{67}{3.2}{table.caption.77}}
 \backcite {FrontbackEnd}{{67}{3.6}{section.3.6}}
-\backcite {FrontbackEnd}{{68}{3.6}{section.3.6}}
+\backcite {FrontbackEnd}{{67}{3.6}{section.3.6}}
 \backcite {ThePython}{{68}{3.6.1}{section*.78}}
 \backcite {pythonvantagens}{{68}{3.6.1}{section*.78}}
 \backcite {pythonvantagens}{{68}{3.6.1}{section*.78}}
@@ -281,26 +281,26 @@
 \backcite {Flask}{{68}{3.6.1}{section*.79}}
 \backcite {wsgi}{{68}{3.6.1}{section*.79}}
 \backcite {Jinja}{{68}{3.6.1}{section*.79}}
-\backcite {Djangovsflask}{{69}{3.6.1}{section*.79}}
-\backcite {FlaskvsDjango}{{69}{3.6.1}{section*.79}}
+\backcite {Djangovsflask}{{68}{3.6.1}{section*.79}}
+\backcite {FlaskvsDjango}{{68}{3.6.1}{section*.79}}
 \backcite {Jinja}{{69}{3.6.1}{section*.80}}
 \backcite {Jinja}{{69}{11}{section*.80}}
 \backcite {Jinja}{{70}{3.6.1}{lstnumber.3.1.13}}
 \backcite {HTMLbasics}{{70}{3.6.2}{section*.81}}
 \backcite {HTMLwikipedia}{{70}{3.6.2}{section*.81}}
-\backcite {HTMLbasics}{{71}{3.28}{figure.caption.82}}
+\backcite {HTMLbasics}{{70}{3.28}{figure.caption.82}}
 \backcite {w3ccss}{{71}{3.6.2}{figure.caption.82}}
 \backcite {Startingcss}{{71}{14}{lstnumber.3.2.13}}
 \backcite {Startingcss}{{72}{10}{lstnumber.3.3.9}}
 \backcite {Startingcss}{{72}{6}{lstnumber.3.4.5}}
 \backcite {cssvalidator, htmlvalidator}{{72}{3.6.2}{lstnumber.3.4.5}}
-\backcite {JavaScriptRef}{{72}{3.6.2}{lstnumber.3.4.5}}
+\backcite {JavaScriptRef}{{73}{3.6.2}{lstnumber.3.4.5}}
 \backcite {JavaScript}{{73}{3.6.2}{lstnumber.3.5.9}}
 \backcite {ULN2003}{{76}{4.1.2}{subsection.4.1.2}}
 \backcite {LM317}{{79}{4.1.4}{section*.90}}
 \backcite {LM317}{{79}{4.1.4}{figure.caption.91}}
 \backcite {1N400x}{{80}{4.1.4}{figure.caption.91}}
-\backcite {LM317}{{80}{4.1.4}{equation.4.1.1}}
+\backcite {LM317}{{80}{4.1.4}{equation.4.1}}
 \backcite {Flask}{{87}{4.2.1}{subsection.4.2.1}}
 \backcite {tutorialsiteflask, flaskDigitalOcean}{{87}{4.2.1}{subsection.4.2.1}}
 \backcite {Flask}{{88}{4.2.1}{figure.caption.105}}
