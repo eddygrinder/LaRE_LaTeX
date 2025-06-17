@@ -129,7 +129,7 @@ A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de sa
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/resultados_LaRE_meia_onda.png}
-	\caption{Tensão de \textit{ripple} no \acrshort{lare}- meia onda}
+	\caption{Tensão de \textit{ripple} no \acrshort{lare} - meia onda}
 	\label{fig:ripplelaremeiaonda}
 \end{figure}
 
@@ -160,13 +160,25 @@ Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/onda-completa.png}
-	\caption{Tensão de \textit{ripple} no \acrshort{lare}- meia onda}
+	\caption{Tensão de \textit{ripple} no \acrshort{lare} - onda completa}
 	\label{fig:ripplelareonda}
 \end{figure}
 
 \textbf{Justificação do desfasamento entre as ondas de entrada e saída. OPINIÃO PROF:} É importante referir que, embora ambas as formas de onda (entrada e saída) tenham sido adquiridas com os mesmos parâmetros de configuração — nomeadamente, a mesma frequência de amostragem e tempo de aquisição —, os sinais não foram captados em simultâneo. Este procedimento foi necessário devido à configuração desta experiência, onde a ligação comum de massas entre a entrada do transformador e a saída do circuito impede a medição simultânea dos dois sinais com o \acrshort{virtualbench}, sob pena de provocar curto-circuito de massas. Assim, as medições tiveram de ser realizadas de forma sequencial, com reconfiguração dos relés entre cada aquisição. Ao reiniciar o osciloscópio, o sistema volta a aguardar pela condição de disparo (trigger), a qual pode ocorrer em pontos ligeiramente diferentes do ciclo da onda. Esta diferença no instante inicial da aquisição introduz um desfasamento temporal aparente entre os sinais apresentados, que não deve ser interpretado como um desfasamento real entre os circuitos, mas sim como uma consequência natural da aquisição faseada.
 
 \textbf{Referir que a onda de saída foi alvo de um filtro para suavizar os picos e ruído??? Opinião PROF}
+
+O erro relativo associado ao valor obtido no \acrshort{lare} é de \SI{1.54}{\percent}, o que é perfeitamente aceitável.
+
+A Figura \ref{fig:ripplepracticoondacompleta} apresenta os resultados práticos obtidos com o circuito montado na ``placa branca'', onde a tensão de \textit{ripple} obtida foi de: \SI{191}{\milli\volt}, sendo que o erro relativo é de \SI{23.6}{\percent}.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/ripple_OC_placabranca.png}
+	\caption{Tensão de \textit{ripple} - circuito práctico - onda completa}
+	\label{fig:ripplepracticoondacompleta}
+\end{figure}
+
 
 
 
