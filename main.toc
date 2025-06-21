@@ -1,11 +1,11 @@
 \babel@toc {portuguese}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {portuguese}{}\relax 
-\contentsline {chapter}{Lista de Figuras}{ix}{chapter*.10}%
-\contentsline {chapter}{Lista de Tabelas}{xiii}{chapter*.11}%
-\contentsline {chapter}{Listagens}{xv}{chapter*.12}%
-\contentsline {chapter}{Gloss\'{a}rio}{xvii}{section*.13}%
-\contentsline {chapter}{Lista de Acr\'{o}nimos}{xxi}{section*.15}%
+\contentsline {chapter}{Lista de Figuras}{vii}{chapter*.10}%
+\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.11}%
+\contentsline {chapter}{Listagens}{xi}{chapter*.12}%
+\contentsline {chapter}{Gloss\'{a}rio}{xiii}{section*.13}%
+\contentsline {chapter}{Lista de Acr\'{o}nimos}{xvii}{section*.15}%
 \contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Enquadramento}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectivos}{2}{section.1.2}%
@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {3.5.4}Relés}{63}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{64}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{65}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Software}{66}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Software}{67}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{68}{subsection.3.6.1}%
 \contentsline {subsubsection}{\textit {Python}}{68}{section*.78}%
 \contentsline {subsubsection}{\textit {Flask}}{68}{section*.79}%
@@ -85,8 +85,8 @@
 \contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{112}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{114}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Filtros}{115}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{115}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Limitações}{119}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Melhoramentos}{119}{section.5.5}%
-\contentsline {chapter}{Refer\^{e}ncias}{120}{section*.142}%
-\contentsline {chapter}{Anexo \numberline {A}Datasheet}{137}{appendix.1.A}%
+\contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{116}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Limitações}{118}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Melhoramentos}{118}{section.5.5}%
+\contentsline {chapter}{Refer\^{e}ncias}{119}{section*.142}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{135}{appendix.1.A}%

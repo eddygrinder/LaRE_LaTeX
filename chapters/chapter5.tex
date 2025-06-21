@@ -149,6 +149,9 @@ Os erros relativos obtidos foram de \SI{18.79}{\percent} para o \acrshort{lare},
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}
+Os resultados obtidos nesta experiência, numa fase inicial, não foram os esperados, havendo uma diferença entre os valores experimentais, simulados e teóricos com erros acima dos 25\percent. Após mais alguns testes complementares, chegou-se à conclusão que o condensadoruma vez que a tensão de \textit{ripple} calculada teoricamente não correspondia à tensão de \textit{ripple} medida. Após análise, verificou-se que a expressão utilizada para calcular a tensão de \textit{ripple} teórica estava incorreta. A expressão correta é a Equação \ref{eq:vrippleOC}, que considera o valor da tensão de pico da onda de entrada e não o valor médio.
+
+
 Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}:
 
 \begin{equation} \label{eq:vrippleOCTeorico}
@@ -183,7 +186,7 @@ A Figura \ref{fig:ripplepracticoondacompleta} apresenta os resultados práticos 
 \label{sec:resultados_filtros}
 Estas duas experiências foram realizadas com o objetivo de estudar a resposta em frequência dos filtros $RC$, nomeadamente nas configurações passa-alto e passa-baixo, resultantes das diferentes configurações entre as resistências e os condensadores. Os utilizadores podem variar a frequência entre \SI{50}{\hertz} e \SI{80000}{\hertz}, analisando o comportamento da tensão de saída em função da frequência. A frequência de corte é calculada através da Equação \ref{eq:frequenciacorte}, sendo posteriormente comparada com os valores obtidos experimentalmente no diagrama de \textit{Bode}. Adicionalmente, a atenuação da tensão de saída pode ser determinada através da Equação \ref{eq:relacaoGanho}, ou expressa em \SI{}{\decibel} utilizando a Equação \ref{eq:relacaoGanhodB}.
 
-yu\subsection{Resultados experimentais [filtro passa-alto]}
+\subsection{Resultados experimentais [filtro passa-alto]}
 \label{sec:resultados_filtros_passaalto}
 O circuito analisado será o filtro passa-alto, representado na Figura \ref{fig:filtro_pa} e configurado com $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{10}{\nano\farad}$. Os gráficos que se esperam obter estão representados na Figura \ref{fig:Bode_pa}. Para os restantes valores e configurações, os resultados poderão ser obtidos de forma análoga.
 

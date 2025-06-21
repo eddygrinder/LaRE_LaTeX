@@ -15,13 +15,13 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Implementação cliente-servidor \acrshort {matlab}-\acrshort {ejs}}}{35}{figure.caption.30}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Arquitectura \acrshort {diesel} (genérica)\cite {diesel}}}{36}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Arquitectura \acrshort {ilab}\cite {arquitecturaisa}}}{37}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Arquitectura \textit {WebLab-Deusto}}}{38}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Arquitectura \textit {gateway4labs}}}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Arquitectura \textit {WebLab-Deusto}}}{37}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Arquitectura \textit {gateway4labs}}}{38}{figure.caption.34}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{39}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Arquitectura \acrshort {visir}\cite {tawfikexperiences}}}{41}{figure.caption.37}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces \textit {Protobaord \acrshort {visir}}}}{41}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.18}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{41}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{42}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{41}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{42}{figure.caption.41}%
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{42}{figure.caption.42}%
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Fonte de tensão PXI-4110 \cite {PXI-4110}}}{43}{figure.caption.43}%
@@ -45,7 +45,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{59}{figure.caption.61}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{59}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{60}{figure.caption.64}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{60}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{61}{figure.caption.66}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{61}{figure.caption.68}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{62}{figure.caption.69}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{63}{figure.caption.71}%
