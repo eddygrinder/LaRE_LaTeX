@@ -254,8 +254,8 @@
 \backcite {sedrasmith}{{57}{3.14}{figure.caption.59}}
 \backcite {datasheetVirtualBench}{{58}{3.5.1}{subsection.3.5.1}}
 \backcite {datasheetVirtualBench}{{58}{3.15}{figure.caption.60}}
-\backcite {PC104}{{58}{3.5.2}{subsection.3.5.2}}
 \backcite {datasheetVirtualBench}{{59}{3.16}{figure.caption.61}}
+\backcite {PC104}{{59}{3.5.2}{subsection.3.5.2}}
 \backcite {Raspberrytech}{{62}{3.5.3}{subsection.3.5.3}}
 \backcite {Raspberrypi5}{{62}{3.1}{table.caption.70}}
 \backcite {Raspberrytech}{{62}{3.5.3}{figure.caption.71}}
@@ -294,13 +294,13 @@
 \backcite {Startingcss}{{72}{10}{lstnumber.3.3.9}}
 \backcite {Startingcss}{{72}{6}{lstnumber.3.4.5}}
 \backcite {cssvalidator, htmlvalidator}{{72}{3.6.2}{lstnumber.3.4.5}}
-\backcite {JavaScriptRef}{{72}{3.6.2}{lstnumber.3.4.5}}
+\backcite {JavaScriptRef}{{73}{3.6.2}{lstnumber.3.4.5}}
 \backcite {JavaScript}{{73}{3.6.2}{lstnumber.3.5.9}}
 \backcite {ULN2003}{{76}{4.1.2}{subsection.4.1.2}}
 \backcite {LM317}{{79}{4.1.4}{section*.90}}
 \backcite {LM317}{{79}{4.1.4}{figure.caption.91}}
 \backcite {1N400x}{{80}{4.1.4}{figure.caption.91}}
-\backcite {LM317}{{80}{4.1.4}{equation.4.1.1}}
+\backcite {LM317}{{80}{4.1.4}{equation.4.1}}
 \backcite {Flask}{{87}{4.2.1}{subsection.4.2.1}}
 \backcite {tutorialsiteflask, flaskDigitalOcean}{{87}{4.2.1}{subsection.4.2.1}}
 \backcite {Flask}{{88}{4.2.1}{figure.caption.105}}
@@ -311,3 +311,4 @@
 \backcite {Matplotlib}{{100}{4.2.2}{section*.117}}
 \backcite {datasheetvb8012}{{110}{5.1.1}{figure.caption.128}}
 \backcite {sedrasmith}{{113}{5.2.1}{figure.caption.133}}
+\backcite {B250C2306}{{114}{5.2.2}{subsection.5.2.2}}

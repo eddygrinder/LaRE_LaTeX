@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {3.5.4}Relés}{63}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{64}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{65}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Software}{66}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Software}{67}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{68}{subsection.3.6.1}%
 \contentsline {subsubsection}{\textit {Python}}{68}{section*.78}%
 \contentsline {subsubsection}{\textit {Flask}}{68}{section*.79}%
@@ -84,9 +84,9 @@
 \contentsline {section}{\numberline {5.2}Rectificadores}{112}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{112}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{114}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Filtros}{115}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Filtros}{116}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{116}{subsection.5.3.1}%
 \contentsline {section}{\numberline {5.4}Limitações}{119}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Melhoramentos}{119}{section.5.5}%
-\contentsline {chapter}{Refer\^{e}ncias}{120}{section*.142}%
+\contentsline {chapter}{Refer\^{e}ncias}{120}{section*.143}%
 \contentsline {chapter}{Anexo \numberline {A}Datasheet}{137}{appendix.1.A}%
