@@ -45,7 +45,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{59}{figure.caption.61}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{59}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{60}{figure.caption.64}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{61}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{60}{figure.caption.66}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{61}{figure.caption.68}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{62}{figure.caption.69}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{63}{figure.caption.71}%
@@ -87,13 +87,13 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{112}{figure.caption.131}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - meia onda}}{113}{figure.caption.132}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{113}{figure.caption.133}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Distorção tensão \textit {ripple} \acrshort {virtualbench}}}{115}{figure.caption.135}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - onda completa}}{116}{figure.caption.136}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Tensão de \textit {ripple} - circuito práctico - onda completa}}{116}{figure.caption.137}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{117}{figure.caption.138}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Medições prácticas \textins {complementares} \textit {ripple}}}{115}{figure.caption.135}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - onda completa}}{115}{figure.caption.136}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Tensão de \textit {ripple} - \textit {multisim} - onda completa}}{116}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{118}{figure.caption.138}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{118}{figure.caption.139}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ experimental \acrshort {lare} - TEMPORÁRIO}}{118}{figure.caption.140}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ experimental \acrshort {lare} - TEMPORÁRIO}}{119}{figure.caption.140}%
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{119}{figure.caption.141}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Frequência de corte - \acrshort {lare}}}{119}{figure.caption.142}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Frequência de corte - \acrshort {lare}}}{120}{figure.caption.142}%
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{120}{figure.caption.143}%
 \addvspace {10\p@ }
