@@ -115,6 +115,10 @@ Nestas experiências implementadas no \acrshort{lare} os utilizadores podem esco
 Sendo assim, o exemplo da análise será feita para o caso em que $f=\SI{200}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{4.7}{\micro\farad}$. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
 
 \begin{equation} \label{eq:verificarcondicao}
+	RC >> \dfrac{1}{f}
+\end{equation}
+
+\begin{equation}
 	\SI{2.2}{\kilo\ohm} * \SI{4.7}{\micro\farad} >> \dfrac{1}{200}
 \end{equation}
 
@@ -149,8 +153,8 @@ Os erros relativos obtidos foram de \SI{18.79}{\percent} para o \acrshort{lare},
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}
-Os resultados obtidos nesta experiência, numa fase inicial, não foram os esperados, apresentando discrepâncias entre os valores teóricos, simulados e experimentais, com erros superiores a \SI{25}{\percent}. Perante esta situação, foram realizados testes e medições complementares que permitiram concluir que a qualidade do condensador e a estabilidade da tensão de saída do transformador poderiam não ser adequados para uma aferição fiável do \textit{ripple}. Com efeito, entre sessões de trabalho, observaram-se flutuações da ordem dos \SI{0.2}{\volt} na tensão de saída, variação suficiente para afectar significativamente o cálculo do \textit{ripple}. Para mitigar estas limitações, o condensador foi substituído por um componente novo, a tensão de saída do transformador foi monitorizada várias vezes durante os testes, e todas as medições passaram a ser realizadas na mesma sessão de trabalho, garantindo maior consistência.
-Outro aspecto importante, foram os testes efectuados no \textit{multisim}, já que a ponte recficadora utilizada no \acrshort{lare} - \textit{B250C2300-1500} \cite{B250C2306} - não está disponível neste simulador. Adicionalmente, os testes realizados no \textit{Multisim} também se revelaram úteis, embora limitados pela indisponibilidade da ponte rectificadora utilizada no \acrshort{lare} — modelo \textit{B250C2300-1500} \cite{B250C2306} — nesse simulador. De forma a validar os resultados efectuaram-se, também, testes complementares com uma ponte rectificadora baseada nos díodos \textit{1N4007}, disponíveis no \textit{multisim}. Estas medições foram realizadas em contexto laboratorial e os coircuitos montados na ``placa branca''.
+Os resultados obtidos nesta experiência, numa fase inicial, não foram os esperados, apresentando discrepâncias entre os valores teóricos, simulados e experimentais, com erros superiores a \SI{25}{\percent}. Perante esta situação, foram realizados testes e medições complementares que permitiram concluir que a qualidade do condensador e a estabilidade da tensão de saída do transformador poderiam não ser adequados para uma aferição fiável do \textit{ripple}. Com efeito, entre sessões de trabalho, observaram-se flutuações da ordem dos \SI{0.2}{\volt} na tensão de saída do transformador, variação suficiente para afectar significativamente o cálculo do \textit{ripple}. Para mitigar estas limitações, o condensador foi substituído por um componente novo, a tensão de saída do transformador foi monitorizada várias vezes durante os testes e todas as medições passaram a ser realizadas na mesma sessão de trabalho, garantindo maior consistência.
+Outro aspecto importante, foram os testes efectuados no \textit{multisim}, já que a ponte recficadora utilizada no \acrshort{lare} - \textit{B250C2300-1500} \cite{B250C2306} - não está disponível neste simulador. De forma a validar os resultados efectuaram-se, também, testes complementares com uma ponte rectificadora baseada nos díodos \textit{1N4007} \cite{1N400x}, disponíveis no \textit{multisim}. Estas medições foram realizadas em contexto laboratorial e os circuitos montados na ``placa branca''.
 A Tabela \ref{Table:testespontes} apresenta todos os resultados dos testes complementares.
 
 \begin{table}[htb]
@@ -174,13 +178,20 @@ $U_{Diodo}$ - medido no \acrshort{virtualbench} & \SI{0.56}{\volt} & \SI{0.49}{\
 \end{tabular}
 \end{table}
 
-Além disso, estes testes também permitiram concluir que o valor do condensador também não seria o correcto. Sendo assim,  Após alguns testes complementares, chegou-se à conclusão que o condensador uma vez que a tensão de \textit{ripple} calculada teoricamente não correspondia à tensão de \textit{ripple} medida. Após análise, verificou-se que a expressão utilizada para calcular a tensão de \textit{ripple} teórica estava incorreta. A expressão correta é a Equação \ref{eq:vrippleOC}, que considera o valor da tensão de pico da onda de entrada e não o valor médio.
+Outra dificuldade que contribui para justificar os erros obtidos — nomeadamente a discrepância no valor de \textit{ripple} calculado, dado que, ao aumentar-se $U_{Resistencia}$, seria de esperar uma diminuição do \textit{ripple}, conforme apresentado na Tabela~\ref{Table:testespontes} — está relacionada com as medições efectuadas no \acrshort{virtualbench}. A Figura~\ref{fig:distorcaoripple} mostra um exemplo de uma forma de onda adquirida com este equipamento, onde é visível a distorção do sinal de \textit{ripple} devido à presença de picos e ruído. Esta distorção pode comprometer a precisão da medição, dificultando a determinação rigorosa do valor real de \textit{ripple}. \textbf{Colocar uma imagem comparativa do osciloscópio para comparar as ondas? OPINIÃO PROF}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/OC_RIPPLE_VB_1N4007.png}
+	\caption{Distorção tensão \textit{ripple} \acrshort{virtualbench}}
+	\label{fig:distorcaoripple}
+\end{figure}
 
+Sendo assim, relativamente aos testes efectuados no \textit{multisim}, estes podem ser simulados com a ponte rectificadora constituída por 4 díodos \textit{1N4007}, sem compromenter a análise, objectivos e conclusões do trabalho.
 
-Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}:
+Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}, já que se verifica a condição da Equação \ref{eq:verificarcondicao}.
 
 \begin{equation} \label{eq:vrippleOCTeorico}
-	U_{ripple} = \frac{\SI{5.6}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{250}{\milli\volt}
+	U_{ripple} = \frac{\SI{5.68}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{258.2}{\milli\volt}
 \end{equation}
 
 Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura~\ref{fig:ripplelareonda}, onde é possível observar a forma de onda da tensão de saída, bem como o valor correspondente da tensão de \textit{ripple}. 
@@ -192,11 +203,11 @@ Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura
 	\label{fig:ripplelareonda}
 \end{figure}
 
-\textbf{Justificação do desfasamento entre as ondas de entrada e saída. OPINIÃO PROF:} É importante referir que, embora ambas as formas de onda (entrada e saída) tenham sido adquiridas com os mesmos parâmetros de configuração — nomeadamente, a mesma frequência de amostragem e tempo de aquisição —, os sinais não foram captados em simultâneo. Este procedimento foi necessário devido à configuração desta experiência, onde a ligação comum de massas entre a entrada do transformador e a saída do circuito impede a medição simultânea dos dois sinais com o \acrshort{virtualbench}, sob pena de provocar curto-circuito de massas. Assim, as medições tiveram de ser realizadas de forma sequencial, com reconfiguração dos relés entre cada aquisição. Ao reiniciar o osciloscópio, o sistema volta a aguardar pela condição de disparo (trigger), a qual pode ocorrer em pontos ligeiramente diferentes do ciclo da onda. Esta diferença no instante inicial da aquisição introduz um desfasamento temporal aparente entre os sinais apresentados, que não deve ser interpretado como um desfasamento real entre os circuitos, mas sim como uma consequência natural da aquisição faseada.
+É importante referir que, embora ambas as formas de onda (entrada e saída) tenham sido adquiridas com os mesmos parâmetros de configuração — nomeadamente, a mesma frequência de amostragem e tempo de aquisição —, os sinais não foram captados em simultâneo. Este procedimento foi necessário devido à configuração desta experiência, onde a ligação comum de massas entre a entrada do transformador e a saída do circuito impede a medição simultânea dos dois sinais com o \acrshort{virtualbench}, sob pena de provocar curto-circuito de massas. Assim, as medições tiveram de ser realizadas de forma sequencial, com reconfiguração dos relés entre cada aquisição. Ao reiniciar o osciloscópio, o sistema volta a aguardar pela condição de disparo (trigger), a qual pode ocorrer em pontos ligeiramente diferentes do ciclo da onda. Esta diferença no instante inicial da aquisição introduz um desfasamento temporal aparente entre os sinais apresentados, que não deve ser interpretado como um desfasamento real entre os circuitos, mas sim como uma consequência natural da aquisição faseada.
 
 \textbf{Referir que a onda de saída foi alvo de um filtro para suavizar os picos e ruído??? Opinião PROF}
 
-O erro relativo associado ao valor obtido no \acrshort{lare} é de \SI{1.54}{\percent}, o que é perfeitamente aceitável.
+O erro relativo associado ao valor obtido no \acrshort{lare} é inferior a \SI{1}{\percent}, o que é perfeitamente aceitável.
 
 A Figura \ref{fig:ripplepracticoondacompleta} apresenta os resultados práticos obtidos com o circuito montado na ``placa branca'', onde a tensão de \textit{ripple} obtida foi de: \SI{191}{\milli\volt}, sendo que o erro relativo é de \SI{23.6}{\percent}.
 
