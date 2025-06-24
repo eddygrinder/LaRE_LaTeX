@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  23 JUN 2025 18:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.7.31)  24 JUN 2025 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1858,39 +1858,38 @@ File: figures/boda_HPF_fc.png Graphic file (type png)
 <use figures/boda_HPF_fc.png>
 Package pdftex.def Info: figures/boda_HPF_fc.png  used on input line 260.
 (pdftex.def)             Requested size: 239.00558pt x 136.52881pt.
- [117] [118 <./figures/bode_hpf_fc.png> <./figures/boda_HPF_fc.png (PNG copy)>]
-<figures/filtro_passa-alto.png, id=3453, 462.528pt x 346.896pt>
+<figures/filtro_passa-alto.png, id=3444, 462.528pt x 346.896pt>
 File: figures/filtro_passa-alto.png Graphic file (type png)
 <use figures/filtro_passa-alto.png>
 Package pdftex.def Info: figures/filtro_passa-alto.png  used on input line 271.
 (pdftex.def)             Requested size: 278.8358pt x 209.13432pt.
-<figures/PA_10nF2k2-80Khz.png, id=3458, 1457.445pt x 788.9475pt>
+ [117] [118 <./figures/bode_hpf_fc.png> <./figures/boda_HPF_fc.png (PNG copy)> <./figures/filtro_passa-alto.png>]
+<figures/PA_10nF2k2-80Khz.png, id=3460, 1457.445pt x 788.9475pt>
 File: figures/PA_10nF2k2-80Khz.png Graphic file (type png)
 <use figures/PA_10nF2k2-80Khz.png>
 Package pdftex.def Info: figures/PA_10nF2k2-80Khz.png  used on input line 281.
 (pdftex.def)             Requested size: 179.25244pt x 97.02913pt.
-<figures/boda_HPF_vout.png, id=3459, 1657.19125pt x 947.54pt>
+<figures/boda_HPF_vout.png, id=3461, 1657.19125pt x 947.54pt>
 File: figures/boda_HPF_vout.png Graphic file (type png)
 <use figures/boda_HPF_vout.png>
 Package pdftex.def Info: figures/boda_HPF_vout.png  used on input line 283.
 (pdftex.def)             Requested size: 179.25244pt x 102.48027pt.
-<figures/filtro_passa-alto_fc_LaRE.png, id=3462, 462.528pt x 346.896pt>
+<figures/filtro_passa-alto_fc_LaRE.png, id=3464, 462.528pt x 346.896pt>
 File: figures/filtro_passa-alto_fc_LaRE.png Graphic file (type png)
 <use figures/filtro_passa-alto_fc_LaRE.png>
 Package pdftex.def Info: figures/filtro_passa-alto_fc_LaRE.png  used on input line 292.
 (pdftex.def)             Requested size: 278.8358pt x 209.13432pt.
- [119 <./figures/filtro_passa-alto.png> <./figures/PA_10nF2k2-80Khz.png> <./figures/boda_HPF_vout.png (PNG copy)>]
-<figures/PA_10nF2k2-Fc.png, id=3473, 1457.445pt x 788.9475pt>
+<figures/PA_10nF2k2-Fc.png, id=3467, 1457.445pt x 788.9475pt>
 File: figures/PA_10nF2k2-Fc.png Graphic file (type png)
 <use figures/PA_10nF2k2-Fc.png>
 Package pdftex.def Info: figures/PA_10nF2k2-Fc.png  used on input line 302.
 (pdftex.def)             Requested size: 179.25244pt x 97.02913pt.
-<figures/boda_HPF_vout_fc.png, id=3474, 1369.115pt x 657.45625pt>
+<figures/boda_HPF_vout_fc.png, id=3468, 1369.115pt x 657.45625pt>
 File: figures/boda_HPF_vout_fc.png Graphic file (type png)
 <use figures/boda_HPF_vout_fc.png>
 Package pdftex.def Info: figures/boda_HPF_vout_fc.png  used on input line 304.
 (pdftex.def)             Requested size: 179.25244pt x 86.07422pt.
-) [120 <./figures/filtro_passa-alto_fc_LaRE.png> <./figures/PA_10nF2k2-Fc.png> <./figures/boda_HPF_vout_fc.png>] (./main.bbl (./main.brf)
+) [119 <./figures/PA_10nF2k2-80Khz.png> <./figures/boda_HPF_vout.png (PNG copy)> <./figures/filtro_passa-alto_fc_LaRE.png>] [120 <./figures/PA_10nF2k2-Fc.png> <./figures/boda_HPF_vout_fc.png>] (./main.bbl (./main.brf)
 \tf@brf=\write12
 \openout12 = `main.brf'.
 
@@ -2367,7 +2366,7 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (184 pages, 95596952 bytes).
+Output written on main.pdf (184 pages, 95596849 bytes).
 PDF statistics:
  4482 PDF objects out of 5155 (max. 8388607)
  3902 compressed objects within 40 object streams
