@@ -112,23 +112,23 @@ As duas experiências foram implementados com o objectivo de estudar e avaliar a
 \label{sec:resultados_RectificadoresMeiaOnda}
 Nestas experiências implementadas no \acrshort{lare} os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
 
-Sendo assim, o exemplo da análise será feita para o caso em que $f=\SI{200}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{4.7}{\micro\farad}$. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
+Sendo assim, o exemplo da análise será feita para o caso em que $f=\SI{50}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$. Este valor calculado servirá, também, para comparar a tensão de \textit{ripple} entre os dois tipos de rectificadores. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
 
 \begin{equation} \label{eq:verificarcondicao}
 	RC >> \dfrac{1}{f}
 \end{equation}
 
 \begin{equation}
-	\SI{2.2}{\kilo\ohm} * \SI{4.7}{\micro\farad} >> \dfrac{1}{200}
+	\SI{2.2}{\kilo\ohm} * \SI{100}{\micro\farad} >> \dfrac{1}{100}
 \end{equation}
 
-Uma vez que esta condição não se verifica, a expressão a utilizar para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vripplecompleta}. O resultado obtido está representado na Equação \ref{eq:vripplecalculado}:
+Uma vez que esta condição se verifica, a expressão a utilizar para calcular a tensão de \textit{ripple} teórica pode ser dada pela sua aproximação, representada pela Equação \ref{eq:vripple}. O resultado obtido está representado na Equação \ref{eq:vripplecalculado}:
 
 \begin{equation} \label{eq:vripplecalculado}
-	U_{ripple} = \SI{4.3}{\volt}(1-e^{-\frac{\SI{0.005}{\second}}{\SI{2.2}{\kilo\ohm}*\SI{4.7}{\micro\farad}}}) \approx \SI{1.65}{\volt}
+	U_{ripple} = \frac{\SI{7}{\volt}-\SI{0.7}{\volt}}{\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{572.73}{\milli\volt}
 \end{equation}
 
-A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de saída e o valor da tensão de \textit{ripple} obtido no \acrshort{lare}, que foi de \SI{1.34}{\volt}.
+A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de saída e o valor da tensão de \textit{ripple} obtido no \acrshort{lare}, que foi de \SI{1.34}{\volt}. - MUDAR!!!!!!
 
 \begin{figure}[hbtp]
 	\centering
@@ -137,19 +137,25 @@ A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de sa
 	\label{fig:ripplelaremeiaonda}
 \end{figure}
 
-As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, respectivamente, os resultados práticos e simulados. A tensão de ripple medida foi de \SI{1.38}{\volt} e \SI{1.51}{\volt}.
+As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, respectivamente, os resultados práticos e simulados. A tensão de ripple medida foi de \SI{481}{\milli\volt} e \SI{490.98}{\milli\volt}.
 
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Circuito práctico\label{fig:realmeiaonda}]{{\includegraphics[width=6.3cm]{figures/meiaonda-4.7-2.2.png} }}%
+		\subfloat[\centering Circuito práctico\label{fig:realmeiaonda}]{{\includegraphics[width=6.3cm]{figures/ripple_práctica_MO-2k2-100uF.png} }}%
 		\qquad
-		\subfloat[\centering Simulação \textit{multisim}\label{fig:multisimmeiaonda}]{{\includegraphics[width=6.3cm]{figures/resultados_meia-onda.png} }}%
+		\subfloat[\centering Simulação \textit{multisim}\label{fig:multisimmeiaonda}]{{\includegraphics[width=6.3cm]{figures/ripple_multisim_MO-2k2-100uFALT.png} }}%
 		\caption{Valores experimentais e simulados - tensão de \textit{ripple}}%
 		\label{fig:simulacaoripple}%
 	\end{figure}
 
-Os erros relativos obtidos foram de \SI{18.79}{\percent} para o \acrshort{lare}, \SI{16.36}{\percent} e \SI{8.49}{\percent}, para os valores medidos no circuito prácticos e simulados. Esta diferença em relação ao valor calculado teoricamente deve-se a diversos fatores, entre os quais se destaca a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como uma resistência constante e um condensador sem perdas \cite{sedrasmith}. A simulação, embora mais próxima da realidade, utiliza também componentes ideais por omissão, como é o caso do condensador sem resistência série (ESR). Ainda assim, considera fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito. A maior discrepância nos valores experimentais pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores electrolíticos. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
+Os erros relativos obtidos foram de \SI{11111}{\percent} no \acrshort{lare}, \SI{16.02}{\percent} no circuito prático e \SI{14.27}{\percent} na simulação. Esta discrepância relativamente ao valor teórico resulta de diversos fatores, sendo de destacar a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como resistência constante e condensador sem perdas \cite{sedrasmith}.
+
+A simulação, embora mais próxima da realidade, recorre igualmente a modelos ideais por omissão. É o caso dos condensadores no \textit{Multisim}, que não incluem resistência série (ESR) nem indutância série (ESL)\footnote{Uma análise às propriedades do condensador no \textit{Multisim} revelou que estes são ideais, baseados em modelos \acrshort{spice} simplificados, representados pela seguinte estrutura: \textit{c\%p \%t1 \%t2 \#1 \%v4?IC=\#5\%v:\%v;}}. Ainda assim, a simulação contempla fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito, o que a torna mais precisa do que o modelo teórico.
+
+A maior discrepância observada nos resultados experimentais — embora não excessiva — pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores eletrolíticos, que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}.
+
+Assim, as diferenças entre os vários métodos de obtenção de resultados são compreensíveis e enquadram-se dentro do esperado, considerando as limitações e simplificações de cada abordagem.
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}

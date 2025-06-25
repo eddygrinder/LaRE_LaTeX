@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: front/title.aux
@@ -15,11 +15,11 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: chapters/appendixA.aux
 Database file #1: sampleRefs.bib
 Warning--entry type for "jinja" isn't style-file defined
---line 12 of file sampleRefs.bib
+--line 41 of file sampleRefs.bib
 Warning--entry type for "flaskDigitalOcean" isn't style-file defined
---line 20 of file sampleRefs.bib
+--line 57 of file sampleRefs.bib
 Warning--entry type for "tutorialsiteflask" isn't style-file defined
---line 29 of file sampleRefs.bib
+--line 75 of file sampleRefs.bib
 Warning--empty publisher in Hofstein
 Warning--empty publisher in pisa2018
 Warning--empty booktitle in zutinlab2go
@@ -36,36 +36,36 @@ Warning--empty journal in ExperiencesRemoteLaboratories
 Warning--empty booktitle in DevelopingVirtualAndRemoteUndergraduate
 Warning--empty journal in TheVISIRproject
 Warning--empty booktitle in pereira
-You've used 180 entries,
+You've used 181 entries,
             1876 wiz_defined-function locations,
-            1329 strings with 36242 characters,
-and the built_in function-call counts, 34294 in all, are:
-= -- 3174
-> -- 1426
+            1332 strings with 36331 characters,
+and the built_in function-call counts, 34402 in all, are:
+= -- 3186
+> -- 1427
 < -- 0
-+ -- 577
++ -- 578
 - -- 397
-* -- 2072
-:= -- 4559
-add.period$ -- 285
-call.type$ -- 180
-change.case$ -- 172
+* -- 2074
+:= -- 4568
+add.period$ -- 286
+call.type$ -- 181
+change.case$ -- 173
 chr.to.int$ -- 0
-cite$ -- 196
-duplicate$ -- 1493
-empty$ -- 3848
+cite$ -- 197
+duplicate$ -- 1497
+empty$ -- 3866
 format.name$ -- 397
-if$ -- 8701
+if$ -- 8733
 int.to.chr$ -- 0
-int.to.str$ -- 180
+int.to.str$ -- 181
 missing$ -- 77
-newline$ -- 658
+newline$ -- 662
 num.names$ -- 101
-pop$ -- 1140
+pop$ -- 1149
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1083
+skip$ -- 1086
 stack$ -- 0
 substring$ -- 1208
 swap$ -- 434
@@ -75,6 +75,6 @@ top$ -- 0
 type$ -- 0
 warning$ -- 16
 while$ -- 196
-width$ -- 183
-write$ -- 1540
+width$ -- 184
+write$ -- 1547
 (There were 19 warnings)
