@@ -112,7 +112,7 @@ As duas experiências foram implementados com o objectivo de estudar e avaliar a
 \label{sec:resultados_RectificadoresMeiaOnda}
 Nestas experiências implementadas no \acrshort{lare} os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
 
-Sendo assim, o exemplo da análise será feita para o caso em que $f=\SI{50}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$. Este valor calculado servirá, também, para comparar a tensão de \textit{ripple} entre os dois tipos de rectificadores. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
+Sendo assim, o exemplo da análise será feita para o caso em que $$, $f=\SI{50}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$. Este valor calculado servirá, também, para comparar a tensão de \textit{ripple} entre os dois tipos de rectificadores. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
 
 \begin{equation} \label{eq:verificarcondicao}
 	RC >> \dfrac{1}{f}
@@ -137,7 +137,7 @@ A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de sa
 	\label{fig:ripplelaremeiaonda}
 \end{figure}
 
-As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, respectivamente, os resultados práticos e simulados. A tensão de ripple medida foi de \SI{481}{\milli\volt} e \SI{490.98}{\milli\volt}.
+As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, respectivamente, os resultados práticos e simulados. A tensão de ripple medida foi de \SI{481}{\milli\volt} e \SI{490.98}{\milli\volt}, respectivamente.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -209,7 +209,7 @@ Outra dificuldade que contribuiu para justificar os erros obtidos — nomeadamen
 Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}, já que se verifica a condição da Equação \ref{eq:verificarcondicao}. O valor teórico da tensão de \textit{ripple} está representado na Equação \ref{eq:vrippleOCTeorico}:
 
 \begin{equation} \label{eq:vrippleOCTeorico}
-	U_{ripple} = \frac{\SI{5.68}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{258.2}{\milli\volt}
+	U_{ripple} = \frac{\SI{7}{\volt} - \SI{1.4}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{254.55}{\milli\volt}
 \end{equation}
 
 Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura~\ref{fig:ripplelareonda}, onde é possível observar a forma de onda da tensão de saída, bem como o valor correspondente da tensão de \textit{ripple}. 
