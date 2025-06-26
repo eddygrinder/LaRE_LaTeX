@@ -27,7 +27,7 @@ No \acrshort{lare} o utilizador efectua cinco medições de cada grandeza (tens�
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/resultados_medicoes_ohm.png}
+	\includegraphics[width=0.6\textwidth]{figures/resultados_medicoes_ohm.png}
 	\caption{Medição práctica}
 	\label{fig:resultados_medicoes_1k}
 \end{figure}
@@ -47,7 +47,7 @@ O gráfico \textit{U vs I}, obtido para esta resistência é apresentado na Figu
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/ohm_graph.png}
+	\includegraphics[width=0.6\textwidth]{figures/ohm_graph.png}
 	\caption{Gráfico da Lei de \textit{Ohm} - \SI{1}{\kilo\ohm} - \acrshort{lare}}
 	\label{fig:grafico_LaRE_1k}
 \end{figure}
@@ -89,7 +89,7 @@ Ainda assim e como forma de complementar a análise dos resultados, foram efectu
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/OHM_resultado_multisim.png}
+	\includegraphics[width=0.6\textwidth]{figures/OHM_resultado_multisim.png}
 	\caption{Multisim - Lei de \textit{Ohm}}
 	\label{fig:multisimOHM}
 \end{figure}
@@ -106,13 +106,11 @@ Verifica-se, através da análise dos gráficos, que os dados obtidos com o \acr
 
 \section{Rectificadores}
 \label{sec:resultados_rectificadores}
-As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). 
+As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). Os utilizadores podem escolher uma das quatro combinações de resistência e condensador, sendo que no caso do rectificador de meia onda podem fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso do rectificador de onda completa a frequência é de \SI{50}{\hertz}. Em ambos as experiências, os exemplos em análise far-se-ão com os seguintes valores: $R=\SI{2.2}{\kilo\ohm}$, $C=\SI{100}{\micro\farad}$, $v_{in}=\SI{6.6}{\volt}$ e $f=\SI{50}{\hertz}$.
 
 \subsection{Resultados experimentais [meia onda]}
 \label{sec:resultados_RectificadoresMeiaOnda}
-Nestas experiências implementadas no \acrshort{lare} os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
-
-Sendo assim, o exemplo da análise será feita para o caso em que $v_{in}=\SI{6.6}{\volt}$, $f=\SI{50}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$. Este valor calculado servirá, também, para comparar a tensão de \textit{ripple} entre os dois tipos de rectificadores. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
+Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
 
 \begin{equation} \label{eq:verificarcondicao}
 	RC >> \dfrac{1}{f}
@@ -153,13 +151,13 @@ Os erros relativos obtidos foram de \SI{20.1}{\percent} no \acrshort{lare}, \SI{
 
 A simulação, embora mais próxima da realidade, recorre igualmente a modelos ideais por omissão. É o caso dos condensadores no \textit{Multisim}, que não incluem resistência série (ESR) nem indutância série (ESL)\footnote{Uma análise às propriedades do condensador no \textit{Multisim} revelou que estes são ideais, baseados em modelos \acrshort{spice} simplificados, representados pela seguinte estrutura: \textit{c\%p \%t1 \%t2 \#1 \%v4?IC=\#5\%v:\%v;}}. Ainda assim, a simulação contempla fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito, o que a torna mais precisa do que o modelo teórico.
 
-A maior discrepância observada nos resultados do \acrshort{lare} pode ser justificada por erros no cálculo da tensão de \textit{ripple}, através da Figura \ref{fig:ripplelaremeiaonda} pode ver-se que a onda apresentada distorce ligeiramente nos picos positivos. Além disso, e tal como nos valores obtidos na práctica, as tolerâncias típicas dos condensadores eletrolíticos são elevadas, sendo que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}. Outro factor que também condiciona o erro relativo são as baixas correntes nos díodos. Esta corrente segue uma relação exponencial com a tensão directa aplicada, tornando-se extremamente sensível a pequenas variações de tensão ou do parâmetro $I_{S}$. Nesta zona, fenómenos secundários como corrente de fuga, variações térmicas e limitações instrumentais assumem maior relevância e desviam o comportamento do díodo do modelo ideal.
+A maior discrepância observada nos resultados do \acrshort{lare} pode ser justificada por erros no cálculo da tensão de \textit{ripple}, através da Figura \ref{fig:ripplelaremeiaonda} pode ver-se que a onda apresentada distorce ligeiramente nos picos positivos. Além disso, e tal como nos valores obtidos na práctica, as tolerâncias típicas dos condensadores eletrolíticos são elevadas, sendo que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}. Outro factor que também condiciona o erro relativo são as baixas correntes nos díodos. Esta corrente segue uma relação exponencial com a tensão directa aplicada, tornando-se extremamente sensível a pequenas variações de tensão ou do parâmetro $I_{S}$. Nesta zona, fenómenos secundários como corrente de fuga, variações térmicas e limitações instrumentais assumem maior relevância e desviam o comportamento do díodo do modelo ideal \cite{sedrasmith}.
 
 Assim, as diferenças entre os vários métodos de obtenção de resultados são compreensíveis e enquadram-se dentro do esperado, considerando as limitações e simplificações de cada abordagem.
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}
-Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}, sendo que a tensão à saída do transformador é \SI{6.6}{\volt}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}, já que se verifica a condição da Equação \ref{eq:verificarcondicao}. O valor teórico da tensão de \textit{ripple} está representado na Equação \ref{eq:vrippleOCTeorico}:
+Uma vez que a condição dada pela Equação \ref{eq:verificarcondicao} se verifica para ambos os rectificadores, já que os valores de $R$, $C$ e $f$ são os mesmos, a expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}. O valor teórico da tensão de \textit{ripple} está representado na Equação \ref{eq:vrippleOCTeorico}:
 
 \begin{equation} \label{eq:vrippleOCTeorico}
 	U_{ripple} = \frac{\SI{6.6}{\volt} - \SI{1.4}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{236.36}{\milli\volt}
@@ -217,22 +215,20 @@ Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/onda-completa.png}
+	\includegraphics[width=0.6\textwidth]{figures/onda-completa.png}
 	\caption{Tensão de \textit{ripple} no \acrshort{lare} - onda completa}
 	\label{fig:ripplelareonda}
 \end{figure}
 
 É importante referir que, embora ambas as formas de onda (entrada e saída) tenham sido adquiridas com os mesmos parâmetros de configuração — nomeadamente, a mesma frequência de amostragem e tempo de aquisição —, os sinais não foram captados em simultâneo. Este procedimento foi necessário devido à configuração desta experiência, onde a ligação comum de massas entre a entrada do transformador e a saída do circuito impede a medição simultânea dos dois sinais com o \acrshort{virtualbench}, sob pena de provocar curto-circuito de massas. Assim, as medições tiveram de ser realizadas de forma sequencial, com reconfiguração dos relés entre cada aquisição. Ao reiniciar o osciloscópio, o sistema volta a aguardar pela condição de disparo (trigger), a qual pode ocorrer em pontos ligeiramente diferentes do ciclo da onda. Esta diferença no instante inicial da aquisição introduz um desfasamento temporal aparente entre os sinais apresentados, que não deve ser interpretado como um desfasamento real entre os circuitos, mas sim como uma consequência natural da aquisição faseada.
 
-\textbf{Já que falo na distorção e ruído do ripple, é de referir que a onda de saída foi alvo de um filtro para suavizar os picos e ruído??? Opinião PROF}
-
 O erro relativo associado ao valor obtido no \acrshort{lare} é inferior a \SI{5}{\percent}, o que é perfeitamente aceitável.
 
-Os testes efectuados no \textit{multisim} com a ponte rectificadora constituída por 4 díodos \textit{1N4007} apresentam um valor de \textit{ripple} de \SI{201}{\milli\volt}, conforme representado na Figura~\ref{fig:ripplemultisim}. O erro relativo é de \SI{14.9}{\percent}, o que é aceitável, tendo em conta as condições de simulação, a distorção e ruído da onda e os componentes ideais utilizados, como é o caso, por exemplo, do condensador sem resistência série (ESR). Esta distorção pode comprometer a precisão da medição, dificultando a determinação rigorosa do valor real de \textit{ripple}. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
+Os testes efectuados no \textit{multisim} com a ponte rectificadora constituída por 4 díodos \textit{1N4007} apresentam um valor de \textit{ripple} de \SI{201}{\milli\volt}, conforme representado na Figura~\ref{fig:ripplemultisim}. O erro relativo é de \SI{14.9}{\percent}, o que é aceitável, tendo em conta as condições de simulação, a distorção e ruído da onda e os componentes ideais utilizados, como é o caso, por exemplo, do condensador sem resistência série (ESR). Esta distorção pode comprometer a precisão da medição, dificultando a determinação rigorosa do valor real de \textit{ripple}. Tal como já referido na análise à rectificação de meia onda, a elevada tolerância do condensador electrolítico e as correntes baixas nos díodos são factores que também condicionam o erro relativo. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/OC_RIPPLE_VB_1N4007.png}
+	\includegraphics[width=0.5\textwidth]{figures/OC_RIPPLE_VB_1N4007.png}
 	\caption{Tensão de \textit{ripple} - \textit{multisim} - onda completa}
 	\label{fig:ripplemultisim}
 \end{figure}
@@ -246,15 +242,13 @@ Estas duas experiências foram realizadas com o objetivo de estudar a resposta e
 
 \subsection{Resultados experimentais [filtro passa-alto]}
 \label{sec:resultados_filtros_passaalto}
-O circuito analisado será o filtro passa-alto, representado na Figura \ref{fig:filtro_pa} e configurado com $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{10}{\nano\farad}$. Os gráficos que se esperam obter estão representados na Figura \ref{fig:Bode_pa}. Para os restantes valores e configurações, os resultados poderão ser obtidos de forma análoga.
-
-Para estes valores, a frequência de corte teórica é dada pela Equação \ref{eq:frequenciacorte}, sendo que o valor obtido é de \SI{7234.32}{\hertz}.
+O circuito analisado será o filtro passa-alto, representado na Figura \ref{fig:filtro_pa} e configurado com $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{10}{\nano\farad}$. Os gráficos que se esperam obter estão representados na Figura \ref{fig:Bode_pa}. Para os restantes valores e configurações, os resultados poderão ser obtidos de forma análoga e a frequência de corte teórica é dada pela Equação \ref{eq:frequenciacorte}, sendo que o valor obtido é de \SI{7234.32}{\hertz}.
 
 Os valores experimentais obtidos com o \acrshort{lare} relativamente à análise do digarama de \textit{Bode}, estão representados na Figura \ref{fig:fcBode}, sendo que o valor aproximado da frequência de corte é de \SI{7071.1}{\hertz}. O erro relativo é, aproximadamente, \SI{2.26}{\percent}. Este valor é perfeitamente aceitável, tendo em conta a tolerância dos componentes utilizados, os erros de medição e aproximações.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/bode_hpf_fc.png}
+	\includegraphics[width=0.5\textwidth]{figures/bode_hpf_fc.png}
 	\caption{Frequência de corte - filtro passa-alto - Diagrama de \textit{Bode}}
 	\label{fig:fcBode}
 \end{figure}
@@ -268,14 +262,12 @@ Os resultados complementares obtidos com base na simulação efectuada no \texti
 	\label{fig:fcBodemultisim}
 \end{figure}
 
-O valor da frequência de corte também pode ser obtido através da análise dos gráficos que representam a relação entre a tensão de saída e a tensão de entrada. 
-
-Como se pode ver pela análise da Figura \ref{fig:voutvinlare}, o ganho a altas frequências é prácticamente unitário, estando em consonância com os valores obtidos no diagrama de \textit{Bode}, representado na Figura \ref{fig:fcBode}. 
+O valor da frequência de corte também pode ser obtido através da análise dos gráficos que representam a relação entre a tensão de saída e a tensão de entrada. Como se pode ver pela análise da Figura \ref{fig:voutvinlare}, o ganho a altas frequências é prácticamente unitário, estando em consonância com os valores obtidos no diagrama de \textit{Bode}, representado na Figura \ref{fig:fcBode}. 
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/filtro_passa-alto.png}
-	\caption{$v_{out}$ \textit{vs} $v_{in}$ experimental \acrshort{lare} - TEMPORÁRIO}
+	\includegraphics[width=0.6\textwidth]{figures/filtro_passa-alto.png}
+	\caption{$v_{out}$ \textit{vs} $v_{in}$ \acrshort{lare}}
 	\label{fig:voutvinlare}
 \end{figure}
 
@@ -295,7 +287,7 @@ Relativamente à análise da frequência de corte, representado na Figura \ref{f
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/filtro_passa-alto_fc_LaRE.png}
+	\includegraphics[width=0.6\textwidth]{figures/filtro_passa-alto_fc_LaRE.png}
 	\caption{Frequência de corte - \acrshort{lare}}
 	\label{fig:fcvoutlare}
 \end{figure}
@@ -311,9 +303,3 @@ O circuito práctico apresenta uma frequência de corte de \SI{7000}{\hertz}, co
 		\caption{Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit{vs} $v_{in}$}%
 		\label{fig:simulacaovout}%
 	\end{figure}
-
-
-\section{Limitações}
-\section{Melhoramentos}
-
-

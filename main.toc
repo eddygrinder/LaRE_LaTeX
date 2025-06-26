@@ -84,9 +84,7 @@
 \contentsline {section}{\numberline {5.2}Rectificadores}{112}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{112}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Resultados experimentais [onda completa]}{114}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Filtros}{117}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Filtros}{116}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Resultados experimentais [filtro passa-alto]}{117}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Limitações}{120}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Melhoramentos}{120}{section.5.5}%
-\contentsline {chapter}{Refer\^{e}ncias}{121}{section*.144}%
+\contentsline {chapter}{Refer\^{e}ncias}{120}{section*.144}%
 \contentsline {chapter}{Anexo \numberline {A}Datasheet}{137}{appendix.1.A}%
