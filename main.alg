@@ -1,7 +1,7 @@
-This is makeindex, version 2.17 [TeX Live 2026/dev] (kpathsea + Thai support).
+This is makeindex, version 2.17 [TeX Live 2024] (kpathsea + Thai support).
 Scanning style file ./main.ist...........................done (27 attributes redefined, 0 ignored).
-Scanning input file main.acn....done (546 entries accepted, 0 rejected).
-Sorting entries.......done (5720 comparisons).
-Generating output file main.acr....done (291 lines written, 0 warnings).
+Scanning input file main.acn....done (574 entries accepted, 0 rejected).
+Sorting entries........done (6153 comparisons).
+Generating output file main.acr....done (301 lines written, 0 warnings).
 Output written in main.acr.
 Transcript written in main.alg.

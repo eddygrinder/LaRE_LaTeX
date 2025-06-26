@@ -112,7 +112,7 @@ As duas experiências foram implementados com o objectivo de estudar e avaliar a
 \label{sec:resultados_RectificadoresMeiaOnda}
 Nestas experiências implementadas no \acrshort{lare} os utilizadores podem escolher uma das quatro combinações de resistência e condensador, fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} e analisar a diferença de valores na tensão de \textit{ripple}.
 
-Sendo assim, o exemplo da análise será feita para o caso em que $f_{7}$, $f=\SI{50}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$. Este valor calculado servirá, também, para comparar a tensão de \textit{ripple} entre os dois tipos de rectificadores. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
+Sendo assim, o exemplo da análise será feita para o caso em que $v_{in}=\SI{6.6}{\volt}$, $f=\SI{50}{\hertz}$, $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$. Este valor calculado servirá, também, para comparar a tensão de \textit{ripple} entre os dois tipos de rectificadores. Para se determinar qual expressão a usar para calcular a tensão de \textit{ripple}, é necessário verificar a condição descrita na Equação \ref{eq:verificarcondicao}:
 
 \begin{equation} \label{eq:verificarcondicao}
 	RC >> \dfrac{1}{f}
@@ -125,14 +125,14 @@ Sendo assim, o exemplo da análise será feita para o caso em que $f_{7}$, $f=\S
 Uma vez que esta condição se verifica, a expressão a utilizar para calcular a tensão de \textit{ripple} teórica pode ser dada pela sua aproximação, representada pela Equação \ref{eq:vripple}. O resultado obtido está representado na Equação \ref{eq:vripplecalculado}:
 
 \begin{equation} \label{eq:vripplecalculado}
-	U_{ripple} = \frac{\SI{7}{\volt}-\SI{0.7}{\volt}}{\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{572.73}{\milli\volt}
+	U_{ripple} = \frac{\SI{6.6}{\volt}-\SI{0.7}{\volt}}{\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{536.36}{\milli\volt}
 \end{equation}
 
-A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de saída e o valor da tensão de \textit{ripple} obtido no \acrshort{lare}, que foi de \SI{1.34}{\volt}. - MUDAR!!!!!!
+A Figura \ref{fig:ripplelaremeiaonda} apresenta a forma de onda da tensão de saída e o valor da tensão de \textit{ripple} obtido no \acrshort{lare}, que foi de \SI{420}{\milli\volt}.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/resultados_LaRE_meia_onda.png}
+	\includegraphics[width=0.5\textwidth]{figures/ripple_lare_MO-2k2-100uF.png}
 	\caption{Tensão de \textit{ripple} no \acrshort{lare} - meia onda}
 	\label{fig:ripplelaremeiaonda}
 \end{figure}
@@ -149,27 +149,34 @@ As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, resp
 		\label{fig:simulacaoripple}%
 	\end{figure}
 
-Os erros relativos obtidos foram de \SI{11111}{\percent} no \acrshort{lare}, \SI{16.02}{\percent} no circuito prático e \SI{14.27}{\percent} na simulação. Esta discrepância relativamente ao valor teórico resulta de diversos fatores, sendo de destacar a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como resistência constante e condensador sem perdas \cite{sedrasmith}.
+Os erros relativos obtidos foram de \SI{20.1}{\percent} no \acrshort{lare}, \SI{10.32}{\percent} no circuito prático e \SI{8.46}{\percent} na simulação. Esta discrepância relativamente ao valor teórico resulta de diversos fatores, sendo de destacar a simplificação inerente à expressão analítica utilizada, que assume componentes ideais e condições perfeitas — como resistência constante e condensador sem perdas \cite{sedrasmith}.
 
 A simulação, embora mais próxima da realidade, recorre igualmente a modelos ideais por omissão. É o caso dos condensadores no \textit{Multisim}, que não incluem resistência série (ESR) nem indutância série (ESL)\footnote{Uma análise às propriedades do condensador no \textit{Multisim} revelou que estes são ideais, baseados em modelos \acrshort{spice} simplificados, representados pela seguinte estrutura: \textit{c\%p \%t1 \%t2 \#1 \%v4?IC=\#5\%v:\%v;}}. Ainda assim, a simulação contempla fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito, o que a torna mais precisa do que o modelo teórico.
 
-A maior discrepância observada nos resultados experimentais — embora não excessiva — pode ser justificada por erros de leitura e pelas elevadas tolerâncias típicas dos condensadores eletrolíticos, que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}.
+A maior discrepância observada nos resultados do \acrshort{lare} pode ser justificada por erros no cálculo da tensão de \textit{ripple}, através da Figura \ref{fig:ripplelaremeiaonda} pode ver-se que a onda apresentada distorce ligeiramente nos picos positivos. Além disso, e tal como nos valores obtidos na práctica, as tolerâncias típicas dos condensadores eletrolíticos são elevadas, sendo que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}. Outro factor que também condiciona o erro relativo são as baixas correntes nos díodos. Esta corrente segue uma relação exponencial com a tensão directa aplicada, tornando-se extremamente sensível a pequenas variações de tensão ou do parâmetro $I_{S}$. Nesta zona, fenómenos secundários como corrente de fuga, variações térmicas e limitações instrumentais assumem maior relevância e desviam o comportamento do díodo do modelo ideal.
 
 Assim, as diferenças entre os vários métodos de obtenção de resultados são compreensíveis e enquadram-se dentro do esperado, considerando as limitações e simplificações de cada abordagem.
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}
+Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}, sendo que a tensão à saída do transformador é \SI{6.6}{\volt}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}, já que se verifica a condição da Equação \ref{eq:verificarcondicao}. O valor teórico da tensão de \textit{ripple} está representado na Equação \ref{eq:vrippleOCTeorico}:
+
+\begin{equation} \label{eq:vrippleOCTeorico}
+	U_{ripple} = \frac{\SI{6.6}{\volt} - \SI{1.4}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{236.36}{\milli\volt}
+\end{equation}
+\begin{comment}
 Os resultados obtidos nesta experiência, numa fase inicial, não foram os esperados, apresentando discrepâncias entre os valores teóricos, simulados e experimentais, com erros superiores a \SI{25}{\percent}. Perante esta situação, foram realizados testes e medições complementares que permitiram concluir que a qualidade do condensador e a estabilidade da tensão de saída do transformador poderiam não ser adequados para uma aferição fiável do \textit{ripple}. Com efeito, entre sessões de trabalho, observaram-se flutuações da ordem dos \SI{0.2}{\volt} na tensão de saída do transformador, variação suficiente para afectar significativamente o cálculo do \textit{ripple}. Para mitigar estas limitações, o condensador foi substituído por um componente novo, a tensão de saída do transformador foi monitorizada várias vezes durante os testes e todas as medições passaram a ser realizadas na mesma sessão de trabalho, garantindo maior consistência.
-Outro aspecto importante, foram os testes efectuados no \textit{multisim}, já que a ponte recficadora utilizada no \acrshort{lare} - \textit{B250C2300-1500} \cite{B250C2306} - não está disponível neste simulador. De forma a validar os resultados efectuaram-se, também, testes complementares com uma ponte rectificadora baseada nos díodos \textit{1N4007} \cite{1N400x}, disponíveis no \textit{multisim}. Estas medições foram realizadas em contexto laboratorial e os circuitos montados na ``placa branca''.
-A Tabela \ref{Table:testespontes} reúne todos os resultados dos testes complementares.
+\end{comment}
+
+Antes do início dos testes, verificou-se a disponibilidade da ponte rectificadora utilizada no \acrshort{lare} — modelo \textit{B250C2300-1500} — na biblioteca de componentes do \textit{Multisim}. Constatou-se que este componente não se encontra disponível no simulador. Optou-se, assim, por realizar testes complementares com uma ponte rectificadora construída a partir de díodos \textit{1N4007} \cite{1N400x}, disponíveis no \textit{Multisim}. As medições foram efectuadas em contexto laboratorial, com os circuitos montados na ``placa branca''. A Tabela \ref{Table:testespontes} reúne todos os resultados dos testes complementares.
 
 \begin{table}[htb]
 \centering
-\caption{testes complementares - Ponte rectificadora} 
+\caption{Testes complementares - Pontes rectificadoras} 
 \label{Table:testespontes}
 \begin{tabular}{lcc}
 \toprule
-\multicolumn{3}{c}{Transformador - $U_{out} = $ \SI{6.6}{\volt}} \\
+\multicolumn{3}{c}{Transformador - $U_{out} = $ \SI{6.7}{\volt}} \\
 \midrule
  & Ponte - 1N4007 & Ponte - B250C2300-1500 \\
 \midrule
@@ -184,7 +191,7 @@ $U_{Diodo}$ - medido no multímetro & \SI{0.56}{\volt} & \SI{0.49}{\volt} \\
 \end{tabular}
 \end{table}
 
-Apesar de se esperar que a tensão de \textit{ripple} no circuito com a ponte \textit{B250C2300-1500} fosse um pouco mais elevada, comparativamente à ponte montada com os díodos \textit{1N4007}, esta apresentou o mesmo valor na leitura do osciloscópio, tal como apresentado na Figura \ref{fig:testesrippleOC} - esta pequena discrepância deve-se a erros de leitura. De facto, calculando os valores teóricos com os dados da tabela, chega-se à conclusão que a tensão de \textit{ripple} varia entre os \SI{250}{\milli\volt} e \SI{258.2}{\milli\volt}, usando a Equação \ref{eq:vrippleOC}. Os erros relativos variam entre os \SI{10}{\percent} e \SI{12.8}{\percent}. Uma vez que os valores não apresentam grandes diferenças pode, assim, considerar-se que os testes efectuados no \textit{multisim} com a ponte rectificadora constituída por 4 díodos \textit{1N4007}, não comprometem a análise, objectivos nem as conclusões da experiência.
+Apesar de se esperar que a tensão de \textit{ripple} no circuito com a ponte \textit{B250C2300-1500} fosse ligeiramente superior à observada com a ponte construída com díodos \textit{1N4007}, os valores medidos no osciloscópio revelaram-se praticamente idênticos, como ilustrado na Figura~\ref{fig:testesrippleOC}. Esta pequena discrepância pode ser atribuída a erros de leitura. Dado que as diferenças são reduzidas, com erros relativos inferiores a \SI{4}{\percent}, pode concluir-se que os testes efectuados no \textit{Multisim} com a ponte rectificadora constituída por quatro díodos \textit{1N4007} não comprometem a análise, os objectivos nem as conclusões da experiência.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -206,12 +213,6 @@ Outra dificuldade que contribuiu para justificar os erros obtidos — nomeadamen
 \end{figure}
 \end{comment}
 
-Os valores usados para o exemplo desta experiência foram $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{100}{\micro\farad}$, à frequência da rede, \SI{50}{\hertz}. A expressão utilizada para calcular a tensão de \textit{ripple} teórica é dada pela Equação \ref{eq:vrippleOC}, já que se verifica a condição da Equação \ref{eq:verificarcondicao}. O valor teórico da tensão de \textit{ripple} está representado na Equação \ref{eq:vrippleOCTeorico}:
-
-\begin{equation} \label{eq:vrippleOCTeorico}
-	U_{ripple} = \frac{\SI{7}{\volt} - \SI{1.4}{\volt}}{2*\SI{50}{\hertz}*\SI{2.2}{\kilo\ohm}*\SI{100}{\micro\farad}} \approx \SI{254.55}{\milli\volt}
-\end{equation}
-
 Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura~\ref{fig:ripplelareonda}, onde é possível observar a forma de onda da tensão de saída, bem como o valor correspondente da tensão de \textit{ripple}. 
 
 \begin{figure}[hbtp]
@@ -225,9 +226,9 @@ Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura
 
 \textbf{Já que falo na distorção e ruído do ripple, é de referir que a onda de saída foi alvo de um filtro para suavizar os picos e ruído??? Opinião PROF}
 
-O erro relativo associado ao valor obtido no \acrshort{lare} é inferior a \SI{1}{\percent}, o que é perfeitamente aceitável.
+O erro relativo associado ao valor obtido no \acrshort{lare} é inferior a \SI{5}{\percent}, o que é perfeitamente aceitável.
 
-Os testes efectuados no \textit{multisim} com a ponte rectificadora constituída por 4 díodos \textit{1N4007} apresentam um valor de \textit{ripple} de \SI{201}{\milli\volt}, conforme representado na Figura~\ref{fig:ripplemultisim}. O erro relativo é de \SI{22.1}{\percent}, o que é aceitável, tendo em conta as condições de simulação, a distorção e ruído da onda e os componentes ideais utilizados, como é o caso, por exemplo, do condensador sem resistência série (ESR). Esta distorção pode comprometer a precisão da medição, dificultando a determinação rigorosa do valor real de \textit{ripple}.  Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
+Os testes efectuados no \textit{multisim} com a ponte rectificadora constituída por 4 díodos \textit{1N4007} apresentam um valor de \textit{ripple} de \SI{201}{\milli\volt}, conforme representado na Figura~\ref{fig:ripplemultisim}. O erro relativo é de \SI{14.9}{\percent}, o que é aceitável, tendo em conta as condições de simulação, a distorção e ruído da onda e os componentes ideais utilizados, como é o caso, por exemplo, do condensador sem resistência série (ESR). Esta distorção pode comprometer a precisão da medição, dificultando a determinação rigorosa do valor real de \textit{ripple}. Assim, as diferenças observadas são compreensíveis e enquadram-se dentro do esperado.
 
 \begin{figure}[hbtp]
 	\centering
@@ -236,9 +237,8 @@ Os testes efectuados no \textit{multisim} com a ponte rectificadora constituída
 	\label{fig:ripplemultisim}
 \end{figure}
 
+Comparando os resultados da tensão de \textit{ripple} entre os dois rectificadores e considerando os diferentes testes, verifica-se que, nas mesmas condições, a tensão de \textit{ripple} é superior no rectificador de meia onda, o que está de acordo com a teoria.
 
-FALTA VER A DIFERENÇA NOS VALORES EXPERIMENTAIS DAS DUAS EXPERIENCIAS, NA MEIA ONDA, PARECE QUE OS EXPERIMENTAIS ESTÃO MAIS AFASTADOS, COLOCAR TAMBÉM AS IMAGENS COM UM EXEMPPLO DE RIPPLA PARA FREQUÊNCIAS E RC IGUAIS PARA COMPARAR OS VALORES.
-FACE A ESTA COMPARAÇÃO PODE DIZER-SE QUE, na onda completa, FACE À FLUTUAÇÃO DOS VALORES, EMBORA, OS VALORES PRÁCTICOS ESTEJAM MCOM MENOR ERRO, PODE HAVER ERROS MAIORES ENGANAdoresS ASSOCIADOS ÀS FLUTUAÇÕES DA TENSÃO DE ENTRADA DO TRANSFORMADOR, O QUE NÃO ACONTECE NO \textit{multisim}.
 
 \section{Filtros}
 \label{sec:resultados_filtros}

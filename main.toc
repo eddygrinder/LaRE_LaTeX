@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {3.5.4}Relés}{63}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{64}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{65}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Software}{67}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Software}{66}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{68}{subsection.3.6.1}%
 \contentsline {subsubsection}{\textit {Python}}{68}{section*.78}%
 \contentsline {subsubsection}{\textit {Flask}}{68}{section*.79}%
