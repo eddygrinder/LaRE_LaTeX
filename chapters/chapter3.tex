@@ -28,7 +28,7 @@ Uma \textit{micro-framework} é um tipo de \textit{framework} minimalista, que f
 Optou-se, então, pelo \textit{Flask} e as razões da escolha, assim como uma explicação mais detalhada serão apresentadas na Secção \ref{sec:arquitecturasoftware}.
 
 É possível combinar o \gls{arduino} com o \gls{python}, mas isso implicaria uma mudança ao nível do \textit{firmware}, uma tarefa que não é trivial \cite{Arduinopython}. A linguagem nativa do \gls{arduino} é similar ao \textit{C++} e o \textit{firmware} instalado foi projectado para interpretar e executar código escrito nesse tipo de linguagem. De forma mais rigorosa, o uso do \textit{Python} no \gls{arduino} ou em qualquer outro microcontrolador, faz-se através de \textit{MicroPython}, uma implementação simples e eficiente do \gls{python} que inclui um pequeno subconjunto da bibliotecas padrão e é optimizado para funcionar em microcontroladores e em ambientes limitados \cite{MicroPythondefinition}. Quer isto dizer que todas as bibliotecas usadas na programação da aplicação ou projecto têm de ser carregadas para a memória dos microcontroladores. No caso do \gls{arduino} Mega, uma análise ao \textit{datasheet} \cite{megadatasheet} revela que este tem \SI{256}{Kbytes} reservados para o envio de programas e \SI{8}{Kbytes} de memória \textit{SRAM} reservado para variáveis temporárias.
-Além destes problemas de memória e uma vez que é necessário que o \gls{arduino} funcione como servidor, a versão apresentada na Figura \ref{fig:arduinomega} não é adequada.
+Além destes problemas de memória e uma vez que é necessário que o \gls{arduino} funcione como servidor, foi necessário encontrar uma alternativa mais adequada Arduino Mega, versão apresentada na Figura \ref{fig:arduinomega} não é adequada.
 
 No mercado, existe o \gls{ESP32}, uma alternativa mais poderosa que o \gls{arduino} e com placa de rede sem fios integrada, tal como é apresentado na Figura \ref{fig:ESP32}. No entanto, este microcontrolador sofre dos mesmos problemas de memória que o \gls{arduino} Mega e da utilização do \textit{MicroPython}. Uma análise ao \textit{datasheet} \cite{esp32datasheet} revela que a memória \textit{flash} varia entre os 4-16 \acrlong{mb}. No modelo ''ESP32-DEVKITC-32E``, que estava disponível para este projecto, o valor é de 4 \acrshort{mb} \cite{diferencaspython}. Estas limitações não permitem a implementação de um servidor minimamente robusto usando o \gls{arduino} Mega ou o \gls{ESP32}.
 
@@ -39,7 +39,7 @@ No mercado, existe o \gls{ESP32}, uma alternativa mais poderosa que o \gls{ardui
     \label{fig:ESP32}
 \end{figure}
 
-A escolha seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, sempre que for referido \textit{Raspberry Pi}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão mais actual, apresentada na Figura \ref{fig:Raspberrypi5}. 
+A opção seguinte recaiu no \gls{RaspberryPI}, versão 5\footnote{Doravante, sempre que for referido \textit{Raspberry Pi}, subentende-se a versão 5.}, que à data da escrita desta dissertação é a versão mais actual, apresentada na Figura \ref{fig:Raspberrypi5}. 
 
 \begin{figure}[hbtp]
     \centering
@@ -97,7 +97,7 @@ Como já se viu na Secção \ref{sec:contextualização}, a arquitectura do \acr
 
 Antes de mais, importa clarificar as formas de comunicação entre os diversos dispositivos que compõem o \acrshort{lare}. Tanto o servidor, como o \gls{RaspberryPI} e o \acrshort{virtualbench} têm disponíveis interfaces de rede sem fios e com fios, assim como \textit{interfaces} \acrshort{usb}. A comunicação entre os diversos dispositivos é feita da seguinte forma:
 \begin{itemize}
-    \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Em termos de simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets} que, através da sua API, facilitam a comunicação entre processos em rede, independentemente da infra-estrutura utilizada — seja por ligação com fios, sem fios ou através de redes locais, permitindo, assim, o envio e recepção de mensagens entre dispositivos ligados em rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} está representado na Figura \ref{fig:fluxogramasockets};
+    \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Para maior flexibilidade e simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets} que, através da sua API, facilitam a comunicação entre processos em rede, independentemente da infra-estrutura utilizada — seja por ligação com fios, sem fios ou através de redes locais, permitindo, assim, o envio e recepção de mensagens entre dispositivos ligados em rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} está representado na Figura \ref{fig:fluxogramasockets};
     \item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}. Independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação;
     \item \textbf{Controlo de relés e medidas}: O controlo dos relés é feito através da ligação directa do \gls{RaspberryPI} ao \textit{driver} dos relés. Por sua vez, as leituras e medições das grandezas eléctricas são efectuadas pelo \acrshort{virtualbench}, ligado directamente aos pontos específicos do circuito.
 \end{itemize}
@@ -120,7 +120,7 @@ A Figura {\ref{fig:arquitecturalore}} apresenta com mais pormenor a solução im
     \label{fig:arquitecturalore}
 \end{figure}
 
-\section{Circuitos electrónicos - experiências?}
+\section{Circuitos experimentais}
 \label{sec:circuitos}
 A escolha dos circuitos teve como base os que estão disponíveis no \acrshort{visir} do \acrshort{isep} e reduzindo os objectivos do \acrshort{lare} à sua forma mais básica, pode afirmar-se que se pretende ``provar um conceito''. Escolhendo experiências com circuitos integrados ou transístores, poderia tornar a implementação desnecessariamente mais complexa e, por conseguinte, com menos experiências. Portanto, o objectivo passará por criar um \acrshort{laboratório remoto} com experiências típicas para a introdução à electrónica e que permitam uma aprendizagem gradual em contexto de sala de aula. E, assim, ``provar o conceito''.
 
