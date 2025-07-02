@@ -33,7 +33,7 @@ Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem cap
 	\label{fig:diagramablocos2003}
 \end{figure}
 
-O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimentação dos relés — \SI{12}{\volt} no caso dos utilizados neste projecto — e destina-se aos díodos de roda livre'', conforme descrito na Secção~\ref{sec:reles}. As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplos práctico que ilustram o funcionamento do procedimento referido na Figura \ref{fig:esquematico74hc595}. Neste exemplo, foi utilizado um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, variando apenas a disposição dos pinos.
+O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimentação dos relés — \SI{12}{\volt} no caso dos utilizados neste projecto — e destina-se aos díodos de ``roda livre'', conforme descrito na Secção~\ref{sec:reles}. As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplos práctico que ilustram o funcionamento do procedimento referido na Figura \ref{fig:esquematico74hc595}. Neste exemplo, foi utilizado um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, variando apenas a disposição dos pinos.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -45,7 +45,7 @@ O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimenta
 		\label{fig:ligacao5952003}%
 	\end{figure}
 
-As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{RaspberryPI} através do registo de deslocamento, conforme apresentado na Figura \ref{fig:comandorelesfull}. As saídas $O_{1}$ a $O_{7}$ controlam os relés nos terminais ``3'', enquanto os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}, como ilustrado na Figura \ref{fig:exemplovoltimetro}. No caso particular do exemplo descrito em cima, se $I_{5}$ = \SI{0}{\volt}, então, a saída $O_{5}$ = \SI{12}{\volt} e não há diferença nos terminais ``2'' e ``3'' na bobina do relé  ``K5''. O relé está desactivado. Por outro lado, se $I_{5}$ = \SI{12}{\volt}, então, a saída $O_{5}$ = \SI{0}{\volt}, há diferença de potencial aos terminais da bobina e o relé está activado. No caso em que a \textit{string} a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
+As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{RaspberryPI} através do registo de deslocamento, conforme apresentado na Figura \ref{fig:comandorelesfull}. As saídas $O_{1}$ a $O_{7}$ controlam os relés nos terminais ``3'', enquanto os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}, como ilustrado na Figura \ref{fig:exemplovoltimetro}. No caso específico do exemplo acima descrito, se $I_{5} = \SI{0}{\volt}$, então a saída $O_{5} = \SI{12}{\volt}$, não existindo diferença de potencial entre os terminais ``2'' e ``3'' da bobina do relé ``K5''. Nesse cenário, o relé permanece desativado. Por outro lado, se $I_{5} = \SI{12}{\volt}$, a saída $O_{5} = \SI{0}{\volt}$, estabelecendo-se uma diferença de potencial nos terminais da bobina, o que provoca a ativação do relé. No caso em que a \textit{string} a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
 \subsection{Registo de deslocamento}
 \label{sec:hwregistodeslocamento}
@@ -352,8 +352,7 @@ Portanto, se se pretender estudar o filtro passa-baixo, é activado o relé $K_{
 
 \section{Software}
 \label{sec:implementacaosoftware}
-Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e testes dos assuntos mais técnicos revelou-se um processo exigente e, por vezes, moroso. A abundância dos recursos disponíveis colocou o desafio adicional de tentar perceber a dicotomia certo/errado. No apoio a este processo, recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no YouTube.
-Inteligência Artificial e à consulta de documentação técnica especializada.
+Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e testes dos assuntos mais técnicos revelou-se um processo exigente e, por vezes, moroso. A abundância dos recursos disponíveis colocou o desafio adicional de tentar perceber a dicotomia certo/errado. No apoio a este processo, recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no \textit{YouTube}.
 
 Este projeto de código fonte aberto está dividido em dois repositórios, disponíveis para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE} e \href{https://github.com/eddygrinder/LaRE_PICode}{PiCode}. Assim, os ficheiros são referenciados relativamente ao respectivo repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos. Não se pretende, contudo, abordar exaustivamente todas as instruções ou métodos de configuração do \acrshort{virtualbench}, uma vez que os ficheiros se encontram comentados, sendo possível obter informações adicionais através da sua consulta. 
 
@@ -499,12 +498,12 @@ A arquitectura do sistema é composta por multiplos ficheiros que comunicam entr
 Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projeto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
 
 Os seguintes ficheiros foram criados e associados às respectivas experiências:
-
+\\[1em]
 \textbf{Específicos}
 \begin{itemize}
-	\item Lei de \textit{Ohm} - \textit{config.py};
-	\item Rectificadores/Filtros - \textit{mixed\_signal\_oscilloscope.py};
-	\item Visualização - \textins{ohm, meiaonda, ondacompleta, passaalto, passabaixo}.html.
+	\item \textit{config.py} - Lei de \textit{Ohm};
+	\item \textit{mixed\_signal\_oscilloscope.py} - Rectificadores/Filtros;
+	\item \textins{ohm, meiaonda, ondacompleta, passaalto, passabaixo}.html - Visualização.
 \end{itemize}
 
 \textbf{Comuns}
