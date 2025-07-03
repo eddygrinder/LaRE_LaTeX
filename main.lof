@@ -36,8 +36,8 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura \acrshort {lare} - \textbf {NOTE: Fig tem de ser revista}}}{53}{figure.caption.52}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Gráfico da Lei de \textit {Ohm}}}{54}{figure.caption.53}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Experiência Lei de \textit {Ohm}}}{54}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagrama de blocos da rectificação \textins {meia onda e onda completa}}}{55}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite {sedrasmith}}}{56}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagrama de blocos da rectificação \cite {sedrasmith}}}{55}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Rectificação meia onda \cite {sedrasmith}}}{56}{figure.caption.56}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite {sedrasmith}}}{56}{figure.caption.57}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Esquemas dos filtros \cite {sedrasmith}}}{57}{figure.caption.58}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Diagramas de \textit {Bode} \textins {ideal} \cite {sedrasmith}}}{57}{figure.caption.59}%
@@ -45,7 +45,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{59}{figure.caption.61}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{59}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{60}{figure.caption.64}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{61}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{60}{figure.caption.66}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{61}{figure.caption.68}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{62}{figure.caption.69}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{63}{figure.caption.71}%
@@ -54,7 +54,7 @@
 \contentsline {figure}{\numberline {3.25}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{64}{figure.caption.74}%
 \contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{65}{figure.caption.75}%
 \contentsline {figure}{\numberline {3.27}{\ignorespaces Diagrama \textins {em corte} de blocos SN74HC595 \cite {SN74HC595}}}{67}{figure.caption.76}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{71}{figure.caption.82}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{70}{figure.caption.82}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{76}{figure.caption.83}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{76}{figure.caption.84}%

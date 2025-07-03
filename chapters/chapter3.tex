@@ -181,16 +181,20 @@ A Figura~\ref{fig:blocosrectificacao} apresenta o diagrama de blocos simplificad
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/diagramablocosrectificacao.png}
-	\caption{Diagrama de blocos da rectificação \textins{meia onda e onda completa}}
+	\caption{Diagrama de blocos da rectificação \cite{sedrasmith}}
 	\label{fig:blocosrectificacao}
 \end{figure}
 
-A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída da filtragem, Bloco 3, como representado na Figura \ref{fig:blocosrectificacao}. Esta componente deve ser minimizada para estabilizar a tensão de saída em corrente contínua, Bloco 4, representado na mesma figura \cite{sedrasmith}. A Figura \ref{fig:sedraripple} representa a forma de onda à saída do Bloco 3 - Filtragem - quando se utiliza a rectificação de meia onda.
+A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do Bloco 3 - Filtragem -  devendo esta ser minimizada para estabilizar a tensão de saída em corrente contínua - Bloco 4 - tal como ilustrado na Figura~\ref{fig:blocosrectificacao}. As Figuras~\ref{fig:formadeonda_MO} e \ref{fig:sedraripple} representam, com mais pormenor, a forma de onda à saída do Bloco 3 quando é utilizada a rectificação de meia onda, considerando um díodo ideal. Estes circuitos e a respectiva fundamentação teórica são descritos com maior detalhe no Capítulo~4 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram adaptados.
+
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple.png}
-	\caption{Forma de onda à saída do Bloco 3 - Filtragem [meia onda] \cite{sedrasmith}}
-	\label{fig:sedraripple}
+	\centering%
+		\centering
+		\subfloat[\centering Forma de onda à saída do Bloco 3\label{fig:formadeonda_MO}]{{\includegraphics[width=6cm]{figures/sedra_ripple.png} }}%
+		\qquad
+		\subfloat[\centering Esquema rectificador \label{fig:sedraripple}]{{\includegraphics[width=5cm]{figures/meia_onda_Sedra.png} }}%
+		\caption{Rectificação meia onda \cite{sedrasmith}}%
+		\label{fig:rectificacaomeiaonda}%
 \end{figure}
 
 A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vripplecompleta}:
@@ -229,7 +233,7 @@ Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela 
 São estas formas de onda, representadas pelas Figuras \ref{fig:sedraripple} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}. (A Equação \ref{eq:vripplecompleta} deve ser usada quando os valores dos condensadores e resistências são pequenos ou frequência é baixa, isto é, quando o \textit{ripple} não é desprezável.)
 
 \subsection{Filtros}
-Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário.
+Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário. Estes circuitos são descritos com maior detalhe no Capítulo~17 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram adaptados.
 
 \begin{figure}[hbtp]
 	\centering%
