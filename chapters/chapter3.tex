@@ -215,13 +215,16 @@ Sendo que, neste caso, a tensão de \textit{ripple} é baixa e $v_{o}$, ou seja,
 	u_{o} = U_{P} - \dfrac{1}{2}U_{r}	
 \end{equation}
 
-No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificação de onda completa e como pode ser visto na Figura \ref{fig:sedraripplecompleta}, a frequência do \textit{ripple} é o dobro da frequência da onda de entrada.
+No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificação de onda completa. A Figura~\ref{fig:formadeonda_OC} e a Figura~\ref{fig:esquemaOC} representam a forma de onda (... que como se pode ver a frequência do \textit{ripple} é o dobro da frequência da onda de entrada.) e o esquema, tal como descritos com maior detalhe no Capítulo~4 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram também adaptados. 
 
 \begin{figure}[hbtp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{figures/sedra_ripple_OC.png}
-	\caption{Forma de onda à saída do Bloco 3 - Filtragem [onda completa] \cite{sedrasmith}}
-	\label{fig:sedraripplecompleta}
+	\centering%
+		\centering
+		\subfloat[\centering Forma de onda à saída do Bloco 3\label{fig:formadeonda_OC}]{{\includegraphics[width=6cm]{figures/sedra_ripple_OC.png} }}%
+		\qquad
+		\subfloat[\centering Esquema rectificador \label{fig:esquemaOC}]{{\includegraphics[width=5cm]{figures/onda_completa_Sedra.png} }}%
+		\caption{Rectificação onda completa \cite{sedrasmith}}%
+		\label{fig:rectificacaomeiaonda}%
 \end{figure}
 
 Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela Equação \ref{eq:vrippleOC}:
