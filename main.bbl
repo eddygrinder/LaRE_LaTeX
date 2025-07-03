@@ -523,6 +523,11 @@ armstrap, ``Github - armstrap/armstrap-pyvirtualbench: Python wrappers to contro
 N.~Jennings, ``Socket programming in python (guide) – real python.'' \url{https://realpython.com/python-sockets/}.
 \newblock (Accessed on 08/01/2024).
 
+\bibitem{hayt}
+W.~H.~H. Jr., J.~E. Kemmerly, J.~Phillips, and S.~M. Durbin, {\em Engineering Circuit Analysis}.
+\newblock New York: McGraw-Hill Education, 10~ed., 2023.
+\newblock International Student Edition.
+
 \bibitem{sedrasmith}
 A.~S. Sedra, K.~C. Smith, T.~C. Carusone, and V.~Gaudet, {\em Microelectronic Circuits}.
 \newblock The Oxford Series in Electrical and Computer Engineering, Oxford University Press, 8th~ed., 2015.
@@ -534,6 +539,10 @@ N.~Instruments, ``Virtualbench all-in-one instrument product flyer - national in
 \bibitem{PC104}
 ``Pc104 consortium home - pc/104 consortiumpc/104 consortium.'' \url{https://pc104.org/}.
 \newblock (Accessed on 08/01/2024).
+
+\bibitem{LM317}
+T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/LM317}.
+\newblock (Accessed on 07/25/2024).
 
 \bibitem{Raspberrytech}
 ``Raspberry pi hardware - raspberry pi documentation.'' \url{https://www.raspberrypi.com/documentation/computers/raspberry-pi.html}.
@@ -618,10 +627,6 @@ R.~Johns, ``Flask vs django: Which python web framework to use in 2024?.'' \url{
 \bibitem{JavaScript}
 ``Javascript tutorial.'' \url{https://www.w3schools.com/js/default.asp}.
 \newblock (Accessed on 08/03/2024).
-
-\bibitem{LM317}
-T.~Instruments, ``Lm317 data sheet, product information and support | ti.com.'' \url{https://www.ti.com/product/LM317}.
-\newblock (Accessed on 07/25/2024).
 
 \bibitem{1N400x}
 ``1n400x - axial-lead glass passivated standard recovery rectifiers.'' \url{https://cdn.sparkfun.com/assets/2/c/2/d/6/1N400x-D.PDF}.

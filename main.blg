@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: front/title.aux
@@ -16,11 +16,11 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: chapters/appendixA.aux
 Database file #1: sampleRefs.bib
 Warning--entry type for "jinja" isn't style-file defined
---line 21 of file sampleRefs.bib
+--line 63 of file sampleRefs.bib
 Warning--entry type for "flaskDigitalOcean" isn't style-file defined
---line 29 of file sampleRefs.bib
+--line 79 of file sampleRefs.bib
 Warning--entry type for "tutorialsiteflask" isn't style-file defined
---line 38 of file sampleRefs.bib
+--line 97 of file sampleRefs.bib
 Warning--empty publisher in Hofstein
 Warning--empty publisher in pisa2018
 Warning--empty booktitle in zutinlab2go
@@ -37,45 +37,45 @@ Warning--empty journal in ExperiencesRemoteLaboratories
 Warning--empty booktitle in DevelopingVirtualAndRemoteUndergraduate
 Warning--empty journal in TheVISIRproject
 Warning--empty booktitle in pereira
-You've used 180 entries,
+You've used 181 entries,
             1876 wiz_defined-function locations,
-            1329 strings with 36285 characters,
-and the built_in function-call counts, 34324 in all, are:
-= -- 3175
-> -- 1433
+            1335 strings with 36455 characters,
+and the built_in function-call counts, 34532 in all, are:
+= -- 3194
+> -- 1447
 < -- 0
-+ -- 579
-- -- 399
-* -- 2080
-:= -- 4561
-add.period$ -- 285
-call.type$ -- 180
-change.case$ -- 173
++ -- 584
+- -- 403
+* -- 2095
+:= -- 4594
+add.period$ -- 288
+call.type$ -- 181
+change.case$ -- 174
 chr.to.int$ -- 0
-cite$ -- 196
-duplicate$ -- 1493
-empty$ -- 3848
-format.name$ -- 399
-if$ -- 8708
+cite$ -- 197
+duplicate$ -- 1502
+empty$ -- 3868
+format.name$ -- 403
+if$ -- 8758
 int.to.chr$ -- 0
-int.to.str$ -- 180
-missing$ -- 77
-newline$ -- 658
-num.names$ -- 100
-pop$ -- 1140
+int.to.str$ -- 181
+missing$ -- 79
+newline$ -- 663
+num.names$ -- 101
+pop$ -- 1144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1083
+skip$ -- 1084
 stack$ -- 0
 substring$ -- 1208
-swap$ -- 434
+swap$ -- 435
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 16
-while$ -- 195
-width$ -- 183
-write$ -- 1540
+while$ -- 196
+width$ -- 184
+write$ -- 1552
 (There were 19 warnings)

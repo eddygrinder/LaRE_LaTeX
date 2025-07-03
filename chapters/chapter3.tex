@@ -91,7 +91,7 @@ Como já se viu na Secção \ref{sec:contextualização}, a arquitectura do \acr
 \begin{figure}[hbtp]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/arquitectura_ver2.drawio.png}
-    \caption{Arquitectura \acrshort{lare}}
+    \caption{Arquitectura geral - \acrshort{lare}}
     \label{fig:representaçãogerallare}
 \end{figure}
 
@@ -116,7 +116,7 @@ A Figura {\ref{fig:arquitecturalore}} apresenta com mais pormenor a solução im
 \begin{figure}[hbtp]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/Diagrama_SOFTWARE.drawio.png}
-    \caption{Arquitectura \acrshort{lare} - \textbf{NOTE: Fig tem de ser revista}}
+    \caption{Arquitectura \acrshort{lare} - \textbf{NOTE: Fig tem MESMO de ser revista}}
     \label{fig:arquitecturalore}
 \end{figure}
 
@@ -142,12 +142,12 @@ Na forma da Equação \ref{eq:leideohm}, a Lei de \textit{Ohm} estabelece que a 
 	R=\dfrac{U}{I}
 \end{equation}
 
-Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência elétrica ($R$).
+Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência elétrica ($R$). A Lei de \textit{Ohm} é descrita com maior detalhe no Capítulo~2 da 10.\textsuperscript{a} edição de Hayt \textit{et al.}~\cite{hayt}.
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.3\textwidth]{figures/grafico_Ohm.png}
-	\caption{Gráfico da Lei de \textit{Ohm}}
+	\includegraphics[width=0.4\textwidth]{figures/grafico_Ohm.png}
+	\caption{Gráfico da Lei de \textit{Ohm}\cite{hayt}}
 	\label{fig:graphohm}
 \end{figure}
 
@@ -357,7 +357,7 @@ A Figura \ref{fig:placarectificadores} apresenta a placa da experiência referen
 \end{enumerate}
 
 \subsubsection{Fontes de alimentação}
-A placa referente às fontes de alimentação está representada na Figura \ref{fig:placartransformador}. Esta placa é constituída por um transformador e uma fonte de \SI{5}{\volt}. O esquema completo está disponível no Anexo \ref{AppendixA}.
+A placa referente às fontes de alimentação está representada na Figura~\ref{fig:placartransformador}. É constituída por um transformador de \SI{230}{\volt}/\SI{8}{\volt}CA, uma ponte rectificadora que realiza a rectificação de onda completa e uma fonte de \SI{5}{\volt}, regulada com o \textit{LM317}\cite{LM317}. O esquema completo encontra-se disponível no Anexo~\ref{AppendixA}.
 
 \begin{figure}[hbtp]
 	\centering

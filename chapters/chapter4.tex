@@ -13,7 +13,7 @@ Este capítulo aprofunda os aspectos técnicos do LaRE, tomando como referência
 \section{Hardware}
 \subsection{Relés}
 \label{sec:hwreles}
-Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por cinco circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes.
+Como já foi referido na Secção \ref{sec:solucaoproposta}, o \acrshort{lare} é composto por cinco circuitos. A implementação começou com o desenho esquemático e, tal como referido na Secção \ref{sec:reles}, tentou-se, sempre que possível, utilizar os relés \acrshort{spst} no comando das fontes e aparelhos de medida e os relés \acrshort{dpst} no controlo dos componentes, tal como se pode ver no exemplo ilustrado na Figura \ref{fig:relespstdpst}. O relé \textit{K4} - \acrshort{spst} - comanda a fonte de alimentação de \SI{5}{\volt} e os relés \textit{K1} a \textit{K3} - \acrshort{dpst} - comandam os componentes. Os esquemas completos de cada circuito podem ser consultados no Anexo~\ref{AppendixA}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -89,7 +89,7 @@ Assim, referente ao \acrshort{virtualbench} e à Figura~\ref{fig:promenorfontes}
 No entanto, ainda são necessárias mais duas fontes de alimentação, nomeadamente:
 \begin{itemize}
 	\item \SI{5}{\volt} (\acrshort{cc}), fonte projectada com recurso ao \textit{LM317} e com tensão de entrada obtida a partir da fonte de \SI{25}{\volt} - utilizada na alimentação dos registos de deslocamento;
-	\item Para o estudo dos circuitos rectificação e filtragem, foi utilizado um transformador \SI{220}{\volt}/\SI{8}{\volt} \acrshort{ca}, disponível em contexto laboratorial e que se mostrou adequado aos objectivos trabalho.
+	\item Para o estudo dos circuitos rectificação e filtragem, foi utilizado um transformador \SI{230}{\volt}/\SI{8}{\volt} \acrshort{ca}, disponível em contexto laboratorial e que se mostrou adequado aos objectivos trabalho.
 \end{itemize}
 
 \subsubsection{Fonte de tensão \SI{6}{\volt} - variável e {Fonte de tensão \SI{12}{\volt} - fixa}}
@@ -164,7 +164,7 @@ O valor da resistência normalizada mais próxima é de \SI{330}{\ohm}. Importa,
 
 Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos integrados.
 
-\subsubsection{Fontes de tensão \SI{220}{\volt}/\SI{8}{\volt} CA}
+\subsubsection{Fontes de tensão \SI{230}{\volt}/\SI{8}{\volt} CA}
 \label{sec:fontealternada}
 As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. 
 

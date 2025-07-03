@@ -31,10 +31,10 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {ESP32} \cite {ESPDevKit}}}{49}{figure.caption.47}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces \textit {RaspberryPI5} \cite {introRaspberrypi5}}}{49}{figure.caption.48}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo do \acrshort {virtualbench} usado como multímetro digital}}{51}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitectura \acrshort {lare}}}{51}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitectura geral - \acrshort {lare}}}{51}{figure.caption.50}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxograma de uma chamada ao \textit {socket} \cite {Sockets}}}{52}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura \acrshort {lare} - \textbf {NOTE: Fig tem de ser revista}}}{53}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Gráfico da Lei de \textit {Ohm}}}{54}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura \acrshort {lare} - \textbf {NOTE: Fig tem MESMO de ser revista}}}{53}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Gráfico da Lei de \textit {Ohm}\cite {hayt}}}{54}{figure.caption.53}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Experiência Lei de \textit {Ohm}}}{54}{figure.caption.54}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Diagrama de blocos da rectificação \cite {sedrasmith}}}{55}{figure.caption.55}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Rectificação meia onda \cite {sedrasmith}}}{56}{figure.caption.56}%
@@ -45,7 +45,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{59}{figure.caption.61}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{59}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{60}{figure.caption.64}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{61}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{60}{figure.caption.66}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{61}{figure.caption.68}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{62}{figure.caption.69}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{63}{figure.caption.71}%
@@ -70,7 +70,7 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces \textins {Implementação} Lei de \textit {Ohm}}}{84}{figure.caption.99}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{85}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces \textins {Implementação} rectificadores e filtros}}{86}{figure.caption.102}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{87}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{88}{figure.caption.105}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{88}{figure.caption.106}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{93}{figure.caption.112}%
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Processo de leitura das medições de tensão e corrente}}{95}{figure.caption.114}%
