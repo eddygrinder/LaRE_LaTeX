@@ -58,12 +58,21 @@ J.~Cross, ``An informal history of elearning,'' {\em on The Horizon}, vol.~12, p
 ``Capacitação digital das escolas.'' \url{https://digital.dge.mec.pt/}.
 \newblock (Accessed on 02/26/2023).
 
+\bibitem{broadbandcomission}
+{Broadband Commission}, ``The state of broadband advocacy targets 2025,'' 2025.
+\newblock Tradução não oficial: Esta tradução não foi criada pela União Internacional das Telecomunicações (ITU). Nem a ITU é responsável pelo conteúdo ou exatidão desta tradução. A edição original em inglês é a versão autêntica.
+
+\bibitem{itu2024facts}
+{International Telecommunication Union}, ``Facts and figures 2024 - internet use,'' 2024.
+\newblock Tradução não oficial: Esta tradução não foi criada pela União Internacional das Telecomunicações (ITU). Nem a ITU é responsável pelo conteúdo ou exatidão desta tradução. A edição original em inglês é a versão autêntica.
+
 \bibitem{TheDigitransf}
 A.~Sepúlveda, ``The digital transformation of education: Connecting schools, empowering learners - broadband commission.'' \url{https://broadbandcommission.org/publication/the-digital-transformation-of-education/}.
 \newblock (Accessed on 02/26/2023).
 
-\bibitem{DESI2020}
-``Digital {Economy} and {Society} {Index} ({DESI}) 2020 {\textbar} {Shaping} {Europe}’s digital future,'' June 2020.
+\bibitem{DESI2024}
+{European Commission}, ``Digital decade 2025 country reports,'' 2024.
+\newblock Dados retirados de tabela não numerada na página 1.
 
 \bibitem{impactocovideducacao}
 ILO, ``Youth \& {COVID}-19: {Impacts} on jobs, education, rights and mental well-being,'' report, European Commission, Aug. 2020.
@@ -71,8 +80,13 @@ ILO, ``Youth \& {COVID}-19: {Impacts} on jobs, education, rights and mental well
 \bibitem{unesco}
 ``290 million students out of school due to {COVID}-19: {UNESCO} releases first global numbers and mobilizes response {\textbar} {UNESCO}.'' \hyperlink{https://www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}{www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}.
 
-\bibitem{entregacomputadores}
-{SAPO}, ``Entrega de computadores a alunos e professores tem-se “revelado muito difícil de cumprir”.'' \hyperlink{https://tek.sapo.pt/noticias/computadores/artigos/entrega-de-computadores-a-alunos-e-professores-tem-se-revelado-muito-dificil-de-cumprir}.
+\bibitem{PRREntregacomputadores}
+J.~E. com Lusa, ``Prr. entrega de computadores a alunos tem-se “revelado muito difícil”, indica relatório,'' 2 2023.
+\newblock [Online; accessed 2025-07-07].
+
+\bibitem{cnaprr2025}
+C.~N. de~Acompanhamento do Plano de Recuperação~e Resiliência, ``Relatório de acompanhamento do plano de recuperação e resiliência - junho 2025,'' junho 2025.
+\newblock [Online; accessed 2025-07-07].
 
 \bibitem{oecd_state_2021}
 {OECD}, {\em The {State} of {School} {Education}}.
