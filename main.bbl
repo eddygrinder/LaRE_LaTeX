@@ -80,9 +80,25 @@ ILO, ``Youth \& {COVID}-19: {Impacts} on jobs, education, rights and mental well
 \bibitem{unesco}
 ``290 million students out of school due to {COVID}-19: {UNESCO} releases first global numbers and mobilizes response {\textbar} {UNESCO}.'' \hyperlink{https://www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}{www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}.
 
+\bibitem{impactonegativocovid}
+``Covid-19 teve impacto negativo na educação de 70\% dos jovens.'' \url{www.dn.pt/mundo/covid-19-teve-impacto-negativo-na-educacao-de-70-dos-jovens-12513822.html}, aug 2020.
+\newblock (Accessed on 03/08/2023).
+
 \bibitem{PRREntregacomputadores}
 J.~E. com Lusa, ``Prr. entrega de computadores a alunos tem-se “revelado muito difícil”, indica relatório,'' 2 2023.
 \newblock [Online; accessed 2025-07-07].
+
+\bibitem{ExecutiveDigest2024}
+E.~Digest, ``Problemas nos kits digitais das escolas: Milhares de alunos e professores sem direito a hotspots de internet,'' 2024.
+\newblock Consultado em julho de 2025.
+
+\bibitem{incode2030}
+``Home - incode 2030.'' \url{https://www.incode2030.gov.pt/}.
+\newblock (Accessed on 06/19/2024).
+
+\bibitem{observatorio2030}
+D.-G. de~Estatísticas da Educação~e Ciência, ``Observatório - observatÓrio das competÊncias digitais.''
+\newblock [Online; accessed 2025-07-08].
 
 \bibitem{cnaprr2025}
 C.~N. de~Acompanhamento do Plano de Recuperação~e Resiliência, ``Relatório de acompanhamento do plano de recuperação e resiliência - junho 2025,'' junho 2025.
@@ -91,10 +107,6 @@ C.~N. de~Acompanhamento do Plano de Recuperação~e Resiliência, ``Relatório d
 \bibitem{oecd_state_2021}
 {OECD}, {\em The {State} of {School} {Education}}.
 \newblock OECD, 2021.
-
-\bibitem{impactonegativocovid}
-``Covid-19 teve impacto negativo na educação de 70\% dos jovens.'' \url{www.dn.pt/mundo/covid-19-teve-impacto-negativo-na-educacao-de-70-dos-jovens-12513822.html}, aug 2020.
-\newblock (Accessed on 03/08/2023).
 
 \bibitem{IoT}
 R.~Steve, ``What is iot ? everything you need to know about the internet of things right now.,'' 2018.
@@ -110,29 +122,6 @@ R.~Steve, ``What is iot ? everything you need to know about the internet of thin
 \bibitem{Transicaodigitalprr}
 ``Transição digital - prr - recuperar portugal.'' \url{https://recuperarportugal.gov.pt/transicao-digital/}.
 \newblock (Accessed on 06/19/2024).
-
-\bibitem{incode2030}
-``Home - incode 2030.'' \url{https://www.incode2030.gov.pt/}.
-\newblock (Accessed on 06/19/2024).
-
-\bibitem{observatorio2030}
-D.-G. de~Estatísticas da Educação~e Ciência, ``Observatório - observatÓrio das competÊncias digitais.''
-\newblock [Online; accessed 2025-07-08].
-
-\bibitem{desigualdades}
-R.~Renascença, ``Alunos sem computadores por avaria ou falta de aparelhos. “não há igualdade” - renascença,'' 1 2024.
-\newblock [Online; accessed 2025-07-09].
-
-\bibitem{afirmacaodigital}
-J.~A. Pacheco, ``A afirmação da escola digital | educação | pÚblico,'' 2 2023.
-\newblock [Online; accessed 2025-07-09].
-
-\bibitem{problemasprovas}
-C.~F. Moreira, ``Há problemas com internet em 16\% das escolas onde serão feitas provas no 9.º ano | educação | pÚblico,'' 1 2025.
-\newblock [Online; accessed 2025-07-09].
-
-\bibitem{EvaluationRemoteVirtualE-Learning}
-Y.~Fan, A.~Evangelista, and V.~Indumathi, ``Evaluation of remote or virtual laboratories in e-learning engineering courses,'' in {\em 2021 IEEE Global Engineering Education Conference (EDUCON)}, pp.~136--143, 2021.
 
 \bibitem{eLearningenssup}
 J.~Magano, A.~V.~Castro, and C.~Vaz~de Carvalho, ``O e-learning no ensino superior: um caso de estudo,'' {\em Educação, Formação \& Tecnologias}, vol.~1, p.~79–92, Mai. 2008.
@@ -379,6 +368,9 @@ A.~Nafalski, O.~G\"ol, Z.~Nedic, J.~Machotka, J.~M.~M. Ferreira, and I.~Gustavss
 
 \bibitem{ThemMnyfacesRemotLab}
 M.~E. Auer and C.~Gravier, ``Guest editorial: The many facets of remote laboratories in online engineering education,'' {\em IEEE Transactions on Learning Technologies}, vol.~2, no.~4, pp.~260--262, 2009.
+
+\bibitem{EvaluationRemoteVirtualE-Learning}
+Y.~Fan, A.~Evangelista, and V.~Indumathi, ``Evaluation of remote or virtual laboratories in e-learning engineering courses,'' in {\em 2021 IEEE Global Engineering Education Conference (EDUCON)}, pp.~136--143, 2021.
 
 \bibitem{DevelopingVirtualAndRemoteUndergraduate}
 X.~Chen, Y.~Zhang, L.~Kehinde, and D.~Olowokere, ``Developing virtual and remote undergraduate laboratory for engineering technology,'' 06 2010.
