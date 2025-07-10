@@ -47,7 +47,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{59}{figure.caption.63}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{59}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{60}{figure.caption.66}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{61}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{60}{figure.caption.68}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{61}{figure.caption.70}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{62}{figure.caption.71}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{63}{figure.caption.73}%

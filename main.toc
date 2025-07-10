@@ -17,13 +17,8 @@
 \contentsline {subsection}{\numberline {2.3.1}Tipos de laboratórios}{19}{subsection.2.3.1}%
 \contentsline {subsubsection}{Uma questão de conceitos}{21}{section*.21}%
 \contentsline {subsubsection}{Laboratório real}{23}{section*.24}%
-<<<<<<< HEAD
 \contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{26}{section*.26}%
 \contentsline {subsubsection}{Laboratório remoto}{31}{section*.30}%
-=======
-\contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.26}%
-\contentsline {subsubsection}{Laboratório remoto}{30}{section*.30}%
->>>>>>> 18c900e106bec3e3d90f04234fdefe271c0d3287
 \contentsline {paragraph}{VISIR}{39}{section*.37}%
 \contentsline {paragraph}{PILAR}{45}{section*.47}%
 \contentsline {section}{\numberline {2.4}COMENTÁRIO PROF}{46}{section.2.4}%
