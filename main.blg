@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is BibTeX, Version 0.99d (TeX Live 2024)
+=======
+This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+>>>>>>> 18c900e106bec3e3d90f04234fdefe271c0d3287
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: front/title.aux
@@ -16,6 +20,7 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: chapters/appendixA.aux
 Database file #1: sampleRefs.bib
 Warning--entry type for "ExecutiveDigest2024" isn't style-file defined
+<<<<<<< HEAD
 --line 5 of file sampleRefs.bib
 Warning--entry type for "jinja" isn't style-file defined
 --line 207 of file sampleRefs.bib
@@ -27,6 +32,19 @@ Warning--entry type for "DESI2024" isn't style-file defined
 --line 2795 of file sampleRefs.bib
 Warning--entry type for "itu2024facts" isn't style-file defined
 --line 2951 of file sampleRefs.bib
+=======
+--line 3 of file sampleRefs.bib
+Warning--entry type for "jinja" isn't style-file defined
+--line 103 of file sampleRefs.bib
+Warning--entry type for "flaskDigitalOcean" isn't style-file defined
+--line 111 of file sampleRefs.bib
+Warning--entry type for "tutorialsiteflask" isn't style-file defined
+--line 120 of file sampleRefs.bib
+Warning--entry type for "DESI2024" isn't style-file defined
+--line 1397 of file sampleRefs.bib
+Warning--entry type for "itu2024facts" isn't style-file defined
+--line 1475 of file sampleRefs.bib
+>>>>>>> 18c900e106bec3e3d90f04234fdefe271c0d3287
 Warning--empty publisher in Hofstein
 Warning--empty publisher in pisa2018
 Warning--empty booktitle in zutinlab2go
@@ -43,6 +61,7 @@ Warning--empty journal in ExperiencesRemoteLaboratories
 Warning--empty booktitle in DevelopingVirtualAndRemoteUndergraduate
 Warning--empty journal in TheVISIRproject
 Warning--empty booktitle in pereira
+<<<<<<< HEAD
 You've used 186 entries,
             1876 wiz_defined-function locations,
             1361 strings with 37520 characters,
@@ -73,6 +92,38 @@ preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 1095
+=======
+You've used 185 entries,
+            1876 wiz_defined-function locations,
+            1356 strings with 37268 characters,
+and the built_in function-call counts, 35120 in all, are:
+= -- 3254
+> -- 1469
+< -- 0
++ -- 594
+- -- 409
+* -- 2114
+:= -- 4688
+add.period$ -- 297
+call.type$ -- 185
+change.case$ -- 178
+chr.to.int$ -- 0
+cite$ -- 201
+duplicate$ -- 1518
+empty$ -- 3940
+format.name$ -- 409
+if$ -- 8904
+int.to.chr$ -- 0
+int.to.str$ -- 185
+missing$ -- 79
+newline$ -- 681
+num.names$ -- 107
+pop$ -- 1173
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1092
+>>>>>>> 18c900e106bec3e3d90f04234fdefe271c0d3287
 stack$ -- 0
 substring$ -- 1208
 swap$ -- 435
@@ -81,7 +132,13 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 16
+<<<<<<< HEAD
 while$ -- 203
 width$ -- 189
 write$ -- 1603
+=======
+while$ -- 202
+width$ -- 188
+write$ -- 1593
+>>>>>>> 18c900e106bec3e3d90f04234fdefe271c0d3287
 (There were 22 warnings)
