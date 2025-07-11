@@ -22,7 +22,7 @@
 \contentsline {figure}{\numberline {2.17}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{40}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Arquitectura \acrshort {visir}\cite {tawfikexperiences}}}{41}{figure.caption.39}%
 \contentsline {figure}{\numberline {2.19}{\ignorespaces \textit {Protobaord \acrshort {visir}}}}{41}{figure.caption.40}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{41}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{42}{figure.caption.41}%
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{42}{figure.caption.42}%
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{42}{figure.caption.43}%
 \contentsline {figure}{\numberline {2.23}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{43}{figure.caption.44}%
@@ -47,7 +47,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{59}{figure.caption.63}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{59}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{60}{figure.caption.66}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{61}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{60}{figure.caption.68}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{61}{figure.caption.70}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{62}{figure.caption.71}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{63}{figure.caption.73}%

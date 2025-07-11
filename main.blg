@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: front/title.aux
@@ -16,19 +16,19 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: chapters/appendixA.aux
 Database file #1: sampleRefs.bib
 Warning--entry type for "DigitalDecade2024" isn't style-file defined
---line 22 of file sampleRefs.bib
+--line 43 of file sampleRefs.bib
 Warning--entry type for "ExecutiveDigest2024" isn't style-file defined
---line 53 of file sampleRefs.bib
+--line 105 of file sampleRefs.bib
 Warning--entry type for "jinja" isn't style-file defined
---line 154 of file sampleRefs.bib
+--line 307 of file sampleRefs.bib
 Warning--entry type for "flaskDigitalOcean" isn't style-file defined
---line 162 of file sampleRefs.bib
+--line 323 of file sampleRefs.bib
 Warning--entry type for "tutorialsiteflask" isn't style-file defined
---line 171 of file sampleRefs.bib
+--line 341 of file sampleRefs.bib
 Warning--entry type for "DESI2024" isn't style-file defined
---line 1448 of file sampleRefs.bib
+--line 2895 of file sampleRefs.bib
 Warning--entry type for "itu2024facts" isn't style-file defined
---line 1526 of file sampleRefs.bib
+--line 3051 of file sampleRefs.bib
 Warning--empty publisher in Hofstein
 Warning--empty journal in eLearningenssup
 Warning--empty booktitle in zutinlab2go
