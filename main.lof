@@ -5,28 +5,28 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Número de utilizadores da Internet em todo o mundo, 2024 \cite {itu2024facts}}}{6}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Dimensão Capital Humano, 2024 \cite {itu2024facts}}}{7}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Tipos de laboratórios consoante a localização, segundo Zutin, \textit {et al.} \cite {zutinlab2go}}}{20}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Tipos de laboratórios consoante a localização, Heradio, de la Torre \& Dormido, (2016) \cite {HERADIO20161}}}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tipos de laboratórios consoante a localização, Heradio \textit {et al.} (2016), \cite {HERADIO20161}}}{20}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Tipos de laboratórios consoante a localização, segundo Zutin, \textit {et al.} \cite {zutinlab2go}}}{20}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces \acrshort {lv} \textit {vs} simulador}}{22}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces \textit {Fritzing} (Exemplo)}}{23}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Tinkercad}}{26}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces \textit {Multisim} local}}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces \textit {Multisim} local}}{26}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces \textit {Multisim} remoto}}{27}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces \textit {Falstad} - amplificador inversor\cite {falstad}}}{31}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Diferentes tipos de arquitectura (resumo)}}{35}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces \textit {Falstad} - amplificador inversor\cite {falstad}}}{30}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Diferentes tipos de arquitectura (resumo)}}{34}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Implementação cliente-servidor \acrshort {matlab}-\acrshort {ejs}}}{36}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Arquitectura \acrshort {diesel} (genérica)\cite {diesel}}}{37}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Arquitectura \acrshort {ilab}\cite {arquitecturaisa}}}{38}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Arquitectura \textit {WebLab-Deusto}}}{39}{figure.caption.35}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Arquitectura \textit {gateway4labs}}}{40}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Arquitectura \acrshort {diesel} (genérica)\cite {diesel}}}{36}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Arquitectura \acrshort {ilab}\cite {arquitecturaisa}}}{37}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Arquitectura \textit {WebLab-Deusto}}}{38}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Arquitectura \textit {gateway4labs}}}{39}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{40}{figure.caption.38}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Arquitectura \acrshort {visir}\cite {tawfikexperiences}}}{42}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces \textit {Protobaord \acrshort {visir}}}}{42}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Arquitectura \acrshort {visir}\cite {tawfikexperiences}}}{41}{figure.caption.39}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces \textit {Protobaord \acrshort {visir}}}}{41}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.20}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{42}{figure.caption.41}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{43}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{43}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{42}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{42}{figure.caption.43}%
 \contentsline {figure}{\numberline {2.23}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{43}{figure.caption.44}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Fonte de tensão PXI-4110 \cite {PXI-4110}}}{44}{figure.caption.45}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Fonte de tensão PXI-4110 \cite {PXI-4110}}}{43}{figure.caption.45}%
 \contentsline {figure}{\numberline {2.25}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{44}{figure.caption.46}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Arduino} Mega \cite {ArduinoMega}}}{48}{figure.caption.48}%

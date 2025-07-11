@@ -19,11 +19,11 @@
 \contentsline {subsection}{\numberline {2.3.1}Tipos de laboratórios}{19}{subsection.2.3.1}%
 \contentsline {subsubsection}{Uma questão de conceitos}{21}{section*.21}%
 \contentsline {subsubsection}{Laboratório real}{23}{section*.24}%
-\contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{26}{section*.26}%
-\contentsline {subsubsection}{Laboratório remoto}{31}{section*.30}%
+\contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.26}%
+\contentsline {subsubsection}{Laboratório remoto}{30}{section*.30}%
 \contentsline {paragraph}{VISIR}{39}{section*.37}%
-\contentsline {paragraph}{PILAR}{45}{section*.47}%
-\contentsline {section}{\numberline {2.4}COMENTÁRIO PROF}{46}{section.2.4}%
+\contentsline {paragraph}{PILAR}{44}{section*.47}%
+\contentsline {section}{\numberline {2.4}COMENTÁRIO PROF}{45}{section.2.4}%
 \contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{47}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contextualização}{47}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Solução proposta}{50}{section.3.2}%

@@ -150,7 +150,7 @@ M.~Sanders, ``Ttt+stem+article\_1.pdf.'' \url{http://esdstem.pbworks.com/f/TTT+S
 \newblock (Accessed on 03/14/2023).
 
 \bibitem{pisa2022volume2}
-OECD, {\em PISA 2022 Results (Volume II): Learning During – and From – Disruption}.
+OECD, {\em PISA 2022 Results (Volume II): Learning During - and From - Disruption}.
 \newblock Paris: OECD Publishing, 2023.
 \newblock Capítulo 5: Investments in a solid foundation for learning and well-being.
 
@@ -174,9 +174,18 @@ OECD, {\em PISA 2022 Results (Volume II): Learning During – and From – Disru
 ``Portugal, o país menos educado da união europeia – observador.'' \url{https://observador.pt/opiniao/portugal-o-pais-menos-educado-da-uniao-europeia/}.
 \newblock (Accessed on 04/02/2023).
 
-\bibitem{Qualific91:online}
-P.~Ferreira, ``Qualificação, steam, género.'' \url{https://www.jn.pt/opiniao/convidados/qualificacao-steam-genero--14523190.html}.
-\newblock (Accessed on 04/04/2023).
+\bibitem{pisa2018volumeV}
+OECD, {\em PISA 2018 Results (Volume V): Effective Policies, Successful Schools}.
+\newblock Paris: OECD Publishing, 2020.
+\newblock Capítulo 4: Teachers and support staff.
+
+\bibitem{cedefop}
+Cedefop, {\em Profissões com défice e excesso de competências na Europa}.
+\newblock Publications Officeg, 2016.
+
+\bibitem{DigitalDecade2024}
+{Comissão Europeia}, ``Portugal — relatório da década digital 2024,'' 2024.
+\newblock Consultado em julho de 2025.
 
 \bibitem{desigualdadespandemia}
 ``{Pandemia acentuou desigualdades na sa{\ifmmode\acute{u}\else\'{u}\fi}de, educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o e no trabalho, confirma estudo},'' July 2024.
@@ -188,6 +197,10 @@ R.~B. Correia, ``Ofap-efeitos-da-pandemia-digital-14.pdf.'' \url{http://ofap.ics
 
 \bibitem{virtuallabng}
 A.~Oladejo and A.~Ebisin, ``Virtual laboratory: An alternative laboratory for science teaching and learning,'' {\em Journal of Pure \& Applied Sciences}, vol.~3, pp.~82 -- 91, 10 2021.
+
+\bibitem{pearson}
+Pearson, ``The global learner survey,'' Agosto 2020.
+\newblock [Online; accessed 2025-07-11].
 
 \bibitem{dificuldadesfinanciamento}
 ``Uma dificuldade nas nossas universidades é a falta de financiamento.'' \url{https://www.dn.pt/vida-e-futuro/uma-dificuldade-nas-nossas-universidades-e-a-falta-de-financiamento-9574558.html}.
@@ -202,7 +215,7 @@ A.~Oladejo and A.~Ebisin, ``Virtual laboratory: An alternative laboratory for sc
 \newblock (Accessed on 03/28/2023).
 
 \bibitem{Cerdeira2020}
-L.~Cerdeira, B.~Cabrito, M.~d. L.~M. Taylor, and R.~Gomes, ``{A fuga de c{\ifmmode\acute{e}\else\'{e}\fi}rebros em Portugal: hip{\ifmmode\acute{o}\else\'{o}\fi}teses explicativas},'' {\em Revista Brasileira de Pol{\ifmmode\acute{\imath}\else\'{\i}\fi}tica e Administra{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o da Educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o}, vol.~31, no.~2, pp.~409--418, 2020.
+L.~Cerdeira, C.~B., M.~D.~L. Machado-Taylor, and R.~Gomes, ``A fuga de cérebros em portugal: Hipóteses explicativas,'' {\em Revista Brasileira de Administração e Educação}, vol.~31, pp.~409--418, 01 2015.
 
 \bibitem{anqep}
 ANQEP, ``{ANQEP - Cursos Profissionais},'' July 2024.
