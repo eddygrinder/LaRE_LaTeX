@@ -9,14 +9,14 @@
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{25}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{25}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{TRIAC?\glossentry{triac}|setentrycounter[]{page}"\glsnumberformat}{28}
-\glossaryentry{DIAC?\glossentry{diac}|setentrycounter[]{page}"\glsnumberformat}{28}
-\glossaryentry{SCR?\glossentry{scr}|setentrycounter[]{page}"\glsnumberformat}{28}
-\glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{31}
-\glossaryentry{ESP32?\glossentry{ESP32}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{TRIAC?\glossentry{triac}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{DIAC?\glossentry{diac}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{SCR?\glossentry{scr}|setentrycounter[]{page}"\glsnumberformat}{26}
+\glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{ESP32?\glossentry{ESP32}|setentrycounter[]{page}"\glsnumberformat}{30}
 \glossaryentry{Industry 4.0?\glossentry{industria40}|setentrycounter[]{page}"\glsnumberformat}{33}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{"\textit {Arduino}?\glossentry{arduino}|setentrycounter[]{page}"\glsnumberformat}{48}
@@ -49,9 +49,9 @@
 \glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{51}
 \glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{52}
 \glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{52}
-\glossaryentry{PC/104?\glossentry{pc/104}|setentrycounter[]{page}"\glsnumberformat}{59}
+\glossaryentry{PC/104?\glossentry{pc/104}|setentrycounter[]{page}"\glsnumberformat}{58}
 \glossaryentry{KiCad?\glossentry{kicad}|setentrycounter[]{page}"\glsnumberformat}{59}
-\glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{60}
+\glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{59}
 \glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{SBC?\glossentry{sbc}|setentrycounter[]{page}"\glsnumberformat}{61}
 \glossaryentry{Raspberry Pi?\glossentry{RaspberryPI}|setentrycounter[]{page}"\glsnumberformat}{61}
