@@ -47,7 +47,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{59}{figure.caption.63}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{59}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{60}{figure.caption.66}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{60}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{61}{figure.caption.68}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{61}{figure.caption.70}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{62}{figure.caption.71}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{63}{figure.caption.73}%
@@ -56,47 +56,47 @@
 \contentsline {figure}{\numberline {3.25}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{64}{figure.caption.76}%
 \contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{65}{figure.caption.77}%
 \contentsline {figure}{\numberline {3.27}{\ignorespaces Diagrama \textins {em corte} de blocos SN74HC595 \cite {SN74HC595}}}{67}{figure.caption.78}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{70}{figure.caption.84}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{71}{figure.caption.84}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{74}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{74}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Exemplo de uso do \textit {SN74HC595} e \textit {ULN2003A}}}{75}{figure.caption.87}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{76}{figure.caption.88}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{76}{figure.caption.89}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementação Fontes de \SI {6}{\volt } e \SI {12}{\volt }}}{77}{figure.caption.91}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Fonte de \SI {5}{\volt } \textins {LM317}}}{78}{figure.caption.93}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Problema de massa - onda completa}}{79}{figure.caption.95}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Problema de massa - onda completa [Resolvido]}}{80}{figure.caption.96}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Painel frontal Multímetro Digital}}{80}{figure.caption.97}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Esquema completo - Lei de \textit {Ohm}}}{81}{figure.caption.98}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \textins {Implementação} Lei de \textit {Ohm}}}{82}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{83}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces \textins {Implementação} rectificadores e filtros}}{84}{figure.caption.104}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{86}{figure.caption.107}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{86}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{90}{figure.caption.114}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Processo de leitura das medições de tensão e corrente}}{92}{figure.caption.116}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Erro de selecção}}{98}{figure.caption.120}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Página de \textit {login}}}{99}{figure.caption.121}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Página inicial}}{99}{figure.caption.122}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces \textins {Exemplo} Experiência Lei de \textit {Ohm}}}{100}{figure.caption.123}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Lei de \textit {Ohm} - Selecção dos parâmetros}}{100}{figure.caption.125}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Selecção de parâmetros}}{102}{figure.caption.127}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Selecção de parâmetros}}{103}{figure.caption.129}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{76}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{76}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Exemplo de uso do \textit {SN74HC595} e \textit {ULN2003A}}}{77}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Envio de \textit {bits} para o registo de deslocamento}}{78}{figure.caption.88}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Fontes de tensão do \acrshort {virtualbench}}}{78}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementação Fontes de \SI {6}{\volt } e \SI {12}{\volt }}}{79}{figure.caption.91}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Fonte de \SI {5}{\volt } \textins {LM317}}}{80}{figure.caption.93}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Problema de massa - onda completa}}{81}{figure.caption.95}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Problema de massa - onda completa [Resolvido]}}{82}{figure.caption.96}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Painel frontal Multímetro Digital}}{82}{figure.caption.97}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Esquema completo - Lei de \textit {Ohm}}}{83}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \textins {Implementação} Lei de \textit {Ohm}}}{84}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{85}{figure.caption.103}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \textins {Implementação} rectificadores e filtros}}{86}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{88}{figure.caption.107}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{88}{figure.caption.108}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{93}{figure.caption.114}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Processo de leitura das medições de tensão e corrente}}{95}{figure.caption.116}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Erro de selecção}}{102}{figure.caption.120}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Página de \textit {login}}}{102}{figure.caption.121}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Página inicial}}{103}{figure.caption.122}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces \textins {Exemplo} Experiência Lei de \textit {Ohm}}}{103}{figure.caption.123}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Lei de \textit {Ohm} - Selecção dos parâmetros}}{104}{figure.caption.125}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Selecção de parâmetros}}{105}{figure.caption.127}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Selecção de parâmetros}}{106}{figure.caption.129}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Medição práctica}}{106}{figure.caption.130}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfico da Lei de \textit {Ohm} - \SI {1}{\kilo \ohm } - \acrshort {lare}}}{107}{figure.caption.131}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{108}{figure.caption.133}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - meia onda}}{109}{figure.caption.134}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{109}{figure.caption.135}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Medições prácticas \textins {complementares} \textit {ripple}}}{111}{figure.caption.137}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - onda completa}}{111}{figure.caption.138}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Tensão de \textit {ripple} - \textit {multisim} - onda completa}}{112}{figure.caption.139}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{113}{figure.caption.140}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{114}{figure.caption.141}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ \acrshort {lare}}}{114}{figure.caption.142}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{114}{figure.caption.143}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Frequência de corte - \acrshort {lare}}}{115}{figure.caption.144}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{115}{figure.caption.145}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Medição práctica}}{110}{figure.caption.130}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfico da Lei de \textit {Ohm} - \SI {1}{\kilo \ohm } - \acrshort {lare}}}{111}{figure.caption.131}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{112}{figure.caption.133}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - meia onda}}{113}{figure.caption.134}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{113}{figure.caption.135}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Medições prácticas \textins {complementares} \textit {ripple}}}{115}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - onda completa}}{115}{figure.caption.138}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Tensão de \textit {ripple} - \textit {multisim} - onda completa}}{116}{figure.caption.139}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{117}{figure.caption.140}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{118}{figure.caption.141}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ \acrshort {lare}}}{118}{figure.caption.142}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{118}{figure.caption.143}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Frequência de corte - \acrshort {lare}}}{119}{figure.caption.144}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{119}{figure.caption.145}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
