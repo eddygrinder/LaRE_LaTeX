@@ -249,6 +249,10 @@ L.~F. Zapata-Rivera and M.~Larrondo~Petrie, ``Models of collaborative remote lab
 \bibitem{EMaster2024May}
 E.~EMaster, ``{Por que os laborat{\ifmmode\acute{o}\else\'{o}\fi}rios virtuais s{\ifmmode\tilde{a}\else\~{a}\fi}o essenciais na educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o moderna?},'' {\em EMaster Cloud e Security}, May 2024.
 
+\bibitem{tinkercad}
+``{Tinkercad - From mind to design in minutes},'' July 2024.
+\newblock [Online; accessed 8. Jul. 2024].
+
 \bibitem{faina}
 A.~Faiña, ``Learning hands-on electronics from home: A simulator for fritzing,'' 06 2022.
 
@@ -304,10 +308,6 @@ P.~Plaza, E.~Sancristobal, G.~Carro, M.~Blazquez, F.~García-Loro, S.~Martin, C.
 \bibitem{Marzoli}
 I.~Marzoli, N.~Rizza, A.~Saltarelli, and E.~Sampaolesi, {\em {Arduino: From Physics to Robotics}}.
 \newblock Jan. 2021.
-
-\bibitem{tinkercad}
-``{Tinkercad - From mind to design in minutes},'' July 2024.
-\newblock [Online; accessed 8. Jul. 2024].
 
 \bibitem{fritzingdown}
 Fritzing, ``{Download Fritzing},'' July 2024.
