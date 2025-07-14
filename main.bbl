@@ -253,6 +253,10 @@ E.~EMaster, ``{Por que os laborat{\ifmmode\acute{o}\else\'{o}\fi}rios virtuais s
 ``{Tinkercad - From mind to design in minutes},'' July 2024.
 \newblock [Online; accessed 8. Jul. 2024].
 
+\bibitem{multisim}
+``{Multisim Live Online Circuit Simulator},'' July 2024.
+\newblock [Online; accessed 6. Jul. 2024].
+
 \bibitem{faina}
 A.~Faiña, ``Learning hands-on electronics from home: A simulator for fritzing,'' 06 2022.
 
@@ -268,10 +272,6 @@ B.~Heying, D.~Kejie, and J.~Li, ``Application multisim to virtual laboratory for
 
 \bibitem{multisimVLUmenne}
 P.~Umenne and T.~Hlalele, ``Evaluation of the effectiveness of virtual laboratory's for electronics in the open distance learning context,'' pp.~1--5, 08 2020.
-
-\bibitem{multisim}
-``{Multisim Live Online Circuit Simulator},'' July 2024.
-\newblock [Online; accessed 6. Jul. 2024].
 
 \bibitem{PaperTit40:online}
 I.~Gustavsson, G.~Alves, R.~Costa, K.~Nilsson, J.~Zackrisson, U.~Hernandez, and J.~Garcia-Zubia, ``The visir open lab platform 5.0 - an architecture for a federation of remote laboratories,'' 07 2011.

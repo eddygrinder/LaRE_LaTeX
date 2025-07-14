@@ -622,3 +622,98 @@ O \textit{setup} é configurado de forma automática e as restantes configuraç�
 A implementação completa das configurações do gerador de sinal e osciloscópio estão definidas no ficheiro ``mixed\textunderscore signal\textunderscore oscilloscope.py''. Como referido na Secção \ref{sec:configmedicaoes}, o código foi retirado dos exemplos aquando da instalação do \textit{pyVirtualBench} e modificado consoante as necessidades do projecto.
 
 De facto, a transformação digital já alterou os postos de trabalho e, a nível mundial, a indústria, os produtos e as modalidades de ensino. Pode concluir-se, então, da importância dos laboratórios na educação ou, neste caso particular, do laboratório de eletrónica, principalmente em contexto de sala de aula.
+
+No entanto, a implementação dos laboratórios remotos assenta sobre as mais variadas, e complexas, soluções.
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/kaluz.png}
+    \caption{Diferentes tipos de arquitectura (resumo)}
+    \label{fig:diferentestiposarq}
+\end{figure}
+
+Segundo Kalúz \textit{et al.}, (2015), Figura \ref{fig:diferentestiposarq}, os tipos mais frequentes de arquitecturas são\cite{Kaluz}:
+\begin{itemize}
+    \item Cliente-servidor com \textit{software} de controlo - dispositivo experimental: este tipo de arquitetura muito comum utiliza uma ligação direta entre o \acrshort{pc}(servidor) e o dispositivo controlado, por exemplo, através de uma porta série ou \acrfull{usb};
+    \item Cliente-servidor com \textit{software} de controlo - dispositivo de aquisição de dados (\acrfull{daq});
+    \item Configuração experimental remota com funcionalidade muito semelhante à anterior; a única diferença é que o dispositivo de aquisição de dados (normalmente uma placa \acrshort{daq}) é uma parte separada da arquitetura;
+    \item Nós cliente-servidor-\textit{proxy}-laboratório (\acrshort{pc} + unidade de controlo)-dispositivos experimentais: este tipo, também conhecido como arquitetura ramificada, oferece uma maior capacidade de possíveis ligações experimentais do que qualquer outra arquitetura;
+    \item Cliente-servidor com sistema de controlo de supervisão e aquisição de dados (\acrfull{scada}) - unidade de controlo - dispositivo experimental: a combinação do sistema \acrshort{scada} com uma unidade de controlo (\acrfull{plc} ou outro controlador de \textit{hardware}) é uma das abordagens industriais mais frequentemente utilizadas;
+    \item Cliente - servidor/microcomputador - placa eletrónica programável - dispositivo experimental: as abordagens muito populares nos últimos anos, também frequentemente designadas na literatura como de baixo custo, baseiam-se em placas programáveis como as \acrshort{fpga}, microcontroladores \gls{arduino} e alternativas baratas aos computadores normais (por exemplo, computadores de placa única baseados na arquitetura \acrfull{arm}, como \gls{RaspberryPI}, entre outros);
+    \item \textit{\acrfull{mhsa}}: é composto por uma arquitetura de \textit{hardware}, baseada em dispositivos industriais, que permite ao programador ligar vários tipos de experiências à sua configuração física, limitada apenas pelas capacidades de ligação dos nós experimentais e por um \textit{software} baseado na \textit{web} do lado do cliente, que proporciona uma grande versatilidade tanto para a implementação final como para a utilização; desde o início, o \acrshort{mhsa} foi desenvolvido como uma arquitetura para a implementação de laboratórios de sistemas de controlo, sem ter em conta a utilização de dispositivos específicos, reduzindo o \textit{back-end} a um conjunto de sinais.
+\end{itemize}
+
+Fabregas \textit{et al.}, (2011), utilizam o \textit{Simulink}, do lado do servidor, e o \acrfull{ejs}, do lado do cliente, para realizar a implementação do \acrshort{laboratório remoto}\cite{FABREGAS20111686}, Figura \ref{fig:ejs}.
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/sej.jpg}
+    \caption{Implementação cliente-servidor \acrshort{matlab}-\acrshort{ejs}}
+    \label{fig:ejs}
+\end{figure}
+Ainda no mesmo artigo - Lazar e Carari, (2008) - desenvolveram um \acrshort{laboratório remoto} baseado no \textit{software} \textit{LOOKOUT SCADA} da \acrfull{ni}, \cite{lazar} citado por \cite{FABREGAS20111686}.
+Por sua vez, Dormido \textit{et al.}, (2008), desenvolveram um \acrshort{laboratório remoto}, em que o \acrfull{labview} estava implementado no servidor, \cite{dormido} citado por \cite{FABREGAS20111686}. Em ambas implementações foi utilizada uma arquitectura cliente-servidor.
+
+A \acrfull{diesel} é outro tipo de arquitectura que é aplicada na implementação de laboratórios remotos. A abordagem cliente-servidor do \acrshort{diesel} utiliza uma arquitetura de \textit{software} distribuída, desenvolvida com a tecnologia \textit{Microsoft .NET}. É constituída por uma aplicação cliente, um determinado número de estações de trabalho experimentais que alojam aplicações servidoras individuais, um servidor \textit{Web} que aloja uma base de dados, um serviço \textit{Web} e um sistema de reservas baseado na \textit{Web} \cite{diesel}, como se pode ver na Figura \ref{fig:resumoarquitectura}.
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/diesel.png}
+    \caption{Arquitectura \acrshort{diesel} (genérica)\cite{diesel}}
+    \label{fig:resumoarquitectura}
+\end{figure}
+
+Jacko \textit{et al.}, (2022) - no seu artigo ``Remote IoT Education Laboratory for Microcontrollers Based on the STM32 Chips'' - descrevem a implementação de um \acrshort{laboratório remoto} que utiliza o \textit{Microsoft Visual Studio} 2019 do lado do servidor \cite{jacko}.
+
+Candelas \textit{et al.}, (2003), implementaram um \acrshort{laboratório remoto} dedicado ao ensino da robótica em que a ``ponte'' entre a experiência e o utilizador é feita atráves de \textit{Java Applet}.
+
+No entanto, a implementação dos \acrshort{laboratório remoto}s vai muito para além dos conceitos abordados anteriormente, a \textbf{Interoperabilidade} torna possível a integração de diferentes \acrshort{laboratório remoto}s mas levanta outro tipo de problemas, como sendo a gestão dos \acrshort{laboratório remoto}s e funcionalidades, autenticação, autorização ou gestão de utilizadores. Este facto abriu espaços à criação de serviços que pudessem gerir estas funcionalidades, comummente designados por \acrfull{rlms}. Trata-se de \textit{software} de gestão que pode suportar vários laboratórios remotos (por exemplo, um laboratório de robótica e um laboratório de eletrónica ao mesmo tempo) e fornece autenticação, autorização, gestão de utilizadores, monitorização de utilizadores e agendamento, bem como \acrfull{api}s para desenvolvimento de novas funcionalidades e laboratórios \cite{Vocabulariog4l}.
+
+A \acrfull{ilab}\footnote{\url{https://icampus.mit.edu/projects/ilabs/\#architecture}}, Figura \ref{fig:arquitecturaisa}, é uma arquitetura de software, desenvolvida pelo \acrfull{mit}, que oferece aos criadores e utilizadores dos \acrshort{laboratório remoto}s uma estrutura comum para utilizar, partilhar e disponibilizar mecanismos para a partilha de \acrshort{laboratório remoto}s numa arquitetura distribuída baseada em serviços \textit{Web}, gerindo o agendamento e a manutenção de sessões de laboratório durante a execução de uma experiência\cite{zutin}. Os utilizadores acedem a estes \acrshort{laboratório remoto}s através de um início de sessão único e de uma \textit{interface} administrativa normalizada simples. O projeto \acrshort{ilab} demonstrou que a utilização de laboratórios pode ser alargada a milhares de estudantes dispersos globalmente\cite{harward}\cite{arquitecturaisa}. Zutin, Auer e Gustavsson, (2011), apresentaram uma solução para integrar o \acrshort{visir} no \acrshort{ilab}\cite{zutinvisir}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/isa_architecture.png}
+    \caption{Arquitectura \acrshort{ilab}\cite{arquitecturaisa}}
+    \label{fig:arquitecturaisa}
+\end{figure}
+
+O \textit{WebLab-Deusto} é uma iniciativa desenvolvida pela Universidade de Deusto\footnote{\url{https://www.deusto.es/es/inicio}}, Bilbao, e consiste num sistema de gestão de \acrshort{laboratório remoto} de código de fonte aberto (\textit{BSD 2-clause license}). A arquitectura do \textit{WebLab-Deusto} é definida localmente e baseia-se na arquitetura distribuída cliente-servidor \textbf{MODULAR? REVER}, como podemos ver na Figura \ref{fig:arquitecturawld}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/local_architecture.png}
+    \caption{Arquitectura \textit{WebLab-Deusto}}
+    \label{fig:arquitecturawld}
+\end{figure}
+
+Nesta tipo de arquitectura, os utilizadores(clientes) ligam-se aos servidores principais e estes gerem a autenticação, a autorização, o controlo dos utilizadores, etc.
+Suporta nativamente a ``Federação'' de \acrshort{laboratório remoto}s, o que significa que se duas universidades instalarem o \textit{WebLab-Deusto}, qualquer um dos sistemas poderá usar os laboratórios fornecidos pela outra universidade.
+Além disso, fornece bibliotecas tanto do lado do cliente, como do lado do servidor para lidar com as comunicações e também fornece componentes de \textit{software} que estarão entre cliente e servidor \cite{wlddoc}.
+
+A gateways4labs\footnote{https://gateway4labs.readthedocs.io/en/latest/} é, também, uma abordagem \textit{open-source} que visa a integração de múltiplos laboratórios remotos em diferentes ambientes de aprendizagem digital (ferramentas digitais) através de uma \textit{interface} única.
+A arquitectura do \textit{gateway4labs} está representada na Figura \ref{fig:arqgateway4labs}. O lado esquerdo - denominado o ``lado do cliente'' - contém ferramentas de aprendizagem, como por exemplo o \textit{moodle}. O lado direito - denominado o ``lado do laboratório'' - representa o \acrshort{rlms}, por exemplo, um dos dois casos abordados anteriormente: \textit{WebLab-Deusto} ou \acrshort{ilab}\cite{Orduñag4l}.
+A parte central, \textit{LabManager}, é responsável pela recepção dos vários pedidos de diferentes \acrfull{lms}s(que é o local onde os alunos e os professores se encontram e onde os alunos encontram outros recursos educativos) e compreenderá os protocolos de diferentes \acrshort{rlms}s, não tendo qualquer código dependente dos \acrshort{lms}s, mas dispondo de \textit{plug-ins} dependentes de \acrshort{rlms}s\cite{Orduñag4l}\cite{g4ldocumentation}.
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/g4l_general_architecture.png}
+    \caption{Arquitectura \textit{gateway4labs}}
+    \label{fig:arqgateway4labs}
+\end{figure}
+
+Uma derivação do \textit{WebLab-Deusto} é o \textit{LabsLand}\footnote{\url{https://labsland.com/}} que interliga escolas e universidades com laboratórios reais disponíveis noutro local\footnote{\url{https://developers.labsland.com/weblablib/en/stable/}}. Fornece um repositório de laboratórios remotos de diferentes instituições ligados entre si. Também presta serviços de consultoria e vende laboratórios remotos\footnote{\url{https://weblab.deusto.es/website/index.html}}.
+
+Outra forma de integrar \acrshort{laboratório remoto}s - nomeadamente, o \acrshort{visir} - é o sistema \textit{Maxwell}\footnote{\url{https://www.maxwell.vrac.puc-rio.br/}}, desenvolvido e integrado na \acrfull{puc} - Rio, Rio de Janeiro\footnote{\url{https://www.puc-rio.br/index.html}}. A \acrshort{puc} - Rio, possui um \acrshort{lms} integrado num repositório institucional e o \acrshort{visir}, assim como o \acrshort{labview}, podem ser utilizado a partir do \acrshort{lms}. Os alunos acedem ao \acrshort{laboratório remoto} através do \textit{weblab}\cite{Alves}.
+
+O grande problema dos laboratórios reais é a falta de condições e recursos para os equipar de forma adequada de modo a que possam apoiar, por exemplo, uma turma de trinta alunos. Este não é um problema exclusivamente português, uma vez que, de um modo geral, ``a quantidade de trabalho prático em laboratório no ensino da engenharia tem vindo a ser reduzida pouco a pouco durante as últimas décadas do século passado'' \cite{PaperTit40:online}.
+
+No mesmo artigo \cite{PaperTit40:online} são referidas as principais razões para a diminuição dos laboratórios reais, o que curiosamente reflecte o que se passa atualmente no sistema educativo português:
+
+\begin{itemize}
+    \item Número excessivo de alunos por turma \cite{Reduçãod55:online} - embora o número tenha sido reduzido para entre 23-28, para aplicar o ensino laboratorial em contexto de sala de aula, os recursos materiais necessários seriam incomportáveis;
+    \item Falta de investimento\cite{Faltadei99:online}, \cite{Odesinve56:online}, \cite{EDUSTATP20:online} - falando por experiência própria, em todas as escolas por onde passamos, a falta de verbas (ou a demora em recebê-las...)'' foi constante; - \textcolor{red}{\textbf{A REVER esta afirmação}}
+    \item Custos excessivos dos laboratórios - no contexto português e face a este número de alunos, a montagem e manutenção de um laboratório desta natureza seria demasiado dispendiosa, para além de que os laboratórios não estariam disponíveis durante o tempo que seria desejável;
+    \item Falta de professores/Poucos professores - ``Nos próximos sete anos, segundo números do \textit{Conselho Nacional de Educação}, cerca de 20 mil professores do ensino público irão reformar-se. Atualmente, mais de metade dos professores tem 50 anos ou mais.'' \cite{Faltaded39:online}.
+\end{itemize}
+
+Sendo assim, que estratégias foram usadas para mitigar estes entraves?
+
+
+Dos programas usados em contexto de sala de aula, só um possui uma versão remota e local: \textit{Multisim} \cite{multisim}. As diferenças situam-se ao nível da \textit{interface} gráfica e, sobretudo, na quantidade de recursos disponível, sendo que na versão local é obviamente muito mais extensa e completa, como se pode ver na Figura \ref{fig:multisimlocal} e Figura \ref{fig:multisimlive}.
