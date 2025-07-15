@@ -293,7 +293,8 @@ Estas duas representações, no entanto, têm algumas diferenças ao nível da n
 O caso das configurações híbridas \textit{online} nunca foram utilizadas, uma vez que envolvem o acesso a laboratórios remotos e, como já foi referido, nunca foram utilizados  em contexto de sala de aula de electrónica.
 
 \subsubsection{Uma questão de conceitos}
-Como foi referido na nota\footref{Hofstein}, o estudo de Hofstein incide sobre os laboratórios de ciências. Sendo certo que as suas conclusões podem ser adaptadas ao contexto dos laboratórios no ensino da Electrónica, importa, daqui em diante, clarificar e distinguir os conceitos de ``laboratório virtual'' e ``simulador'' (válidos tanto para versões \textit{online} como locais), uma vez que estas duas definições tendem a sobrepor-se na maioria dos casos. Parte da literatura, trabalhos de investigação e fontes \textit{online} utilizam já o termo ``laboratório virtual'' \cite{BRINSON2015218, virtuallabng, EMaster2024May}, dado que a montagem nesses sistemas é concebida de forma a reproduzir, visual e funcionalmente, um ambiente laboratorial real. No entanto, o objectivo subjacente mantém-se: simular o comportamento de sistemas físicos ou electrónicos. Se se tomar como referência a representação da Figura~\ref{fig:classificaçãoHeratio}, apresentada por Heradio et al. (2016) \cite{HERADIO20161}, os laboratórios virtuais — quer sejam locais, quer \textit{online} — são considerados simuladores, uma vez que permitem simular o comportamento de sistemas físicos ou electrónicos. No entanto, o inverso nem sempre é válido.
+\label{sec:questaodeconceitos}
+Como foi referido na nota\footref{Hofstein}, o estudo de Hofstein incide sobre os laboratórios de ciências. Sendo certo que as suas conclusões podem ser adaptadas ao contexto dos laboratórios no ensino da Electrónica, importa, daqui em diante, clarificar e distinguir os conceitos de ``laboratório virtual'' e ``simulador'' (válidos tanto para versões \textit{online} como locais), uma vez que estas duas definições tendem a sobrepor-se na maioria dos casos. Parte da literatura, trabalhos de investigação e fontes \textit{online} utilizam já o termo ``laboratório virtual'' \cite{BRINSON2015218, virtuallabng, EMaster2024May}, dado que a montagem nesses sistemas é concebida de forma a reproduzir, visual e funcionalmente, um ambiente laboratorial real. No entanto, o objectivo subjacente mantém-se: simular o comportamento de sistemas físicos ou electrónicos. Se se tomar como referência a representação da Figura~\ref{fig:classificaçãoHeratio}, apresentada por Heradio et al. (2016) \cite{HERADIO20161}, os laboratórios virtuais — quer sejam locais, quer \textit{online} — são considerados simuladores, uma vez que permitem simular o comportamento de sistemas físicos ou electrónicos, baseados em modelos matemáticos. No entanto, o inverso nem sempre é válido.
 
 Apresentam-se de seguida três exemplos de tipos de laboratórios virtuais e simuladores (frequentemente utilizados em contexto de sala de aula), que ilustram a distinção entre o que se considera laboratório virtual e simulador, de acordo com a definição anteriormente enunciada. O Tinkercad \cite{tinkercad}, representado na Figura~\ref{fig:tinkercadVL}, é um simulador com características de laboratório virtual, uma vez que a representação dos componentes e a disposição do circuito se aproximam da realidade física de um laboratório tradicional. Por sua vez, o \textit{Multisim} \cite{multisim}, tanto na sua versão \textit{online} como na aplicação instalada no computador, representado na Figura~\ref{fig:multisimSimulador}, é um simulador, dado que a montagem dos circuitos é puramente esquemática, sem qualquer preocupação em replicar a aparência ou o contexto físico de uma bancada real.
 
@@ -359,20 +360,27 @@ A principal diferença entre os dois tipos de acesso aos laboratórios virtuais 
 
 \begin{figure}[hbtp]
     \centering
-    \includegraphics[width=0.9\linewidth]{figures/fritzing.png}
+    \includegraphics[width=0.6\linewidth]{figures/fritzing.png}
     \caption{Laboratório virtual \textit{Fritzing} exemplo}
     \label{fig:fritzing}
 \end{figure}
 
-Os laboratórios virtuais permitem a verificação e o ensaio de circuitos analógicos e digitais complexos. No caso do ensino secundário, por exemplo, plataformas como o \textit{Tinkercad} conseguem reproduzir componentes reais com um grau de precisão adequado a este nível de ensino. As faculdades e universidades de todo o mundo introduzem habitualmente este tipo de \textit{software} de simulação nos seus cursos de engenharia. Uma vez que todos os circuitos são virtuais, os estudantes podem trabalhar e experimentar uma vasta gama de elementos sem o risco de danificar ou destruir equipamento físico. 
+Um laboratório virtual relativamente recente, apresentado como exemplo na Figura~\ref{fig:wokwi}, embora ainda pouco explorado, que pode constituir uma alternativa bastante interessante ao \textit{Tinkercad}, é o \textit{Wokwi} \cite{wokwi}. Este recurso permite simular diversas placas de desenvolvimento, como o \gls{arduino}, o \gls{ESP32}, o \textit{STM32}, o \gls{RaspberryPI}Pico, bem como uma vasta gama de sensores e actuadores \cite{wokwi}.
+
+\begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/wokwi.png}
+    \caption{Laboratório virtual \textit{Wokwi} exemplo}
+    \label{fig:wokwi}
+\end{figure}
 
 Os laboratórios virtuais permitem a verificação e o ensaio de circuitos analógicos e digitais complexos. No caso do ensino secundário, por exemplo, plataformas como o \textit{Tinkercad} conseguem reproduzir componentes reais com um grau de precisão adequado a este nível de ensino. As faculdades e universidades de todo o mundo introduzem habitualmente este tipo de \textit{software} de simulação nos seus cursos de engenharia. Uma vez que todos os circuitos são virtuais, os estudantes podem trabalhar e experimentar uma vasta gama de elementos sem o risco de danificar ou destruir equipamento físico. Estes laboratórios virtuais oferecem, assim, um conjunto de oportunidades pedagógicas relevantes, não apenas como substituto, mas também como complemento aos laboratórios reais \cite{WebBrowserSimulators}. 
 
-No caso concreto de uma turma com vinte ou mais alunos, por exemplo, torna-se mais seguro, numa primeira fase, simular circuitos que envolvam componentes como o \textit{TIP120}, o \textit{L293D} ou \acrshort{microcontroladores} como o \gls{arduino}, utilizando plataformas como o \textit{Tinkercad}. Esta abordagem permite aos alunos testar o funcionamento dos circuitos, identificar erros e compreender os princípios de controlo e potência em Electrónica básica, antes de avançarem para a montagem física dos projectos. Para além de preservar recursos e reduzir o risco de danos em equipamento real, esta estratégia promove uma aprendizagem mais segura, progressiva e eficaz. Mas as vantagens dos \acrshort{lv}s vão muito para além das descritas anteriormente \cite{scheckler, lynch, BlogeMas95, vabtegensVL}. Estes laboratórios oferecem um ambiente seguro para a realização de experiências complexas e potencialmente perigosas, especialmente em fases introdutórias, reduzindo os riscos para estudantes e professores. Permitem ainda que os alunos progridam ao seu próprio ritmo e repitam as experiências tantas vezes quantas forem necessárias, uma vez que estão acessíveis em qualquer momento e a partir de qualquer lugar. Os laboratórios virtuais são, por natureza, mais económicos, de fácil instalação e manutenção. A estas vantagens acresce a vasta disponibilidade de informação, apoio técnico e tutoriais online que facilitam a sua integração no processo de ensino-aprendizagem.
+No caso concreto de uma turma com vinte ou mais alunos, por exemplo, torna-se mais seguro, numa primeira fase, simular circuitos que envolvam componentes como o \textit{TIP120}, o \textit{L293D} ou \acrshort{microcontroladores} como o \gls{arduino}, utilizando plataformas como o \textit{Tinkercad}. Esta abordagem permite aos alunos testar o funcionamento dos circuitos, identificar erros e compreender os princípios de controlo e potência em Electrónica básica, antes de avançarem para a montagem física dos projectos. Para além de preservar recursos e reduzir o risco de danos em equipamento real, esta estratégia promove uma aprendizagem mais segura, progressiva e eficaz. Mas as vantagens dos laboratórios virtuais vão muito para além das descritas anteriormente \cite{scheckler, lynch, BlogeMas95, vabtegensVL}. Estes laboratórios oferecem um ambiente seguro para a realização de experiências complexas e potencialmente perigosas, especialmente em fases introdutórias, reduzindo os riscos para estudantes e professores. Permitem ainda que os alunos progridam ao seu próprio ritmo e repitam as experiências tantas vezes quantas forem necessárias, uma vez que estão acessíveis em qualquer momento e a partir de qualquer lugar. Os laboratórios virtuais são, por natureza, mais económicos, de fácil instalação e manutenção. A estas vantagens acresce a vasta disponibilidade de informação, apoio técnico e tutoriais online que facilitam a sua integração no processo de ensino-aprendizagem.
 
 No entanto, os laboratórios virtuais também apresentam algumas desvantagens. A principal prende-se com o desfasamento em relação à realidade. Retomando o exemplo anterior — a simulação de circuitos de potência —, o facto de não existirem consequências físicas reais pode induzir uma atitude de desresponsabilização ou falta de cuidado, levando o estudante a assumir que nada de grave poderá acontecer \cite{POTKONJAK2016309}. Acrescem ainda os constrangimentos relacionados com a constante evolução tecnológica dos sistemas que suportam o laboratório virtual, bem como a necessidade de uma ligação à Internet estável e de qualidade. Quando o laboratório virtual não é utilizado em contexto de sala de aula, tende a reduzir-se a interacção directa entre os alunos e entre estes e os professores, uma vez que a comunicação ocorre sobretudo em ambiente \textit{online}. Além disso, exige-se do aluno um maior grau de autonomia e iniciativa. Há ainda vantagens que, em certos contextos, se podem transformar em desvantagens. Por exemplo, o facto de o aluno poder testar e simular sucessivas vezes sem penalização pode, a longo prazo, reduzir a sua sensibilidade e rigor no manuseamento de componentes reais. Da mesma forma, a imensa quantidade de informação disponível online exige do aluno uma capacidade de selecção crítica e filtragem informada \cite{POTKONJAK2016309, vabtegensVL, Gherasim, Ghergulescu2019Feb}.
 
-No caso de versão do \acrshort{lv} ser remota, as vantagens são semelhantes às de trabalhar com qualquer programa na nuvem:
+No caso de versão ser remota, as vantagens são semelhantes às de trabalhar com qualquer programa na nuvem:
 \begin{itemize}
     \item Não há necessidade de instalar \textit{software} adicional no computador (versão \textit{online});
     \item Desde que a velocidade da Internet seja estável, o simulador pode ser acedido em qualquer lugar;
@@ -380,19 +388,36 @@ No caso de versão do \acrshort{lv} ser remota, as vantagens são semelhantes à
     \item É ideal para trabalhos colaborativos e partilha de recursos.
 \end{itemize}
 
-No entanto, se o \acrshort{lv} for apresentado uma versão de acesso local, ou seja, que é instalada no \acrshort{pc}, é óbvio que estas vantagens não se aplicam.
-
-
-
-
 \colorbox{yellow}{esta frase pode ficar mais à frente em jeito de conclusão}
 Já foi visto na secção \ref{sec: remotelaboratory} - \textbf{REVER A REFERÊNCIA} que os resultados não são prejudicados pela utilização dos \acrshort{laboratório remoto}s. \textbf{IMPORTANTE - REferências - há um trabalho para apresentar como referência}
 
+\subsubsection{Simuladores - Acesso local e/ou remoto}
+Já foi referido na Secção~\ref{sec:questaodeconceitos} que os simuladores são ferramentas que permitem simular o comportamento de sistemas físicos ou electrónicos, sem a necessidade de replicar visualmente os componentes e a disposição dos circuitos. 
 
-Um dos principais simuladores disponíveis gratuitamente, embora com limitações de funcionalidades, usado numa base regular em contexto de sala de aula, é o \textit{Multisim}\cite{multisim}. Em tempos de confinamento, este \acrshort{lv} foi um ``salva-vidas''. Existe também uma versão \textit{premium} que oferece acesso a uma gama mais completa de recursos \textit{online} e uma versão que pode ser instalada no \acrshort{pc}. (O funcionamento destas duas versões é em tudo idêntico, portanto, quando nos referirmos ao \textit{Multisim}\cite{multisim}, entende-se as duas versões, sem perda de generalidade. Nos casos em que houver necessidade de distinção, esse facto será devidamente referenciado).
-Este \textit{software} integra a simulação virtual \acrfull{spice} padrão da indústria com um ambiente esquemático interativo para visualizar e analisar instantaneamente o comportamento de circuitos electrónicos. É uma ferramenta poderosa que utiliza modelos matemáticos para simular componentes reais, dispositivos ou circuitos com uma precisão muito boa, através de um navegador \textit{web}. Fornece uma plataforma para ``colmatar'' a lacuna entre a teoria dos manuais e os circuitos reais e também proporciona aos estudantes uma boa plataforma para experiências abrangentes e inovadoras\cite{multisim}.
+Um dos principais simuladores disponíveis gratuitamente, embora com algumas limitações funcionais, e utilizado regularmente em contexto de sala de aula, é o \textit{Multisim Online} \cite{multisim}. Durante os períodos de confinamento, este simulador revelou-se um verdadeiro ``salva-vidas''. Existe também uma versão \textit{premium}, que disponibiliza uma gama mais alargada de recursos \textit{online}, bem como uma versão que pode ser instalada localmente no \acrshort{pc}. O funcionamento destas duas versões é, na prática, idêntico, sendo que as diferenças situam-se ao nível da \textit{interface} gráfica e, sobretudo, na quantidade de recursos disponível, sendo que na versão local é obviamente muito mais extensa e completa, embora mais desactualizada (Para fins didácticos e educativos a que se propõe, revela-se extremamente eficaz.), como se pode ver na Figura~\ref{fig:multisimlocal} e Figura~\ref{fig:multisimremoto}.
 
-Além disso, dispondo de poderosas funcionalidades de aprendizagem e integração de \textit{hardware} de laboratório, o \textit{Multisim} ensina aos alunos conceitos fundamentais de eletrónica analógica, digital e de potência presentes em todo o currículo de engenharia e ciências \cite{ImportantSimSoftware}.
+\begin{figure}[hbtp]
+    \centering
+    \begin{subfigure}[hbtp]{0.48\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figures/Multisim_Desktop.png}
+        \caption{Local}
+        \label{fig:multisimlocal}
+    \end{subfigure}
+    \begin{subfigure}[hbtp]{0.48\textwidth}
+        \includegraphics[width=0.9\textwidth]{figures/Multisim_ACsweep.png}
+        \caption{Remoto}
+        \label{fig:multisimremoto}
+    \end{subfigure}
+    \caption{Simulador \textit{Multisim}}
+    \label{fig:multisimsimulator}
+\end{figure}
+
+Ainda assim, para os objectivos de estudo de circuitos simples, no âmbito do currículo do ensino secundário, qualquer das versões se revela adequada. Assim, sempre que for feita referência ao \textit{Multisim} \cite{multisim}, considerar-se-á, salvo indicação em contrário, que a afirmação se aplica a ambas as versões, sem prejuízo da generalidade.
+
+Este \textit{software} integra a simulação virtual \acrfull{spice} padrão da indústria com um ambiente esquemático interativo para visualizar e analisar instantaneamente o comportamento de circuitos electrónicos. É uma ferramenta poderosa que utiliza modelos matemáticos para simular componentes reais, dispositivos ou circuitos com uma precisão muito boa, através de um navegador \textit{web}. Fornece uma plataforma para ``colmatar'' a lacuna entre a teoria dos manuais e os circuitos reais e também proporciona aos estudantes uma boa plataforma para experiências abrangentes e inovadoras \cite{multisim}. Além disso, dispondo de poderosas funcionalidades de aprendizagem e integração de \textit{hardware} de laboratório, o \textit{Multisim} ensina aos alunos conceitos fundamentais de eletrónica analógica, digital e de potência presentes em todo o currículo de engenharia e ciências~\cite{ImportantSimSoftware}.
+
+Tomando novamente o exemplo de uma turma com vinte ou mais alunos, torna-se mais seguro simular circuitos de potência envolvendo componentes com \gls{triac}s, \gls{diac}s ou \gls{scr}s. Além disso, a possibilidade de simular circuitos complexos, como amplificadores operacionais, circuitos digitais e sistemas de controlo, torna o \textit{Multisim} uma ferramenta valiosa para a compreensão dos princípios fundamentais da Electrónica.
 
 Citando Heying, Kejie e Li, (2010), ``(\ldots) podemos concluir que a criação de uma plataforma de simulação virtual através do \textit{Multisim} num computador permite construir facilmente todo o tipo de circuitos. (\ldots) Seguem-se os comentários de alguns alunos:''
 \begin{itemize}
@@ -401,37 +426,26 @@ Citando Heying, Kejie e Li, (2010), ``(\ldots) podemos concluir que a criação 
     \item ``A simulação \textit{Multisim} ajudou-me a compreender melhor as experiências.''
 \end{itemize}
 
-Os mesmos autores concluem que: ``O laboratório virtual [\textit{Multisim}] desempenha um papel muito importante na atualização do método de ensino experimental, na melhoria da qualidade do ensino dos cursos em circuito e na otimização do efeito do ensino.''\cite{heying}
+Os mesmos autores concluem que: ``O laboratório virtual [\textit{Multisim}] desempenha um papel muito importante na atualização do método de ensino experimental, na melhoria da qualidade do ensino dos cursos em circuito e na otimização do efeito do ensino.'' \cite{heying}.
 
-Outro laboratório bastante usado em contexto de sala de aula foi criado e desenvolvido por \textit{Paul Falstad}, em 1985 e está disponível em \href{www.falstad.com}{Falstad} \cite{falstad}. Este \acrshort{lv} é livre e de código aberto \cite{falstadlicenca}. Funciona num navegador \textit{web} como uma \textit{applet JAVA}. É também importante por ser de fácil interacção e pela simplicidade na representação de circuitos eléctricos, aspectos muito importantes para os recursos multimédia nas áreas da electrónica e da electricidade\footnote{Para sermos mais rigorosos, este \acrshort{lv} não se cinge somente aos circuitos electrónicos, ligando-se também a outros ramos da ciência como a termodinâmica, a mecânica quântica, o processamento de sinal, etc. \cite{falstadcompleto}}.
+Outro simulador, representado como exemplo na Figura~\ref{fig:falstad}, e amplamente utilizado em contexto de sala de aula, foi criado e desenvolvido por \textit{Paul Falstad} em 1985, estando disponível em www.falstad.com \cite{falstad}. Trata-se de um simulador livre e de código aberto \cite{falstadlicenca}, que funciona directamente num navegador \textit{web} sob a forma de uma \textit{Java Applet}. A sua importância advém, em grande parte, da facilidade de interacção e da simplicidade com que representa circuitos eléctricos — aspectos particularmente relevantes na produção de recursos multimédia nas áreas da Electrónica e da Electricidade\footnote{Para maior rigor, importa referir que este recurso não se limita aos circuitos electrónicos, estando igualmente ligado a outras áreas da ciência, como a termodinâmica, a mecânica quântica, o processamento de sinal, entre outras \cite{falstadcompleto}.}. Além disso, o simulador \textit{Falstad} tem vindo a ser desenvolvido como uma aplicação de Internet há vários anos. De acordo com da Silva et al. (2011) \cite{RemoteTeachingElectricalCircuits}, citados por \textit{Falstad} (2024) \cite{falstad}, este simulador tem demonstrado versatilidade e aplicabilidade no ensino à distância.
 
-Além disso, o simulador \textit{Falstad} tem sido desenvolvido como uma aplicação de Internet há muitos anos, segundo da Silva \textit{et al.}, (2011), \cite{RemoteTeachingElectricalCircuits}, citados por \textit{Falstad},(2024), \cite{falstad}.
+O principal constrangimento prende-se com a ausência de parametrização avançada e de um modelo matemático robusto, o que faz com que este simulador não seja adequado para aplicações de engenharia profissional. No entanto, para fins didácticos e educativos, revela-se extremamente eficaz.
 
-O principal problema é que, devido à falta de parametrização avançada e de um modelo matemático, este \acrshort{lv} não se destina a engenharia profissional ou real. No entanto, para fins didácticos, é muito eficaz. Por exemplo, é de referir que:
+Por exemplo, como se pode observar na Figura~\ref{fig:falstad}, destacam-se as seguintes funcionalidades:
+
 \begin{itemize}
-    \item Os pontos amarelos animados representam correntes e os seus movimentos demonstram um fluxo de cargas eléctricas em ''tempo real``;
-    \item De acordo com a direção do fluxo da corrente, a cor do fio é representada por verde ou vermelho, tendo em conta a direcção do fluxo da corrente;
-    \item Os componentes mostram diferentes tensões no circuito;
-    \item As formas de onda também são representadas;
-    \item Podem ser representados e controlados diferentes tipos de interruptores, por exemplo, para fazer variar frequência e/ou tensão, Figura \ref{fig:falstad}, o que permite o utilizador observar os processos transitórios;
-    \item A velocidade da simulação e a corrente também podem ser controladas.
+    \item Os pontos amarelos animados representam a corrente eléctrica, cujo movimento demonstra o fluxo de cargas em ``tempo real'';
+    \item A cor do fio varia entre verde e vermelho, consoante a direcção da corrente;
+    \item Os componentes apresentam diferentes níveis de tensão;
+    \item As formas de onda podem ser visualizadas directamente no circuito;
+    \item É possível representar e controlar diferentes tipos de interruptores (por exemplo, para variar a frequência ou a tensão), o que permite ao utilizador observar fenómenos transitórios;
+    \item A velocidade da simulação, bem como a intensidade da corrente, podem ser ajustadas.
 \end{itemize}
 
-\begin{figure}[hbtp]
-    \centering
-    \includegraphics[width=0.75\textwidth]{figures/falstad.png}
-    \caption{\textit{Falstad} - amplificador inversor\cite{falstad}}
-    \label{fig:falstad}
-\end{figure}
+Estas funcionalidades tornam o simulador Falstad uma ferramenta didáctica particularmente útil para introduzir conceitos fundamentais da Electrónica, como corrente, tensão, formas de onda e comportamento dinâmico de circuitos. A sua interface visual e interactiva contribui para uma melhor compreensão dos fenómenos eléctricos, mesmo por parte de alunos com conhecimentos ainda iniciais. Embora limitado em termos de precisão e análise avançada, o Falstad permite visualizar, de forma intuitiva e acessível, muitos dos princípios que são abordados nas aulas teóricas, servindo como uma excelente ponte entre a teoria e a prática, sobretudo em ambientes com recursos laboratoriais físicos reduzidos.
 
-A variedade de laboratórios virtuais no contexto da electrónica é muita, pelo que só referimos os mais usados em contexto de sala de aula. No entanto, outras soluções seriam de considerar, tais como:
-\begin{itemize}
-    \item \textit{Tinkercad} - é uma aplicação \textit{online} gratuita para projetos 3D, de eletrónica e de programação;
-    \item \textit{Fritzing} - a \textit{interface} é muito semelhante à do \textit{TinkerCad}, com a excepção de não poder realizar simulações, no entanto, fornece uma variedade muito maior de componentes do que o \textit{TinkerCad};
-    \item \textit{Wokwi}\cite{wokwi} - \acrshort{lv} que usa as mais variadas placas que simulam o \gls{arduino}, \gls{ESP32}, \textit{STM32}, \textit{RaspberryPi Pico} e uma grande variedade de sensores\cite{wokwi}.
-\end{itemize}
-
-\colorbox{yellow}{\textbf{FALTA AQUI UMC CONCLUZÃOZINHA}}
+\colorbox{yellow}{\textbf{FALTA AQUI UMC CONCLUZÃOZINHA????????}}
 
 \subsubsection{Laboratório remoto}
 \label{sec: remotelaboratory}
