@@ -22,9 +22,8 @@
 \contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{26}{section*.25}%
 \contentsline {subsubsection}{Simuladores - Acesso local e/ou remoto}{28}{section*.28}%
 \contentsline {subsubsection}{Laboratório remoto}{31}{section*.30}%
-\contentsline {paragraph}{VISIR}{34}{section*.31}%
+\contentsline {paragraph}{VISIR}{35}{section*.32}%
 \contentsline {paragraph}{PILAR}{39}{section*.41}%
-\contentsline {section}{\numberline {2.4}COMENTÁRIO PROF}{40}{section.2.4}%
 \contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{41}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contextualização}{41}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Solução proposta}{44}{section.3.2}%
@@ -91,4 +90,4 @@
 \contentsline {chapter}{\numberline {6}Conclusões}{115}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Limitações e trabalho futuro}{116}{section.6.1}%
 \contentsline {chapter}{Refer\^{e}ncias}{118}{section*.140}%
-\contentsline {chapter}{Anexo \numberline {A}Datasheet}{137}{appendix.1.A}%
+\contentsline {chapter}{Anexo \numberline {A}Datasheet}{135}{appendix.1.A}%

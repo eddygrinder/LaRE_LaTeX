@@ -257,8 +257,16 @@ E.~EMaster, ``{Por que os laborat{\ifmmode\acute{o}\else\'{o}\fi}rios virtuais s
 ``{Multisim Live Online Circuit Simulator},'' July 2024.
 \newblock [Online; accessed 6. Jul. 2024].
 
+\bibitem{falstad}
+P.~Falstad, ``{Circuit Simulator Applet},'' Feb. 2024.
+\newblock [Online; accessed 7. Jul. 2024].
+
 \bibitem{faina}
 A.~Faiña, ``Learning hands-on electronics from home: A simulator for fritzing,'' 06 2022.
+
+\bibitem{fritzingdown}
+Fritzing, ``{Fritzing},'' July 2024.
+\newblock [Online; accessed 7. Jul. 2024].
 
 \bibitem{Knorig2009Feb}
 A.~Kn{\ifmmode\ddot{o}\else\"{o}\fi}rig, R.~Wettach, and J.~Cohen, ``{Fritzing: a tool for advancing electronic prototyping for designers},'' {\em ResearchGate}, pp.~351--358, Feb. 2009.
@@ -272,17 +280,6 @@ B.~Heying, D.~Kejie, and J.~Li, ``Application multisim to virtual laboratory for
 
 \bibitem{multisimVLUmenne}
 P.~Umenne and T.~Hlalele, ``Evaluation of the effectiveness of virtual laboratory's for electronics in the open distance learning context,'' pp.~1--5, 08 2020.
-
-\bibitem{PaperTit40:online}
-I.~Gustavsson, G.~Alves, R.~Costa, K.~Nilsson, J.~Zackrisson, U.~Hernandez, and J.~Garcia-Zubia, ``The visir open lab platform 5.0 - an architecture for a federation of remote laboratories,'' 07 2011.
-
-\bibitem{Reduçãod55:online}
-``Redução do número de alunos por turma nas escolas públicas - xxi governo - república portuguesa.'' \url{https://www.portugal.gov.pt/pt/gc21/comunicacao/comunicado?i=reducao-do-numero-de-alunos-por-turma-nas-escolas-publicas}.
-\newblock (Accessed on 04/07/2023).
-
-\bibitem{Faltaded39:online}
-``Falta de docentes: há três disciplinas em que a situação é mais preocupante - sic notícias.'' \url{https://sicnoticias.pt/pais/2022-04-18-falta-de-docentes-ha-tres-disciplinas-em-que-a-situacao-e-mais-preocupante}.
-\newblock (Accessed on 04/07/2023).
 
 \bibitem{roboparty}
 ``{RoboParty},'' July 2024.
@@ -309,9 +306,9 @@ P.~Plaza, E.~Sancristobal, G.~Carro, M.~Blazquez, F.~García-Loro, S.~Martin, C.
 I.~Marzoli, N.~Rizza, A.~Saltarelli, and E.~Sampaolesi, {\em {Arduino: From Physics to Robotics}}.
 \newblock Jan. 2021.
 
-\bibitem{fritzingdown}
-Fritzing, ``{Download Fritzing},'' July 2024.
-\newblock [Online; accessed 7. Jul. 2024].
+\bibitem{wokwi}
+``{Wokwi - Online ESP32, STM32, Arduino Simulator},'' July 2024.
+\newblock [Online; accessed 8. Jul. 2024].
 
 \bibitem{WebBrowserSimulators}
 I.~Agafonov, ``Web browser electric circuit simulators for education,'' 05 2018.
@@ -342,10 +339,6 @@ S.~Mandal, ``Some important simulation software tools for a student of electroni
 \bibitem{heying}
 B.~Heying, D.~Kejie, and J.~Li, ``Application multisim to virtual laboratory for experiment teaching,'' in {\em 2010 International Conference on Computational Intelligence and Software Engineering}, pp.~1--4, Dec 2010.
 
-\bibitem{falstad}
-P.~Falstad, ``{Circuit Simulator Applet},'' Feb. 2024.
-\newblock [Online; accessed 7. Jul. 2024].
-
 \bibitem{falstadlicenca}
 ``{Licensing},'' Mar. 2011.
 \newblock [Online; accessed 7. Jul. 2024].
@@ -357,12 +350,12 @@ P.~Falstad, ``{Circuit Simulator Applet},'' Feb. 2024.
 \bibitem{RemoteTeachingElectricalCircuits}
 J.~B. da~Silva, L.~R. Machado, S.~M. Sommer~Bilessimo, and I.~N. da~Silva, ``Remote teaching of electrical circuits: proposal for the use of online laboratories in secondary education,'' in {\em 2021 World Engineering Education Forum/Global Engineering Deans Council (WEEF/GEDC)}, pp.~594--600, Nov 2021.
 
-\bibitem{wokwi}
-``{Wokwi - Online ESP32, STM32, Arduino Simulator},'' July 2024.
-\newblock [Online; accessed 8. Jul. 2024].
-
 \bibitem{RemoteLabsImpactVISIR}
 M.~A. Marques, M.~C. Viegas, M.~C. Costa-Lobo, A.~V. Fidalgo, G.~R. Alves, J.~S. Rocha, and I.~Gustavsson, ``How remote labs impact on course outcomes: Various practices using visir,'' {\em IEEE Transactions on Education}, vol.~57, no.~3, pp.~151--159, 2014.
+
+\bibitem{labsland}
+{LabsLand}, ``Labsland - home,'' n.d.
+\newblock [Online; consultado em 15 de Julho de 2025].
 
 \bibitem{ExperiencesRemoteLab}
 A.~N. S.~Karmakar, N. K.~Roy and P.~Kumbhakar, ``A remotely operated high voltage laboratory for impulse voltage testing.'' \url{http://wiete.com.au/journals/WTE&TE/Pages/Vol.7,\%20No.1\%20(2009)/3-Nafalski-17.pdf}.
@@ -395,57 +388,6 @@ X.~Chen, Y.~Zhang, L.~Kehinde, and D.~Olowokere, ``Developing virtual and remote
 
 \bibitem{RemoteLabsDevelopingCountries}
 J.~Simão, J.~de~Lima, W.~Rochadel, and J.~B. da~Silva, ``Remote labs in developing countries an experience in brazilian public education,'' in {\em IEEE Global Humanitarian Technology Conference (GHTC 2014)}, pp.~99--105, 2014.
-
-\bibitem{Kaluz}
-M.~Kalúz, J.~García-Zubía, M.~Fikar, and L.~\v{C}irka, ``A flexible and configurable architecture for automatic control remote laboratories,'' {\em IEEE Transactions on Learning Technologies}, vol.~8, pp.~299--310, July 2015.
-
-\bibitem{FABREGAS20111686}
-E.~Fabregas, G.~Farias, S.~Dormido-Canto, S.~Dormido, and F.~Esquembre, ``Developing a remote laboratory for engineering education,'' {\em Computers \& Education}, vol.~57, no.~2, pp.~1686--1697, 2011.
-
-\bibitem{lazar}
-C.~Lazar and S.~Carari, ``A remote-control engineering laboratory,'' {\em IEEE Transactions on Industrial Electronics}, vol.~55, pp.~2368--2375, June 2008.
-
-\bibitem{dormido}
-R.~Dormido, H.~Vargas, N.~Duro, J.~SÁnchez, S.~Dormido-Canto, G.~Farias, F.~Esquembre, and S.~Dormido, ``Development of a web-based control laboratory for automation technicians: The three-tank system,'' {\em IEEE Transactions on Education}, vol.~51, pp.~35--44, Feb 2008.
-
-\bibitem{diesel}
-``{View of Paradigms in Remote Experimentation},'' July 2024.
-\newblock [Online; accessed 10. Jul. 2024].
-
-\bibitem{jacko}
-P.~Jacko, B.~Matej, I.~Ková\v{c}ová, J.~Molnár, T.~Vince, J.~Dziak, B.~Fecko, v.~Gans, and D.~Ková\v{c}, ``Remote iot education laboratory for microcontrollers based on the stm32 chips,'' {\em Sensors}, vol.~22, no.~4, 2022.
-
-\bibitem{Vocabulariog4l}
-``Vocabulary — gateway4labs 0.1 documentation.'' \url{https://gateway4labs.readthedocs.io/en/latest/vocabulary.html}.
-\newblock (Accessed on 07/12/2024).
-
-\bibitem{zutin}
-D.~G. Zutin and M.~E. Auer, ``Work in progress — integrating educational online lab platforms around the ilab shared architecture,'' in {\em 2011 Frontiers in Education Conference (FIE)}, pp.~F1G--1--F1G--3, Oct 2011.
-
-\bibitem{harward}
-V.~J. Harward, J.~A. del Alamo, S.~R. Lerman, P.~H. Bailey, J.~Carpenter, K.~DeLong, C.~Felknor, J.~Hardison, B.~Harrison, I.~Jabbour, P.~D. Long, T.~Mao, L.~Naamani, J.~Northridge, M.~Schulz, D.~Talavera, C.~Varadharajan, S.~Wang, K.~Yehia, R.~Zbib, and D.~Zych, ``The ilab shared architecture: A web services infrastructure to build communities of internet accessible laboratories,'' {\em Proceedings of the IEEE}, vol.~96, pp.~931--950, June 2008.
-
-\bibitem{arquitecturaisa}
-``Developers - ilabs dev - mit wiki service.'' \url{https://wikis.mit.edu/confluence/display/ILAB2/Developers}.
-\newblock (Accessed on 07/12/2024).
-
-\bibitem{zutinvisir}
-D.~G. Zutin, M.~E. Auer, and I.~Gustavsson, ``A visir lab server for the ilab shared architecture,'' in {\em 2011 IEEE Global Engineering Education Conference (EDUCON)}, pp.~30--33, April 2011.
-
-\bibitem{wlddoc}
-``Welcome to weblab-deusto’s documentation! — weblab-deusto 5.0 documentation.'' \url{https://weblabdeusto.readthedocs.io/en/latest/index.html}.
-\newblock (Accessed on 07/12/2024).
-
-\bibitem{Orduñag4l}
-P.~Orduña, D.~G. Zutin, S.~Govaerts, I.~L. Zorrozua, P.~H. Bailey, E.~Sancristobal, C.~Salzmann, L.~Rodriguez-Gil, K.~DeLong, D.~Gillet, M.~Castro, D.~López-de Ipiña, and J.~García-Zubia, ``An extensible architecture for the integration of remote and virtual laboratories in public learning tools,'' {\em IEEE Revista Iberoamericana de Tecnologias del Aprendizaje}, vol.~10, pp.~223--233, Nov 2015.
-
-\bibitem{g4ldocumentation}
-``Welcome to gateway4labs’s documentation! — gateway4labs 0.1 documentation.'' \url{https://gateway4labs.readthedocs.io/en/latest/index.html}.
-\newblock (Accessed on 07/12/2024).
-
-\bibitem{Alves}
-G.~R. Alves, J.~B. Silva, A.~Pavani, A.~d. Costa, D.~Cardoso, D.~A. Lima, E.~Takahashi, G.~R. Roque, G.~Tempor{\ifmmode\tilde{a}\else\~{a}\fi}o, H.~N{\ifmmode\acute{e}\else\'{e}\fi}ri, J.~Pereira, L.~Mendes, R.~Moura, R.~Gedraite, S.~Bilessimo, and T.~Uhlmann, {\em {Laborat{\ifmmode\acute{o}\else\'{o}\fi}rios Remotos no Ensino de Engenharia}}.
-\newblock Brazil: ABENGE {\textendash} Associa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o Brasileira de Educa{\ifmmode\mbox{\c{c}}\else\c{c}\fi}{\ifmmode\tilde{a}\else\~{a}\fi}o em Engenharia, Sept. 2017.
 
 \bibitem{VISIRExperiencesChallenges}
 M.~Tawfik, E.~Sancristobal, S.~Martin, C.~Gil, A.~Pesquera, P.~Losada, G.~Diaz, J.~Peire, M.~Castro, J.~García-Zubia, U.~Hernández, P.~Orduña, I.~Angulo, M.~C. Costa~Lobo, M.~Marques, M.~C. Viegas, and G.~R. Alves, ``Visir: Experiences and challenges,'' {\em International Journal of Online and Biomedical Engineering (iJOE)}, vol.~8, p.~pp. 25–32, Feb. 2012.
@@ -482,6 +424,14 @@ M.~Tawfik, E.~Sancristobal, S.~Martín, C.~Gil, A.~Pesquera, P.~Losada, G.~Diaz,
 \bibitem{PXI-4110}
 ``Pxi-4110 - ni.'' \url{https://www.ni.com/pt-pt/shop/model/pxi-4110.html}.
 \newblock (Accessed on 07/13/2024).
+
+\bibitem{PIC18F4516datasheet}
+Microchip, ``Pic18f4550 | microchip technology.''
+\newblock [Online; accessed 2025-07-15].
+
+\bibitem{PIC16F7675datasheet}
+Microchip, ``Pic16f767 | microchip technology.''
+\newblock [Online; accessed 2025-07-15].
 
 \bibitem{matriz}
 I.~Gustavsson, K.~Nilsson, W.~Kulesza, F.~Garcia, and M.~Castro, ``Evaluation of the pilar pilot phase v 2.1.'' \url{https://ec.europa.eu/programmes/erasmus-plus/project-result-content/e8531ace-ded5-4103-bd7f-be12c7608f38/}.

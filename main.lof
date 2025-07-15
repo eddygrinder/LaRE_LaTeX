@@ -12,15 +12,15 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Laboratório virtual \textit {Fritzing} exemplo}}{26}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Laboratório virtual \textit {Wokwi} exemplo}}{27}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Simulador \textit {Multisim}}}{29}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{35}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Arquitectura \acrshort {visir}\cite {tawfikexperiences}}}{36}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces \textit {Protobaord \acrshort {visir}}}}{36}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo \textit {\acrshort {visir}}}}{32}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{35}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Arquitectura do \acrshort {visir}}}{36}{figure.caption.34}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{37}{figure.caption.35}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{37}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{37}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{38}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Fonte de tensão PXI-4110 \cite {PXI-4110}}}{38}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{38}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{39}{figure.caption.40}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Arduino} Mega \cite {ArduinoMega}}}{42}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {ESP32} \cite {ESPDevKit}}}{43}{figure.caption.43}%
