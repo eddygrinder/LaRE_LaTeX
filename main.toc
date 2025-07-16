@@ -17,12 +17,12 @@
 \contentsline {subsection}{\numberline {2.2.2}Principais desafios}{15}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Laboratórios na educação}{17}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Tipos de laboratórios}{19}{subsection.2.3.1}%
-\contentsline {subsubsection}{Uma questão de conceitos}{22}{section*.21}%
+\contentsline {subsubsection}{Uma questão de conceitos}{21}{section*.21}%
 \contentsline {subsubsection}{Laboratório real}{24}{section*.24}%
-\contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{26}{section*.25}%
+\contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.25}%
 \contentsline {subsubsection}{Simuladores - Acesso local e/ou remoto}{28}{section*.28}%
 \contentsline {subsubsection}{Laboratório remoto}{31}{section*.30}%
-\contentsline {paragraph}{VISIR}{35}{section*.32}%
+\contentsline {paragraph}{VISIR}{34}{section*.32}%
 \contentsline {paragraph}{PILAR}{39}{section*.41}%
 \contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{41}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contextualização}{41}{section.3.1}%

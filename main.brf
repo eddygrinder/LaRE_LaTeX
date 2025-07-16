@@ -56,8 +56,10 @@
 \backcite {itu2024facts}{{7}{2.2}{figure.caption.18}}
 \backcite {DESI2024}{{7}{2.1}{figure.caption.18}}
 \backcite {impactocovideducacao}{{7}{2.1}{figure.caption.18}}
-\backcite {impactocovideducacao}{{7}{2.1}{figure.caption.18}}
+\backcite {impactocovideducacao}{{8}{2.1}{figure.caption.18}}
 \backcite {unesco}{{8}{2.1}{figure.caption.18}}
+\backcite {multisim}{{8}{2.1}{figure.caption.18}}
+\backcite {falstad}{{8}{2.1}{figure.caption.18}}
 \backcite {impactonegativocovid}{{9}{2.1}{figure.caption.18}}
 \backcite {PRREntregacomputadores}{{9}{2.1}{figure.caption.18}}
 \backcite {PRREntregacomputadores}{{9}{2.1}{figure.caption.18}}
@@ -79,6 +81,8 @@
 \backcite {comissao197_07}{{13}{2.2.1}{subsection.2.2.1}}
 \backcite {gomes_e-learning_2005}{{13}{2.2.1}{subsection.2.2.1}}
 \backcite {GlossaryUNESCO}{{14}{2.2.1}{subsection.2.2.1}}
+\backcite {GonzalezKuenzi}{{14}{2.2.1}{subsection.2.2.1}}
+\backcite {acola}{{14}{2.2.1}{subsection.2.2.1}}
 \backcite {TheHidde2:online}{{14}{2.2.1}{subsection.2.2.1}}
 \backcite {TTTSTEMA77:online}{{14}{2.2.1}{subsection.2.2.1}}
 \backcite {pisa2022volume2}{{15}{2.2.2}{subsection.2.2.2}}
@@ -103,8 +107,8 @@
 \backcite {BRINSON2015218, ImpactRemoteLabTeachingPractices, Hofsteinfoundations}{{19}{2.3.1}{subsection.2.3.1}}
 \backcite {HERADIO20161}{{20}{2.3.1}{subsection.2.3.1}}
 \backcite {HERADIO20161}{{20}{2.3}{figure.caption.19}}
-\backcite {zutinlab2go}{{21}{2.3.1}{figure.caption.19}}
-\backcite {Zapata-Rivera}{{21}{2.3.1}{figure.caption.19}}
+\backcite {zutinlab2go}{{20}{2.3.1}{figure.caption.19}}
+\backcite {Zapata-Rivera}{{20}{2.3.1}{figure.caption.19}}
 \backcite {zutinlab2go}{{21}{2.4}{figure.caption.20}}
 \backcite {Zapata-Rivera}{{21}{2.3.1}{figure.caption.20}}
 \backcite {BRINSON2015218, virtuallabng, EMaster2024May}{{22}{2.3.1}{section*.21}}
@@ -113,38 +117,38 @@
 \backcite {multisim}{{22}{2.3.1}{section*.21}}
 \backcite {tinkercad}{{22}{2.5a}{figure.caption.22}}
 \backcite {multisim}{{22}{2.5b}{figure.caption.22}}
-\backcite {falstad}{{23}{2.3.1}{figure.caption.22}}
+\backcite {falstad}{{22}{2.3.1}{figure.caption.22}}
 \backcite {falstad}{{23}{2.6}{figure.caption.23}}
 \backcite {faina}{{23}{2.3.1}{figure.caption.23}}
 \backcite {fritzingdown}{{23}{2.3.1}{figure.caption.23}}
 \backcite {faina}{{23}{2.3.1}{figure.caption.23}}
 \backcite {Knorig2009Feb}{{23}{2.3.1}{figure.caption.23}}
 \backcite {EvaluatingLearningExperiencesVirtualLaboratoryHongKong}{{23}{2.3.1}{figure.caption.23}}
-\backcite {multisimVLHeying}{{24}{2.3.1}{figure.caption.23}}
+\backcite {multisimVLHeying}{{23}{2.3.1}{figure.caption.23}}
 \backcite {multisimVLUmenne}{{24}{2.3.1}{figure.caption.23}}
 \backcite {multisim}{{24}{2.3.1}{figure.caption.23}}
-\backcite {roboparty, fnr, cansat}{{25}{2.3.1}{section*.24}}
+\backcite {roboparty, fnr, cansat}{{24}{2.3.1}{section*.24}}
 \backcite {yoder}{{25}{2.3.1}{section*.24}}
 \backcite {graven}{{25}{2.3.1}{section*.24}}
 \backcite {plaza}{{25}{2.3.1}{section*.24}}
 \backcite {Marzoli}{{25}{2.3.1}{section*.24}}
 \backcite {Marzoli}{{25}{2.3.1}{section*.24}}
-\backcite {HERADIO20161, POTKONJAK2016309}{{26}{2.3.1}{section*.25}}
-\backcite {tinkercad}{{26}{2.3.1}{section*.25}}
+\backcite {HERADIO20161, POTKONJAK2016309}{{25}{2.3.1}{section*.25}}
+\backcite {tinkercad}{{25}{2.3.1}{section*.25}}
 \backcite {fritzingdown}{{26}{2.3.1}{section*.25}}
 \backcite {wokwi}{{26}{2.3.1}{figure.caption.26}}
 \backcite {wokwi}{{26}{2.3.1}{figure.caption.26}}
 \backcite {WebBrowserSimulators}{{27}{2.3.1}{figure.caption.27}}
 \backcite {scheckler, lynch, BlogeMas95, vabtegensVL}{{27}{2.3.1}{figure.caption.27}}
 \backcite {POTKONJAK2016309}{{27}{2.3.1}{figure.caption.27}}
-\backcite {POTKONJAK2016309, vabtegensVL, Gherasim, Ghergulescu2019Feb}{{28}{2.3.1}{figure.caption.27}}
+\backcite {POTKONJAK2016309, vabtegensVL, Gherasim, Ghergulescu2019Feb}{{27}{2.3.1}{figure.caption.27}}
 \backcite {multisim}{{28}{2.3.1}{section*.28}}
 \backcite {multisim}{{29}{2.3.1}{figure.caption.29}}
 \backcite {multisim}{{29}{2.3.1}{figure.caption.29}}
 \backcite {ImportantSimSoftware}{{29}{2.3.1}{figure.caption.29}}
-\backcite {heying}{{30}{2.3.1}{figure.caption.29}}
-\backcite {falstad}{{30}{2.3.1}{figure.caption.29}}
-\backcite {falstadlicenca}{{30}{2.3.1}{figure.caption.29}}
+\backcite {heying}{{29}{2.3.1}{figure.caption.29}}
+\backcite {falstad}{{29}{2.3.1}{figure.caption.29}}
+\backcite {falstadlicenca}{{29}{2.3.1}{figure.caption.29}}
 \backcite {RemoteTeachingElectricalCircuits}{{30}{2.3.1}{figure.caption.29}}
 \backcite {falstad}{{30}{2.3.1}{figure.caption.29}}
 \backcite {falstadcompleto}{{30}{6}{figure.caption.29}}
@@ -156,7 +160,7 @@
 \backcite {ImpactRemoteLabTeachingPractices}{{31}{2.3.1}{figure.caption.31}}
 \backcite {BRINSON2015218}{{31}{2.3.1}{figure.caption.31}}
 \backcite {CORTER20112054}{{31}{2.3.1}{figure.caption.31}}
-\backcite {BRINSON2015218}{{32}{2.3.1}{figure.caption.31}}
+\backcite {BRINSON2015218}{{31}{2.3.1}{figure.caption.31}}
 \backcite {deMel}{{32}{2.3.1}{figure.caption.31}}
 \backcite {StudyRemoteHandsonSimulatedLabs}{{32}{2.3.1}{figure.caption.31}}
 \backcite {RealorVirtualDilema}{{32}{2.3.1}{figure.caption.31}}
@@ -164,7 +168,7 @@
 \backcite {VISIREngineeringPractices}{{32}{2.3.1}{figure.caption.31}}
 \backcite {ExperiencesRemoteLaboratories}{{32}{2.3.1}{figure.caption.31}}
 \backcite {ThemMnyfacesRemotLab}{{32}{2.3.1}{figure.caption.31}}
-\backcite {ExperiencesRemoteLab}{{33}{2.3.1}{figure.caption.31}}
+\backcite {ExperiencesRemoteLab}{{32}{2.3.1}{figure.caption.31}}
 \backcite {EvaluationRemoteVirtualE-Learning}{{33}{2.3.1}{figure.caption.31}}
 \backcite {RemoteLabsImpactVISIR}{{33}{2.3.1}{figure.caption.31}}
 \backcite {DevelopingVirtualAndRemoteUndergraduate}{{33}{2.3.1}{figure.caption.31}}
@@ -174,25 +178,25 @@
 \backcite {VISIRExperiencesChallenges}{{35}{2.3.1}{figure.caption.33}}
 \backcite {OpenLabs77:online}{{35}{2.3.1}{figure.caption.33}}
 \backcite {PILARFederationVISIR}{{35}{2.3.1}{figure.caption.33}}
-\backcite {TheVISIRproject}{{36}{2.3.1}{figure.caption.33}}
-\backcite {tawfikexperiences}{{36}{2.3.1}{figure.caption.33}}
+\backcite {TheVISIRproject}{{35}{2.3.1}{figure.caption.33}}
+\backcite {tawfikexperiences}{{35}{2.3.1}{figure.caption.33}}
 \backcite {tawfikexperiences}{{36}{2.12a}{figure.caption.34}}
 \backcite {PXI-1033}{{36}{2.3.1}{figure.caption.34}}
-\backcite {PXI-1033}{{37}{2.13}{figure.caption.35}}
+\backcite {PXI-1033}{{36}{2.13}{figure.caption.35}}
 \backcite {PXI-5114}{{37}{2.14}{figure.caption.36}}
 \backcite {PXI-5402}{{37}{2.15}{figure.caption.37}}
 \backcite {PXI-4072}{{38}{2.16}{figure.caption.38}}
 \backcite {PXI-4110}{{38}{2.17}{figure.caption.39}}
-\backcite {PIC18F4516datasheet}{{38}{2.3.1}{figure.caption.39}}
-\backcite {PIC16F7675datasheet}{{38}{2.3.1}{figure.caption.39}}
-\backcite {matriz}{{38}{2.3.1}{figure.caption.39}}
+\backcite {PIC18F4516datasheet}{{39}{2.3.1}{figure.caption.39}}
+\backcite {PIC16F7675datasheet}{{39}{2.3.1}{figure.caption.39}}
+\backcite {matriz}{{39}{2.3.1}{figure.caption.39}}
 \backcite {matriz}{{39}{2.18}{figure.caption.40}}
 \backcite {tawfikexperiences}{{39}{2.3.1}{figure.caption.40}}
 \backcite {tawfikvisir}{{39}{2.3.1}{figure.caption.40}}
 \backcite {pereira}{{39}{2.3.1}{figure.caption.40}}
 \backcite {garcia-loro}{{39}{2.3.1}{section*.41}}
 \backcite {visirsig}{{39}{2.3.1}{section*.41}}
-\backcite {visirfederation}{{39}{2.3.1}{section*.41}}
+\backcite {visirfederation}{{40}{2.3.1}{section*.41}}
 \backcite {kreiter}{{40}{2.3.1}{section*.41}}
 \backcite {labviewpricing}{{41}{3.1}{section.3.1}}
 \backcite {ArduinoMega}{{42}{3.1}{figure.caption.42}}

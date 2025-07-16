@@ -80,6 +80,14 @@ ILO, ``Youth \& {COVID}-19: {Impacts} on jobs, education, rights and mental well
 \bibitem{unesco}
 ``290 million students out of school due to {COVID}-19: {UNESCO} releases first global numbers and mobilizes response {\textbar} {UNESCO}.'' \hyperlink{https://www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}{www.unesco.org/en/articles/290-million-students-out-school-due-covid-19-unesco-releases-first-global-numbers-and-mobilizes}.
 
+\bibitem{multisim}
+``{Multisim Live Online Circuit Simulator},'' July 2024.
+\newblock [Online; accessed 6. Jul. 2024].
+
+\bibitem{falstad}
+P.~Falstad, ``{Circuit Simulator Applet},'' Feb. 2024.
+\newblock [Online; accessed 7. Jul. 2024].
+
 \bibitem{impactonegativocovid}
 ``Covid-19 teve impacto negativo na educação de 70\% dos jovens.'' \url{www.dn.pt/mundo/covid-19-teve-impacto-negativo-na-educacao-de-70-dos-jovens-12513822.html}, aug 2020.
 \newblock (Accessed on 03/08/2023).
@@ -141,9 +149,17 @@ M.~J. Gomes, ``E-learning: reflexões em torno do conceito,'' in {\em E-learning
 UNESCO, ``Glossary article: Stem.'' \url{https://unevoc.unesco.org/home/Glossary+article:+STEM}.
 \newblock (Accessed on 03/14/2023).
 
+\bibitem{GonzalezKuenzi}
+H.~B. Gonzalez and J.~J. Kuenzi, ``The u.s. science and engineering workforce: Recent, current, and projected employment, wages, and unemployment,'' 2012.
+\newblock [Online; consultado em 16 de Julho de 2025].
+
+\bibitem{acola}
+Acola, ``2024 acola annual report – acola,'' 3 2024.
+\newblock [Online; accessed 2025-07-16].
+
 \bibitem{TheHidde2:online}
-J.~Rothwell, ``Thehiddenstemeconomy610.pdf.'' \url{https://www.brookings.edu/wp-content/uploads/2016/06/TheHiddenSTEMEconomy610.pdf}.
-\newblock (Accessed on 03/14/2023).
+J.~Rothwell, ``The hidden stem economy,'' 2013.
+\newblock [Accessed on 03/14/2023].
 
 \bibitem{TTTSTEMA77:online}
 M.~Sanders, ``Ttt+stem+article\_1.pdf.'' \url{http://esdstem.pbworks.com/f/TTT+STEM+Article_1.pdf}.
@@ -252,14 +268,6 @@ E.~EMaster, ``{Por que os laborat{\ifmmode\acute{o}\else\'{o}\fi}rios virtuais s
 \bibitem{tinkercad}
 ``{Tinkercad - From mind to design in minutes},'' July 2024.
 \newblock [Online; accessed 8. Jul. 2024].
-
-\bibitem{multisim}
-``{Multisim Live Online Circuit Simulator},'' July 2024.
-\newblock [Online; accessed 6. Jul. 2024].
-
-\bibitem{falstad}
-P.~Falstad, ``{Circuit Simulator Applet},'' Feb. 2024.
-\newblock [Online; accessed 7. Jul. 2024].
 
 \bibitem{faina}
 A.~Faiña, ``Learning hands-on electronics from home: A simulator for fritzing,'' 06 2022.

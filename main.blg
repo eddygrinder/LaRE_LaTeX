@@ -15,22 +15,26 @@ A level-1 auxiliary file: chapters/chapter6.aux
 The style file: ieeetr.bst
 A level-1 auxiliary file: chapters/appendixA.aux
 Database file #1: sampleRefs.bib
+Warning--entry type for "TheHidde2:online" isn't style-file defined
+--line 5 of file sampleRefs.bib
+Warning--entry type for "GonzalezKuenzi" isn't style-file defined
+--line 41 of file sampleRefs.bib
 Warning--entry type for "labsland" isn't style-file defined
---line 43 of file sampleRefs.bib
+--line 95 of file sampleRefs.bib
 Warning--entry type for "DigitalDecade2024" isn't style-file defined
---line 97 of file sampleRefs.bib
+--line 149 of file sampleRefs.bib
 Warning--entry type for "ExecutiveDigest2024" isn't style-file defined
---line 159 of file sampleRefs.bib
+--line 211 of file sampleRefs.bib
 Warning--entry type for "jinja" isn't style-file defined
---line 361 of file sampleRefs.bib
+--line 413 of file sampleRefs.bib
 Warning--entry type for "flaskDigitalOcean" isn't style-file defined
---line 377 of file sampleRefs.bib
+--line 429 of file sampleRefs.bib
 Warning--entry type for "tutorialsiteflask" isn't style-file defined
---line 395 of file sampleRefs.bib
+--line 447 of file sampleRefs.bib
 Warning--entry type for "DESI2024" isn't style-file defined
---line 2949 of file sampleRefs.bib
+--line 3001 of file sampleRefs.bib
 Warning--entry type for "itu2024facts" isn't style-file defined
---line 3105 of file sampleRefs.bib
+--line 3157 of file sampleRefs.bib
 Warning--empty publisher in Hofstein
 Warning--empty journal in eLearningenssup
 Warning--empty booktitle in zutinlab2go
@@ -46,36 +50,36 @@ Warning--empty journal in ExperiencesRemoteLaboratories
 Warning--empty booktitle in DevelopingVirtualAndRemoteUndergraduate
 Warning--empty journal in TheVISIRproject
 Warning--empty booktitle in pereira
-You've used 174 entries,
+You've used 176 entries,
             1876 wiz_defined-function locations,
-            1295 strings with 32750 characters,
-and the built_in function-call counts, 31330 in all, are:
-= -- 2944
-> -- 1205
+            1306 strings with 33030 characters,
+and the built_in function-call counts, 31614 in all, are:
+= -- 2971
+> -- 1217
 < -- 0
-+ -- 502
-- -- 328
-* -- 1777
-:= -- 4145
-add.period$ -- 285
-call.type$ -- 174
-change.case$ -- 166
++ -- 507
+- -- 331
+* -- 1789
+:= -- 4186
+add.period$ -- 289
+call.type$ -- 176
+change.case$ -- 168
 chr.to.int$ -- 0
-cite$ -- 189
-duplicate$ -- 1354
-empty$ -- 3645
-format.name$ -- 328
-if$ -- 8008
+cite$ -- 191
+duplicate$ -- 1362
+empty$ -- 3681
+format.name$ -- 331
+if$ -- 8080
 int.to.chr$ -- 0
-int.to.str$ -- 174
+int.to.str$ -- 176
 missing$ -- 71
-newline$ -- 649
-num.names$ -- 103
-pop$ -- 1130
+newline$ -- 657
+num.names$ -- 105
+pop$ -- 1144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 953
+skip$ -- 960
 stack$ -- 0
 substring$ -- 974
 swap$ -- 354
@@ -84,7 +88,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 15
-while$ -- 182
-width$ -- 177
-write$ -- 1497
-(There were 23 warnings)
+while$ -- 184
+width$ -- 179
+write$ -- 1515
+(There were 25 warnings)
