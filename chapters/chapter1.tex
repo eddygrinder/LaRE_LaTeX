@@ -7,25 +7,25 @@
 \textit{``So it begins''} \\[0.5em]
 --- King Theoden, \textit{The Lord of the Rings: The Two Towers}
 \end{flushright}
-Esta dissertação insere-se no programa de Mestrado em Engenharia Eletrotécnica e de Computadores, Área de Especialização em Automação e Sistemas e tem como principal objectivo o desenvolvimento de um \acrfull{laboratório remoto} aplicado ao ensino da eletrónica.
+Esta dissertação insere-se no programa de Mestrado em Engenharia Eletrotécnica e de Computadores, Área de Especialização em Automação e Sistemas e tem como principal objectivo o desenvolvimento de um laboratório remoto aplicado ao ensino da electrónica.
 Este capítulo aborda a motivação para a abordagem desta temática, nele é apresentada a contextualização, assim como os objectivos a serem atingidos e uma breve estruturação da dissertação.
 
 \section{Enquadramento}
 \label{sec: Enquadramento}
-A educação em engenharia, especialmente em áreas como eletrónica, depende fortemente de actividades práticas. Os laboratórios são cruciais para que os estudantes possam aplicar os conceitos teóricos em cenários práticos, desenvolver habilidades técnicas e enfrentar desafios reais \cite{Hofstein, BRINSON2015218}. No entanto, a manutenção e o acesso a laboratórios físicos tradicionais apresentam várias dificuldades, incluindo altos custos, limitações de espaço e a necessidade de supervisão constante por parte de instrutores ou professores qualificados \cite{feisel}. Além disso, o acesso a esses laboratórios pode ser restrito devido a factores como horários de funcionamento e a necessidade de presença física.
+A educação em engenharia, especialmente em áreas como electrónica, depende fortemente de actividades prácticas. Os laboratórios são cruciais para que os estudantes possam aplicar os conceitos teóricos em cenários prácticos, desenvolver habilidades técnicas e enfrentar desafios reais \cite{Hofstein, BRINSON2015218}. No entanto, a manutenção e o acesso a laboratórios físicos tradicionais apresentam várias dificuldades, incluindo altos custos, limitações de espaço e a necessidade de supervisão constante por parte de instrutores ou professores qualificados \cite{feisel}. Além disso, o acesso a esses laboratórios pode ser restrito devido a factores como horários de funcionamento e a necessidade de presença física.
 
-Nos últimos anos, os avanços na tecnologia, do \textit{eLearning} e na implementação da abordagem \acrfull{stem} abriram novas possibilidades para o ensino prático da eletrónica através de laboratórios remotos. Esses laboratórios permitem que os estudantes realizem experiências reais em equipamentos físicos controlados remotamente, independentemente da sua localização geográfica. A implementação de laboratórios remotos tem o potencial de democratizar o acesso ao ensino de qualidade, oferecendo oportunidades educacionais mais equitativas e inclusivas \cite{CORTER20112054}.
+Nos últimos anos, os avanços na tecnologia, do \textit{eLearning} e na implementação da abordagem \acrfull{stem} abriram novas possibilidades para o ensino práctico da electrónica através de laboratórios remotos. Esses laboratórios permitem que os estudantes realizem experiências reais em equipamentos físicos controlados remotamente, independentemente da sua localização geográfica. A implementação de laboratórios remotos tem o potencial de democratizar o acesso ao ensino de qualidade, oferecendo oportunidades educacionais mais equitativas e inclusivas \cite{CORTER20112054}.
 
 \section{Objectivos}
 \label{sec:Objectivos}
 A génese desta dissertação ocorreu há três anos e estava associada à ideia de desenvolver um \acrfull{lare} para o ensino da electrónica. Uma das soluções existentes no \acrfull{isep} é o \acrfull{visir}.
-O \acrshort{visir} é um projecto (\acrshort{laboratório remoto}) que pode ser aplicado no vasto campo da engenharia eletrotécnica e eletrónica e na área da teoria e prática de circuitos. Tem como objetivo definir, desenvolver e avaliar um conjunto de módulos educativos compostos por experiências práticas, virtuais e remotas \cite{visirisep}.
-No entanto, o desenvolvimento deste \acrshort{laboratório remoto} apresenta um grave problema, que corresponde ao facto de, por questões legais, não ser possível realizar qualquer tipo de modificação e/ou actualização ao \textit{firmware} da matriz que controla os relés. \textbf{\textcolor{red}{A REVER} - Prof.}
+O \acrshort{visir} é um projecto - laboratório remoto (virtual) - que pode ser aplicado no vasto campo da engenharia electrotécnica e electrónica e na área da teoria e práctica de circuitos. Tem como objectivo definir, desenvolver e avaliar um conjunto de módulos educativos compostos por experiências práticas, virtuais e remotas \cite{visirisep}.
+No entanto, o desenvolvimento deste laboratório remoto apresenta um grave problema, que corresponde ao facto de, por questões legais, não ser possível realizar qualquer tipo de modificação e/ou actualização ao \textit{firmware} da matriz que controla os relés. \textbf{\textcolor{red}{A REVER} - Prof.}
 
 Partindo, então, destes pressupostos definiram-se os seguintes objectivos:
 \begin{itemize}
     \item Contextualizar o uso dos laboratórios remotos no ensino;
-    \item Estudar e analisar as alternativas existentes, nomeadamente, o \acrshort{visir};
+    \item Estudar e analisar algumas das alternativas existentes, nomeadamente, o \acrshort{visir};
     \item Identificar os requisitos de \textit{hardware} e \textit{software} necessários para implementar o \acrshort{lare} como um projeto \textit{open-source}, em conformidade com a licença \acrfull{gpl}:
     \begin{itemize}
         \item Pesquisar, analisar e avaliar a implementação de um servidor;
@@ -38,7 +38,7 @@ Partindo, então, destes pressupostos definiram-se os seguintes objectivos:
 \end{itemize}
 
 \section{Estrutura do documento}
-\textbf{\textcolor{red}{}}
-\colorbox{yellow}{À data de 30/06 - Poderá haver modificações nos capítulos - \textbf{ rever}}
-Esta dissertação está organizada em quatro capítulos. Neste primeiro capítulo, foi feita uma breve introdução à implementação do \acrshort{lare} e aos objetivos que a norteiam. O Capítulo \ref{Capitulo2} aborda o estado da arte no que diz respeito à Educação Digital e à integração dos laboratórios no ensino. O Capítulo \ref{Capítulo3} aborda detalhadamente os aspectos relacionados com o \acrshort{lare}, a nível de \textit{hardware} e \textit{software}. Os resultados obtidos neste capítulo servem como base para, no Capítulo \ref{Capítulo4}, se discutir as vantagens e desvantagens do \acrshort{lare} e, tendo em conta as suas limitações, apontar melhoramentos que podem ser desenvolvidos no futuro.  No Capítulo \ref{Capítulo5} serão apresentadas as conclusões da implementação do \acrshort{lare}.
+Esta dissertação está organizada em seis capítulos. Neste primeiro capítulo, foi feita uma breve introdução à implementação do \acrshort{lare} e aos objetivos que a orientam. O Capítulo~\ref{Capitulo2} aborda o estado da arte no que respeita à Educação Digital e à integração dos laboratórios no ensino. O Capítulo~\ref{Capítulo3} trata, de forma detalhada, os aspetos relacionados com o \acrshort{lare}, ao nível do \textit{hardware} e do \textit{software}. A implementação do \acrshort{lare} é apresentada no Capítulo~\ref{Capítulo4}. No Capítulo~\ref{Capítulo5} discutem-se os resultados, que servem de base para, no Capítulo~\ref{Capítulo6}, se apresentarem as conclusões e limitações da implementação do \acrshort{lare}.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

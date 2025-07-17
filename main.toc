@@ -21,9 +21,9 @@
 \contentsline {subsubsection}{Laboratório real}{24}{section*.24}%
 \contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.25}%
 \contentsline {subsubsection}{Simuladores - Acesso local e/ou remoto}{28}{section*.28}%
-\contentsline {subsubsection}{Laboratório remoto}{31}{section*.30}%
-\contentsline {paragraph}{VISIR}{34}{section*.32}%
-\contentsline {paragraph}{PILAR}{39}{section*.41}%
+\contentsline {subsubsection}{Laboratório remoto}{30}{section*.30}%
+\contentsline {subsubsection}{VISIR - Virtual Instrument Systems in Reality}{34}{section*.32}%
+\contentsline {paragraph}{PILAR}{38}{section*.41}%
 \contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{41}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contextualização}{41}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Solução proposta}{44}{section.3.2}%

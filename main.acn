@@ -45,14 +45,11 @@
 \glossaryentry{CA?\glossentry{ca}|setentrycounter[]{page}"\glsnumberformat}{xix}
 \glossaryentry{HTML?\glossentry{html}|setentrycounter[]{page}"\glsnumberformat}{xx}
 \glossaryentry{CSS?\glossentry{css}|setentrycounter[]{page}"\glsnumberformat}{xx}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{2}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{2}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{GPL?\glossentry{gpl}|setentrycounter[]{page}"\glsnumberformat}{2}
@@ -76,9 +73,9 @@
 \glossaryentry{CNA-PRR?\glossentry{cnaprr}|setentrycounter[]{page}"\glsnumberformat}{10}
 \glossaryentry{PRR?\glossentry{prr}|setentrycounter[]{page}"\glsnumberformat}{10}
 \glossaryentry{LED?\glossentry{led}|setentrycounter[]{page}"\glsnumberformat}{10}
-\glossaryentry{$"\mu $C?\glossentry{microcontroladores}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{IoT?\glossentry{iot}|setentrycounter[]{page}"\glsnumberformat}{11}
 \glossaryentry{DESI?\glossentry{desi}|setentrycounter[]{page}"\glsnumberformat}{11}
+\glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{12}
 \glossaryentry{COVID-19?\glossentry{covid-19}|setentrycounter[]{page}"\glsnumberformat}{12}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{12}
 \glossaryentry{TIC?\glossentry{tic}|setentrycounter[]{page}"\glsnumberformat}{12}
@@ -112,36 +109,24 @@
 \glossaryentry{COVID-19?\glossentry{covid-19}|setentrycounter[]{page}"\glsnumberformat}{19}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{24}
-\glossaryentry{$"\mu $C?\glossentry{microcontroladores}|setentrycounter[]{page}"\glsnumberformat}{24}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{25}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{25}
-\glossaryentry{$"\mu $C?\glossentry{microcontroladores}|setentrycounter[]{page}"\glsnumberformat}{27}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{28}
 \glossaryentry{PC?\glossentry{pc}|setentrycounter[]{page}"\glsnumberformat}{28}
 \glossaryentry{SPICE?\glossentry{spice}|setentrycounter[]{page}"\glsnumberformat}{29}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{31}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{31}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{31}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{32}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{32}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{33}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{31}
 \glossaryentry{STEM?\glossentry{stem}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{34}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{34}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{NI?\glossentry{ni}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{EUA?\glossentry{eua}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{35}
@@ -151,8 +136,8 @@
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{35}
-\glossaryentry{PXI?\glossentry{pxi}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{LabVIEW?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{PXI?\glossentry{pxi}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{LabVIEW?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{35}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{36}
@@ -161,23 +146,20 @@
 \glossaryentry{PC?\glossentry{pc}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{LabVIEW?\glossentry{labview}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{36}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{37}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{37}
-\glossaryentry{MCR?\glossentry{mcr}|setentrycounter[]{page}"\glsnumberformat}{37}
-\glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{37}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{37}
-\glossaryentry{PIC?\glossentry{pic}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{PC?\glossentry{pc}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{USB?\glossentry{usb}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{PIC?\glossentry{pic}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{"\(I^2C"\)?\glossentry{i2c}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{MCR?\glossentry{mcr}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{BTH?\glossentry{bth}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{PIC?\glossentry{pic}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{PC?\glossentry{pc}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{USB?\glossentry{usb}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{PIC?\glossentry{pic}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{"\(I^2C"\)?\glossentry{i2c}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{PILAR?\glossentry{pilar}|setentrycounter[]{page}"\glsnumberformat}{38}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{PILAR?\glossentry{pilar}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{PILAR?\glossentry{pilar}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
@@ -187,13 +169,13 @@
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{SIG?\glossentry{sig}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
-\glossaryentry{SIG?\glossentry{sig}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{40}
+\glossaryentry{SIG?\glossentry{sig}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{39}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{41}
 \glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{41}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{41}
@@ -261,7 +243,7 @@
 \glossaryentry{PCB?\glossentry{pcb}|setentrycounter[]{page}"\glsnumberformat}{53}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{53}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{53}
-\glossaryentry{IDC?\glossentry{idc}|setentrycounter[]{page}"\glsnumberformat}{53}
+\glossaryentry{IDC?\glossentry{idc}|setentrycounter[]{page}"\glsnumberformat}{54}
 \glossaryentry{RLMS?\glossentry{rlms}|setentrycounter[]{page}"\glsnumberformat}{55}
 \glossaryentry{IoT?\glossentry{iot}|setentrycounter[]{page}"\glsnumberformat}{55}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{56}
@@ -275,8 +257,8 @@
 \glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{56}
 \glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{56}
 \glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{56}
-\glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{56}
-\glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{56}
+\glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{57}
+\glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{57}
 \glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{57}
 \glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{57}
 \glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{57}
@@ -284,11 +266,11 @@
 \glossaryentry{"\(I^2C"\)?\glossentry{i2c}|setentrycounter[]{page}"\glsnumberformat}{57}
 \glossaryentry{GPIO?\glossentry{gpio}|setentrycounter[]{page}"\glsnumberformat}{57}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{57}
-\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{57}
+\glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{58}
+\glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{58}
+\glossaryentry{ISEP?\glossentry{isep}|setentrycounter[]{page}"\glsnumberformat}{58}
+\glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{58}
+\glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{58}
 \glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{58}
 \glossaryentry{DPST?\glossentry{dpst}|setentrycounter[]{page}"\glsnumberformat}{58}
 \glossaryentry{SPST?\glossentry{spst}|setentrycounter[]{page}"\glsnumberformat}{58}
@@ -478,7 +460,6 @@
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{112}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{113}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{113}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{115}
 \glossaryentry{VISIR?\glossentry{visir}|setentrycounter[]{page}"\glsnumberformat}{115}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{115}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{115}
@@ -488,7 +469,6 @@
 \glossaryentry{VB?\glossentry{virtualbench}|setentrycounter[]{page}"\glsnumberformat}{116}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{116}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{116}
-\glossaryentry{LR?\glossentry{laboratório remoto}|setentrycounter[]{page}"\glsnumberformat}{116}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{116}
 \glossaryentry{ARM?\glossentry{arm}|setentrycounter[]{page}"\glsnumberformat}{116}
 \glossaryentry{LaRE?\glossentry{lare}|setentrycounter[]{page}"\glsnumberformat}{117}

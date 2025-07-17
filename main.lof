@@ -5,22 +5,22 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Número de utilizadores da Internet em todo o mundo, 2024 \cite {itu2024facts}}}{6}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Dimensão Capital Humano, 2024 \cite {itu2024facts}}}{7}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Tipos de laboratórios consoante a localização, Heradio \textit {et al.} (2016), \cite {HERADIO20161}}}{20}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tipos de laboratórios consoante a localização, Heradio \textit {et al.} (2016) \cite {HERADIO20161}}}{20}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Tipos de laboratórios consoante a localização, segundo Zutin, \textit {et al.} \cite {zutinlab2go}}}{21}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Laboratório virtual \textit {vs} simulador}}{22}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Simulador \textit {Falstad} (Exemplo) \cite {falstad}}}{23}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Laboratório virtual \textit {Fritzing} exemplo}}{26}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Laboratório virtual \textit {Wokwi} exemplo}}{26}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Simulador \textit {Multisim}}}{28}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo \textit {\acrshort {visir}}}}{32}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo \textit {\acrshort {visir}}}}{31}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{35}{figure.caption.33}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Arquitectura do \acrshort {visir}}}{36}{figure.caption.34}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{36}{figure.caption.35}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{37}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{38}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{37}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Fonte de tensão PXI-4110 \cite {PXI-4110}}}{38}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{39}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{38}{figure.caption.40}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Arduino} Mega \cite {ArduinoMega}}}{42}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {ESP32} \cite {ESPDevKit}}}{43}{figure.caption.43}%
@@ -40,7 +40,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{53}{figure.caption.57}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{53}{figure.caption.58}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{54}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{54}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{55}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{55}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{56}{figure.caption.65}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{57}{figure.caption.67}%
