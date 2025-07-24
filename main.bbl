@@ -382,9 +382,6 @@ S.~Kocijancic and C.~O'Sullivan, ``Real or virtual laboratories in science teach
 C.~Tsihouridis, D.~Vavougios, M.~Batsila, and G.~Ioannidis, {\em The Timeless Controversy Between Virtual and Real Laboratories in Science Education—“And the Winner Is…”}, pp.~620--631.
 \newblock 01 2019.
 
-\bibitem{VISIREngineeringPractices}
-M.~Tawfik, E.~Sancristobal, S.~Martín, C.~Gil, A.~Pesquera, P.~Losada, G.~Díaz, J.~Peire, M.~Castro, J.~García-Zubia, U.~Hernández, P.~Orduña, I.~Angulo, M.~C. Costa~Lobo, M.~A. Marques, M.~C. Viegas, and G.~R. Alves, ``Visir deployment in undergraduate engineering practices,'' in {\em 2011 First Global Online Laboratory Consortium Remote Laboratories Workshop}, pp.~1--7, 2011.
-
 \bibitem{ExperiencesRemoteLaboratories}
 A.~Nafalski, O.~G\"ol, Z.~Nedic, J.~Machotka, J.~M.~M. Ferreira, and I.~Gustavsson, ``Experiences with remote laboratories,'' 2010.
 
@@ -396,6 +393,9 @@ X.~Chen, Y.~Zhang, L.~Kehinde, and D.~Olowokere, ``Developing virtual and remote
 
 \bibitem{RemoteLabsDevelopingCountries}
 J.~Simão, J.~de~Lima, W.~Rochadel, and J.~B. da~Silva, ``Remote labs in developing countries an experience in brazilian public education,'' in {\em IEEE Global Humanitarian Technology Conference (GHTC 2014)}, pp.~99--105, 2014.
+
+\bibitem{VISIREngineeringPractices}
+M.~Tawfik, E.~Sancristobal, S.~Martín, C.~Gil, A.~Pesquera, P.~Losada, G.~Díaz, J.~Peire, M.~Castro, J.~García-Zubia, U.~Hernández, P.~Orduña, I.~Angulo, M.~C. Costa~Lobo, M.~A. Marques, M.~C. Viegas, and G.~R. Alves, ``Visir deployment in undergraduate engineering practices,'' in {\em 2011 First Global Online Laboratory Consortium Remote Laboratories Workshop}, pp.~1--7, 2011.
 
 \bibitem{VISIRExperiencesChallenges}
 M.~Tawfik, E.~Sancristobal, S.~Martin, C.~Gil, A.~Pesquera, P.~Losada, G.~Diaz, J.~Peire, M.~Castro, J.~García-Zubia, U.~Hernández, P.~Orduña, I.~Angulo, M.~C. Costa~Lobo, M.~Marques, M.~C. Viegas, and G.~R. Alves, ``Visir: Experiences and challenges,'' {\em International Journal of Online and Biomedical Engineering (iJOE)}, vol.~8, p.~pp. 25–32, Feb. 2012.

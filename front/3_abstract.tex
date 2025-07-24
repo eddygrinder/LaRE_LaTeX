@@ -13,35 +13,36 @@
 \begin{abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN LANGUAGE ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Aqui deverá ser apresentado o resumo de todo o trabalho efetuado. Esta secção não deverá exceder uma página.
+A formação em engenharia, particularmente na área da electrónica, exige uma forte componente prática, frequentemente concretizada em contexto laboratorial. No entanto, os laboratórios físicos tradicionais apresentam desafios significativos, como custos elevados, exigência de espaço físico e limitação do acesso devido a restrições logísticas. Estes desafios foram agravados pelo surgimento da pandemia da \acrshort{covid-19}, em 2020. Perante estas limitações, os laboratórios remotos surgem como uma alternativa eficaz e promissora. Estes permitem que os estudantes realizem experiências reais em equipamentos físicos, através de controlo remoto, promovendo um acesso mais inclusivo, flexível e escalável ao ensino prático.
 
-Deve contextualizar o problema que pretende resolver ou a hipótese que irá formular, procure evidenciar as vantagens e desvantagens (se as houver) da solução encontrada, como também a forma através da qual a solução/hipótese foi validada. Neste último ponto, deverá referir-se aos desenvolvimentos efetuados, e à forma como validou (conformidade) e avaliou (desempenho) a solução encontrada.
+A presente dissertação descreve o processo de concepção de um laboratório remoto - \acrfull{lare} - para o ensino da electrónica, como alternativa viável ao \acrshort{visir}, com o compromisso adicional de ser um projecto \textit{open-source}, acessível a qualquer instituição de ensino, independentemente da sua localização geográfica. A matriz de placas, elemento central do sistema, foi desenvolvida com base numa arquitectura controlada por \textit{software}, sem dependência de plataformas proprietárias, garantindo assim que o sistema possa ser utilizado sem necessidade de licenças comerciais. Contudo, devido à actual falta de suporte da biblioteca \textit{pyVirtualBench} para sistemas \textit{Linux} e arquitecturas \acrshort{arm}, a implementação do \acrshort{lare} permanece, nesta fase, dependente de sistemas \textit{Windows} - um factor que limita a sua adopção em plataformas educativas mais versáteis e de baixo custo. No entanto, a arquitectura modular do \acrshort{lare} permite futuras expansões e adaptações a diferentes contextos pedagógicos.
 
-A dissertação deve conter sempre duas versões do resumo: uma primeira no idioma do texto principal e a segunda num outro idioma. Este \textit{template} assume que os dois idiomas em consideração são sempre Português e Inglês, assim, a classe irá colocar os cabeçalhos respetivos de acordo com o idioma selecionado nas opções da classe no ficheiro \file{main.tex}. 
+Assim, este trabalho visa: contextualizar o papel dos laboratórios remotos no ensino; analisar alternativas existentes; identificar os requisitos técnicos (de \textit{hardware} e \textit{software}) para a construção de um laboratório remoto \textit{open-source} em conformidade com a licença \acrshort{gpl}; implementar e testar o \acrshort{lare}; e apresentar as suas vantagens, limitações e possíveis melhoramentos. A proposta assenta numa abordagem acessível e escalável, procurando contribuir para o reforço da aprendizagem prática e para a democratização do ensino experimental em engenharia.
+
 
 %----------------------------------------------------------------------------------------
 
 \vspace*{10mm} 
 \noindent
-\textbf{\keywordslabel}: Lista, separada por vírgulas, de palavras, frases, ou acrónimos chave no âmbito do trabalho descrito neste texto. 
+\textbf{\keywordslabel}: laboratório remoto, ensino de electrónica, VirtualBench, controlo remoto, \textit{open-source}, acessibilidade, \acrshort{gpl}, \acrshort{lare}, \acrshort{visir}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% END OF THE MAIN LANGUAGE ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{abstract}
 \begin{secondlangabstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SECOND LANGUAGE ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The summary of all the developed work should be presented here. This section should not exceed one page.
+Engineering education, particularly in electronics, requires a strong practical component, typically delivered through hands-on laboratory work. However, traditional physical laboratories pose several challenges, including high operational costs, limited space, and restricted access due to logistical constraints. These issues were further intensified by the \acrshort{covid-19} pandemic in 2020. In response, remote laboratories have emerged as a promising and effective alternative, enabled by recent technological advances. These platforms allow students to perform real experiments on physical equipment via remote control, promoting more inclusive, flexible, and scalable access to practical learning.
 
-Start the abstract with the contextualization of the problem you intend to solve or the hypothesis you will formulate. Try to highlight the advantages and disadvantages (if any) of the solution found, as well as the way in which the solution/hypothesis was validated. In this last point, you should refer to the developments made, and to the way you validated (compliance) and evaluated (performance) the solution found.
+This dissertation presents the development of a remote laboratory — the \acrfull{lare} — designed for electronics education. It aims to serve as an open-source, viable alternative to \acrshort{visir}, with universal accessibility regardless of the institution’s geographical location. The \acrshort{lare} system enables remote control of practical experiments and promotes equitable access to laboratory resources. The core component, a configurable board matrix, was developed using a software-controlled architecture that avoids proprietary dependencies, allowing use without commercial licenses. However, due to the current lack of support by the pyVirtualBench library for Linux systems and ARM architectures, the implementation of LARE remains, at this stage, dependent on Windows systems — a factor that limits its adoption on more versatile and low-cost educational platforms. Nevertheless, the modular architecture of \acrshort{lare} supports future extensions and adaptability to varied pedagogical contexts.
 
-The dissertation must always contain two versions of the abstract: a first in the language of the main text and the second one in another language. This template assumes that the two languages are always Portuguese and English, therefore, the class will place the correct section headers according to the language selected in the class options in the \file{main.tex} file.
+This work seeks to: contextualize the role of remote laboratories in education; review existing solutions; define the technical (hardware and software) requirements for building an open-source remote lab under the \acrshort{gpl} license; implement and test the \acrshort{lare}; and present its advantages, limitations, and possible improvements. The proposal aims to provide a scalable and accessible infrastructure that reinforces hands-on learning and democratizes experimental education in engineering.
 
 
 %----------------------------------------------------------------------------------------
 
 \vspace*{10mm} 
 \noindent
-\textbf{\keywordslabel}: Comma separated list of words, phrases, or key acronyms within the scope of your developed work. 
+\textbf{\keywordslabel}: remote laboratory, electronics education, VirtualBench, remote control, open-source, accessibility, \acrshort{gpl}, \acrshort{lare}, \acrshort{visir}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% END OF THE SECOND LANGUAGE ABSTRACT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{secondlangabstract}

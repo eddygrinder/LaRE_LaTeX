@@ -16,7 +16,7 @@
 \backcite {hayt}{{ix}{(document)}{Doc-Start}}
 \backcite {sedrasmith}{{ix}{(document)}{Doc-Start}}
 \backcite {sedrasmith}{{ix}{(document)}{Doc-Start}}
-\backcite {sedrasmith}{{x}{(document)}{Doc-Start}}
+\backcite {sedrasmith}{{ix}{(document)}{Doc-Start}}
 \backcite {sedrasmith}{{x}{(document)}{Doc-Start}}
 \backcite {sedrasmith}{{x}{(document)}{Doc-Start}}
 \backcite {datasheetVirtualBench}{{x}{(document)}{Doc-Start}}
@@ -36,12 +36,12 @@
 \backcite {arduino}{{xvii}{(document)}{Doc-Start}}
 \backcite {matias}{{xvii}{(document)}{Doc-Start}}
 \backcite {industry4.0}{{xviii}{(document)}{Doc-Start}}
-\backcite {ThePython}{{xix}{(document)}{Doc-Start}}
+\backcite {ThePython}{{xviii}{(document)}{Doc-Start}}
 \backcite {pifoundation}{{xix}{(document)}{Doc-Start}}
 \backcite {Raspberrypi}{{xix}{(document)}{Doc-Start}}
 \backcite {matias}{{xix}{(document)}{Doc-Start}}
 \backcite {matias}{{xix}{(document)}{Doc-Start}}
-\backcite {W3C}{{xx}{(document)}{Doc-Start}}
+\backcite {W3C}{{xix}{(document)}{Doc-Start}}
 \backcite {Hofstein, BRINSON2015218}{{1}{1.1}{section.1.1}}
 \backcite {feisel}{{1}{1.1}{section.1.1}}
 \backcite {CORTER20112054}{{2}{1.1}{section.1.1}}
@@ -215,20 +215,20 @@
 \backcite {AutomatingVB}{{44}{3.2}{section.3.2}}
 \backcite {Sockets}{{46}{3.3}{figure.caption.46}}
 \backcite {Sockets}{{46}{3.6}{figure.caption.47}}
-\backcite {hayt}{{48}{3.4.1}{equation.3.1}}
+\backcite {hayt}{{48}{3.4.1}{equation.3.4.1}}
 \backcite {hayt}{{48}{3.8}{figure.caption.49}}
 \backcite {sedrasmith}{{49}{3.10}{figure.caption.51}}
 \backcite {sedrasmith}{{49}{3.4.2}{figure.caption.51}}
 \backcite {sedrasmith}{{50}{3.11}{figure.caption.52}}
-\backcite {sedrasmith}{{50}{3.4.2}{equation.3.4}}
+\backcite {sedrasmith}{{50}{3.4.2}{equation.3.4.4}}
 \backcite {sedrasmith}{{50}{3.12}{figure.caption.53}}
 \backcite {sedrasmith}{{51}{3.4.3}{subsection.3.4.3}}
 \backcite {sedrasmith}{{51}{3.13}{figure.caption.54}}
 \backcite {sedrasmith}{{51}{3.14}{figure.caption.55}}
 \backcite {datasheetVirtualBench}{{52}{3.5.1}{subsection.3.5.1}}
 \backcite {datasheetVirtualBench}{{52}{3.15}{figure.caption.56}}
+\backcite {PC104}{{52}{3.5.2}{subsection.3.5.2}}
 \backcite {datasheetVirtualBench}{{53}{3.16}{figure.caption.57}}
-\backcite {PC104}{{53}{3.5.2}{subsection.3.5.2}}
 \backcite {LM317}{{55}{3.5.2}{section*.63}}
 \backcite {Raspberrytech}{{56}{3.5.3}{subsection.3.5.3}}
 \backcite {Raspberrypi5}{{56}{3.1}{table.caption.66}}
@@ -268,13 +268,13 @@
 \backcite {Startingcss}{{66}{10}{lstnumber.3.3.9}}
 \backcite {Startingcss}{{66}{6}{lstnumber.3.4.5}}
 \backcite {cssvalidator, htmlvalidator}{{66}{3.6.2}{lstnumber.3.4.5}}
-\backcite {JavaScriptRef}{{67}{3.6.2}{lstnumber.3.4.5}}
+\backcite {JavaScriptRef}{{66}{3.6.2}{lstnumber.3.4.5}}
 \backcite {JavaScript}{{67}{3.6.2}{lstnumber.3.5.9}}
 \backcite {ULN2003}{{70}{4.1.2}{subsection.4.1.2}}
 \backcite {LM317}{{73}{4.1.4}{section*.86}}
 \backcite {LM317}{{73}{4.1.4}{figure.caption.87}}
 \backcite {1N400x}{{74}{4.1.4}{figure.caption.87}}
-\backcite {LM317}{{74}{4.1.4}{equation.4.1}}
+\backcite {LM317}{{74}{4.1.4}{equation.4.1.1}}
 \backcite {Flask}{{81}{4.2.1}{subsection.4.2.1}}
 \backcite {tutorialsiteflask, flaskDigitalOcean}{{81}{4.2.1}{subsection.4.2.1}}
 \backcite {Flask}{{81}{4.2.1}{figure.caption.101}}
@@ -287,6 +287,6 @@
 \backcite {sedrasmith}{{107}{5.2.1}{figure.caption.129}}
 \backcite {toleranciacondensadores}{{108}{5.2.1}{figure.caption.129}}
 \backcite {sedrasmith}{{108}{5.2.1}{figure.caption.129}}
-\backcite {1N400x}{{108}{5.2.2}{equation.5.6}}
+\backcite {1N400x}{{108}{5.2.2}{equation.5.2.6}}
 \backcite {FlaskvsDjango, Djangovsflask}{{117}{6.1}{section.6.1}}
 \backcite {SN74HC595}{{117}{1}{section.6.1}}

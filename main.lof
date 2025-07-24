@@ -28,7 +28,7 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo do \acrshort {virtualbench} usado como multímetro digital}}{45}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitectura geral - \acrshort {lare}}}{45}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Fluxograma de uma chamada ao \textit {socket} \cite {Sockets}}}{46}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura geral - \acrshort {lare} - \textbf {NOTE: Fig actualizada - opiniao PROF}}}{47}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Arquitectura geral - \acrshort {lare}}}{47}{figure.caption.48}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Gráfico da Lei de \textit {Ohm}\cite {hayt}}}{48}{figure.caption.49}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Experiência Lei de \textit {Ohm}}}{48}{figure.caption.50}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Diagrama de blocos da rectificação \cite {sedrasmith}}}{49}{figure.caption.51}%
@@ -40,7 +40,7 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{53}{figure.caption.57}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{53}{figure.caption.58}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{54}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{55}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{54}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{55}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{56}{figure.caption.65}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{57}{figure.caption.67}%
