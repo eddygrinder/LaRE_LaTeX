@@ -9,7 +9,7 @@
 
 Os testes foram realizados com o objetivo de validar a implementação do \acrshort{lare} e verificar se os resultados obtidos correspondem aos esperados. Como forma de uniformizar conceitos, apesar de tanto as experiências desenvolvidas no \acrshort{lare} como as realizadas na ``placa branca'' serem reais, designar-se-ão os testes efetuados na ``placa branca'' como experiências práticas ou valores práticos.
 
-Sendo assim, a confrontação dos resultados obtidos no \acrshort{lare} foi efetuada com recurso às experiências prácticas, ao \href{https://www.multisim.com}{\textit{MultisimLive}} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga. No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, há ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada. As experiências podem ser realizadas com diferentes combinações e configurações:
+Sendo assim, a confrontação dos resultados obtidos no \acrshort{lare} foi efetuada com recurso às experiências práticas, ao \href{https://www.multisim.com}{\textit{MultisimLive}} e aos valores teóricos previamente descritos na Secção \ref{sec:experiencias}. Para a análise dos resultados, serão apresentados um ou dois exemplos representativos por tipo de experiência, sendo que os restantes são obtidos de forma análoga. No caso específico da Lei de \textit{Ohm}\footnote{Uma vez que a versão grátis \textit{online} do \textit{MultisimLive} não permite realizar a análise continua - \textit{dc sweep} - esta análise fez-se utilizando o \href{https://www.circuitlab.com/}{CircuitLab}}, há ainda a possibilidade de verificar os valores com recurso a um multímetro de bancada. As experiências podem ser realizadas com diferentes combinações e configurações:
 
 \begin{itemize}
 	\item \textbf{Lei de \textit{Ohm}}: três opções de estudo de resistências;
@@ -28,7 +28,7 @@ No \acrshort{lare} o utilizador efectua cinco medições de cada grandeza (tens�
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/resultados_medicoes_ohm.png}
-	\caption{Medição práctica}
+	\caption{Medição prática}
 	\label{fig:resultados_medicoes_1k}
 \end{figure}
 
@@ -60,11 +60,11 @@ O erro relativo entre o valor teórico e o valor obtido no \acrshort{lare}, pode
 
 O erro relativo obtido é de, aproximadamente, \SI{1.2}{\percent}, sendo um valor perfeitamente aceitável.
 
-Os resultados da experiência práctica, efectuados com a mesma resistência utilizada no \acrshort{lare}, estão representados na Tabela \ref{Table:valoresexperimentaisohm}.
+Os resultados da experiência prática, efectuados com a mesma resistência utilizada no \acrshort{lare}, estão representados na Tabela \ref{Table:valoresexperimentaisohm}.
 
 \begin{table}[htb]
 	\centering
-	\caption{Valores prácticos - Lei de \textit{Ohm}} 
+	\caption{Valores práticos - Lei de \textit{Ohm}} 
 	\label{Table:valoresexperimentaisohm}
 	\begin{tabular}{lcc}
 		\toprule
@@ -102,7 +102,7 @@ Analisando os valores é possível calcular o declive da recta, dado pela Equaç
 
 O valor do declive, correspondente à resistência, obtido para estes simulador é de $m_\text{{multisim}} \approx{0.980}$. Tendo em conta que a escala do eixo do $y$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}, isto é, $R_\text{{multisim}} = \SI{0.980}{\kilo\ohm}$. Assim, aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo inferior a \SI{1}{\percent}.
 
-Verifica-se, através da análise dos gráficos, que os dados obtidos com o \acrshort{lare} estão em concordância com os resultados simulados e com os valores prácticos.
+Verifica-se, através da análise dos gráficos, que os dados obtidos com o \acrshort{lare} estão em concordância com os resultados simulados e com os valores práticos.
 
 \section{Rectificadores}
 \label{sec:resultados_rectificadores}
@@ -140,7 +140,7 @@ As Figuras \ref{fig:realmeiaonda} e \ref{fig:multisimmeiaonda} representam, resp
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Circuito práctico\label{fig:realmeiaonda}]{{\includegraphics[width=6.3cm]{figures/ripple_práctica_MO-2k2-100uF.png} }}%
+		\subfloat[\centering Circuito prático\label{fig:realmeiaonda}]{{\includegraphics[width=6.3cm]{figures/ripple_práctica_MO-2k2-100uF.png} }}%
 		\qquad
 		\subfloat[\centering Simulação \textit{multisim}\label{fig:multisimmeiaonda}]{{\includegraphics[width=6.3cm]{figures/ripple_multisim_MO-2k2-100uFALT.png} }}%
 		\caption{Valores experimentais e simulados - tensão de \textit{ripple}}%
@@ -151,7 +151,7 @@ Os erros relativos obtidos foram de \SI{20.1}{\percent} no \acrshort{lare}, \SI{
 
 A simulação, embora mais próxima da realidade, recorre igualmente a modelos ideais por omissão. É o caso dos condensadores no \textit{Multisim}, que não incluem resistência série (ESR) nem indutância série (ESL)\footnote{Uma análise às propriedades do condensador no \textit{Multisim} revelou que estes são ideais, baseados em modelos \acrshort{spice} simplificados, representados pela seguinte estrutura: \textit{c\%p \%t1 \%t2 \#1 \%v4?IC=\#5\%v:\%v;}}. Ainda assim, a simulação contempla fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito, o que a torna mais precisa do que o modelo teórico.
 
-A maior discrepância observada nos resultados do \acrshort{lare} pode ser justificada por erros no cálculo da tensão de \textit{ripple}, através da Figura \ref{fig:ripplelaremeiaonda} pode ver-se que a onda apresentada distorce ligeiramente nos picos positivos. Além disso, e tal como nos valores obtidos na práctica, as tolerâncias típicas dos condensadores eletrolíticos são elevadas, sendo que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}. Outro factor que também condiciona o erro relativo são as baixas correntes nos díodos. Esta corrente segue uma relação exponencial com a tensão directa aplicada, tornando-se extremamente sensível a pequenas variações de tensão ou do parâmetro $I_{S}$. Nesta zona, fenómenos secundários como corrente de fuga, variações térmicas e limitações instrumentais assumem maior relevância e desviam o comportamento do díodo do modelo ideal \cite{sedrasmith}.
+A maior discrepância observada nos resultados do \acrshort{lare} pode ser justificada por erros no cálculo da tensão de \textit{ripple}, através da Figura \ref{fig:ripplelaremeiaonda} pode ver-se que a onda apresentada distorce ligeiramente nos picos positivos. Além disso, e tal como nos valores obtidos na prática, as tolerâncias típicas dos condensadores eletrolíticos são elevadas, sendo que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}. Outro factor que também condiciona o erro relativo são as baixas correntes nos díodos. Esta corrente segue uma relação exponencial com a tensão directa aplicada, tornando-se extremamente sensível a pequenas variações de tensão ou do parâmetro $I_{S}$. Nesta zona, fenómenos secundários como corrente de fuga, variações térmicas e limitações instrumentais assumem maior relevância e desviam o comportamento do díodo do modelo ideal \cite{sedrasmith}.
 
 Assim, as diferenças entre os vários métodos de obtenção de resultados são compreensíveis e enquadram-se dentro do esperado, considerando as limitações e simplificações de cada abordagem.
 
@@ -197,7 +197,7 @@ Apesar de se esperar que a tensão de \textit{ripple} no circuito com a ponte \t
 		\subfloat[\centering Medição - \textit{1N4007}\label{fig:ripple1n4007}]{{\includegraphics[width=6.3cm]{figures/ripple_lab_1N4007.jpeg} }}%
 		\qquad
 		\subfloat[\centering Medição - \textit{B250C2300-1500} \label{fig:rippleb250}]{{\includegraphics[width=6.3cm]{figures/ripple_lab_ponte.jpeg} }}%
-		\caption{Medições prácticas \textins{complementares} \textit{ripple}}%
+		\caption{Medições práticas \textins{complementares} \textit{ripple}}%
 		\label{fig:testesrippleOC}%
 	\end{figure}
 
@@ -253,7 +253,7 @@ Os valores experimentais obtidos com o \acrshort{lare} relativamente à análise
 	\label{fig:fcBode}
 \end{figure}
 
-Os resultados complementares obtidos com base na simulação efectuada no \textit{multisim}, já que não é possível gerar o diagrama de \textit{Bode} do circuito práctico, representados na Figura \ref{fig:fcBodemultisim}, mostram que a frequência de corte é de \SI{7282.4}{\hertz}. O erro relativo é de \SI{0.67}{\percent}, o que é prácticamente desprezável.
+Os resultados complementares obtidos com base na simulação efectuada no \textit{multisim}, já que não é possível gerar o diagrama de \textit{Bode} do circuito prático, representados na Figura \ref{fig:fcBodemultisim}, mostram que a frequência de corte é de \SI{7282.4}{\hertz}. O erro relativo é de \SI{0.67}{\percent}, o que é práticamente desprezável.
 
 \begin{figure}[hbtp]
 	\centering
@@ -262,7 +262,7 @@ Os resultados complementares obtidos com base na simulação efectuada no \texti
 	\label{fig:fcBodemultisim}
 \end{figure}
 
-O valor da frequência de corte também pode ser obtido através da análise dos gráficos que representam a relação entre a tensão de saída e a tensão de entrada. Como se pode ver pela análise da Figura \ref{fig:voutvinlare}, o ganho a altas frequências é prácticamente unitário, estando em consonância com os valores obtidos no diagrama de \textit{Bode}, representado na Figura \ref{fig:fcBode}. 
+O valor da frequência de corte também pode ser obtido através da análise dos gráficos que representam a relação entre a tensão de saída e a tensão de entrada. Como se pode ver pela análise da Figura \ref{fig:voutvinlare}, o ganho a altas frequências é práticamente unitário, estando em consonância com os valores obtidos no diagrama de \textit{Bode}, representado na Figura \ref{fig:fcBode}. 
 
 \begin{figure}[hbtp]
 	\centering
@@ -271,15 +271,15 @@ O valor da frequência de corte também pode ser obtido através da análise dos
 	\label{fig:voutvinlare}
 \end{figure}
 
-Comparando estes valores com os obtidos através do circuito práctico, representados na Figura \ref{fig:realPA} e Figura \ref{fig:multisimPA} do circuito simulado no \textit{multisim} verifica-se que os valores obtidos são prácticamente iguais, podendo ser considerado, com segurança, que em ambos os casos o ganho de tensão é unitário. 
+Comparando estes valores com os obtidos através do circuito prático, representados na Figura \ref{fig:realPA} e Figura \ref{fig:multisimPA} do circuito simulado no \textit{multisim} verifica-se que os valores obtidos são práticamente iguais, podendo ser considerado, com segurança, que em ambos os casos o ganho de tensão é unitário. 
 
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Circuito práctico\label{fig:realPA}]{{\includegraphics[width=6.3cm]{figures/PA_10nF2k2-80Khz.png} }}%
+		\subfloat[\centering Circuito prático\label{fig:realPA}]{{\includegraphics[width=6.3cm]{figures/PA_10nF2k2-80Khz.png} }}%
 		\qquad
 		\subfloat[\centering Simulação \textit{multisim}\label{fig:multisimPA}]{{\includegraphics[width=6.3cm]{figures/boda_HPF_vout.png} }}%
-		\caption{Valores prácticos e simulados - $v_{out}$ \textit{vs} $v_{in}$}%
+		\caption{Valores práticos e simulados - $v_{out}$ \textit{vs} $v_{in}$}%
 		\label{fig:simulacaoPA}%
 	\end{figure}
 
@@ -292,12 +292,12 @@ Relativamente à análise da frequência de corte, representado na Figura \ref{f
 	\label{fig:fcvoutlare}
 \end{figure}
 
-O circuito práctico apresenta uma frequência de corte de \SI{7000}{\hertz}, com um erro relativo de \SI{3.24}{\percent}, enquanto a simulação no \textit{Multisim} apresenta \SI{7300}{\hertz}, com um erro ainda mais reduzido de \SI{0.9}{\percent}. Estes desvios podem ser considerados baixos e encontram-se dentro de margens aceitáveis, tendo em conta as limitações práticas do circuito real, como tolerâncias dos componentes, ruído, e eventuais imprecisões nas medições. O valor obtido na simulação, por outro lado, está mais próximo do valor teórico, o que é expectável dado que os modelos usados assumem, geralmente, componentes ideais ou com parâmetros controlados.
+O circuito prático apresenta uma frequência de corte de \SI{7000}{\hertz}, com um erro relativo de \SI{3.24}{\percent}, enquanto a simulação no \textit{Multisim} apresenta \SI{7300}{\hertz}, com um erro ainda mais reduzido de \SI{0.9}{\percent}. Estes desvios podem ser considerados baixos e encontram-se dentro de margens aceitáveis, tendo em conta as limitações práticas do circuito real, como tolerâncias dos componentes, ruído, e eventuais imprecisões nas medições. O valor obtido na simulação, por outro lado, está mais próximo do valor teórico, o que é expectável dado que os modelos usados assumem, geralmente, componentes ideais ou com parâmetros controlados.
 
 \begin{figure}[hbtp]
 	\centering%
 		\centering
-		\subfloat[\centering Circuito práctico\label{fig:realfcvout}]{{\includegraphics[width=6.3cm]{figures/PA_10nF2k2-Fc.png} }}%
+		\subfloat[\centering Circuito prático\label{fig:realfcvout}]{{\includegraphics[width=6.3cm]{figures/PA_10nF2k2-Fc.png} }}%
 		\qquad
 		\subfloat[\centering Simulação \textit{multisim}\label{fig:multisimfcvout}]{{\includegraphics[width=6.3cm]{figures/boda_HPF_vout_fc.png} }}%
 		\caption{Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit{vs} $v_{in}$}%
