@@ -12,15 +12,15 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Laboratório virtual \textit {Fritzing} exemplo}}{26}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Laboratório virtual \textit {Wokwi} exemplo}}{26}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Simulador \textit {Multisim}}}{28}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo \textit {\acrshort {visir}}}}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo \textit {\acrshort {visir}}}}{32}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{35}{figure.caption.33}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Arquitectura do \acrshort {visir}}}{36}{figure.caption.34}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{36}{figure.caption.35}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{37}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{37}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{38}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Fonte de tensão PXI-4110 \cite {PXI-4110}}}{38}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{38}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{39}{figure.caption.40}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Arduino} Mega \cite {ArduinoMega}}}{42}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {ESP32} \cite {ESPDevKit}}}{43}{figure.caption.43}%
@@ -77,18 +77,18 @@
 \contentsline {figure}{\numberline {4.24}{\ignorespaces Selecção de parâmetros}}{99}{figure.caption.121}%
 \contentsline {figure}{\numberline {4.25}{\ignorespaces Selecção de parâmetros}}{100}{figure.caption.123}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Medição práctica}}{104}{figure.caption.124}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Medição prática}}{104}{figure.caption.124}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfico da Lei de \textit {Ohm} - \SI {1}{\kilo \ohm } - \acrshort {lare}}}{105}{figure.caption.125}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{106}{figure.caption.127}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - meia onda}}{107}{figure.caption.128}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{107}{figure.caption.129}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Medições prácticas \textins {complementares} \textit {ripple}}}{109}{figure.caption.131}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Medições práticas \textins {complementares} \textit {ripple}}}{109}{figure.caption.131}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - onda completa}}{109}{figure.caption.132}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Tensão de \textit {ripple} - \textit {multisim} - onda completa}}{110}{figure.caption.133}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{111}{figure.caption.134}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{112}{figure.caption.135}%
 \contentsline {figure}{\numberline {5.11}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ \acrshort {lare}}}{112}{figure.caption.136}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Valores prácticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{112}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Valores práticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{112}{figure.caption.137}%
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Frequência de corte - \acrshort {lare}}}{113}{figure.caption.138}%
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Valores experimentais reais e simulados - frequência de corte - $v_{out}$ \textit {vs} $v_{in}$}}{113}{figure.caption.139}%
 \addvspace {10\p@ }
