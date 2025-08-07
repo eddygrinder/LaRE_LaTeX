@@ -61,7 +61,7 @@ Estava dado o último passo na escolha do \textit{hardware} e do \textit{softwar
 \label{sec:solucaoproposta}
 Os objectivos principais foram apresentados na Secção \ref{sec:Objectivos} e as características gerais do projecto descritas na Secção \ref{sec:contextualização}. Pretende-se que o \acrshort{lare} seja um \acrshort{laboratório remoto} capaz de controlar e comandar um conjunto de experiências electrónicas, assim como efectuar medições de várias grandezas eléctricas. Para que a solução proposta seja completa e definitiva, é necessário definir os instrumentos de medida e os circuitos que compõem as experiências.
 
-No contexto desta dissertação, o instrumento de medida adoptado foi o \acrfull{virtualbench}, modelo VB-8012 que pode ser controlado de duas formas: através do \textit{software} fornecido pela \acrshort{ni} ou através do \textit{pyVirtualBench}\footnote{Apesar de não ser abordado no contexto desta dissertação, existe também a possibilidade de aceder ao \acrshort{virtualbench} através do \acrshort{labview}.} \cite{AutomatingVB}. O \textit{pyVirtualBench} é um \gls{wrapper}\footnote{Este \gls{wrapper} é um \textit{software} de terceiros, suportado e mantido pela comunidade e não é diretamente suportado pela \acrshort{ni}.} que permite controlar o \acrshort{virtualbench} através de uma aplicação \gls{python} \cite{pyvirtualbench}. No entanto, este \gls{wrapper} não é compatível com \textit{Linux}.
+No contexto desta dissertação, o instrumento de medida adoptado foi o \acrfull{virtualbench}, modelo VB-8012, que pode ser controlado de duas formas: através do \textit{software} fornecido pela \acrshort{ni} ou através do \textit{pyVirtualBench}\footnote{Apesar de não ser abordado no contexto desta dissertação, existe também a possibilidade de aceder ao \acrshort{virtualbench} através do \acrshort{labview}.} \cite{AutomatingVB}. O \textit{pyVirtualBench} é um \gls{wrapper}\footnote{Este \gls{wrapper} é um \textit{software} de terceiros, suportado e mantido pela comunidade e não é diretamente suportado pela \acrshort{ni}.} que permite controlar o \acrshort{virtualbench} através de uma aplicação \gls{python} \cite{pyvirtualbench}. No entanto, este \gls{wrapper} não é compatível com \textit{Linux}.
 
 Perante este facto, decidiu-se integrar um \acrshort{pc} no \acrshort{lare} - pormenores da instalação do \textit{driver} no \textit{site} da \acrshort{ni} \cite{AutomatingVB} - sendo que todo o peso computacional passaria para o \acrshort{pc} e o \gls{RaspberryPI} controlaria os relés. Esta decisão justifica-se pela possibilidade de, no futuro, o \textit{pyVirtualBench} vir a ser compatível com sistemas \textit{Linux}.
 
@@ -97,8 +97,8 @@ Como já se viu na Secção \ref{sec:contextualização}, a arquitectura do \acr
 
 Antes de mais, importa clarificar as formas de comunicação entre os diversos dispositivos que compõem o \acrshort{lare}. Tanto o servidor, como o \gls{RaspberryPI} e o \acrshort{virtualbench} têm disponíveis interfaces de rede sem fios e com fios, assim como \textit{interfaces} \acrshort{usb}. A comunicação entre os diversos dispositivos é feita da seguinte forma:
 \begin{itemize}
-    \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Para maior flexibilidade e simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets} que, através da sua API, facilitam a comunicação entre processos em rede, independentemente da infra-estrutura utilizada — seja por ligação com fios, sem fios ou através de redes locais, permitindo, assim, o envio e recepção de mensagens entre dispositivos ligados em rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} está representado na Figura \ref{fig:fluxogramasockets};
-    \item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}. Independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação;
+    \item \textbf{Servidor - \gls{RaspberryPI}}: comunicação via rede sem fios. Para maior flexibilidade e simplicidade de programação, a comunicação entre o servidor e o \gls{RaspberryPI} é feita através da rede sem fios, utilizando \textit{sockets} que, através da sua API, facilitam a comunicação entre processos em rede, independentemente da infraestrutura utilizada - seja por ligação com fios, sem fios ou através de redes locais, permitindo, assim, o envio e recepção de mensagens entre dispositivos ligados em rede \cite{Sockets}. O fluxograma de uma chamada ao \textit{sockets} está representado na Figura \ref{fig:fluxogramasockets};
+    \item \textbf{Servidor - \acrshort{virtualbench}}: comunicação via rede sem fios ou \acrshort{usb}. Entre estes dois dispositivos é, basicamente, indiferente a forma como é feita a comunicação. Isto porque esta parte é gerida pelos \textit{drivers} da aplicação instalada no \textit{Windows}, independentemente de se utilizar o \textit{pyVirtualBench} ou a aplicação;
     \item \textbf{Controlo de relés e medidas}: O controlo dos relés é feito através da ligação directa do \gls{RaspberryPI} ao \textit{driver} dos relés. Por sua vez, as leituras e medições das grandezas eléctricas são efectuadas pelo \acrshort{virtualbench}, ligado directamente aos pontos específicos do circuito.
 \end{itemize}
 
@@ -151,7 +151,7 @@ Isto significa que a Equação \ref{eq:leideohm} define uma relação linear ent
 	\label{fig:graphohm}
 \end{figure}
 
-Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificado nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. O tutor ou professor, poderá optar por apresentar o conceito de duas formas distintas, em ambos os casos são efectuadas cinco medições, construido o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador, aluno ou professor escolher a opção pretendida.}. 
+Da forma como foi implementado, há duas possibilidades de realizar este estudo, exemplificadas nas Figuras \ref{fig:Opção_1} e \ref{fig:Opção_2}. O tutor ou professor, poderá optar por apresentar o conceito de duas formas distintas, mas em ambos os casos são efectuadas cinco medições, construído o respectivo gráfico e calculado o valor do declive da recta analiticamente. A diferença está na forma como se confrontam os resultados práticos. No entanto, no contexto desta dissertação foi  implementado o caso descrito na Figura \ref{fig:Opção_1}\footnote{Como trabalho futuro, o menu poderia ser desenvolvido para o utilizador - aluno ou professor - escolher a opção pretendida.}. 
 
 \begin{figure}[hbtp]
 	\centering%
@@ -163,7 +163,7 @@ Da forma como foi implementado, há duas possibilidades de realizar este estudo,
 		\label{fig:experienciaOHM}%
 	\end{figure}
 
-No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções, sendo que no caso em que é desconhecida, o declive da recta é calculado e a partir deste do resultado infere-se o valor da resistência. 
+No caso em que a resistência é dada, o declive pode ser calculado e confrontado com as soluções e, no caso em que é desconhecida, o declive da recta é calculado e a partir deste resultado infere-se o valor da resistência. 
 
 \subsection{Rectificadores}
 \label{sec:circuitosrectificadores}
@@ -174,7 +174,7 @@ A Figura~\ref{fig:blocosrectificacao} apresenta o diagrama de blocos simplificad
 \begin{itemize}
     \item Bloco 1 - Transformador: reduz a tensão proveniente da rede eléctrica para valores mais baixos e adequada ao nível de tensão alternada que se deseja;
     \item Bloco 2 - Rectificação: realiza a conversão da tensão alternada \acrshort{ca} em tensão contínua unidirecional, ainda com ondulação;
-    \item Bloco 3 - Filtragem: responsável pela suavização da forma de onda, reduzindo a componente alternada (\textit{ripple});
+    \item Bloco 3 - Filtragem: suaviza a forma de onda, reduzindo a componente alternada (\textit{ripple});
     \item Bloco 4 - Estabilização:  regula e estabiliza a tensão de saída, garantindo um valor contínuo e constante.
 \end{itemize}
 
@@ -185,7 +185,7 @@ A Figura~\ref{fig:blocosrectificacao} apresenta o diagrama de blocos simplificad
 	\label{fig:blocosrectificacao}
 \end{figure}
 
-A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do Bloco 3 - Filtragem -  devendo esta ser minimizada para estabilizar a tensão de saída em corrente contínua - Bloco 4 - tal como ilustrado na Figura~\ref{fig:blocosrectificacao}. As Figuras~\ref{fig:formadeonda_MO} e \ref{fig:esquemaMO} representam, com mais pormenor, a forma de onda à saída do Bloco 3 quando é utilizada a rectificação de meia onda, considerando um díodo ideal. Estes circuitos e a respectiva fundamentação teórica são descritos com maior detalhe no Capítulo~4 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram adaptados.
+A tensão de \textit{ripple} é uma componente variável no tempo que surge à saída do Bloco 3 - Filtragem -  devendo esta ser minimizada para estabilizar a tensão de saída em corrente contínua - Bloco 4 - tal como ilustrado na Figura~\ref{fig:blocosrectificacao}. As Figuras~\ref{fig:formadeonda_MO} e \ref{fig:esquemaMO} representam, com mais pormenor, a forma de onda à saída do Bloco 3, quando é utilizada a rectificação de meia onda, considerando um díodo ideal. Estes circuitos e a respectiva fundamentação teórica são descritos com maior detalhe no Capítulo~4 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram adaptados.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -203,19 +203,19 @@ A tensão de \textit{ripple} pode ser calculada através da Equação \ref{eq:vr
 	U_{r} = U_{P}(1-e^{-\frac{T}{RC}})
 \end{equation}
 
-Observa-se, a partir da Equação \ref{eq:vripplecompleta}, que quando a constante de tempo $RC >> T$, o cálculo da tensão de \textit{ripple} pode ser reduzido à Equação \ref{eq:vripple}.
+Observa-se, a partir da Equação \ref{eq:vripplecompleta}, que, quando a constante de tempo $RC >> T$, o cálculo da tensão de \textit{ripple} pode ser reduzido à Equação \ref{eq:vripple}.
 
 \begin{equation} \label{eq:vripple}
 	U_{r} = \frac{U_{P}}{fRC}
 \end{equation}
 
-Sendo que, neste caso, a tensão de \textit{ripple} é baixa e $v_{o}$, ou seja, a tensão à saída do filtro é practicamente constante e dada pela Equação \ref{eq:tensaosaida}:
+Neste caso, a tensão de \textit{ripple} é baixa e $v_{o}$, ou seja, a tensão à saída do filtro é praticamente constante e dada pela Equação \ref{eq:tensaosaida}:
 
 \begin{equation} \label{eq:tensaosaida}
 	u_{o} = U_{P} - \dfrac{1}{2}U_{r}	
 \end{equation}
 
-No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificação de onda completa. A Figura~\ref{fig:formadeonda_OC} e a Figura~\ref{fig:esquemaOC} representam a forma de onda (... que como se pode ver a frequência do \textit{ripple} é o dobro da frequência da onda de entrada.) e o esquema, tal como descritos com maior detalhe no Capítulo~4 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram também adaptados. 
+No entanto, pode tornar-se este circuito mais eficiente, se se usar a rectificação de onda completa. A Figura~\ref{fig:formadeonda_OC} e a Figura~\ref{fig:esquemaOC} representam a forma de onda e o esquema, tal como descritos com maior detalhe no Capítulo~4 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram também adaptados. Note-se que, neste tipo de rectificação, a frequência da tensão de \textit{ripple} é o dobro da frequência da onda de entrada.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -224,7 +224,7 @@ No entanto, pode tornar-se este circuito mais eficiente se se usar a rectificaç
 		\qquad
 		\subfloat[\centering Esquema rectificador \label{fig:esquemaOC}]{{\includegraphics[width=5cm]{figures/onda_completa_Sedra.png} }}%
 		\caption{Rectificação onda completa \cite{sedrasmith}}%
-		\label{fig:rectificacaomeiaonda}%
+		\label{fig:rectificacaoondacompleta}%
 \end{figure}
 
 Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela Equação \ref{eq:vrippleOC}:
@@ -233,7 +233,7 @@ Sendo assim, o valor da tensão de \textit{ripple}, neste caso, será dado pela 
 	U_{r} = \frac{U_{P}}{2fRC}
 \end{equation}
 
-São estas formas de onda, representadas pelas Figuras \ref{fig:formadeonda_MO} e \ref{fig:sedraripplecompleta}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}. (A Equação \ref{eq:vripplecompleta} deve ser usada quando os valores dos condensadores e resistências são pequenos ou frequência é baixa, isto é, quando o \textit{ripple} não é desprezável.)
+São estas formas de onda, representadas pelas Figuras \ref{fig:formadeonda_MO} e \ref{fig:formadeonda_OC}, que se pretendem estudar e avaliar, assim como os valores dados pelas Equações \ref{eq:vripple} e \ref{eq:vrippleOC}. (A Equação \ref{eq:vripplecompleta} deve ser usada quando os valores dos condensadores e resistências são pequenos ou frequência é baixa, isto é, quando o \textit{ripple} não é desprezável.)
 
 \subsection{Filtros}
 Representados na Figura \ref{fig:filtrosesqgeral} estão os filtros simplificados, leccionados em contexto de sala de aula no ensino secundário. Estes circuitos são descritos com maior detalhe no Capítulo~17 da 8.\textsuperscript{a} edição de Sedra \textit{et al.}~\cite{sedrasmith}, de onde foram adaptados.
