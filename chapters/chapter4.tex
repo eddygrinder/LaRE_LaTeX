@@ -8,7 +8,7 @@
 \end{flushright}
 
 
-Este capítulo aprofunda os aspectos técnicos do LaRE, tomando como referência a arquitetura apresentada na Figura \ref{fig:arquitecturalore}. O desenvolvimento começou pela implementação e desenvolvimento do servidor \textit{Flask} e página \textit{web}, sendo que o primeiro circuito a ser implementado e testado foi a Lei de Ohm. O projecto foi evoluindo com a adição dos restantes circuitos que compõem o \acrshort{lare}. Para o desenvolvimento do \textit{software}, utilizou-se o \acrshort{ide} \textit{Visual Studio Code}\footnote{\url{https://code.visualstudio.com/}}, e o projeto encontra-se alojado no \textit{GitHub}. O sistema operativo instalado no \gls{RaspberryPI} é uma versão ligeiramente modificada do \textit{Arch Linux ARM}. Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em \textit{breadboards}, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}. No Anexo~\ref{AppendixA} encontram-se os esquemas completos de todas as experiências, bem como o desenho das placas que compõem a matriz do \acrshort{lare}. Esta matriz foi organizada em três placas distintas: uma dedicada à experiência da Lei de \textit{Ohm}, outra às experiências de rectificação e filtragem e uma terceira exclusivamente responsável pelas fontes de alimentação.
+Este capítulo aprofunda os aspectos técnicos do LaRE, tomando como referência a arquitetura apresentada na Figura \ref{fig:arquitecturalore}. O desenvolvimento começou pela implementação e desenvolvimento do servidor \textit{Flask} e página \textit{web}, sendo que o primeiro circuito a ser implementado e testado foi a Lei de Ohm. O projecto foi evoluindo com a adição dos restantes circuitos que compõem o \acrshort{lare}. Para o desenvolvimento do \textit{software}, utilizou-se o \acrshort{ide} \textit{Visual Studio Code}\footnote{\url{https://code.visualstudio.com/}}, e o projecto encontra-se alojado no \textit{GitHub}. O sistema operativo instalado no \gls{RaspberryPI} é uma versão ligeiramente modificada do \textit{Arch Linux ARM}. Os circuitos que compõem o \acrshort{lare} foram testados e validados individualmente em \textit{breadboards}, antes de se proceder à construção da matriz de placas, como referido na Secção \ref{sec:matriz}. No Anexo~\ref{AppendixA} encontram-se os esquemas completos de todas as experiências, bem como o desenho das placas que compõem a matriz do \acrshort{lare}. Esta matriz foi organizada em três placas distintas: uma dedicada à experiência da Lei de \textit{Ohm}, outra às experiências de rectificação e filtragem e uma terceira exclusivamente responsável pelas fontes de alimentação.
 
 \section{Hardware}
 \subsection{Relés}
@@ -33,7 +33,7 @@ Conforme referido na Secção \ref{sec:driver}, o \gls{RaspberryPI} não tem cap
 	\label{fig:diagramablocos2003}
 \end{figure}
 
-O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimentação dos relés — \SI{12}{\volt} no caso dos utilizados neste projecto — e destina-se aos díodos de ``roda livre'', conforme descrito na Secção~\ref{sec:reles}. As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplos prático que ilustram o funcionamento do procedimento referido na Figura \ref{fig:esquematico74hc595}. Neste exemplo, foi utilizado um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, variando apenas a disposição dos pinos.
+O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimentação dos relés — \SI{12}{\volt} no caso dos utilizados neste projecto — e destina-se aos díodos de ``roda livre'', conforme descrito na Secção~\ref{sec:reles}. As Figuras \ref{fig:comandorelesfull} e \ref{fig:exemplovoltimetro} servem como exemplos práticos ilustrando o funcionamento do procedimento referido na Figura \ref{fig:esquematico74hc595}. Neste exemplo, foi utilizado um relé \acrshort{spst}. No entanto, o funcionamento é idêntico para os relés \acrshort{dpst}, variando apenas a disposição dos pinos.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -45,7 +45,7 @@ O terminal 9, designado por \textit{COM}, deve ser ligado à tensão de alimenta
 		\label{fig:ligacao5952003}%
 	\end{figure}
 
-As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{RaspberryPI} através do registo de deslocamento, conforme apresentado na Figura \ref{fig:comandorelesfull}. As saídas $O_{1}$ a $O_{7}$ controlam os relés nos terminais ``3'', enquanto os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}, como ilustrado na Figura \ref{fig:exemplovoltimetro}. No caso específico do exemplo acima descrito, se $I_{5} = \SI{0}{\volt}$, então a saída $O_{5} = \SI{12}{\volt}$, não existindo diferença de potencial entre os terminais ``2'' e ``3'' da bobina do relé ``K5''. Nesse cenário, o relé permanece desativado. Por outro lado, se $I_{5} = \SI{12}{\volt}$, a saída $O_{5} = \SI{0}{\volt}$, estabelecendo-se uma diferença de potencial nos terminais da bobina, o que provoca a ativação do relé. No caso em que a \textit{string} a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
+As entradas $I_{1}$ a $I_{7}$ recebem os \textit{bits} enviados pelo \gls{RaspberryPI} através do registo de deslocamento, conforme apresentado na Figura \ref{fig:comandorelesfull}. As saídas $O_{1}$ a $O_{7}$ controlam os relés nos terminais ``3'', enquanto os terminais ``2'' dos relés são ligados aos \SI{12}{\volt}, como ilustrado na Figura \ref{fig:exemplovoltimetro}. No caso específico do exemplo acima descrito, se $I_{5} = \SI{0}{\volt}$, então a saída $O_{5} = \SI{12}{\volt}$, não existindo diferença de potencial entre os terminais ``2'' e ``3'' da bobina do relé ``K5''. Nesse cenário, o relé permanece desactivado. Por outro lado, se $I_{5} = \SI{12}{\volt}$, a saída $O_{5} = \SI{0}{\volt}$, estabelecendo-se uma diferença de potencial nos terminais da bobina, o que provoca a activação do relé. No caso em que a \textit{string} a ser transmitida for maior que 8 \textit{bits}, há a necessidade de usar mais do que um registo de deslocamento. Neste caso, o pino 9 - $Q_{H}'$ - do primeiro registo é ligado ao pino \acrshort{ser} do segundo registo e assim sucessivamente.
 
 \subsection{Registo de deslocamento}
 \label{sec:hwregistodeslocamento}
@@ -168,7 +168,7 @@ Portanto, este é um valor perfeitamente aceitável para alimentar os circuitos 
 \label{sec:fontealternada}
 As experiências respeitantes aos rectificadores e filtros utilizam tensão alternada sinusoidal. Tal como já foi referido anteriormente, tentou-se, sempre que possível, simplificar o uso de fontes externas. 
 
-Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas, se se pretender usar um gerador de sinal. Quer isto dizer que não é possível medir, simultaneamente, os sinais de entrada e saída. Como se pode ver pelo esquema representado na Figura \ref{fig:gerador-massa}, o díodo está curto-circuitado (linha magenta a tracejado, entre os pontos 2 e 3) devido ao facto das massas serem comuns. 
+Na prática e em contexto de sala de aula, a experiência de rectificação de onda completa levanta um problema de massas, se se pretender usar um gerador de sinal. Quer isto dizer que não é possível medir, simultaneamente, os sinais de entrada e saída. Como se pode ver pelo esquema representado na Figura \ref{fig:gerador-massa}, o díodo está curto-circuitado (linha magenta a tracejado, entre os pontos 2 e 3) devido ao facto de as massas serem comuns. 
 
 \begin{figure}[hbtp]
 	\centering
@@ -181,8 +181,8 @@ A forma de contornar este problema é usar um transformador e, assim, medir a on
 
 No caso do \acrshort{lare}, e com recurso ao uso de relés, é possível controlar a massa dos dois canais do osciloscópio por \textit{software}, tal como representado no esquema simplificado da Figura \ref{fig:ondacompleta-massa} e representar as duas ondas (entrada e saída) na mesma imagem. De referir que, desta forma, seria possível usar o gerador de sinal. No entanto, o uso do transformador justifica-se pelas seguintes razões:
 \begin{itemize}
-	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$) ou duas no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
-	\item Em contexto laboratorial e de sala de aula usa-se um transformador para rectificar a onda completa.
+	\item Facilidade e simplicidade em controlar as massas por \textit{software} - três, no caso do uso do gerador de sinal ($CH_{1-}$, $CH_{2-}$ e $VG_{-}$), ou duas, no caso de se usar um transformador ($CH_{1-}$, $CH_{2-}$);
+	\item Em contexto laboratorial e de sala de aula, usa-se um transformador para rectificar a onda completa.
 \end{itemize}
 
 %No entanto, para o estudo da rectificação da onda completa, tal não foi possível. Enquanto que no rectificador de meia-onda (... e filtros) é possível usar o gerador de sinal do \acrshort{virtualbench} para medir as ondas de entrada e saída simultaneamente, tal não é possível na rectificação de onda completa, devido ao problema das massas e consequente curto-circuito do díodo na ponte rectificadora. 
@@ -226,7 +226,7 @@ Na Figura \ref{fig:esq_geral_ohm} está representado o esquema simplificado da L
 		\label{fig:}%
 	\end{figure}
 
-No entanto, faz-se notar o seguinte: Embora os aparelhos de medida sejam independentes, partilham a mesma massa. Esta escolha foi motivada pela indisponibilidade de relés duplos em contexto laboratorial, pelo que se optou por fazer a gestão da forma a que o propósito do projecto fosse atingido e o conceito provado. Na Figura \ref{fig:full_reles} apresenta-se o esquema simplificado, com os relés duplos, adicionados aos aparelhos de medida. 
+No entanto, faz-se notar o seguinte: embora os aparelhos de medida sejam independentes, partilham a mesma massa. Esta escolha foi motivada pela indisponibilidade de relés duplos em contexto laboratorial, pelo que se optou por fazer a gestão da forma a que o propósito do projecto fosse atingido e o conceito provado. Na Figura \ref{fig:full_reles} apresenta-se o esquema simplificado, com os relés duplos, adicionados aos aparelhos de medida. 
 
 De referir que, se se pretender expandir o \acrshort{lare} com mais circuitos, é possível utilizar o voltímetro e o amperímetro da forma como estão implementados. A Tabela \ref{Table:exemplomedicaoohm} apresenta o estado dos relés, $K_{5}$ a $K_{8}$ consoante a grandeza que se pretende medir.
 
@@ -272,7 +272,7 @@ Na Figura~\ref{fig:esq_geral_ohm} apresenta-se o esquema simplificado da impleme
 	\label{fig:Implementacaoleideohm}
 \end{figure}
 
-A fonte de tensão e os aparelhos de medida foram projetados de forma a serem independentes, tal como referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desativando $K_{5}$ e $K7$. 
+A fonte de tensão e os aparelhos de medida foram projectados de forma a serem independentes, tal como é referido na Secção \ref{sec:aparelhosmedida}, permitindo a sua utilização caso se pretenda expandir o \acrshort{lare} com mais experiências. A fonte de tensão pode ser utilizada desactivando $K_{5}$ e $K7$. 
 
 O funcionamento do circuito é relativamente simples, sendo que qualquer que seja a resistência a medir, é fechado o respectivo relé - $K_{1}$ ou $K_{2}$ ou $K_{3}$; a fonte $U_{CC}$ é ligada ao circuito através do relé $K_{4}$ e $K_{7}$. A medição da tensão e da corrente faz-se da seguinte forma:
 
@@ -354,7 +354,7 @@ Portanto, se se pretender estudar o filtro passa-baixo, é activado o relé $K_{
 \label{sec:implementacaosoftware}
 Hoje em dia vive-se (n)uma Era em que toda a informação está disponível na ``ponta dos dedos'' e à distância de um \textit{click}. A pesquisa, desenvolvimento e testes dos assuntos mais técnicos revelou-se um processo exigente e, por vezes, moroso. A abundância dos recursos disponíveis colocou o desafio adicional de tentar perceber a dicotomia certo/errado. No apoio a este processo, recorreu-se à Inteligência Artificial, documentação técnica \textit{online}, fóruns de discussão, ajuda pessoal, tutoriais \textit{online} e vídeos no \textit{YouTube}.
 
-Este projeto de código fonte aberto está dividido em dois repositórios, disponíveis para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE} e \href{https://github.com/eddygrinder/LaRE_PICode}{PiCode}. Assim, os ficheiros são referenciados relativamente ao respectivo repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos. Não se pretende, contudo, abordar exaustivamente todas as instruções ou métodos de configuração do \acrshort{virtualbench}, uma vez que os ficheiros se encontram comentados, sendo possível obter informações adicionais através da sua consulta. 
+Este projecto de código fonte aberto está dividido em dois repositórios, disponíveis para consulta e modificação sob a licença GPL-3.0 (GNU General Public License, versão 3) no GitHub: \href{https://github.com/eddygrinder/LaRE}{LaRE} e \href{https://github.com/eddygrinder/LaRE_PICode}{PiCode}. Assim, os ficheiros são referenciados relativamente ao respectivo repositório. Ao longo deste capítulo, sempre que se justificar e para fins de clareza, será apresentado o código necessário - em pequenos trechos - de forma a melhor ilustrar os conceitos discutidos. Não se pretende, contudo, abordar exaustivamente todas as instruções ou métodos de configuração do \acrshort{virtualbench}, uma vez que os ficheiros se encontram comentados, sendo possível obter informações adicionais através da sua consulta. 
 
 \subsection{Servidor Flask}
 \label{sec:flask}
@@ -382,13 +382,13 @@ A estrutura de directórios do \textit{Flask} tem uma base pré-definida que nã
 A raiz do projecto é o directório ``\textit{webserver}'' e nele estão contidos o ficheiro principal, assim como outros directórios e ficheiros de configuração essenciais:
 \begin{itemize}
 	\item \textit{main.py}: O ficheiro principal do aplicativo que inicializa e configura o \textit{Flask};
-	\item \textit{requirements.txt}: Uma lista de dependências do projeto que podem ser instaladas usando \gls{pip};
+	\item \textit{requirements.txt}: Uma lista de dependências do projecto que podem ser instaladas usando \gls{pip};
 	\item \textit{static/}: Este directório contém os ficheiros estáticos como \acrshort{css}, \textit{JavaScript} e as imagens usadas em toda a aplicação;
 	\item \textit{templates/}: Contém os modelos \acrshort{html} usado para renderizar as visualizações;
 	\item \textit{instance/}: Diretório para armazenar ficheiros de configuração ou ficheiros que mudam em tempo de execução, específicos da cada instância, por exemplo, ficheiros da base de dados.
 \end{itemize}
 
-Dentro da raiz, criou-se o directório \textit{website} onde se incluiu os ficheiros respeitantes ao funcionamento do \textit{site}. Nele constam os já descritos \textit{templates}, \textit{static} e ainda os seguintes ficheiros:
+Dentro da raiz, criou-se o directório \textit{website} onde se incluiu os ficheiros respeitantes ao funcionamento do \textit{site}. Dele constam os já descritos \textit{templates}, \textit{static} e ainda os seguintes ficheiros:
 
 \begin{itemize}
 	\item \textit{\_\_init\_\_.py}: Inicializa o \textit{Flask} e define as configurações. Este ficheiro dentro da directoria \textit{website} faz com que esta seja tratada como um pacote \textit{Python}. Isto quer dizer que a directoria pode ser importada e tudo o que estiver dentro é executado automaticamente;
@@ -459,10 +459,10 @@ app.register_blueprint(auth, url_prefix='/')
 	\end{minipage}
 \end{center}
 
-Isto quer dizer que ao registar a \textit{blueprint} com o prefixo ``/'', os \acrshort{url}s serão acessíveis através da raiz da aplicação.
+Isto quer dizer que, ao registar a \textit{blueprint} com o prefixo ``/'', os \acrshort{url}s serão acessíveis através da raiz da aplicação.
 
 \subsubsection{Pedidos}
-A capacidade de uma aplicação \textit{web} em responder a solicitações de dados do cliente é um requisito essencial. No \textit{Flask} esta informação é fornecida pelo objeto global \textit{\textbf{request}}. Este objeto contém todos os detalhes da solicitação, como os métodos \acrshort{http} usados (\textit{GET}, \textit{POST}, etc.), os \textit{headers} os \textit{cookies} ou o corpo da requisição. O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como descrito no ficheiro auth.py. Quando se adiciona um ponto de interrogação (?) seguido de pares chave-valor (key=value) no final de um \acrshort{url}, está a enviar-se dados adicionais ao servidor, esses dados são chamados de \textbf{parâmetros do \acrshort{url}}, como se pode ver na Listagem \ref{lst:paramurl}.
+A capacidade de uma aplicação \textit{web} em responder a solicitações de dados do cliente é um requisito essencial. No \textit{Flask} esta informação é fornecida pelo objeto global \textit{\textbf{request}}. Este objeto contém todos os detalhes da solicitação, como os métodos \acrshort{http} usados (\textit{GET}, \textit{POST}, etc.), os \textit{headers} os \textit{cookies} ou o corpo da requisição. O método de requisição pode ser determinado através do atributo \textit{\textbf{method}}. Para aceder aos dados de um formulário (transmitidos numa requisição \textit{POST} ou \textit{PUT}), utiliza-se o atributo \textit{\textbf{form}}, tal como descrito no ficheiro auth.py. Quando se adiciona um ponto de interrogação (?) seguido de pares chave-valor (key=value) no final de um \acrshort{url}, está a enviar-se dados adicionais ao servidor, chamados de \textbf{parâmetros do \acrshort{url}}, como se pode ver na Listagem \ref{lst:paramurl}.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Html, caption=Exemplo argumentos passados ao servidor - ohm.html, label=lst:paramurl]
@@ -473,9 +473,9 @@ const url = `/config_VirtualBench?parameter=${parameter}&Vcc=${Vcc}&R=${Resistan
 Como referido na Secção~\ref{sec:jinja2}, a renderização das páginas \acrshort{html} é realizada através do motor \textit{Jinja}. No caso específico do \acrshort{lare}, o \textit{Flask} procura os modelos a renderizar na pasta \textit{templates}, conforme ilustrado na Figura~\ref{fig:estruturapastas}. Na página oficial do \textit{Flask} é recomendado que se aceda aos parâmetros do \acrshort{url} com \textit{\textbf{get}} ou capturando o \textit{\textbf{KeyError}}, uma vez que os utilizadores podem alterar o \acrshort{url} e, nesse caso, apresentar uma página \textit{400 bad request} não é de fácil interpretação.
 
 \subsubsection{Base de dados}
-A aplicação desenvolvida usa uma base de dados e autenticação de utilizador, a ligação com a base de dados é aberta no início do pedido e é obtida a informação do utilizador. No final do pedido, a ligação com a base de dados é fechada. 
+A aplicação desenvolvida usa uma base de dados e autenticação de utilizador. A ligação com a base de dados é aberta no início do pedido e é obtida a informação do utilizador. No final do pedido, a ligação com a base de dados é fechada. 
 
-No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentados duas alternativas: \textit{SQLite 3} e \textit{SQLAlchemy}. Tal como sugeridoo na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, descrita no ficheiro \textit{\textunderscore\textunderscore init.py\textunderscore\textunderscore}.
+No contexto da documentação do \textit{Flask} e implementação de uma base de dados, são apresentadas duas alternativas: \textit{SQLite 3} e \textit{SQLAlchemy}. Tal como sugerido na documentação, usou-se a extensão \textit{Flask-SQLAlchemy}, descrita no ficheiro \textit{\textunderscore\textunderscore init.py\textunderscore\textunderscore}.
 
 \subsubsection{Autenticação}
 A segurança da aplicação é assegurada através das funcionalidades de \textit{login} e \textit{logout}, implementadas no ficheiro \textit{auth.py}. Para esse fim, foi instalada a extensão \textit{flask-login} que simplifica a gestão de sessões de utilizadores ao permitir manter o estado autenticado entre diferentes requisições. Esta ferramenta disponibiliza métodos como \textbf{\textit{login\textunderscore user()}}, \textbf{\textit{logout\textunderscore user()}} e \textbf{\textit{current\textunderscore user}}, que simplificam a verificação e controlo do estado de autenticação. O processo de registo envolve a recolha de credenciais, como nome de utilizador e senha, garantindo o armazenamento seguro da senha através de \textbf{\textit{hashing}} com \textbf{\textit{generate\textunderscore password\textunderscore hash}}. No \textit{login}, a aplicação verifica as credenciais fornecidas, compara a senha inserida com a armazenada usando \textbf{\textit{check\textunderscore password\textunderscore hash}} e, se for válida, inicia a sessão do utilizador. Além disso, certas rotas são protegidas para garantir que apenas utilizadores autenticados as possam aceder, utilizando o \textit{decorator} \textbf{\textit{@login\textunderscore required}}, que redireciona utilizadores não autenticados para a página de \textit{login}. A gestão de sessões é feita através de \textit{cookies} seguros, permitindo ainda a funcionalidade de lembrar a sessão entre reinícios do navegador, caso seja activado o parâmetro \textbf{\textit{remember=True}} no \textbf{\textit{login\textunderscore user}}. 
@@ -493,9 +493,9 @@ Nesta secção, o foco será analisar a comunicação (e troca de parâmetros) e
 	\label{fig:diagramasimplificado}
 \end{figure}
 
-A arquitectura do sistema é composta por multiplos ficheiros que comunicam entre si, englobando a troca de parâmetros. O critério utilizado foi o de manter o ficheiro \textit{views.py} o mais leve e simples possível, mantendo-se o comando e controlo dos dispostivos em ficheiros separados.
+A arquitectura do sistema é composta por múltiplos ficheiros que comunicam entre si, englobando a troca de parâmetros. O critério utilizado foi o de tornar o ficheiro \textit{views.py} o mais leve e simples possível, mantendo-se o comando e controlo dos dispostivos em ficheiros separados.
 
-Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projeto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
+Como mencionado na Secção \ref{sec:flask}, a estrutura de directórios do \textit{Flask} possui uma base pré-definida, mas suficientemente flexível para ser adaptada conforme os requisitos específicos do projecto, como ilustrado na Figura \ref{fig:estruturapastas}. De uma forma geral, foram criados ficheiros específicos para cada experiência, adoptando o critério de evitar uma excessiva modularização do código. Embora esta prática ofereça vantagens, também apresenta as suas desvantagens - devido à fragmentação excessiva - já que pode tornar a compreensão e manutenção do código mais complexa.
 
 Os seguintes ficheiros foram criados e associados às respectivas experiências:
 \\[1em]
@@ -582,9 +582,9 @@ Do lado do \textit{Raspberry Pi}, embora de uma forma mais simples, também se u
 	\item \textit{shift\textunderscore register.py} - responsável por activar os relés.
 \end{itemize}
 
-A comunicação com o \textit{Raspberry Pi} é estabelecida através de sockets, um método já descrito na Secção~\ref{sec:arquitectura}. Após a configuração e teste dos parâmetros, uma \textit{string} representando o número de relés a ativar - 8 \textit{bits} ou 13 \textit{bits}, dependendo dos circuitos - é enviada através da \textit{interface} de rede. A implementação do mecanismo de comunicação encontra-se no ficheiro \textit{configRelays.py}, na função \textit{config\textunderscore Relays}.
+A comunicação com o \textit{Raspberry Pi} é estabelecida através de sockets, um método já descrito na Secção~\ref{sec:arquitectura}. Após a configuração e teste dos parâmetros, uma \textit{string} representando o número de relés a activar - 8 \textit{bits} ou 13 \textit{bits}, dependendo dos circuitos - é enviada através da \textit{interface} de rede. A implementação do mecanismo de comunicação encontra-se no ficheiro \textit{configRelays.py}, na função \textit{config\textunderscore Relays}.
 
-Sendo assim, o ficheiro \textit{receive.py} é executado inicialmente e aguarda pela envio da \textit{string}. De referir que, embora o \textit{socket} esteja configurado em \textit{blocking mode} - quer isto dizer que o cliente ficará bloqueado na Linha~\ref{line:blockmode}, da Listagem \ref{lst:socketblock}, esperando uma resposta do servidor \cite{Sockets} (acontece enquanto a string não for enviada) - optou-se por enviar uma confirmação do servidor ao cliente. Não sendo estritamente necessário, foi adicionada como auxílio à depuração.
+Sendo assim, o ficheiro \textit{receive.py} é executado inicialmente e aguarda pelo envio da \textit{string}. De referir que, embora o \textit{socket} esteja configurado em \textit{blocking mode} - quer isto dizer que o cliente ficará bloqueado na Linha~\ref{line:blockmode}, da Listagem \ref{lst:socketblock}, esperando uma resposta do servidor \cite{Sockets} (acontece enquanto a string não for enviada) - optou-se por enviar uma confirmação do servidor ao cliente. Não sendo estritamente necessário, foi adicionada como auxílio à depuração.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{Block Mode \textins{Sockets} configRelays.py}, label=lst:socketblock]
@@ -602,7 +602,7 @@ Sendo assim, o ficheiro \textit{receive.py} é executado inicialmente e aguarda 
 
 O passo final é a activação dos relés, realizada no ficheiro \textit{shift\textunderscore register.py}, função \textit{commandRelays}. O procedimento foi descrito na Secção \ref{sec:hwregistodeslocamento}, sendo que os modos de funcionamento estão representados na Tabela \ref{Table:funcSN74HC595}.
 
-Para que as experiências funcionem correctamente, todos os relés devem ser activados em simultaneo. Para isso, a sequência de controlo dos relés é representada por uma \textit{string} composta por 8 ou 13 digitos binários, conforme as experiências, onde cada carácter indica o estado (ligado ou desligado) de um relé. Esta \textit{string} é posteriormente convertida para um número inteiro, sobre o qual é realizada uma operação de \textit{and bit} a \textit{bit}. Cada um dos \textit{bits} resultantes é, então, enviado sequencialmente para o registo de deslocamento, numa configuração \acrshort{sipo}, conforme ilustrado na Listagem \ref{lst:andbitabit}. Assim que os 8 ou 13 \textit{bits} forem transferidos para o registo, a saída paralela será ativada, resultando na activação dos relés.
+Para que as experiências funcionem correctamente, todos os relés devem ser activados em simultaneo. Para isso, a sequência de controlo dos relés é representada por uma \textit{string} composta por 8 ou 13 dígitos binários, conforme as experiências, em que cada carácter indica o estado (ligado ou desligado) de um relé. Esta \textit{string} é posteriormente convertida para um número inteiro, sobre o qual é realizada uma operação de \textit{and bit} a \textit{bit}. Cada um dos \textit{bits} resultantes é, então, enviado sequencialmente para o registo de deslocamento, numa configuração \acrshort{sipo}, conforme ilustrado na Listagem \ref{lst:andbitabit}. Assim que os 8 ou 13 \textit{bits} forem transferidos para o registo, a saída paralela será activada, resultando na activação dos relés.
 
 \begin{minipage}{0.9\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=\textit{And bit} \textit{bit shift\textunderscore register.py}, label=lst:andbitabit]
@@ -675,7 +675,7 @@ A partir do objeto \textit{virtualbench}, é possível aceder aos diferentes ins
 	\item \textit{voltage\_level} - linha \ref{line:voltagelevel}: define o valor da tensão de saída. No caso deste exemplo, \SI{1.0}{\volt}. Pode ser, também, atribuída uma variável - $V_{cc}$ - com base nos valores apresentados na Figura~\ref{fig:pagohm});
 	\item  \textit{current\_limit} - linha \ref{line:currentlimit}: é configurado o limite de corrente para \SI{0.5}{\ampere};
 	\item \textit{ps.configure\_voltage\_output(channel, voltage\_level, current\_limit)} - linha \ref{line:configvoltage}: configura a fonte de alimentação com os parâmetros definidos nas linhas \ref{line:channel} a \ref{line:currentlimit};
-	\item \textit{ps.enable\_all\_outputs(True)} - linha \ref{line:enableoutputs}: ativa todas as saídas da fonte de alimentação. No entanto, só a saída correspondente ao canal definido na linha \ref{line:channel} será ativada.
+	\item \textit{ps.enable\_all\_outputs(True)} - linha \ref{line:enableoutputs}: activa todas as saídas da fonte de alimentação. No entanto, só a saída correspondente ao canal definido na linha \ref{line:channel} será activada.
 \end{itemize}
 
 No final da execução, os instrumentos e o \acrshort{virtualbench} têm de ser libertados, por esta ordem. Isto é feito através do método \textit{instrumento.release()}. Se tal não for feito, o \acrshort{virtualbench} e os instrumentos chamados não serão libertados, ficando inacessíveis para futuras chamadas. 
@@ -857,7 +857,7 @@ A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiênci
 		\label{fig:seleccaoparametros}%
 \end{figure}
 
-As medições e construção do gráfico são realizadas por \textit{software}, baseadas nos valores seleccionados pelos utilizadores. Os resultados obtidos podem, então, ser comparados com o gráfico teórico, definido na Figura \ref{fig:sedraripple} ou pela Equação \ref{eq:vripple}. Para o mesmo par RC, os utilizadores podem, ainda, variar a frequência e comparar os resultados obtidos.
+As medições e construção do gráfico são realizadas por \textit{software}, baseadas nos valores seleccionados pelos utilizadores. Os resultados obtidos podem, então, ser comparados com o gráfico teórico, definido na Figura \ref{fig:formadeonda_MO} ou pela Equação \ref{eq:vripple}. Para o mesmo par RC, os utilizadores podem, ainda, variar a frequência e comparar os resultados obtidos.
 
 Relativamente ao rectificador de onda completa, a Figura \ref{fig:ondacompletamenuCTRL} apresenta a página de controlo da experiência, que é praticamente idêntica à do rectificador de meia onda, excepto pelo facto de a frequência não poder ser ajustada pelo utilizador. Os valores dos condensadores e resistências são os mesmos para ambas as experiências.
 
