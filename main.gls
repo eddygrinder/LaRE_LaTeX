@@ -27,7 +27,7 @@
 		\setentrycounter[]{page}\glsnumberformat{53}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{pc/104}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{52}}}%
+		\setentrycounter[]{page}\glsnumberformat{53}}}%
 \glossentry{python}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{42\delimR 44}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
@@ -35,8 +35,7 @@
 		\setentrycounter[]{page}\glsnumberformat{24}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{26}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{43\delimR 46}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{53}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{55\delimN 56}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{54\delimR 56}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{58\delimR 60}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{69\delimR 71}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
