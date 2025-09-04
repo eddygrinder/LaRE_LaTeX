@@ -75,7 +75,7 @@ Como pode ser visto na Figura \ref{fig:paineldianteiro} ou na Figura \ref{fig:pr
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/fontes_VB.png}
+	\includegraphics[width=0.4\textwidth]{figures/fontes_VB.png}
 	\caption{Fontes de tensão do \acrshort{virtualbench}}
 	\label{fig:promenorfontes}
 \end{figure}
@@ -365,7 +365,7 @@ O fluxograma apresentado na Figura \ref{fig:funcflask} apresenta o funcionamento
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{figures/fluxograma_flask.drawio.png}
+	\includegraphics[width=0.4\textwidth]{figures/fluxograma_flask.drawio.png}
 	\caption{Funcionamento geral \textit{Flask}}
 	\label{fig:funcflask}
 \end{figure}
@@ -375,7 +375,7 @@ A estrutura de directórios do \textit{Flask} tem uma base pré-definida que nã
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.3\textwidth]{figures/tree_flask.png}
-	\caption{Estrutura de directórios - \textit{Flask} \textbf{ main.html está a mais}}
+	\caption{Estrutura de directórios - \textit{Flask}}
 	\label{fig:estruturapastas}
 \end{figure}
 
@@ -385,7 +385,7 @@ A raiz do projecto é o directório ``\textit{webserver}'' e nele estão contido
 	\item \textit{requirements.txt}: Uma lista de dependências do projecto que podem ser instaladas usando \gls{pip};
 	\item \textit{static/}: Este directório contém os ficheiros estáticos como \acrshort{css}, \textit{JavaScript} e as imagens usadas em toda a aplicação;
 	\item \textit{templates/}: Contém os modelos \acrshort{html} usado para renderizar as visualizações;
-	\item \textit{instance/}: Diretório para armazenar ficheiros de configuração ou ficheiros que mudam em tempo de execução, específicos da cada instância, por exemplo, ficheiros da base de dados.
+	\item \textit{instance/}: Directório para armazenar ficheiros de configuração ou ficheiros que mudam em tempo de execução, específicos da cada instância, por exemplo, ficheiros da base de dados.
 \end{itemize}
 
 Dentro da raiz, criou-se o directório \textit{website} onde se incluiu os ficheiros respeitantes ao funcionamento do \textit{site}. Dele constam os já descritos \textit{templates}, \textit{static} e ainda os seguintes ficheiros:
@@ -489,7 +489,7 @@ Nesta secção, o foco será analisar a comunicação (e troca de parâmetros) e
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/Diagrama_simplificado.drawio.png}
-	\caption{Diagrama de comunicação simplificado [REVER]}
+	\caption{Diagrama de comunicação simplificado}
 	\label{fig:diagramasimplificado}
 \end{figure}
 
@@ -620,9 +620,7 @@ Para que as experiências funcionem correctamente, todos os relés devem ser act
 
 \subsubsection{VirtualBench - Configurações e medições}
 \label{sec:configmedicaoes}
-O comando e controlo do \acrshort{virtualbench} (e dos respetivos instrumentos) — representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas — é realizado através da biblioteca \textit{pyVirtualBench} \cite{docpyvirtualbench}, a qual, como referido na Secção~\ref{sec:solucaoproposta}, funciona como um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação desenvolvida em \textit{Python}. A documentação desta biblioteca, disponível no endereço indicado, é bastante completa e detalhada, sendo recomendada para aprofundamento técnico.
-
-Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se adequam aos objectivos deste projecto são:
+O comando e controlo do \acrshort{virtualbench} (e dos respetivos instrumentos) — representado na Figura~\ref{fig:diagramasimplificado} pelas setas vermelhas — é realizado através da biblioteca \textit{pyVirtualBench} \cite{docpyvirtualbench}, a qual, como referido na Secção~\ref{sec:solucaoproposta}, funciona como um \textit{wrapper} que permite controlar o \acrshort{virtualbench} a partir de uma aplicação desenvolvida em \textit{Python}. A documentação desta biblioteca, disponível no endereço indicado, é bastante completa e detalhada, sendo recomendada para aprofundamento técnico. Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos, sendo que, aqueles que mais se adequam aos objectivos deste projecto são:
 \begin{itemize}
 	\item \textit{dmm\_example.py}: exemplo que demonstra como efetuar medições utilizando o multímetro digital;
 	\item \textit{fgen\_example.py}: exemplo que demonstra como configurar e gerar uma onda através do gerador de sinal;
@@ -630,9 +628,9 @@ Além de instalar a biblioteca, os autores disponibilizam uma série de exemplos
 	\item \textit{ps\_example.py}: exemplo que demonstra como efetuar medições utilizando a fonte de alimentação.
 \end{itemize}
 
-De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a referida biblioteca e adaptaram-se ao contexto do projecto. 
+De forma a realizar as configurações e medições do \acrshort{virtualbench}, tomou-se como ponto de partida os exemplos já fornecidos com a referida biblioteca e adaptaram-se ao contexto do projecto. Nesta secção, apresenta-se como exemplo a configuração da fonte de alimentação, por ser o único instrumento utilizado em todas as experiências realizadas.  
 
-Nesta secção, apresenta-se como exemplo a configuração da fonte de alimentação, por ser o único instrumento utilizado em todas as experiências realizadas.  Através da análise dos exemplos disponibilizados para o \acrshort{virtualbench} (e que estão definidos no repositório já mencionado do \textit{GitHub}), foi possível compreender a estrutura geral de configuração aplicada aos instrumentos e fontes de alimentação. Com base nessa análise, determinou-se a seguinte lógica de funcionamento:
+Através da análise dos exemplos disponibilizados para o \acrshort{virtualbench} (e que estão definidos no repositório já mencionado do \textit{GitHub}), foi possível compreender a estrutura geral de configuração aplicada aos instrumentos e fontes de alimentação. Com base nessa análise, determinou-se a seguinte lógica de funcionamento:
 
 \begin{enumerate}
 	\label{item:logica}
@@ -655,7 +653,7 @@ A aquisição do \acrshort{virtualbench}, identificado como \textit{VB8012-30A21
 \end{minipage}
 \end{center}
 
-A partir do objeto \textit{virtualbench}, é possível aceder aos diferentes instrumentos, sendo que a aquisição é feita através do método \textit{acquire\_\textless instrumento\textgreater()}. Essa instância é armazenada numa variável definida pelo utilizador, permitindo o acesso às funcionalidades de configuração, controlo e medição disponibilizadas por esse instrumento. Na Listagem \ref{lst:instanciacao}, linha \ref{line:acquireps}, pode ver-se, a título de exemplo, como é feita a aquisição da fonte de alimentação, que é armazenada na variável \textit{ps}. Um exemplo da configuração da fonte está descrita na Listagem \ref{lst:exemploconfigps}
+A partir do objeto \textit{virtualbench}, é possível aceder aos diferentes instrumentos, sendo que a aquisição é feita através do método \textit{acquire\_\textless instrumento\textgreater()}. Essa instância é armazenada numa variável definida pelo utilizador, permitindo o acesso às funcionalidades de configuração, controlo e medição disponibilizadas por esse instrumento. Na Listagem \ref{lst:instanciacao}, linha \ref{line:acquireps}, pode ver-se, a título de exemplo, como é feita a aquisição da fonte de alimentação, que é armazenada na variável \textit{ps}. Um exemplo da configuração da fonte está descrita na Listagem \ref{lst:exemploconfigps}.
 
 \begin{minipage}{0.7\linewidth}
 	\begin{lstlisting}[language=Python,escapechar=|, caption=Exemplo \textit{ps\_example.py}, label=lst:exemploconfigps]
@@ -743,15 +741,11 @@ As imagens geradas são gravadas na pasta ``webserver/website/static/images/'', 
 
 %NO CASO DOS RECTIFICADORES/FILTROS, NÃO HÁ A NECESSIDAADE DE SE RECORRER A UM SCRIPT ERXZTERNO, EM TERMOS ORGANIZATIVOS. A STRING PARA ACTIVAR OS RELÉS PODE SER ENVIADA DIRECTAMENTE DOS FHCIEHIRO MIXED SIGNA OSCILOSCOPE
 
-Do ponto de vista do \textit{software ou \acrshort{ide}}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os rectificadores e filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências.
-
-Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
+Do ponto de vista do \textit{software ou \acrshort{ide}}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de \textit{Ohm}, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os rectificadores e filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
 
 %\sout{a base da Arquitetura de Comunicação, a troca de parâmetros e as configurações entre os diversos tipos de ficheiros.} \textbf{NOTA: Este parágrafo não faz muito sentido aqui, após a mudança do nome da secção para Interface WEB ou talvez reescrever a última frase após o optou-se...}
 
-Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento, tal como descrito na Secção \ref{sec:fontesalimentacao}. 
-
-Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. 
+Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento, tal como descrito na Secção \ref{sec:fontesalimentacao}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. 
 
 A verificação e detecção dos erros, Figura \ref{fig:erropagina}, acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados ou, no caso dos rectificadores e filtros, colocar o valor da frequência fora do valor definido nas instruções. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
 
@@ -829,7 +823,7 @@ A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da 
 
 A selecção dos valores da resistência e do $U_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, a tensão medida no voltímetro é, efectivamente, a tensão aos terminais da fonte de tensão, $U_{CC}$ e da resistência. Por razões pedagógicas e de coerência com o esquema, optou-se por medir e apresentar a tensão directamente nos terminais da resistência.
 
-Como se observa na Figura~\ref{fig:pagmenuCTRL}, a tensão indicada pelo voltímetro corresponde à tensão presente entre os terminais da fonte de tensão $U_{CC}$ e da resistência. Por razões pedagógicas e para manter a coerência com o esquema apresentado, optou-se por medir e representar a tensão diretamente nos terminais da resistência. As medições só serão efectivamente realizadas e os valores apresentados, quando a opção ``Medir tensão'' e/ou ``Medir corrente'' forem seleccionadas. O utilizador dispõe de alguma flexibilidade na forma como realiza as medições (cinco de tensão e cinco de corrente), desde que mantenha a mesma ordem. Por exemplo, pode optar por medir todos os valores de tensão - desde o mais baixo ao mais alto - e, de seguida proceder da mesma forma com as medições de corrente. Após a conclusão das dez medições, torna-se possível seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. Caso esta opção seja seleccionada antes da conclusão de todas as medições, o gráfico será apresentado com as medições disponíveis até ao momento, permitindo, ainda assim, a continuação normal da experiência.
+Como se observa na Figura~\ref{fig:pagmenuCTRL}, a tensão indicada pelo voltímetro corresponde à tensão presente entre os terminais da fonte de tensão $U_{CC}$ e da resistência. Por razões pedagógicas e para manter a coerência com o esquema apresentado, optou-se por medir e representar a tensão directamente nos terminais da resistência. As medições só serão efectivamente realizadas e os valores apresentados, quando a opção ``Medir tensão'' e/ou ``Medir corrente'' forem seleccionadas. O utilizador dispõe de alguma flexibilidade na forma como realiza as medições (cinco de tensão e cinco de corrente), desde que mantenha a mesma ordem. Por exemplo, pode optar por medir todos os valores de tensão - desde o mais baixo ao mais alto - e, de seguida proceder da mesma forma com as medições de corrente. Após a conclusão das dez medições, torna-se possível seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. Caso esta opção seja seleccionada antes da conclusão de todas as medições, o gráfico será apresentado com as medições disponíveis até ao momento, permitindo, ainda assim, a continuação normal da experiência.
 
 Sendo assim, o procedimento para a realização da experiência é o seguinte:
 \begin{enumerate}

@@ -136,13 +136,13 @@ Sendo assim, os circuitos que compõem o \acrshort{lare} e satisfazem os critér
 Doravante, considera-se que cada experiência é composta por dois circuitos distintos, com excepção da experiência dedicada à Lei de \textit{Ohm}. Por exemplo, a experiência sobre rectificação inclui os circuitos de meia onda e de onda completa; já a experiência dos filtros abrange os circuitos passa-baixo e passa-alto.
 
 \subsection{Lei de \textit{Ohm}}
-Na forma da Equação \ref{eq:leideohm}, a Lei de \textit{Ohm} estabelece que a resistência eléctrica ($R$) de um condutor é determinada pelo quociente entre a tensão elétrica ($U$) aplicada aos seus terminais e a corrente eléctrica ($I$) que o atravessa.  
+Na forma da Equação \ref{eq:leideohm}, a Lei de \textit{Ohm} estabelece que a resistência eléctrica ($R$) de um condutor é determinada pelo quociente entre a tensão eléctrica ($U$) aplicada aos seus terminais e a corrente eléctrica ($I$) que o atravessa.  
 
 \begin{equation} \label{eq:leideohm}
 	R=\dfrac{U}{I}
 \end{equation}
 
-Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência elétrica ($R$). A Lei de \textit{Ohm} é descrita com maior detalhe no Capítulo~2 da 10.\textsuperscript{a} edição de Hayt \textit{et al.}~\cite{hayt}.
+Isto significa que a Equação \ref{eq:leideohm} define uma relação linear entre a tensão e a corrente para uma determinada resistência de valor fixo, o que implica que o gráfico obtido, representado na Figura \ref{fig:graphohm}, é uma linha recta que passa pela origem. O declive dessa recta representa o valor da resistência eléctrica ($R$). A Lei de \textit{Ohm} é descrita com maior detalhe no Capítulo~2 da 10.\textsuperscript{a} edição de Hayt \textit{et al.}~\cite{hayt}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -319,7 +319,7 @@ A placa desenvolvida para esta experiência está representada na Figura \ref{fi
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/lare_ohm_BLOCOS.png}
+	\includegraphics[width=0.4\textwidth]{figures/lare_ohm_BLOCOS.png}
 	\caption{\textins{Placa} Lei de \textit{Ohm}}
 	\label{fig:placaleideohm}
 \end{figure}
@@ -338,7 +338,7 @@ A Figura \ref{fig:placarectificadores} apresenta a placa da experiência referen
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{figures/lare_rectificador_filtros_BLOCOS.png}
+	\includegraphics[width=0.4\textwidth]{figures/lare_rectificador_filtros_BLOCOS.png}
 	\caption{\textins{Placa} rectificadores e filtros}
 	\label{fig:placarectificadores}
 \end{figure}
@@ -427,7 +427,7 @@ A corrente no \gls{RaspberryPI} pode ser configurada para valores entre \SI{2}{\
 
 \subsection{Relés}
 \label{sec:reles}
-Como já foi referido na Capítulo \ref{Capitulo2}, os circuitos que compõem o \acrshort{visir} são controlados através de relés. Estes dispositivos funcionam como interruptores electromecânicos simples que utilizam um sinal elétrico para controlar um eletroíman.
+Como já foi referido na Capítulo \ref{Capitulo2}, os circuitos que compõem o \acrshort{visir} são controlados através de relés. Estes dispositivos funcionam como interruptores electromecânicos simples que utilizam um sinal eléctrico para controlar um eletroíman.
 Os relés electromecânicos são constituídos por uma bobine e um contacto, que pode ser normalmente aberto ou fechado. A corrente eléctrica ao passar pela bobine gera um campo magnético que atrai o contacto, fechando-o ou abrindo-o, conforme o caso. A Figura \ref{fig:esquematicoreles} mostra um esquema simplificado de um relé electromecânico, onde se pode observar a inclusão do díodo de ``roda livre'', comum em muitos circuitos de comando com relés. Este díodo é utilizado para proteger o circuito de comando de picos de tensão induzidos pela bobine do relé, quando a corrente é desligada, segundo a Lei de Faraday. O díodo permite que a corrente induzida pela bobine circule em circuito fechado, evitando danos nos componentes de comando. 
 
 \begin{figure}[hbtp]

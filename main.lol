@@ -7,10 +7,10 @@
 \contentsline {lstlisting}{\numberline {3.4}{\ignorespaces Exemplo do \acrshort {css} definido externamente \cite {Startingcss}}}{66}{lstlisting.3.4}%
 \contentsline {lstlisting}{\numberline {3.5}{\ignorespaces Exemplo de \textit {JavaScript}}}{67}{lstlisting.3.5}%
 \contentsline {lstlisting}{\numberline {4.1}{\ignorespaces \textit {Decorator} \textit {route()} - \textit {views.py}}}{83}{lstlisting.4.1}%
-\contentsline {lstlisting}{\numberline {4.2}{\ignorespaces Contrução de \textit {url}s - \textit {auth.py}}}{84}{lstlisting.4.2}%
+\contentsline {lstlisting}{\numberline {4.2}{\ignorespaces Contrução de \textit {url}s - \textit {auth.py}}}{83}{lstlisting.4.2}%
 \contentsline {lstlisting}{\numberline {4.3}{\ignorespaces \textit {Blueprint views} - \textit {views.py}}}{84}{lstlisting.4.3}%
 \contentsline {lstlisting}{\numberline {4.4}{\ignorespaces \textit {Blueprint auth} - \textit {auth.py}}}{84}{lstlisting.4.4}%
-\contentsline {lstlisting}{\numberline {4.5}{\ignorespaces Registo das \textit {blueprints} - \textit {\_\_init\_\_.py}}}{85}{lstlisting.4.5}%
+\contentsline {lstlisting}{\numberline {4.5}{\ignorespaces Registo das \textit {blueprints} - \textit {\_\_init\_\_.py}}}{84}{lstlisting.4.5}%
 \contentsline {lstlisting}{\numberline {4.6}{\ignorespaces Exemplo argumentos passados ao servidor - ohm.html}}{85}{lstlisting.4.6}%
 \contentsline {lstlisting}{\numberline {4.7}{\ignorespaces Envio de parâmetros \acrshort {html} $\rightarrow $ \textit {views.py}}}{88}{lstlisting.4.7}%
 \contentsline {lstlisting}{\numberline {4.8}{\ignorespaces Recepção de parâmetros}}{88}{lstlisting.4.8}%

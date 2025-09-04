@@ -3,7 +3,7 @@
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossentry{arduino}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{24\delimR 27}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{34}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{33\delimN 34}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{42\delimN 43}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossentry{diac}{\glossaryentrynumbers{\relax 
@@ -21,13 +21,13 @@
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossentry{industria40}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{33}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{32}}}\glsgroupskip
 \glsgroupheading{K}\relax \glsresetentrylist %
 \glossentry{kicad}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{53}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{pc/104}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{53}}}%
+		\setentrycounter[]{page}\glsnumberformat{52}}}%
 \glossentry{python}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{42\delimR 44}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
@@ -35,13 +35,14 @@
 		\setentrycounter[]{page}\glsnumberformat{24}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{26}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{43\delimR 46}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{54\delimR 56}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{53}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{55\delimN 56}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{58\delimR 60}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{69\delimR 71}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{sbc}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{55}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{59}}}%
+		\setentrycounter[]{page}\glsnumberformat{58}}}%
 \glossentry{scr}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{29}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %

@@ -12,15 +12,15 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Laboratório virtual \textit {Fritzing} exemplo}}{26}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Laboratório virtual \textit {Wokwi} exemplo}}{26}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Simulador \textit {Multisim}}}{28}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo \textit {\acrshort {visir}}}}{32}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{35}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemplo \textit {\acrshort {visir}}}}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces \acrshort {visir} no \acrshort {isep}}}{34}{figure.caption.33}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Arquitectura do \acrshort {visir}}}{36}{figure.caption.34}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces \textit {Chassis} PXI-1033 \cite {PXI-1033}}}{36}{figure.caption.35}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Osciloscópio PXI-5114 \cite {PXI-5114}}}{37}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Gerador de sinal PXI-5402 \cite {PXI-5402}}}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{38}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Multímetro Digital PXI-4072 \cite {PXI-4072}}}{37}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Fonte de tensão PXI-4110 \cite {PXI-4110}}}{38}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{39}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Matriz \acrshort {visir}\cite {matriz}}}{38}{figure.caption.40}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Arduino} Mega \cite {ArduinoMega}}}{42}{figure.caption.42}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {ESP32} \cite {ESPDevKit}}}{43}{figure.caption.43}%
@@ -40,16 +40,16 @@
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Painel frontal \textit {VirtualBench} VB-8012 \cite {datasheetVirtualBench}.}}{53}{figure.caption.57}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Matriz do \acrshort {lare}}}{53}{figure.caption.58}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces \textins {Placa} Lei de \textit {Ohm}}}{54}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{55}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textins {Placa} rectificadores e filtros}}{54}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.20}{\ignorespaces \textins {Placa} fontes de alimentação}}{55}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.21}{\ignorespaces \textit {Raspberry PI5} com dissipador activo utilizado no \acrshort {lare}}}{56}{figure.caption.65}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{57}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces \acrshort {gpio}s \textit {RaspberryPI} \cite {Raspberrytech}}}{56}{figure.caption.67}%
 \contentsline {figure}{\numberline {3.23}{\ignorespaces Representação alternativa dos \acrshort {gpio}s \cite {Raspberrytech}}}{57}{figure.caption.68}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces \textit {Esquema simplificado de um relé \cite {DryRelay}}}}{58}{figure.caption.69}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces \textit {Esquema simplificado de um relé \cite {DryRelay}}}}{57}{figure.caption.69}%
 \contentsline {figure}{\numberline {3.25}{\ignorespaces \textit {Relés \acrshort {spst} e \acrshort {dpst}} \cite {DryRelay}}}{58}{figure.caption.70}%
 \contentsline {figure}{\numberline {3.26}{\ignorespaces Diagrama de blocos ULN2003A \cite {ULN2003}}}{59}{figure.caption.71}%
 \contentsline {figure}{\numberline {3.27}{\ignorespaces Diagrama \textins {em corte} de blocos SN74HC595 \cite {SN74HC595}}}{61}{figure.caption.72}%
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{65}{figure.caption.78}%
+\contentsline {figure}{\numberline {3.28}{\ignorespaces Estrutura de uma página \acrshort {html} \cite {HTMLbasics}}}{64}{figure.caption.78}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo de utilização de relés \acrshort {spst} e \acrshort {dpst}}}{70}{figure.caption.79}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Diagrama de blocos simplificado do \textit {ULN2003A}}}{70}{figure.caption.80}%
@@ -65,9 +65,9 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces \textins {Implementação} Lei de \textit {Ohm}}}{78}{figure.caption.95}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema completo (simplificado) - rectificadores e filtros}}{79}{figure.caption.97}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces \textins {Implementação} rectificadores e filtros}}{80}{figure.caption.98}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{82}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Estrutura de directórios - \textit {Flask} \textbf { main.html está a mais}}}{82}{figure.caption.102}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Diagrama de comunicação simplificado [REVER]}}{87}{figure.caption.108}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Funcionamento geral \textit {Flask}}}{81}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Estrutura de directórios - \textit {Flask}}}{82}{figure.caption.102}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Diagrama de comunicação simplificado}}{86}{figure.caption.108}%
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Processo de leitura das medições de tensão e corrente}}{89}{figure.caption.110}%
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Erro de selecção}}{96}{figure.caption.114}%
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Página de \textit {login}}}{96}{figure.caption.115}%

@@ -17,13 +17,13 @@
 \contentsline {subsection}{\numberline {2.2.2}Principais desafios}{15}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Laboratórios na educação}{17}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Tipos de laboratórios}{19}{subsection.2.3.1}%
-\contentsline {subsubsection}{Uma questão de conceitos}{22}{section*.21}%
+\contentsline {subsubsection}{Uma questão de conceitos}{21}{section*.21}%
 \contentsline {subsubsection}{Laboratório real}{24}{section*.24}%
 \contentsline {subsubsection}{Laboratório virtual - Acesso local e/ou remoto}{25}{section*.25}%
 \contentsline {subsubsection}{Simuladores - Acesso local e/ou remoto}{28}{section*.28}%
-\contentsline {subsubsection}{Laboratório remoto}{31}{section*.30}%
+\contentsline {subsubsection}{Laboratório remoto}{30}{section*.30}%
 \contentsline {subsubsection}{VISIR - Virtual Instrument Systems in Reality}{34}{section*.32}%
-\contentsline {paragraph}{PILAR}{39}{section*.41}%
+\contentsline {paragraph}{PILAR}{38}{section*.41}%
 \contentsline {chapter}{\numberline {3}LaRE - Laboratório Remoto Expansível}{41}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contextualização}{41}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Solução proposta}{44}{section.3.2}%
@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.5.4}Relés}{57}{subsection.3.5.4}%
 \contentsline {subsection}{\numberline {3.5.5}\textit {Driver} de Relés}{58}{subsection.3.5.5}%
 \contentsline {subsection}{\numberline {3.5.6}Registo de deslocamento}{59}{subsection.3.5.6}%
-\contentsline {section}{\numberline {3.6}Software}{61}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Software}{60}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}\textit {Back-End}}{62}{subsection.3.6.1}%
 \contentsline {subsubsection}{\textit {Python}}{62}{section*.74}%
 \contentsline {subsubsection}{\textit {Flask}}{62}{section*.75}%
@@ -69,9 +69,9 @@
 \contentsline {subsubsection}{Blueprints}{84}{section*.104}%
 \contentsline {subsubsection}{Pedidos}{85}{section*.105}%
 \contentsline {subsubsection}{Base de dados}{85}{section*.106}%
-\contentsline {subsubsection}{Autenticação}{86}{section*.107}%
+\contentsline {subsubsection}{Autenticação}{85}{section*.107}%
 \contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{86}{subsection.4.2.2}%
-\contentsline {subsubsection}{Comunicação entre ficheiros}{88}{section*.109}%
+\contentsline {subsubsection}{Comunicação entre ficheiros}{87}{section*.109}%
 \contentsline {subsubsection}{Comunicação com RaspberryPi}{90}{section*.111}%
 \contentsline {subsubsection}{VirtualBench - Configurações e medições}{91}{section*.112}%
 \contentsline {subsubsection}{Gráficos}{94}{section*.113}%

@@ -100,13 +100,13 @@ Analisando os valores é possível calcular o declive da recta, dado pela Equaç
 	\text{m} = \frac{y_{b} - y_{a}}{x_{b} - x_{a}}
 \end{equation}
 
-O valor do declive, correspondente à resistência, obtido para estes simulador é de $m_\text{{multisim}} \approx{0.980}$. Tendo em conta que a escala do eixo do $y$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}, isto é, $R_\text{{multisim}} = \SI{0.980}{\kilo\ohm}$. Assim, aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo inferior a \SI{1}{\percent}.
+O valor do declive, correspondente à resistência, obtido para estes simuladores é de $m_\text{{multisim}} \approx{0.980}$. Tendo em conta que a escala do eixo do $y$ está representada em \SI{}{\milli\ampere}, os valores das resistências surgem expressos em \SI{}{\kilo\ohm}, isto é, $R_\text{{multisim}} = \SI{0.980}{\kilo\ohm}$. Assim, aplicando a Equação~\ref{eq:errorelativo} obtém-se um erro relativo inferior a \SI{1}{\percent}.
 
 Verifica-se, através da análise dos gráficos, que os dados obtidos com o \acrshort{lare} estão em concordância com os resultados simulados e com os valores práticos.
 
 \section{Rectificadores}
 \label{sec:resultados_rectificadores}
-As duas experiências foram implementados com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. As formas de onda esperadas estão representadas na Figura \ref{fig:sedraripple} e Figura \ref{fig:sedraripplecompleta} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). Os utilizadores podem escolher uma das quatro combinações de resistência e condensador, sendo que no caso do rectificador de meia onda podem fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso do rectificador de onda completa a frequência é de \SI{50}{\hertz}. Em ambos as experiências, os exemplos em análise far-se-ão com os seguintes valores: $R=\SI{2.2}{\kilo\ohm}$, $C=\SI{100}{\micro\farad}$, $v_{in}=\SI{6.6}{\volt}$ e $f=\SI{50}{\hertz}$.
+As duas experiências foram implementadas com o objectivo de estudar e avaliar a tensão de \textit{ripple} nos circuitos rectificadores de meia onda e onda completa, considerando as quatro combinações possíveis dos pares resistência/condensador. As formas de onda esperadas estão representadas na Figura \ref{fig:formadeonda_MO} e Figura \ref{fig:formadeonda_OC} sendo os valores teóricos da tensão de \textit{ripple} determinados pela Equação \ref{eq:vripplecompleta} e pela Equação \ref{eq:vrippleOC} - (ou Equação \ref{eq:vripple}). Os utilizadores podem escolher uma das quatro combinações de resistência e condensador, sendo que no caso do rectificador de meia onda podem fazer variar a frequência entre \SI{50}{\hertz} e \SI{2000}{\hertz} mas no caso do rectificador de onda completa a frequência é de \SI{50}{\hertz}. Em ambas as experiências, os exemplos em análise far-se-ão com os seguintes valores: $R=\SI{2.2}{\kilo\ohm}$, $C=\SI{100}{\micro\farad}$, $v_{in}=\SI{6.6}{\volt}$ e $f=\SI{50}{\hertz}$.
 
 \subsection{Resultados experimentais [meia onda]}
 \label{sec:resultados_RectificadoresMeiaOnda}
@@ -151,9 +151,9 @@ Os erros relativos obtidos foram de \SI{20.1}{\percent} no \acrshort{lare}, \SI{
 
 A simulação, embora mais próxima da realidade, recorre igualmente a modelos ideais por omissão. É o caso dos condensadores no \textit{Multisim}, que não incluem resistência série (ESR) nem indutância série (ESL)\footnote{Uma análise às propriedades do condensador no \textit{Multisim} revelou que estes são ideais, baseados em modelos \acrshort{spice} simplificados, representados pela seguinte estrutura: \textit{c\%p \%t1 \%t2 \#1 \%v4?IC=\#5\%v:\%v;}}. Ainda assim, a simulação contempla fenómenos como as quedas de tensão nos díodos e os efeitos transitórios do circuito, o que a torna mais precisa do que o modelo teórico.
 
-A maior discrepância observada nos resultados do \acrshort{lare} pode ser justificada por erros no cálculo da tensão de \textit{ripple}, através da Figura \ref{fig:ripplelaremeiaonda} pode ver-se que a onda apresentada distorce ligeiramente nos picos positivos. Além disso, e tal como nos valores obtidos na prática, as tolerâncias típicas dos condensadores eletrolíticos são elevadas, sendo que neste caso atingem os \SI{20}{\percent}\cite{toleranciacondensadores}. Outro factor que também condiciona o erro relativo são as baixas correntes nos díodos. Esta corrente segue uma relação exponencial com a tensão directa aplicada, tornando-se extremamente sensível a pequenas variações de tensão ou do parâmetro $I_{S}$. Nesta zona, fenómenos secundários como corrente de fuga, variações térmicas e limitações instrumentais assumem maior relevância e desviam o comportamento do díodo do modelo ideal \cite{sedrasmith}.
+A maior discrepância observada nos resultados do \acrshort{lare} pode ser justificada por erros no cálculo da tensão de \textit{ripple} Através da Figura \ref{fig:ripplelaremeiaonda} pode ver-se que a onda apresentada distorce ligeiramente nos picos positivos. Além disso, tal como nos valores obtidos na prática, as tolerâncias típicas dos condensadores electrolíticos são elevadas, sendo que, neste caso, atingem os \SI{20}{\percent}\cite{toleranciacondensadores}. Outro factor que também condiciona o erro relativo são as baixas correntes nos díodos. Esta corrente segue uma relação exponencial com a tensão directa aplicada, tornando-se extremamente sensível a pequenas variações de tensão ou do parâmetro $I_{S}$. Nesta zona, fenómenos secundários como corrente de fuga, variações térmicas e limitações instrumentais assumem maior relevância e desviam o comportamento do díodo do modelo ideal~\cite{sedrasmith}.
 
-Assim, as diferenças entre os vários métodos de obtenção de resultados são compreensíveis e enquadram-se dentro do esperado, considerando as limitações e simplificações de cada abordagem.
+Assim, as diferenças entre os vários métodos de obtenção de resultados são compreensíveis e enquadram-se no esperado, considerando as limitações e simplificações de cada abordagem.
 
 \subsection{Resultados experimentais [onda completa]}
 \label{sec:resultados_RectificadoresOndacompleta}
@@ -220,7 +220,7 @@ Os resultados obtidos com o \acrshort{lare} encontram-se representados na Figura
 	\label{fig:ripplelareonda}
 \end{figure}
 
-É importante referir que, embora ambas as formas de onda (entrada e saída) tenham sido adquiridas com os mesmos parâmetros de configuração — nomeadamente, a mesma frequência de amostragem e tempo de aquisição —, os sinais não foram captados em simultâneo. Este procedimento foi necessário devido à configuração desta experiência, onde a ligação comum de massas entre a entrada do transformador e a saída do circuito impede a medição simultânea dos dois sinais com o \acrshort{virtualbench}, sob pena de provocar curto-circuito de massas. Assim, as medições tiveram de ser realizadas de forma sequencial, com reconfiguração dos relés entre cada aquisição. Ao reiniciar o osciloscópio, o sistema volta a aguardar pela condição de disparo (trigger), a qual pode ocorrer em pontos ligeiramente diferentes do ciclo da onda. Esta diferença no instante inicial da aquisição introduz um desfasamento temporal aparente entre os sinais apresentados, que não deve ser interpretado como um desfasamento real entre os circuitos, mas sim como uma consequência natural da aquisição faseada.
+É importante referir que, embora ambas as formas de onda (entrada e saída) tenham sido adquiridas com os mesmos parâmetros de configuração — nomeadamente, a mesma frequência de amostragem e tempo de aquisição —, os sinais não foram captados em simultâneo. Este procedimento foi necessário devido à configuração desta experiência, em que a ligação comum de massas entre a entrada do transformador e a saída do circuito impede a medição simultânea dos dois sinais com o \acrshort{virtualbench}, sob pena de provocar curto-circuito de massas. Assim, as medições tiveram de ser realizadas de forma sequencial, com reconfiguração dos relés entre cada aquisição. Ao reiniciar o osciloscópio, o sistema volta a aguardar pela condição de disparo (\textit{trigger}), a qual pode ocorrer em pontos ligeiramente diferentes do ciclo da onda. Esta diferença no instante inicial da aquisição introduz um desfasamento temporal aparente entre os sinais apresentados, que não deve ser interpretado como um desfasamento real entre os circuitos, mas sim como uma consequência natural da aquisição faseada.
 
 O erro relativo associado ao valor obtido no \acrshort{lare} é inferior a \SI{5}{\percent}, o que é perfeitamente aceitável.
 
@@ -244,7 +244,7 @@ Estas duas experiências foram realizadas com o objetivo de estudar a resposta e
 \label{sec:resultados_filtros_passaalto}
 O circuito analisado será o filtro passa-alto, representado na Figura \ref{fig:filtro_pa} e configurado com $R=\SI{2.2}{\kilo\ohm}$ e $C=\SI{10}{\nano\farad}$. Os gráficos que se esperam obter estão representados na Figura \ref{fig:Bode_pa}. Para os restantes valores e configurações, os resultados poderão ser obtidos de forma análoga e a frequência de corte teórica é dada pela Equação \ref{eq:frequenciacorte}, sendo que o valor obtido é de \SI{7234.32}{\hertz}.
 
-Os valores experimentais obtidos com o \acrshort{lare} relativamente à análise do digarama de \textit{Bode}, estão representados na Figura \ref{fig:fcBode}, sendo que o valor aproximado da frequência de corte é de \SI{7071.1}{\hertz}. O erro relativo é, aproximadamente, \SI{2.26}{\percent}. Este valor é perfeitamente aceitável, tendo em conta a tolerância dos componentes utilizados, os erros de medição e aproximações.
+Os valores experimentais obtidos com o \acrshort{lare} relativamente à análise do digarama de \textit{Bode}, estão representados na Figura \ref{fig:fcBode}, sendo que o valor aproximado da frequência de corte é de \SI{7071.1}{\hertz}. O erro relativo é de, aproximadamente, \SI{2.26}{\percent}. Este valor é perfeitamente aceitável, tendo em conta a tolerância dos componentes utilizados, os erros de medição e aproximações.
 
 \begin{figure}[hbtp]
 	\centering
@@ -271,7 +271,7 @@ O valor da frequência de corte também pode ser obtido através da análise dos
 	\label{fig:voutvinlare}
 \end{figure}
 
-Comparando estes valores com os obtidos através do circuito prático, representados na Figura \ref{fig:realPA} e Figura \ref{fig:multisimPA} do circuito simulado no \textit{multisim} verifica-se que os valores obtidos são práticamente iguais, podendo ser considerado, com segurança, que em ambos os casos o ganho de tensão é unitário. 
+Comparando estes valores com os obtidos através do circuito prático, representados na Figura \ref{fig:realPA} e Figura \ref{fig:multisimPA} do circuito simulado no \textit{multisim}, verifica-se que os valores obtidos são práticamente iguais, podendo ser considerado, com segurança, que em ambos os casos o ganho de tensão é unitário. 
 
 \begin{figure}[hbtp]
 	\centering%
@@ -292,7 +292,7 @@ Relativamente à análise da frequência de corte, representado na Figura \ref{f
 	\label{fig:fcvoutlare}
 \end{figure}
 
-O circuito prático apresenta uma frequência de corte de \SI{7000}{\hertz}, com um erro relativo de \SI{3.24}{\percent}, enquanto a simulação no \textit{Multisim} apresenta \SI{7300}{\hertz}, com um erro ainda mais reduzido de \SI{0.9}{\percent}. Estes desvios podem ser considerados baixos e encontram-se dentro de margens aceitáveis, tendo em conta as limitações práticas do circuito real, como tolerâncias dos componentes, ruído, e eventuais imprecisões nas medições. O valor obtido na simulação, por outro lado, está mais próximo do valor teórico, o que é expectável dado que os modelos usados assumem, geralmente, componentes ideais ou com parâmetros controlados.
+O circuito prático apresenta uma frequência de corte de \SI{7000}{\hertz}, com um erro relativo de \SI{3.24}{\percent}, enquanto a simulação no \textit{Multisim} apresenta \SI{7300}{\hertz}, com um erro ainda mais reduzido de \SI{0.9}{\percent}. Estes desvios podem ser considerados baixos e encontram-se dentro de margens aceitáveis, tendo em conta as limitações práticas do circuito real, como tolerâncias dos componentes, ruído e eventuais imprecisões nas medições. O valor obtido na simulação, por outro lado, está mais próximo do valor teórico, o que é expectável dado que os modelos usados assumem, geralmente, componentes ideais ou com parâmetros controlados.
 
 \begin{figure}[hbtp]
 	\centering%
