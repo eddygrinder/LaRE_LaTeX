@@ -384,7 +384,7 @@ A placa referente às fontes de alimentação está representada na Figura~\ref{
 \end{figure}
 \end{comment}
 
-\subsection{Raspberry Pi}
+\subsection{Raspberry PI}
 \label{sec:RaspberryPI}
 Como já foi referido na Secção \ref{sec:contextualização}, a ideia inicial passava por utilizar o \gls{RaspberryPI} como servidor e como controlador dos relés, no fundo desempenhando as funções de \acrshort{rlms}. Este dispositivo insere-se numa gama de pequenos computadores de placa única \gls{sbc}, acessíveis e versáteis, como o Banana PI, BeagleBone Black, Orange PI ou Odroid, amplamente utilizados em ensino, prototipagem e aplicações de \acrshort{iot}. 
 
@@ -460,7 +460,7 @@ Nos códigos de referência dos relés, os dois primeiros quartetos indicam a s�
 Como já foi referido na subsecção \ref{sec:RaspberryPI}, a tensão de funcionamento dos \acrshort{gpio}, quer estejam configurados como entrada ou saída, é de \SI{3,3}{\volt}, sendo que a máxima corrente por cada \acrshort{gpio} é de \SI{16}{\mA}.
 Com estes valores, o \gls{RaspberryPI} não tem capacidade para comandar os relés, já que funcionam a \SI{12}{\volt}. Para activar os relés, é necessário o uso de \textit{drivers}\footnote{Doravante, sempre que for referido o termo \textit{driver} no contexto de relés, subentende-se o circuito integrado ULN2003A.} que consigam fornecer a tensão e corrente necessárias para o efeito.
 
-\subsection{\textit{Driver} de Relés}
+\subsection{\textit{Driver} de relés}
 \label{sec:driver}
 O circuito integrado ULN2003A, é um \textit{driver} muito usado para controlar relés. Além disso estava disponível em contexto laboratorial. Tipicamente, é usado em conjunto com microcontroladores ou \gls{RaspberryPI}\footnote{Importa distinguir entre \gls{sbc}, como o \gls{RaspberryPI} e microcontroladores, como o Arduino. Enquanto os \gls{sbc} funcionam como computadores completos capazes de executar sistemas operativos e aplicações complexas, os microcontroladores são dispositivos mais simples, ideais para tarefas de controlo directo, operando sem sistema operativo e com recursos significativamente mais limitados.} no comando de cargas indutivas, como motores, bobines e relés. Estes \textit{drivers} possuem sete pares de transístores NPN, em configuração \textit{Darlington}, que apresentam saídas de alta tensão com díodos \textit{clamp} de cátodo comum para comutação de cargas indutivas \cite{ULN2003}, como se  representa esquematicamente na Figura \ref{fig:2003blocos}.
 
