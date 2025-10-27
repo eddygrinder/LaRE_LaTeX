@@ -22,8 +22,10 @@
 \usepackage{lineno}
 \usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
 \usepackage{siunitx}
-%\usepackage[binary-units]{siunitx}
-%\DeclareSIUnit{\byte}{B}
+\sisetup{
+  output-decimal-marker = {,}, % vírgula decimal
+  per-mode = symbol
+}
 \usepackage{pdfpages}
 %\usepackage{lineno}
 \usepackage{etoolbox}

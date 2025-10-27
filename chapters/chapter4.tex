@@ -396,7 +396,7 @@ if user:
 
 Isto quer dizer que o Flask gera a \acrshort{url} correspondente à função \textbf{home()} definida no ficheiro \textbf{views.py} dentro da \textit{Blueprint} \textit{views}. Quando usada dentro de \textit{\textbf{redirect}}, redireciona o utilizador para essa \acrshort{url}. No Flask, os \textit{decorators} são utilizados para associar funcionalidades adicionais a funções que representam rotas. Um \textit{decorator} é uma construção da linguagem Python que permite modificar o comportamento de uma função sem alterar o seu conteúdo. Ao utilizar @route, @login\_required e outros \textit{decorators}, o Flask cria uma camada adicional de lógica que é aplicada automaticamente antes (ou depois) da execução da função ``decorada''.
 
-\subsubsection{Blueprints}
+\subsubsection{\textit{Blueprints}}
 O Flask usa um conceito de \textit{blueprints} para criar componentes de aplicações e suportar padrões comuns dentro de uma aplicação ou entre aplicações. As \textit{blueprints} podem simplificar muito o funcionamento de grandes aplicações e fornecer um meio central para que as extensões do Flask registem operações em aplicações. As \textit{blueprints} permitem organizar a aplicação em partes menores e de mais fácil gestão. O conceito básico das \textit{blueprints} é que registam as operações a executar quando são integrados numa aplicação. O Flask associa funções de vista (\textit{views}) a \textit{blueprints} quando processa pedidos e gera \acrshort{url} entre diferentes pontos de acesso. Na Listagem~\ref{lst:blueprintviews} e Listagem~\ref{lst:blueprintauth} podem ver-se as duas \textit{blueprints} definidas no caso da implementação do \acrshort{lare}.
 
 \begin{center}
@@ -449,7 +449,7 @@ A segurança da aplicação é assegurada através das funcionalidades de \texti
 
 Devido à complexidade da implementação de uma verificação por \textit{email}, a aplicação restringe-se à autenticação baseada apenas no nome de utilizador e senha. A inclusão desse mecanismo exigiria um serviço de envio de \textit{emails} e a gestão de \textit{tokens} de confirmação.
 
-\subsection{Arquitectura de Comunicação}
+\subsection{Arquitectura de comunicação}
 \label{sec:comunicacao}
 Nesta subssecção, o foco será analisar a comunicação (e troca de parâmetros) entre os diversos tipos de ficheiros. Na Figura \ref{fig:diagramasimplificado} é apresentado o diagrama simplificado que ilustra o funcionamento geral deste tipo de comunicação. 
 
@@ -541,7 +541,7 @@ No entanto, o processo de medição na experiência da Lei de Ohm possui caracte
 
 As setas a verde e vermelho representam o fluxo do processo iniciado pelo utilizador ao solicitar uma medição. Este ciclo repete-se cinco vezes para cada grandeza (tensão e corrente). No entanto, como o ficheiro \textit{configVB.py} é executado de forma independente em cada chamada, num total de dez execuções, os valores medidos não são retidos entre invocações sucessivas. Para contornar esta limitação e garantir a persistência das medições ao longo das múltiplas chamadas à \acrshort{api}, sem recorrer a mecanismos clássicos de persistência, como ficheiros \textit{.json}, \textit{.csv} ou bases de dados locais — os quais implicariam operações adicionais de escrita e leitura no sistema de ficheiros — foi desenvolvido um módulo auxiliar em Python, implementado no ficheiro \textit{store\_ps\_dmm.py}. Este módulo utiliza variáveis globais como mecanismo de armazenamento em memória. Os valores de tensão e corrente são armazenados num \textit{array} através da função \textit{np.append}, da biblioteca NumPy \cite{NumPy}. Dado que o servidor Flask se mantém activo durante todo o processo de medição, as variáveis globais permanecem acessíveis em memória entre chamadas à \acrshort{api}. Esta abordagem simplifica a gestão do estado da aplicação numa fase inicial de desenvolvimento, sendo eficaz enquanto o processo da aplicação não for reiniciado.
 
-\subsubsection{Comunicação com RaspberryPi}
+\subsubsection{Comunicação com Raspberry PI}
 \label{sec:raspberrypi}
 Do lado do \gls{RaspberryPI}, embora de uma forma mais simples, também se usou a premissa de modularização do código, tal como referido na subsecção \ref{sec:comunicacao}. Este ficou dividido em dois ficheiros:
 \begin{itemize}
@@ -689,15 +689,15 @@ As imagens geradas são gravadas na pasta ``webserver/website/static/images/'', 
 	\end{lstlisting}
 \end{minipage}
 
-\subsection{Interface WEB}
+\subsection{Interface \textit{web}}
 \label{sec:interfaceweb}
-Do ponto de vista do \textit{software ou \acrshort{ide}}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de Ohm, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência, já a segunda parte, que aborda os rectificadores e filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
+Do ponto de vista do \textit{software} ou \acrshort{ide}, e considerando a estrutura das experiências em termos de \textit{design} e implementação, o estudo pode ser dividido em duas partes distintas: a primeira, que envolve a Lei de Ohm, apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controlo mais amplo sobre a experiência, já a segunda parte, que aborda os rectificadores e filtros, segue uma estrutura relativamente uniforme, aplicável a todas as experiências. Assim, nesta secção, apresenta-se um estudo que permite, de forma geral, compreender a componente gráfica - \acrshort{ide} - e a interacção dos utilizadores no controlo das experiências. Sempre que se considerar pertinente, serão destacados aspetos específicos e detalhados.
 
 %\sout{a base da Arquitetura de Comunicação, a troca de parâmetros e as configurações entre os diversos tipos de ficheiros.} \textbf{NOTA: Este parágrafo não faz muito sentido aqui, após a mudança do nome da secção para Interface WEB ou talvez reescrever a última frase após o optou-se...}
 
-Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento, tal como descrito na Secção \ref{sec:fontesalimentacao}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. 
+Comum a todas as experiências é a configuração inicial do \acrshort{virtualbench}. Esta configuração é necessária, uma vez que, antes de se iniciar o processo de medições, optou-se por activar a fonte de alimentação que alimenta os relés e os \textit{drivers} e a fonte de alimentação composta pelo LM317 que alimenta os registos de deslocamento, tal como descrito na subsecção \ref{sec:fontesalimentacao}. Desta forma, implementou-se nas páginas das experiências, um botão de ``OK'' - que habilita os selectores e configura a fonte do \acrshort{virtualbench} e ``STOP/RESET'' - que desabilita os selectores e desactiva as fontes enquanto a experiência está inactiva. 
 
-A verificação e detecção dos erros, Figura \ref{fig:erropagina}, acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados ou, no caso dos rectificadores e filtros, colocar o valor da frequência fora do valor definido nas instruções. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do \textit{JavaScript}.
+A verificação e detecção dos erros, Figura \ref{fig:erropagina}, acontece quando o utilizador tenta seleccionar um dos parâmetros antes de estes estarem habilitados ou, no caso dos rectificadores e filtros, colocar o valor da frequência fora do valor definido nas instruções. O alerta de erro é implementado nas páginas \acrshort{html} das experiências, usando o método \textit{alert()} do JavaScript.
 
 \begin{figure}[hbtp]
 	\centering
@@ -706,7 +706,7 @@ A verificação e detecção dos erros, Figura \ref{fig:erropagina}, acontece qu
 	\label{fig:erropagina}
 \end{figure}
 
-Como mencionado na Secção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível. Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
+Como mencionado na subsecção \ref{sec:frontend}, procurou-se manter a experiência de utilização e navegação o mais simples, prática e intuitiva possível. Além das páginas que compõem a base do \textit{site}, representadas na Figura \ref{fig:estruturapastas}, há ainda a juntar as que permitem ao utilizador interagir com as experiências do \acrshort{lare}. Especificamente, foram implementadas cinco páginas, correspondentes aos cinco circuitos definidos na Secção \ref{sec:solucaoproposta}.
 
 A navegação ficou dividida da seguinte forma:
 \begin{itemize}
@@ -716,7 +716,7 @@ A navegação ficou dividida da seguinte forma:
 		\begin{itemize}
 			\item Página introdutória da experiência;
 			\begin{itemize}
-				\item Página de controle e realização da experiência.
+				\item Página de controlo e realização da experiência.
 			\end{itemize}
 		\end{itemize}
 	\end{itemize}
@@ -731,12 +731,7 @@ A página de autenticação, representada na Figura \ref{fig:paglogin}, está im
 	\label{fig:paglogin}
 \end{figure}
 
-%Além da rota definida para o \textit{login}, as outras rotas definidas no ficheiro \textit{auth.py} foram as \textit{sign-up} e \textit{logout}. A estrutura base da função \textit{login}, representada na Listagem \ref{lst:exemplologin}, é idêntica para as restantes, sendo que ``/\textit{login''} representa a rota especificada, dentro da função há o código especifico inerentes a cada função e o \textit{return render\_template} indica qual a página a ser renderizada.
-
-
-%A título de exemplo, a página sobre a Lei de Ohm, que é apresentada ao utilizador, está representada na Figura \ref{fig:ohm_intro}.
-
-Após o registo e \textit{login} bem sucedido, é apresentada a página inicial, onde é feito um pequeno resumo do que é o \acrshort{lare} e apresentado o menu de escolha das experiências. O menu de separadores verticais foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
+Após o registo e \textit{login} bem sucedido, é apresentada a página inicial, onde é feito um pequeno resumo do que é o \acrshort{lare} e apresentado o menu de escolha das experiências. O menu de separadores verticais foi retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_js_vertical_tabs.asp}{W3Schools} e modificado de acordo com as necessidades do projecto, tal como pode ser visto na Figura \ref{fig:pagmenu}.
 
 \begin{figure}[hbtp]
 	\centering
@@ -747,7 +742,7 @@ Após o registo e \textit{login} bem sucedido, é apresentada a página inicial,
 
 O modelo adoptado é uniforme para todas as experiências, apresentando o respectivo esquema e contextualização da actividade. Após a selecção da experiência, tanto as páginas introdutórias como as de controlo seguem a mesma estrutura de menus, mantendo o mesmo padrão de organização e navegação. A título de exemplo, as Figuras \ref{fig:ohm_intro} e \ref{fig:ohm_ctrl} ilustram, respetivamente, as páginas de introdução e controlo relativas à Lei de Ohm. 
 
-% No entanto, no que diz respeito ao controlo das experiências, tal como referido na Secção \ref{sec:interfaceweb}, a experiência da Lei de Ohm apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controle mais amplo sobre a experiência.
+% No entanto, no que diz respeito ao controlo das experiências, tal como referido na Secção \ref{sec:interfaceweb}, a experiência da Lei de Ohm apresenta um maior grau de complexidade, dado que há um número maior de parâmetros e o utilizador ou aluno tem um controlo mais amplo sobre a experiência.
 
 \begin{figure}[hbtp]
 	\centering%
@@ -771,7 +766,7 @@ A Figura \ref{fig:pagmenuCTRL} ilustra a página de controlo da experiência da 
 	\label{fig:pagmenuCTRL}
 \end{figure}
 
-A selecção dos valores da resistência e do $U_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e \textit{JavaScript}, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{\textit{W3Schools}} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, a tensão medida no voltímetro é, efectivamente, a tensão aos terminais da fonte de tensão, $U_{CC}$ e da resistência. Por razões pedagógicas e de coerência com o esquema, optou-se por medir e apresentar a tensão directamente nos terminais da resistência.
+A selecção dos valores da resistência e do $U_{CC}$ é feita através de um formulário de selecção, feito em \acrshort{css} e JavaScript, retirado do \textit{site} \href{https://www.w3schools.com/howto/howto_custom_select.asp}{W3Schools} e modificado de acordo com as necessidades do projecto. Este formulário está implementado na página \acrshort{html} da experiência. Como se pode observar pela Figura \ref{fig:pagmenuCTRL}, a tensão medida no voltímetro é, efectivamente, a tensão aos terminais da fonte de tensão, $U_{CC}$ e da resistência. Por razões pedagógicas e de coerência com o esquema, optou-se por medir e apresentar a tensão directamente nos terminais da resistência.
 
 Como se observa na Figura~\ref{fig:pagmenuCTRL}, a tensão indicada pelo voltímetro corresponde à tensão presente entre os terminais da fonte de tensão $U_{CC}$ e da resistência. Por razões pedagógicas e para manter a coerência com o esquema apresentado, optou-se por medir e representar a tensão directamente nos terminais da resistência. As medições só serão efectivamente realizadas e os valores apresentados, quando a opção ``Medir tensão'' e/ou ``Medir corrente'' forem seleccionadas. O utilizador dispõe de alguma flexibilidade na forma como realiza as medições (cinco de tensão e cinco de corrente), desde que mantenha a mesma ordem. Por exemplo, pode optar por medir todos os valores de tensão - desde o mais baixo ao mais alto - e, de seguida proceder da mesma forma com as medições de corrente. Após a conclusão das dez medições, torna-se possível seleccionar a opção ``Gráfico'' para visualizar o gráfico da experiência. Caso esta opção seja seleccionada antes da conclusão de todas as medições, o gráfico será apresentado com as medições disponíveis até ao momento, permitindo, ainda assim, a continuação normal da experiência.
 
@@ -787,7 +782,7 @@ Sendo assim, o procedimento para a realização da experiência é o seguinte:
 
 \subsubsection{Rectificador de meia onda e onda completa}
 \label{sec:rectificadores}
-Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}. A principal diferença, como foi referido na Secção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa já referenciado na Secção \ref{sec:fontealternada}, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
+Nestas duas experiências, pretende-se estudar e avaliar a diferença entre estes dois tipos de rectificadores, tanto ao nível da rectificação como da filtragem, nomeadamente no estudo da variação da tensão de \textit{ripple}. A principal diferença, como foi referido na subsecção \ref{sec:rectificadoresfiltros}, reside no valor da frequência. Enquanto que no rectificador de meia onda, o sinal de entrada é alimentado pelo gerador de sinal do \textit{virtualbench}, o rectificador de onda completa, devido ao problema de massa já referenciado na subsecção \ref{sec:fontealternada}, é alimentado através de um transformador \SI{230}{\volt}/\SI{8}{\volt}, com uma frequência de \SI{50}{\hertz}.
 
 A Figura \ref{fig:meiaondamenuCTRL} ilustra a página de controlo da experiência do rectificador de meia onda. Os utilizadores podem seleccionar quatro valores para o termo RC, sendo que os valores de C estão definidos para \SI{1}{\micro\farad} e \SI{10}{\micro\farad} e a frequência varia entre \SI{5}{\hertz} e \SI{2000}{\hertz}. 
 
@@ -829,7 +824,7 @@ As páginas dos filtros passa-baixo e passa-alto, são em tudo idênticas às do
 		\label{fig:controlofiltros}%
 \end{figure}
 
-Consoante a configuração do filtro, o utilizador escolhe entre dois condensadores ou duas resistências, representados no rectângulo tracejado cor-de-laranja, na Figura \ref{fig:rectificacao_filtragem_full}. Como já foi referido na Secção \ref{sec:experiencias}, os componentes dentro do rectângulo tracejado vermelho, representados na mesma figura, foram adicionados após a implementação dos rectificadores. Assim, quando se pretende estudar o filtro passa-baixo, o utilizador escolhe entre os dois condensadores (de saída) e se pretender estudar o passa-alto, escolhe entre as duas resistências (de saída). Eventualmente, poder-se-iam ter adicionado mais resistências/condensadores aos filtros, nomeadamente, no rectângulo tracejado vermelho, de forma a permitir uma maior versatilidade no estudo. No entanto, além de não existir o número suficiente de relés em contexto laboratorial, considerou-se que, desta forma, o estudo e os objectivos da experiência, ficariam provados. O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. O procedimento para a realização da experiência é o seguinte:
+Consoante a configuração do filtro, o utilizador escolhe entre dois condensadores ou duas resistências, representados no rectângulo tracejado cor-de-laranja, na Figura \ref{fig:rectificacao_filtragem_full}. Como já foi referido na subsecção \ref{sec:experiencias}, os componentes dentro do rectângulo tracejado vermelho, representados na mesma figura, foram adicionados após a implementação dos rectificadores. Assim, quando se pretende estudar o filtro passa-baixo, o utilizador escolhe entre os dois condensadores (de saída) e se pretender estudar o passa-alto, escolhe entre as duas resistências (de saída). Eventualmente, poder-se-iam ter adicionado mais resistências/condensadores aos filtros, nomeadamente, no rectângulo tracejado vermelho, de forma a permitir uma maior versatilidade no estudo. No entanto, além de não existir o número suficiente de relés em contexto laboratorial, considerou-se que, desta forma, o estudo e os objectivos da experiência, ficariam provados. O intervalo de frequência mantém-se entre os \SI{50}{\hertz} e \SI{2000}{\hertz}. O procedimento para a realização da experiência é o seguinte:
 
 \begin{enumerate}
 	\item Seleccionar ``OK'' para activar a fonte do \acrshort{virtualbench} e alimentar os integrados;

@@ -66,21 +66,21 @@
 \contentsline {subsection}{\numberline {4.2.1}Servidor Flask}{78}{subsection.4.2.1}%
 \contentsline {subsubsection}{Estrutura base}{78}{section*.95}%
 \contentsline {subsubsection}{Rotas}{80}{section*.98}%
-\contentsline {subsubsection}{Blueprints}{81}{section*.99}%
+\contentsline {subsubsection}{\textit {Blueprints}}{81}{section*.99}%
 \contentsline {subsubsection}{Pedidos}{82}{section*.100}%
 \contentsline {subsubsection}{Base de dados}{83}{section*.101}%
 \contentsline {subsubsection}{Autenticação}{83}{section*.102}%
-\contentsline {subsection}{\numberline {4.2.2}Arquitectura de Comunicação}{84}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}Arquitectura de comunicação}{84}{subsection.4.2.2}%
 \contentsline {subsubsection}{Comunicação entre ficheiros}{85}{section*.104}%
-\contentsline {subsubsection}{Comunicação com RaspberryPi}{87}{section*.106}%
+\contentsline {subsubsection}{Comunicação com Raspberry PI}{87}{section*.106}%
 \contentsline {subsubsection}{VirtualBench - Configurações e medições}{89}{section*.107}%
 \contentsline {subsubsection}{Gráficos}{91}{section*.108}%
-\contentsline {subsection}{\numberline {4.2.3}Interface WEB}{92}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Interface \textit {web}}{92}{subsection.4.2.3}%
 \contentsline {subsubsection}{Lei de Ohm}{94}{section*.113}%
 \contentsline {subsubsection}{Rectificador de meia onda e onda completa}{96}{section*.115}%
 \contentsline {subsubsection}{Filtros}{97}{section*.117}%
 \contentsline {chapter}{\numberline {5}Resultados}{99}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Lei de \textit {Ohm}}{100}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Lei de Ohm}{100}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Resultados experimentais}{100}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}Rectificadores}{102}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Resultados experimentais [meia onda]}{102}{subsection.5.2.1}%

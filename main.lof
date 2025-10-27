@@ -73,15 +73,15 @@
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Selecção de parâmetros}}{97}{figure.caption.118}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Medição prática}}{100}{figure.caption.119}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfico da Lei de \textit {Ohm} - \SI {1}{\kilo \ohm } - \acrshort {lare}}}{101}{figure.caption.120}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de \textit {Ohm}}}{102}{figure.caption.122}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gráfico da Lei de Ohm - \SI {1}{\kilo \ohm } - \acrshort {lare}}}{101}{figure.caption.120}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Multisim - Lei de Ohm}}{102}{figure.caption.122}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - meia onda}}{103}{figure.caption.123}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Valores experimentais e simulados - tensão de \textit {ripple}}}{103}{figure.caption.124}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Medições práticas \textins {complementares} \textit {ripple}}}{105}{figure.caption.126}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Tensão de \textit {ripple} no \acrshort {lare} - onda completa}}{105}{figure.caption.127}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Tensão de \textit {ripple} - \textit {multisim} - onda completa}}{106}{figure.caption.128}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de \textit {Bode}}}{107}{figure.caption.129}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - \textit {multisim} - Diagrama de \textit {Bode}}}{108}{figure.caption.130}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Tensão de \textit {ripple} - Multisim - onda completa}}{106}{figure.caption.128}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Frequência de corte - filtro passa-alto - Diagrama de Bode}}{107}{figure.caption.129}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Frequência de corte - Multisim - Diagrama de Bode}}{108}{figure.caption.130}%
 \contentsline {figure}{\numberline {5.11}{\ignorespaces $v_{out}$ \textit {vs} $v_{in}$ \acrshort {lare}}}{108}{figure.caption.131}%
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Valores práticos e simulados - $v_{out}$ \textit {vs} $v_{in}$}}{108}{figure.caption.132}%
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Frequência de corte - \acrshort {lare}}}{109}{figure.caption.133}%
